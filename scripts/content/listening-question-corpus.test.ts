@@ -87,11 +87,15 @@ describe("Phase 7 listening script and comprehension corpus", () => {
     expect(listeningCorpusErrors(content, { grammar, vocabulary, kanji, curriculumUnits: units })).toEqual([]);
   });
 
-  it("preserves Phase 1-6 records and keeps the entire Phase 7 corpus development-only", () => {
-    expect(content.sentences).toHaveLength(1368); expect(content.readingPassages).toHaveLength(146); expect(content.questions.filter(({ domain, id, releaseReady }) => domain !== "listening" && releaseReady && !id.includes("grammar-n5-bridge"))).toHaveLength(12164);
-    expect(activities.every(({ releaseReady, reviewStatus, releaseBlockers }) => !releaseReady && reviewStatus === "development-only" && releaseBlockers.includes("curriculum-parent-not-release-ready"))).toBe(true);
-    expect(questions.every(({ releaseReady, needsReview }) => !releaseReady && !needsReview)).toBe(true); expect(units.every(({ releaseReady }) => !releaseReady)).toBe(true);
+  it("packages the initial Phase 3 listening release while retaining remaining development content", () => {
+    expect(content.sentences).toHaveLength(1368); expect(content.readingPassages).toHaveLength(146); expect(content.questions.filter(({ domain, id, releaseReady }) => domain !== "listening" && releaseReady && !id.includes("grammar-n5-bridge"))).toHaveLength(12284);
+    const released = activities.filter(({ releaseReady }) => releaseReady);
+    expect(released).toHaveLength(30); expect(released.filter(({ level }) => level === "N5")).toHaveLength(12); expect(released.filter(({ level }) => level === "N4")).toHaveLength(18);
+    expect(released.every(({ reviewStatus, releaseBlockers }) => reviewStatus === "approved" && releaseBlockers.length === 0)).toBe(true);
+    expect(questions.filter(({ releaseReady }) => releaseReady)).toHaveLength(90);
+    expect(activities.filter(({ releaseReady }) => !releaseReady).every(({ reviewStatus, releaseBlockers }) => reviewStatus === "development-only" && releaseBlockers.includes("curriculum-parent-not-release-ready"))).toBe(true);
+    expect(units.every(({ releaseReady }) => !releaseReady)).toBe(true);
     expect(developmentBundle.learningContent.listeningActivities).toHaveLength(156); expect(developmentBundle.learningContent.listeningSpeakers).toHaveLength(8);
-    expect(releaseBundle.learningContent.listeningActivities).toEqual([]); expect(releaseBundle.learningContent.listeningSpeakers).toEqual([]); expect(releaseBundle.learningContent.questions.some(({ domain }) => domain === "listening")).toBe(false);
+    expect(releaseBundle.learningContent.listeningActivities).toHaveLength(30); expect(releaseBundle.learningContent.listeningSpeakers.length).toBeGreaterThan(0); expect(releaseBundle.learningContent.questions.filter(({ domain }) => domain === "listening")).toHaveLength(90);
   });
 });

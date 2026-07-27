@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "profile": "release",
   "engine": "sqlite3",
-  "checksum": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
-  "retainedExistingRecords": 14850,
+  "checksum": "sha256:69f5a89d021c5fba37af12180a1e8bf100d9a16654983dd76ff6e37efec91a84",
+  "retainedExistingRecords": 16387,
   "phase5": {
     "questionsInserted": 11276,
     "optionsInserted": 45104,
@@ -18,16 +18,16 @@
     "rejected": 0
   },
   "firstImport": {
-    "inserted": 135698,
+    "inserted": 137235,
     "updated": 0,
     "skipped": 0,
     "rejected": 0,
-    "relationships": 61274
+    "relationships": 61484
   },
   "idempotentRerun": {
     "inserted": 0,
     "updated": 0,
-    "skipped": 135698,
+    "skipped": 137235,
     "rejected": 0,
     "relationships": 0
   },
@@ -36,15 +36,15 @@
     "grammarRelationships": 996,
     "vocabularyRelationships": 1320,
     "kanjiRelationships": 1326,
-    "questions": 12164,
-    "questionOptions": 48656,
+    "questions": 12374,
+    "questionOptions": 49496,
     "questionTargetRelationships": 57632,
-    "readingQuestionTargetRelationships": 0,
-    "readingPassages": 0,
-    "listeningQuestionTargetRelationships": 0,
-    "listeningActivities": 0,
-    "listeningSpeakers": 0,
-    "learningItemMetadata": 12608,
+    "readingQuestionTargetRelationships": 120,
+    "readingPassages": 30,
+    "listeningQuestionTargetRelationships": 90,
+    "listeningActivities": 30,
+    "listeningSpeakers": 7,
+    "learningItemMetadata": 12818,
     "completedBatches": 1
   },
   "transaction": "pass",

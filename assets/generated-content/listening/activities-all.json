@@ -1184,12 +1184,10 @@
       "kanji-切",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-問",
       "kanji-場",
       "kanji-大",
       "kanji-始",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
       "kanji-意",
@@ -1208,9 +1206,7 @@
       "kanji-間",
       "kanji-題"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-029"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-001-reason-for-action-3",
       "question-listening-n4-dialogue-001-simple-inference-2",
@@ -1232,7 +1228,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -1241,13 +1238,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1415,19 +1410,15 @@
       "kanji-発",
       "kanji-私",
       "kanji-行",
-      "kanji-言",
       "kanji-話",
       "kanji-読",
-      "kanji-買",
       "kanji-送",
       "kanji-間",
       "kanji-電",
       "kanji-青",
       "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-030"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-002-information-matching-2",
       "question-listening-n4-dialogue-002-sequence-3",
@@ -1449,7 +1440,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -1458,13 +1450,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1630,12 +1620,9 @@
       "kanji-話",
       "kanji-読",
       "kanji-送",
-      "kanji-道",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-031"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-003-speaker-intention-2",
       "question-listening-n4-dialogue-003-specific-detail-1",
@@ -1657,7 +1644,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -1666,13 +1654,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1836,18 +1822,14 @@
       "kanji-物",
       "kanji-用",
       "kanji-発",
-      "kanji-言",
       "kanji-話",
       "kanji-読",
       "kanji-送",
       "kanji-間",
       "kanji-集",
-      "kanji-電",
-      "kanji-飲"
+      "kanji-電"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-032"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-004-reason-for-action-3",
       "question-listening-n4-dialogue-004-speaker-relationship-2",
@@ -1869,7 +1851,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -1878,13 +1861,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -2040,12 +2021,10 @@
       "kanji-前",
       "kanji-午",
       "kanji-友",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
       "kanji-意",
-      "kanji-手",
       "kanji-日",
       "kanji-早",
       "kanji-時",
@@ -2060,9 +2039,7 @@
       "kanji-送",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-033"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-005-reference-resolution-2",
       "question-listening-n4-dialogue-005-sequence-3",
@@ -2084,7 +2061,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -2093,13 +2071,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -2258,7 +2234,6 @@
       "kanji-待",
       "kanji-意",
       "kanji-持",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -2275,9 +2250,7 @@
       "kanji-青",
       "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-034"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-006-simple-inference-2",
       "question-listening-n4-dialogue-006-specific-detail-1",
@@ -2299,7 +2272,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -2308,13 +2282,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -2468,7 +2440,6 @@
       "kanji-大",
       "kanji-始",
       "kanji-室",
-      "kanji-店",
       "kanji-意",
       "kanji-日",
       "kanji-時",
@@ -2482,9 +2453,7 @@
       "kanji-開",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-035"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-007-information-matching-2",
       "question-listening-n4-dialogue-007-reason-for-action-3",
@@ -2506,7 +2475,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -2515,13 +2485,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -2690,9 +2658,7 @@
       "kanji-集",
       "kanji-電"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-036"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-008-sequence-3",
       "question-listening-n4-dialogue-008-speaker-intention-2",
@@ -2714,7 +2680,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -2723,13 +2690,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -2889,11 +2854,9 @@
       "kanji-出",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
-      "kanji-少",
       "kanji-後",
       "kanji-意",
       "kanji-日",
@@ -2908,9 +2871,7 @@
       "kanji-送",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-037"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-009-speaker-relationship-2",
       "question-listening-n4-dialogue-009-specific-detail-1",
@@ -2932,7 +2893,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -2941,13 +2903,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -3101,7 +3061,6 @@
       "kanji-図",
       "kanji-大",
       "kanji-始",
-      "kanji-少",
       "kanji-待",
       "kanji-後",
       "kanji-意",
@@ -3123,9 +3082,7 @@
       "kanji-青",
       "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-038"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-010-reason-for-action-3",
       "question-listening-n4-dialogue-010-reference-resolution-2",
@@ -3147,7 +3104,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -3156,13 +3114,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -3329,15 +3285,12 @@
       "kanji-物",
       "kanji-用",
       "kanji-発",
-      "kanji-花",
       "kanji-話",
       "kanji-読",
       "kanji-送",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-001"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-011-sequence-3",
       "question-listening-n4-dialogue-011-simple-inference-2",
@@ -3359,7 +3312,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -3368,13 +3322,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -3534,7 +3486,6 @@
       "kanji-始",
       "kanji-後",
       "kanji-意",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -3554,9 +3505,7 @@
       "kanji-電",
       "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-002"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-012-information-matching-2",
       "question-listening-n4-dialogue-012-specific-detail-1",
@@ -3578,7 +3527,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -3587,13 +3537,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -3747,7 +3695,6 @@
       "kanji-切",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-台",
       "kanji-場",
       "kanji-外",
@@ -3762,16 +3709,13 @@
       "kanji-着",
       "kanji-知",
       "kanji-読",
-      "kanji-足",
       "kanji-近",
       "kanji-送",
       "kanji-間",
       "kanji-雨",
       "kanji-風"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-003"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-013-reason-for-action-3",
       "question-listening-n4-dialogue-013-speaker-intention-2",
@@ -3793,7 +3737,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -3802,13 +3747,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -3980,12 +3923,9 @@
       "kanji-間",
       "kanji-電",
       "kanji-青",
-      "kanji-館",
-      "kanji-駅"
+      "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-004"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-014-sequence-3",
       "question-listening-n4-dialogue-014-speaker-relationship-2",
@@ -4007,7 +3947,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -4016,13 +3957,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -4201,9 +4140,7 @@
       "kanji-送",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-005"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-015-reference-resolution-2",
       "question-listening-n4-dialogue-015-specific-detail-1",
@@ -4225,7 +4162,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -4234,13 +4172,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -4415,9 +4351,7 @@
       "kanji-集",
       "kanji-電"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-006"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-016-reason-for-action-3",
       "question-listening-n4-dialogue-016-simple-inference-2",
@@ -4439,7 +4373,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -4448,13 +4383,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -4605,12 +4538,10 @@
     ],
     "kanjiIds": [
       "kanji-一",
-      "kanji-会",
       "kanji-入",
       "kanji-出",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
@@ -4623,7 +4554,6 @@
       "kanji-用",
       "kanji-発",
       "kanji-着",
-      "kanji-社",
       "kanji-私",
       "kanji-読",
       "kanji-近",
@@ -4631,9 +4561,7 @@
       "kanji-通",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-007"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-017-information-matching-2",
       "question-listening-n4-dialogue-017-sequence-3",
@@ -4655,7 +4583,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -4664,13 +4593,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -4829,7 +4756,6 @@
       "kanji-後",
       "kanji-意",
       "kanji-持",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -4846,9 +4772,7 @@
       "kanji-青",
       "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-008"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n4-dialogue-018-speaker-intention-2",
       "question-listening-n4-dialogue-018-specific-detail-1",
@@ -4870,7 +4794,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n4"
+      "japango-listening-activity-corpus-n4",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -4879,13 +4804,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -16403,9 +16326,7 @@
     "topicTags": [
       "schedules"
     ],
-    "grammarIds": [
-      "grammar-yori-nohouga"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -16433,9 +16354,7 @@
       "kanji-間",
       "kanji-電"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-025"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-001-information-matching-2",
       "question-listening-n5-dialogue-001-specific-detail-1",
@@ -16457,7 +16376,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -16466,13 +16386,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -16565,9 +16483,7 @@
     "topicTags": [
       "public-facilities"
     ],
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -16589,9 +16505,7 @@
       "kanji-間",
       "kanji-雨"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-026"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-002-reason-for-action-3",
       "question-listening-n5-dialogue-002-speaker-intention-2",
@@ -16613,7 +16527,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -16622,13 +16537,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -16714,9 +16627,7 @@
     "topicTags": [
       "neighbourhood"
     ],
-    "grammarIds": [
-      "grammar-desu"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -16740,9 +16651,7 @@
       "kanji-話",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-027"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-003-sequence-3",
       "question-listening-n5-dialogue-003-speaker-relationship-2",
@@ -16764,7 +16673,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -16773,13 +16683,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -16865,9 +16773,7 @@
     "topicTags": [
       "rules"
     ],
-    "grammarIds": [
-      "grammar-kara-reason-conjunction"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -16889,9 +16795,7 @@
       "kanji-間",
       "kanji-電"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-028"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-004-reference-resolution-2",
       "question-listening-n5-dialogue-004-specific-detail-1",
@@ -16913,7 +16817,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -16922,13 +16827,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -17021,9 +16924,7 @@
     "topicTags": [
       "changes-of-plan"
     ],
-    "grammarIds": [
-      "grammar-kedo"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -17046,9 +16947,7 @@
       "kanji-行",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-029"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-005-reason-for-action-3",
       "question-listening-n5-dialogue-005-simple-inference-2",
@@ -17070,7 +16969,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -17079,13 +16979,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -17171,9 +17069,7 @@
     "topicTags": [
       "home"
     ],
-    "grammarIds": [
-      "grammar-masenka"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -17199,9 +17095,7 @@
       "kanji-間",
       "kanji-食"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-030"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-006-information-matching-2",
       "question-listening-n5-dialogue-006-sequence-3",
@@ -17223,7 +17117,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -17232,13 +17127,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -17324,9 +17217,7 @@
     "topicTags": [
       "cooking"
     ],
-    "grammarIds": [
-      "grammar-mashou"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -17351,9 +17242,7 @@
       "kanji-話",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-031"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-007-speaker-intention-2",
       "question-listening-n5-dialogue-007-specific-detail-1",
@@ -17375,7 +17264,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -17384,13 +17274,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -17476,9 +17364,7 @@
     "topicTags": [
       "appointments"
     ],
-    "grammarIds": [
-      "grammar-mashouka"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -17498,9 +17384,7 @@
       "kanji-間",
       "kanji-電"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-032"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-008-reason-for-action-3",
       "question-listening-n5-dialogue-008-speaker-relationship-2",
@@ -17522,7 +17406,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -17531,13 +17416,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -17623,9 +17506,7 @@
     "topicTags": [
       "health"
     ],
-    "grammarIds": [
-      "grammar-naidekudasai"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-その-その",
@@ -17647,9 +17528,7 @@
       "kanji-時",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-033"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-009-reference-resolution-2",
       "question-listening-n5-dialogue-009-sequence-3",
@@ -17671,7 +17550,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -17680,13 +17560,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -17772,9 +17650,7 @@
     "topicTags": [
       "accommodation"
     ],
-    "grammarIds": [
-      "grammar-naihougaii"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -17797,9 +17673,7 @@
       "kanji-行",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-034"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-010-simple-inference-2",
       "question-listening-n5-dialogue-010-specific-detail-1",
@@ -17821,7 +17695,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -17830,13 +17705,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -17922,9 +17795,7 @@
     "topicTags": [
       "lost-items"
     ],
-    "grammarIds": [
-      "grammar-nakutehaikenai"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-ここ-ここ",
       "vocab-その-その",
@@ -17947,9 +17818,7 @@
       "kanji-話",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-035"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-011-information-matching-2",
       "question-listening-n5-dialogue-011-reason-for-action-3",
@@ -17971,7 +17840,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -17980,13 +17850,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -18072,9 +17940,7 @@
     "topicTags": [
       "plans"
     ],
-    "grammarIds": [
-      "grammar-ninaru"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -18094,9 +17960,7 @@
       "kanji-間",
       "kanji-電"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-036"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-listening-n5-dialogue-012-sequence-3",
       "question-listening-n5-dialogue-012-speaker-intention-2",
@@ -18118,7 +17982,8 @@
       "speakerIsolation": true
     },
     "sourceIds": [
-      "japango-listening-activity-corpus-n5"
+      "japango-listening-activity-corpus-n5",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
@@ -18127,13 +17992,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,

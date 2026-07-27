@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 
 import { Card } from '@/components/common/card';
 import { StatusBadge } from '@/components/common/status-badge';
@@ -10,8 +10,13 @@ function formatType(type: string): string {
   return type.charAt(0).toUpperCase() + type.slice(1);
 }
 
-export function CurriculumItemCard({ item }: { item: CurriculumWithMastery }) {
-  return (
+interface CurriculumItemCardProps {
+  item: CurriculumWithMastery;
+  onPress?: () => void;
+}
+
+export function CurriculumItemCard({ item, onPress }: CurriculumItemCardProps) {
+  const content = (
     <Card accessibilityLabel={`${item.title}, ${formatType(item.type)}, ${item.mastery.status}`}>
       <View style={styles.topRow}>
         <ThemedText type="smallBold" themeColor="primary">{formatType(item.type)} · {item.level}</ThemedText>
@@ -25,8 +30,19 @@ export function CurriculumItemCard({ item }: { item: CurriculumWithMastery }) {
       {item.explanation ? <ThemedText themeColor="textSecondary">{item.explanation}</ThemedText> : null}
     </Card>
   );
+  if (!onPress) return content;
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={`Open ${item.title}, ${formatType(item.type)}`}
+      onPress={onPress}
+      style={({ pressed }) => pressed && styles.pressed}>
+      {content}
+    </Pressable>
+  );
 }
 
 const styles = StyleSheet.create({
   topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: Spacing.two },
+  pressed: { opacity: 0.76 },
 });

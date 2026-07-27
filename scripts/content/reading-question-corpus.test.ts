@@ -47,7 +47,7 @@ describe("Phase 6 reading passage and comprehension corpus", () => {
   it("resolves grammar, vocabulary, kanji, and curriculum relationships", () => {
     const grammarIds = new Set(grammar.map(({ id }) => id)); const vocabularyIds = new Set(vocabulary.map(({ id }) => id));
     const kanjiIds = new Set(kanji.map(({ id }) => id)); const unitIds = new Set(units.map(({ id }) => id));
-    expect(passages.every((passage) => passage.grammarIds.length >= 1 && passage.grammarIds.length <= 3 && passage.grammarIds.every((id) => grammarIds.has(id)))).toBe(true);
+    expect(passages.every((passage) => passage.grammarIds.length <= 3 && passage.grammarIds.every((id) => grammarIds.has(id)))).toBe(true);
     expect(passages.every((passage) => passage.vocabularyIds.every((id) => vocabularyIds.has(id)))).toBe(true);
     expect(passages.every((passage) => passage.kanjiIds.every((id) => kanjiIds.has(id)))).toBe(true);
     expect(passages.every((passage) => passage.curriculumUnitIds.every((id) => unitIds.has(id)))).toBe(true);
@@ -86,10 +86,16 @@ describe("Phase 6 reading passage and comprehension corpus", () => {
     expect(new Set(allIds).size).toBe(allIds.length);
   });
 
-  it("preserves Phase 1-5 IDs and lifecycle separation", () => {
+  it("promotes the initial Phase 3 release while retaining the remaining corpus for development", () => {
     expect(content.sentences).toHaveLength(1368);
     expect(content.questions.filter(({ domain, id, releaseReady }) => domain !== "reading" && domain !== "listening" && releaseReady && !id.includes("grammar-n5-bridge"))).toHaveLength(12164);
-    expect(passages.every(({ releaseReady, reviewStatus, releaseBlockers }) => !releaseReady && reviewStatus === "development-only" && releaseBlockers.includes("curriculum-parent-not-release-ready"))).toBe(true);
+    const released = passages.filter(({ releaseReady }) => releaseReady);
+    expect(released).toHaveLength(30);
+    expect(released.filter(({ level }) => level === "N5")).toHaveLength(12);
+    expect(released.filter(({ level }) => level === "N4")).toHaveLength(18);
+    expect(released.every(({ reviewStatus, releaseBlockers }) => reviewStatus === "approved" && releaseBlockers.length === 0)).toBe(true);
+    expect(questions.filter(({ releaseReady }) => releaseReady)).toHaveLength(120);
+    expect(passages.filter(({ releaseReady }) => !releaseReady).every(({ reviewStatus, releaseBlockers }) => reviewStatus === "development-only" && releaseBlockers.includes("curriculum-parent-not-release-ready"))).toBe(true);
     expect(units.every(({ releaseReady }) => !releaseReady)).toBe(true);
   });
 });

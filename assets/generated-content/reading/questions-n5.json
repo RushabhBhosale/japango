@@ -34,6 +34,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -41,7 +42,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-001-main-idea-1-1"
@@ -82,6 +83,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -89,7 +91,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-001-sequence-order-3-1"
@@ -130,6 +132,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -137,7 +140,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-001-specific-detail-2-1"
@@ -178,6 +181,7 @@
       "type-true-statement"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -185,7 +189,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-001-true-statement-4-1"
@@ -226,6 +230,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -233,7 +238,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-002-main-idea-1-1"
@@ -274,6 +279,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -281,7 +287,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-002-sequence-order-3-1"
@@ -322,6 +328,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -329,7 +336,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-002-specific-detail-2-1"
@@ -370,6 +377,7 @@
       "type-vocabulary-context"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -377,7 +385,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-002-vocabulary-context-4-1"
@@ -418,6 +426,7 @@
       "type-appropriate-summary"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -425,7 +434,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-003-appropriate-summary-4-1"
@@ -466,6 +475,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -473,7 +483,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-003-main-idea-1-1"
@@ -514,6 +524,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -521,7 +532,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-003-sequence-order-3-1"
@@ -562,6 +573,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -569,7 +581,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-003-specific-detail-2-1"
@@ -610,6 +622,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -617,7 +630,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-004-main-idea-1-1"
@@ -658,6 +671,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -665,7 +679,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-004-sequence-order-3-1"
@@ -706,6 +720,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -713,7 +728,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-004-specific-detail-2-1"
@@ -754,6 +769,7 @@
       "type-true-statement"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -761,7 +777,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-004-true-statement-4-1"
@@ -802,6 +818,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -809,7 +826,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-005-main-idea-1-1"
@@ -850,6 +867,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -857,7 +875,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-005-sequence-order-3-1"
@@ -898,6 +916,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -905,7 +924,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-005-specific-detail-2-1"
@@ -946,6 +965,7 @@
       "type-vocabulary-context"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -953,7 +973,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-005-vocabulary-context-4-1"
@@ -994,6 +1014,7 @@
       "type-appropriate-summary"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1001,7 +1022,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-006-appropriate-summary-4-1"
@@ -1042,6 +1063,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1049,7 +1071,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-006-main-idea-1-1"
@@ -1090,6 +1112,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1097,7 +1120,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-006-sequence-order-3-1"
@@ -1138,6 +1161,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1145,7 +1169,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-006-specific-detail-2-1"
@@ -1186,6 +1210,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1193,7 +1218,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-007-main-idea-1-1"
@@ -1234,6 +1259,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1241,7 +1267,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-007-sequence-order-3-1"
@@ -1282,6 +1308,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1289,7 +1316,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-007-specific-detail-2-1"
@@ -1330,6 +1357,7 @@
       "type-true-statement"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1337,7 +1365,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-007-true-statement-4-1"
@@ -1378,6 +1406,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1385,7 +1414,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-008-main-idea-1-1"
@@ -1426,6 +1455,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1433,7 +1463,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-008-sequence-order-3-1"
@@ -1474,6 +1504,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1481,7 +1512,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-008-specific-detail-2-1"
@@ -1522,6 +1553,7 @@
       "type-vocabulary-context"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1529,7 +1561,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-008-vocabulary-context-4-1"
@@ -1570,6 +1602,7 @@
       "type-appropriate-summary"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1577,7 +1610,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-009-appropriate-summary-4-1"
@@ -1618,6 +1651,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1625,7 +1659,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-009-main-idea-1-1"
@@ -1666,6 +1700,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1673,7 +1708,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-009-sequence-order-3-1"
@@ -1714,6 +1749,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1721,7 +1757,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-009-specific-detail-2-1"
@@ -1762,6 +1798,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1769,7 +1806,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-010-main-idea-1-1"
@@ -1810,6 +1847,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1817,7 +1855,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-010-sequence-order-3-1"
@@ -1858,6 +1896,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1865,7 +1904,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-010-specific-detail-2-1"
@@ -1906,6 +1945,7 @@
       "type-true-statement"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1913,7 +1953,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-010-true-statement-4-1"
@@ -1954,6 +1994,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -1961,7 +2002,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-011-main-idea-1-1"
@@ -2002,6 +2043,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -2009,7 +2051,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-011-sequence-order-3-1"
@@ -2050,6 +2092,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -2057,7 +2100,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-011-specific-detail-2-1"
@@ -2098,6 +2141,7 @@
       "type-vocabulary-context"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -2105,7 +2149,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-011-vocabulary-context-4-1"
@@ -2146,6 +2190,7 @@
       "type-appropriate-summary"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -2153,7 +2198,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-012-appropriate-summary-4-1"
@@ -2194,6 +2239,7 @@
       "type-main-idea"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -2201,7 +2247,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-012-main-idea-1-1"
@@ -2242,6 +2288,7 @@
       "type-sequence-order"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -2249,7 +2296,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-012-sequence-order-3-1"
@@ -2290,6 +2337,7 @@
       "type-specific-detail"
     ],
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-question-corpus"
     ],
     "attribution": [
@@ -2297,7 +2345,7 @@
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-reading-n5-medium-012-specific-detail-2-1"

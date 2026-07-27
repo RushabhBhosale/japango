@@ -6,6 +6,7 @@ import {
 } from "../../src/features/learning-content/schemas";
 import { SOURCE_PATHS } from "./config";
 import { readJson } from "./lib/fs-utils";
+import { loadPhase3ReleaseSelection, promotePhase3ReadingContent } from "./phase3-learning-release";
 import type { CurriculumUnit, GrammarRecord, KanjiRecord, VocabularyRecord } from "./schemas/content-schemas";
 
 interface ReadingQuestionFile {
@@ -46,8 +47,11 @@ function expectedRange(passage: ReadingPassage): [number, number] | null {
 export function readingCorpusErrors(content: LearningContentCollections, catalog: ReadingCatalog): string[] {
   const errors: string[] = [];
   const grammarIds = new Set(catalog.grammar.map(({ id }) => id));
+  const releaseGrammarIds = new Set(catalog.grammar.filter(({ releaseReady }) => releaseReady).map(({ id }) => id));
   const vocabularyIds = new Set(catalog.vocabulary.map(({ id }) => id));
+  const releaseVocabularyIds = new Set(catalog.vocabulary.filter(({ releaseReady }) => releaseReady).map(({ id }) => id));
   const kanjiIds = new Set(catalog.kanji.map(({ id }) => id));
+  const releaseKanjiIds = new Set(catalog.kanji.filter(({ releaseReady }) => releaseReady).map(({ id }) => id));
   const unitById = new Map(catalog.curriculumUnits.map((unit) => [unit.id, unit]));
   const questionById = new Map(content.questions.map((question) => [question.id, question]));
   const optionsByQuestion = new Map<string, LearningContentCollections["questionOptions"]>();
@@ -70,7 +74,9 @@ export function readingCorpusErrors(content: LearningContentCollections, catalog
       if (unit && unit.level !== passage.level) errors.push(`${passage.id} references ${unit.level} curriculum ${id}`);
       if (passage.releaseReady && !unit?.releaseReady) errors.push(`${passage.id} leaks a non-release curriculum parent`);
     }
-    if (passage.releaseReady) errors.push(`${passage.id} must remain development-only while curriculum parents are excluded`);
+    if (passage.releaseReady && passage.grammarIds.some((id) => !releaseGrammarIds.has(id))) errors.push(`${passage.id} references non-release grammar`);
+    if (passage.releaseReady && passage.vocabularyIds.some((id) => !releaseVocabularyIds.has(id))) errors.push(`${passage.id} references non-release vocabulary`);
+    if (passage.releaseReady && passage.kanjiIds.some((id) => !releaseKanjiIds.has(id))) errors.push(`${passage.id} references non-release kanji`);
     if (passage.passageType === "practical") {
       const lines = passage.structuredContent?.lines ?? [];
       if (lines.map(({ position }) => position).some((position, index) => position !== index + 1)) errors.push(`${passage.id} practical lines are not contiguous`);
@@ -98,15 +104,19 @@ export async function loadReadingQuestionCorpus(
     readJson<unknown[]>(SOURCE_PATHS.readingPassageCorpusN4),
     readJson<ReadingQuestionFile>(SOURCE_PATHS.readingQuestionCorpus),
   ]);
-  const passages = [...n5Raw, ...n4Raw].map((passage) => readingPassageSchema.parse(passage));
+  const [selection, passages] = await Promise.all([
+    loadPhase3ReleaseSelection(),
+    Promise.resolve([...n5Raw, ...n4Raw].map((passage) => readingPassageSchema.parse(passage))),
+  ]);
+  const promoted = promotePhase3ReadingContent(passages, questionFile, selection, catalog);
   const combined = learningContentCollectionsSchema.parse({
     ...base,
-    readingPassages: sortedById([...base.readingPassages, ...passages]),
-    questions: sortedById([...base.questions, ...questionFile.questions]),
-    questionOptions: [...base.questionOptions, ...questionFile.questionOptions].sort((left, right) =>
+    readingPassages: sortedById([...base.readingPassages, ...promoted.readingPassages]),
+    questions: sortedById([...base.questions, ...promoted.questions]),
+    questionOptions: [...base.questionOptions, ...promoted.questionOptions].sort((left, right) =>
       compareStable(left.questionId, right.questionId) || left.position - right.position || compareStable(left.id, right.id)),
-    learningItemMetadata: sortedById([...base.learningItemMetadata, ...questionFile.learningItemMetadata]),
-    questionTargetRelationships: sortedById([...base.questionTargetRelationships, ...questionFile.questionTargetRelationships]),
+    learningItemMetadata: sortedById([...base.learningItemMetadata, ...promoted.learningItemMetadata]),
+    questionTargetRelationships: sortedById([...base.questionTargetRelationships, ...promoted.questionTargetRelationships]),
   });
   const errors = readingCorpusErrors(combined, catalog);
   if (errors.length > 0) throw new Error(`Reading corpus contains ${errors.length} error(s):\n${errors.slice(0, 30).join("\n")}`);

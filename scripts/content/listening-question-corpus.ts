@@ -7,6 +7,7 @@ import {
 } from "../../src/features/learning-content/schemas";
 import { SOURCE_PATHS } from "./config";
 import { readJson } from "./lib/fs-utils";
+import { loadPhase3ReleaseSelection, promotePhase3ListeningContent } from "./phase3-learning-release";
 import type { CurriculumUnit, GrammarRecord, KanjiRecord, VocabularyRecord } from "./schemas/content-schemas";
 
 interface ListeningQuestionFile { schemaVersion: 1; questions: LearningContentCollections["questions"]; questionOptions: LearningContentCollections["questionOptions"]; learningItemMetadata: LearningContentCollections["learningItemMetadata"]; questionTargetRelationships: LearningContentCollections["questionTargetRelationships"] }
@@ -23,7 +24,7 @@ function lengthRange(activity: ListeningActivity): [number, number] {
 }
 
 export function listeningCorpusErrors(content: LearningContentCollections, catalog: ListeningCatalog): string[] {
-  const errors: string[] = []; const grammarIds = new Set(catalog.grammar.map(({ id }) => id)); const vocabularyIds = new Set(catalog.vocabulary.map(({ id }) => id)); const kanjiIds = new Set(catalog.kanji.map(({ id }) => id)); const units = new Map(catalog.curriculumUnits.map((unit) => [unit.id, unit])); const speakerIds = new Set(content.listeningSpeakers.map(({ id }) => id)); const questionById = new Map(content.questions.map((question) => [question.id, question])); const optionsByQuestion = new Map<string, LearningContentCollections["questionOptions"]>();
+  const errors: string[] = []; const grammarIds = new Set(catalog.grammar.map(({ id }) => id)); const releaseGrammarIds = new Set(catalog.grammar.filter(({ releaseReady }) => releaseReady).map(({ id }) => id)); const vocabularyIds = new Set(catalog.vocabulary.map(({ id }) => id)); const releaseVocabularyIds = new Set(catalog.vocabulary.filter(({ releaseReady }) => releaseReady).map(({ id }) => id)); const kanjiIds = new Set(catalog.kanji.map(({ id }) => id)); const releaseKanjiIds = new Set(catalog.kanji.filter(({ releaseReady }) => releaseReady).map(({ id }) => id)); const units = new Map(catalog.curriculumUnits.map((unit) => [unit.id, unit])); const speakerIds = new Set(content.listeningSpeakers.map(({ id }) => id)); const questionById = new Map(content.questions.map((question) => [question.id, question])); const optionsByQuestion = new Map<string, LearningContentCollections["questionOptions"]>();
   for (const option of content.questionOptions) optionsByQuestion.set(option.questionId, [...(optionsByQuestion.get(option.questionId) ?? []), option]);
   const exact = new Map<string, string[]>(); const templates = new Map<string, string[]>(); const optionSignatures = new Map<string, string[]>(); const focusSentenceByGrammar = new Map<string, string | undefined>(); for (const view of content.grammarExampleViews) if (view.role === "focus" && !focusSentenceByGrammar.has(view.grammarId)) focusSentenceByGrammar.set(view.grammarId, content.sentences.find(({ id }) => id === view.sentenceId)?.japanese);
   for (const activity of content.listeningActivities) {
@@ -36,7 +37,9 @@ export function listeningCorpusErrors(content: LearningContentCollections, catal
     for (const id of activity.vocabularyIds) if (!vocabularyIds.has(id)) errors.push(`${activity.id} missing vocabulary ${id}`);
     for (const id of activity.kanjiIds) if (!kanjiIds.has(id)) errors.push(`${activity.id} missing kanji ${id}`);
     for (const id of activity.curriculumUnitIds) { const unit = units.get(id); if (!unit || unit.level !== activity.level) errors.push(`${activity.id} invalid curriculum ${id}`); if (activity.releaseReady && !unit?.releaseReady) errors.push(`${activity.id} leaks non-release curriculum`); }
-    if (activity.releaseReady) errors.push(`${activity.id} must be development-only`);
+    if (activity.releaseReady && activity.grammarIds.some((id) => !releaseGrammarIds.has(id))) errors.push(`${activity.id} references non-release grammar`);
+    if (activity.releaseReady && activity.vocabularyIds.some((id) => !releaseVocabularyIds.has(id))) errors.push(`${activity.id} references non-release vocabulary`);
+    if (activity.releaseReady && activity.kanjiIds.some((id) => !releaseKanjiIds.has(id))) errors.push(`${activity.id} references non-release kanji`);
     if (activity.activityType === "dialogue" && activity.speakerIds.length < 2) errors.push(`${activity.id} dialogue requires two speakers`);
     if (activity.activityType === "appropriate-response" && (activity.turns.length !== 1 || activity.questionIds.length !== 1)) errors.push(`${activity.id} appropriate response shape invalid`);
     if (activity.activityType !== "appropriate-response" && activity.grammarIds.some((id) => !activity.turns.some(({ displayText }) => displayText === focusSentenceByGrammar.get(id)))) errors.push(`${activity.id} does not genuinely contain its canonical grammar sentence`);
@@ -53,8 +56,8 @@ export function listeningCorpusErrors(content: LearningContentCollections, catal
 }
 
 export async function loadListeningQuestionCorpus(base: LearningContentCollections, catalog: ListeningCatalog): Promise<LearningContentCollections> {
-  const [n5Raw, n4Raw, speakersRaw, questionFile] = await Promise.all([readJson<unknown[]>(SOURCE_PATHS.listeningActivityCorpusN5), readJson<unknown[]>(SOURCE_PATHS.listeningActivityCorpusN4), readJson<unknown[]>(SOURCE_PATHS.listeningSpeakerCorpus), readJson<ListeningQuestionFile>(SOURCE_PATHS.listeningQuestionCorpus)]);
-  const activities = [...n5Raw, ...n4Raw].map((value) => listeningActivitySchema.parse(value)); const speakers = speakersRaw.map((value) => listeningSpeakerSchema.parse(value));
-  const combined = learningContentCollectionsSchema.parse({ ...base, listeningSpeakers: sorted([...base.listeningSpeakers, ...speakers]), listeningActivities: sorted([...base.listeningActivities, ...activities]), questions: sorted([...base.questions, ...questionFile.questions]), questionOptions: [...base.questionOptions, ...questionFile.questionOptions].sort((a, b) => compareStable(a.questionId, b.questionId) || a.position - b.position), learningItemMetadata: sorted([...base.learningItemMetadata, ...questionFile.learningItemMetadata]), questionTargetRelationships: sorted([...base.questionTargetRelationships, ...questionFile.questionTargetRelationships]) });
+  const [n5Raw, n4Raw, speakersRaw, questionFile, selection] = await Promise.all([readJson<unknown[]>(SOURCE_PATHS.listeningActivityCorpusN5), readJson<unknown[]>(SOURCE_PATHS.listeningActivityCorpusN4), readJson<unknown[]>(SOURCE_PATHS.listeningSpeakerCorpus), readJson<ListeningQuestionFile>(SOURCE_PATHS.listeningQuestionCorpus), loadPhase3ReleaseSelection()]);
+  const activities = [...n5Raw, ...n4Raw].map((value) => listeningActivitySchema.parse(value)); const speakers = speakersRaw.map((value) => listeningSpeakerSchema.parse(value)); const promoted = promotePhase3ListeningContent(activities, speakers, questionFile, selection, catalog);
+  const combined = learningContentCollectionsSchema.parse({ ...base, listeningSpeakers: sorted([...base.listeningSpeakers, ...promoted.listeningSpeakers]), listeningActivities: sorted([...base.listeningActivities, ...promoted.listeningActivities]), questions: sorted([...base.questions, ...promoted.questions]), questionOptions: [...base.questionOptions, ...promoted.questionOptions].sort((a, b) => compareStable(a.questionId, b.questionId) || a.position - b.position), learningItemMetadata: sorted([...base.learningItemMetadata, ...promoted.learningItemMetadata]), questionTargetRelationships: sorted([...base.questionTargetRelationships, ...promoted.questionTargetRelationships]) });
   const errors = listeningCorpusErrors(combined, catalog); if (errors.length) throw new Error(`Listening corpus contains ${errors.length} error(s):\n${errors.slice(0, 30).join("\n")}`); return combined;
 }

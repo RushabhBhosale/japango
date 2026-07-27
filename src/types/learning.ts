@@ -133,6 +133,22 @@ export interface ProgressSummary {
   dueCount: number;
   weakCount: number;
   recentAttempts: (LearningAttempt & { itemTitle?: string })[];
+  scheduler: {
+    reviewsToday: number;
+    reviewsThisWeek: number;
+    reviewsThisMonth: number;
+    averageAccuracy: number;
+    retention: number;
+    matureCards: number;
+    learningCards: number;
+    newCards: number;
+    dueTomorrow: number;
+    currentStreak: number;
+    longestStreak: number;
+    studyTimeMs: number;
+    averageResponseTimeMs: number;
+    estimatedStudyMinutes: number;
+  };
 }
 
 export type ThemePreference = 'system' | 'light' | 'dark';

@@ -95,6 +95,10 @@ export const SOURCE_PATHS = {
     SOURCE_ROOT,
     "japango-phase10/vocabulary-expansion.json",
   ),
+  phase3InitialLearningRelease: path.join(
+    SOURCE_ROOT,
+    "japango-phase3/initial-learning-release.json",
+  ),
   n5GrammarQuestionCorpus: path.join(SOURCE_ROOT, "japango-questions/n5-grammar-question-corpus.json"),
 } as const;
 

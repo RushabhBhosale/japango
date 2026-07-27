@@ -53,20 +53,16 @@
       "kanji-出",
       "kanji-前",
       "kanji-南",
-      "kanji-口",
       "kanji-右",
       "kanji-同",
       "kanji-場",
-      "kanji-安",
       "kanji-屋",
       "kanji-度",
       "kanji-後",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-本",
       "kanji-歩",
-      "kanji-目",
       "kanji-知",
       "kanji-終",
       "kanji-考",
@@ -75,18 +71,15 @@
       "kanji-行",
       "kanji-試",
       "kanji-銀",
-      "kanji-青",
-      "kanji-駅"
+      "kanji-青"
     ],
-    "curriculumIds": [
-      "n4-unit-003"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 218,
     "estimatedReadingSeconds": 73,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-002",
@@ -112,8 +105,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -141,12 +133,9 @@
       "kanji-同",
       "kanji-図",
       "kanji-場",
-      "kanji-多",
       "kanji-帰",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
-      "kanji-手",
       "kanji-日",
       "kanji-早",
       "kanji-書",
@@ -161,15 +150,13 @@
       "kanji-試",
       "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-004"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 215,
     "estimatedReadingSeconds": 72,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-003",
@@ -195,8 +182,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -228,7 +214,6 @@
       "kanji-前",
       "kanji-同",
       "kanji-小",
-      "kanji-少",
       "kanji-屋",
       "kanji-広",
       "kanji-度",
@@ -247,15 +232,13 @@
       "kanji-重",
       "kanji-風"
     ],
-    "curriculumIds": [
-      "n4-unit-005"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 213,
     "estimatedReadingSeconds": 71,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-004",
@@ -281,8 +264,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-いつ-いつ",
@@ -317,7 +299,6 @@
       "kanji-友",
       "kanji-問",
       "kanji-土",
-      "kanji-少",
       "kanji-待",
       "kanji-後",
       "kanji-日",
@@ -332,18 +313,15 @@
       "kanji-行",
       "kanji-試",
       "kanji-質",
-      "kanji-食",
-      "kanji-飲"
+      "kanji-食"
     ],
-    "curriculumIds": [
-      "n4-unit-006"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 218,
     "estimatedReadingSeconds": 73,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-005",
@@ -369,8 +347,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-te-miru",
-      "grammar-node"
+      "grammar-n4-te-miru"
     ],
     "vocabularyIds": [
       "vocab-もう-もう",
@@ -394,14 +371,11 @@
     ],
     "kanjiIds": [
       "kanji-一",
-      "kanji-会",
       "kanji-作",
       "kanji-六",
       "kanji-前",
       "kanji-午",
       "kanji-家",
-      "kanji-少",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
       "kanji-日",
@@ -415,20 +389,16 @@
       "kanji-見",
       "kanji-計",
       "kanji-試",
-      "kanji-買",
-      "kanji-週",
       "kanji-野",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-007"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 204,
     "estimatedReadingSeconds": 68,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-006",
@@ -454,8 +424,7 @@
     },
     "grammarIds": [
       "grammar-n4-ato-de",
-      "grammar-n4-koto-nominalizer",
-      "grammar-node"
+      "grammar-n4-koto-nominalizer"
     ],
     "vocabularyIds": [
       "vocab-もう-もう",
@@ -491,10 +460,8 @@
       "kanji-十",
       "kanji-午",
       "kanji-場",
-      "kanji-少",
       "kanji-度",
       "kanji-後",
-      "kanji-新",
       "kanji-日",
       "kanji-時",
       "kanji-曜",
@@ -505,21 +472,18 @@
       "kanji-者",
       "kanji-行",
       "kanji-近",
-      "kanji-週",
       "kanji-金",
       "kanji-長",
       "kanji-間",
       "kanji-雨"
     ],
-    "curriculumIds": [
-      "n4-unit-008"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 204,
     "estimatedReadingSeconds": 68,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-007",
@@ -545,8 +509,7 @@
     },
     "grammarIds": [
       "grammar-n4-nakutemo-ii",
-      "grammar-n4-temo-concession",
-      "grammar-node"
+      "grammar-n4-temo-concession"
     ],
     "vocabularyIds": [
       "vocab-予定-よてい",
@@ -581,7 +544,6 @@
       "kanji-字",
       "kanji-家",
       "kanji-小",
-      "kanji-少",
       "kanji-帰",
       "kanji-後",
       "kanji-日",
@@ -592,26 +554,22 @@
       "kanji-母",
       "kanji-着",
       "kanji-行",
-      "kanji-言",
       "kanji-話",
       "kanji-読",
       "kanji-近",
-      "kanji-週",
       "kanji-間",
       "kanji-雨",
       "kanji-電",
       "kanji-題",
       "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-009"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 198,
     "estimatedReadingSeconds": 66,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-008",
@@ -637,8 +595,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-you-ni-suru",
-      "grammar-node"
+      "grammar-n4-you-ni-suru"
     ],
     "vocabularyIds": [
       "vocab-その-その",
@@ -672,7 +629,6 @@
       "kanji-入",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-場",
       "kanji-夕",
       "kanji-夜",
@@ -696,19 +652,16 @@
       "kanji-車",
       "kanji-転",
       "kanji-近",
-      "kanji-週",
       "kanji-間",
       "kanji-雨"
     ],
-    "curriculumIds": [
-      "n4-unit-010"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 212,
     "estimatedReadingSeconds": 71,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-009",
@@ -733,9 +686,7 @@
       "writer-intention": 1
     },
     "grammarIds": [
-      "grammar-n4-koto-nominalizer",
-      "grammar-node",
-      "grammar-tekara"
+      "grammar-n4-koto-nominalizer"
     ],
     "vocabularyIds": [
       "vocab-その-その",
@@ -769,7 +720,6 @@
       "kanji-大",
       "kanji-天",
       "kanji-字",
-      "kanji-安",
       "kanji-小",
       "kanji-後",
       "kanji-心",
@@ -785,26 +735,22 @@
       "kanji-歩",
       "kanji-気",
       "kanji-物",
-      "kanji-目",
       "kanji-着",
       "kanji-行",
       "kanji-見",
       "kanji-計",
       "kanji-読",
       "kanji-近",
-      "kanji-週",
       "kanji-間",
       "kanji-雨"
     ],
-    "curriculumIds": [
-      "n4-unit-011"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 210,
     "estimatedReadingSeconds": 70,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-010",
@@ -830,8 +776,7 @@
     },
     "grammarIds": [
       "grammar-n4-baai-wa",
-      "grammar-n4-koto-nominalizer",
-      "grammar-node"
+      "grammar-n4-koto-nominalizer"
     ],
     "vocabularyIds": [
       "vocab-お茶-おちゃ",
@@ -863,12 +808,10 @@
       "kanji-場",
       "kanji-大",
       "kanji-字",
-      "kanji-安",
       "kanji-家",
       "kanji-小",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-日",
       "kanji-昼",
       "kanji-書",
@@ -876,24 +819,19 @@
       "kanji-知",
       "kanji-茶",
       "kanji-読",
-      "kanji-買",
       "kanji-赤",
       "kanji-近",
       "kanji-重",
       "kanji-雨",
-      "kanji-飯",
-      "kanji-飲",
-      "kanji-魚"
+      "kanji-飯"
     ],
-    "curriculumIds": [
-      "n4-unit-012"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 216,
     "estimatedReadingSeconds": 72,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-011",
@@ -919,8 +857,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-made-ni",
-      "grammar-node"
+      "grammar-n4-made-ni"
     ],
     "vocabularyIds": [
       "vocab-その-その",
@@ -958,14 +895,12 @@
       "kanji-場",
       "kanji-大",
       "kanji-字",
-      "kanji-安",
       "kanji-家",
       "kanji-小",
       "kanji-度",
       "kanji-後",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-昼",
       "kanji-書",
       "kanji-朝",
@@ -979,15 +914,13 @@
       "kanji-電",
       "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-013"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 209,
     "estimatedReadingSeconds": 70,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-012",
@@ -1048,12 +981,10 @@
       "kanji-同",
       "kanji-問",
       "kanji-場",
-      "kanji-安",
       "kanji-度",
       "kanji-後",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-料",
       "kanji-日",
       "kanji-早",
@@ -1067,15 +998,13 @@
       "kanji-送",
       "kanji-金"
     ],
-    "curriculumIds": [
-      "n4-unit-014"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 229,
     "estimatedReadingSeconds": 77,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-013",
@@ -1101,8 +1030,7 @@
     },
     "grammarIds": [
       "grammar-n4-ato-de",
-      "grammar-n4-nagara",
-      "grammar-tekara"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -1131,14 +1059,11 @@
       "kanji-前",
       "kanji-同",
       "kanji-場",
-      "kanji-多",
       "kanji-大",
-      "kanji-安",
       "kanji-度",
       "kanji-後",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-物",
       "kanji-真",
       "kanji-知",
@@ -1152,15 +1077,13 @@
       "kanji-送",
       "kanji-電"
     ],
-    "curriculumIds": [
-      "n4-unit-015"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 226,
     "estimatedReadingSeconds": 76,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-014",
@@ -1186,8 +1109,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-ごみ-ごみ",
@@ -1222,7 +1144,6 @@
       "kanji-屋",
       "kanji-度",
       "kanji-後",
-      "kanji-手",
       "kanji-日",
       "kanji-早",
       "kanji-書",
@@ -1241,15 +1162,13 @@
       "kanji-開",
       "kanji-飯"
     ],
-    "curriculumIds": [
-      "n4-unit-016"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 221,
     "estimatedReadingSeconds": 74,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-015",
@@ -1275,8 +1194,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -1303,13 +1221,10 @@
       "kanji-人",
       "kanji-入",
       "kanji-前",
-      "kanji-口",
       "kanji-同",
       "kanji-子",
       "kanji-小",
-      "kanji-少",
       "kanji-広",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
       "kanji-日",
@@ -1322,15 +1237,13 @@
       "kanji-試",
       "kanji-近"
     ],
-    "curriculumIds": [
-      "n4-unit-017"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 208,
     "estimatedReadingSeconds": 70,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-016",
@@ -1356,8 +1269,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -1389,7 +1301,6 @@
       "kanji-午",
       "kanji-夕",
       "kanji-家",
-      "kanji-少",
       "kanji-後",
       "kanji-方",
       "kanji-日",
@@ -1404,18 +1315,15 @@
       "kanji-試",
       "kanji-運",
       "kanji-院",
-      "kanji-食",
-      "kanji-飲"
+      "kanji-食"
     ],
-    "curriculumIds": [
-      "n4-unit-018"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 207,
     "estimatedReadingSeconds": 69,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-017",
@@ -1441,8 +1349,7 @@
     },
     "grammarIds": [
       "grammar-n4-baai-wa",
-      "grammar-n4-koto-nominalizer",
-      "grammar-node"
+      "grammar-n4-koto-nominalizer"
     ],
     "vocabularyIds": [
       "vocab-予定-よてい",
@@ -1468,7 +1375,6 @@
       "kanji-午",
       "kanji-名",
       "kanji-場",
-      "kanji-少",
       "kanji-待",
       "kanji-後",
       "kanji-持",
@@ -1482,18 +1388,15 @@
       "kanji-自",
       "kanji-行",
       "kanji-試",
-      "kanji-週",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-019"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 3,
     "characterCount": 213,
     "estimatedReadingSeconds": 71,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-018",
@@ -1519,8 +1422,7 @@
     },
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-te-oku",
-      "grammar-node"
+      "grammar-n4-te-oku"
     ],
     "vocabularyIds": [
       "vocab-予定-よてい",
@@ -1555,10 +1457,8 @@
       "kanji-問",
       "kanji-場",
       "kanji-夜",
-      "kanji-少",
       "kanji-強",
       "kanji-後",
-      "kanji-新",
       "kanji-日",
       "kanji-時",
       "kanji-曜",
@@ -1570,24 +1470,20 @@
       "kanji-習",
       "kanji-行",
       "kanji-見",
-      "kanji-言",
       "kanji-読",
       "kanji-近",
-      "kanji-週",
       "kanji-長",
       "kanji-間",
       "kanji-雨",
       "kanji-題"
     ],
-    "curriculumIds": [
-      "n4-unit-020"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 206,
     "estimatedReadingSeconds": 69,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n4-medium-019",
@@ -5906,10 +5802,7 @@
       "specific-detail": 1,
       "true-statement": 1
     },
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-もう-もう",
       "vocab-今日-きょう",
@@ -5932,15 +5825,13 @@
       "kanji-見",
       "kanji-食"
     ],
-    "curriculumIds": [
-      "n5-unit-037"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 106,
     "estimatedReadingSeconds": 45,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-002",
@@ -5964,9 +5855,7 @@
       "specific-detail": 1,
       "vocabulary-context": 1
     },
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-今日-きょう",
@@ -5986,15 +5875,13 @@
       "kanji-聞",
       "kanji-行"
     ],
-    "curriculumIds": [
-      "n5-unit-038"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 2,
     "characterCount": 112,
     "estimatedReadingSeconds": 47,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-003",
@@ -6018,9 +5905,7 @@
       "sequence-order": 1,
       "specific-detail": 1
     },
-    "grammarIds": [
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-もう-もう",
@@ -6045,15 +5930,13 @@
       "kanji-読",
       "kanji-長"
     ],
-    "curriculumIds": [
-      "n5-unit-039"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 104,
     "estimatedReadingSeconds": 44,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-004",
@@ -6077,10 +5960,7 @@
       "specific-detail": 1,
       "true-statement": 1
     },
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-もう-もう",
       "vocab-今日-きょう",
@@ -6110,15 +5990,13 @@
       "kanji-行",
       "kanji-見"
     ],
-    "curriculumIds": [
-      "n5-unit-040"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 108,
     "estimatedReadingSeconds": 45,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-005",
@@ -6142,10 +6020,7 @@
       "specific-detail": 1,
       "vocabulary-context": 1
     },
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-今日-きょう",
@@ -6169,15 +6044,13 @@
       "kanji-聞",
       "kanji-食"
     ],
-    "curriculumIds": [
-      "n5-unit-041"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 108,
     "estimatedReadingSeconds": 45,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-006",
@@ -6201,9 +6074,7 @@
       "sequence-order": 1,
       "specific-detail": 1
     },
-    "grammarIds": [
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-では-では",
@@ -6228,15 +6099,13 @@
       "kanji-見",
       "kanji-車"
     ],
-    "curriculumIds": [
-      "n5-unit-042"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 100,
     "estimatedReadingSeconds": 42,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-007",
@@ -6260,10 +6129,7 @@
       "specific-detail": 1,
       "true-statement": 1
     },
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-もう-もう",
       "vocab-今日-きょう",
@@ -6287,15 +6153,13 @@
       "kanji-行",
       "kanji-見"
     ],
-    "curriculumIds": [
-      "n5-unit-001"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 104,
     "estimatedReadingSeconds": 44,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-008",
@@ -6319,9 +6183,7 @@
       "specific-detail": 1,
       "vocabulary-context": 1
     },
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-その-その",
@@ -6342,15 +6204,13 @@
       "kanji-本",
       "kanji-聞"
     ],
-    "curriculumIds": [
-      "n5-unit-002"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 2,
     "characterCount": 103,
     "estimatedReadingSeconds": 43,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-009",
@@ -6374,9 +6234,7 @@
       "sequence-order": 1,
       "specific-detail": 1
     },
-    "grammarIds": [
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-もう-もう",
@@ -6412,15 +6270,13 @@
       "kanji-見",
       "kanji-読"
     ],
-    "curriculumIds": [
-      "n5-unit-003"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 105,
     "estimatedReadingSeconds": 44,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-010",
@@ -6444,10 +6300,7 @@
       "specific-detail": 1,
       "true-statement": 1
     },
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-いつ-いつ",
       "vocab-では-では",
@@ -6470,15 +6323,13 @@
       "kanji-聞",
       "kanji-見"
     ],
-    "curriculumIds": [
-      "n5-unit-004"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 109,
     "estimatedReadingSeconds": 46,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-011",
@@ -6502,9 +6353,7 @@
       "specific-detail": 1,
       "vocabulary-context": 1
     },
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-一つ-ひとつ",
@@ -6535,15 +6384,13 @@
       "kanji-聞",
       "kanji-見"
     ],
-    "curriculumIds": [
-      "n5-unit-005"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 0,
     "characterCount": 109,
     "estimatedReadingSeconds": 46,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-012",
@@ -6567,9 +6414,7 @@
       "sequence-order": 1,
       "specific-detail": 1
     },
-    "grammarIds": [
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-その-その",
@@ -6595,15 +6440,13 @@
       "kanji-読",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n5-unit-006"
-    ],
+    "curriculumIds": [],
     "glossaryCount": 1,
     "characterCount": 106,
     "estimatedReadingSeconds": 45,
-    "releaseReady": false,
-    "lifecycleExclusion": "curriculum-parent-not-release-ready",
-    "reviewStatus": "development-only"
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "reviewStatus": "approved"
   },
   {
     "passageId": "reading-passage-n5-medium-013",

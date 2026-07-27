@@ -316,6 +316,7 @@ export async function buildSourceRegistry(): Promise<SourceRegistryEntry[]> {
       ["japango-phase96-kanji-support", "JapanGo Phase 9.6 narrow N4 kanji support corpus", SOURCE_PATHS.phase96KanjiSupport, "canonical"],
       ["japango-phase96-kanji-vocabulary-support", "JapanGo Phase 9.6 narrow N4 kanji vocabulary support", SOURCE_PATHS.phase96KanjiVocabularySupport, "canonical"],
       ["japango-phase10-vocabulary-expansion", "JapanGo Phase 10 curated vocabulary expansion", SOURCE_PATHS.phase10VocabularyExpansion, "canonical"],
+      ["japango-phase3-initial-learning-release", "JapanGo Phase 3 initial reading and listening release selection", SOURCE_PATHS.phase3InitialLearningRelease, "canonical"],
       ["jisho-vocabulary-reference", "Jisho vocabulary comparison reference", SOURCE_PATHS.phase10VocabularyExpansion, "curriculum-reference"],
       ["tanos-vocabulary-reference", "Tanos JLPT vocabulary comparison reference", SOURCE_PATHS.phase10VocabularyExpansion, "curriculum-reference"],
       ["japango-n5-grammar-question-corpus", "JapanGo original N5 grammar question corpus", SOURCE_PATHS.n5GrammarQuestionCorpus, "canonical"],

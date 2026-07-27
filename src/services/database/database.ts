@@ -4,6 +4,8 @@ import { assessmentQuestionSeed } from '@/features/assessment/seed';
 import { n5CurriculumSeed } from '@/features/curriculum/seed';
 import { createLocalId } from '@/utils/id';
 
+import { installBundledCurriculumIfNeeded } from './bundled-curriculum-repository';
+import { ensureFsrsCards } from './fsrs-repository';
 import { runMigrations } from './migrations';
 
 const DATABASE_NAME = 'japango.db';
@@ -83,6 +85,8 @@ async function openAndPrepareDatabase(): Promise<SQLite.SQLiteDatabase> {
   await database.execAsync('PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON;');
   await runMigrations(database);
   await seedDatabase(database);
+  await installBundledCurriculumIfNeeded(database);
+  await ensureFsrsCards(database);
   return database;
 }
 

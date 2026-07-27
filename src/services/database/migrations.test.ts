@@ -50,7 +50,7 @@ describe('SQLite migrations', () => {
     await runMigrations(database);
 
     expect(database.userVersion).toBe(CURRENT_DATABASE_VERSION);
-    expect(database.transactionCount).toBe(7);
+    expect(database.transactionCount).toBe(12);
     expect(
       database.executedSql.filter((sql) => sql.startsWith('PRAGMA user_version =')),
     ).toEqual([
@@ -61,16 +61,21 @@ describe('SQLite migrations', () => {
       'PRAGMA user_version = 5',
       'PRAGMA user_version = 6',
       'PRAGMA user_version = 7',
+      'PRAGMA user_version = 8',
+      'PRAGMA user_version = 9',
+      'PRAGMA user_version = 10',
+      'PRAGMA user_version = 11',
+      'PRAGMA user_version = 12',
     ]);
   });
 
-  it('applies v2 through v7 to an existing v1 database and creates no content rows', async () => {
+  it('applies v2 through v12 to an existing v1 database and creates no content rows', async () => {
     const database = new FakeMigrationDatabase(1);
 
     await runMigrations(database);
 
-    expect(database.transactionCount).toBe(6);
-    expect(database.userVersion).toBe(7);
+    expect(database.transactionCount).toBe(11);
+    expect(database.userVersion).toBe(12);
     const schemaSql = database.executedSql[0] ?? '';
     expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS content_import_batches');
     expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS sentences');
@@ -109,6 +114,19 @@ describe('SQLite migrations', () => {
     expect(database.executedSql[8]).toContain('CREATE TABLE IF NOT EXISTS assessment_blueprints');
     expect(database.executedSql[8]).toContain('CREATE TABLE IF NOT EXISTS assessment_snapshots');
     expect(database.executedSql[8]).toContain('CREATE TABLE IF NOT EXISTS assessment_question_placements');
+    expect(database.executedSql[12]).toContain('CREATE TABLE IF NOT EXISTS curriculum_bundle_state');
+    expect(database.executedSql[12]).toContain('CREATE TABLE IF NOT EXISTS vocabulary_question_bank');
+    expect(database.executedSql[12]).toContain('CREATE TABLE IF NOT EXISTS study_sessions');
+    expect(database.executedSql[14]).toContain('CREATE TABLE IF NOT EXISTS curriculum_content_details');
+    expect(database.executedSql[14]).toContain('CREATE TABLE IF NOT EXISTS kanji_sentence_links');
+    expect(database.executedSql[14]).toContain('CREATE TABLE IF NOT EXISTS canonical_practice_question_bank');
+    expect(database.executedSql[14]).toContain('CREATE TABLE IF NOT EXISTS content_study_sessions');
+    expect(database.executedSql[16]).toContain('CREATE TABLE IF NOT EXISTS fsrs_cards');
+    expect(database.executedSql[16]).toContain('CREATE TABLE IF NOT EXISTS fsrs_review_history');
+    expect(database.executedSql[18]).toContain('CREATE TABLE IF NOT EXISTS practice_sessions');
+    expect(database.executedSql[18]).toContain('CREATE TABLE IF NOT EXISTS mistake_notebook');
+    expect(database.executedSql[20]).toContain('CREATE TABLE IF NOT EXISTS ai_response_cache');
+    expect(database.executedSql[20]).toContain('CREATE TABLE IF NOT EXISTS ai_interaction_history');
   });
 
   it('does nothing when the database is current', async () => {
@@ -142,8 +160,8 @@ describe('SQLite migrations', () => {
     expect(database.transactionCount).toBe(1);
   });
 
-  it('keeps migration definitions contiguous and schema-only through v6', () => {
-    expect(databaseMigrations.map(({ version }) => version)).toEqual([1, 2, 3, 4, 5, 6, 7]);
+  it('keeps migration definitions contiguous and schema-only through v12', () => {
+    expect(databaseMigrations.map(({ version }) => version)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
     expect(databaseMigrations.at(-1)?.version).toBe(CURRENT_DATABASE_VERSION);
     expect(databaseMigrations.every(({ sql }) => !/\bINSERT\s+INTO\b/iu.test(sql))).toBe(true);
   });

@@ -503,12 +503,10 @@
       "kanji-切",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-問",
       "kanji-場",
       "kanji-大",
       "kanji-始",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
       "kanji-意",
@@ -527,9 +525,7 @@
       "kanji-間",
       "kanji-題"
     ],
-    "curriculumIds": [
-      "n4-unit-029"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -594,19 +590,15 @@
       "kanji-発",
       "kanji-私",
       "kanji-行",
-      "kanji-言",
       "kanji-話",
       "kanji-読",
-      "kanji-買",
       "kanji-送",
       "kanji-間",
       "kanji-電",
       "kanji-青",
       "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-030"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -669,12 +661,9 @@
       "kanji-話",
       "kanji-読",
       "kanji-送",
-      "kanji-道",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-031"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -735,18 +724,14 @@
       "kanji-物",
       "kanji-用",
       "kanji-発",
-      "kanji-言",
       "kanji-話",
       "kanji-読",
       "kanji-送",
       "kanji-間",
       "kanji-集",
-      "kanji-電",
-      "kanji-飲"
+      "kanji-電"
     ],
-    "curriculumIds": [
-      "n4-unit-032"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -799,12 +784,10 @@
       "kanji-前",
       "kanji-午",
       "kanji-友",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
       "kanji-意",
-      "kanji-手",
       "kanji-日",
       "kanji-早",
       "kanji-時",
@@ -819,9 +802,7 @@
       "kanji-送",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-033"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -877,7 +858,6 @@
       "kanji-待",
       "kanji-意",
       "kanji-持",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -894,9 +874,7 @@
       "kanji-青",
       "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-034"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -947,7 +925,6 @@
       "kanji-大",
       "kanji-始",
       "kanji-室",
-      "kanji-店",
       "kanji-意",
       "kanji-日",
       "kanji-時",
@@ -961,9 +938,7 @@
       "kanji-開",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-035"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1029,9 +1004,7 @@
       "kanji-集",
       "kanji-電"
     ],
-    "curriculumIds": [
-      "n4-unit-036"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1088,11 +1061,9 @@
       "kanji-出",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
-      "kanji-少",
       "kanji-後",
       "kanji-意",
       "kanji-日",
@@ -1107,9 +1078,7 @@
       "kanji-送",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-037"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1160,7 +1129,6 @@
       "kanji-図",
       "kanji-大",
       "kanji-始",
-      "kanji-少",
       "kanji-待",
       "kanji-後",
       "kanji-意",
@@ -1182,9 +1150,7 @@
       "kanji-青",
       "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-038"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1248,15 +1214,12 @@
       "kanji-物",
       "kanji-用",
       "kanji-発",
-      "kanji-花",
       "kanji-話",
       "kanji-読",
       "kanji-送",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-001"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1313,7 +1276,6 @@
       "kanji-始",
       "kanji-後",
       "kanji-意",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -1333,9 +1295,7 @@
       "kanji-電",
       "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-002"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1386,7 +1346,6 @@
       "kanji-切",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-台",
       "kanji-場",
       "kanji-外",
@@ -1401,16 +1360,13 @@
       "kanji-着",
       "kanji-知",
       "kanji-読",
-      "kanji-足",
       "kanji-近",
       "kanji-送",
       "kanji-間",
       "kanji-雨",
       "kanji-風"
     ],
-    "curriculumIds": [
-      "n4-unit-003"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1479,12 +1435,9 @@
       "kanji-間",
       "kanji-電",
       "kanji-青",
-      "kanji-館",
-      "kanji-駅"
+      "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-004"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1560,9 +1513,7 @@
       "kanji-送",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-005"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1634,9 +1585,7 @@
       "kanji-集",
       "kanji-電"
     ],
-    "curriculumIds": [
-      "n4-unit-006"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1684,12 +1633,10 @@
     ],
     "kanjiIds": [
       "kanji-一",
-      "kanji-会",
       "kanji-入",
       "kanji-出",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
@@ -1702,7 +1649,6 @@
       "kanji-用",
       "kanji-発",
       "kanji-着",
-      "kanji-社",
       "kanji-私",
       "kanji-読",
       "kanji-近",
@@ -1710,9 +1656,7 @@
       "kanji-通",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n4-unit-007"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -1768,7 +1712,6 @@
       "kanji-後",
       "kanji-意",
       "kanji-持",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -1785,9 +1728,7 @@
       "kanji-青",
       "kanji-館"
     ],
-    "curriculumIds": [
-      "n4-unit-008"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.9,
@@ -6214,9 +6155,7 @@
     "speechNormalizedTranscript": "きょうはよていについてはなします。\nでんしゃよりばすのほうがやすいです。\nでは、ごぜんはちじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nばしょはいりぐちのちかくでいいですか。\nはい。ついたられんらくしてください。",
     "translation": "Today I will talk about schedules. The bus is cheaper than the train. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-yori-nohouga"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6244,9 +6183,7 @@
       "kanji-間",
       "kanji-電"
     ],
-    "curriculumIds": [
-      "n5-unit-025"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6276,9 +6213,7 @@
         "outOfLevel": true
       }
     ],
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6300,9 +6235,7 @@
       "kanji-間",
       "kanji-雨"
     ],
-    "curriculumIds": [
-      "n5-unit-026"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6325,9 +6258,7 @@
     "speechNormalizedTranscript": "きんじょでひとつこまったことがあります。\nわたしわかいしゃいんです。\nでは、ごぜんじゅうじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nにかいのきゅうけいしつではなしてもいいですか。\nはい。さきにせきをとっておきます。",
     "translation": "There is one problem involving the neighbourhood. I am an office worker. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-desu"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6351,9 +6282,7 @@
       "kanji-話",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n5-unit-027"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6376,9 +6305,7 @@
     "speechNormalizedTranscript": "きまりのあたらしいほうほうをせつめいします。\nさむいから、まどをしめます。\nでは、ごごいちじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nうけつけのよこにあつまるのはどうですか。\nわかりました。おくれるときはでんわします。",
     "translation": "I will explain a new approach to rules. It is cold, so I will close the window. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-kara-reason-conjunction"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6400,9 +6327,7 @@
       "kanji-間",
       "kanji-電"
     ],
-    "curriculumIds": [
-      "n5-unit-028"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6432,9 +6357,7 @@
         "outOfLevel": true
       }
     ],
-    "grammarIds": [
-      "grammar-kedo"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6457,9 +6380,7 @@
       "kanji-行",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n5-unit-029"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6482,9 +6403,7 @@
     "speechNormalizedTranscript": "いえのことでそうだんがあります。\nいっしょにひるごはんをたべませんか。\nでは、ごごさんじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nとしょかんのまえでまちあわせませんか。\nいいですね。わたしはあおいかばんをもっていきます。",
     "translation": "I would like advice about home. Would you like to have lunch together? Then, shall we start at 3:00 p.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-masenka"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6510,9 +6429,7 @@
       "kanji-間",
       "kanji-食"
     ],
-    "curriculumIds": [
-      "n5-unit-030"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6535,9 +6452,7 @@
     "speechNormalizedTranscript": "きょうはりょうりについてはなします。\nつぎのえきでおりましょう。\nでは、ごごよじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nにかいのきゅうけいしつではなしてもいいですか。\nはい。さきにせきをとっておきます。",
     "translation": "Today I will talk about cooking. Let's get off at the next station. Then, shall we start at 4:00 p.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-mashou"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6562,9 +6477,7 @@
       "kanji-話",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n5-unit-031"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6587,9 +6500,7 @@
     "speechNormalizedTranscript": "よやくのよていをかくにんします。\nまどをしめましょうか。\nでは、ごごごじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nうけつけのよこにあつまるのはどうですか。\nわかりました。おくれるときはでんわします。",
     "translation": "I will confirm the plan for appointments. Shall I close the window? Then, shall we start at 5:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-mashouka"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6609,9 +6520,7 @@
       "kanji-間",
       "kanji-電"
     ],
-    "curriculumIds": [
-      "n5-unit-032"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6634,9 +6543,7 @@
     "speechNormalizedTranscript": "けんこうでひとつこまったことがあります。\nこのとびらをあけないでください。\nでは、ごぜんはちじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nばしょはいりぐちのちかくでいいですか。\nはい。ついたられんらくしてください。",
     "translation": "There is one problem involving health. Please do not open this door. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-naidekudasai"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-その-その",
@@ -6658,9 +6565,7 @@
       "kanji-時",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n5-unit-033"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6683,9 +6588,7 @@
     "speechNormalizedTranscript": "やどのあたらしいほうほうをせつめいします。\nこんやわでかけないほうがいいです。\nでは、ごぜんくじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nとしょかんのまえでまちあわせませんか。\nいいですね。わたしはあおいかばんをもっていきます。",
     "translation": "I will explain a new approach to accommodation. You had better not go out tonight. Then, shall we start at 9:00 a.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-naihougaii"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6708,9 +6611,7 @@
       "kanji-行",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n5-unit-034"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6733,9 +6634,7 @@
     "speechNormalizedTranscript": "おとしものについてたいせつなおしらせです。\nここでわくつをぬがなくてわいけません。\nでは、ごぜんじゅうじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nにかいのきゅうけいしつではなしてもいいですか。\nはい。さきにせきをとっておきます。",
     "translation": "This is an important update about lost items. You have to take off your shoes here. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-nakutehaikenai"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-ここ-ここ",
       "vocab-その-その",
@@ -6758,9 +6657,7 @@
       "kanji-話",
       "kanji-間"
     ],
-    "curriculumIds": [
-      "n5-unit-035"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,
@@ -6783,9 +6680,7 @@
     "speechNormalizedTranscript": "けいかくのことでそうだんがあります。\nそらがだんだんくらくなりました。\nでは、ごごいちじにはじめますか。\nはい。そのじかんならだいじょうぶです。\nうけつけのよこにあつまるのはどうですか。\nわかりました。おくれるときはでんわします。",
     "translation": "I would like advice about plans. The sky gradually became dark. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late.",
     "glossary": [],
-    "grammarIds": [
-      "grammar-ninaru"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6805,9 +6700,7 @@
       "kanji-間",
       "kanji-電"
     ],
-    "curriculumIds": [
-      "n5-unit-036"
-    ],
+    "curriculumIds": [],
     "playback": {
       "locale": "ja-JP",
       "learningRate": 0.85,

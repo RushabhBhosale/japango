@@ -311,7 +311,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-002",
@@ -337,7 +337,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-003",
@@ -363,7 +363,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-004",
@@ -389,7 +389,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-005",
@@ -415,7 +415,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-006",
@@ -441,7 +441,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-007",
@@ -467,7 +467,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-008",
@@ -493,7 +493,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-009",
@@ -519,7 +519,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-010",
@@ -545,7 +545,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-011",
@@ -571,7 +571,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-012",
@@ -597,7 +597,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-013",
@@ -623,7 +623,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-014",
@@ -649,7 +649,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-015",
@@ -675,7 +675,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-016",
@@ -701,7 +701,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-017",
@@ -727,7 +727,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-018",
@@ -753,7 +753,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n4-dialogue-019",
@@ -2495,7 +2495,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-002",
@@ -2521,7 +2521,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-003",
@@ -2547,7 +2547,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-004",
@@ -2573,7 +2573,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-005",
@@ -2599,7 +2599,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-006",
@@ -2625,7 +2625,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-007",
@@ -2651,7 +2651,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-008",
@@ -2677,7 +2677,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-009",
@@ -2703,7 +2703,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-010",
@@ -2729,7 +2729,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-011",
@@ -2755,7 +2755,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-012",
@@ -2781,7 +2781,7 @@
     },
     "transcriptHidden": true,
     "translationHidden": true,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "activityId": "listening-activity-n5-dialogue-013",

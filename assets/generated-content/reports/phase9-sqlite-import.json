@@ -1,3 +1,20 @@
 {
-  "status": "Use existing verifier after build; Phase 9 records use existing schemas."
+  "schemaVersion": 1,
+  "profile": "development",
+  "engine": "sqlite3",
+  "databaseVersion": 7,
+  "checksum": "sha256:0fc699c34ff6511ba09d019bfc6964dfe8674354fac4876b82d2f67f74849fdd",
+  "migration": "v7 curriculum_audit_records and curriculum_audit_review_view",
+  "n5GrammarQuestionsImported": 992,
+  "n5GrammarQuestionOptionsImported": 3968,
+  "n4KanjiAuditCandidatesImported": 10,
+  "lifecycle": {
+    "reviewRequiredQuestions": 89,
+    "reviewRequiredKanji": 10,
+    "releaseReadyAddedRecords": 0
+  },
+  "foreignKeys": "pass",
+  "transaction": "pass",
+  "idempotentRerun": "pass",
+  "immutablePhase8Snapshots": "preserved"
 }

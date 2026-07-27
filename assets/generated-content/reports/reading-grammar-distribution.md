@@ -20,5 +20,5 @@
 | grammar-n4-temo-concession | 4 |
 | grammar-n4-yasui | 2 |
 | grammar-n4-you-ni-suru | 7 |
-| grammar-node | 60 |
-| grammar-tekara | 31 |
+| grammar-node | 37 |
+| grammar-tekara | 20 |

@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { router, useFocusEffect } from 'expo-router';
+import { router, useFocusEffect, type Href } from 'expo-router';
 
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
@@ -14,20 +14,25 @@ import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { getProgressSummary } from '@/services/database/progress-repository';
+import { getExamAnalytics } from '@/services/database/exam-repository';
 import { useAppStore } from '@/store/app-store';
 import type { ProgressSummary } from '@/types/learning';
+import type { ExamAnalytics } from '@/types/exam';
 
 export default function HomeScreen() {
   const theme = useTheme();
   const profile = useAppStore((state) => state.profile);
   const [summary, setSummary] = useState<ProgressSummary>();
+  const [examAnalytics, setExamAnalytics] = useState<ExamAnalytics>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   const load = useCallback(async () => {
     setError(false);
     try {
-      setSummary(await getProgressSummary());
+      const [progress, exams] = await Promise.all([getProgressSummary(), getExamAnalytics()]);
+      setSummary(progress);
+      setExamAnalytics(exams);
     } catch {
       setError(true);
     } finally {
@@ -69,7 +74,7 @@ export default function HomeScreen() {
           <View style={styles.planCopy}>
             <ThemedText type="smallBold" style={{ color: theme.primary }}>TODAY’S RECOMMENDATION</ThemedText>
             <ThemedText type="subtitle">
-              {assessed ? (summary.weakCount ? 'Strengthen a weak area' : 'Build your N5 rhythm') : 'Find your starting point'}
+              {assessed ? (summary.dueCount ? 'Complete today’s reviews' : 'Build your N5 rhythm') : 'Find your starting point'}
             </ThemedText>
           </View>
           <View style={[styles.minutes, { backgroundColor: theme.surface }]}>
@@ -79,7 +84,7 @@ export default function HomeScreen() {
         </View>
         <ThemedText themeColor="textSecondary">
           {assessed
-            ? `${summary.weakCount} weak and ${summary.dueCount} due items will shape your next session.`
+            ? `${summary.dueCount} reviews and ${summary.scheduler.newCards} new cards are ready. About ${summary.scheduler.estimatedStudyMinutes} minutes.`
             : 'A short 20-question check will create your first local learning plan.'}
         </ThemedText>
         <AppButton
@@ -94,8 +99,8 @@ export default function HomeScreen() {
           <ThemedText type="small" themeColor="textSecondary">Due reviews</ThemedText>
         </Card>
         <Card style={styles.statCard}>
-          <ThemedText style={[styles.statValue, { color: theme.error }]}>{summary.weakCount}</ThemedText>
-          <ThemedText type="small" themeColor="textSecondary">Weak items</ThemedText>
+          <ThemedText style={[styles.statValue, { color: theme.error }]}>{summary.scheduler.learningCards}</ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">Learning cards</ThemedText>
         </Card>
         <Card style={styles.statCard}>
           <ThemedText style={[styles.statValue, { color: theme.success }]}>{summary.statusCounts.mastered}</ThemedText>
@@ -120,7 +125,14 @@ export default function HomeScreen() {
       <SectionHeading title="What you’re improving" />
       <Card>
         <ThemedText type="heading">{focusText}</ThemedText>
-        <ThemedText themeColor="textSecondary">Your plan favours weak and overdue N5 items while keeping practice manageable.</ThemedText>
+        <ThemedText themeColor="textSecondary">{summary.scheduler.currentStreak}-day streak · {summary.scheduler.retention}% recent retention · {summary.scheduler.dueTomorrow} cards due tomorrow.</ThemedText>
+      </Card>
+
+      <SectionHeading title="Mock exam readiness" />
+      <Card>
+        <ThemedText type="heading">{examAnalytics?.completedMocks ? `${examAnalytics.readiness}% estimated readiness` : 'Take a first mock exam'}</ThemedText>
+        <ThemedText themeColor="textSecondary">{examAnalytics?.completedMocks ? `${examAnalytics.completedMocks} completed mocks · best ${examAnalytics.highestMockScore ?? 0}%` : 'A short offline mock will establish an exam baseline.'}</ThemedText>
+        <AppButton label="Practice & mock exams" variant="quiet" onPress={() => router.push('/exams' as Href)} />
       </Card>
     </ScreenContainer>
   );

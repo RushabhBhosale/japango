@@ -230,7 +230,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-001-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -248,7 +248,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-001-simple-inference-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -266,7 +266,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-001-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -284,7 +284,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-002-information-matching-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -302,7 +302,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-002-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -320,7 +320,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-002-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -338,7 +338,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-003-speaker-intention-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -356,7 +356,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-003-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -374,7 +374,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-003-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -392,7 +392,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-004-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -410,7 +410,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-004-speaker-relationship-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -428,7 +428,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-004-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -446,7 +446,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-005-reference-resolution-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -464,7 +464,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-005-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -482,7 +482,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-005-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -500,7 +500,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-006-simple-inference-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -518,7 +518,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-006-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -536,7 +536,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-006-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -554,7 +554,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-007-information-matching-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -572,7 +572,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-007-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -590,7 +590,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-007-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -608,7 +608,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-008-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -626,7 +626,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-008-speaker-intention-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -644,7 +644,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-008-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -662,7 +662,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-009-speaker-relationship-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -680,7 +680,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-009-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -698,7 +698,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-009-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -716,7 +716,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-010-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -734,7 +734,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-010-reference-resolution-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -752,7 +752,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-010-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -770,7 +770,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-011-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -788,7 +788,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-011-simple-inference-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -806,7 +806,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-011-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -824,7 +824,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-012-information-matching-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -842,7 +842,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-012-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -860,7 +860,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-012-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -878,7 +878,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-013-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -896,7 +896,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-013-speaker-intention-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -914,7 +914,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-013-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -932,7 +932,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-014-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -950,7 +950,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-014-speaker-relationship-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -968,7 +968,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-014-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -986,7 +986,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-015-reference-resolution-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1004,7 +1004,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-015-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1022,7 +1022,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-015-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1040,7 +1040,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-016-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1058,7 +1058,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-016-simple-inference-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1076,7 +1076,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-016-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1094,7 +1094,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-017-information-matching-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1112,7 +1112,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-017-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1130,7 +1130,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-017-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1148,7 +1148,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-018-speaker-intention-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1166,7 +1166,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-018-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -1184,7 +1184,7 @@
     "targetRelationships": [
       "question-target-listening-n4-dialogue-018-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4766,7 +4766,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-001-information-matching-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4784,7 +4784,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-001-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4802,7 +4802,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-001-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4820,7 +4820,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-002-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4838,7 +4838,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-002-speaker-intention-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4856,7 +4856,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-002-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4874,7 +4874,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-003-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4892,7 +4892,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-003-speaker-relationship-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4910,7 +4910,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-003-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4928,7 +4928,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-004-reference-resolution-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4946,7 +4946,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-004-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4964,7 +4964,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-004-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -4982,7 +4982,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-005-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5000,7 +5000,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-005-simple-inference-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5018,7 +5018,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-005-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5036,7 +5036,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-006-information-matching-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5054,7 +5054,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-006-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5072,7 +5072,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-006-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5090,7 +5090,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-007-speaker-intention-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5108,7 +5108,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-007-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5126,7 +5126,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-007-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5144,7 +5144,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-008-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5162,7 +5162,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-008-speaker-relationship-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5180,7 +5180,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-008-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5198,7 +5198,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-009-reference-resolution-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5216,7 +5216,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-009-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5234,7 +5234,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-009-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5252,7 +5252,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-010-simple-inference-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5270,7 +5270,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-010-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5288,7 +5288,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-010-what-happens-next-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5306,7 +5306,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-011-information-matching-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5324,7 +5324,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-011-reason-for-action-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5342,7 +5342,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-011-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5360,7 +5360,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-012-sequence-3"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5378,7 +5378,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-012-speaker-intention-2"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {
@@ -5396,7 +5396,7 @@
     "targetRelationships": [
       "question-target-listening-n5-dialogue-012-specific-detail-1"
     ],
-    "releaseReady": false,
+    "releaseReady": true,
     "reviewStatus": "approved-development-only"
   },
   {

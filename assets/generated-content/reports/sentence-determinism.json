@@ -9,8 +9,8 @@
         "canonicalN4": "sha256:5307a078fcd4d119b0634c41378cea501d01a425a9f2b1d80f2023916f84dc59",
         "combinedSentences": "sha256:6fd028d3823bd4c3b664a8ad3da8fb6cec9a5640f1c8f5c706c8a70bcd1ab63e",
         "grammarExampleViews": "sha256:4bc30e156b8dffd4f95bbc20d2a922d2be0684d457d8b7c6fb7887cf1743fb25",
-        "compactRelease": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
-        "compactDevelopment": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602"
+        "compactRelease": "sha256:69f5a89d021c5fba37af12180a1e8bf100d9a16654983dd76ff6e37efec91a84",
+        "compactDevelopment": "sha256:0fc699c34ff6511ba09d019bfc6964dfe8674354fac4876b82d2f67f74849fdd"
       }
     },
     {
@@ -20,8 +20,8 @@
         "canonicalN4": "sha256:5307a078fcd4d119b0634c41378cea501d01a425a9f2b1d80f2023916f84dc59",
         "combinedSentences": "sha256:6fd028d3823bd4c3b664a8ad3da8fb6cec9a5640f1c8f5c706c8a70bcd1ab63e",
         "grammarExampleViews": "sha256:4bc30e156b8dffd4f95bbc20d2a922d2be0684d457d8b7c6fb7887cf1743fb25",
-        "compactRelease": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
-        "compactDevelopment": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602"
+        "compactRelease": "sha256:69f5a89d021c5fba37af12180a1e8bf100d9a16654983dd76ff6e37efec91a84",
+        "compactDevelopment": "sha256:0fc699c34ff6511ba09d019bfc6964dfe8674354fac4876b82d2f67f74849fdd"
       }
     }
   ],

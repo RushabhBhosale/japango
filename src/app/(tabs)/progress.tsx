@@ -14,8 +14,10 @@ import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { getProgressSummary } from '@/services/database/progress-repository';
+import { getExamAnalytics } from '@/services/database/exam-repository';
 import { useAppStore } from '@/store/app-store';
 import type { MasteryStatus, ProgressSummary } from '@/types/learning';
+import type { ExamAnalytics } from '@/types/exam';
 
 const statusLabels: Record<MasteryStatus, string> = {
   new: 'New',
@@ -29,13 +31,16 @@ export default function ProgressScreen() {
   const theme = useTheme();
   const profile = useAppStore((state) => state.profile);
   const [summary, setSummary] = useState<ProgressSummary>();
+  const [examAnalytics, setExamAnalytics] = useState<ExamAnalytics>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   const load = useCallback(async () => {
     setError(false);
     try {
-      setSummary(await getProgressSummary());
+      const [progress, exams] = await Promise.all([getProgressSummary(), getExamAnalytics()]);
+      setSummary(progress);
+      setExamAnalytics(exams);
     } catch {
       setError(true);
     } finally {
@@ -100,6 +105,23 @@ export default function ProgressScreen() {
         ))}
       </View>
 
+      <SectionHeading title="Review system" detail={`${summary.scheduler.estimatedStudyMinutes} min queued`} />
+      <Card>
+        <View style={styles.reviewMetrics}>
+          <View style={styles.reviewMetric}><ThemedText type="heading">{summary.scheduler.reviewsToday}</ThemedText><ThemedText type="small" themeColor="textSecondary">Today</ThemedText></View>
+          <View style={styles.reviewMetric}><ThemedText type="heading">{summary.scheduler.averageAccuracy}%</ThemedText><ThemedText type="small" themeColor="textSecondary">Accuracy</ThemedText></View>
+          <View style={styles.reviewMetric}><ThemedText type="heading">{summary.scheduler.retention}%</ThemedText><ThemedText type="small" themeColor="textSecondary">Retention</ThemedText></View>
+        </View>
+        <ThemedText themeColor="textSecondary">{summary.scheduler.currentStreak}-day current streak · {summary.scheduler.longestStreak}-day best · {summary.scheduler.matureCards} mature cards</ThemedText>
+        <ThemedText type="small" themeColor="textSecondary">{summary.scheduler.reviewsThisWeek} reviews this week · {summary.scheduler.reviewsThisMonth} this month · {summary.scheduler.dueTomorrow} due tomorrow</ThemedText>
+      </Card>
+
+      <SectionHeading title="Mock exam trend" />
+      <Card>
+        <ThemedText type="heading">{examAnalytics?.completedMocks ? `${examAnalytics.averageMockScore ?? 0}% average mock score` : 'No mock exams yet'}</ThemedText>
+        <ThemedText themeColor="textSecondary">{examAnalytics?.completedMocks ? `Best ${examAnalytics.highestMockScore ?? 0}% · ${examAnalytics.improvement === undefined ? 'first baseline' : `${examAnalytics.improvement >= 0 ? '+' : ''}${examAnalytics.improvement}% over time`} · strongest ${examAnalytics.strongestSection ?? '—'} · weakest ${examAnalytics.weakestSection ?? '—'}` : 'Mock-exam analytics will appear after your first completed exam.'}</ThemedText>
+      </Card>
+
       <SectionHeading title="Weak areas" />
       <Card>
         <ThemedText type="heading">
@@ -151,5 +173,7 @@ const styles = StyleSheet.create({
   masteryCards: { flexDirection: 'row', gap: Spacing.two },
   masteryCard: { flex: 1, minWidth: 0, padding: 12 },
   masteryNumber: { fontSize: 30, lineHeight: 36, fontWeight: '800' },
+  reviewMetrics: { flexDirection: 'row', gap: Spacing.two },
+  reviewMetric: { flex: 1, minWidth: 0, gap: 2 },
   attempt: { minHeight: 58, flexDirection: 'row', alignItems: 'center', gap: Spacing.two, paddingVertical: Spacing.two },
 });

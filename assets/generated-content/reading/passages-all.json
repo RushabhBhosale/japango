@@ -56,20 +56,16 @@
       "kanji-出",
       "kanji-前",
       "kanji-南",
-      "kanji-口",
       "kanji-右",
       "kanji-同",
       "kanji-場",
-      "kanji-安",
       "kanji-屋",
       "kanji-度",
       "kanji-後",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-本",
       "kanji-歩",
-      "kanji-目",
       "kanji-知",
       "kanji-終",
       "kanji-考",
@@ -78,12 +74,9 @@
       "kanji-行",
       "kanji-試",
       "kanji-銀",
-      "kanji-青",
-      "kanji-駅"
+      "kanji-青"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-003"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-001-main-idea-1",
       "question-reading-n4-medium-001-reference-resolution-4",
@@ -92,6 +85,7 @@
     ],
     "estimatedReadingSeconds": 73,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -101,13 +95,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -136,8 +128,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -165,12 +156,9 @@
       "kanji-同",
       "kanji-図",
       "kanji-場",
-      "kanji-多",
       "kanji-帰",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
-      "kanji-手",
       "kanji-日",
       "kanji-早",
       "kanji-書",
@@ -185,9 +173,7 @@
       "kanji-試",
       "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-004"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-002-main-idea-1",
       "question-reading-n4-medium-002-sequence-order-3",
@@ -196,6 +182,7 @@
     ],
     "estimatedReadingSeconds": 72,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -205,13 +192,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -240,8 +225,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -273,7 +257,6 @@
       "kanji-前",
       "kanji-同",
       "kanji-小",
-      "kanji-少",
       "kanji-屋",
       "kanji-広",
       "kanji-度",
@@ -292,9 +275,7 @@
       "kanji-重",
       "kanji-風"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-005"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-003-grammar-context-4",
       "question-reading-n4-medium-003-main-idea-1",
@@ -303,6 +284,7 @@
     ],
     "estimatedReadingSeconds": 71,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -312,13 +294,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -347,8 +327,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-いつ-いつ",
@@ -383,7 +362,6 @@
       "kanji-友",
       "kanji-問",
       "kanji-土",
-      "kanji-少",
       "kanji-待",
       "kanji-後",
       "kanji-日",
@@ -398,12 +376,9 @@
       "kanji-行",
       "kanji-試",
       "kanji-質",
-      "kanji-食",
-      "kanji-飲"
+      "kanji-食"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-006"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-004-main-idea-1",
       "question-reading-n4-medium-004-sequence-order-3",
@@ -412,6 +387,7 @@
     ],
     "estimatedReadingSeconds": 73,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -421,13 +397,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -456,8 +430,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-te-miru",
-      "grammar-node"
+      "grammar-n4-te-miru"
     ],
     "vocabularyIds": [
       "vocab-もう-もう",
@@ -481,14 +454,11 @@
     ],
     "kanjiIds": [
       "kanji-一",
-      "kanji-会",
       "kanji-作",
       "kanji-六",
       "kanji-前",
       "kanji-午",
       "kanji-家",
-      "kanji-少",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
       "kanji-日",
@@ -502,14 +472,10 @@
       "kanji-見",
       "kanji-計",
       "kanji-試",
-      "kanji-買",
-      "kanji-週",
       "kanji-野",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-007"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-005-best-title-4",
       "question-reading-n4-medium-005-main-idea-1",
@@ -518,6 +484,7 @@
     ],
     "estimatedReadingSeconds": 68,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -527,13 +494,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -555,8 +520,7 @@
     ],
     "grammarIds": [
       "grammar-n4-ato-de",
-      "grammar-n4-koto-nominalizer",
-      "grammar-node"
+      "grammar-n4-koto-nominalizer"
     ],
     "vocabularyIds": [
       "vocab-もう-もう",
@@ -592,10 +556,8 @@
       "kanji-十",
       "kanji-午",
       "kanji-場",
-      "kanji-少",
       "kanji-度",
       "kanji-後",
-      "kanji-新",
       "kanji-日",
       "kanji-時",
       "kanji-曜",
@@ -606,15 +568,12 @@
       "kanji-者",
       "kanji-行",
       "kanji-近",
-      "kanji-週",
       "kanji-金",
       "kanji-長",
       "kanji-間",
       "kanji-雨"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-008"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-006-main-idea-1",
       "question-reading-n4-medium-006-reference-resolution-4",
@@ -623,6 +582,7 @@
     ],
     "estimatedReadingSeconds": 68,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -632,13 +592,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -660,8 +618,7 @@
     ],
     "grammarIds": [
       "grammar-n4-nakutemo-ii",
-      "grammar-n4-temo-concession",
-      "grammar-node"
+      "grammar-n4-temo-concession"
     ],
     "vocabularyIds": [
       "vocab-予定-よてい",
@@ -696,7 +653,6 @@
       "kanji-字",
       "kanji-家",
       "kanji-小",
-      "kanji-少",
       "kanji-帰",
       "kanji-後",
       "kanji-日",
@@ -707,20 +663,16 @@
       "kanji-母",
       "kanji-着",
       "kanji-行",
-      "kanji-言",
       "kanji-話",
       "kanji-読",
       "kanji-近",
-      "kanji-週",
       "kanji-間",
       "kanji-雨",
       "kanji-電",
       "kanji-題",
       "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-009"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-007-main-idea-1",
       "question-reading-n4-medium-007-sequence-order-3",
@@ -729,6 +681,7 @@
     ],
     "estimatedReadingSeconds": 66,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -738,13 +691,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -766,8 +717,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-you-ni-suru",
-      "grammar-node"
+      "grammar-n4-you-ni-suru"
     ],
     "vocabularyIds": [
       "vocab-その-その",
@@ -801,7 +751,6 @@
       "kanji-入",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-場",
       "kanji-夕",
       "kanji-夜",
@@ -825,13 +774,10 @@
       "kanji-車",
       "kanji-転",
       "kanji-近",
-      "kanji-週",
       "kanji-間",
       "kanji-雨"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-010"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-008-grammar-context-4",
       "question-reading-n4-medium-008-main-idea-1",
@@ -840,6 +786,7 @@
     ],
     "estimatedReadingSeconds": 71,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -849,13 +796,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -876,9 +821,7 @@
       "daily-routines"
     ],
     "grammarIds": [
-      "grammar-n4-koto-nominalizer",
-      "grammar-node",
-      "grammar-tekara"
+      "grammar-n4-koto-nominalizer"
     ],
     "vocabularyIds": [
       "vocab-その-その",
@@ -912,7 +855,6 @@
       "kanji-大",
       "kanji-天",
       "kanji-字",
-      "kanji-安",
       "kanji-小",
       "kanji-後",
       "kanji-心",
@@ -928,20 +870,16 @@
       "kanji-歩",
       "kanji-気",
       "kanji-物",
-      "kanji-目",
       "kanji-着",
       "kanji-行",
       "kanji-見",
       "kanji-計",
       "kanji-読",
       "kanji-近",
-      "kanji-週",
       "kanji-間",
       "kanji-雨"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-011"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-009-main-idea-1",
       "question-reading-n4-medium-009-sequence-order-3",
@@ -950,6 +888,7 @@
     ],
     "estimatedReadingSeconds": 70,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -959,13 +898,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -987,8 +924,7 @@
     ],
     "grammarIds": [
       "grammar-n4-baai-wa",
-      "grammar-n4-koto-nominalizer",
-      "grammar-node"
+      "grammar-n4-koto-nominalizer"
     ],
     "vocabularyIds": [
       "vocab-お茶-おちゃ",
@@ -1020,12 +956,10 @@
       "kanji-場",
       "kanji-大",
       "kanji-字",
-      "kanji-安",
       "kanji-家",
       "kanji-小",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-日",
       "kanji-昼",
       "kanji-書",
@@ -1033,18 +967,13 @@
       "kanji-知",
       "kanji-茶",
       "kanji-読",
-      "kanji-買",
       "kanji-赤",
       "kanji-近",
       "kanji-重",
       "kanji-雨",
-      "kanji-飯",
-      "kanji-飲",
-      "kanji-魚"
+      "kanji-飯"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-012"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-010-best-title-4",
       "question-reading-n4-medium-010-main-idea-1",
@@ -1053,6 +982,7 @@
     ],
     "estimatedReadingSeconds": 72,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1062,13 +992,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1090,8 +1018,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-made-ni",
-      "grammar-node"
+      "grammar-n4-made-ni"
     ],
     "vocabularyIds": [
       "vocab-その-その",
@@ -1129,14 +1056,12 @@
       "kanji-場",
       "kanji-大",
       "kanji-字",
-      "kanji-安",
       "kanji-家",
       "kanji-小",
       "kanji-度",
       "kanji-後",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-昼",
       "kanji-書",
       "kanji-朝",
@@ -1150,9 +1075,7 @@
       "kanji-電",
       "kanji-館"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-013"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-011-main-idea-1",
       "question-reading-n4-medium-011-reference-resolution-4",
@@ -1161,6 +1084,7 @@
     ],
     "estimatedReadingSeconds": 70,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1170,13 +1094,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1233,12 +1155,10 @@
       "kanji-同",
       "kanji-問",
       "kanji-場",
-      "kanji-安",
       "kanji-度",
       "kanji-後",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-料",
       "kanji-日",
       "kanji-早",
@@ -1252,9 +1172,7 @@
       "kanji-送",
       "kanji-金"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-014"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-012-main-idea-1",
       "question-reading-n4-medium-012-sequence-order-3",
@@ -1263,6 +1181,7 @@
     ],
     "estimatedReadingSeconds": 77,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1272,13 +1191,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1307,8 +1224,7 @@
     ],
     "grammarIds": [
       "grammar-n4-ato-de",
-      "grammar-n4-nagara",
-      "grammar-tekara"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -1337,14 +1253,11 @@
       "kanji-前",
       "kanji-同",
       "kanji-場",
-      "kanji-多",
       "kanji-大",
-      "kanji-安",
       "kanji-度",
       "kanji-後",
       "kanji-心",
       "kanji-急",
-      "kanji-手",
       "kanji-物",
       "kanji-真",
       "kanji-知",
@@ -1358,9 +1271,7 @@
       "kanji-送",
       "kanji-電"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-015"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-013-grammar-context-4",
       "question-reading-n4-medium-013-main-idea-1",
@@ -1369,6 +1280,7 @@
     ],
     "estimatedReadingSeconds": 76,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1378,13 +1290,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1413,8 +1323,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-ごみ-ごみ",
@@ -1449,7 +1358,6 @@
       "kanji-屋",
       "kanji-度",
       "kanji-後",
-      "kanji-手",
       "kanji-日",
       "kanji-早",
       "kanji-書",
@@ -1468,9 +1376,7 @@
       "kanji-開",
       "kanji-飯"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-016"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-014-main-idea-1",
       "question-reading-n4-medium-014-sequence-order-3",
@@ -1479,6 +1385,7 @@
     ],
     "estimatedReadingSeconds": 74,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1488,13 +1395,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1523,8 +1428,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -1551,13 +1455,10 @@
       "kanji-人",
       "kanji-入",
       "kanji-前",
-      "kanji-口",
       "kanji-同",
       "kanji-子",
       "kanji-小",
-      "kanji-少",
       "kanji-広",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
       "kanji-日",
@@ -1570,9 +1471,7 @@
       "kanji-試",
       "kanji-近"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-017"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-015-best-title-4",
       "question-reading-n4-medium-015-main-idea-1",
@@ -1581,6 +1480,7 @@
     ],
     "estimatedReadingSeconds": 70,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1590,13 +1490,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1625,8 +1523,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-nagara",
-      "grammar-node"
+      "grammar-n4-nagara"
     ],
     "vocabularyIds": [
       "vocab-一人-ひとり",
@@ -1658,7 +1555,6 @@
       "kanji-午",
       "kanji-夕",
       "kanji-家",
-      "kanji-少",
       "kanji-後",
       "kanji-方",
       "kanji-日",
@@ -1673,12 +1569,9 @@
       "kanji-試",
       "kanji-運",
       "kanji-院",
-      "kanji-食",
-      "kanji-飲"
+      "kanji-食"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-018"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-016-main-idea-1",
       "question-reading-n4-medium-016-reference-resolution-4",
@@ -1687,6 +1580,7 @@
     ],
     "estimatedReadingSeconds": 69,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1696,13 +1590,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1743,8 +1635,7 @@
     ],
     "grammarIds": [
       "grammar-n4-baai-wa",
-      "grammar-n4-koto-nominalizer",
-      "grammar-node"
+      "grammar-n4-koto-nominalizer"
     ],
     "vocabularyIds": [
       "vocab-予定-よてい",
@@ -1770,7 +1661,6 @@
       "kanji-午",
       "kanji-名",
       "kanji-場",
-      "kanji-少",
       "kanji-待",
       "kanji-後",
       "kanji-持",
@@ -1784,12 +1674,9 @@
       "kanji-自",
       "kanji-行",
       "kanji-試",
-      "kanji-週",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-019"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-017-main-idea-1",
       "question-reading-n4-medium-017-sequence-order-3",
@@ -1798,6 +1685,7 @@
     ],
     "estimatedReadingSeconds": 71,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1807,13 +1695,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -1835,8 +1721,7 @@
     ],
     "grammarIds": [
       "grammar-n4-koto-nominalizer",
-      "grammar-n4-te-oku",
-      "grammar-node"
+      "grammar-n4-te-oku"
     ],
     "vocabularyIds": [
       "vocab-予定-よてい",
@@ -1871,10 +1756,8 @@
       "kanji-問",
       "kanji-場",
       "kanji-夜",
-      "kanji-少",
       "kanji-強",
       "kanji-後",
-      "kanji-新",
       "kanji-日",
       "kanji-時",
       "kanji-曜",
@@ -1886,18 +1769,14 @@
       "kanji-習",
       "kanji-行",
       "kanji-見",
-      "kanji-言",
       "kanji-読",
       "kanji-近",
-      "kanji-週",
       "kanji-長",
       "kanji-間",
       "kanji-雨",
       "kanji-題"
     ],
-    "curriculumUnitIds": [
-      "n4-unit-020"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n4-medium-018-grammar-context-4",
       "question-reading-n4-medium-018-main-idea-1",
@@ -1906,6 +1785,7 @@
     ],
     "estimatedReadingSeconds": 69,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n4"
     ],
     "attribution": [
@@ -1915,13 +1795,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8085,10 +7963,7 @@
     "topicTags": [
       "health"
     ],
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-もう-もう",
       "vocab-今日-きょう",
@@ -8111,9 +7986,7 @@
       "kanji-見",
       "kanji-食"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-037"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-001-main-idea-1",
       "question-reading-n5-medium-001-sequence-order-3",
@@ -8122,6 +7995,7 @@
     ],
     "estimatedReadingSeconds": 45,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8131,13 +8005,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8170,9 +8042,7 @@
     "topicTags": [
       "public-services"
     ],
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-今日-きょう",
@@ -8192,9 +8062,7 @@
       "kanji-聞",
       "kanji-行"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-038"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-002-main-idea-1",
       "question-reading-n5-medium-002-sequence-order-3",
@@ -8203,6 +8071,7 @@
     ],
     "estimatedReadingSeconds": 47,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8212,13 +8081,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8238,9 +8105,7 @@
     "topicTags": [
       "study-habits"
     ],
-    "grammarIds": [
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-もう-もう",
@@ -8265,9 +8130,7 @@
       "kanji-読",
       "kanji-長"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-039"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-003-appropriate-summary-4",
       "question-reading-n5-medium-003-main-idea-1",
@@ -8276,6 +8139,7 @@
     ],
     "estimatedReadingSeconds": 44,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8285,13 +8149,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8311,10 +8173,7 @@
     "topicTags": [
       "family"
     ],
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-もう-もう",
       "vocab-今日-きょう",
@@ -8344,9 +8203,7 @@
       "kanji-行",
       "kanji-見"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-040"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-004-main-idea-1",
       "question-reading-n5-medium-004-sequence-order-3",
@@ -8355,6 +8212,7 @@
     ],
     "estimatedReadingSeconds": 45,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8364,13 +8222,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8390,10 +8246,7 @@
     "topicTags": [
       "cooking"
     ],
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-今日-きょう",
@@ -8417,9 +8270,7 @@
       "kanji-聞",
       "kanji-食"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-041"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-005-main-idea-1",
       "question-reading-n5-medium-005-sequence-order-3",
@@ -8428,6 +8279,7 @@
     ],
     "estimatedReadingSeconds": 45,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8437,13 +8289,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8463,9 +8313,7 @@
     "topicTags": [
       "weather"
     ],
-    "grammarIds": [
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-では-では",
@@ -8490,9 +8338,7 @@
       "kanji-見",
       "kanji-車"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-042"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-006-appropriate-summary-4",
       "question-reading-n5-medium-006-main-idea-1",
@@ -8501,6 +8347,7 @@
     ],
     "estimatedReadingSeconds": 42,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8510,13 +8357,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8536,10 +8381,7 @@
     "topicTags": [
       "events"
     ],
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-もう-もう",
       "vocab-今日-きょう",
@@ -8563,9 +8405,7 @@
       "kanji-行",
       "kanji-見"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-001"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-007-main-idea-1",
       "question-reading-n5-medium-007-sequence-order-3",
@@ -8574,6 +8414,7 @@
     ],
     "estimatedReadingSeconds": 44,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8583,13 +8424,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8622,9 +8461,7 @@
     "topicTags": [
       "mistakes-and-corrections"
     ],
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-その-その",
@@ -8645,9 +8482,7 @@
       "kanji-本",
       "kanji-聞"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-002"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-008-main-idea-1",
       "question-reading-n5-medium-008-sequence-order-3",
@@ -8656,6 +8491,7 @@
     ],
     "estimatedReadingSeconds": 43,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8665,13 +8501,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8691,9 +8525,7 @@
     "topicTags": [
       "friends"
     ],
-    "grammarIds": [
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-もう-もう",
@@ -8729,9 +8561,7 @@
       "kanji-見",
       "kanji-読"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-003"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-009-appropriate-summary-4",
       "question-reading-n5-medium-009-main-idea-1",
@@ -8740,6 +8570,7 @@
     ],
     "estimatedReadingSeconds": 44,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8749,13 +8580,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8775,10 +8604,7 @@
     "topicTags": [
       "transport"
     ],
-    "grammarIds": [
-      "grammar-node",
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-いつ-いつ",
       "vocab-では-では",
@@ -8801,9 +8627,7 @@
       "kanji-聞",
       "kanji-見"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-004"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-010-main-idea-1",
       "question-reading-n5-medium-010-sequence-order-3",
@@ -8812,6 +8636,7 @@
     ],
     "estimatedReadingSeconds": 46,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8821,13 +8646,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8847,9 +8670,7 @@
     "topicTags": [
       "hobbies"
     ],
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-一つ-ひとつ",
@@ -8880,9 +8701,7 @@
       "kanji-聞",
       "kanji-見"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-005"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-011-main-idea-1",
       "question-reading-n5-medium-011-sequence-order-3",
@@ -8891,6 +8710,7 @@
     ],
     "estimatedReadingSeconds": 46,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8900,13 +8720,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,
@@ -8933,9 +8751,7 @@
     "topicTags": [
       "libraries"
     ],
-    "grammarIds": [
-      "grammar-tekara"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-その-その",
@@ -8961,9 +8777,7 @@
       "kanji-読",
       "kanji-間"
     ],
-    "curriculumUnitIds": [
-      "n5-unit-006"
-    ],
+    "curriculumUnitIds": [],
     "questionIds": [
       "question-reading-n5-medium-012-appropriate-summary-4",
       "question-reading-n5-medium-012-main-idea-1",
@@ -8972,6 +8786,7 @@
     ],
     "estimatedReadingSeconds": 45,
     "sourceIds": [
+      "japango-phase3-initial-learning-release",
       "japango-reading-passage-corpus-n5"
     ],
     "attribution": [
@@ -8981,13 +8796,11 @@
       "sourceType": "original-japango",
       "authoringMethod": "original-editorial-authoring"
     },
-    "reviewStatus": "development-only",
-    "releaseBlockers": [
-      "curriculum-parent-not-release-ready"
-    ],
+    "reviewStatus": "approved",
+    "releaseBlockers": [],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false
+    "releaseReady": true
   },
   {
     "schemaVersion": 1,

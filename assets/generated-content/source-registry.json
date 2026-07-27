@@ -234,6 +234,19 @@
     "checksum": "sha256:e393db231f4101277cd987dc57c1b7e62126aa7f748e7af9710cd8072e2db185"
   },
   {
+    "id": "japango-phase3-initial-learning-release",
+    "displayName": "JapanGo Phase 3 initial reading and listening release selection",
+    "localPath": "assets/docs-reference/japango-phase3/initial-learning-release.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo content and metadata",
+    "attributionText": "JapanGo Phase 3 initial reading and listening release selection; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "canonical",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:33d417b97edb34747a96f9e6570de5c82eb5752565ba4dbde33571be1d8f793a"
+  },
+  {
     "id": "japango-phase9-editorial-decisions",
     "displayName": "JapanGo Phase 9 editorial decisions",
     "localPath": "assets/docs-reference/japango-phase9/editorial-decisions.json",

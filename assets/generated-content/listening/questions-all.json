@@ -623,14 +623,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-001-reason-for-action-3-1"
@@ -672,14 +673,15 @@
       "type-simple-inference"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-001-simple-inference-2-1"
@@ -721,14 +723,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-001-specific-detail-1-1"
@@ -770,14 +773,15 @@
       "type-information-matching"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-002-information-matching-2-1"
@@ -819,14 +823,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-002-sequence-3-1"
@@ -868,14 +873,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-002-specific-detail-1-1"
@@ -917,14 +923,15 @@
       "type-speaker-intention"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-003-speaker-intention-2-1"
@@ -966,14 +973,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-003-specific-detail-1-1"
@@ -1015,14 +1023,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-003-what-happens-next-3-1"
@@ -1064,14 +1073,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-004-reason-for-action-3-1"
@@ -1113,14 +1123,15 @@
       "type-speaker-relationship"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-004-speaker-relationship-2-1"
@@ -1162,14 +1173,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-004-specific-detail-1-1"
@@ -1211,14 +1223,15 @@
       "type-reference-resolution"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-005-reference-resolution-2-1"
@@ -1260,14 +1273,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-005-sequence-3-1"
@@ -1309,14 +1323,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-005-specific-detail-1-1"
@@ -1358,14 +1373,15 @@
       "type-simple-inference"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-006-simple-inference-2-1"
@@ -1407,14 +1423,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-006-specific-detail-1-1"
@@ -1456,14 +1473,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-006-what-happens-next-3-1"
@@ -1505,14 +1523,15 @@
       "type-information-matching"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-007-information-matching-2-1"
@@ -1554,14 +1573,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-007-reason-for-action-3-1"
@@ -1603,14 +1623,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-007-specific-detail-1-1"
@@ -1652,14 +1673,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-008-sequence-3-1"
@@ -1701,14 +1723,15 @@
       "type-speaker-intention"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-008-speaker-intention-2-1"
@@ -1750,14 +1773,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-008-specific-detail-1-1"
@@ -1799,14 +1823,15 @@
       "type-speaker-relationship"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-009-speaker-relationship-2-1"
@@ -1848,14 +1873,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-009-specific-detail-1-1"
@@ -1897,14 +1923,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-009-what-happens-next-3-1"
@@ -1946,14 +1973,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-010-reason-for-action-3-1"
@@ -1995,14 +2023,15 @@
       "type-reference-resolution"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-010-reference-resolution-2-1"
@@ -2044,14 +2073,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-010-specific-detail-1-1"
@@ -2093,14 +2123,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-011-sequence-3-1"
@@ -2142,14 +2173,15 @@
       "type-simple-inference"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-011-simple-inference-2-1"
@@ -2191,14 +2223,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-011-specific-detail-1-1"
@@ -2240,14 +2273,15 @@
       "type-information-matching"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-012-information-matching-2-1"
@@ -2289,14 +2323,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-012-specific-detail-1-1"
@@ -2338,14 +2373,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-012-what-happens-next-3-1"
@@ -2387,14 +2423,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-013-reason-for-action-3-1"
@@ -2436,14 +2473,15 @@
       "type-speaker-intention"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-013-speaker-intention-2-1"
@@ -2485,14 +2523,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-013-specific-detail-1-1"
@@ -2534,14 +2573,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-014-sequence-3-1"
@@ -2583,14 +2623,15 @@
       "type-speaker-relationship"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-014-speaker-relationship-2-1"
@@ -2632,14 +2673,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-014-specific-detail-1-1"
@@ -2681,14 +2723,15 @@
       "type-reference-resolution"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-015-reference-resolution-2-1"
@@ -2730,14 +2773,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-015-specific-detail-1-1"
@@ -2779,14 +2823,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-015-what-happens-next-3-1"
@@ -2828,14 +2873,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-016-reason-for-action-3-1"
@@ -2877,14 +2923,15 @@
       "type-simple-inference"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-016-simple-inference-2-1"
@@ -2926,14 +2973,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-016-specific-detail-1-1"
@@ -2975,14 +3023,15 @@
       "type-information-matching"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-017-information-matching-2-1"
@@ -3024,14 +3073,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-017-sequence-3-1"
@@ -3073,14 +3123,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-017-specific-detail-1-1"
@@ -3122,14 +3173,15 @@
       "type-speaker-intention"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-018-speaker-intention-2-1"
@@ -3171,14 +3223,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-018-specific-detail-1-1"
@@ -3220,14 +3273,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n4-dialogue-018-what-happens-next-3-1"
@@ -12971,14 +13025,15 @@
       "type-information-matching"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-001-information-matching-2-1"
@@ -13020,14 +13075,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-001-specific-detail-1-1"
@@ -13069,14 +13125,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-001-what-happens-next-3-1"
@@ -13118,14 +13175,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-002-reason-for-action-3-1"
@@ -13167,14 +13225,15 @@
       "type-speaker-intention"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-002-speaker-intention-2-1"
@@ -13216,14 +13275,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-002-specific-detail-1-1"
@@ -13265,14 +13325,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-003-sequence-3-1"
@@ -13314,14 +13375,15 @@
       "type-speaker-relationship"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-003-speaker-relationship-2-1"
@@ -13363,14 +13425,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-003-specific-detail-1-1"
@@ -13412,14 +13475,15 @@
       "type-reference-resolution"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-004-reference-resolution-2-1"
@@ -13461,14 +13525,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-004-specific-detail-1-1"
@@ -13510,14 +13575,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-004-what-happens-next-3-1"
@@ -13559,14 +13625,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-005-reason-for-action-3-1"
@@ -13608,14 +13675,15 @@
       "type-simple-inference"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-005-simple-inference-2-1"
@@ -13657,14 +13725,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-005-specific-detail-1-1"
@@ -13706,14 +13775,15 @@
       "type-information-matching"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-006-information-matching-2-1"
@@ -13755,14 +13825,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-006-sequence-3-1"
@@ -13804,14 +13875,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-006-specific-detail-1-1"
@@ -13853,14 +13925,15 @@
       "type-speaker-intention"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-007-speaker-intention-2-1"
@@ -13902,14 +13975,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-007-specific-detail-1-1"
@@ -13951,14 +14025,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-007-what-happens-next-3-1"
@@ -14000,14 +14075,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-008-reason-for-action-3-1"
@@ -14049,14 +14125,15 @@
       "type-speaker-relationship"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-008-speaker-relationship-2-1"
@@ -14098,14 +14175,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-008-specific-detail-1-1"
@@ -14147,14 +14225,15 @@
       "type-reference-resolution"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-009-reference-resolution-2-1"
@@ -14196,14 +14275,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-009-sequence-3-1"
@@ -14245,14 +14325,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-009-specific-detail-1-1"
@@ -14294,14 +14375,15 @@
       "type-simple-inference"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-010-simple-inference-2-1"
@@ -14343,14 +14425,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-010-specific-detail-1-1"
@@ -14392,14 +14475,15 @@
       "type-what-happens-next"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-010-what-happens-next-3-1"
@@ -14441,14 +14525,15 @@
       "type-information-matching"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-011-information-matching-2-1"
@@ -14490,14 +14575,15 @@
       "type-reason-for-action"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-011-reason-for-action-3-1"
@@ -14539,14 +14625,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-011-specific-detail-1-1"
@@ -14588,14 +14675,15 @@
       "type-sequence"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-012-sequence-3-1"
@@ -14637,14 +14725,15 @@
       "type-speaker-intention"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-012-speaker-intention-2-1"
@@ -14686,14 +14775,15 @@
       "type-specific-detail"
     ],
     "sourceIds": [
-      "japango-listening-question-corpus"
+      "japango-listening-question-corpus",
+      "japango-phase3-initial-learning-release"
     ],
     "attribution": [
       "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
     ],
     "confidence": 0.96,
     "needsReview": false,
-    "releaseReady": false,
+    "releaseReady": true,
     "responseType": "single-select",
     "correctOptionIds": [
       "question-option-listening-n5-dialogue-012-specific-detail-1-1"

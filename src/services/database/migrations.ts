@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 7;
+export const CURRENT_DATABASE_VERSION = 12;
 
 export interface DatabaseMigration {
   version: number;
@@ -749,6 +749,349 @@ const versionSevenSql = `
     WHERE status IN ('review-required', 'deferred', 'insufficient-evidence');
 `;
 
+// Phase 2 separates the bundled canonical curriculum from learner-owned data.
+// Content upgrades replace only the bundle rows; attempts, mastery, settings,
+// and the assessment snapshot continue to reference their stable item IDs.
+const versionEightSql = `
+  ALTER TABLE curriculum_items ADD COLUMN curriculum_source TEXT NOT NULL DEFAULT 'legacy';
+  ALTER TABLE curriculum_items ADD COLUMN release_ready INTEGER NOT NULL DEFAULT 0;
+  ALTER TABLE curriculum_items ADD COLUMN bundled_content_version TEXT;
+
+  CREATE INDEX IF NOT EXISTS curriculum_items_discovery_idx
+    ON curriculum_items(curriculum_source, release_ready, type, level, id);
+  CREATE INDEX IF NOT EXISTS curriculum_items_title_search_idx
+    ON curriculum_items(title COLLATE NOCASE);
+  CREATE INDEX IF NOT EXISTS curriculum_items_reading_search_idx
+    ON curriculum_items(reading COLLATE NOCASE);
+  CREATE INDEX IF NOT EXISTS curriculum_items_meaning_search_idx
+    ON curriculum_items(meaning COLLATE NOCASE);
+
+  CREATE TABLE IF NOT EXISTS curriculum_bundle_state (
+    bundle_key TEXT PRIMARY KEY NOT NULL,
+    content_version TEXT NOT NULL,
+    checksum TEXT NOT NULL,
+    vocabulary_count INTEGER NOT NULL CHECK (vocabulary_count >= 0),
+    question_count INTEGER NOT NULL CHECK (question_count >= 0),
+    sentence_count INTEGER NOT NULL CHECK (sentence_count >= 0),
+    installed_at TEXT NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS vocabulary_content_details (
+    vocabulary_id TEXT PRIMARY KEY NOT NULL,
+    part_of_speech_json TEXT NOT NULL,
+    kanji_ids_json TEXT NOT NULL,
+    bundled_content_version TEXT NOT NULL,
+    FOREIGN KEY (vocabulary_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE IF NOT EXISTS mobile_sentences (
+    id TEXT PRIMARY KEY NOT NULL,
+    japanese TEXT NOT NULL,
+    reading TEXT NOT NULL,
+    english TEXT NOT NULL,
+    level TEXT NOT NULL CHECK (level IN ('N5', 'N4')),
+    difficulty_rank INTEGER NOT NULL CHECK (difficulty_rank BETWEEN 1 AND 5),
+    bundled_content_version TEXT NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS vocabulary_sentence_links (
+    id TEXT PRIMARY KEY NOT NULL,
+    vocabulary_id TEXT NOT NULL,
+    sentence_id TEXT NOT NULL,
+    relationship_role TEXT NOT NULL CHECK (relationship_role IN ('focus', 'supporting')),
+    bundled_content_version TEXT NOT NULL,
+    FOREIGN KEY (vocabulary_id) REFERENCES curriculum_items(id) ON DELETE CASCADE,
+    FOREIGN KEY (sentence_id) REFERENCES mobile_sentences(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS vocabulary_sentence_lookup_idx
+    ON vocabulary_sentence_links(vocabulary_id, relationship_role, id);
+
+  CREATE TABLE IF NOT EXISTS mobile_sentence_grammar_links (
+    id TEXT PRIMARY KEY NOT NULL,
+    grammar_id TEXT NOT NULL,
+    sentence_id TEXT NOT NULL,
+    relationship_role TEXT NOT NULL CHECK (relationship_role IN ('focus', 'supporting')),
+    bundled_content_version TEXT NOT NULL,
+    FOREIGN KEY (grammar_id) REFERENCES curriculum_items(id) ON DELETE CASCADE,
+    FOREIGN KEY (sentence_id) REFERENCES mobile_sentences(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS mobile_sentence_grammar_lookup_idx
+    ON mobile_sentence_grammar_links(grammar_id, relationship_role, id);
+
+  CREATE TABLE IF NOT EXISTS vocabulary_question_bank (
+    id TEXT PRIMARY KEY NOT NULL,
+    vocabulary_id TEXT NOT NULL,
+    level TEXT NOT NULL CHECK (level IN ('N5', 'N4')),
+    presentation TEXT NOT NULL,
+    response_type TEXT NOT NULL,
+    prompt TEXT NOT NULL,
+    explanation TEXT,
+    correct_option_id TEXT NOT NULL,
+    options_json TEXT NOT NULL,
+    bundled_content_version TEXT NOT NULL,
+    FOREIGN KEY (vocabulary_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS vocabulary_question_lookup_idx
+    ON vocabulary_question_bank(vocabulary_id, id);
+
+  CREATE TABLE IF NOT EXISTS vocabulary_bookmarks (
+    user_id TEXT NOT NULL,
+    vocabulary_id TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, vocabulary_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (vocabulary_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE IF NOT EXISTS study_sessions (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    session_type TEXT NOT NULL CHECK (session_type IN ('vocabulary-practice', 'review')),
+    status TEXT NOT NULL CHECK (status IN ('in-progress', 'completed')),
+    item_ids_json TEXT NOT NULL,
+    question_ids_json TEXT NOT NULL,
+    current_index INTEGER NOT NULL DEFAULT 0 CHECK (current_index >= 0),
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    completed_at TEXT,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS study_sessions_resume_idx
+    ON study_sessions(user_id, status, updated_at DESC);
+`;
+
+// Phase 3 adds the local, release-only details and question bank shared by
+// grammar, kanji, reading, and listening. Learner-owned attempts and mastery
+// stay in their original tables, so an upgrade only replaces curated content.
+const versionNineSql = `
+  CREATE TABLE IF NOT EXISTS curriculum_content_details (
+    item_id TEXT PRIMARY KEY NOT NULL,
+    content_type TEXT NOT NULL CHECK (content_type IN ('grammar', 'kanji', 'reading', 'listening')),
+    detail_json TEXT NOT NULL,
+    bundled_content_version TEXT NOT NULL,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS curriculum_content_details_type_idx
+    ON curriculum_content_details(content_type, item_id);
+
+  CREATE TABLE IF NOT EXISTS kanji_sentence_links (
+    id TEXT PRIMARY KEY NOT NULL,
+    kanji_id TEXT NOT NULL,
+    sentence_id TEXT NOT NULL,
+    relationship_role TEXT NOT NULL CHECK (relationship_role IN ('focus', 'supporting')),
+    bundled_content_version TEXT NOT NULL,
+    FOREIGN KEY (kanji_id) REFERENCES curriculum_items(id) ON DELETE CASCADE,
+    FOREIGN KEY (sentence_id) REFERENCES mobile_sentences(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS kanji_sentence_lookup_idx
+    ON kanji_sentence_links(kanji_id, relationship_role, id);
+
+  CREATE TABLE IF NOT EXISTS canonical_practice_question_bank (
+    id TEXT PRIMARY KEY NOT NULL,
+    item_id TEXT NOT NULL,
+    domain TEXT NOT NULL CHECK (domain IN ('grammar', 'kanji', 'reading', 'listening')),
+    level TEXT NOT NULL CHECK (level IN ('N5', 'N4')),
+    presentation TEXT NOT NULL,
+    response_type TEXT NOT NULL CHECK (response_type = 'single-select'),
+    prompt TEXT NOT NULL,
+    explanation TEXT,
+    correct_option_id TEXT NOT NULL,
+    options_json TEXT NOT NULL,
+    bundled_content_version TEXT NOT NULL,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS canonical_practice_question_lookup_idx
+    ON canonical_practice_question_bank(item_id, domain, id);
+
+  CREATE TABLE IF NOT EXISTS curriculum_bookmarks (
+    user_id TEXT NOT NULL,
+    item_id TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, item_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE IF NOT EXISTS content_study_sessions (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    content_type TEXT NOT NULL CHECK (content_type IN ('grammar', 'kanji', 'reading', 'listening')),
+    status TEXT NOT NULL CHECK (status IN ('in-progress', 'completed')),
+    item_id TEXT NOT NULL,
+    question_ids_json TEXT NOT NULL,
+    current_index INTEGER NOT NULL DEFAULT 0 CHECK (current_index >= 0),
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    completed_at TEXT,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id)
+  );
+  CREATE INDEX IF NOT EXISTS content_study_sessions_resume_idx
+    ON content_study_sessions(user_id, content_type, status, updated_at DESC);
+`;
+
+// Phase 4 stores FSRS scheduling independently from the legacy progress
+// projection. Existing attempts remain immutable and the projection can be
+// rebuilt from this card state in a later scheduler migration.
+const versionTenSql = `
+  CREATE TABLE IF NOT EXISTS fsrs_cards (
+    user_id TEXT NOT NULL,
+    item_id TEXT NOT NULL,
+    state TEXT NOT NULL CHECK (state IN ('new', 'learning', 'review', 'relearning', 'mastered', 'suspended', 'buried')),
+    stability REAL NOT NULL CHECK (stability >= 0),
+    difficulty REAL NOT NULL CHECK (difficulty >= 1 AND difficulty <= 10),
+    retrievability REAL NOT NULL CHECK (retrievability >= 0 AND retrievability <= 1),
+    due_at TEXT NOT NULL,
+    last_reviewed_at TEXT,
+    repetitions INTEGER NOT NULL DEFAULT 0 CHECK (repetitions >= 0),
+    lapses INTEGER NOT NULL DEFAULT 0 CHECK (lapses >= 0),
+    last_rating TEXT CHECK (last_rating IN ('again', 'hard', 'good', 'easy')),
+    scheduled_days REAL NOT NULL DEFAULT 0 CHECK (scheduled_days >= 0),
+    elapsed_days REAL NOT NULL DEFAULT 0 CHECK (elapsed_days >= 0),
+    buried_until TEXT,
+    suspended_at TEXT,
+    scheduler_version TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, item_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS fsrs_cards_queue_idx
+    ON fsrs_cards(user_id, state, due_at, buried_until, suspended_at);
+  CREATE INDEX IF NOT EXISTS fsrs_cards_due_idx
+    ON fsrs_cards(user_id, due_at);
+
+  CREATE TABLE IF NOT EXISTS fsrs_review_history (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    item_id TEXT NOT NULL,
+    reviewed_at TEXT NOT NULL,
+    rating TEXT NOT NULL CHECK (rating IN ('again', 'hard', 'good', 'easy')),
+    state_before TEXT NOT NULL,
+    state_after TEXT NOT NULL,
+    stability_before REAL NOT NULL,
+    stability_after REAL NOT NULL,
+    difficulty_before REAL NOT NULL,
+    difficulty_after REAL NOT NULL,
+    retrievability_before REAL NOT NULL,
+    response_time_ms INTEGER NOT NULL CHECK (response_time_ms >= 0),
+    scheduled_days REAL NOT NULL CHECK (scheduled_days >= 0),
+    due_at TEXT NOT NULL,
+    attempt_id TEXT,
+    scheduler_version TEXT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE,
+    FOREIGN KEY (attempt_id) REFERENCES learning_attempts(id)
+  );
+  CREATE INDEX IF NOT EXISTS fsrs_review_history_stats_idx
+    ON fsrs_review_history(user_id, reviewed_at DESC);
+  CREATE INDEX IF NOT EXISTS fsrs_review_history_item_idx
+    ON fsrs_review_history(user_id, item_id, reviewed_at DESC);
+`;
+
+const versionElevenSql = `
+  CREATE TABLE IF NOT EXISTS practice_sessions (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    kind TEXT NOT NULL CHECK (kind IN ('practice', 'mock-exam', 'section-exam')),
+    level TEXT NOT NULL CHECK (level IN ('N5', 'N4')),
+    domains_json TEXT NOT NULL,
+    source_filter TEXT NOT NULL,
+    seed TEXT NOT NULL,
+    selection_json TEXT NOT NULL,
+    timer_mode TEXT NOT NULL CHECK (timer_mode IN ('none', 'elapsed', 'countdown')),
+    time_limit_seconds INTEGER,
+    status TEXT NOT NULL CHECK (status IN ('in-progress', 'paused', 'completed', 'time-expired')),
+    question_ids_json TEXT NOT NULL,
+    current_index INTEGER NOT NULL DEFAULT 0 CHECK (current_index >= 0),
+    elapsed_seconds INTEGER NOT NULL DEFAULT 0 CHECK (elapsed_seconds >= 0),
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    completed_at TEXT,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS practice_sessions_history_idx
+    ON practice_sessions(user_id, kind, status, created_at DESC);
+  CREATE INDEX IF NOT EXISTS practice_sessions_resume_idx
+    ON practice_sessions(user_id, status, updated_at DESC);
+
+  CREATE TABLE IF NOT EXISTS practice_session_answers (
+    session_id TEXT NOT NULL,
+    question_id TEXT NOT NULL,
+    selected_option_id TEXT,
+    correct INTEGER NOT NULL CHECK (correct IN (0, 1)),
+    response_time_ms INTEGER NOT NULL CHECK (response_time_ms >= 0),
+    answered_at TEXT NOT NULL,
+    PRIMARY KEY (session_id, question_id),
+    FOREIGN KEY (session_id) REFERENCES practice_sessions(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS practice_session_answers_session_idx
+    ON practice_session_answers(session_id, answered_at);
+
+  CREATE TABLE IF NOT EXISTS mistake_notebook (
+    user_id TEXT NOT NULL,
+    question_id TEXT NOT NULL,
+    item_id TEXT NOT NULL,
+    domain TEXT NOT NULL CHECK (domain IN ('vocabulary', 'grammar', 'kanji', 'reading', 'listening')),
+    added_at TEXT NOT NULL,
+    last_seen_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, question_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS mistake_notebook_lookup_idx
+    ON mistake_notebook(user_id, domain, last_seen_at DESC);
+`;
+
+const versionTwelveSql = `
+  CREATE TABLE IF NOT EXISTS ai_response_cache (
+    cache_key TEXT PRIMARY KEY NOT NULL,
+    feature_type TEXT NOT NULL,
+    request_fingerprint TEXT NOT NULL,
+    response_json TEXT NOT NULL,
+    prompt_version TEXT NOT NULL,
+    model_identifier TEXT,
+    created_at TEXT NOT NULL,
+    expires_at TEXT NOT NULL,
+    content_version TEXT
+  );
+  CREATE INDEX IF NOT EXISTS ai_response_cache_expiry_idx ON ai_response_cache(expires_at);
+
+  CREATE TABLE IF NOT EXISTS ai_interaction_history (
+    id TEXT PRIMARY KEY NOT NULL,
+    feature_type TEXT NOT NULL,
+    related_content_type TEXT,
+    related_content_id TEXT,
+    user_input TEXT,
+    validated_response_json TEXT,
+    prompt_version TEXT NOT NULL,
+    status TEXT NOT NULL CHECK (status IN ('completed', 'offline-fallback', 'failed', 'cancelled')),
+    cached INTEGER NOT NULL DEFAULT 0 CHECK (cached IN (0, 1)),
+    fallback_used INTEGER NOT NULL DEFAULT 0 CHECK (fallback_used IN (0, 1)),
+    created_at TEXT NOT NULL
+  );
+  CREATE INDEX IF NOT EXISTS ai_interaction_history_recent_idx ON ai_interaction_history(created_at DESC);
+
+  CREATE TABLE IF NOT EXISTS ai_failed_request_drafts (
+    id TEXT PRIMARY KEY NOT NULL,
+    feature_type TEXT NOT NULL,
+    context_json TEXT NOT NULL,
+    user_input TEXT,
+    prompt_version TEXT NOT NULL,
+    error_code TEXT NOT NULL,
+    created_at TEXT NOT NULL
+  );
+  CREATE TABLE IF NOT EXISTS ai_generated_examples (
+    id TEXT PRIMARY KEY NOT NULL,
+    related_content_id TEXT,
+    japanese TEXT NOT NULL,
+    reading TEXT,
+    translation TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    bookmarked INTEGER NOT NULL DEFAULT 0 CHECK (bookmarked IN (0, 1))
+  );
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -757,6 +1100,11 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 5, sql: versionFiveSql },
   { version: 6, sql: versionSixSql },
   { version: 7, sql: versionSevenSql },
+  { version: 8, sql: versionEightSql },
+  { version: 9, sql: versionNineSql },
+  { version: 10, sql: versionTenSql },
+  { version: 11, sql: versionElevenSql },
+  { version: 12, sql: versionTwelveSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

@@ -414,12 +414,22 @@ export async function verifySentenceSqliteImport(): Promise<void> {
       ),
     ) as Array<Record<string, number>>;
     const counts = rows[0];
+    const readingQuestionCount = bundle.learningContent.questions.filter(({ domain }) => domain === "reading").length;
+    const listeningQuestionCount = bundle.learningContent.questions.filter(({ domain }) => domain === "listening").length;
+    const genericTargetRelationshipCount = bundle.learningContent.questionTargetRelationships.filter(
+      ({ targetType }) => targetType !== "reading-passage" && targetType !== "listening-activity",
+    ).length;
     if (
       !counts ||
       counts.sentences !== bundle.learningContent.sentences.length ||
       counts.questions !== bundle.learningContent.questions.length ||
       counts.questionOptions !== bundle.learningContent.questionOptions.length ||
-      counts.questionTargetRelationships !== bundle.learningContent.questionTargetRelationships.length
+      counts.questionTargetRelationships !== genericTargetRelationshipCount ||
+      counts.readingPassages !== bundle.learningContent.readingPassages.length ||
+      counts.readingQuestionTargetRelationships !== readingQuestionCount ||
+      counts.listeningActivities !== bundle.learningContent.listeningActivities.length ||
+      counts.listeningQuestionTargetRelationships !== listeningQuestionCount ||
+      counts.listeningSpeakers !== bundle.learningContent.listeningSpeakers.length
     ) {
       throw new Error("SQLite learning-content counts did not match the release bundle.");
     }

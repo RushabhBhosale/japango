@@ -1,7 +1,7 @@
 # Listening grammar reinforcement
 
 Listening distinct: 52; target 40–60: pass. Reading only: 4; listening only: 36; both: 16; combined: 56.
-Underrepresented selected grammar (fewer than two uses): none. Non-selected records remain excluded for naturalness/scope; the two unresolved N4 records remain excluded by lifecycle.
+Underrepresented selected grammar (fewer than two uses): grammar-nakutehaikenai, grammar-ninaru, grammar-node, grammar-yori-nohouga. Non-selected records remain excluded for naturalness/scope; the two unresolved N4 records remain excluded by lifecycle.
 
 | Grammar ID | Level | Lifecycle | Listening uses | Example activities |
 | --- | --- | --- | ---: | --- |
@@ -18,7 +18,7 @@ Underrepresented selected grammar (fewer than two uses): none. Non-selected reco
 | grammar-de-action-location-marker | N5 | development-eligible | 0 | none |
 | grammar-de-means-marker | N5 | development-eligible | 0 | none |
 | grammar-deshou | N5 | development-eligible | 0 | none |
-| grammar-desu | N5 | development-eligible | 3 | listening-activity-n5-dialogue-003, listening-activity-n5-practical-information-005, listening-activity-n5-short-monologue-001 |
+| grammar-desu | N5 | development-eligible | 2 | listening-activity-n5-practical-information-005, listening-activity-n5-short-monologue-001 |
 | grammar-doko | N5 | development-eligible | 0 | none |
 | grammar-dono | N5 | development-eligible | 0 | none |
 | grammar-dore | N5 | development-eligible | 0 | none |
@@ -41,9 +41,9 @@ Underrepresented selected grammar (fewer than two uses): none. Non-selected reco
 | grammar-janakatta | N5 | development-eligible | 0 | none |
 | grammar-ka-alternative-marker | N5 | development-eligible | 0 | none |
 | grammar-ka-question-marker | N5 | development-eligible | 0 | none |
-| grammar-kara-reason-conjunction | N5 | development-eligible | 3 | listening-activity-n5-dialogue-004, listening-activity-n5-practical-information-006, listening-activity-n5-short-monologue-002 |
+| grammar-kara-reason-conjunction | N5 | development-eligible | 2 | listening-activity-n5-practical-information-006, listening-activity-n5-short-monologue-002 |
 | grammar-kara-starting-point-marker | N5 | development-eligible | 0 | none |
-| grammar-kedo | N5 | development-eligible | 4 | listening-activity-n4-appropriate-response-001, listening-activity-n5-dialogue-005, listening-activity-n5-practical-information-007 |
+| grammar-kedo | N5 | development-eligible | 3 | listening-activity-n4-appropriate-response-001, listening-activity-n5-practical-information-007, listening-activity-n5-short-monologue-003 |
 | grammar-kekkou | N5 | development-eligible | 0 | none |
 | grammar-keredomo | N5 | development-eligible | 0 | none |
 | grammar-kirai | N5 | development-eligible | 0 | none |
@@ -56,9 +56,9 @@ Underrepresented selected grammar (fewer than two uses): none. Non-selected reco
 | grammar-mada | N5 | development-eligible | 0 | none |
 | grammar-mada-teimasen | N5 | development-eligible | 0 | none |
 | grammar-maeni | N5 | development-eligible | 0 | none |
-| grammar-masenka | N5 | development-eligible | 4 | listening-activity-n5-appropriate-response-001, listening-activity-n5-dialogue-006, listening-activity-n5-practical-information-008 |
-| grammar-mashou | N5 | development-eligible | 4 | listening-activity-n5-appropriate-response-008, listening-activity-n5-dialogue-007, listening-activity-n5-practical-information-009 |
-| grammar-mashouka | N5 | development-eligible | 4 | listening-activity-n5-appropriate-response-002, listening-activity-n5-dialogue-008, listening-activity-n5-practical-information-010 |
+| grammar-masenka | N5 | development-eligible | 3 | listening-activity-n5-appropriate-response-001, listening-activity-n5-practical-information-008, listening-activity-n5-short-monologue-004 |
+| grammar-mashou | N5 | development-eligible | 3 | listening-activity-n5-appropriate-response-008, listening-activity-n5-practical-information-009, listening-activity-n5-short-monologue-005 |
+| grammar-mashouka | N5 | development-eligible | 3 | listening-activity-n5-appropriate-response-002, listening-activity-n5-practical-information-010, listening-activity-n5-short-monologue-006 |
 | grammar-mo | N5 | development-eligible | 0 | none |
 | grammar-morau | N5 | development-eligible | 0 | none |
 | grammar-mou | N5 | development-eligible | 0 | none |
@@ -66,21 +66,21 @@ Underrepresented selected grammar (fewer than two uses): none. Non-selected reco
 | grammar-na-adjective-noun | N5 | development-eligible | 0 | none |
 | grammar-na-adjectiveda | N5 | development-eligible | 0 | none |
 | grammar-na-adjectives | N5 | development-eligible | 0 | none |
-| grammar-naidekudasai | N5 | development-eligible | 3 | listening-activity-n5-dialogue-009, listening-activity-n5-practical-information-011, listening-activity-n5-short-monologue-007 |
-| grammar-naihougaii | N5 | development-eligible | 3 | listening-activity-n5-dialogue-010, listening-activity-n5-practical-information-012, listening-activity-n5-short-monologue-008 |
+| grammar-naidekudasai | N5 | development-eligible | 2 | listening-activity-n5-practical-information-011, listening-activity-n5-short-monologue-007 |
+| grammar-naihougaii | N5 | development-eligible | 2 | listening-activity-n5-practical-information-012, listening-activity-n5-short-monologue-008 |
 | grammar-nakucha | N5 | development-eligible | 0 | none |
-| grammar-nakutehaikenai | N5 | development-eligible | 2 | listening-activity-n5-dialogue-011, listening-activity-n5-short-monologue-009 |
+| grammar-nakutehaikenai | N5 | development-eligible | 1 | listening-activity-n5-short-monologue-009 |
 | grammar-nakutehanaranai | N5 | development-eligible | 0 | none |
 | grammar-nanika | N5 | development-eligible | 0 | none |
 | grammar-ndesu | N5 | development-eligible | 0 | none |
 | grammar-ne | N5 | development-eligible | 0 | none |
 | grammar-ni | N5 | development-eligible | 0 | none |
-| grammar-ninaru | N5 | development-eligible | 2 | listening-activity-n5-dialogue-012, listening-activity-n5-short-monologue-010 |
+| grammar-ninaru | N5 | development-eligible | 1 | listening-activity-n5-short-monologue-010 |
 | grammar-nisuru | N5 | development-eligible | 2 | listening-activity-n5-dialogue-013, listening-activity-n5-short-monologue-011 |
 | grammar-no-explanatory-nominalizer | N5 | development-eligible | 0 | none |
 | grammar-no-nominalizer | N5 | development-eligible | 0 | none |
 | grammar-no-possession-marker | N5 | development-eligible | 0 | none |
-| grammar-node | N5 | development-eligible | 2 | listening-activity-n5-dialogue-002, listening-activity-n5-practical-information-004 |
+| grammar-node | N5 | development-eligible | 1 | listening-activity-n5-practical-information-004 |
 | grammar-nogaheta | N5 | development-eligible | 0 | none |
 | grammar-nogajouzu | N5 | development-eligible | 0 | none |
 | grammar-nogasuki | N5 | development-eligible | 3 | listening-activity-n5-appropriate-response-006, listening-activity-n5-dialogue-014, listening-activity-n5-short-monologue-012 |
@@ -125,7 +125,7 @@ Underrepresented selected grammar (fewer than two uses): none. Non-selected reco
 | grammar-verbsnon-past | N5 | development-eligible | 0 | none |
 | grammar-ya | N5 | development-eligible | 0 | none |
 | grammar-yo | N5 | development-eligible | 0 | none |
-| grammar-yori-nohouga | N5 | development-eligible | 2 | listening-activity-n5-dialogue-001, listening-activity-n5-practical-information-003 |
+| grammar-yori-nohouga | N5 | development-eligible | 1 | listening-activity-n5-practical-information-003 |
 | grammar-好ki | N5 | development-eligible | 0 | none |
 | grammar-誰 | N5 | development-eligible | 0 | none |
 | grammar-誰ka | N5 | development-eligible | 0 | none |

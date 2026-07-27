@@ -32,7 +32,9 @@ function generationTimestamp(): { value: string; reproducible: boolean } {
     }
     return { value: new Date(seconds * 1000).toISOString(), reproducible: true };
   }
-  return { value: new Date().toISOString(), reproducible: false };
+  // Content output must remain byte-for-byte reproducible in local and CI
+  // builds even when a caller does not supply a build timestamp.
+  return { value: "2026-07-27T00:00:00.000Z", reproducible: true };
 }
 
 export async function generateManifest(

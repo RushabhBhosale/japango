@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
+import { router, type Href } from 'expo-router';
 
+import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
 import { PageHeader } from '@/components/common/page-header';
 import { ScreenContainer } from '@/components/common/screen-container';
@@ -8,10 +10,13 @@ import { SectionHeading } from '@/components/common/section-heading';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
+import { defaultFsrsQueueLimits, getFsrsQueueLimits, restoreAllSuspendedFsrsCards, setFsrsQueueLimits } from '@/services/database/fsrs-repository';
+import { clearAiHistoryAndCache } from '@/services/database/ai-repository';
 import { useAppStore } from '@/store/app-store';
 import type { ThemePreference } from '@/types/learning';
 
 const studyGoals = [5, 10, 15, 20, 30];
+const newCardLimits = [0, 5, 10, 15, 20];
 const themeOptions: { value: ThemePreference; label: string }[] = [
   { value: 'system', label: 'System' },
   { value: 'light', label: 'Light' },
@@ -25,6 +30,11 @@ export default function SettingsScreen() {
   const updateDailyGoal = useAppStore((state) => state.updateDailyGoal);
   const updateThemePreference = useAppStore((state) => state.updateThemePreference);
   const [message, setMessage] = useState<string>();
+  const [newCardsPerDay, setNewCardsPerDay] = useState(defaultFsrsQueueLimits.newCardsPerDay);
+
+  useEffect(() => {
+    void getFsrsQueueLimits().then((limits) => setNewCardsPerDay(limits.newCardsPerDay)).catch(() => undefined);
+  }, []);
 
   const changeGoal = async (minutes: number) => {
     setMessage(undefined);
@@ -43,6 +53,31 @@ export default function SettingsScreen() {
     } catch {
       setMessage('The appearance setting could not be updated.');
     }
+  };
+
+  const changeNewCards = async (limit: number) => {
+    setMessage(undefined);
+    try {
+      const limits = await getFsrsQueueLimits();
+      await setFsrsQueueLimits({ ...limits, newCardsPerDay: limit });
+      setNewCardsPerDay(limit);
+      setMessage('Daily new-card limit updated.');
+    } catch {
+      setMessage('The review limit could not be updated.');
+    }
+  };
+
+  const restoreSuspendedCards = async () => {
+    try {
+      const restored = await restoreAllSuspendedFsrsCards();
+      setMessage(restored ? `${restored} suspended ${restored === 1 ? 'card was' : 'cards were'} restored.` : 'There are no suspended cards.');
+    } catch {
+      setMessage('Suspended cards could not be restored.');
+    }
+  };
+
+  const clearAiData = async () => {
+    try { await clearAiHistoryAndCache(); setMessage('AI history, cache, and saved retry drafts were cleared.'); } catch { setMessage('AI data could not be cleared.'); }
   };
 
   return (
@@ -78,6 +113,28 @@ export default function SettingsScreen() {
         </View>
       </Card>
 
+      <SectionHeading title="Review pacing" detail={`${newCardsPerDay} new cards daily`} />
+      <Card>
+        <ThemedText themeColor="textSecondary">Due reviews are always prioritised. This limit controls how many brand-new cards join each day’s queue.</ThemedText>
+        <View style={styles.options} accessibilityRole="radiogroup">
+          {newCardLimits.map((limit) => {
+            const selected = newCardsPerDay === limit;
+            return (
+              <Pressable
+                key={limit}
+                accessibilityRole="radio"
+                accessibilityLabel={`${limit} new cards per day`}
+                accessibilityState={{ checked: selected }}
+                onPress={() => void changeNewCards(limit)}
+                style={[styles.option, { borderColor: selected ? theme.primary : theme.border, backgroundColor: selected ? theme.primarySoft : theme.surface }]}>
+                <ThemedText type="smallBold" style={selected ? { color: theme.primary } : undefined}>{limit}</ThemedText>
+              </Pressable>
+            );
+          })}
+        </View>
+        <AppButton label="Restore suspended cards" variant="quiet" onPress={() => void restoreSuspendedCards()} />
+      </Card>
+
       <SectionHeading title="Appearance" />
       <Card>
         <View style={styles.options} accessibilityRole="radiogroup">
@@ -110,10 +167,17 @@ export default function SettingsScreen() {
           Your profile, curriculum progress, assessment answers, review schedule, and settings are kept in JapanGo’s local database.
         </ThemedText>
         <View style={[styles.divider, { backgroundColor: theme.border }]} />
-        <ThemedText type="smallBold">No account or AI connection</ThemedText>
+        <ThemedText type="smallBold">Optional AI connection</ThemedText>
         <ThemedText themeColor="textSecondary">
-          Phase 1 does not send your learning data to a backend, analytics service, or AI provider.
+          AI requests are sent only when you ask for help and only to your configured JapanGo backend. API keys never live on this device.
         </ThemedText>
+      </Card>
+
+      <SectionHeading title="AI teacher" />
+      <Card>
+        <ThemedText themeColor="textSecondary">AI help is optional. Canonical lessons and local progress continue to work if it is unavailable.</ThemedText>
+        <AppButton label="Open AI teacher" variant="secondary" onPress={() => router.push('/ai' as Href)} />
+        <AppButton label="Clear AI history and cache" variant="quiet" onPress={() => void clearAiData()} />
       </Card>
 
       <ThemedText type="small" themeColor="textSecondary" style={styles.version}>JapanGo · Phase 1 local foundation</ThemedText>

@@ -389,12 +389,10 @@
       "kanji-切",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-問",
       "kanji-場",
       "kanji-大",
       "kanji-始",
-      "kanji-店",
       "kanji-度",
       "kanji-後",
       "kanji-意",
@@ -482,10 +480,8 @@
       "kanji-発",
       "kanji-私",
       "kanji-行",
-      "kanji-言",
       "kanji-話",
       "kanji-読",
-      "kanji-買",
       "kanji-送",
       "kanji-間",
       "kanji-電",
@@ -559,7 +555,6 @@
       "kanji-話",
       "kanji-読",
       "kanji-送",
-      "kanji-道",
       "kanji-間"
     ],
     "glossary": []
@@ -627,14 +622,12 @@
       "kanji-物",
       "kanji-用",
       "kanji-発",
-      "kanji-言",
       "kanji-話",
       "kanji-読",
       "kanji-送",
       "kanji-間",
       "kanji-集",
-      "kanji-電",
-      "kanji-飲"
+      "kanji-電"
     ],
     "glossary": []
   },
@@ -693,12 +686,10 @@
       "kanji-前",
       "kanji-午",
       "kanji-友",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
       "kanji-意",
-      "kanji-手",
       "kanji-日",
       "kanji-早",
       "kanji-時",
@@ -773,7 +764,6 @@
       "kanji-待",
       "kanji-意",
       "kanji-持",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -845,7 +835,6 @@
       "kanji-大",
       "kanji-始",
       "kanji-室",
-      "kanji-店",
       "kanji-意",
       "kanji-日",
       "kanji-時",
@@ -990,11 +979,9 @@
       "kanji-出",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
-      "kanji-少",
       "kanji-後",
       "kanji-意",
       "kanji-日",
@@ -1064,7 +1051,6 @@
       "kanji-図",
       "kanji-大",
       "kanji-始",
-      "kanji-少",
       "kanji-待",
       "kanji-後",
       "kanji-意",
@@ -1154,7 +1140,6 @@
       "kanji-物",
       "kanji-用",
       "kanji-発",
-      "kanji-花",
       "kanji-話",
       "kanji-読",
       "kanji-送",
@@ -1221,7 +1206,6 @@
       "kanji-始",
       "kanji-後",
       "kanji-意",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -1296,7 +1280,6 @@
       "kanji-切",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-台",
       "kanji-場",
       "kanji-外",
@@ -1311,7 +1294,6 @@
       "kanji-着",
       "kanji-知",
       "kanji-読",
-      "kanji-足",
       "kanji-近",
       "kanji-送",
       "kanji-間",
@@ -1391,8 +1373,7 @@
       "kanji-間",
       "kanji-電",
       "kanji-青",
-      "kanji-館",
-      "kanji-駅"
+      "kanji-館"
     ],
     "glossary": []
   },
@@ -1602,12 +1583,10 @@
     ],
     "kanjiIds": [
       "kanji-一",
-      "kanji-会",
       "kanji-入",
       "kanji-出",
       "kanji-前",
       "kanji-午",
-      "kanji-口",
       "kanji-場",
       "kanji-大",
       "kanji-始",
@@ -1620,7 +1599,6 @@
       "kanji-用",
       "kanji-発",
       "kanji-着",
-      "kanji-社",
       "kanji-私",
       "kanji-読",
       "kanji-近",
@@ -1688,7 +1666,6 @@
       "kanji-後",
       "kanji-意",
       "kanji-持",
-      "kanji-新",
       "kanji-方",
       "kanji-日",
       "kanji-明",
@@ -6048,9 +6025,7 @@
       "Correct: “At 8:00 a.m.: The bus is cheaper than the train.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 8:00 a.m.: They will go to the agreed place near the entrance for the schedules plan.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-yori-nohouga"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6101,9 +6076,7 @@
       "Correct: “At 9:00 a.m.: The speakers are trying to settle the time and place for public facilities.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 9:00 a.m.: Because it is raining, I am staying home.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-node"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6155,9 +6128,7 @@
       "Correct: “At 10:00 a.m.: They are two people cooperating to arrange a the neighbourhood plan.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 10:00 a.m.: I am an office worker.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-desu"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6204,9 +6175,7 @@
       "Correct: “At 1:00 p.m.: It is cold, so I will close the window.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 1:00 p.m.: They will go to the agreed place beside reception for the rules plan.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-kara-reason-conjunction"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6251,9 +6220,7 @@
       "Correct: “At 2:00 p.m.: They expect to meet near the entrance for the changes of plan plan.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 2:00 p.m.: It is a little far, but we can walk there.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-kedo"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6306,9 +6273,7 @@
       "Correct: “At 3:00 p.m.: The home topic is introduced before the plan details are confirmed.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 3:00 p.m.: Would you like to have lunch together?” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-masenka"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6357,9 +6322,7 @@
       "Correct: “At 4:00 p.m.: Let's get off at the next station.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 4:00 p.m.: They will go to the agreed place in the second-floor lounge for the cooking plan.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-mashou"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6407,9 +6370,7 @@
       "Correct: “At 5:00 p.m.: They are two people cooperating to arrange a appointments plan.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 5:00 p.m.: Shall I close the window?” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-mashouka"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6452,9 +6413,7 @@
       "Correct: “At 8:00 a.m.: The health topic is introduced before the plan details are confirmed.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 8:00 a.m.: Please do not open this door.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-naidekudasai"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-この-この",
       "vocab-その-その",
@@ -6499,9 +6458,7 @@
       "Correct: “At 9:00 a.m.: You had better not go out tonight.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 9:00 a.m.: They will go to the agreed place in front of the library for the accommodation plan.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-naihougaii"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",
@@ -6547,9 +6504,7 @@
       "Correct: “At 10:00 a.m.: To confirm the necessary lost items details before acting.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 10:00 a.m.: You have to take off your shoes here.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-nakutehaikenai"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-ここ-ここ",
       "vocab-その-その",
@@ -6595,9 +6550,7 @@
       "Correct: “At 1:00 p.m.: The speakers are trying to settle the time and place for plans.” is supported by turn 6. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information.",
       "Correct: “At 1:00 p.m.: The sky gradually became dark.” is supported by turn 2. Each distractor changes the speaker, time, place, quantity, condition, intention, or conversational purpose. Strategy: listen for the final confirmed information."
     ],
-    "grammarIds": [
-      "grammar-ninaru"
-    ],
+    "grammarIds": [],
     "vocabularyIds": [
       "vocab-その-その",
       "vocab-では-では",

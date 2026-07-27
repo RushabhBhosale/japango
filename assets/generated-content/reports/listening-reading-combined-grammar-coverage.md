@@ -2,7 +2,7 @@
 
 Canonical grammar: 237. Phase 6 reading: 20. Phase 7 listening: 52. Combined: 56. Listening target 40–60: pass. Combined target 50–70: pass.
 Reading only: grammar-n4-koto-nominalizer, grammar-n4-nikui, grammar-n4-yasui, grammar-n4-you-ni-suru. Listening only: grammar-kara-reason-conjunction, grammar-kedo, grammar-masenka, grammar-mashou, grammar-mashouka, grammar-n4-aida-ni, grammar-n4-hazu-da, grammar-n4-nakereba-naranai, grammar-n4-potential-form, grammar-n4-tame-ni-purpose, grammar-n4-tara, grammar-n4-te-kureru, grammar-n4-te-morau, grammar-n4-te-shimau, grammar-n4-to-kiku, grammar-n4-to-omou, grammar-n4-yotei-da, grammar-n4-you-ni-naru, grammar-naidekudasai, grammar-naihougaii, grammar-nakutehaikenai, grammar-ninaru, grammar-nisuru, grammar-nogasuki, grammar-nonakade-gaichiban, grammar-sugiru, grammar-tahougaii, grammar-tai, grammar-takotogaaru, grammar-tari-tarisuru, grammar-tehaikenai, grammar-teiru1, grammar-tekudasai, grammar-temoii, grammar-tsumorida, grammar-yori-nohouga. Both: grammar-desu, grammar-n4-ato-de, grammar-n4-ba, grammar-n4-baai-wa, grammar-n4-kamo-shirenai, grammar-n4-koto-ni-suru, grammar-n4-made-ni, grammar-n4-nagara, grammar-n4-nakutemo-ii, grammar-n4-nara, grammar-n4-souda-hearsay, grammar-n4-te-miru, grammar-n4-te-oku, grammar-n4-temo-concession, grammar-node, grammar-tekara.
-Underrepresented selected listening grammar (fewer than two uses): none. Future reading expansion is recommended for common patterns that remain natural in written contexts.
+Underrepresented selected listening grammar (fewer than two uses): grammar-nakutehaikenai, grammar-ninaru, grammar-node, grammar-yori-nohouga. Future reading expansion is recommended for common patterns that remain natural in written contexts.
 
 | Grammar ID | Level | Lifecycle | Reading uses | Listening uses | Example activities | Decision |
 | --- | --- | --- | ---: | ---: | --- | --- |
@@ -19,7 +19,7 @@ Underrepresented selected listening grammar (fewer than two uses): none. Future 
 | grammar-de-action-location-marker | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-de-means-marker | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-deshou | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-desu | N5 | development-eligible | 21 | 3 | listening-activity-n5-dialogue-003, listening-activity-n5-practical-information-005, listening-activity-n5-short-monologue-001 | selected-natural-listening |
+| grammar-desu | N5 | development-eligible | 21 | 2 | listening-activity-n5-practical-information-005, listening-activity-n5-short-monologue-001 | selected-natural-listening |
 | grammar-doko | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-dono | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-dore | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
@@ -42,9 +42,9 @@ Underrepresented selected listening grammar (fewer than two uses): none. Future 
 | grammar-janakatta | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-ka-alternative-marker | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-ka-question-marker | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-kara-reason-conjunction | N5 | development-eligible | 0 | 3 | listening-activity-n5-dialogue-004, listening-activity-n5-practical-information-006, listening-activity-n5-short-monologue-002 | selected-natural-listening |
+| grammar-kara-reason-conjunction | N5 | development-eligible | 0 | 2 | listening-activity-n5-practical-information-006, listening-activity-n5-short-monologue-002 | selected-natural-listening |
 | grammar-kara-starting-point-marker | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-kedo | N5 | development-eligible | 0 | 4 | listening-activity-n4-appropriate-response-001, listening-activity-n5-dialogue-005, listening-activity-n5-practical-information-007 | selected-natural-listening |
+| grammar-kedo | N5 | development-eligible | 0 | 3 | listening-activity-n4-appropriate-response-001, listening-activity-n5-practical-information-007, listening-activity-n5-short-monologue-003 | selected-natural-listening |
 | grammar-kekkou | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-keredomo | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-kirai | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
@@ -57,9 +57,9 @@ Underrepresented selected listening grammar (fewer than two uses): none. Future 
 | grammar-mada | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-mada-teimasen | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-maeni | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-masenka | N5 | development-eligible | 0 | 4 | listening-activity-n5-appropriate-response-001, listening-activity-n5-dialogue-006, listening-activity-n5-practical-information-008 | selected-natural-listening |
-| grammar-mashou | N5 | development-eligible | 0 | 4 | listening-activity-n5-appropriate-response-008, listening-activity-n5-dialogue-007, listening-activity-n5-practical-information-009 | selected-natural-listening |
-| grammar-mashouka | N5 | development-eligible | 0 | 4 | listening-activity-n5-appropriate-response-002, listening-activity-n5-dialogue-008, listening-activity-n5-practical-information-010 | selected-natural-listening |
+| grammar-masenka | N5 | development-eligible | 0 | 3 | listening-activity-n5-appropriate-response-001, listening-activity-n5-practical-information-008, listening-activity-n5-short-monologue-004 | selected-natural-listening |
+| grammar-mashou | N5 | development-eligible | 0 | 3 | listening-activity-n5-appropriate-response-008, listening-activity-n5-practical-information-009, listening-activity-n5-short-monologue-005 | selected-natural-listening |
+| grammar-mashouka | N5 | development-eligible | 0 | 3 | listening-activity-n5-appropriate-response-002, listening-activity-n5-practical-information-010, listening-activity-n5-short-monologue-006 | selected-natural-listening |
 | grammar-mo | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-morau | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-mou | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
@@ -67,21 +67,21 @@ Underrepresented selected listening grammar (fewer than two uses): none. Future 
 | grammar-na-adjective-noun | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-na-adjectiveda | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-na-adjectives | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-naidekudasai | N5 | development-eligible | 0 | 3 | listening-activity-n5-dialogue-009, listening-activity-n5-practical-information-011, listening-activity-n5-short-monologue-007 | selected-natural-listening |
-| grammar-naihougaii | N5 | development-eligible | 0 | 3 | listening-activity-n5-dialogue-010, listening-activity-n5-practical-information-012, listening-activity-n5-short-monologue-008 | selected-natural-listening |
+| grammar-naidekudasai | N5 | development-eligible | 0 | 2 | listening-activity-n5-practical-information-011, listening-activity-n5-short-monologue-007 | selected-natural-listening |
+| grammar-naihougaii | N5 | development-eligible | 0 | 2 | listening-activity-n5-practical-information-012, listening-activity-n5-short-monologue-008 | selected-natural-listening |
 | grammar-nakucha | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-nakutehaikenai | N5 | development-eligible | 0 | 2 | listening-activity-n5-dialogue-011, listening-activity-n5-short-monologue-009 | selected-natural-listening |
+| grammar-nakutehaikenai | N5 | development-eligible | 0 | 1 | listening-activity-n5-short-monologue-009 | selected-natural-listening |
 | grammar-nakutehanaranai | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-nanika | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-ndesu | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-ne | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-ni | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-ninaru | N5 | development-eligible | 0 | 2 | listening-activity-n5-dialogue-012, listening-activity-n5-short-monologue-010 | selected-natural-listening |
+| grammar-ninaru | N5 | development-eligible | 0 | 1 | listening-activity-n5-short-monologue-010 | selected-natural-listening |
 | grammar-nisuru | N5 | development-eligible | 0 | 2 | listening-activity-n5-dialogue-013, listening-activity-n5-short-monologue-011 | selected-natural-listening |
 | grammar-no-explanatory-nominalizer | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-no-nominalizer | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-no-possession-marker | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-node | N5 | development-eligible | 60 | 2 | listening-activity-n5-dialogue-002, listening-activity-n5-practical-information-004 | selected-natural-listening |
+| grammar-node | N5 | development-eligible | 37 | 1 | listening-activity-n5-practical-information-004 | selected-natural-listening |
 | grammar-nogaheta | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-nogajouzu | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-nogasuki | N5 | development-eligible | 0 | 3 | listening-activity-n5-appropriate-response-006, listening-activity-n5-dialogue-014, listening-activity-n5-short-monologue-012 | selected-natural-listening |
@@ -106,7 +106,7 @@ Underrepresented selected listening grammar (fewer than two uses): none. Future 
 | grammar-teiru1 | N5 | development-eligible | 0 | 2 | listening-activity-n5-dialogue-022, listening-activity-n5-short-monologue-020 | selected-natural-listening |
 | grammar-teiru2 | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-teiru3 | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-tekara | N5 | development-eligible | 31 | 2 | listening-activity-n5-dialogue-023, listening-activity-n5-short-monologue-021 | selected-natural-listening |
+| grammar-tekara | N5 | development-eligible | 20 | 2 | listening-activity-n5-dialogue-023, listening-activity-n5-short-monologue-021 | selected-natural-listening |
 | grammar-tekudasai | N5 | development-eligible | 0 | 3 | listening-activity-n5-appropriate-response-003, listening-activity-n5-dialogue-024, listening-activity-n5-short-monologue-022 | selected-natural-listening |
 | grammar-temoii | N5 | development-eligible | 0 | 3 | listening-activity-n5-appropriate-response-004, listening-activity-n5-practical-information-001, listening-activity-n5-short-monologue-023 | selected-natural-listening |
 | grammar-to-accompaniment-marker | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
@@ -126,7 +126,7 @@ Underrepresented selected listening grammar (fewer than two uses): none. Future 
 | grammar-verbsnon-past | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-ya | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-yo | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
-| grammar-yori-nohouga | N5 | development-eligible | 0 | 2 | listening-activity-n5-dialogue-001, listening-activity-n5-practical-information-003 | selected-natural-listening |
+| grammar-yori-nohouga | N5 | development-eligible | 0 | 1 | listening-activity-n5-practical-information-003 | selected-natural-listening |
 | grammar-好ki | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-誰 | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |
 | grammar-誰ka | N5 | development-eligible | 0 | 0 | none | not-selected-naturalness-scope |

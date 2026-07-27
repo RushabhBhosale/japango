@@ -10,11 +10,11 @@ JapanGo's original JLPT N5/N4-aligned listening script and listening-comprehensi
 - Difficulty: {"N4-rank-2":22,"N4-rank-3":48,"N4-rank-4":18,"N5-rank-1":31,"N5-rank-3":31,"N5-rank-4":6}
 - Topics: {"accommodation":3,"appointments":4,"changes-of-plan":5,"comparisons":5,"cooking":5,"customer-service":4,"delivery":4,"directions":4,"events":4,"exercise":4,"family":4,"health":3,"hobbies":4,"home":5,"invitations":5,"libraries":5,"lost-items":3,"mistakes":4,"neighbourhood":5,"phone-messages":4,"plans":3,"problems-and-solutions":4,"public-facilities":5,"recommendations":4,"requests":5,"restaurants":4,"rules":5,"schedules":5,"school":5,"shopping":4,"study":4,"technology":5,"transport":5,"travel":5,"weather":4,"work":5}
 - Duration: {"20-39-seconds":41,"40-59-seconds":47,"60-seconds-or-more":48,"under-20-seconds":20}
-- Grammar relationships: 156; distinct listening grammar: 52; reading grammar: 20; combined: 56
+- Grammar relationships: 144; distinct listening grammar: 52; reading grammar: 20; combined: 56
 - Vocabulary relationships: 1628; unique vocabulary: 120
-- Kanji relationships: 2444; unique kanji: 129; readings: 120
+- Kanji relationships: 2421; unique kanji: 129; readings: 120
 - Glossary entries: 21; out-of-level: 10
-- Lifecycle exclusions: 156; release activities: 0
+- Lifecycle exclusions: 126; release activities: 0
 - Inherited inventory limitations: 51 kanji, including 4 without supported release vocabulary.
 - Duplicate findings: exact 0, punctuation-only 0, prompts 0, option sets 0; near-template 0
 - Review queue: 0; rejected candidates: 0; generated audio files: 0.

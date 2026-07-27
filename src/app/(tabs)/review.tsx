@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { useFocusEffect } from 'expo-router';
+import { router, useFocusEffect, type Href } from 'expo-router';
 
 import { AppButton } from '@/components/common/app-button';
 import { EmptyState } from '@/components/common/empty-state';
@@ -9,12 +9,15 @@ import { ScreenContainer } from '@/components/common/screen-container';
 import { SectionHeading } from '@/components/common/section-heading';
 import { CurriculumItemCard } from '@/components/lesson/curriculum-item-card';
 import { getReviewCurriculum } from '@/services/database/progress-repository';
+import { startReviewSession } from '@/services/database/vocabulary-repository';
 import type { CurriculumWithMastery } from '@/types/learning';
 
 export default function ReviewScreen() {
   const [items, setItems] = useState<CurriculumWithMastery[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [starting, setStarting] = useState(false);
+  const [sessionMessage, setSessionMessage] = useState<string>();
 
   const load = useCallback(async () => {
     setError(false);
@@ -32,6 +35,24 @@ export default function ReviewScreen() {
 
   const weakItems = items.filter((item) => item.mastery.status === 'weak');
   const dueItems = items.filter((item) => item.mastery.status !== 'weak');
+  const openItem = (item: CurriculumWithMastery) => {
+    const route = item.type === 'vocabulary'
+      ? `/vocabulary/${encodeURIComponent(item.id)}`
+      : `/curriculum/${encodeURIComponent(item.id)}`;
+    router.push(route as Href);
+  };
+  const startSession = async (mode: 'all' | 'weak') => {
+    setSessionMessage(undefined);
+    setStarting(true);
+    try {
+      const session = await startReviewSession(mode);
+      router.push(`/review/session?sessionId=${encodeURIComponent(session.id)}` as Href);
+    } catch (startError) {
+      setSessionMessage(startError instanceof Error ? startError.message : 'A review session could not be started.');
+    } finally {
+      setStarting(false);
+    }
+  };
 
   return (
     <ScreenContainer>
@@ -45,16 +66,20 @@ export default function ReviewScreen() {
         <EmptyState title="Nothing is due right now" message="You’re caught up. New review items will appear as their dates arrive." symbol="済" />
       ) : (
         <>
+          <SectionHeading title="Start a review" />
+          <AppButton label="Review due vocabulary" loading={starting} onPress={() => void startSession('all')} />
+          {weakItems.length ? <AppButton label="Resume relearning vocabulary" variant="secondary" loading={starting} onPress={() => void startSession('weak')} /> : null}
+          {sessionMessage ? <EmptyState title="Review not started" message={sessionMessage} symbol="!" /> : null}
           {dueItems.length ? (
             <>
               <SectionHeading title="Due now" detail={`${dueItems.length} items`} />
-              {dueItems.map((item) => <CurriculumItemCard item={item} key={item.id} />)}
+              {dueItems.map((item) => <CurriculumItemCard item={item} key={item.id} onPress={() => openItem(item)} />)}
             </>
           ) : null}
           {weakItems.length ? (
             <>
-              <SectionHeading title="Needs focus" detail={`${weakItems.length} items`} />
-              {weakItems.map((item) => <CurriculumItemCard item={item} key={item.id} />)}
+              <SectionHeading title="Relearning" detail={`${weakItems.length} items`} />
+              {weakItems.map((item) => <CurriculumItemCard item={item} key={item.id} onPress={() => openItem(item)} />)}
             </>
           ) : null}
         </>
