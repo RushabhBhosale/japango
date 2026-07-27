@@ -1,0 +1,16 @@
+[
+  {
+    "id": "readiness-summary-view-japango-v1",
+    "labels": [
+      "Needs foundation",
+      "Developing",
+      "Approaching target",
+      "Likely ready",
+      "Strongly ready"
+    ],
+    "minimumEvidenceQuestions": 180,
+    "minimumFullMocks": 2,
+    "officialJlptScoreClaim": false,
+    "releaseReady": false
+  }
+]

@@ -1,0 +1,420 @@
+[
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-full-mock",
+    "assessmentType": "full-mock",
+    "title": "Full mock exam",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 90,
+    "defaultTimeLimitMinutes": 90,
+    "domains": [
+      "vocabulary",
+      "kanji",
+      "grammar",
+      "reading",
+      "listening"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-section-exam",
+    "assessmentType": "section-exam",
+    "title": "Section exam",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 20,
+    "defaultTimeLimitMinutes": 25,
+    "domains": [
+      "vocabulary",
+      "kanji",
+      "grammar"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-quick-practice",
+    "assessmentType": "quick-practice",
+    "title": "Quick practice",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 10,
+    "defaultTimeLimitMinutes": 10,
+    "domains": [
+      "vocabulary",
+      "kanji",
+      "grammar"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-daily-challenge",
+    "assessmentType": "daily-challenge",
+    "title": "Daily challenge",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 10,
+    "defaultTimeLimitMinutes": 10,
+    "domains": [
+      "vocabulary",
+      "kanji",
+      "grammar",
+      "reading",
+      "listening"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-weak-area",
+    "assessmentType": "weak-area",
+    "title": "Weak-area assessment",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "domains": [
+      "vocabulary",
+      "kanji",
+      "grammar",
+      "reading",
+      "listening"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.3,
+      "medium": 0.55,
+      "hard": 0.15
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-mixed-review",
+    "assessmentType": "mixed-review",
+    "title": "Mixed review",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 20,
+    "defaultTimeLimitMinutes": 20,
+    "domains": [
+      "vocabulary",
+      "kanji",
+      "grammar",
+      "reading",
+      "listening"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-curriculum-unit-test",
+    "assessmentType": "curriculum-unit-test",
+    "title": "Curriculum-unit test",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "domains": [
+      "vocabulary",
+      "kanji",
+      "grammar"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-grammar-mastery",
+    "assessmentType": "grammar-mastery",
+    "title": "Grammar mastery test",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "domains": [
+      "grammar"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-vocabulary-mastery",
+    "assessmentType": "vocabulary-mastery",
+    "title": "Vocabulary mastery test",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 12,
+    "domains": [
+      "vocabulary"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-kanji-mastery",
+    "assessmentType": "kanji-mastery",
+    "title": "Kanji mastery test",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 12,
+    "domains": [
+      "kanji"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-reading-practice",
+    "assessmentType": "reading-practice",
+    "title": "Reading practice set",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 12,
+    "defaultTimeLimitMinutes": 20,
+    "domains": [
+      "reading"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-preset-listening-practice",
+    "assessmentType": "listening-practice",
+    "title": "Listening practice set",
+    "supportedLevels": [
+      "N5",
+      "N4"
+    ],
+    "defaultQuestionCount": 12,
+    "defaultTimeLimitMinutes": 20,
+    "domains": [
+      "listening"
+    ],
+    "difficultyDistribution": {
+      "easy": 0.4,
+      "medium": 0.5,
+      "hard": 0.1
+    },
+    "selectionRules": [
+      "deterministic-seed",
+      "lifecycle-eligibility",
+      "least-exposed-first",
+      "coherent-parent-groups"
+    ],
+    "duplicateRules": [
+      "unique-question",
+      "unique-parent",
+      "target-soft-limit-two",
+      "duplicate-family-control"
+    ],
+    "releaseReady": false
+  }
+]

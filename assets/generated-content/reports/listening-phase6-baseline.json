@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "auditStage": "phase6-baseline",
+  "performedBeforeListeningAuthoring": true,
+  "curriculum": {
+    "N5": {
+      "total": 42,
+      "releaseReady": 0
+    },
+    "N4": {
+      "total": 38,
+      "releaseReady": 0
+    }
+  },
+  "grammar": {
+    "canonical": 237,
+    "N5LifecycleExcluded": 124,
+    "N4ReleaseTarget": 111,
+    "N4Unresolved": 2,
+    "phase6ReadingDistinct": 20,
+    "phase6ReadingIds": [
+      "grammar-desu",
+      "grammar-n4-ato-de",
+      "grammar-n4-ba",
+      "grammar-n4-baai-wa",
+      "grammar-n4-kamo-shirenai",
+      "grammar-n4-koto-ni-suru",
+      "grammar-n4-koto-nominalizer",
+      "grammar-n4-made-ni",
+      "grammar-n4-nagara",
+      "grammar-n4-nakutemo-ii",
+      "grammar-n4-nara",
+      "grammar-n4-nikui",
+      "grammar-n4-souda-hearsay",
+      "grammar-n4-te-miru",
+      "grammar-n4-te-oku",
+      "grammar-n4-temo-concession",
+      "grammar-n4-yasui",
+      "grammar-n4-you-ni-suru",
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "phase7Eligible": 235,
+    "selectedForNaturalListening": 52,
+    "selectedIds": [
+      "grammar-desu",
+      "grammar-kara-reason-conjunction",
+      "grammar-kedo",
+      "grammar-masenka",
+      "grammar-mashou",
+      "grammar-mashouka",
+      "grammar-n4-aida-ni",
+      "grammar-n4-ato-de",
+      "grammar-n4-ba",
+      "grammar-n4-baai-wa",
+      "grammar-n4-hazu-da",
+      "grammar-n4-kamo-shirenai",
+      "grammar-n4-koto-ni-suru",
+      "grammar-n4-made-ni",
+      "grammar-n4-nagara",
+      "grammar-n4-nakereba-naranai",
+      "grammar-n4-nakutemo-ii",
+      "grammar-n4-nara",
+      "grammar-n4-potential-form",
+      "grammar-n4-souda-hearsay",
+      "grammar-n4-tame-ni-purpose",
+      "grammar-n4-tara",
+      "grammar-n4-te-kureru",
+      "grammar-n4-te-miru",
+      "grammar-n4-te-morau",
+      "grammar-n4-te-oku",
+      "grammar-n4-te-shimau",
+      "grammar-n4-temo-concession",
+      "grammar-n4-to-kiku",
+      "grammar-n4-to-omou",
+      "grammar-n4-yotei-da",
+      "grammar-n4-you-ni-naru",
+      "grammar-naidekudasai",
+      "grammar-naihougaii",
+      "grammar-nakutehaikenai",
+      "grammar-ninaru",
+      "grammar-nisuru",
+      "grammar-node",
+      "grammar-nogasuki",
+      "grammar-nonakade-gaichiban",
+      "grammar-sugiru",
+      "grammar-tahougaii",
+      "grammar-tai",
+      "grammar-takotogaaru",
+      "grammar-tari-tarisuru",
+      "grammar-tehaikenai",
+      "grammar-teiru1",
+      "grammar-tekara",
+      "grammar-tekudasai",
+      "grammar-temoii",
+      "grammar-tsumorida",
+      "grammar-yori-nohouga"
+    ]
+  },
+  "vocabulary": {
+    "N5": {
+      "total": 598,
+      "releaseReady": 598
+    },
+    "N4": {
+      "total": 554,
+      "releaseReady": 554
+    }
+  },
+  "kanji": {
+    "N5": {
+      "total": 79,
+      "releaseReady": 79
+    },
+    "N4": {
+      "total": 166,
+      "releaseReady": 144
+    }
+  },
+  "sentences": 816,
+  "readingPassages": 146,
+  "existingListeningActivities": 0,
+  "tts": {
+    "configuredService": false,
+    "expoSpeechDependency": false,
+    "audioRegistry": false,
+    "reservedAudioReferenceSchemaOnly": true,
+    "localeConvention": "ja-JP",
+    "decision": "Author structured speech-normalized scripts and future audio keys; generate no audio files."
+  },
+  "inventoryLimitations": {
+    "kanji": 51,
+    "withoutSupportedVocabulary": 4
+  },
+  "lifecycle": {
+    "developmentOnlyActivities": 156,
+    "releaseEligibleActivities": 0,
+    "reason": "All 80 curriculum units are non-release."
+  },
+  "gaps": {
+    "topics": [
+      "family",
+      "home",
+      "school",
+      "work",
+      "shopping",
+      "restaurants",
+      "cooking",
+      "transport",
+      "travel",
+      "directions",
+      "weather",
+      "appointments",
+      "schedules",
+      "invitations",
+      "hobbies",
+      "exercise",
+      "health",
+      "public-facilities",
+      "libraries",
+      "events",
+      "delivery",
+      "accommodation",
+      "neighbourhood",
+      "technology",
+      "study",
+      "mistakes",
+      "lost-items",
+      "rules",
+      "requests",
+      "customer-service",
+      "phone-messages",
+      "plans",
+      "changes-of-plan",
+      "comparisons",
+      "recommendations",
+      "problems-and-solutions"
+    ],
+    "formats": [
+      "short-monologue",
+      "dialogue",
+      "practical-information",
+      "appropriate-response"
+    ],
+    "skills": [
+      "main-idea",
+      "specific-detail",
+      "sequence",
+      "speaker-intention",
+      "appropriate-response",
+      "practical-action",
+      "time-date-price-quantity-location",
+      "speaker-relationship",
+      "reference-resolution",
+      "vocabulary-context",
+      "grammar-context",
+      "simple-inference",
+      "information-matching",
+      "response-selection"
+    ]
+  }
+}

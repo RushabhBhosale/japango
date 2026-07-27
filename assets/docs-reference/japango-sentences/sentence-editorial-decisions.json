@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "dataset": "japango-sentence-editorial-decisions",
+  "decisions": [
+    {
+      "id": "sentence-decision-release-lifecycle-001",
+      "category": "release-lifecycle",
+      "affectedIds": ["N5"],
+      "decision": "N5 sentences remain non-release while their canonical grammar records remain non-release.",
+      "reason": "Phase 2 must not silently promote the Phase 1 N5 grammar inventory."
+    },
+    {
+      "id": "sentence-decision-curriculum-links-001",
+      "category": "curriculum-linking",
+      "affectedIds": ["N4"],
+      "decision": "Canonical sentences retain their deterministic curriculum links; compact release output omits links to non-release curriculum units.",
+      "reason": "All current curriculum units are development-only, and compact release bundles must not contain dangling references."
+    },
+    {
+      "id": "sentence-decision-originality-001",
+      "category": "provenance",
+      "affectedIds": ["N5", "N4"],
+      "decision": "All Japanese sentences, readings, translations, and notes are original JapanGo editorial content.",
+      "reason": "Textbooks and third-party example corpora are excluded as sentence sources."
+    }
+  ]
+}

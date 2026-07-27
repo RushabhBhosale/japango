@@ -1,0 +1,130 @@
+[
+  {
+    "schemaVersion": 1,
+    "id": "listening-speaker-aki",
+    "label": "あき",
+    "role": "learner-peer",
+    "ageCategory": null,
+    "speechStyle": "neutral-polite",
+    "voicePreference": {
+      "locale": "ja-JP",
+      "gender": "unspecified",
+      "voiceId": null
+    },
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "listening-speaker-announcer",
+    "label": "案内係",
+    "role": "announcer",
+    "ageCategory": null,
+    "speechStyle": "public-announcement",
+    "voicePreference": {
+      "locale": "ja-JP",
+      "gender": "unspecified",
+      "voiceId": null
+    },
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "listening-speaker-coworker",
+    "label": "同僚",
+    "role": "coworker",
+    "ageCategory": null,
+    "speechStyle": "coworker-neutral",
+    "voicePreference": {
+      "locale": "ja-JP",
+      "gender": "unspecified",
+      "voiceId": null
+    },
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "listening-speaker-emi",
+    "label": "えみ",
+    "role": "friend",
+    "ageCategory": null,
+    "speechStyle": "neutral-casual",
+    "voicePreference": {
+      "locale": "ja-JP",
+      "gender": "unspecified",
+      "voiceId": null
+    },
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "listening-speaker-kai",
+    "label": "かい",
+    "role": "friend",
+    "ageCategory": null,
+    "speechStyle": "neutral-polite",
+    "voicePreference": {
+      "locale": "ja-JP",
+      "gender": "unspecified",
+      "voiceId": null
+    },
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "listening-speaker-saki",
+    "label": "さき",
+    "role": "family",
+    "ageCategory": null,
+    "speechStyle": "family-casual",
+    "voicePreference": {
+      "locale": "ja-JP",
+      "gender": "unspecified",
+      "voiceId": null
+    },
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "listening-speaker-staff",
+    "label": "係員",
+    "role": "staff",
+    "ageCategory": null,
+    "speechStyle": "customer-service-polite",
+    "voicePreference": {
+      "locale": "ja-JP",
+      "gender": "unspecified",
+      "voiceId": null
+    },
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "listening-speaker-teacher",
+    "label": "先生",
+    "role": "teacher",
+    "ageCategory": "adult",
+    "speechStyle": "teacher-to-student",
+    "voicePreference": {
+      "locale": "ja-JP",
+      "gender": "unspecified",
+      "voiceId": null
+    },
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  }
+]

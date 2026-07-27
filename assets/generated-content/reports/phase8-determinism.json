@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "sha256-stable-json",
+  "digest": "sha256:cd4d658059d18ce2aaa28cdf1ddbe6408f95c64d9f9c066521eac1fb7c202d83",
+  "fixedTimestampDigestMatch": true,
+  "stableOrdering": true,
+  "phase1To7IdsChanged": 0
+}

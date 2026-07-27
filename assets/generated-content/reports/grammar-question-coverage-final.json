@@ -1,0 +1,6232 @@
+[
+  {
+    "grammarId": "grammar-adjective-noha",
+    "level": "N5",
+    "pattern": "Adjective + の(は)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-adjective-u2d-noha-core",
+      "sentence-adjective-u2d-noha-real-life",
+      "sentence-adjective-u2d-noha-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-025"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-adjective-te",
+    "level": "N5",
+    "pattern": "Adjective + て",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-adjective-u2d-te-core",
+      "sentence-adjective-u2d-te-real-life",
+      "sentence-adjective-u2d-te-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-025",
+      "n5-unit-026"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-adjective-te-b",
+    "level": "N5",
+    "pattern": "Adjective + て + B",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-adjective-u2d-te-u2d-b-core",
+      "sentence-adjective-u2d-te-u2d-b-real-life",
+      "sentence-adjective-u2d-te-u2d-b-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-025",
+      "n5-unit-026"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ageru",
+    "level": "N5",
+    "pattern": "あげる",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ageru-core",
+      "sentence-ageru-real-life",
+      "sentence-ageru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-003",
+      "n5-unit-004"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ano",
+    "level": "N5",
+    "pattern": "あの",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ano-core",
+      "sentence-ano-real-life",
+      "sentence-ano-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-005",
+      "n5-unit-006"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-are",
+    "level": "N5",
+    "pattern": "あれ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-are-core",
+      "sentence-are-real-life",
+      "sentence-are-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-004"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-asoko",
+    "level": "N5",
+    "pattern": "あそこ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-asoko-core",
+      "sentence-asoko-real-life",
+      "sentence-asoko-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-002"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-dake",
+    "level": "N5",
+    "pattern": "だけ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-dake-core",
+      "sentence-dake-real-life",
+      "sentence-dake-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-004",
+      "n5-unit-005"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-darou",
+    "level": "N5",
+    "pattern": "だろう",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-darou-core",
+      "sentence-darou-real-life",
+      "sentence-darou-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-019",
+      "n5-unit-020"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-datta",
+    "level": "N5",
+    "pattern": "だった",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-datta-core",
+      "sentence-datta-real-life",
+      "sentence-datta-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-015",
+      "n5-unit-016"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-de-action-location-marker",
+    "level": "N5",
+    "pattern": "で",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-de-u2d-action-u2d-location-u2d-marker-core",
+      "sentence-de-u2d-action-u2d-location-u2d-marker-real-life",
+      "sentence-de-u2d-action-u2d-location-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-013",
+      "n5-unit-014"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-de-means-marker",
+    "level": "N5",
+    "pattern": "で",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-de-u2d-means-u2d-marker-core",
+      "sentence-de-u2d-means-u2d-marker-real-life",
+      "sentence-de-u2d-means-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-013",
+      "n5-unit-014"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-deshou",
+    "level": "N5",
+    "pattern": "でしょう",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-deshou-core",
+      "sentence-deshou-real-life",
+      "sentence-deshou-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-014"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-desu",
+    "level": "N5",
+    "pattern": "です",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-desu-core",
+      "sentence-desu-real-life",
+      "sentence-desu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-006"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-doko",
+    "level": "N5",
+    "pattern": "どこ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-doko-core",
+      "sentence-doko-real-life",
+      "sentence-doko-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-001",
+      "n5-unit-002"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-dono",
+    "level": "N5",
+    "pattern": "どの",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-dono-core",
+      "sentence-dono-real-life",
+      "sentence-dono-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-006",
+      "n5-unit-007"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-dore",
+    "level": "N5",
+    "pattern": "どれ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-dore-core",
+      "sentence-dore-real-life",
+      "sentence-dore-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-002",
+      "n5-unit-003"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ga-contrast-conjunction",
+    "level": "N5",
+    "pattern": "が",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ga-u2d-contrast-u2d-conjunction-core",
+      "sentence-ga-u2d-contrast-u2d-conjunction-real-life",
+      "sentence-ga-u2d-contrast-u2d-conjunction-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-009"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ga-subject-marker",
+    "level": "N5",
+    "pattern": "が",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ga-u2d-subject-u2d-marker-core",
+      "sentence-ga-u2d-subject-u2d-marker-real-life",
+      "sentence-ga-u2d-subject-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-009",
+      "n5-unit-010"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-gaaru",
+    "level": "N5",
+    "pattern": "がある",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-gaaru-core",
+      "sentence-gaaru-real-life",
+      "sentence-gaaru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-015",
+      "n5-unit-016"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-gaaru-noun",
+    "level": "N5",
+    "pattern": "がある + Noun",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-gaaru-u2d-noun-core",
+      "sentence-gaaru-u2d-noun-real-life",
+      "sentence-gaaru-u2d-noun-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-026"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-gairu",
+    "level": "N5",
+    "pattern": "がいる",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-gairu-core",
+      "sentence-gairu-real-life",
+      "sentence-gairu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-026",
+      "n5-unit-027"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ha",
+    "level": "N5",
+    "pattern": "は",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ha-core",
+      "sentence-ha-real-life",
+      "sentence-ha-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-007",
+      "n5-unit-008"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-he",
+    "level": "N5",
+    "pattern": "へ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-he-core",
+      "sentence-he-real-life",
+      "sentence-he-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-014",
+      "n5-unit-015"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-heiku",
+    "level": "N5",
+    "pattern": "へいく",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-heiku-core",
+      "sentence-heiku-real-life",
+      "sentence-heiku-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-026",
+      "n5-unit-027"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-i-adjective-noun",
+    "level": "N5",
+    "pattern": "い-Adjective + Noun",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-i-u2d-adjective-u2d-noun-core",
+      "sentence-i-u2d-adjective-u2d-noun-real-life",
+      "sentence-i-u2d-adjective-u2d-noun-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-027"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-i-adjectivekunakatta",
+    "level": "N5",
+    "pattern": "い-Adjective くなかった",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-i-u2d-adjectivekunakatta-core",
+      "sentence-i-u2d-adjectivekunakatta-real-life",
+      "sentence-i-u2d-adjectivekunakatta-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-027",
+      "n5-unit-028"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-i-adjectivepast",
+    "level": "N5",
+    "pattern": "い-Adjective (Past)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-i-u2d-adjectivepast-core",
+      "sentence-i-u2d-adjectivepast-real-life",
+      "sentence-i-u2d-adjectivepast-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-027",
+      "n5-unit-028"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-i-adjectivepredicate",
+    "level": "N5",
+    "pattern": "い-Adjective (Predicate)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-i-u2d-adjectivepredicate-core",
+      "sentence-i-u2d-adjectivepredicate-real-life",
+      "sentence-i-u2d-adjectivepredicate-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-028"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-i-adjectives",
+    "level": "N5",
+    "pattern": "い-Adjectives",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-i-u2d-adjectives-core",
+      "sentence-i-u2d-adjectives-real-life",
+      "sentence-i-u2d-adjectives-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-028",
+      "n5-unit-029"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-i-adjectiveskunai",
+    "level": "N5",
+    "pattern": "い-Adjectives くない",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-i-u2d-adjectiveskunai-core",
+      "sentence-i-u2d-adjectiveskunai-real-life",
+      "sentence-i-u2d-adjectiveskunai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-028",
+      "n5-unit-029"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ii",
+    "level": "N5",
+    "pattern": "いい",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ii-core",
+      "sentence-ii-real-life",
+      "sentence-ii-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-012",
+      "n5-unit-013"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-janai",
+    "level": "N5",
+    "pattern": "じゃない",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-janai-core",
+      "sentence-janai-real-life",
+      "sentence-janai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-022",
+      "n5-unit-023"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-janakatta",
+    "level": "N5",
+    "pattern": "じゃなかった",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-janakatta-core",
+      "sentence-janakatta-real-life",
+      "sentence-janakatta-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-021",
+      "n5-unit-022"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ka-alternative-marker",
+    "level": "N5",
+    "pattern": "か",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ka-u2d-alternative-u2d-marker-core",
+      "sentence-ka-u2d-alternative-u2d-marker-real-life",
+      "sentence-ka-u2d-alternative-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-009",
+      "n5-unit-010"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ka-question-marker",
+    "level": "N5",
+    "pattern": "か",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ka-u2d-question-u2d-marker-core",
+      "sentence-ka-u2d-question-u2d-marker-real-life",
+      "sentence-ka-u2d-question-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-010"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kara-reason-conjunction",
+    "level": "N5",
+    "pattern": "から",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kara-u2d-reason-u2d-conjunction-core",
+      "sentence-kara-u2d-reason-u2d-conjunction-real-life",
+      "sentence-kara-u2d-reason-u2d-conjunction-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-007"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kara-starting-point-marker",
+    "level": "N5",
+    "pattern": "から",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kara-u2d-starting-u2d-point-u2d-marker-core",
+      "sentence-kara-u2d-starting-u2d-point-u2d-marker-real-life",
+      "sentence-kara-u2d-starting-u2d-point-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-007",
+      "n5-unit-008"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kedo",
+    "level": "N5",
+    "pattern": "けど",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kedo-core",
+      "sentence-kedo-real-life",
+      "sentence-kedo-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-015"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kekkou",
+    "level": "N5",
+    "pattern": "けっこう",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kekkou-core",
+      "sentence-kekkou-real-life",
+      "sentence-kekkou-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-029"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-keredomo",
+    "level": "N5",
+    "pattern": "けれども",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-keredomo-core",
+      "sentence-keredomo-real-life",
+      "sentence-keredomo-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-029",
+      "n5-unit-030"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kirai",
+    "level": "N5",
+    "pattern": "きらい",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kirai-core",
+      "sentence-kirai-real-life",
+      "sentence-kirai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-017",
+      "n5-unit-018"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-koko",
+    "level": "N5",
+    "pattern": "ここ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-koko-core",
+      "sentence-koko-real-life",
+      "sentence-koko-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-002",
+      "n5-unit-003"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kono",
+    "level": "N5",
+    "pattern": "この",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kono-core",
+      "sentence-kono-real-life",
+      "sentence-kono-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-008",
+      "n5-unit-009"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kore",
+    "level": "N5",
+    "pattern": "これ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kore-core",
+      "sentence-kore-real-life",
+      "sentence-kore-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-003",
+      "n5-unit-004"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kurai1",
+    "level": "N5",
+    "pattern": "くらい 1",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kurai1-core",
+      "sentence-kurai1-real-life",
+      "sentence-kurai1-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-029",
+      "n5-unit-030"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kureru",
+    "level": "N5",
+    "pattern": "くれる",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kureru-core",
+      "sentence-kureru-real-life",
+      "sentence-kureru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-017"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-kuru",
+    "level": "N5",
+    "pattern": "くる",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-kuru-core",
+      "sentence-kuru-real-life",
+      "sentence-kuru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-022",
+      "n5-unit-023"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-mada",
+    "level": "N5",
+    "pattern": "まだ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-mada-core",
+      "sentence-mada-real-life",
+      "sentence-mada-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-008",
+      "n5-unit-009"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-mada-teimasen",
+    "level": "N5",
+    "pattern": "まだ～ていません",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-mada-u2d-teimasen-core",
+      "sentence-mada-u2d-teimasen-real-life",
+      "sentence-mada-u2d-teimasen-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-030"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-maeni",
+    "level": "N5",
+    "pattern": "まえに",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-maeni-core",
+      "sentence-maeni-real-life",
+      "sentence-maeni-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-019"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-masenka",
+    "level": "N5",
+    "pattern": "ませんか",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-masenka-core",
+      "sentence-masenka-real-life",
+      "sentence-masenka-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-003"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-mashou",
+    "level": "N5",
+    "pattern": "ましょう",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-mashou-core",
+      "sentence-mashou-real-life",
+      "sentence-mashou-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-005",
+      "n5-unit-006"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-mashouka",
+    "level": "N5",
+    "pattern": "～ましょうか",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-mashouka-core",
+      "sentence-mashouka-real-life",
+      "sentence-mashouka-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-030",
+      "n5-unit-031"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-mo",
+    "level": "N5",
+    "pattern": "も",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-mo-core",
+      "sentence-mo-real-life",
+      "sentence-mo-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-014",
+      "n5-unit-015"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-morau",
+    "level": "N5",
+    "pattern": "もらう",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-morau-core",
+      "sentence-morau-real-life",
+      "sentence-morau-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-020"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-mou",
+    "level": "N5",
+    "pattern": "もう",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-mou-core",
+      "sentence-mou-real-life",
+      "sentence-mou-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-018"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-n4-aida",
+    "level": "N4",
+    "pattern": "～間",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-aida-contrast-aware",
+      "sentence-n4-u2d-aida-core",
+      "sentence-n4-u2d-aida-real-life",
+      "sentence-n4-u2d-aida-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-004",
+      "n4-unit-005"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-aida-context-application-1",
+      "question-grammar-n4-aida-context-application-2",
+      "question-grammar-n4-aida-meaning-1",
+      "question-grammar-n4-aida-meaning-2",
+      "question-grammar-n4-aida-recognition-1",
+      "question-grammar-n4-aida-recognition-2",
+      "question-grammar-n4-aida-usage-1",
+      "question-grammar-n4-aida-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-aida-ni",
+    "level": "N4",
+    "pattern": "～間に",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-aida-u2d-ni-contrast-aware",
+      "sentence-n4-u2d-aida-u2d-ni-core",
+      "sentence-n4-u2d-aida-u2d-ni-real-life",
+      "sentence-n4-u2d-aida-u2d-ni-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-005"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-aida-ni-context-application-1",
+      "question-grammar-n4-aida-ni-context-application-2",
+      "question-grammar-n4-aida-ni-meaning-1",
+      "question-grammar-n4-aida-ni-meaning-2",
+      "question-grammar-n4-aida-ni-recognition-1",
+      "question-grammar-n4-aida-ni-recognition-2",
+      "question-grammar-n4-aida-ni-usage-1",
+      "question-grammar-n4-aida-ni-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-ato-de",
+    "level": "N4",
+    "pattern": "～後で",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-ato-u2d-de-contrast-aware",
+      "sentence-n4-u2d-ato-u2d-de-core",
+      "sentence-n4-u2d-ato-u2d-de-real-life",
+      "sentence-n4-u2d-ato-u2d-de-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-005",
+      "n4-unit-006"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-ato-de-context-application-1",
+      "question-grammar-n4-ato-de-context-application-2",
+      "question-grammar-n4-ato-de-meaning-1",
+      "question-grammar-n4-ato-de-meaning-2",
+      "question-grammar-n4-ato-de-recognition-1",
+      "question-grammar-n4-ato-de-recognition-2",
+      "question-grammar-n4-ato-de-usage-1",
+      "question-grammar-n4-ato-de-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-ba",
+    "level": "N4",
+    "pattern": "～ば",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-ba-contrast-aware",
+      "sentence-n4-u2d-ba-core",
+      "sentence-n4-u2d-ba-real-life",
+      "sentence-n4-u2d-ba-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-013",
+      "n4-unit-014"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-ba-context-application-1",
+      "question-grammar-n4-ba-context-application-2",
+      "question-grammar-n4-ba-meaning-1",
+      "question-grammar-n4-ba-meaning-2",
+      "question-grammar-n4-ba-recognition-1",
+      "question-grammar-n4-ba-recognition-2",
+      "question-grammar-n4-ba-usage-1",
+      "question-grammar-n4-ba-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-baai-wa",
+    "level": "N4",
+    "pattern": "～場合は",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-baai-u2d-wa-contrast-aware",
+      "sentence-n4-u2d-baai-u2d-wa-core",
+      "sentence-n4-u2d-baai-u2d-wa-real-life",
+      "sentence-n4-u2d-baai-u2d-wa-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-015"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-baai-wa-context-application-1",
+      "question-grammar-n4-baai-wa-context-application-2",
+      "question-grammar-n4-baai-wa-meaning-1",
+      "question-grammar-n4-baai-wa-meaning-2",
+      "question-grammar-n4-baai-wa-recognition-1",
+      "question-grammar-n4-baai-wa-recognition-2",
+      "question-grammar-n4-baai-wa-usage-1",
+      "question-grammar-n4-baai-wa-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-bakari",
+    "level": "N4",
+    "pattern": "～ばかり",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-bakari-contrast-aware",
+      "sentence-n4-u2d-bakari-core",
+      "sentence-n4-u2d-bakari-real-life",
+      "sentence-n4-u2d-bakari-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-028",
+      "n4-unit-029"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-bakari-context-application-1",
+      "question-grammar-n4-bakari-context-application-2",
+      "question-grammar-n4-bakari-meaning-1",
+      "question-grammar-n4-bakari-meaning-2",
+      "question-grammar-n4-bakari-recognition-1",
+      "question-grammar-n4-bakari-recognition-2",
+      "question-grammar-n4-bakari-usage-1",
+      "question-grammar-n4-bakari-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-causative-form",
+    "level": "N4",
+    "pattern": "使役形（～せる／～させる）",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-causative-u2d-form-contrast-aware",
+      "sentence-n4-u2d-causative-u2d-form-core",
+      "sentence-n4-u2d-causative-u2d-form-real-life",
+      "sentence-n4-u2d-causative-u2d-form-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-023",
+      "n4-unit-024"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-causative-form-context-application-1",
+      "question-grammar-n4-causative-form-context-application-2",
+      "question-grammar-n4-causative-form-meaning-1",
+      "question-grammar-n4-causative-form-meaning-2",
+      "question-grammar-n4-causative-form-recognition-1",
+      "question-grammar-n4-causative-form-recognition-2",
+      "question-grammar-n4-causative-form-usage-1",
+      "question-grammar-n4-causative-form-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-causative-passive-form",
+    "level": "N4",
+    "pattern": "使役受身形（～される／～させられる）",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-causative-u2d-passive-u2d-form-contrast-aware",
+      "sentence-n4-u2d-causative-u2d-passive-u2d-form-core",
+      "sentence-n4-u2d-causative-u2d-passive-u2d-form-real-life",
+      "sentence-n4-u2d-causative-u2d-passive-u2d-form-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-024"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-causative-passive-form-context-application-1",
+      "question-grammar-n4-causative-passive-form-context-application-2",
+      "question-grammar-n4-causative-passive-form-meaning-1",
+      "question-grammar-n4-causative-passive-form-meaning-2",
+      "question-grammar-n4-causative-passive-form-recognition-1",
+      "question-grammar-n4-causative-passive-form-recognition-2",
+      "question-grammar-n4-causative-passive-form-usage-1",
+      "question-grammar-n4-causative-passive-form-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-dake-de",
+    "level": "N4",
+    "pattern": "～だけで",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-dake-u2d-de-contrast-aware",
+      "sentence-n4-u2d-dake-u2d-de-core",
+      "sentence-n4-u2d-dake-u2d-de-real-life",
+      "sentence-n4-u2d-dake-u2d-de-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-027",
+      "n4-unit-028"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-dake-de-context-application-1",
+      "question-grammar-n4-dake-de-context-application-2",
+      "question-grammar-n4-dake-de-meaning-1",
+      "question-grammar-n4-dake-de-meaning-2",
+      "question-grammar-n4-dake-de-recognition-1",
+      "question-grammar-n4-dake-de-recognition-2",
+      "question-grammar-n4-dake-de-usage-1",
+      "question-grammar-n4-dake-de-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-dasu",
+    "level": "N4",
+    "pattern": "～出す",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-dasu-contrast-aware",
+      "sentence-n4-u2d-dasu-core",
+      "sentence-n4-u2d-dasu-real-life",
+      "sentence-n4-u2d-dasu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-009",
+      "n4-unit-010"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-dasu-context-application-1",
+      "question-grammar-n4-dasu-context-application-2",
+      "question-grammar-n4-dasu-meaning-1",
+      "question-grammar-n4-dasu-meaning-2",
+      "question-grammar-n4-dasu-recognition-1",
+      "question-grammar-n4-dasu-recognition-2",
+      "question-grammar-n4-dasu-usage-1",
+      "question-grammar-n4-dasu-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-de-gozaimasu",
+    "level": "N4",
+    "pattern": "～でございます",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-de-u2d-gozaimasu-contrast-aware",
+      "sentence-n4-u2d-de-u2d-gozaimasu-core",
+      "sentence-n4-u2d-de-u2d-gozaimasu-real-life",
+      "sentence-n4-u2d-de-u2d-gozaimasu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-036",
+      "n4-unit-037"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-de-gozaimasu-context-application-1",
+      "question-grammar-n4-de-gozaimasu-context-application-2",
+      "question-grammar-n4-de-gozaimasu-meaning-1",
+      "question-grammar-n4-de-gozaimasu-meaning-2",
+      "question-grammar-n4-de-gozaimasu-recognition-1",
+      "question-grammar-n4-de-gozaimasu-recognition-2",
+      "question-grammar-n4-de-gozaimasu-usage-1",
+      "question-grammar-n4-de-gozaimasu-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-demo-alternatives",
+    "level": "N4",
+    "pattern": "～でも",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-demo-u2d-alternatives-contrast-aware",
+      "sentence-n4-u2d-demo-u2d-alternatives-core",
+      "sentence-n4-u2d-demo-u2d-alternatives-real-life",
+      "sentence-n4-u2d-demo-u2d-alternatives-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-029",
+      "n4-unit-030"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-demo-alternatives-context-application-1",
+      "question-grammar-n4-demo-alternatives-context-application-2",
+      "question-grammar-n4-demo-alternatives-meaning-1",
+      "question-grammar-n4-demo-alternatives-meaning-2",
+      "question-grammar-n4-demo-alternatives-recognition-1",
+      "question-grammar-n4-demo-alternatives-recognition-2",
+      "question-grammar-n4-demo-alternatives-usage-1",
+      "question-grammar-n4-demo-alternatives-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-dewa-nai-ka",
+    "level": "N4",
+    "pattern": "～ではないか",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-dewa-u2d-nai-u2d-ka-contrast-aware",
+      "sentence-n4-u2d-dewa-u2d-nai-u2d-ka-core",
+      "sentence-n4-u2d-dewa-u2d-nai-u2d-ka-real-life",
+      "sentence-n4-u2d-dewa-u2d-nai-u2d-ka-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-034"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-dewa-nai-ka-context-application-1",
+      "question-grammar-n4-dewa-nai-ka-context-application-2",
+      "question-grammar-n4-dewa-nai-ka-meaning-1",
+      "question-grammar-n4-dewa-nai-ka-meaning-2",
+      "question-grammar-n4-dewa-nai-ka-recognition-1",
+      "question-grammar-n4-dewa-nai-ka-recognition-2",
+      "question-grammar-n4-dewa-nai-ka-usage-1",
+      "question-grammar-n4-dewa-nai-ka-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-ga-suru-senses",
+    "level": "N4",
+    "pattern": "～がする",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-ga-u2d-suru-u2d-senses-contrast-aware",
+      "sentence-n4-u2d-ga-u2d-suru-u2d-senses-core",
+      "sentence-n4-u2d-ga-u2d-suru-u2d-senses-real-life",
+      "sentence-n4-u2d-ga-u2d-suru-u2d-senses-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-030",
+      "n4-unit-031"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-ga-suru-senses-context-application-1",
+      "question-grammar-n4-ga-suru-senses-context-application-2",
+      "question-grammar-n4-ga-suru-senses-meaning-1",
+      "question-grammar-n4-ga-suru-senses-meaning-2",
+      "question-grammar-n4-ga-suru-senses-recognition-1",
+      "question-grammar-n4-ga-suru-senses-recognition-2",
+      "question-grammar-n4-ga-suru-senses-usage-1",
+      "question-grammar-n4-ga-suru-senses-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-gari",
+    "level": "N4",
+    "pattern": "～がり",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-gari-contrast-aware",
+      "sentence-n4-u2d-gari-core",
+      "sentence-n4-u2d-gari-real-life",
+      "sentence-n4-u2d-gari-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-031"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-gari-context-application-1",
+      "question-grammar-n4-gari-context-application-2",
+      "question-grammar-n4-gari-meaning-1",
+      "question-grammar-n4-gari-meaning-2",
+      "question-grammar-n4-gari-recognition-1",
+      "question-grammar-n4-gari-recognition-2",
+      "question-grammar-n4-gari-usage-1",
+      "question-grammar-n4-gari-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-garu",
+    "level": "N4",
+    "pattern": "～がる／～がっている",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-garu-contrast-aware",
+      "sentence-n4-u2d-garu-core",
+      "sentence-n4-u2d-garu-real-life",
+      "sentence-n4-u2d-garu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-030",
+      "n4-unit-031"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-garu-context-application-1",
+      "question-grammar-n4-garu-context-application-2",
+      "question-grammar-n4-garu-meaning-1",
+      "question-grammar-n4-garu-meaning-2",
+      "question-grammar-n4-garu-recognition-1",
+      "question-grammar-n4-garu-recognition-2",
+      "question-grammar-n4-garu-usage-1",
+      "question-grammar-n4-garu-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-gozaimasu",
+    "level": "N4",
+    "pattern": "ございます",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-gozaimasu-contrast-aware",
+      "sentence-n4-u2d-gozaimasu-core",
+      "sentence-n4-u2d-gozaimasu-real-life",
+      "sentence-n4-u2d-gozaimasu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-037"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-gozaimasu-context-application-1",
+      "question-grammar-n4-gozaimasu-context-application-2",
+      "question-grammar-n4-gozaimasu-meaning-1",
+      "question-grammar-n4-gozaimasu-meaning-2",
+      "question-grammar-n4-gozaimasu-recognition-1",
+      "question-grammar-n4-gozaimasu-recognition-2",
+      "question-grammar-n4-gozaimasu-usage-1",
+      "question-grammar-n4-gozaimasu-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-hajimeru",
+    "level": "N4",
+    "pattern": "～始める",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-hajimeru-contrast-aware",
+      "sentence-n4-u2d-hajimeru-core",
+      "sentence-n4-u2d-hajimeru-real-life",
+      "sentence-n4-u2d-hajimeru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-009"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-hajimeru-context-application-1",
+      "question-grammar-n4-hajimeru-context-application-2",
+      "question-grammar-n4-hajimeru-meaning-1",
+      "question-grammar-n4-hajimeru-meaning-2",
+      "question-grammar-n4-hajimeru-recognition-1",
+      "question-grammar-n4-hajimeru-recognition-2",
+      "question-grammar-n4-hajimeru-usage-1",
+      "question-grammar-n4-hajimeru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-hazu-da",
+    "level": "N4",
+    "pattern": "～はずだ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-hazu-u2d-da-contrast-aware",
+      "sentence-n4-u2d-hazu-u2d-da-core",
+      "sentence-n4-u2d-hazu-u2d-da-real-life",
+      "sentence-n4-u2d-hazu-u2d-da-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-019",
+      "n4-unit-020"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-hazu-da-context-application-1",
+      "question-grammar-n4-hazu-da-context-application-2",
+      "question-grammar-n4-hazu-da-meaning-1",
+      "question-grammar-n4-hazu-da-meaning-2",
+      "question-grammar-n4-hazu-da-recognition-1",
+      "question-grammar-n4-hazu-da-recognition-2",
+      "question-grammar-n4-hazu-da-usage-1",
+      "question-grammar-n4-hazu-da-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-hazu-ga-nai",
+    "level": "N4",
+    "pattern": "～はずがない",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-hazu-u2d-ga-u2d-nai-contrast-aware",
+      "sentence-n4-u2d-hazu-u2d-ga-u2d-nai-core",
+      "sentence-n4-u2d-hazu-u2d-ga-u2d-nai-real-life",
+      "sentence-n4-u2d-hazu-u2d-ga-u2d-nai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-020"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-hazu-ga-nai-context-application-1",
+      "question-grammar-n4-hazu-ga-nai-context-application-2",
+      "question-grammar-n4-hazu-ga-nai-meaning-1",
+      "question-grammar-n4-hazu-ga-nai-meaning-2",
+      "question-grammar-n4-hazu-ga-nai-recognition-1",
+      "question-grammar-n4-hazu-ga-nai-recognition-2",
+      "question-grammar-n4-hazu-ga-nai-usage-1",
+      "question-grammar-n4-hazu-ga-nai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-hitsuyou-ga-aru",
+    "level": "N4",
+    "pattern": "～必要がある",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-hitsuyou-u2d-ga-u2d-aru-contrast-aware",
+      "sentence-n4-u2d-hitsuyou-u2d-ga-u2d-aru-core",
+      "sentence-n4-u2d-hitsuyou-u2d-ga-u2d-aru-real-life",
+      "sentence-n4-u2d-hitsuyou-u2d-ga-u2d-aru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-016",
+      "n4-unit-017"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-hitsuyou-ga-aru-context-application-1",
+      "question-grammar-n4-hitsuyou-ga-aru-context-application-2",
+      "question-grammar-n4-hitsuyou-ga-aru-meaning-1",
+      "question-grammar-n4-hitsuyou-ga-aru-meaning-2",
+      "question-grammar-n4-hitsuyou-ga-aru-recognition-1",
+      "question-grammar-n4-hitsuyou-ga-aru-recognition-2",
+      "question-grammar-n4-hitsuyou-ga-aru-usage-1",
+      "question-grammar-n4-hitsuyou-ga-aru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-hodo",
+    "level": "N4",
+    "pattern": "～ほど",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-hodo-contrast-aware",
+      "sentence-n4-u2d-hodo-core",
+      "sentence-n4-u2d-hodo-real-life",
+      "sentence-n4-u2d-hodo-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-027",
+      "n4-unit-028"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-hodo-context-application-1",
+      "question-grammar-n4-hodo-context-application-2",
+      "question-grammar-n4-hodo-meaning-1",
+      "question-grammar-n4-hodo-meaning-2",
+      "question-grammar-n4-hodo-recognition-1",
+      "question-grammar-n4-hodo-recognition-2",
+      "question-grammar-n4-hodo-usage-1",
+      "question-grammar-n4-hodo-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-irassharu",
+    "level": "N4",
+    "pattern": "いらっしゃる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-irassharu-contrast-aware",
+      "sentence-n4-u2d-irassharu-core",
+      "sentence-n4-u2d-irassharu-real-life",
+      "sentence-n4-u2d-irassharu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-037",
+      "n4-unit-038"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-irassharu-context-application-1",
+      "question-grammar-n4-irassharu-context-application-2",
+      "question-grammar-n4-irassharu-meaning-1",
+      "question-grammar-n4-irassharu-meaning-2",
+      "question-grammar-n4-irassharu-recognition-1",
+      "question-grammar-n4-irassharu-recognition-2",
+      "question-grammar-n4-irassharu-usage-1",
+      "question-grammar-n4-irassharu-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-itasu",
+    "level": "N4",
+    "pattern": "いたす",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-itasu-contrast-aware",
+      "sentence-n4-u2d-itasu-core",
+      "sentence-n4-u2d-itasu-real-life",
+      "sentence-n4-u2d-itasu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-038"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-itasu-context-application-1",
+      "question-grammar-n4-itasu-context-application-2",
+      "question-grammar-n4-itasu-meaning-1",
+      "question-grammar-n4-itasu-meaning-2",
+      "question-grammar-n4-itasu-recognition-1",
+      "question-grammar-n4-itasu-recognition-2",
+      "question-grammar-n4-itasu-usage-1",
+      "question-grammar-n4-itasu-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-ka-dou-ka",
+    "level": "N4",
+    "pattern": "～かどうか",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-ka-u2d-dou-u2d-ka-contrast-aware",
+      "sentence-n4-u2d-ka-u2d-dou-u2d-ka-core",
+      "sentence-n4-u2d-ka-u2d-dou-u2d-ka-real-life",
+      "sentence-n4-u2d-ka-u2d-dou-u2d-ka-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-004",
+      "n4-unit-005"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-ka-dou-ka-context-application-1",
+      "question-grammar-n4-ka-dou-ka-context-application-2",
+      "question-grammar-n4-ka-dou-ka-meaning-1",
+      "question-grammar-n4-ka-dou-ka-meaning-2",
+      "question-grammar-n4-ka-dou-ka-recognition-1",
+      "question-grammar-n4-ka-dou-ka-recognition-2",
+      "question-grammar-n4-ka-dou-ka-usage-1",
+      "question-grammar-n4-ka-dou-ka-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-kai-question",
+    "level": "N4",
+    "pattern": "～かい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-kai-u2d-question-contrast-aware",
+      "sentence-n4-u2d-kai-u2d-question-core",
+      "sentence-n4-u2d-kai-u2d-question-real-life",
+      "sentence-n4-u2d-kai-u2d-question-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-034",
+      "n4-unit-035"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-kai-question-context-application-1",
+      "question-grammar-n4-kai-question-context-application-2",
+      "question-grammar-n4-kai-question-meaning-1",
+      "question-grammar-n4-kai-question-meaning-2",
+      "question-grammar-n4-kai-question-recognition-1",
+      "question-grammar-n4-kai-question-recognition-2",
+      "question-grammar-n4-kai-question-usage-1",
+      "question-grammar-n4-kai-question-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-kamo-shirenai",
+    "level": "N4",
+    "pattern": "～かもしれない",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-kamo-u2d-shirenai-contrast-aware",
+      "sentence-n4-u2d-kamo-u2d-shirenai-core",
+      "sentence-n4-u2d-kamo-u2d-shirenai-real-life",
+      "sentence-n4-u2d-kamo-u2d-shirenai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-020",
+      "n4-unit-021"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-kamo-shirenai-context-application-1",
+      "question-grammar-n4-kamo-shirenai-context-application-2",
+      "question-grammar-n4-kamo-shirenai-meaning-1",
+      "question-grammar-n4-kamo-shirenai-meaning-2",
+      "question-grammar-n4-kamo-shirenai-recognition-1",
+      "question-grammar-n4-kamo-shirenai-recognition-2",
+      "question-grammar-n4-kamo-shirenai-usage-1",
+      "question-grammar-n4-kamo-shirenai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-kana",
+    "level": "N4",
+    "pattern": "～かな",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-kana-contrast-aware",
+      "sentence-n4-u2d-kana-core",
+      "sentence-n4-u2d-kana-real-life",
+      "sentence-n4-u2d-kana-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-035"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-kana-context-application-1",
+      "question-grammar-n4-kana-context-application-2",
+      "question-grammar-n4-kana-meaning-1",
+      "question-grammar-n4-kana-meaning-2",
+      "question-grammar-n4-kana-recognition-1",
+      "question-grammar-n4-kana-recognition-2",
+      "question-grammar-n4-kana-usage-1",
+      "question-grammar-n4-kana-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-kara-tsukuru",
+    "level": "N4",
+    "pattern": "～から作る",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-kara-u2d-tsukuru-contrast-aware",
+      "sentence-n4-u2d-kara-u2d-tsukuru-core",
+      "sentence-n4-u2d-kara-u2d-tsukuru-real-life",
+      "sentence-n4-u2d-kara-u2d-tsukuru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-026"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-kara-tsukuru-context-application-1",
+      "question-grammar-n4-kara-tsukuru-context-application-2",
+      "question-grammar-n4-kara-tsukuru-meaning-1",
+      "question-grammar-n4-kara-tsukuru-meaning-2",
+      "question-grammar-n4-kara-tsukuru-recognition-1",
+      "question-grammar-n4-kara-tsukuru-recognition-2",
+      "question-grammar-n4-kara-tsukuru-usage-1",
+      "question-grammar-n4-kara-tsukuru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-kashira",
+    "level": "N4",
+    "pattern": "～かしら",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-kashira-contrast-aware",
+      "sentence-n4-u2d-kashira-core",
+      "sentence-n4-u2d-kashira-real-life",
+      "sentence-n4-u2d-kashira-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-034",
+      "n4-unit-035"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-kashira-context-application-1",
+      "question-grammar-n4-kashira-context-application-2",
+      "question-grammar-n4-kashira-meaning-1",
+      "question-grammar-n4-kashira-meaning-2",
+      "question-grammar-n4-kashira-recognition-1",
+      "question-grammar-n4-kashira-recognition-2",
+      "question-grammar-n4-kashira-usage-1",
+      "question-grammar-n4-kashira-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-koro",
+    "level": "N4",
+    "pattern": "～頃",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-koro-contrast-aware",
+      "sentence-n4-u2d-koro-core",
+      "sentence-n4-u2d-koro-real-life",
+      "sentence-n4-u2d-koro-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-005",
+      "n4-unit-006"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-koro-context-application-1",
+      "question-grammar-n4-koro-context-application-2",
+      "question-grammar-n4-koro-meaning-1",
+      "question-grammar-n4-koro-meaning-2",
+      "question-grammar-n4-koro-recognition-1",
+      "question-grammar-n4-koro-recognition-2",
+      "question-grammar-n4-koro-usage-1",
+      "question-grammar-n4-koro-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-koto-ga-aru-occasional",
+    "level": "N4",
+    "pattern": "～ことがある",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-contrast-aware",
+      "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-core",
+      "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-real-life",
+      "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-006",
+      "n4-unit-007"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-koto-ga-aru-occasional-context-application-1",
+      "question-grammar-n4-koto-ga-aru-occasional-context-application-2",
+      "question-grammar-n4-koto-ga-aru-occasional-meaning-1",
+      "question-grammar-n4-koto-ga-aru-occasional-meaning-2",
+      "question-grammar-n4-koto-ga-aru-occasional-recognition-1",
+      "question-grammar-n4-koto-ga-aru-occasional-recognition-2",
+      "question-grammar-n4-koto-ga-aru-occasional-usage-1",
+      "question-grammar-n4-koto-ga-aru-occasional-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-koto-ga-dekiru",
+    "level": "N4",
+    "pattern": "～ことができる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-koto-u2d-ga-u2d-dekiru-contrast-aware",
+      "sentence-n4-u2d-koto-u2d-ga-u2d-dekiru-core",
+      "sentence-n4-u2d-koto-u2d-ga-u2d-dekiru-real-life",
+      "sentence-n4-u2d-koto-u2d-ga-u2d-dekiru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-022",
+      "n4-unit-023"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-koto-ga-dekiru-context-application-1",
+      "question-grammar-n4-koto-ga-dekiru-context-application-2",
+      "question-grammar-n4-koto-ga-dekiru-meaning-1",
+      "question-grammar-n4-koto-ga-dekiru-meaning-2",
+      "question-grammar-n4-koto-ga-dekiru-recognition-1",
+      "question-grammar-n4-koto-ga-dekiru-recognition-2",
+      "question-grammar-n4-koto-ga-dekiru-usage-1",
+      "question-grammar-n4-koto-ga-dekiru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-koto-ni-naru",
+    "level": "N4",
+    "pattern": "～ことになる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-koto-u2d-ni-u2d-naru-contrast-aware",
+      "sentence-n4-u2d-koto-u2d-ni-u2d-naru-core",
+      "sentence-n4-u2d-koto-u2d-ni-u2d-naru-real-life",
+      "sentence-n4-u2d-koto-u2d-ni-u2d-naru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-018",
+      "n4-unit-019"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-koto-ni-naru-context-application-1",
+      "question-grammar-n4-koto-ni-naru-context-application-2",
+      "question-grammar-n4-koto-ni-naru-meaning-1",
+      "question-grammar-n4-koto-ni-naru-meaning-2",
+      "question-grammar-n4-koto-ni-naru-recognition-1",
+      "question-grammar-n4-koto-ni-naru-recognition-2",
+      "question-grammar-n4-koto-ni-naru-usage-1",
+      "question-grammar-n4-koto-ni-naru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-koto-ni-suru",
+    "level": "N4",
+    "pattern": "～ことにする",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-koto-u2d-ni-u2d-suru-contrast-aware",
+      "sentence-n4-u2d-koto-u2d-ni-u2d-suru-core",
+      "sentence-n4-u2d-koto-u2d-ni-u2d-suru-real-life",
+      "sentence-n4-u2d-koto-u2d-ni-u2d-suru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-018",
+      "n4-unit-019"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-koto-ni-suru-context-application-1",
+      "question-grammar-n4-koto-ni-suru-context-application-2",
+      "question-grammar-n4-koto-ni-suru-meaning-1",
+      "question-grammar-n4-koto-ni-suru-meaning-2",
+      "question-grammar-n4-koto-ni-suru-recognition-1",
+      "question-grammar-n4-koto-ni-suru-recognition-2",
+      "question-grammar-n4-koto-ni-suru-usage-1",
+      "question-grammar-n4-koto-ni-suru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-koto-nominalizer",
+    "level": "N4",
+    "pattern": "～こと",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-koto-u2d-nominalizer-contrast-aware",
+      "sentence-n4-u2d-koto-u2d-nominalizer-core",
+      "sentence-n4-u2d-koto-u2d-nominalizer-real-life",
+      "sentence-n4-u2d-koto-u2d-nominalizer-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-001"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-koto-nominalizer-context-application-1",
+      "question-grammar-n4-koto-nominalizer-context-application-2",
+      "question-grammar-n4-koto-nominalizer-meaning-1",
+      "question-grammar-n4-koto-nominalizer-meaning-2",
+      "question-grammar-n4-koto-nominalizer-recognition-1",
+      "question-grammar-n4-koto-nominalizer-recognition-2",
+      "question-grammar-n4-koto-nominalizer-usage-1",
+      "question-grammar-n4-koto-nominalizer-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-ku-suru",
+    "level": "N4",
+    "pattern": "～くする",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-ku-u2d-suru-contrast-aware",
+      "sentence-n4-u2d-ku-u2d-suru-core",
+      "sentence-n4-u2d-ku-u2d-suru-real-life",
+      "sentence-n4-u2d-ku-u2d-suru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-026",
+      "n4-unit-027"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-ku-suru-context-application-1",
+      "question-grammar-n4-ku-suru-context-application-2",
+      "question-grammar-n4-ku-suru-meaning-1",
+      "question-grammar-n4-ku-suru-meaning-2",
+      "question-grammar-n4-ku-suru-recognition-1",
+      "question-grammar-n4-ku-suru-recognition-2",
+      "question-grammar-n4-ku-suru-usage-1",
+      "question-grammar-n4-ku-suru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-made-ni",
+    "level": "N4",
+    "pattern": "～までに",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-made-u2d-ni-contrast-aware",
+      "sentence-n4-u2d-made-u2d-ni-core",
+      "sentence-n4-u2d-made-u2d-ni-real-life",
+      "sentence-n4-u2d-made-u2d-ni-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-006"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-made-ni-context-application-1",
+      "question-grammar-n4-made-ni-context-application-2",
+      "question-grammar-n4-made-ni-meaning-1",
+      "question-grammar-n4-made-ni-meaning-2",
+      "question-grammar-n4-made-ni-recognition-1",
+      "question-grammar-n4-made-ni-recognition-2",
+      "question-grammar-n4-made-ni-usage-1",
+      "question-grammar-n4-made-ni-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-mama",
+    "level": "N4",
+    "pattern": "～まま",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-mama-contrast-aware",
+      "sentence-n4-u2d-mama-core",
+      "sentence-n4-u2d-mama-real-life",
+      "sentence-n4-u2d-mama-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-011",
+      "n4-unit-012"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-mama-context-application-1",
+      "question-grammar-n4-mama-context-application-2",
+      "question-grammar-n4-mama-meaning-1",
+      "question-grammar-n4-mama-meaning-2",
+      "question-grammar-n4-mama-recognition-1",
+      "question-grammar-n4-mama-recognition-2",
+      "question-grammar-n4-mama-usage-1",
+      "question-grammar-n4-mama-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-mitai-da",
+    "level": "N4",
+    "pattern": "～みたいだ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-mitai-u2d-da-contrast-aware",
+      "sentence-n4-u2d-mitai-u2d-da-core",
+      "sentence-n4-u2d-mitai-u2d-da-real-life",
+      "sentence-n4-u2d-mitai-u2d-da-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-022"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-mitai-da-context-application-1",
+      "question-grammar-n4-mitai-da-context-application-2",
+      "question-grammar-n4-mitai-da-meaning-1",
+      "question-grammar-n4-mitai-da-meaning-2",
+      "question-grammar-n4-mitai-da-recognition-1",
+      "question-grammar-n4-mitai-da-recognition-2",
+      "question-grammar-n4-mitai-da-usage-1",
+      "question-grammar-n4-mitai-da-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-mo-quantity-emphasis",
+    "level": "N4",
+    "pattern": "～も",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-mo-u2d-quantity-u2d-emphasis-contrast-aware",
+      "sentence-n4-u2d-mo-u2d-quantity-u2d-emphasis-core",
+      "sentence-n4-u2d-mo-u2d-quantity-u2d-emphasis-real-life",
+      "sentence-n4-u2d-mo-u2d-quantity-u2d-emphasis-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-028",
+      "n4-unit-029"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-mo-quantity-emphasis-context-application-1",
+      "question-grammar-n4-mo-quantity-emphasis-context-application-2",
+      "question-grammar-n4-mo-quantity-emphasis-meaning-1",
+      "question-grammar-n4-mo-quantity-emphasis-meaning-2",
+      "question-grammar-n4-mo-quantity-emphasis-recognition-1",
+      "question-grammar-n4-mo-quantity-emphasis-recognition-2",
+      "question-grammar-n4-mo-quantity-emphasis-usage-1",
+      "question-grammar-n4-mo-quantity-emphasis-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nado",
+    "level": "N4",
+    "pattern": "～など",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nado-contrast-aware",
+      "sentence-n4-u2d-nado-core",
+      "sentence-n4-u2d-nado-real-life",
+      "sentence-n4-u2d-nado-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-029"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nado-context-application-1",
+      "question-grammar-n4-nado-context-application-2",
+      "question-grammar-n4-nado-meaning-1",
+      "question-grammar-n4-nado-meaning-2",
+      "question-grammar-n4-nado-recognition-1",
+      "question-grammar-n4-nado-recognition-2",
+      "question-grammar-n4-nado-usage-1",
+      "question-grammar-n4-nado-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nagara",
+    "level": "N4",
+    "pattern": "～ながら",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nagara-contrast-aware",
+      "sentence-n4-u2d-nagara-core",
+      "sentence-n4-u2d-nagara-real-life",
+      "sentence-n4-u2d-nagara-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-006",
+      "n4-unit-007"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nagara-context-application-1",
+      "question-grammar-n4-nagara-context-application-2",
+      "question-grammar-n4-nagara-meaning-1",
+      "question-grammar-n4-nagara-meaning-2",
+      "question-grammar-n4-nagara-recognition-1",
+      "question-grammar-n4-nagara-recognition-2",
+      "question-grammar-n4-nagara-usage-1",
+      "question-grammar-n4-nagara-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nakanaka-nai",
+    "level": "N4",
+    "pattern": "なかなか～ない",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nakanaka-u2d-nai-contrast-aware",
+      "sentence-n4-u2d-nakanaka-u2d-nai-core",
+      "sentence-n4-u2d-nakanaka-u2d-nai-real-life",
+      "sentence-n4-u2d-nakanaka-u2d-nai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-031",
+      "n4-unit-032"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nakanaka-nai-context-application-1",
+      "question-grammar-n4-nakanaka-nai-context-application-2",
+      "question-grammar-n4-nakanaka-nai-meaning-1",
+      "question-grammar-n4-nakanaka-nai-meaning-2",
+      "question-grammar-n4-nakanaka-nai-recognition-1",
+      "question-grammar-n4-nakanaka-nai-recognition-2",
+      "question-grammar-n4-nakanaka-nai-usage-1",
+      "question-grammar-n4-nakanaka-nai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nakereba-naranai",
+    "level": "N4",
+    "pattern": "～なければならない",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nakereba-u2d-naranai-contrast-aware",
+      "sentence-n4-u2d-nakereba-u2d-naranai-core",
+      "sentence-n4-u2d-nakereba-u2d-naranai-real-life",
+      "sentence-n4-u2d-nakereba-u2d-naranai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-016",
+      "n4-unit-017"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nakereba-naranai-context-application-1",
+      "question-grammar-n4-nakereba-naranai-context-application-2",
+      "question-grammar-n4-nakereba-naranai-meaning-1",
+      "question-grammar-n4-nakereba-naranai-meaning-2",
+      "question-grammar-n4-nakereba-naranai-recognition-1",
+      "question-grammar-n4-nakereba-naranai-recognition-2",
+      "question-grammar-n4-nakereba-naranai-usage-1",
+      "question-grammar-n4-nakereba-naranai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nakutemo-ii",
+    "level": "N4",
+    "pattern": "～なくてもいい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nakutemo-u2d-ii-contrast-aware",
+      "sentence-n4-u2d-nakutemo-u2d-ii-core",
+      "sentence-n4-u2d-nakutemo-u2d-ii-real-life",
+      "sentence-n4-u2d-nakutemo-u2d-ii-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-017"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nakutemo-ii-context-application-1",
+      "question-grammar-n4-nakutemo-ii-context-application-2",
+      "question-grammar-n4-nakutemo-ii-meaning-1",
+      "question-grammar-n4-nakutemo-ii-meaning-2",
+      "question-grammar-n4-nakutemo-ii-recognition-1",
+      "question-grammar-n4-nakutemo-ii-recognition-2",
+      "question-grammar-n4-nakutemo-ii-usage-1",
+      "question-grammar-n4-nakutemo-ii-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nara",
+    "level": "N4",
+    "pattern": "～なら",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nara-contrast-aware",
+      "sentence-n4-u2d-nara-core",
+      "sentence-n4-u2d-nara-real-life",
+      "sentence-n4-u2d-nara-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-014",
+      "n4-unit-015"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nara-context-application-1",
+      "question-grammar-n4-nara-context-application-2",
+      "question-grammar-n4-nara-meaning-1",
+      "question-grammar-n4-nara-meaning-2",
+      "question-grammar-n4-nara-recognition-1",
+      "question-grammar-n4-nara-recognition-2",
+      "question-grammar-n4-nara-usage-1",
+      "question-grammar-n4-nara-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nasai",
+    "level": "N4",
+    "pattern": "～なさい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nasai-contrast-aware",
+      "sentence-n4-u2d-nasai-core",
+      "sentence-n4-u2d-nasai-real-life",
+      "sentence-n4-u2d-nasai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-017",
+      "n4-unit-018"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nasai-context-application-1",
+      "question-grammar-n4-nasai-context-application-2",
+      "question-grammar-n4-nasai-meaning-1",
+      "question-grammar-n4-nasai-meaning-2",
+      "question-grammar-n4-nasai-recognition-1",
+      "question-grammar-n4-nasai-recognition-2",
+      "question-grammar-n4-nasai-usage-1",
+      "question-grammar-n4-nasai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nasaru",
+    "level": "N4",
+    "pattern": "なさる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nasaru-contrast-aware",
+      "sentence-n4-u2d-nasaru-core",
+      "sentence-n4-u2d-nasaru-real-life",
+      "sentence-n4-u2d-nasaru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-037",
+      "n4-unit-038"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nasaru-context-application-1",
+      "question-grammar-n4-nasaru-context-application-2",
+      "question-grammar-n4-nasaru-meaning-1",
+      "question-grammar-n4-nasaru-meaning-2",
+      "question-grammar-n4-nasaru-recognition-1",
+      "question-grammar-n4-nasaru-recognition-2",
+      "question-grammar-n4-nasaru-usage-1",
+      "question-grammar-n4-nasaru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-ni-mieru",
+    "level": "N4",
+    "pattern": "～に見える",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-ni-u2d-mieru-contrast-aware",
+      "sentence-n4-u2d-ni-u2d-mieru-core",
+      "sentence-n4-u2d-ni-u2d-mieru-real-life",
+      "sentence-n4-u2d-ni-u2d-mieru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-022",
+      "n4-unit-023"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-ni-mieru-context-application-1",
+      "question-grammar-n4-ni-mieru-context-application-2",
+      "question-grammar-n4-ni-mieru-meaning-1",
+      "question-grammar-n4-ni-mieru-meaning-2",
+      "question-grammar-n4-ni-mieru-recognition-1",
+      "question-grammar-n4-ni-mieru-recognition-2",
+      "question-grammar-n4-ni-mieru-usage-1",
+      "question-grammar-n4-ni-mieru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nikui",
+    "level": "N4",
+    "pattern": "～にくい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nikui-contrast-aware",
+      "sentence-n4-u2d-nikui-core",
+      "sentence-n4-u2d-nikui-real-life",
+      "sentence-n4-u2d-nikui-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-032"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nikui-context-application-1",
+      "question-grammar-n4-nikui-context-application-2",
+      "question-grammar-n4-nikui-meaning-1",
+      "question-grammar-n4-nikui-meaning-2",
+      "question-grammar-n4-nikui-recognition-1",
+      "question-grammar-n4-nikui-recognition-2",
+      "question-grammar-n4-nikui-usage-1",
+      "question-grammar-n4-nikui-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-noni-contrast",
+    "level": "N4",
+    "pattern": "～のに",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-noni-u2d-contrast-contrast-aware",
+      "sentence-n4-u2d-noni-u2d-contrast-core",
+      "sentence-n4-u2d-noni-u2d-contrast-real-life",
+      "sentence-n4-u2d-noni-u2d-contrast-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-033"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-noni-contrast-context-application-1",
+      "question-grammar-n4-noni-contrast-context-application-2",
+      "question-grammar-n4-noni-contrast-meaning-1",
+      "question-grammar-n4-noni-contrast-meaning-2",
+      "question-grammar-n4-noni-contrast-recognition-1",
+      "question-grammar-n4-noni-contrast-recognition-2",
+      "question-grammar-n4-noni-contrast-usage-1",
+      "question-grammar-n4-noni-contrast-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-noni-purpose",
+    "level": "N4",
+    "pattern": "～のに",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-noni-u2d-purpose-contrast-aware",
+      "sentence-n4-u2d-noni-u2d-purpose-core",
+      "sentence-n4-u2d-noni-u2d-purpose-real-life",
+      "sentence-n4-u2d-noni-u2d-purpose-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-025",
+      "n4-unit-026"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-noni-purpose-context-application-1",
+      "question-grammar-n4-noni-purpose-context-application-2",
+      "question-grammar-n4-noni-purpose-meaning-1",
+      "question-grammar-n4-noni-purpose-meaning-2",
+      "question-grammar-n4-noni-purpose-recognition-1",
+      "question-grammar-n4-noni-purpose-recognition-2",
+      "question-grammar-n4-noni-purpose-usage-1",
+      "question-grammar-n4-noni-purpose-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-nowa-da",
+    "level": "N4",
+    "pattern": "～のは～だ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-nowa-u2d-da-contrast-aware",
+      "sentence-n4-u2d-nowa-u2d-da-core",
+      "sentence-n4-u2d-nowa-u2d-da-real-life",
+      "sentence-n4-u2d-nowa-u2d-da-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-001",
+      "n4-unit-002"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-nowa-da-context-application-1",
+      "question-grammar-n4-nowa-da-context-application-2",
+      "question-grammar-n4-nowa-da-meaning-1",
+      "question-grammar-n4-nowa-da-meaning-2",
+      "question-grammar-n4-nowa-da-recognition-1",
+      "question-grammar-n4-nowa-da-recognition-2",
+      "question-grammar-n4-nowa-da-usage-1",
+      "question-grammar-n4-nowa-da-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-o-kudasai",
+    "level": "N4",
+    "pattern": "お～ください",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-o-u2d-kudasai-contrast-aware",
+      "sentence-n4-u2d-o-u2d-kudasai-core",
+      "sentence-n4-u2d-o-u2d-kudasai-real-life",
+      "sentence-n4-u2d-o-u2d-kudasai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-038"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-o-kudasai-context-application-1",
+      "question-grammar-n4-o-kudasai-context-application-2",
+      "question-grammar-n4-o-kudasai-meaning-1",
+      "question-grammar-n4-o-kudasai-meaning-2",
+      "question-grammar-n4-o-kudasai-recognition-1",
+      "question-grammar-n4-o-kudasai-recognition-2",
+      "question-grammar-n4-o-kudasai-usage-1",
+      "question-grammar-n4-o-kudasai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-o-ni-naru",
+    "level": "N4",
+    "pattern": "お～になる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-o-u2d-ni-u2d-naru-contrast-aware",
+      "sentence-n4-u2d-o-u2d-ni-u2d-naru-core",
+      "sentence-n4-u2d-o-u2d-ni-u2d-naru-real-life",
+      "sentence-n4-u2d-o-u2d-ni-u2d-naru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-038"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-o-ni-naru-context-application-1",
+      "question-grammar-n4-o-ni-naru-context-application-2",
+      "question-grammar-n4-o-ni-naru-meaning-1",
+      "question-grammar-n4-o-ni-naru-meaning-2",
+      "question-grammar-n4-o-ni-naru-recognition-1",
+      "question-grammar-n4-o-ni-naru-recognition-2",
+      "question-grammar-n4-o-ni-naru-usage-1",
+      "question-grammar-n4-o-ni-naru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-oki-ni-unresolved",
+    "level": "N4",
+    "pattern": "～おきに",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [],
+    "curriculumUnitIds": [],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-n4-owaru",
+    "level": "N4",
+    "pattern": "～終わる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-owaru-contrast-aware",
+      "sentence-n4-u2d-owaru-core",
+      "sentence-n4-u2d-owaru-real-life",
+      "sentence-n4-u2d-owaru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-009",
+      "n4-unit-010"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-owaru-context-application-1",
+      "question-grammar-n4-owaru-context-application-2",
+      "question-grammar-n4-owaru-meaning-1",
+      "question-grammar-n4-owaru-meaning-2",
+      "question-grammar-n4-owaru-recognition-1",
+      "question-grammar-n4-owaru-recognition-2",
+      "question-grammar-n4-owaru-usage-1",
+      "question-grammar-n4-owaru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-passive-form",
+    "level": "N4",
+    "pattern": "受身形（～れる／～られる）",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-passive-u2d-form-contrast-aware",
+      "sentence-n4-u2d-passive-u2d-form-core",
+      "sentence-n4-u2d-passive-u2d-form-real-life",
+      "sentence-n4-u2d-passive-u2d-form-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-023",
+      "n4-unit-024"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-passive-form-context-application-1",
+      "question-grammar-n4-passive-form-context-application-2",
+      "question-grammar-n4-passive-form-meaning-1",
+      "question-grammar-n4-passive-form-meaning-2",
+      "question-grammar-n4-passive-form-recognition-1",
+      "question-grammar-n4-passive-form-recognition-2",
+      "question-grammar-n4-passive-form-usage-1",
+      "question-grammar-n4-passive-form-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-potential-form",
+    "level": "N4",
+    "pattern": "可能形（～える／～られる）",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-potential-u2d-form-contrast-aware",
+      "sentence-n4-u2d-potential-u2d-form-core",
+      "sentence-n4-u2d-potential-u2d-form-real-life",
+      "sentence-n4-u2d-potential-u2d-form-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-023"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-potential-form-context-application-1",
+      "question-grammar-n4-potential-form-context-application-2",
+      "question-grammar-n4-potential-form-meaning-1",
+      "question-grammar-n4-potential-form-meaning-2",
+      "question-grammar-n4-potential-form-recognition-1",
+      "question-grammar-n4-potential-form-recognition-2",
+      "question-grammar-n4-potential-form-usage-1",
+      "question-grammar-n4-potential-form-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-rashii",
+    "level": "N4",
+    "pattern": "～らしい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-rashii-contrast-aware",
+      "sentence-n4-u2d-rashii-core",
+      "sentence-n4-u2d-rashii-real-life",
+      "sentence-n4-u2d-rashii-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-021",
+      "n4-unit-022"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-rashii-context-application-1",
+      "question-grammar-n4-rashii-context-application-2",
+      "question-grammar-n4-rashii-meaning-1",
+      "question-grammar-n4-rashii-meaning-2",
+      "question-grammar-n4-rashii-recognition-1",
+      "question-grammar-n4-rashii-recognition-2",
+      "question-grammar-n4-rashii-usage-1",
+      "question-grammar-n4-rashii-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-sa-nominalizer",
+    "level": "N4",
+    "pattern": "～さ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-sa-u2d-nominalizer-contrast-aware",
+      "sentence-n4-u2d-sa-u2d-nominalizer-core",
+      "sentence-n4-u2d-sa-u2d-nominalizer-real-life",
+      "sentence-n4-u2d-sa-u2d-nominalizer-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-001",
+      "n4-unit-002"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-sa-nominalizer-context-application-1",
+      "question-grammar-n4-sa-nominalizer-context-application-2",
+      "question-grammar-n4-sa-nominalizer-meaning-1",
+      "question-grammar-n4-sa-nominalizer-meaning-2",
+      "question-grammar-n4-sa-nominalizer-recognition-1",
+      "question-grammar-n4-sa-nominalizer-recognition-2",
+      "question-grammar-n4-sa-nominalizer-usage-1",
+      "question-grammar-n4-sa-nominalizer-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-sasete-kudasai",
+    "level": "N4",
+    "pattern": "～させてください",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-sasete-u2d-kudasai-contrast-aware",
+      "sentence-n4-u2d-sasete-u2d-kudasai-core",
+      "sentence-n4-u2d-sasete-u2d-kudasai-real-life",
+      "sentence-n4-u2d-sasete-u2d-kudasai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-024",
+      "n4-unit-025"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-sasete-kudasai-context-application-1",
+      "question-grammar-n4-sasete-kudasai-context-application-2",
+      "question-grammar-n4-sasete-kudasai-meaning-1",
+      "question-grammar-n4-sasete-kudasai-meaning-2",
+      "question-grammar-n4-sasete-kudasai-recognition-1",
+      "question-grammar-n4-sasete-kudasai-recognition-2",
+      "question-grammar-n4-sasete-kudasai-usage-1",
+      "question-grammar-n4-sasete-kudasai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-shi",
+    "level": "N4",
+    "pattern": "～し",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-shi-contrast-aware",
+      "sentence-n4-u2d-shi-core",
+      "sentence-n4-u2d-shi-real-life",
+      "sentence-n4-u2d-shi-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-033",
+      "n4-unit-034"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-shi-context-application-1",
+      "question-grammar-n4-shi-context-application-2",
+      "question-grammar-n4-shi-meaning-1",
+      "question-grammar-n4-shi-meaning-2",
+      "question-grammar-n4-shi-recognition-1",
+      "question-grammar-n4-shi-recognition-2",
+      "question-grammar-n4-shi-usage-1",
+      "question-grammar-n4-shi-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-shika-nai",
+    "level": "N4",
+    "pattern": "～しか～ない",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-shika-u2d-nai-contrast-aware",
+      "sentence-n4-u2d-shika-u2d-nai-core",
+      "sentence-n4-u2d-shika-u2d-nai-real-life",
+      "sentence-n4-u2d-shika-u2d-nai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-028"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-shika-nai-context-application-1",
+      "question-grammar-n4-shika-nai-context-application-2",
+      "question-grammar-n4-shika-nai-meaning-1",
+      "question-grammar-n4-shika-nai-meaning-2",
+      "question-grammar-n4-shika-nai-recognition-1",
+      "question-grammar-n4-shika-nai-recognition-2",
+      "question-grammar-n4-shika-nai-usage-1",
+      "question-grammar-n4-shika-nai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-sore-demo",
+    "level": "N4",
+    "pattern": "それでも",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-sore-u2d-demo-contrast-aware",
+      "sentence-n4-u2d-sore-u2d-demo-core",
+      "sentence-n4-u2d-sore-u2d-demo-real-life",
+      "sentence-n4-u2d-sore-u2d-demo-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-033",
+      "n4-unit-034"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-sore-demo-context-application-1",
+      "question-grammar-n4-sore-demo-context-application-2",
+      "question-grammar-n4-sore-demo-meaning-1",
+      "question-grammar-n4-sore-demo-meaning-2",
+      "question-grammar-n4-sore-demo-recognition-1",
+      "question-grammar-n4-sore-demo-recognition-2",
+      "question-grammar-n4-sore-demo-usage-1",
+      "question-grammar-n4-sore-demo-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-souda-appearance",
+    "level": "N4",
+    "pattern": "～そうだ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-souda-u2d-appearance-contrast-aware",
+      "sentence-n4-u2d-souda-u2d-appearance-core",
+      "sentence-n4-u2d-souda-u2d-appearance-real-life",
+      "sentence-n4-u2d-souda-u2d-appearance-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-021"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-souda-appearance-context-application-1",
+      "question-grammar-n4-souda-appearance-context-application-2",
+      "question-grammar-n4-souda-appearance-meaning-1",
+      "question-grammar-n4-souda-appearance-meaning-2",
+      "question-grammar-n4-souda-appearance-recognition-1",
+      "question-grammar-n4-souda-appearance-recognition-2",
+      "question-grammar-n4-souda-appearance-usage-1",
+      "question-grammar-n4-souda-appearance-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-souda-hearsay",
+    "level": "N4",
+    "pattern": "～そうだ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-souda-u2d-hearsay-contrast-aware",
+      "sentence-n4-u2d-souda-u2d-hearsay-core",
+      "sentence-n4-u2d-souda-u2d-hearsay-real-life",
+      "sentence-n4-u2d-souda-u2d-hearsay-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-020",
+      "n4-unit-021"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-souda-hearsay-context-application-1",
+      "question-grammar-n4-souda-hearsay-context-application-2",
+      "question-grammar-n4-souda-hearsay-meaning-1",
+      "question-grammar-n4-souda-hearsay-meaning-2",
+      "question-grammar-n4-souda-hearsay-recognition-1",
+      "question-grammar-n4-souda-hearsay-recognition-2",
+      "question-grammar-n4-souda-hearsay-usage-1",
+      "question-grammar-n4-souda-hearsay-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-ta-bakari",
+    "level": "N4",
+    "pattern": "～たばかり",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-ta-u2d-bakari-contrast-aware",
+      "sentence-n4-u2d-ta-u2d-bakari-core",
+      "sentence-n4-u2d-ta-u2d-bakari-real-life",
+      "sentence-n4-u2d-ta-u2d-bakari-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-007"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-ta-bakari-context-application-1",
+      "question-grammar-n4-ta-bakari-context-application-2",
+      "question-grammar-n4-ta-bakari-meaning-1",
+      "question-grammar-n4-ta-bakari-meaning-2",
+      "question-grammar-n4-ta-bakari-recognition-1",
+      "question-grammar-n4-ta-bakari-recognition-2",
+      "question-grammar-n4-ta-bakari-usage-1",
+      "question-grammar-n4-ta-bakari-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-ta-tokoro",
+    "level": "N4",
+    "pattern": "～たところ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-ta-u2d-tokoro-contrast-aware",
+      "sentence-n4-u2d-ta-u2d-tokoro-core",
+      "sentence-n4-u2d-ta-u2d-tokoro-real-life",
+      "sentence-n4-u2d-ta-u2d-tokoro-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-013",
+      "n4-unit-014"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-ta-tokoro-context-application-1",
+      "question-grammar-n4-ta-tokoro-context-application-2",
+      "question-grammar-n4-ta-tokoro-meaning-1",
+      "question-grammar-n4-ta-tokoro-meaning-2",
+      "question-grammar-n4-ta-tokoro-recognition-1",
+      "question-grammar-n4-ta-tokoro-recognition-2",
+      "question-grammar-n4-ta-tokoro-usage-1",
+      "question-grammar-n4-ta-tokoro-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-tagaru",
+    "level": "N4",
+    "pattern": "～たがる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-tagaru-contrast-aware",
+      "sentence-n4-u2d-tagaru-core",
+      "sentence-n4-u2d-tagaru-real-life",
+      "sentence-n4-u2d-tagaru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-031",
+      "n4-unit-032"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-tagaru-context-application-1",
+      "question-grammar-n4-tagaru-context-application-2",
+      "question-grammar-n4-tagaru-meaning-1",
+      "question-grammar-n4-tagaru-meaning-2",
+      "question-grammar-n4-tagaru-recognition-1",
+      "question-grammar-n4-tagaru-recognition-2",
+      "question-grammar-n4-tagaru-usage-1",
+      "question-grammar-n4-tagaru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-tame-ni-purpose",
+    "level": "N4",
+    "pattern": "～ために",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-tame-u2d-ni-u2d-purpose-contrast-aware",
+      "sentence-n4-u2d-tame-u2d-ni-u2d-purpose-core",
+      "sentence-n4-u2d-tame-u2d-ni-u2d-purpose-real-life",
+      "sentence-n4-u2d-tame-u2d-ni-u2d-purpose-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-025"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-tame-ni-purpose-context-application-1",
+      "question-grammar-n4-tame-ni-purpose-context-application-2",
+      "question-grammar-n4-tame-ni-purpose-meaning-1",
+      "question-grammar-n4-tame-ni-purpose-meaning-2",
+      "question-grammar-n4-tame-ni-purpose-recognition-1",
+      "question-grammar-n4-tame-ni-purpose-recognition-2",
+      "question-grammar-n4-tame-ni-purpose-usage-1",
+      "question-grammar-n4-tame-ni-purpose-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-tara",
+    "level": "N4",
+    "pattern": "～たら",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-tara-contrast-aware",
+      "sentence-n4-u2d-tara-core",
+      "sentence-n4-u2d-tara-real-life",
+      "sentence-n4-u2d-tara-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-014"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-tara-context-application-1",
+      "question-grammar-n4-tara-context-application-2",
+      "question-grammar-n4-tara-meaning-1",
+      "question-grammar-n4-tara-meaning-2",
+      "question-grammar-n4-tara-recognition-1",
+      "question-grammar-n4-tara-recognition-2",
+      "question-grammar-n4-tara-usage-1",
+      "question-grammar-n4-tara-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-tara-dou",
+    "level": "N4",
+    "pattern": "～たらどう",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-tara-u2d-dou-contrast-aware",
+      "sentence-n4-u2d-tara-u2d-dou-core",
+      "sentence-n4-u2d-tara-u2d-dou-real-life",
+      "sentence-n4-u2d-tara-u2d-dou-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-015",
+      "n4-unit-016"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-tara-dou-context-application-1",
+      "question-grammar-n4-tara-dou-context-application-2",
+      "question-grammar-n4-tara-dou-meaning-1",
+      "question-grammar-n4-tara-dou-meaning-2",
+      "question-grammar-n4-tara-dou-recognition-1",
+      "question-grammar-n4-tara-dou-recognition-2",
+      "question-grammar-n4-tara-dou-usage-1",
+      "question-grammar-n4-tara-dou-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-tara-ii-desu-ka",
+    "level": "N4",
+    "pattern": "～たらいいですか",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-tara-u2d-ii-u2d-desu-u2d-ka-contrast-aware",
+      "sentence-n4-u2d-tara-u2d-ii-u2d-desu-u2d-ka-core",
+      "sentence-n4-u2d-tara-u2d-ii-u2d-desu-u2d-ka-real-life",
+      "sentence-n4-u2d-tara-u2d-ii-u2d-desu-u2d-ka-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-016"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-tara-ii-desu-ka-context-application-1",
+      "question-grammar-n4-tara-ii-desu-ka-context-application-2",
+      "question-grammar-n4-tara-ii-desu-ka-meaning-1",
+      "question-grammar-n4-tara-ii-desu-ka-meaning-2",
+      "question-grammar-n4-tara-ii-desu-ka-recognition-1",
+      "question-grammar-n4-tara-ii-desu-ka-recognition-2",
+      "question-grammar-n4-tara-ii-desu-ka-usage-1",
+      "question-grammar-n4-tara-ii-desu-ka-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-ageru",
+    "level": "N4",
+    "pattern": "～てあげる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-ageru-contrast-aware",
+      "sentence-n4-u2d-te-u2d-ageru-core",
+      "sentence-n4-u2d-te-u2d-ageru-real-life",
+      "sentence-n4-u2d-te-u2d-ageru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-007",
+      "n4-unit-008"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-ageru-context-application-1",
+      "question-grammar-n4-te-ageru-context-application-2",
+      "question-grammar-n4-te-ageru-meaning-1",
+      "question-grammar-n4-te-ageru-meaning-2",
+      "question-grammar-n4-te-ageru-recognition-1",
+      "question-grammar-n4-te-ageru-recognition-2",
+      "question-grammar-n4-te-ageru-usage-1",
+      "question-grammar-n4-te-ageru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-aru",
+    "level": "N4",
+    "pattern": "～てある",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-aru-contrast-aware",
+      "sentence-n4-u2d-te-u2d-aru-core",
+      "sentence-n4-u2d-te-u2d-aru-real-life",
+      "sentence-n4-u2d-te-u2d-aru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-011",
+      "n4-unit-012"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-aru-context-application-1",
+      "question-grammar-n4-te-aru-context-application-2",
+      "question-grammar-n4-te-aru-meaning-1",
+      "question-grammar-n4-te-aru-meaning-2",
+      "question-grammar-n4-te-aru-recognition-1",
+      "question-grammar-n4-te-aru-recognition-2",
+      "question-grammar-n4-te-aru-usage-1",
+      "question-grammar-n4-te-aru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-de-cause",
+    "level": "N4",
+    "pattern": "～て／～で",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-de-u2d-cause-contrast-aware",
+      "sentence-n4-u2d-te-u2d-de-u2d-cause-core",
+      "sentence-n4-u2d-te-u2d-de-u2d-cause-real-life",
+      "sentence-n4-u2d-te-u2d-de-u2d-cause-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-036",
+      "n4-unit-037"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-de-cause-context-application-1",
+      "question-grammar-n4-te-de-cause-context-application-2",
+      "question-grammar-n4-te-de-cause-meaning-1",
+      "question-grammar-n4-te-de-cause-meaning-2",
+      "question-grammar-n4-te-de-cause-recognition-1",
+      "question-grammar-n4-te-de-cause-recognition-2",
+      "question-grammar-n4-te-de-cause-usage-1",
+      "question-grammar-n4-te-de-cause-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-hoshii",
+    "level": "N4",
+    "pattern": "～てほしい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-hoshii-contrast-aware",
+      "sentence-n4-u2d-te-u2d-hoshii-core",
+      "sentence-n4-u2d-te-u2d-hoshii-real-life",
+      "sentence-n4-u2d-te-u2d-hoshii-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-017",
+      "n4-unit-018"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-hoshii-context-application-1",
+      "question-grammar-n4-te-hoshii-context-application-2",
+      "question-grammar-n4-te-hoshii-meaning-1",
+      "question-grammar-n4-te-hoshii-meaning-2",
+      "question-grammar-n4-te-hoshii-recognition-1",
+      "question-grammar-n4-te-hoshii-recognition-2",
+      "question-grammar-n4-te-hoshii-usage-1",
+      "question-grammar-n4-te-hoshii-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-iku",
+    "level": "N4",
+    "pattern": "～ていく",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-iku-contrast-aware",
+      "sentence-n4-u2d-te-u2d-iku-core",
+      "sentence-n4-u2d-te-u2d-iku-real-life",
+      "sentence-n4-u2d-te-u2d-iku-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-012",
+      "n4-unit-013"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-iku-context-application-1",
+      "question-grammar-n4-te-iku-context-application-2",
+      "question-grammar-n4-te-iku-meaning-1",
+      "question-grammar-n4-te-iku-meaning-2",
+      "question-grammar-n4-te-iku-recognition-1",
+      "question-grammar-n4-te-iku-recognition-2",
+      "question-grammar-n4-te-iku-usage-1",
+      "question-grammar-n4-te-iku-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-itadakemasen-ka",
+    "level": "N4",
+    "pattern": "～ていただけませんか",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-itadakemasen-u2d-ka-contrast-aware",
+      "sentence-n4-u2d-te-u2d-itadakemasen-u2d-ka-core",
+      "sentence-n4-u2d-te-u2d-itadakemasen-u2d-ka-real-life",
+      "sentence-n4-u2d-te-u2d-itadakemasen-u2d-ka-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-008",
+      "n4-unit-009"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-itadakemasen-ka-context-application-1",
+      "question-grammar-n4-te-itadakemasen-ka-context-application-2",
+      "question-grammar-n4-te-itadakemasen-ka-meaning-1",
+      "question-grammar-n4-te-itadakemasen-ka-meaning-2",
+      "question-grammar-n4-te-itadakemasen-ka-recognition-1",
+      "question-grammar-n4-te-itadakemasen-ka-recognition-2",
+      "question-grammar-n4-te-itadakemasen-ka-usage-1",
+      "question-grammar-n4-te-itadakemasen-ka-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-kureru",
+    "level": "N4",
+    "pattern": "～てくれる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-kureru-contrast-aware",
+      "sentence-n4-u2d-te-u2d-kureru-core",
+      "sentence-n4-u2d-te-u2d-kureru-real-life",
+      "sentence-n4-u2d-te-u2d-kureru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-007",
+      "n4-unit-008"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-kureru-context-application-1",
+      "question-grammar-n4-te-kureru-context-application-2",
+      "question-grammar-n4-te-kureru-meaning-1",
+      "question-grammar-n4-te-kureru-meaning-2",
+      "question-grammar-n4-te-kureru-recognition-1",
+      "question-grammar-n4-te-kureru-recognition-2",
+      "question-grammar-n4-te-kureru-usage-1",
+      "question-grammar-n4-te-kureru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-kuru",
+    "level": "N4",
+    "pattern": "～てくる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-kuru-contrast-aware",
+      "sentence-n4-u2d-te-u2d-kuru-core",
+      "sentence-n4-u2d-te-u2d-kuru-real-life",
+      "sentence-n4-u2d-te-u2d-kuru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-012"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-kuru-context-application-1",
+      "question-grammar-n4-te-kuru-context-application-2",
+      "question-grammar-n4-te-kuru-meaning-1",
+      "question-grammar-n4-te-kuru-meaning-2",
+      "question-grammar-n4-te-kuru-recognition-1",
+      "question-grammar-n4-te-kuru-recognition-2",
+      "question-grammar-n4-te-kuru-usage-1",
+      "question-grammar-n4-te-kuru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-miru",
+    "level": "N4",
+    "pattern": "～てみる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-miru-contrast-aware",
+      "sentence-n4-u2d-te-u2d-miru-core",
+      "sentence-n4-u2d-te-u2d-miru-real-life",
+      "sentence-n4-u2d-te-u2d-miru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-010",
+      "n4-unit-011"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-miru-context-application-1",
+      "question-grammar-n4-te-miru-context-application-2",
+      "question-grammar-n4-te-miru-meaning-1",
+      "question-grammar-n4-te-miru-meaning-2",
+      "question-grammar-n4-te-miru-recognition-1",
+      "question-grammar-n4-te-miru-recognition-2",
+      "question-grammar-n4-te-miru-usage-1",
+      "question-grammar-n4-te-miru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-morau",
+    "level": "N4",
+    "pattern": "～てもらう",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-morau-contrast-aware",
+      "sentence-n4-u2d-te-u2d-morau-core",
+      "sentence-n4-u2d-te-u2d-morau-real-life",
+      "sentence-n4-u2d-te-u2d-morau-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-008"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-morau-context-application-1",
+      "question-grammar-n4-te-morau-context-application-2",
+      "question-grammar-n4-te-morau-meaning-1",
+      "question-grammar-n4-te-morau-meaning-2",
+      "question-grammar-n4-te-morau-recognition-1",
+      "question-grammar-n4-te-morau-recognition-2",
+      "question-grammar-n4-te-morau-usage-1",
+      "question-grammar-n4-te-morau-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-oku",
+    "level": "N4",
+    "pattern": "～ておく",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-oku-contrast-aware",
+      "sentence-n4-u2d-te-u2d-oku-core",
+      "sentence-n4-u2d-te-u2d-oku-real-life",
+      "sentence-n4-u2d-te-u2d-oku-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-010",
+      "n4-unit-011"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-oku-context-application-1",
+      "question-grammar-n4-te-oku-context-application-2",
+      "question-grammar-n4-te-oku-meaning-1",
+      "question-grammar-n4-te-oku-meaning-2",
+      "question-grammar-n4-te-oku-recognition-1",
+      "question-grammar-n4-te-oku-recognition-2",
+      "question-grammar-n4-te-oku-usage-1",
+      "question-grammar-n4-te-oku-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-shimau",
+    "level": "N4",
+    "pattern": "～てしまう",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-shimau-contrast-aware",
+      "sentence-n4-u2d-te-u2d-shimau-core",
+      "sentence-n4-u2d-te-u2d-shimau-real-life",
+      "sentence-n4-u2d-te-u2d-shimau-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-011"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-shimau-context-application-1",
+      "question-grammar-n4-te-shimau-context-application-2",
+      "question-grammar-n4-te-shimau-meaning-1",
+      "question-grammar-n4-te-shimau-meaning-2",
+      "question-grammar-n4-te-shimau-recognition-1",
+      "question-grammar-n4-te-shimau-recognition-2",
+      "question-grammar-n4-te-shimau-usage-1",
+      "question-grammar-n4-te-shimau-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-sumimasen",
+    "level": "N4",
+    "pattern": "～てすみません",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-sumimasen-contrast-aware",
+      "sentence-n4-u2d-te-u2d-sumimasen-core",
+      "sentence-n4-u2d-te-u2d-sumimasen-real-life",
+      "sentence-n4-u2d-te-u2d-sumimasen-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-035",
+      "n4-unit-036"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-sumimasen-context-application-1",
+      "question-grammar-n4-te-sumimasen-context-application-2",
+      "question-grammar-n4-te-sumimasen-meaning-1",
+      "question-grammar-n4-te-sumimasen-meaning-2",
+      "question-grammar-n4-te-sumimasen-recognition-1",
+      "question-grammar-n4-te-sumimasen-recognition-2",
+      "question-grammar-n4-te-sumimasen-usage-1",
+      "question-grammar-n4-te-sumimasen-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-yaru",
+    "level": "N4",
+    "pattern": "～てやる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-yaru-contrast-aware",
+      "sentence-n4-u2d-te-u2d-yaru-core",
+      "sentence-n4-u2d-te-u2d-yaru-real-life",
+      "sentence-n4-u2d-te-u2d-yaru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-008",
+      "n4-unit-009"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-yaru-context-application-1",
+      "question-grammar-n4-te-yaru-context-application-2",
+      "question-grammar-n4-te-yaru-meaning-1",
+      "question-grammar-n4-te-yaru-meaning-2",
+      "question-grammar-n4-te-yaru-recognition-1",
+      "question-grammar-n4-te-yaru-recognition-2",
+      "question-grammar-n4-te-yaru-usage-1",
+      "question-grammar-n4-te-yaru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-te-yokatta",
+    "level": "N4",
+    "pattern": "～てよかった",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-te-u2d-yokatta-contrast-aware",
+      "sentence-n4-u2d-te-u2d-yokatta-core",
+      "sentence-n4-u2d-te-u2d-yokatta-real-life",
+      "sentence-n4-u2d-te-u2d-yokatta-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-035",
+      "n4-unit-036"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-te-yokatta-context-application-1",
+      "question-grammar-n4-te-yokatta-context-application-2",
+      "question-grammar-n4-te-yokatta-meaning-1",
+      "question-grammar-n4-te-yokatta-meaning-2",
+      "question-grammar-n4-te-yokatta-recognition-1",
+      "question-grammar-n4-te-yokatta-recognition-2",
+      "question-grammar-n4-te-yokatta-usage-1",
+      "question-grammar-n4-te-yokatta-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-teiru-tokoro",
+    "level": "N4",
+    "pattern": "～ているところ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-teiru-u2d-tokoro-contrast-aware",
+      "sentence-n4-u2d-teiru-u2d-tokoro-core",
+      "sentence-n4-u2d-teiru-u2d-tokoro-real-life",
+      "sentence-n4-u2d-teiru-u2d-tokoro-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-013"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-teiru-tokoro-context-application-1",
+      "question-grammar-n4-teiru-tokoro-context-application-2",
+      "question-grammar-n4-teiru-tokoro-meaning-1",
+      "question-grammar-n4-teiru-tokoro-meaning-2",
+      "question-grammar-n4-teiru-tokoro-recognition-1",
+      "question-grammar-n4-teiru-tokoro-recognition-2",
+      "question-grammar-n4-teiru-tokoro-usage-1",
+      "question-grammar-n4-teiru-tokoro-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-temo-concession",
+    "level": "N4",
+    "pattern": "～ても",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-temo-u2d-concession-contrast-aware",
+      "sentence-n4-u2d-temo-u2d-concession-core",
+      "sentence-n4-u2d-temo-u2d-concession-real-life",
+      "sentence-n4-u2d-temo-u2d-concession-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-015",
+      "n4-unit-016"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-temo-concession-context-application-1",
+      "question-grammar-n4-temo-concession-context-application-2",
+      "question-grammar-n4-temo-concession-meaning-1",
+      "question-grammar-n4-temo-concession-meaning-2",
+      "question-grammar-n4-temo-concession-recognition-1",
+      "question-grammar-n4-temo-concession-recognition-2",
+      "question-grammar-n4-temo-concession-usage-1",
+      "question-grammar-n4-temo-concession-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-to-conditional",
+    "level": "N4",
+    "pattern": "～と",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-to-u2d-conditional-contrast-aware",
+      "sentence-n4-u2d-to-u2d-conditional-core",
+      "sentence-n4-u2d-to-u2d-conditional-real-life",
+      "sentence-n4-u2d-to-u2d-conditional-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-014",
+      "n4-unit-015"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-to-conditional-context-application-1",
+      "question-grammar-n4-to-conditional-context-application-2",
+      "question-grammar-n4-to-conditional-meaning-1",
+      "question-grammar-n4-to-conditional-meaning-2",
+      "question-grammar-n4-to-conditional-recognition-1",
+      "question-grammar-n4-to-conditional-recognition-2",
+      "question-grammar-n4-to-conditional-usage-1",
+      "question-grammar-n4-to-conditional-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-to-ittemo-ii",
+    "level": "N4",
+    "pattern": "～と言ってもいい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-to-u2d-ittemo-u2d-ii-contrast-aware",
+      "sentence-n4-u2d-to-u2d-ittemo-u2d-ii-core",
+      "sentence-n4-u2d-to-u2d-ittemo-u2d-ii-real-life",
+      "sentence-n4-u2d-to-u2d-ittemo-u2d-ii-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-036"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-to-ittemo-ii-context-application-1",
+      "question-grammar-n4-to-ittemo-ii-context-application-2",
+      "question-grammar-n4-to-ittemo-ii-meaning-1",
+      "question-grammar-n4-to-ittemo-ii-meaning-2",
+      "question-grammar-n4-to-ittemo-ii-recognition-1",
+      "question-grammar-n4-to-ittemo-ii-recognition-2",
+      "question-grammar-n4-to-ittemo-ii-usage-1",
+      "question-grammar-n4-to-ittemo-ii-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-to-iu",
+    "level": "N4",
+    "pattern": "～という",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-to-u2d-iu-contrast-aware",
+      "sentence-n4-u2d-to-u2d-iu-core",
+      "sentence-n4-u2d-to-u2d-iu-real-life",
+      "sentence-n4-u2d-to-u2d-iu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-002",
+      "n4-unit-003"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-to-iu-context-application-1",
+      "question-grammar-n4-to-iu-context-application-2",
+      "question-grammar-n4-to-iu-meaning-1",
+      "question-grammar-n4-to-iu-meaning-2",
+      "question-grammar-n4-to-iu-recognition-1",
+      "question-grammar-n4-to-iu-recognition-2",
+      "question-grammar-n4-to-iu-usage-1",
+      "question-grammar-n4-to-iu-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-to-iu-koto",
+    "level": "N4",
+    "pattern": "～ということ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-to-u2d-iu-u2d-koto-contrast-aware",
+      "sentence-n4-u2d-to-u2d-iu-u2d-koto-core",
+      "sentence-n4-u2d-to-u2d-iu-u2d-koto-real-life",
+      "sentence-n4-u2d-to-u2d-iu-u2d-koto-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-003"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-to-iu-koto-context-application-1",
+      "question-grammar-n4-to-iu-koto-context-application-2",
+      "question-grammar-n4-to-iu-koto-meaning-1",
+      "question-grammar-n4-to-iu-koto-meaning-2",
+      "question-grammar-n4-to-iu-koto-recognition-1",
+      "question-grammar-n4-to-iu-koto-recognition-2",
+      "question-grammar-n4-to-iu-koto-usage-1",
+      "question-grammar-n4-to-iu-koto-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-to-iwarete-iru",
+    "level": "N4",
+    "pattern": "～と言われている",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-to-u2d-iwarete-u2d-iru-contrast-aware",
+      "sentence-n4-u2d-to-u2d-iwarete-u2d-iru-core",
+      "sentence-n4-u2d-to-u2d-iwarete-u2d-iru-real-life",
+      "sentence-n4-u2d-to-u2d-iwarete-u2d-iru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-004"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-to-iwarete-iru-context-application-1",
+      "question-grammar-n4-to-iwarete-iru-context-application-2",
+      "question-grammar-n4-to-iwarete-iru-meaning-1",
+      "question-grammar-n4-to-iwarete-iru-meaning-2",
+      "question-grammar-n4-to-iwarete-iru-recognition-1",
+      "question-grammar-n4-to-iwarete-iru-recognition-2",
+      "question-grammar-n4-to-iwarete-iru-usage-1",
+      "question-grammar-n4-to-iwarete-iru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-to-kiku",
+    "level": "N4",
+    "pattern": "～と聞く",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-to-u2d-kiku-contrast-aware",
+      "sentence-n4-u2d-to-u2d-kiku-core",
+      "sentence-n4-u2d-to-u2d-kiku-real-life",
+      "sentence-n4-u2d-to-u2d-kiku-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-003",
+      "n4-unit-004"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-to-kiku-context-application-1",
+      "question-grammar-n4-to-kiku-context-application-2",
+      "question-grammar-n4-to-kiku-meaning-1",
+      "question-grammar-n4-to-kiku-meaning-2",
+      "question-grammar-n4-to-kiku-recognition-1",
+      "question-grammar-n4-to-kiku-recognition-2",
+      "question-grammar-n4-to-kiku-usage-1",
+      "question-grammar-n4-to-kiku-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-to-omou",
+    "level": "N4",
+    "pattern": "～と思う",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-to-u2d-omou-contrast-aware",
+      "sentence-n4-u2d-to-u2d-omou-core",
+      "sentence-n4-u2d-to-u2d-omou-real-life",
+      "sentence-n4-u2d-to-u2d-omou-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-003",
+      "n4-unit-004"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-to-omou-context-application-1",
+      "question-grammar-n4-to-omou-context-application-2",
+      "question-grammar-n4-to-omou-meaning-1",
+      "question-grammar-n4-to-omou-meaning-2",
+      "question-grammar-n4-to-omou-recognition-1",
+      "question-grammar-n4-to-omou-recognition-2",
+      "question-grammar-n4-to-omou-usage-1",
+      "question-grammar-n4-to-omou-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-toka-toka",
+    "level": "N4",
+    "pattern": "～とか～とか",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-toka-u2d-toka-contrast-aware",
+      "sentence-n4-u2d-toka-u2d-toka-core",
+      "sentence-n4-u2d-toka-u2d-toka-real-life",
+      "sentence-n4-u2d-toka-u2d-toka-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-029",
+      "n4-unit-030"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-toka-toka-context-application-1",
+      "question-grammar-n4-toka-toka-context-application-2",
+      "question-grammar-n4-toka-toka-meaning-1",
+      "question-grammar-n4-toka-toka-meaning-2",
+      "question-grammar-n4-toka-toka-recognition-1",
+      "question-grammar-n4-toka-toka-recognition-2",
+      "question-grammar-n4-toka-toka-usage-1",
+      "question-grammar-n4-toka-toka-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-tokoro",
+    "level": "N4",
+    "pattern": "～ところ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-tokoro-contrast-aware",
+      "sentence-n4-u2d-tokoro-core",
+      "sentence-n4-u2d-tokoro-real-life",
+      "sentence-n4-u2d-tokoro-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-012",
+      "n4-unit-013"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-tokoro-context-application-1",
+      "question-grammar-n4-tokoro-context-application-2",
+      "question-grammar-n4-tokoro-meaning-1",
+      "question-grammar-n4-tokoro-meaning-2",
+      "question-grammar-n4-tokoro-recognition-1",
+      "question-grammar-n4-tokoro-recognition-2",
+      "question-grammar-n4-tokoro-usage-1",
+      "question-grammar-n4-tokoro-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-transitive-intransitive-verbs",
+    "level": "N4",
+    "pattern": "他動詞と自動詞",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-transitive-u2d-intransitive-u2d-verbs-contrast-aware",
+      "sentence-n4-u2d-transitive-u2d-intransitive-u2d-verbs-core",
+      "sentence-n4-u2d-transitive-u2d-intransitive-u2d-verbs-real-life",
+      "sentence-n4-u2d-transitive-u2d-intransitive-u2d-verbs-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-024",
+      "n4-unit-025"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-transitive-intransitive-verbs-context-application-1",
+      "question-grammar-n4-transitive-intransitive-verbs-context-application-2",
+      "question-grammar-n4-transitive-intransitive-verbs-meaning-1",
+      "question-grammar-n4-transitive-intransitive-verbs-meaning-2",
+      "question-grammar-n4-transitive-intransitive-verbs-recognition-1",
+      "question-grammar-n4-transitive-intransitive-verbs-recognition-2",
+      "question-grammar-n4-transitive-intransitive-verbs-usage-1",
+      "question-grammar-n4-transitive-intransitive-verbs-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-tsuzukeru",
+    "level": "N4",
+    "pattern": "～続ける",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-tsuzukeru-contrast-aware",
+      "sentence-n4-u2d-tsuzukeru-core",
+      "sentence-n4-u2d-tsuzukeru-real-life",
+      "sentence-n4-u2d-tsuzukeru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-010"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-tsuzukeru-context-application-1",
+      "question-grammar-n4-tsuzukeru-context-application-2",
+      "question-grammar-n4-tsuzukeru-meaning-1",
+      "question-grammar-n4-tsuzukeru-meaning-2",
+      "question-grammar-n4-tsuzukeru-recognition-1",
+      "question-grammar-n4-tsuzukeru-recognition-2",
+      "question-grammar-n4-tsuzukeru-usage-1",
+      "question-grammar-n4-tsuzukeru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-volitional-form",
+    "level": "N4",
+    "pattern": "意向形（～おう／～よう）",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-volitional-u2d-form-contrast-aware",
+      "sentence-n4-u2d-volitional-u2d-form-core",
+      "sentence-n4-u2d-volitional-u2d-form-real-life",
+      "sentence-n4-u2d-volitional-u2d-form-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-018"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-volitional-form-context-application-1",
+      "question-grammar-n4-volitional-form-context-application-2",
+      "question-grammar-n4-volitional-form-meaning-1",
+      "question-grammar-n4-volitional-form-meaning-2",
+      "question-grammar-n4-volitional-form-recognition-1",
+      "question-grammar-n4-volitional-form-recognition-2",
+      "question-grammar-n4-volitional-form-usage-1",
+      "question-grammar-n4-volitional-form-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-wa-ga-wa-unresolved",
+    "level": "N4",
+    "pattern": "は～が…は",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [],
+    "curriculumUnitIds": [],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-n4-yasui",
+    "level": "N4",
+    "pattern": "～やすい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-yasui-contrast-aware",
+      "sentence-n4-u2d-yasui-core",
+      "sentence-n4-u2d-yasui-real-life",
+      "sentence-n4-u2d-yasui-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-032",
+      "n4-unit-033"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-yasui-context-application-1",
+      "question-grammar-n4-yasui-context-application-2",
+      "question-grammar-n4-yasui-meaning-1",
+      "question-grammar-n4-yasui-meaning-2",
+      "question-grammar-n4-yasui-recognition-1",
+      "question-grammar-n4-yasui-recognition-2",
+      "question-grammar-n4-yasui-usage-1",
+      "question-grammar-n4-yasui-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-yotei-da",
+    "level": "N4",
+    "pattern": "～予定だ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-yotei-u2d-da-contrast-aware",
+      "sentence-n4-u2d-yotei-u2d-da-core",
+      "sentence-n4-u2d-yotei-u2d-da-real-life",
+      "sentence-n4-u2d-yotei-u2d-da-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-019"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-yotei-da-context-application-1",
+      "question-grammar-n4-yotei-da-context-application-2",
+      "question-grammar-n4-yotei-da-meaning-1",
+      "question-grammar-n4-yotei-da-meaning-2",
+      "question-grammar-n4-yotei-da-recognition-1",
+      "question-grammar-n4-yotei-da-recognition-2",
+      "question-grammar-n4-yotei-da-usage-1",
+      "question-grammar-n4-yotei-da-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-you-ni-naru",
+    "level": "N4",
+    "pattern": "～ようになる",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-you-u2d-ni-u2d-naru-contrast-aware",
+      "sentence-n4-u2d-you-u2d-ni-u2d-naru-core",
+      "sentence-n4-u2d-you-u2d-ni-u2d-naru-real-life",
+      "sentence-n4-u2d-you-u2d-ni-u2d-naru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-026",
+      "n4-unit-027"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-you-ni-naru-context-application-1",
+      "question-grammar-n4-you-ni-naru-context-application-2",
+      "question-grammar-n4-you-ni-naru-meaning-1",
+      "question-grammar-n4-you-ni-naru-meaning-2",
+      "question-grammar-n4-you-ni-naru-recognition-1",
+      "question-grammar-n4-you-ni-naru-recognition-2",
+      "question-grammar-n4-you-ni-naru-usage-1",
+      "question-grammar-n4-you-ni-naru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-you-ni-purpose",
+    "level": "N4",
+    "pattern": "～ように",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-you-u2d-ni-u2d-purpose-contrast-aware",
+      "sentence-n4-u2d-you-u2d-ni-u2d-purpose-core",
+      "sentence-n4-u2d-you-u2d-ni-u2d-purpose-real-life",
+      "sentence-n4-u2d-you-u2d-ni-u2d-purpose-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-025",
+      "n4-unit-026"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-you-ni-purpose-context-application-1",
+      "question-grammar-n4-you-ni-purpose-context-application-2",
+      "question-grammar-n4-you-ni-purpose-meaning-1",
+      "question-grammar-n4-you-ni-purpose-meaning-2",
+      "question-grammar-n4-you-ni-purpose-recognition-1",
+      "question-grammar-n4-you-ni-purpose-recognition-2",
+      "question-grammar-n4-you-ni-purpose-usage-1",
+      "question-grammar-n4-you-ni-purpose-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-you-ni-suru",
+    "level": "N4",
+    "pattern": "～ようにする",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-you-u2d-ni-u2d-suru-contrast-aware",
+      "sentence-n4-u2d-you-u2d-ni-u2d-suru-core",
+      "sentence-n4-u2d-you-u2d-ni-u2d-suru-real-life",
+      "sentence-n4-u2d-you-u2d-ni-u2d-suru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-027"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-you-ni-suru-context-application-1",
+      "question-grammar-n4-you-ni-suru-context-application-2",
+      "question-grammar-n4-you-ni-suru-meaning-1",
+      "question-grammar-n4-you-ni-suru-meaning-2",
+      "question-grammar-n4-you-ni-suru-recognition-1",
+      "question-grammar-n4-you-ni-suru-recognition-2",
+      "question-grammar-n4-you-ni-suru-usage-1",
+      "question-grammar-n4-you-ni-suru-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-you-to-omou",
+    "level": "N4",
+    "pattern": "～ようと思う",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-you-u2d-to-u2d-omou-contrast-aware",
+      "sentence-n4-u2d-you-u2d-to-u2d-omou-core",
+      "sentence-n4-u2d-you-u2d-to-u2d-omou-real-life",
+      "sentence-n4-u2d-you-u2d-to-u2d-omou-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-019",
+      "n4-unit-020"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-you-to-omou-context-application-1",
+      "question-grammar-n4-you-to-omou-context-application-2",
+      "question-grammar-n4-you-to-omou-meaning-1",
+      "question-grammar-n4-you-to-omou-meaning-2",
+      "question-grammar-n4-you-to-omou-recognition-1",
+      "question-grammar-n4-you-to-omou-recognition-2",
+      "question-grammar-n4-you-to-omou-usage-1",
+      "question-grammar-n4-you-to-omou-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-youda-similarity",
+    "level": "N4",
+    "pattern": "～ようだ",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-youda-u2d-similarity-contrast-aware",
+      "sentence-n4-u2d-youda-u2d-similarity-core",
+      "sentence-n4-u2d-youda-u2d-similarity-real-life",
+      "sentence-n4-u2d-youda-u2d-similarity-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-021",
+      "n4-unit-022"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-youda-similarity-context-application-1",
+      "question-grammar-n4-youda-similarity-context-application-2",
+      "question-grammar-n4-youda-similarity-meaning-1",
+      "question-grammar-n4-youda-similarity-meaning-2",
+      "question-grammar-n4-youda-similarity-recognition-1",
+      "question-grammar-n4-youda-similarity-recognition-2",
+      "question-grammar-n4-youda-similarity-usage-1",
+      "question-grammar-n4-youda-similarity-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-n4-zurai",
+    "level": "N4",
+    "pattern": "～づらい",
+    "releaseReady": true,
+    "approvedExampleSentenceIds": [
+      "sentence-n4-u2d-zurai-contrast-aware",
+      "sentence-n4-u2d-zurai-core",
+      "sentence-n4-u2d-zurai-real-life",
+      "sentence-n4-u2d-zurai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n4-unit-032",
+      "n4-unit-033"
+    ],
+    "approvedQuestionIds": [
+      "question-grammar-n4-zurai-context-application-1",
+      "question-grammar-n4-zurai-context-application-2",
+      "question-grammar-n4-zurai-meaning-1",
+      "question-grammar-n4-zurai-meaning-2",
+      "question-grammar-n4-zurai-recognition-1",
+      "question-grammar-n4-zurai-recognition-2",
+      "question-grammar-n4-zurai-usage-1",
+      "question-grammar-n4-zurai-usage-2"
+    ],
+    "recognitionCount": 2,
+    "meaningCount": 2,
+    "usageCount": 2,
+    "contextApplicationCount": 2,
+    "requiredMinimum": 8,
+    "status": "pass"
+  },
+  {
+    "grammarId": "grammar-na",
+    "level": "N5",
+    "pattern": "な",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-na-core",
+      "sentence-na-real-life",
+      "sentence-na-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-013"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-na-adjective-noun",
+    "level": "N5",
+    "pattern": "な-Adjective + Noun",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-na-u2d-adjective-u2d-noun-core",
+      "sentence-na-u2d-adjective-u2d-noun-real-life",
+      "sentence-na-u2d-adjective-u2d-noun-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-030",
+      "n5-unit-031"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-na-adjectiveda",
+    "level": "N5",
+    "pattern": "な-Adjective だ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-na-u2d-adjectiveda-core",
+      "sentence-na-u2d-adjectiveda-real-life",
+      "sentence-na-u2d-adjectiveda-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-031"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-na-adjectives",
+    "level": "N5",
+    "pattern": "な-Adjectives",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-na-u2d-adjectives-core",
+      "sentence-na-u2d-adjectives-real-life",
+      "sentence-na-u2d-adjectives-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-031",
+      "n5-unit-032"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-naidekudasai",
+    "level": "N5",
+    "pattern": "ないでください",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-naidekudasai-core",
+      "sentence-naidekudasai-real-life",
+      "sentence-naidekudasai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-023"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-naihougaii",
+    "level": "N5",
+    "pattern": "ないほうがいい",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-naihougaii-core",
+      "sentence-naihougaii-real-life",
+      "sentence-naihougaii-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-031",
+      "n5-unit-032"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nakucha",
+    "level": "N5",
+    "pattern": "なくちゃ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nakucha-core",
+      "sentence-nakucha-real-life",
+      "sentence-nakucha-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-024",
+      "n5-unit-025"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nakutehaikenai",
+    "level": "N5",
+    "pattern": "なくてはいけない",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nakutehaikenai-core",
+      "sentence-nakutehaikenai-real-life",
+      "sentence-nakutehaikenai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-032"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nakutehanaranai",
+    "level": "N5",
+    "pattern": "なくてはならない",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nakutehanaranai-core",
+      "sentence-nakutehanaranai-real-life",
+      "sentence-nakutehanaranai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-032",
+      "n5-unit-033"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nanika",
+    "level": "N5",
+    "pattern": "なにか",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nanika-core",
+      "sentence-nanika-real-life",
+      "sentence-nanika-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-005"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ndesu",
+    "level": "N5",
+    "pattern": "～んです",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ndesu-core",
+      "sentence-ndesu-real-life",
+      "sentence-ndesu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-020",
+      "n5-unit-021"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ne",
+    "level": "N5",
+    "pattern": "ね",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ne-core",
+      "sentence-ne-real-life",
+      "sentence-ne-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-010",
+      "n5-unit-011"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ni",
+    "level": "N5",
+    "pattern": "に",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ni-core",
+      "sentence-ni-real-life",
+      "sentence-ni-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-008"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ninaru",
+    "level": "N5",
+    "pattern": "～になる",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ninaru-core",
+      "sentence-ninaru-real-life",
+      "sentence-ninaru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-032",
+      "n5-unit-033"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nisuru",
+    "level": "N5",
+    "pattern": "にする",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nisuru-core",
+      "sentence-nisuru-real-life",
+      "sentence-nisuru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-033"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-no-explanatory-nominalizer",
+    "level": "N5",
+    "pattern": "の",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-no-u2d-explanatory-u2d-nominalizer-core",
+      "sentence-no-u2d-explanatory-u2d-nominalizer-real-life",
+      "sentence-no-u2d-explanatory-u2d-nominalizer-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-010",
+      "n5-unit-011"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-no-nominalizer",
+    "level": "N5",
+    "pattern": "の",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-no-u2d-nominalizer-core",
+      "sentence-no-u2d-nominalizer-real-life",
+      "sentence-no-u2d-nominalizer-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-011"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-no-possession-marker",
+    "level": "N5",
+    "pattern": "の",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-no-u2d-possession-u2d-marker-core",
+      "sentence-no-u2d-possession-u2d-marker-real-life",
+      "sentence-no-u2d-possession-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-011",
+      "n5-unit-012"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-node",
+    "level": "N5",
+    "pattern": "ので",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-node-core",
+      "sentence-node-real-life",
+      "sentence-node-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-018",
+      "n5-unit-019"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nogaheta",
+    "level": "N5",
+    "pattern": "のがへた",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nogaheta-core",
+      "sentence-nogaheta-real-life",
+      "sentence-nogaheta-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-033",
+      "n5-unit-034"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nogajouzu",
+    "level": "N5",
+    "pattern": "のがじょうず",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nogajouzu-core",
+      "sentence-nogajouzu-real-life",
+      "sentence-nogajouzu-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-033",
+      "n5-unit-034"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nogasuki",
+    "level": "N5",
+    "pattern": "のがすき",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nogasuki-core",
+      "sentence-nogasuki-real-life",
+      "sentence-nogasuki-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-034"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-nonakade-gaichiban",
+    "level": "N5",
+    "pattern": "のなかで～がいちばん～",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-nonakade-u2d-gaichiban-core",
+      "sentence-nonakade-u2d-gaichiban-real-life",
+      "sentence-nonakade-u2d-gaichiban-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-034",
+      "n5-unit-035"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-noun-made",
+    "level": "N5",
+    "pattern": "Noun + まで",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-noun-u2d-made-core",
+      "sentence-noun-u2d-made-real-life",
+      "sentence-noun-u2d-made-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-034",
+      "n5-unit-035"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-o",
+    "level": "N5",
+    "pattern": "を",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-o-core",
+      "sentence-o-real-life",
+      "sentence-o-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-016"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ru-verbdictionary",
+    "level": "N5",
+    "pattern": "る-Verb (Dictionary)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ru-u2d-verbdictionary-core",
+      "sentence-ru-u2d-verbdictionary-real-life",
+      "sentence-ru-u2d-verbdictionary-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-035"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ru-verbnegative",
+    "level": "N5",
+    "pattern": "る-Verb (Negative)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ru-u2d-verbnegative-core",
+      "sentence-ru-u2d-verbnegative-real-life",
+      "sentence-ru-u2d-verbnegative-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-035",
+      "n5-unit-036"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ru-verbnegative-past",
+    "level": "N5",
+    "pattern": "る-Verb (Negative-Past)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ru-u2d-verbnegative-u2d-past-core",
+      "sentence-ru-u2d-verbnegative-u2d-past-real-life",
+      "sentence-ru-u2d-verbnegative-u2d-past-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-035",
+      "n5-unit-036"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ru-verbpast",
+    "level": "N5",
+    "pattern": "る-Verb (Past)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ru-u2d-verbpast-core",
+      "sentence-ru-u2d-verbpast-real-life",
+      "sentence-ru-u2d-verbpast-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-036"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-soko",
+    "level": "N5",
+    "pattern": "そこ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-soko-core",
+      "sentence-soko-real-life",
+      "sentence-soko-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-001"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-sono",
+    "level": "N5",
+    "pattern": "その",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-sono-core",
+      "sentence-sono-real-life",
+      "sentence-sono-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-006",
+      "n5-unit-007"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-sore",
+    "level": "N5",
+    "pattern": "それ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-sore-core",
+      "sentence-sore-real-life",
+      "sentence-sore-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-001",
+      "n5-unit-002"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-sugiru",
+    "level": "N5",
+    "pattern": "すぎる",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-sugiru-core",
+      "sentence-sugiru-real-life",
+      "sentence-sugiru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-024",
+      "n5-unit-025"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-suru",
+    "level": "N5",
+    "pattern": "する",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-suru-core",
+      "sentence-suru-real-life",
+      "sentence-suru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-021"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-tahougaii",
+    "level": "N5",
+    "pattern": "たほうがいい",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-tahougaii-core",
+      "sentence-tahougaii-real-life",
+      "sentence-tahougaii-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-024"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-tai",
+    "level": "N5",
+    "pattern": "たい",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-tai-core",
+      "sentence-tai-real-life",
+      "sentence-tai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-018",
+      "n5-unit-019"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-takotogaaru",
+    "level": "N5",
+    "pattern": "たことがある",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-takotogaaru-core",
+      "sentence-takotogaaru-real-life",
+      "sentence-takotogaaru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-036",
+      "n5-unit-037"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-takusan",
+    "level": "N5",
+    "pattern": "たくさん",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-takusan-core",
+      "sentence-takusan-real-life",
+      "sentence-takusan-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-020",
+      "n5-unit-021"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-tari-tarisuru",
+    "level": "N5",
+    "pattern": "たり～たりする",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-tari-u2d-tarisuru-core",
+      "sentence-tari-u2d-tarisuru-real-life",
+      "sentence-tari-u2d-tarisuru-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-036",
+      "n5-unit-037"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-tehaikenai",
+    "level": "N5",
+    "pattern": "てはいけない",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-tehaikenai-core",
+      "sentence-tehaikenai-real-life",
+      "sentence-tehaikenai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-037"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-teiru1",
+    "level": "N5",
+    "pattern": "ている1",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-teiru1-core",
+      "sentence-teiru1-real-life",
+      "sentence-teiru1-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-037",
+      "n5-unit-038"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-teiru2",
+    "level": "N5",
+    "pattern": "ている2",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-teiru2-core",
+      "sentence-teiru2-real-life",
+      "sentence-teiru2-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-037",
+      "n5-unit-038"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-teiru3",
+    "level": "N5",
+    "pattern": "ている3",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-teiru3-core",
+      "sentence-teiru3-real-life",
+      "sentence-teiru3-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-038"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-tekara",
+    "level": "N5",
+    "pattern": "てから",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-tekara-core",
+      "sentence-tekara-real-life",
+      "sentence-tekara-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-019",
+      "n5-unit-020"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-tekudasai",
+    "level": "N5",
+    "pattern": "てください",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-tekudasai-core",
+      "sentence-tekudasai-real-life",
+      "sentence-tekudasai-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-023",
+      "n5-unit-024"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-temoii",
+    "level": "N5",
+    "pattern": "てもいい",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-temoii-core",
+      "sentence-temoii-real-life",
+      "sentence-temoii-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-021",
+      "n5-unit-022"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-to-accompaniment-marker",
+    "level": "N5",
+    "pattern": "と",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-to-u2d-accompaniment-u2d-marker-core",
+      "sentence-to-u2d-accompaniment-u2d-marker-real-life",
+      "sentence-to-u2d-accompaniment-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-011",
+      "n5-unit-012"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-to-and-marker",
+    "level": "N5",
+    "pattern": "と",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-to-u2d-and-u2d-marker-core",
+      "sentence-to-u2d-and-u2d-marker-real-life",
+      "sentence-to-u2d-and-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-012"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-to-quotation-marker",
+    "level": "N5",
+    "pattern": "と",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-to-u2d-quotation-u2d-marker-core",
+      "sentence-to-u2d-quotation-u2d-marker-real-life",
+      "sentence-to-u2d-quotation-u2d-marker-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-012",
+      "n5-unit-013"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-tsumorida",
+    "level": "N5",
+    "pattern": "つもりだ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-tsumorida-core",
+      "sentence-tsumorida-real-life",
+      "sentence-tsumorida-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-023",
+      "n5-unit-024"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-tte",
+    "level": "N5",
+    "pattern": "って",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-tte-core",
+      "sentence-tte-real-life",
+      "sentence-tte-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-017",
+      "n5-unit-018"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-u-verbdictionary",
+    "level": "N5",
+    "pattern": "う-Verb (Dictionary)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-u-u2d-verbdictionary-core",
+      "sentence-u-u2d-verbdictionary-real-life",
+      "sentence-u-u2d-verbdictionary-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-038",
+      "n5-unit-039"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-u-verbnegative",
+    "level": "N5",
+    "pattern": "う-Verb (Negative)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-u-u2d-verbnegative-core",
+      "sentence-u-u2d-verbnegative-real-life",
+      "sentence-u-u2d-verbnegative-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-038",
+      "n5-unit-039"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-u-verbnegative-past",
+    "level": "N5",
+    "pattern": "う-Verb (Negative-Past)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-u-u2d-verbnegative-u2d-past-core",
+      "sentence-u-u2d-verbnegative-u2d-past-real-life",
+      "sentence-u-u2d-verbnegative-u2d-past-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-039"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-u-verbpast",
+    "level": "N5",
+    "pattern": "う-Verb (Past)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-u-u2d-verbpast-core",
+      "sentence-u-u2d-verbpast-real-life",
+      "sentence-u-u2d-verbpast-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-039",
+      "n5-unit-040"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-verb-made",
+    "level": "N5",
+    "pattern": "Verb + まで",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-verb-u2d-made-core",
+      "sentence-verb-u2d-made-real-life",
+      "sentence-verb-u2d-made-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-039",
+      "n5-unit-040"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-verb-niiku",
+    "level": "N5",
+    "pattern": "Verb + にいく",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-verb-u2d-niiku-core",
+      "sentence-verb-u2d-niiku-real-life",
+      "sentence-verb-u2d-niiku-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-040"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-verb-ta-teiru-noun",
+    "level": "N5",
+    "pattern": "Verb[た・ている]+ Noun",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-core",
+      "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-real-life",
+      "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-040",
+      "n5-unit-041"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-verb-te",
+    "level": "N5",
+    "pattern": "Verb + て",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-verb-u2d-te-core",
+      "sentence-verb-u2d-te-real-life",
+      "sentence-verb-u2d-te-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-040",
+      "n5-unit-041"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-verb-te-b",
+    "level": "N5",
+    "pattern": "Verb + て+ B",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-verb-u2d-te-u2d-b-core",
+      "sentence-verb-u2d-te-u2d-b-real-life",
+      "sentence-verb-u2d-te-u2d-b-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-041"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-verbsnon-past",
+    "level": "N5",
+    "pattern": "Verbs (Non-past)",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-verbsnon-u2d-past-core",
+      "sentence-verbsnon-u2d-past-real-life",
+      "sentence-verbsnon-u2d-past-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-041",
+      "n5-unit-042"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-ya",
+    "level": "N5",
+    "pattern": "や",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-ya-core",
+      "sentence-ya-real-life",
+      "sentence-ya-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-016",
+      "n5-unit-017"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-yo",
+    "level": "N5",
+    "pattern": "よ",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-yo-core",
+      "sentence-yo-real-life",
+      "sentence-yo-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-016",
+      "n5-unit-017"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-yori-nohouga",
+    "level": "N5",
+    "pattern": "より～のほうが",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-yori-u2d-nohouga-core",
+      "sentence-yori-u2d-nohouga-real-life",
+      "sentence-yori-u2d-nohouga-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-041",
+      "n5-unit-042"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-好ki",
+    "level": "N5",
+    "pattern": "好き",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-u597d-ki-core",
+      "sentence-u597d-ki-real-life",
+      "sentence-u597d-ki-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-022"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-誰",
+    "level": "N5",
+    "pattern": "誰",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-u8ab0-core",
+      "sentence-u8ab0-real-life",
+      "sentence-u8ab0-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-042"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "grammarId": "grammar-誰ka",
+    "level": "N5",
+    "pattern": "誰か",
+    "releaseReady": false,
+    "approvedExampleSentenceIds": [
+      "sentence-u8ab0-ka-core",
+      "sentence-u8ab0-ka-real-life",
+      "sentence-u8ab0-ka-structural-variation"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-004",
+      "n5-unit-005"
+    ],
+    "approvedQuestionIds": [],
+    "recognitionCount": 0,
+    "meaningCount": 0,
+    "usageCount": 0,
+    "contextApplicationCount": 0,
+    "requiredMinimum": 8,
+    "status": "lifecycle-exclusion"
+  }
+]

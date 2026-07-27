@@ -1,0 +1,2426 @@
+[
+  {
+    "candidate": {
+      "sourceRow": 6933,
+      "written": "～(て) しまう",
+      "reading": "~(て)しまう",
+      "englishHint": "to end up ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7333,
+      "written": "～(に) ついて",
+      "reading": "~(に)ついて",
+      "englishHint": "about, concerning",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7189,
+      "written": "～(に) よると",
+      "reading": "~(に)よると",
+      "englishHint": "according to ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7273,
+      "written": "～おき",
+      "reading": "~おき",
+      "englishHint": "after every ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7230,
+      "written": "～おわる",
+      "reading": "~おわる",
+      "englishHint": "to finish doing ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7594,
+      "written": "～がる",
+      "reading": "~がる",
+      "englishHint": "feel",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7570,
+      "written": "～か月",
+      "reading": "~かげつ",
+      "englishHint": "(number of) months",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7640,
+      "written": "～くらい; ぐらい",
+      "reading": "~くらい;ぐらい",
+      "englishHint": "approximate (quantity)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6788,
+      "written": "～ございます",
+      "reading": "~ございます",
+      "englishHint": "to be (polite), to exist",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7682,
+      "written": "～ころ; ～ごろ",
+      "reading": "~ころ;~ごろ",
+      "englishHint": "about, toward, approximately (time)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7700,
+      "written": "～さん",
+      "reading": "~さん",
+      "englishHint": "Mr. ~, Ms. ~",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7745,
+      "written": "～すぎ",
+      "reading": "~すぎ",
+      "englishHint": "past; to exceed, ~ too much",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7750,
+      "written": "～ずつ",
+      "reading": "~ずつ",
+      "englishHint": "at a time",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7793,
+      "written": "～だけ",
+      "reading": "~だけ",
+      "englishHint": "only ~, just ~, as ~",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6996,
+      "written": "～だす",
+      "reading": "~だす",
+      "englishHint": "to start doing ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7797,
+      "written": "～たち",
+      "reading": "~たち",
+      "englishHint": "plural suffix",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7106,
+      "written": "～ちゃん",
+      "reading": "~ちゃん",
+      "englishHint": "suffix for familiar (female) person",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7899,
+      "written": "～など",
+      "reading": "~など",
+      "englishHint": "et cetera",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7388,
+      "written": "～にくい",
+      "reading": "~にくい",
+      "englishHint": "difficult to do ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6994,
+      "written": "～ばかり",
+      "reading": "~ばかり",
+      "englishHint": "just did ~, only",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7186,
+      "written": "～まま",
+      "reading": "~まま",
+      "englishHint": "as it is",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7132,
+      "written": "～やすい",
+      "reading": "~やすい",
+      "englishHint": "easy to do ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6977,
+      "written": "～員",
+      "reading": "~いん",
+      "englishHint": "member of ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7507,
+      "written": "～円",
+      "reading": "~えん",
+      "englishHint": "Yen",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8079,
+      "written": "～屋",
+      "reading": "~や",
+      "englishHint": "~ shop",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6867,
+      "written": "～家",
+      "reading": "~か",
+      "englishHint": "person who is specialized in ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6766,
+      "written": "～会",
+      "reading": "~かい",
+      "englishHint": "~ meeting",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7555,
+      "written": "～回",
+      "reading": "~かい",
+      "englishHint": "counter for occurrences (~ times)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7556,
+      "written": "～階",
+      "reading": "~かい",
+      "englishHint": "counter for stories (floors) of a building",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6833,
+      "written": "～学部",
+      "reading": "~がくぶ",
+      "englishHint": "department of a university",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6747,
+      "written": "～区",
+      "reading": "~く",
+      "englishHint": "~ district, ~ ward, ~ borough",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7308,
+      "written": "～君",
+      "reading": "~くん",
+      "englishHint": "Mr. (junior) ~, master ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7580,
+      "written": "～月",
+      "reading": "~がつ",
+      "englishHint": "month of year",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6764,
+      "written": "～月",
+      "reading": "~つき",
+      "englishHint": "month",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6821,
+      "written": "～軒",
+      "reading": "~けん",
+      "englishHint": "counter for houses",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7655,
+      "written": "～個",
+      "reading": "~こ",
+      "englishHint": "counter for small items (e.g., fruits, cups)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7657,
+      "written": "～語",
+      "reading": "~ご",
+      "englishHint": "word, language",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7688,
+      "written": "～歳",
+      "reading": "~さい",
+      "englishHint": "~ years old",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7695,
+      "written": "～冊",
+      "reading": "~さつ",
+      "englishHint": "counter for books",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7164,
+      "written": "～始める",
+      "reading": "~はじめる",
+      "englishHint": "to start doing ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7704,
+      "written": "～時",
+      "reading": "~じ",
+      "englishHint": "~ o'clock (time)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7867,
+      "written": "～時",
+      "reading": "~とき",
+      "englishHint": "at the time of ~",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7708,
+      "written": "～時間",
+      "reading": "~じかん",
+      "englishHint": "~ hours",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6865,
+      "written": "～式",
+      "reading": "~しき",
+      "englishHint": "~ ceremony; ~ style",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7729,
+      "written": "～週間",
+      "reading": "~しゅうかん",
+      "englishHint": "~ weeks",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7739,
+      "written": "～人",
+      "reading": "~じん",
+      "englishHint": "counter for people",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7918,
+      "written": "～人",
+      "reading": "~にん",
+      "englishHint": "counter for people",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6817,
+      "written": "～製",
+      "reading": "~せい",
+      "englishHint": "made in ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8035,
+      "written": "～前",
+      "reading": "~まえ",
+      "englishHint": "in front of ~",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7599,
+      "written": "～側",
+      "reading": "~がわ",
+      "englishHint": "~ side",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7126,
+      "written": "～続ける",
+      "reading": "~つづける",
+      "englishHint": "to continue doing ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7259,
+      "written": "～代",
+      "reading": "~だい",
+      "englishHint": "~ age; period",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7784,
+      "written": "～台",
+      "reading": "~だい",
+      "englishHint": "counter for vehicles; machines",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7728,
+      "written": "～中",
+      "reading": "~じゅう",
+      "englishHint": "during, while",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7822,
+      "written": "～中",
+      "reading": "~ちゅう",
+      "englishHint": "during, while ~ing",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7370,
+      "written": "～町",
+      "reading": "~ちょう",
+      "englishHint": "the town of ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7856,
+      "written": "～度",
+      "reading": "~ど",
+      "englishHint": "counter for occurrences; ~ degree; ~ point",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7913,
+      "written": "～日",
+      "reading": "~にち",
+      "englishHint": "~ day of the month, for ~ days",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7924,
+      "written": "～年",
+      "reading": "~ねん",
+      "englishHint": "~ years",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7933,
+      "written": "～杯",
+      "reading": "~はい",
+      "englishHint": "counter for cupfuls",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7964,
+      "written": "～番",
+      "reading": "~ばん",
+      "englishHint": "~st; ~th best",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7971,
+      "written": "～匹",
+      "reading": "~ひき",
+      "englishHint": "counter for small animals",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8003,
+      "written": "～分",
+      "reading": "~ふん",
+      "englishHint": "~ minutes",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8024,
+      "written": "～本",
+      "reading": "~ほん",
+      "englishHint": "counter for long cylindrical things",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8027,
+      "written": "～枚",
+      "reading": "~まい",
+      "englishHint": "counter for flat things",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7393,
+      "written": "～目",
+      "reading": "~め",
+      "englishHint": "number ~ sequence, ~nd; ~th",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7249,
+      "written": "～様",
+      "reading": "~さま",
+      "englishHint": "Mr., Mrs., Ms.",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7207,
+      "written": "あげる",
+      "reading": "あげる",
+      "englishHint": "to give",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7441,
+      "written": "あなた",
+      "reading": "あなた",
+      "englishHint": "you",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7457,
+      "written": "いい; よい",
+      "reading": "いい;よい",
+      "englishHint": "good",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7461,
+      "written": "いかが",
+      "reading": "いかが",
+      "englishHint": "how, in what way",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7463,
+      "written": "いくつ",
+      "reading": "いくつ",
+      "englishHint": "how many, how old",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6897,
+      "written": "いくら～ても",
+      "reading": "いくら~ても",
+      "englishHint": "however much one may ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7306,
+      "written": "いじめる",
+      "reading": "いじめる",
+      "englishHint": "to bully, to torment",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6980,
+      "written": "いただく",
+      "reading": "頂く",
+      "englishHint": "-- extra-modest expression for たべる and のむ; humble expression for もらう --",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7477,
+      "written": "いつも",
+      "reading": "いつも",
+      "englishHint": "always, usually, every time, never (with neg. verb)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6767,
+      "written": "うかがう",
+      "reading": "うかがう",
+      "englishHint": "to ask",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7138,
+      "written": "うまい",
+      "reading": "うまい",
+      "englishHint": "delicious; skillful; fortunate",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7498,
+      "written": "うるさい",
+      "reading": "うるさい",
+      "englishHint": "noisy; annoying",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7509,
+      "written": "お～",
+      "reading": "お~",
+      "englishHint": "honorable ~ (honorific)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7155,
+      "written": "おいでになる",
+      "reading": "おいでになる",
+      "englishHint": "(hon.) to be",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6970,
+      "written": "おかしい",
+      "reading": "おかしい",
+      "englishHint": "strange; odd; funny",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7524,
+      "written": "おじいさん",
+      "reading": "おじいさん",
+      "englishHint": "grandfather, male senior citizen",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7309,
+      "written": "おっしゃる",
+      "reading": "おっしゃる",
+      "englishHint": "-- honorific expression for いう --",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7059,
+      "written": "おつり",
+      "reading": "おつり",
+      "englishHint": "change; balance of money returned to the purchaser",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7535,
+      "written": "おととし",
+      "reading": "おととし",
+      "englishHint": "year before last",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7542,
+      "written": "おばあさん",
+      "reading": "おばあさん",
+      "englishHint": "grandmother, female senior-citizen",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7546,
+      "written": "おまわりさん",
+      "reading": "おまわりさん",
+      "englishHint": "policeman (friendly term)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7103,
+      "written": "おもちゃ",
+      "reading": "おもちゃ",
+      "englishHint": "a toy",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7050,
+      "written": "おる",
+      "reading": "おる",
+      "englishHint": "-- extra-modest expression for いる --",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7179,
+      "written": "お金持ち",
+      "reading": "かねもち;おかねもち",
+      "englishHint": "rich person",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7566,
+      "written": "かかる",
+      "reading": "かかる",
+      "englishHint": "it takes (amount of time, money) (v.i.)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7572,
+      "written": "かける",
+      "reading": "かける",
+      "englishHint": "to dial/call (e.g., phone); to sit down",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7587,
+      "written": "かぶる",
+      "reading": "かぶる",
+      "englishHint": "to wear, to put on (e.g., a hat on the head)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7297,
+      "written": "かまう",
+      "reading": "",
+      "englishHint": "to mind, to care about, to be concerned about",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7625,
+      "written": "キロ; キログラム",
+      "reading": "きろ;きろぐらむ",
+      "englishHint": "(abbr.) kilo (kilogram)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7626,
+      "written": "キロ; キロメートル",
+      "reading": "きろ;きろめーとる",
+      "englishHint": "(abbr.) kilo (kilometer)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7239,
+      "written": "くださる",
+      "reading": "くださる",
+      "englishHint": "(hon.) to give, to confer",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6991,
+      "written": "けがする",
+      "reading": "けがする",
+      "englishHint": "injury (to animate object), hurt",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7330,
+      "written": "けれど; けれども",
+      "reading": "けれど;けれども",
+      "englishHint": "but, although",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6900,
+      "written": "けんかする",
+      "reading": "けんかする",
+      "englishHint": "quarrel",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7664,
+      "written": "コーヒー",
+      "reading": "こーひー",
+      "englishHint": "coffee",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7072,
+      "written": "ごちそう",
+      "reading": "ごちそう",
+      "englishHint": "feast, treating (someone)",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7679,
+      "written": "コピーする",
+      "reading": "こぴーする",
+      "englishHint": "to copy",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7054,
+      "written": "ごらんになる",
+      "reading": "",
+      "englishHint": "-- honorific expression for みる --",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7337,
+      "written": "コンピュータ; コンピューター",
+      "reading": "こんぴゅーた;こんぴゅーたー",
+      "englishHint": "computer",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7699,
+      "written": "さ来年",
+      "reading": "さらいねん",
+      "englishHint": "year after next",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7144,
+      "written": "しばらく",
+      "reading": "しばらく",
+      "englishHint": "little while",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7723,
+      "written": "じゃ; じゃあ",
+      "reading": "じゃ;じゃあ",
+      "englishHint": "well, well then",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7313,
+      "written": "スーパー (マーケット)",
+      "reading": "すーぱー(まーけっと)",
+      "englishHint": "supermarket",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7747,
+      "written": "すぐに",
+      "reading": "すぐに",
+      "englishHint": "immediately, soon",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7764,
+      "written": "ゼロ",
+      "reading": "ぜろ",
+      "englishHint": "zero",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7771,
+      "written": "そう; そうです",
+      "reading": "そう;そうです",
+      "englishHint": "yes; appears, to be the case",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7773,
+      "written": "そうして; そして",
+      "reading": "そうして;そして",
+      "englishHint": "and, like that",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7779,
+      "written": "そば",
+      "reading": "そば",
+      "englishHint": "near, close, beside; Japanese traditional buckwheat noodle",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7184,
+      "written": "それほど",
+      "reading": "それほど",
+      "englishHint": "to that degree; extent",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7803,
+      "written": "たばこ",
+      "reading": "たばこ",
+      "englishHint": "tobacco, cigarettes",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7412,
+      "written": "たまに",
+      "reading": "たまに",
+      "englishHint": "occasionally",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7060,
+      "written": "チェックする",
+      "reading": "ちぇっくする",
+      "englishHint": "check",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7832,
+      "written": "つける",
+      "reading": "つける",
+      "englishHint": "to turn on (e.g., a light); to take",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7834,
+      "written": "つまらない",
+      "reading": "つまらない",
+      "englishHint": "boring, dull; insignificant",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6792,
+      "written": "つもり",
+      "reading": "つもり",
+      "englishHint": "intention, plan",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6844,
+      "written": "できるだけ",
+      "reading": "できるだけ",
+      "englishHint": "if at all possible, as much as possible",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7843,
+      "written": "できる",
+      "reading": "できる",
+      "englishHint": "to be able to (to accomplish)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7870,
+      "written": "どこ",
+      "reading": "どこ",
+      "englishHint": "where, what place",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7877,
+      "written": "どなた",
+      "reading": "どなた",
+      "englishHint": "who",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7896,
+      "written": "なぜ",
+      "reading": "なぜ",
+      "englishHint": "why (same as どうして)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6887,
+      "written": "なるべく",
+      "reading": "なるべく",
+      "englishHint": "if possible, as much as possible",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7238,
+      "written": "なるほど",
+      "reading": "なるほど",
+      "englishHint": "I see; I now understand",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7910,
+      "written": "にぎやか",
+      "reading": "にぎやか",
+      "englishHint": "bustling, busy",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6862,
+      "written": "パート (タイム)",
+      "reading": "ぱーと(たいむ)",
+      "englishHint": "part time (esp. female part time employees)",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7937,
+      "written": "はく",
+      "reading": "はく",
+      "englishHint": "to put on (items below your waist)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7137,
+      "written": "びっくりする",
+      "reading": "びっくりする",
+      "englishHint": "to be surprised",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7128,
+      "written": "ひどい",
+      "reading": "ひどい",
+      "englishHint": "terrible, awful, unfair, cruel",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7213,
+      "written": "ファックス",
+      "reading": "ふぁっくす",
+      "englishHint": "fax",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8005,
+      "written": "ページ",
+      "reading": "ぺーじ",
+      "englishHint": "a page",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6791,
+      "written": "ほとんど",
+      "reading": "ほとんど",
+      "englishHint": "mostly, almost",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8037,
+      "written": "まずい",
+      "reading": "まずい",
+      "englishHint": "terrible (in reference to food), unappetizing, unpleasant (taste)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7169,
+      "written": "まず",
+      "reading": "まず",
+      "englishHint": "first (of all), to start with",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6990,
+      "written": "または",
+      "reading": "または",
+      "englishHint": "or, otherwise",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8038,
+      "written": "また",
+      "reading": "また",
+      "englishHint": "and; furthermore",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8042,
+      "written": "まっすぐ",
+      "reading": "まっすぐ",
+      "englishHint": "straight (ahead), direct",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8062,
+      "written": "みんな",
+      "reading": "みんな",
+      "englishHint": "all, everyone, everybody",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6984,
+      "written": "もちろん",
+      "reading": "もちろん",
+      "englishHint": "certainly, of course",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6961,
+      "written": "もらう",
+      "reading": "もらう",
+      "englishHint": "to receive",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6759,
+      "written": "やはり; やっぱり",
+      "reading": "やはり;やっぱり",
+      "englishHint": "as I thought, absolutely",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8095,
+      "written": "ゆっくりと",
+      "reading": "ゆっくりと",
+      "englishHint": "slowly, at ease",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8098,
+      "written": "よく",
+      "reading": "よく",
+      "englishHint": "frequently, often (much); well, skillfully",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7057,
+      "written": "よろしい",
+      "reading": "よろしい",
+      "englishHint": "(hon.) good, OK, all right",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8110,
+      "written": "ラジオカセ",
+      "reading": "らじおかせ",
+      "englishHint": "radio cassette player",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6825,
+      "written": "レポート; リポート",
+      "reading": "れぽーと;りぽーと",
+      "englishHint": "report",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8123,
+      "written": "ワイシャツ",
+      "reading": "わいしゃつ",
+      "englishHint": "shirt (lit: white shirt), business shirt",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6999,
+      "written": "挨拶",
+      "reading": "あいさつする",
+      "englishHint": "greet(ing)",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7035,
+      "written": "案内",
+      "reading": "あんないする",
+      "englishHint": "information, guidance",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7022,
+      "written": "運転",
+      "reading": "うんてんする",
+      "englishHint": "driving",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6775,
+      "written": "運動",
+      "reading": "うんどうする",
+      "englishHint": "exercise",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7078,
+      "written": "遠慮",
+      "reading": "えんりょする",
+      "englishHint": "restraint, reserve, hesitate",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7908,
+      "written": "何～",
+      "reading": "なん~",
+      "englishHint": "what sort of ~",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7901,
+      "written": "何",
+      "reading": "なん;なに",
+      "englishHint": "what",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7307,
+      "written": "回る、回す",
+      "reading": "まわる、まわす",
+      "englishHint": "to go around, to revolve",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7047,
+      "written": "楽む",
+      "reading": "たのしむ",
+      "englishHint": "to enjoy",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8045,
+      "written": "丸い; 円い",
+      "reading": "まるい",
+      "englishHint": "round, circular",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7342,
+      "written": "経験",
+      "reading": "けいけんする",
+      "englishHint": "experience",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7147,
+      "written": "計画",
+      "reading": "けいかくする",
+      "englishHint": "plan, project, schedule",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7651,
+      "written": "結婚",
+      "reading": "けっこん(する)",
+      "englishHint": "marriage (get married)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7193,
+      "written": "堅; 硬; 固い",
+      "reading": "かたい",
+      "englishHint": "solid, hard, firm",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6870,
+      "written": "建て",
+      "reading": "~だて",
+      "englishHint": "~ storied, separate housing",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6903,
+      "written": "故障",
+      "reading": "こしょうする",
+      "englishHint": "breakdown",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7275,
+      "written": "御～",
+      "reading": "ご~",
+      "englishHint": "honorable ~",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7462,
+      "written": "行く",
+      "reading": "いく;ゆく",
+      "englishHint": "to go",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7228,
+      "written": "高校; 高等学校",
+      "reading": "こうこう;こうとうがっこう",
+      "englishHint": "high school; senior high school",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7702,
+      "written": "散歩",
+      "reading": "さんぽ(する)",
+      "englishHint": "walk, stroll",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7163,
+      "written": "支度",
+      "reading": "したくする",
+      "englishHint": "preparation",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7864,
+      "written": "十",
+      "reading": "(〜を)とお",
+      "englishHint": "ten (~)",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6866,
+      "written": "出席",
+      "reading": "しゅっせきする",
+      "englishHint": "attendance",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7301,
+      "written": "出発",
+      "reading": "しゅっぱつする",
+      "englishHint": "departure",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6916,
+      "written": "準備",
+      "reading": "じゅんびする",
+      "englishHint": "prepare",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7942,
+      "written": "初め; 始め",
+      "reading": "はじめ",
+      "englishHint": "beginning, start",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7226,
+      "written": "承知",
+      "reading": "しょうちする",
+      "englishHint": "consent, acceptance",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7042,
+      "written": "招待",
+      "reading": "しょうたいする",
+      "englishHint": "invitation",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7380,
+      "written": "食事",
+      "reading": "しょくじする",
+      "englishHint": "meal",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 6782,
+      "written": "心配",
+      "reading": "しんぱいする",
+      "englishHint": "worry, concern",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7356,
+      "written": "真中",
+      "reading": "まんなか",
+      "englishHint": "middle, center",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7283,
+      "written": "世話",
+      "reading": "せわする",
+      "englishHint": "looking after; to look after",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7389,
+      "written": "生活",
+      "reading": "せいかつする",
+      "englishHint": "living, life; to live",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7101,
+      "written": "生産",
+      "reading": "せいさんする",
+      "englishHint": "production; to produce",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7598,
+      "written": "川; 河",
+      "reading": "かわ",
+      "englishHint": "river",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7772,
+      "written": "掃除",
+      "reading": "そうじ(する)",
+      "englishHint": "cleaning, sweeping",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7374,
+      "written": "相談",
+      "reading": "そうだんする",
+      "englishHint": "consultation",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7428,
+      "written": "足; 脚",
+      "reading": "あし",
+      "englishHint": "foot; leg",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7262,
+      "written": "退院",
+      "reading": "たいいんする",
+      "englishHint": "leaving hospital",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7367,
+      "written": "入院",
+      "reading": "にゅういんする",
+      "englishHint": "hospitalization",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7088,
+      "written": "入学",
+      "reading": "にゅうがくする",
+      "englishHint": "entry to school or university",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7302,
+      "written": "拝見",
+      "reading": "はいけんする",
+      "englishHint": "(humble) (polite) seeing, look at",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7523,
+      "written": "伯父; 叔父さん",
+      "reading": "おじさん",
+      "englishHint": "uncle, middle-aged man",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7541,
+      "written": "伯母さん; 叔母さん",
+      "reading": "おばさん",
+      "englishHint": "aunt",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8012,
+      "written": "勉強",
+      "reading": "べんきょう(する)",
+      "englishHint": "study",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7210,
+      "written": "放送",
+      "reading": "ほうそうする",
+      "englishHint": "broadcasting",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8029,
+      "written": "毎月",
+      "reading": "まいげつ;まいつき",
+      "englishHint": "every month, monthly",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8032,
+      "written": "毎年",
+      "reading": "まいねん;まいとし",
+      "englishHint": "every year, yearly, annually",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 7398,
+      "written": "輸出",
+      "reading": "ゆしゅつする",
+      "englishHint": "export",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 8120,
+      "written": "練習",
+      "reading": "れんしゅう(する)",
+      "englishHint": "(to) practice",
+      "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  }
+]

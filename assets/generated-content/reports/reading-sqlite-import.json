@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "profile": "development",
+  "engine": "sqlite3",
+  "checksum": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
+  "retainedExistingRecords": 99076,
+  "passagesInserted": 146,
+  "passageRelationshipsInserted": 4337,
+  "questionsInserted": 508,
+  "optionsInserted": 2032,
+  "targetRelationshipsInserted": 508,
+  "metadataInserted": 508,
+  "viewsInserted": {
+    "passages": 146,
+    "questions": 508
+  },
+  "lifecycleExcluded": 146,
+  "rejected": 0,
+  "firstImport": {
+    "inserted": 116351,
+    "updated": 0,
+    "skipped": 0,
+    "excludedFromRelease": 146,
+    "rejected": 0
+  },
+  "idempotentRerun": {
+    "inserted": 0,
+    "updated": 0,
+    "skipped": 116351,
+    "rejected": 0
+  },
+  "transaction": "pass",
+  "parentBeforeChildOrder": "pass",
+  "foreignKeys": "pass",
+  "checksumSkipping": "pass",
+  "checksumIdenticalRerun": true
+}

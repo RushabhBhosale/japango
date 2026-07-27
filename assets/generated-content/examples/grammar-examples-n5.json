@@ -1,0 +1,6326 @@
+[
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-noha-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-noha-core",
+    "grammarId": "grammar-adjective-noha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-noha-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-noha-real-life",
+    "grammarId": "grammar-adjective-noha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-noha-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-noha-structural-variation",
+    "grammarId": "grammar-adjective-noha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-te-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-te-core",
+    "grammarId": "grammar-adjective-te"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-te-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-te-real-life",
+    "grammarId": "grammar-adjective-te"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-te-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-te-structural-variation",
+    "grammarId": "grammar-adjective-te"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-te-u2d-b-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-te-u2d-b-core",
+    "grammarId": "grammar-adjective-te-b"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-te-u2d-b-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-te-u2d-b-real-life",
+    "grammarId": "grammar-adjective-te-b"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-adjective-u2d-te-u2d-b-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-adjective-u2d-te-u2d-b-structural-variation",
+    "grammarId": "grammar-adjective-te-b"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ageru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ageru-core",
+    "grammarId": "grammar-ageru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ageru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ageru-real-life",
+    "grammarId": "grammar-ageru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ageru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ageru-structural-variation",
+    "grammarId": "grammar-ageru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ano-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ano-core",
+    "grammarId": "grammar-ano"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ano-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ano-real-life",
+    "grammarId": "grammar-ano"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ano-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ano-structural-variation",
+    "grammarId": "grammar-ano"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-are-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-are-core",
+    "grammarId": "grammar-are"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-are-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-are-real-life",
+    "grammarId": "grammar-are"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-are-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-are-structural-variation",
+    "grammarId": "grammar-are"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-asoko-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-asoko-core",
+    "grammarId": "grammar-asoko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-asoko-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-asoko-real-life",
+    "grammarId": "grammar-asoko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-asoko-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-asoko-structural-variation",
+    "grammarId": "grammar-asoko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dake-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dake-core",
+    "grammarId": "grammar-dake"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dake-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dake-real-life",
+    "grammarId": "grammar-dake"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dake-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dake-structural-variation",
+    "grammarId": "grammar-dake"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-darou-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-darou-core",
+    "grammarId": "grammar-darou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-darou-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-darou-real-life",
+    "grammarId": "grammar-darou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-darou-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-darou-structural-variation",
+    "grammarId": "grammar-darou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-datta-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-datta-core",
+    "grammarId": "grammar-datta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-datta-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 12,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-datta-real-life",
+    "grammarId": "grammar-datta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-datta-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-datta-structural-variation",
+    "grammarId": "grammar-datta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-de-u2d-action-u2d-location-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-de-u2d-action-u2d-location-u2d-marker-core",
+    "grammarId": "grammar-de-action-location-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-de-u2d-action-u2d-location-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-de-u2d-action-u2d-location-u2d-marker-real-life",
+    "grammarId": "grammar-de-action-location-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-de-u2d-action-u2d-location-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-de-u2d-action-u2d-location-u2d-marker-structural-variation",
+    "grammarId": "grammar-de-action-location-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-de-u2d-means-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-de-u2d-means-u2d-marker-core",
+    "grammarId": "grammar-de-means-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-de-u2d-means-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-de-u2d-means-u2d-marker-real-life",
+    "grammarId": "grammar-de-means-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-de-u2d-means-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-de-u2d-means-u2d-marker-structural-variation",
+    "grammarId": "grammar-de-means-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-deshou-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-deshou-core",
+    "grammarId": "grammar-deshou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-deshou-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-deshou-real-life",
+    "grammarId": "grammar-deshou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-deshou-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-deshou-structural-variation",
+    "grammarId": "grammar-deshou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-desu-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-desu-core",
+    "grammarId": "grammar-desu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-desu-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-desu-real-life",
+    "grammarId": "grammar-desu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-desu-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-desu-structural-variation",
+    "grammarId": "grammar-desu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-doko-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-doko-core",
+    "grammarId": "grammar-doko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-doko-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-doko-real-life",
+    "grammarId": "grammar-doko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-doko-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-doko-structural-variation",
+    "grammarId": "grammar-doko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dono-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dono-core",
+    "grammarId": "grammar-dono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dono-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dono-real-life",
+    "grammarId": "grammar-dono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dono-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dono-structural-variation",
+    "grammarId": "grammar-dono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dore-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dore-core",
+    "grammarId": "grammar-dore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dore-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dore-real-life",
+    "grammarId": "grammar-dore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-dore-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-dore-structural-variation",
+    "grammarId": "grammar-dore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ga-u2d-contrast-u2d-conjunction-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ga-u2d-contrast-u2d-conjunction-core",
+    "grammarId": "grammar-ga-contrast-conjunction"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ga-u2d-contrast-u2d-conjunction-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ga-u2d-contrast-u2d-conjunction-real-life",
+    "grammarId": "grammar-ga-contrast-conjunction"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ga-u2d-contrast-u2d-conjunction-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ga-u2d-contrast-u2d-conjunction-structural-variation",
+    "grammarId": "grammar-ga-contrast-conjunction"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ga-u2d-subject-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ga-u2d-subject-u2d-marker-core",
+    "grammarId": "grammar-ga-subject-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ga-u2d-subject-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ga-u2d-subject-u2d-marker-real-life",
+    "grammarId": "grammar-ga-subject-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ga-u2d-subject-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ga-u2d-subject-u2d-marker-structural-variation",
+    "grammarId": "grammar-ga-subject-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gaaru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gaaru-core",
+    "grammarId": "grammar-gaaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gaaru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gaaru-real-life",
+    "grammarId": "grammar-gaaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gaaru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 11,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gaaru-structural-variation",
+    "grammarId": "grammar-gaaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gaaru-u2d-noun-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gaaru-u2d-noun-core",
+    "grammarId": "grammar-gaaru-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gaaru-u2d-noun-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gaaru-u2d-noun-real-life",
+    "grammarId": "grammar-gaaru-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gaaru-u2d-noun-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gaaru-u2d-noun-structural-variation",
+    "grammarId": "grammar-gaaru-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gairu-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gairu-core",
+    "grammarId": "grammar-gairu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gairu-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gairu-real-life",
+    "grammarId": "grammar-gairu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-gairu-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-gairu-structural-variation",
+    "grammarId": "grammar-gairu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ha-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ha-core",
+    "grammarId": "grammar-ha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ha-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ha-real-life",
+    "grammarId": "grammar-ha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ha-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ha-structural-variation",
+    "grammarId": "grammar-ha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-he-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-he-core",
+    "grammarId": "grammar-he"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-he-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-he-real-life",
+    "grammarId": "grammar-he"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-he-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-he-structural-variation",
+    "grammarId": "grammar-he"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-heiku-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-heiku-core",
+    "grammarId": "grammar-heiku"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-heiku-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-heiku-real-life",
+    "grammarId": "grammar-heiku"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-heiku-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-heiku-structural-variation",
+    "grammarId": "grammar-heiku"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjective-u2d-noun-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjective-u2d-noun-core",
+    "grammarId": "grammar-i-adjective-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjective-u2d-noun-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjective-u2d-noun-real-life",
+    "grammarId": "grammar-i-adjective-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjective-u2d-noun-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjective-u2d-noun-structural-variation",
+    "grammarId": "grammar-i-adjective-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivekunakatta-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivekunakatta-core",
+    "grammarId": "grammar-i-adjectivekunakatta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivekunakatta-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivekunakatta-real-life",
+    "grammarId": "grammar-i-adjectivekunakatta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivekunakatta-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 13,
+        "endCodePoint": 19
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivekunakatta-structural-variation",
+    "grammarId": "grammar-i-adjectivekunakatta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivepast-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivepast-core",
+    "grammarId": "grammar-i-adjectivepast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivepast-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivepast-real-life",
+    "grammarId": "grammar-i-adjectivepast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivepast-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivepast-structural-variation",
+    "grammarId": "grammar-i-adjectivepast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivepredicate-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivepredicate-core",
+    "grammarId": "grammar-i-adjectivepredicate"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivepredicate-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivepredicate-real-life",
+    "grammarId": "grammar-i-adjectivepredicate"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectivepredicate-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectivepredicate-structural-variation",
+    "grammarId": "grammar-i-adjectivepredicate"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectives-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectives-core",
+    "grammarId": "grammar-i-adjectives"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectives-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectives-real-life",
+    "grammarId": "grammar-i-adjectives"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectives-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectives-structural-variation",
+    "grammarId": "grammar-i-adjectives"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectiveskunai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectiveskunai-core",
+    "grammarId": "grammar-i-adjectiveskunai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectiveskunai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectiveskunai-real-life",
+    "grammarId": "grammar-i-adjectiveskunai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-i-u2d-adjectiveskunai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-i-u2d-adjectiveskunai-structural-variation",
+    "grammarId": "grammar-i-adjectiveskunai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ii-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ii-core",
+    "grammarId": "grammar-ii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ii-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ii-real-life",
+    "grammarId": "grammar-ii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ii-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ii-structural-variation",
+    "grammarId": "grammar-ii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-janai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-janai-core",
+    "grammarId": "grammar-janai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-janai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-janai-real-life",
+    "grammarId": "grammar-janai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-janai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-janai-structural-variation",
+    "grammarId": "grammar-janai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-janakatta-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-janakatta-core",
+    "grammarId": "grammar-janakatta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-janakatta-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-janakatta-real-life",
+    "grammarId": "grammar-janakatta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-janakatta-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-janakatta-structural-variation",
+    "grammarId": "grammar-janakatta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ka-u2d-alternative-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ka-u2d-alternative-u2d-marker-core",
+    "grammarId": "grammar-ka-alternative-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ka-u2d-alternative-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ka-u2d-alternative-u2d-marker-real-life",
+    "grammarId": "grammar-ka-alternative-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ka-u2d-alternative-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ka-u2d-alternative-u2d-marker-structural-variation",
+    "grammarId": "grammar-ka-alternative-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ka-u2d-question-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ka-u2d-question-u2d-marker-core",
+    "grammarId": "grammar-ka-question-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ka-u2d-question-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 12,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ka-u2d-question-u2d-marker-real-life",
+    "grammarId": "grammar-ka-question-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ka-u2d-question-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 11,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ka-u2d-question-u2d-marker-structural-variation",
+    "grammarId": "grammar-ka-question-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kara-u2d-reason-u2d-conjunction-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kara-u2d-reason-u2d-conjunction-core",
+    "grammarId": "grammar-kara-reason-conjunction"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kara-u2d-reason-u2d-conjunction-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kara-u2d-reason-u2d-conjunction-real-life",
+    "grammarId": "grammar-kara-reason-conjunction"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kara-u2d-reason-u2d-conjunction-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kara-u2d-reason-u2d-conjunction-structural-variation",
+    "grammarId": "grammar-kara-reason-conjunction"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kara-u2d-starting-u2d-point-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kara-u2d-starting-u2d-point-u2d-marker-core",
+    "grammarId": "grammar-kara-starting-point-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kara-u2d-starting-u2d-point-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kara-u2d-starting-u2d-point-u2d-marker-real-life",
+    "grammarId": "grammar-kara-starting-point-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kara-u2d-starting-u2d-point-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kara-u2d-starting-u2d-point-u2d-marker-structural-variation",
+    "grammarId": "grammar-kara-starting-point-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kedo-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kedo-core",
+    "grammarId": "grammar-kedo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kedo-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kedo-real-life",
+    "grammarId": "grammar-kedo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kedo-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kedo-structural-variation",
+    "grammarId": "grammar-kedo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kekkou-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kekkou-core",
+    "grammarId": "grammar-kekkou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kekkou-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kekkou-real-life",
+    "grammarId": "grammar-kekkou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kekkou-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kekkou-structural-variation",
+    "grammarId": "grammar-kekkou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-keredomo-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-keredomo-core",
+    "grammarId": "grammar-keredomo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-keredomo-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-keredomo-real-life",
+    "grammarId": "grammar-keredomo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-keredomo-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-keredomo-structural-variation",
+    "grammarId": "grammar-keredomo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kirai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kirai-core",
+    "grammarId": "grammar-kirai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kirai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kirai-real-life",
+    "grammarId": "grammar-kirai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kirai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kirai-structural-variation",
+    "grammarId": "grammar-kirai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-koko-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-koko-core",
+    "grammarId": "grammar-koko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-koko-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-koko-real-life",
+    "grammarId": "grammar-koko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-koko-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-koko-structural-variation",
+    "grammarId": "grammar-koko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kono-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kono-core",
+    "grammarId": "grammar-kono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kono-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kono-real-life",
+    "grammarId": "grammar-kono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kono-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kono-structural-variation",
+    "grammarId": "grammar-kono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kore-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kore-core",
+    "grammarId": "grammar-kore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kore-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kore-real-life",
+    "grammarId": "grammar-kore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kore-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kore-structural-variation",
+    "grammarId": "grammar-kore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kurai1-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kurai1-core",
+    "grammarId": "grammar-kurai1"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kurai1-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kurai1-real-life",
+    "grammarId": "grammar-kurai1"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kurai1-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kurai1-structural-variation",
+    "grammarId": "grammar-kurai1"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kureru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kureru-core",
+    "grammarId": "grammar-kureru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kureru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kureru-real-life",
+    "grammarId": "grammar-kureru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kureru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kureru-structural-variation",
+    "grammarId": "grammar-kureru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kuru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kuru-core",
+    "grammarId": "grammar-kuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kuru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kuru-real-life",
+    "grammarId": "grammar-kuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-kuru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-kuru-structural-variation",
+    "grammarId": "grammar-kuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mada-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mada-core",
+    "grammarId": "grammar-mada"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mada-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mada-real-life",
+    "grammarId": "grammar-mada"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mada-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mada-structural-variation",
+    "grammarId": "grammar-mada"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mada-u2d-teimasen-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mada-u2d-teimasen-core",
+    "grammarId": "grammar-mada-teimasen"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mada-u2d-teimasen-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mada-u2d-teimasen-real-life",
+    "grammarId": "grammar-mada-teimasen"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mada-u2d-teimasen-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mada-u2d-teimasen-structural-variation",
+    "grammarId": "grammar-mada-teimasen"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-maeni-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-maeni-core",
+    "grammarId": "grammar-maeni"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-maeni-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-maeni-real-life",
+    "grammarId": "grammar-maeni"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-maeni-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-maeni-structural-variation",
+    "grammarId": "grammar-maeni"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-masenka-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-masenka-core",
+    "grammarId": "grammar-masenka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-masenka-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-masenka-real-life",
+    "grammarId": "grammar-masenka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-masenka-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-masenka-structural-variation",
+    "grammarId": "grammar-masenka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mashou-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mashou-core",
+    "grammarId": "grammar-mashou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mashou-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mashou-real-life",
+    "grammarId": "grammar-mashou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mashou-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mashou-structural-variation",
+    "grammarId": "grammar-mashou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mashouka-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mashouka-core",
+    "grammarId": "grammar-mashouka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mashouka-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mashouka-real-life",
+    "grammarId": "grammar-mashouka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mashouka-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mashouka-structural-variation",
+    "grammarId": "grammar-mashouka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mo-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mo-core",
+    "grammarId": "grammar-mo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mo-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mo-real-life",
+    "grammarId": "grammar-mo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mo-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mo-structural-variation",
+    "grammarId": "grammar-mo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-morau-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-morau-core",
+    "grammarId": "grammar-morau"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-morau-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-morau-real-life",
+    "grammarId": "grammar-morau"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-morau-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-morau-structural-variation",
+    "grammarId": "grammar-morau"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mou-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mou-core",
+    "grammarId": "grammar-mou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mou-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mou-real-life",
+    "grammarId": "grammar-mou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-mou-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-mou-structural-variation",
+    "grammarId": "grammar-mou"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-core",
+    "grammarId": "grammar-na"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-real-life",
+    "grammarId": "grammar-na"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-structural-variation",
+    "grammarId": "grammar-na"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjective-u2d-noun-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjective-u2d-noun-core",
+    "grammarId": "grammar-na-adjective-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjective-u2d-noun-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjective-u2d-noun-real-life",
+    "grammarId": "grammar-na-adjective-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjective-u2d-noun-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjective-u2d-noun-structural-variation",
+    "grammarId": "grammar-na-adjective-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjectiveda-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjectiveda-core",
+    "grammarId": "grammar-na-adjectiveda"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjectiveda-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjectiveda-real-life",
+    "grammarId": "grammar-na-adjectiveda"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjectiveda-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjectiveda-structural-variation",
+    "grammarId": "grammar-na-adjectiveda"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjectives-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjectives-core",
+    "grammarId": "grammar-na-adjectives"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjectives-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjectives-real-life",
+    "grammarId": "grammar-na-adjectives"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-na-u2d-adjectives-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-na-u2d-adjectives-structural-variation",
+    "grammarId": "grammar-na-adjectives"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-naidekudasai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-naidekudasai-core",
+    "grammarId": "grammar-naidekudasai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-naidekudasai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-naidekudasai-real-life",
+    "grammarId": "grammar-naidekudasai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-naidekudasai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-naidekudasai-structural-variation",
+    "grammarId": "grammar-naidekudasai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-naihougaii-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-naihougaii-core",
+    "grammarId": "grammar-naihougaii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-naihougaii-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 16
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-naihougaii-real-life",
+    "grammarId": "grammar-naihougaii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-naihougaii-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 18
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-naihougaii-structural-variation",
+    "grammarId": "grammar-naihougaii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakucha-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakucha-core",
+    "grammarId": "grammar-nakucha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakucha-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakucha-real-life",
+    "grammarId": "grammar-nakucha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakucha-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakucha-structural-variation",
+    "grammarId": "grammar-nakucha"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakutehaikenai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 17
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakutehaikenai-core",
+    "grammarId": "grammar-nakutehaikenai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakutehaikenai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakutehaikenai-real-life",
+    "grammarId": "grammar-nakutehaikenai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakutehaikenai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 16
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakutehaikenai-structural-variation",
+    "grammarId": "grammar-nakutehaikenai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakutehanaranai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 17
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakutehanaranai-core",
+    "grammarId": "grammar-nakutehanaranai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakutehanaranai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 18
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakutehanaranai-real-life",
+    "grammarId": "grammar-nakutehanaranai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nakutehanaranai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 18
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nakutehanaranai-structural-variation",
+    "grammarId": "grammar-nakutehanaranai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nanika-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nanika-core",
+    "grammarId": "grammar-nanika"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nanika-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nanika-real-life",
+    "grammarId": "grammar-nanika"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nanika-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nanika-structural-variation",
+    "grammarId": "grammar-nanika"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ndesu-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ndesu-core",
+    "grammarId": "grammar-ndesu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ndesu-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 11,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ndesu-real-life",
+    "grammarId": "grammar-ndesu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ndesu-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ndesu-structural-variation",
+    "grammarId": "grammar-ndesu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ne-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ne-core",
+    "grammarId": "grammar-ne"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ne-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ne-real-life",
+    "grammarId": "grammar-ne"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ne-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 11,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ne-structural-variation",
+    "grammarId": "grammar-ne"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ni-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ni-core",
+    "grammarId": "grammar-ni"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ni-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ni-real-life",
+    "grammarId": "grammar-ni"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ni-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ni-structural-variation",
+    "grammarId": "grammar-ni"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ninaru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ninaru-core",
+    "grammarId": "grammar-ninaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ninaru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ninaru-real-life",
+    "grammarId": "grammar-ninaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ninaru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 16
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ninaru-structural-variation",
+    "grammarId": "grammar-ninaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nisuru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nisuru-core",
+    "grammarId": "grammar-nisuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nisuru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nisuru-real-life",
+    "grammarId": "grammar-nisuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nisuru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nisuru-structural-variation",
+    "grammarId": "grammar-nisuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-explanatory-u2d-nominalizer-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-explanatory-u2d-nominalizer-core",
+    "grammarId": "grammar-no-explanatory-nominalizer"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-explanatory-u2d-nominalizer-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-explanatory-u2d-nominalizer-real-life",
+    "grammarId": "grammar-no-explanatory-nominalizer"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-explanatory-u2d-nominalizer-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-explanatory-u2d-nominalizer-structural-variation",
+    "grammarId": "grammar-no-explanatory-nominalizer"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-nominalizer-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 3
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-nominalizer-core",
+    "grammarId": "grammar-no-nominalizer"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-nominalizer-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-nominalizer-real-life",
+    "grammarId": "grammar-no-nominalizer"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-nominalizer-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-nominalizer-structural-variation",
+    "grammarId": "grammar-no-nominalizer"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-possession-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-possession-u2d-marker-core",
+    "grammarId": "grammar-no-possession-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-possession-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-possession-u2d-marker-real-life",
+    "grammarId": "grammar-no-possession-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-no-u2d-possession-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-no-u2d-possession-u2d-marker-structural-variation",
+    "grammarId": "grammar-no-possession-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-node-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-node-core",
+    "grammarId": "grammar-node"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-node-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-node-real-life",
+    "grammarId": "grammar-node"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-node-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-node-structural-variation",
+    "grammarId": "grammar-node"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogaheta-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogaheta-core",
+    "grammarId": "grammar-nogaheta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogaheta-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogaheta-real-life",
+    "grammarId": "grammar-nogaheta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogaheta-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogaheta-structural-variation",
+    "grammarId": "grammar-nogaheta"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogajouzu-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogajouzu-core",
+    "grammarId": "grammar-nogajouzu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogajouzu-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogajouzu-real-life",
+    "grammarId": "grammar-nogajouzu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogajouzu-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogajouzu-structural-variation",
+    "grammarId": "grammar-nogajouzu"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogasuki-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogasuki-core",
+    "grammarId": "grammar-nogasuki"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogasuki-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogasuki-real-life",
+    "grammarId": "grammar-nogasuki"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nogasuki-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nogasuki-structural-variation",
+    "grammarId": "grammar-nogasuki"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nonakade-u2d-gaichiban-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nonakade-u2d-gaichiban-core",
+    "grammarId": "grammar-nonakade-gaichiban"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nonakade-u2d-gaichiban-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nonakade-u2d-gaichiban-real-life",
+    "grammarId": "grammar-nonakade-gaichiban"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-nonakade-u2d-gaichiban-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-nonakade-u2d-gaichiban-structural-variation",
+    "grammarId": "grammar-nonakade-gaichiban"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-noun-u2d-made-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-noun-u2d-made-core",
+    "grammarId": "grammar-noun-made"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-noun-u2d-made-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-noun-u2d-made-real-life",
+    "grammarId": "grammar-noun-made"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-noun-u2d-made-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-noun-u2d-made-structural-variation",
+    "grammarId": "grammar-noun-made"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-o-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-o-core",
+    "grammarId": "grammar-o"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-o-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-o-real-life",
+    "grammarId": "grammar-o"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-o-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-o-structural-variation",
+    "grammarId": "grammar-o"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbdictionary-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbdictionary-core",
+    "grammarId": "grammar-ru-verbdictionary"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbdictionary-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbdictionary-real-life",
+    "grammarId": "grammar-ru-verbdictionary"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbdictionary-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbdictionary-structural-variation",
+    "grammarId": "grammar-ru-verbdictionary"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbnegative-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbnegative-core",
+    "grammarId": "grammar-ru-verbnegative"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbnegative-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbnegative-real-life",
+    "grammarId": "grammar-ru-verbnegative"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbnegative-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbnegative-structural-variation",
+    "grammarId": "grammar-ru-verbnegative"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbnegative-u2d-past-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbnegative-u2d-past-core",
+    "grammarId": "grammar-ru-verbnegative-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbnegative-u2d-past-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbnegative-u2d-past-real-life",
+    "grammarId": "grammar-ru-verbnegative-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbnegative-u2d-past-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbnegative-u2d-past-structural-variation",
+    "grammarId": "grammar-ru-verbnegative-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbpast-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbpast-core",
+    "grammarId": "grammar-ru-verbpast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbpast-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbpast-real-life",
+    "grammarId": "grammar-ru-verbpast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ru-u2d-verbpast-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ru-u2d-verbpast-structural-variation",
+    "grammarId": "grammar-ru-verbpast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-soko-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-soko-core",
+    "grammarId": "grammar-soko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-soko-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-soko-real-life",
+    "grammarId": "grammar-soko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-soko-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-soko-structural-variation",
+    "grammarId": "grammar-soko"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sono-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sono-core",
+    "grammarId": "grammar-sono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sono-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sono-real-life",
+    "grammarId": "grammar-sono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sono-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sono-structural-variation",
+    "grammarId": "grammar-sono"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sore-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sore-core",
+    "grammarId": "grammar-sore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sore-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sore-real-life",
+    "grammarId": "grammar-sore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sore-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sore-structural-variation",
+    "grammarId": "grammar-sore"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sugiru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sugiru-core",
+    "grammarId": "grammar-sugiru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sugiru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sugiru-real-life",
+    "grammarId": "grammar-sugiru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-sugiru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-sugiru-structural-variation",
+    "grammarId": "grammar-sugiru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-suru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-suru-core",
+    "grammarId": "grammar-suru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-suru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-suru-real-life",
+    "grammarId": "grammar-suru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-suru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-suru-structural-variation",
+    "grammarId": "grammar-suru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tahougaii-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 17
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tahougaii-core",
+    "grammarId": "grammar-tahougaii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tahougaii-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tahougaii-real-life",
+    "grammarId": "grammar-tahougaii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tahougaii-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tahougaii-structural-variation",
+    "grammarId": "grammar-tahougaii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tai-core",
+    "grammarId": "grammar-tai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tai-real-life",
+    "grammarId": "grammar-tai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tai-structural-variation",
+    "grammarId": "grammar-tai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-takotogaaru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-takotogaaru-core",
+    "grammarId": "grammar-takotogaaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-takotogaaru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-takotogaaru-real-life",
+    "grammarId": "grammar-takotogaaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-takotogaaru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-takotogaaru-structural-variation",
+    "grammarId": "grammar-takotogaaru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-takusan-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-takusan-core",
+    "grammarId": "grammar-takusan"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-takusan-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-takusan-real-life",
+    "grammarId": "grammar-takusan"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-takusan-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-takusan-structural-variation",
+    "grammarId": "grammar-takusan"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tari-u2d-tarisuru-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 21
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tari-u2d-tarisuru-core",
+    "grammarId": "grammar-tari-tarisuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tari-u2d-tarisuru-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 19
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tari-u2d-tarisuru-real-life",
+    "grammarId": "grammar-tari-tarisuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tari-u2d-tarisuru-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 22
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tari-u2d-tarisuru-structural-variation",
+    "grammarId": "grammar-tari-tarisuru"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tehaikenai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tehaikenai-core",
+    "grammarId": "grammar-tehaikenai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tehaikenai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tehaikenai-real-life",
+    "grammarId": "grammar-tehaikenai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tehaikenai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 16
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tehaikenai-structural-variation",
+    "grammarId": "grammar-tehaikenai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru1-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru1-core",
+    "grammarId": "grammar-teiru1"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru1-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru1-real-life",
+    "grammarId": "grammar-teiru1"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru1-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru1-structural-variation",
+    "grammarId": "grammar-teiru1"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru2-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru2-core",
+    "grammarId": "grammar-teiru2"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru2-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru2-real-life",
+    "grammarId": "grammar-teiru2"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru2-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru2-structural-variation",
+    "grammarId": "grammar-teiru2"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru3-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru3-core",
+    "grammarId": "grammar-teiru3"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru3-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru3-real-life",
+    "grammarId": "grammar-teiru3"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-teiru3-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-teiru3-structural-variation",
+    "grammarId": "grammar-teiru3"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tekara-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tekara-core",
+    "grammarId": "grammar-tekara"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tekara-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tekara-real-life",
+    "grammarId": "grammar-tekara"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tekara-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tekara-structural-variation",
+    "grammarId": "grammar-tekara"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tekudasai-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tekudasai-core",
+    "grammarId": "grammar-tekudasai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tekudasai-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tekudasai-real-life",
+    "grammarId": "grammar-tekudasai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tekudasai-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tekudasai-structural-variation",
+    "grammarId": "grammar-tekudasai"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-temoii-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-temoii-core",
+    "grammarId": "grammar-temoii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-temoii-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-temoii-real-life",
+    "grammarId": "grammar-temoii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-temoii-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-temoii-structural-variation",
+    "grammarId": "grammar-temoii"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-accompaniment-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-accompaniment-u2d-marker-core",
+    "grammarId": "grammar-to-accompaniment-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-accompaniment-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-accompaniment-u2d-marker-real-life",
+    "grammarId": "grammar-to-accompaniment-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-accompaniment-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-accompaniment-u2d-marker-structural-variation",
+    "grammarId": "grammar-to-accompaniment-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-and-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-and-u2d-marker-core",
+    "grammarId": "grammar-to-and-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-and-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-and-u2d-marker-real-life",
+    "grammarId": "grammar-to-and-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-and-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-and-u2d-marker-structural-variation",
+    "grammarId": "grammar-to-and-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-quotation-u2d-marker-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-quotation-u2d-marker-core",
+    "grammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-quotation-u2d-marker-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-quotation-u2d-marker-real-life",
+    "grammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-to-u2d-quotation-u2d-marker-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-to-u2d-quotation-u2d-marker-structural-variation",
+    "grammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tsumorida-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tsumorida-core",
+    "grammarId": "grammar-tsumorida"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tsumorida-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tsumorida-real-life",
+    "grammarId": "grammar-tsumorida"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tsumorida-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tsumorida-structural-variation",
+    "grammarId": "grammar-tsumorida"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tte-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tte-core",
+    "grammarId": "grammar-tte"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tte-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tte-real-life",
+    "grammarId": "grammar-tte"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-tte-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-tte-structural-variation",
+    "grammarId": "grammar-tte"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbdictionary-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbdictionary-core",
+    "grammarId": "grammar-u-verbdictionary"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbdictionary-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbdictionary-real-life",
+    "grammarId": "grammar-u-verbdictionary"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbdictionary-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbdictionary-structural-variation",
+    "grammarId": "grammar-u-verbdictionary"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbnegative-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbnegative-core",
+    "grammarId": "grammar-u-verbnegative"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbnegative-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbnegative-real-life",
+    "grammarId": "grammar-u-verbnegative"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbnegative-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbnegative-structural-variation",
+    "grammarId": "grammar-u-verbnegative"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbnegative-u2d-past-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbnegative-u2d-past-core",
+    "grammarId": "grammar-u-verbnegative-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbnegative-u2d-past-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbnegative-u2d-past-real-life",
+    "grammarId": "grammar-u-verbnegative-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbnegative-u2d-past-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbnegative-u2d-past-structural-variation",
+    "grammarId": "grammar-u-verbnegative-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbpast-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbpast-core",
+    "grammarId": "grammar-u-verbpast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbpast-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbpast-real-life",
+    "grammarId": "grammar-u-verbpast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u-u2d-verbpast-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u-u2d-verbpast-structural-variation",
+    "grammarId": "grammar-u-verbpast"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u597d-ki-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u597d-ki-core",
+    "grammarId": "grammar-好ki"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u597d-ki-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 9
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u597d-ki-real-life",
+    "grammarId": "grammar-好ki"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u597d-ki-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u597d-ki-structural-variation",
+    "grammarId": "grammar-好ki"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u8ab0-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u8ab0-core",
+    "grammarId": "grammar-誰"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u8ab0-ka-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u8ab0-ka-core",
+    "grammarId": "grammar-誰ka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u8ab0-ka-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 2
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u8ab0-ka-real-life",
+    "grammarId": "grammar-誰ka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u8ab0-ka-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u8ab0-ka-structural-variation",
+    "grammarId": "grammar-誰ka"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u8ab0-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 0,
+        "endCodePoint": 1
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u8ab0-real-life",
+    "grammarId": "grammar-誰"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-u8ab0-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-u8ab0-structural-variation",
+    "grammarId": "grammar-誰"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-made-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-made-core",
+    "grammarId": "grammar-verb-made"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-made-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-made-real-life",
+    "grammarId": "grammar-verb-made"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-made-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-made-structural-variation",
+    "grammarId": "grammar-verb-made"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-niiku-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 5,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-niiku-core",
+    "grammarId": "grammar-verb-niiku"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-niiku-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-niiku-real-life",
+    "grammarId": "grammar-verb-niiku"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-niiku-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-niiku-structural-variation",
+    "grammarId": "grammar-verb-niiku"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-ta-u2d-teiru-u2d-noun-core",
+    "grammarId": "grammar-verb-ta-teiru-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-ta-u2d-teiru-u2d-noun-real-life",
+    "grammarId": "grammar-verb-ta-teiru-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-ta-u2d-teiru-u2d-noun-structural-variation",
+    "grammarId": "grammar-verb-ta-teiru-noun"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-te-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-te-core",
+    "grammarId": "grammar-verb-te"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-te-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-te-real-life",
+    "grammarId": "grammar-verb-te"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-te-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-te-structural-variation",
+    "grammarId": "grammar-verb-te"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-te-u2d-b-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-te-u2d-b-core",
+    "grammarId": "grammar-verb-te-b"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-te-u2d-b-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 6
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-te-u2d-b-real-life",
+    "grammarId": "grammar-verb-te-b"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verb-u2d-te-u2d-b-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verb-u2d-te-u2d-b-structural-variation",
+    "grammarId": "grammar-verb-te-b"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verbsnon-u2d-past-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 11,
+        "endCodePoint": 15
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verbsnon-u2d-past-core",
+    "grammarId": "grammar-verbsnon-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verbsnon-u2d-past-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 7,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verbsnon-u2d-past-real-life",
+    "grammarId": "grammar-verbsnon-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-verbsnon-u2d-past-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 8,
+        "endCodePoint": 13
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-verbsnon-u2d-past-structural-variation",
+    "grammarId": "grammar-verbsnon-past"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ya-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 4
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ya-core",
+    "grammarId": "grammar-ya"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ya-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 4,
+        "endCodePoint": 5
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ya-real-life",
+    "grammarId": "grammar-ya"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-ya-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 6,
+        "endCodePoint": 7
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-ya-structural-variation",
+    "grammarId": "grammar-ya"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-yo-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 10,
+        "endCodePoint": 11
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-yo-core",
+    "grammarId": "grammar-yo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-yo-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 9,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-yo-real-life",
+    "grammarId": "grammar-yo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-yo-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 13,
+        "endCodePoint": 14
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-yo-structural-variation",
+    "grammarId": "grammar-yo"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-yori-u2d-nohouga-core",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 2,
+        "endCodePoint": 10
+      }
+    ],
+    "note": "core primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-yori-u2d-nohouga-core",
+    "grammarId": "grammar-yori-nohouga"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-yori-u2d-nohouga-real-life",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 1,
+        "endCodePoint": 8
+      }
+    ],
+    "note": "real-life primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-yori-u2d-nohouga-real-life",
+    "grammarId": "grammar-yori-nohouga"
+  },
+  {
+    "schemaVersion": 1,
+    "sentenceId": "sentence-yori-u2d-nohouga-structural-variation",
+    "role": "focus",
+    "focusRanges": [
+      {
+        "startCodePoint": 3,
+        "endCodePoint": 12
+      }
+    ],
+    "note": "structural-variation primary example.",
+    "confidence": 0.99,
+    "needsReview": false,
+    "releaseReady": false,
+    "id": "grammar-example-yori-u2d-nohouga-structural-variation",
+    "grammarId": "grammar-yori-nohouga"
+  }
+]

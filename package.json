@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@expo/ui": "~57.0.7",
+    "@expo/vector-icons": "^15.1.1",
     "expo": "~57.0.8",
     "expo-constants": "~57.0.7",
     "expo-device": "~57.0.1",
@@ -13,6 +14,7 @@
     "expo-linking": "~57.0.4",
     "expo-router": "~57.0.8",
     "expo-splash-screen": "~57.0.5",
+    "expo-sqlite": "~57.0.1",
     "expo-status-bar": "~57.0.1",
     "expo-symbols": "~57.0.1",
     "expo-system-ui": "~57.0.1",
@@ -25,11 +27,18 @@
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "~4.26.0",
     "react-native-web": "~0.21.0",
-    "react-native-worklets": "0.10.0"
+    "react-native-worklets": "0.10.0",
+    "zod": "^4.4.3",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
+    "@types/node": "^26.1.1",
     "@types/react": "~19.2.2",
-    "typescript": "~6.0.3"
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~57.0.0",
+    "tsx": "^4.23.1",
+    "typescript": "~6.0.3",
+    "vitest": "^4.1.10"
   },
   "scripts": {
     "start": "expo start",
@@ -37,7 +46,34 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "content:inspect": "tsx scripts/content/inspect-sources.ts",
+    "content:ocr": "tsx scripts/content/ocr-textbooks.ts",
+    "content:parse": "tsx scripts/content/parse-content.ts",
+    "content:merge": "tsx scripts/content/merge-content.ts",
+    "content:curriculum": "tsx scripts/content/build-content.ts",
+    "content:validate": "tsx scripts/content/validate-content.ts",
+    "content:sentences:validate": "tsx scripts/content/validate-sentence-corpus.ts",
+    "content:sentences:sqlite": "tsx scripts/content/verify-sentence-sqlite-import.ts",
+    "content:coverage:audit": "tsx scripts/content/vocabulary-kanji-coverage.ts",
+    "content:questions:audit": "tsx scripts/content/grammar-question-corpus.ts",
+    "content:questions:validate": "tsx scripts/content/validate-grammar-question-corpus.ts",
+    "content:vocabulary-kanji-questions:audit": "tsx scripts/content/vocabulary-kanji-question-corpus.ts",
+    "content:vocabulary-kanji-questions:validate": "tsx scripts/content/validate-vocabulary-kanji-question-corpus.ts",
+    "content:reading:audit": "tsx scripts/content/reading-corpus.ts",
+    "content:reading:author": "tsx scripts/content/author-reading-content.ts",
+    "content:reading:validate": "tsx scripts/content/validate-reading-question-corpus.ts",
+    "content:listening:audit": "tsx scripts/content/listening-corpus.ts",
+    "content:listening:author": "tsx scripts/content/author-listening-content.ts",
+    "content:listening:validate": "tsx scripts/content/validate-listening-question-corpus.ts",
+    "content:assessments:audit": "tsx scripts/content/assessment-inventory-audit.ts",
+    "content:assessments:author": "tsx scripts/content/author-assessment-content.ts",
+    "content:assessments:validate": "tsx scripts/content/validate-assessment-content.ts",
+    "content:assessments:sqlite": "tsx scripts/content/verify-sentence-sqlite-import.ts",
+    "content:report": "tsx scripts/content/build-content.ts",
+    "content:build": "tsx scripts/content/build-content.ts"
   },
   "private": true
 }

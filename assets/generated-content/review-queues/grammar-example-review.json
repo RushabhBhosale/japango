@@ -1,0 +1,1246 @@
+{
+  "schemaVersion": 1,
+  "id": "grammar-example-review",
+  "items": [
+    {
+      "id": "grammar-example-review-adjective-noha",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-adjective-noha"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-adjective-te",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-adjective-te"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-adjective-te-b",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-adjective-te-b"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ageru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ageru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ano",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ano"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-are",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-are"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-asoko",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-asoko"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-dake",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-dake"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-darou",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-darou"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-datta",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-datta"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-de-action-location-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-de-action-location-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-de-means-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-de-means-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-deshou",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-deshou"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-desu",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-desu"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-doko",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-doko"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-dono",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-dono"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-dore",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-dore"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ga-contrast-conjunction",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ga-contrast-conjunction"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ga-subject-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ga-subject-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-gaaru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-gaaru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-gaaru-noun",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-gaaru-noun"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-gairu",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-gairu"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ha",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ha"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-he",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-he"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-heiku",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-heiku"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-i-adjective-noun",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-i-adjective-noun"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-i-adjectivekunakatta",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-i-adjectivekunakatta"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-i-adjectivepast",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-i-adjectivepast"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-i-adjectivepredicate",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-i-adjectivepredicate"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-i-adjectives",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-i-adjectives"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-i-adjectiveskunai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-i-adjectiveskunai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ii",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ii"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-janai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-janai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-janakatta",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-janakatta"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ka-alternative-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ka-alternative-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ka-question-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ka-question-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kara-reason-conjunction",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kara-reason-conjunction"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kara-starting-point-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kara-starting-point-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kedo",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kedo"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kekkou",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kekkou"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-keredomo",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-keredomo"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kirai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kirai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-koko",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-koko"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kono",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kono"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kore",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kore"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kurai1",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kurai1"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kureru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kureru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-kuru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-kuru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-mada",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-mada"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-mada-teimasen",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-mada-teimasen"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-maeni",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-maeni"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-masenka",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-masenka"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-mashou",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-mashou"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-mashouka",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-mashouka"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-mo",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-mo"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-morau",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-morau"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-mou",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-mou"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-na",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-na"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-na-adjective-noun",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-na-adjective-noun"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-na-adjectiveda",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-na-adjectiveda"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-na-adjectives",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-na-adjectives"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-naidekudasai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-naidekudasai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-naihougaii",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-naihougaii"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nakucha",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nakucha"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nakutehaikenai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nakutehaikenai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nakutehanaranai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nakutehanaranai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nanika",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nanika"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ndesu",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ndesu"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ne",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ne"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ni",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ni"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ninaru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ninaru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nisuru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nisuru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-no-explanatory-nominalizer",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-no-explanatory-nominalizer"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-no-nominalizer",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-no-nominalizer"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-no-possession-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-no-possession-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-node",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-node"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nogaheta",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nogaheta"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nogajouzu",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nogajouzu"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nogasuki",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nogasuki"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-nonakade-gaichiban",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-nonakade-gaichiban"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-noun-made",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-noun-made"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-o",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-o"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ru-verbdictionary",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ru-verbdictionary"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ru-verbnegative",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ru-verbnegative"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ru-verbnegative-past",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ru-verbnegative-past"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ru-verbpast",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ru-verbpast"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-soko",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-soko"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-sono",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-sono"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-sore",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-sore"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-sugiru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-sugiru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-suru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-suru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-tahougaii",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-tahougaii"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-tai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-tai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-takotogaaru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-takotogaaru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-takusan",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-takusan"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-tari-tarisuru",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-tari-tarisuru"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-tehaikenai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-tehaikenai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-teiru1",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-teiru1"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-teiru2",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-teiru2"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-teiru3",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-teiru3"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-tekara",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-tekara"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-tekudasai",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-tekudasai"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-temoii",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-temoii"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-to-accompaniment-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-to-accompaniment-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-to-and-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-to-and-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-to-quotation-marker",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-to-quotation-marker"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-tsumorida",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-tsumorida"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-tte",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-tte"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-u-verbdictionary",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-u-verbdictionary"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-u-verbnegative",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-u-verbnegative"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-u-verbnegative-past",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-u-verbnegative-past"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-u-verbpast",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-u-verbpast"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-verb-made",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-verb-made"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-verb-niiku",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-verb-niiku"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-verb-ta-teiru-noun",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-verb-ta-teiru-noun"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-verb-te",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-verb-te"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-verb-te-b",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-verb-te-b"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-verbsnon-past",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-verbsnon-past"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-ya",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-ya"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-yo",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-yo"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-yori-nohouga",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-yori-nohouga"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-好ki",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-好ki"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-誰",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-誰"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    },
+    {
+      "id": "grammar-example-review-誰ka",
+      "priority": "medium",
+      "affectedField": "primaryGrammarId",
+      "recordIds": [
+        "grammar-誰ka"
+      ],
+      "reason": "The Phase 1 N5 grammar record is not release-ready, so its approved sentence examples remain outside release bundles.",
+      "recommendedAction": "Complete canonical N5 grammar editorial review without changing the stable grammar ID, then rebuild."
+    }
+  ]
+}

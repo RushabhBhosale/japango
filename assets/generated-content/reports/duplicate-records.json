@@ -1,0 +1,108 @@
+[
+  {
+    "type": "grammar-pattern",
+    "pattern": "の",
+    "sourceRow": 8,
+    "chosenId": "grammar-no-possession-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "か",
+    "sourceRow": 12,
+    "chosenId": "grammar-ka-question-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "が",
+    "sourceRow": 13,
+    "chosenId": "grammar-ga-subject-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "と",
+    "sourceRow": 21,
+    "chosenId": "grammar-to-and-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "で",
+    "sourceRow": 25,
+    "chosenId": "grammar-de-action-location-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "か",
+    "sourceRow": 27,
+    "chosenId": "grammar-ka-alternative-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "と",
+    "sourceRow": 28,
+    "chosenId": "grammar-to-accompaniment-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "の",
+    "sourceRow": 38,
+    "chosenId": "grammar-no-nominalizer",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "で",
+    "sourceRow": 51,
+    "chosenId": "grammar-de-means-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "から",
+    "sourceRow": 53,
+    "chosenId": "grammar-kara-reason-conjunction",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "から",
+    "sourceRow": 54,
+    "chosenId": "grammar-kara-starting-point-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "が",
+    "sourceRow": 56,
+    "chosenId": "grammar-ga-contrast-conjunction",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "と",
+    "sourceRow": 70,
+    "chosenId": "grammar-to-quotation-marker",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "の",
+    "sourceRow": 74,
+    "chosenId": "grammar-no-explanatory-nominalizer",
+    "resolution": "semantic-title-slug"
+  },
+  {
+    "type": "grammar-pattern",
+    "pattern": "Verb + てもいい",
+    "sourceRow": "row-105",
+    "chosenId": "grammar-temoii",
+    "mergedId": "grammar-verb-temoii",
+    "resolution": "same-permission-pattern-merged"
+  }
+]

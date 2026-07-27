@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "profile": "development",
+  "engine": "sqlite3",
+  "checksum": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
+  "retainedExistingRecords": 107115,
+  "speakersInserted": 8,
+  "activitiesInserted": 156,
+  "transcriptsInserted": 156,
+  "speechNormalizedRecordsInserted": 156,
+  "turnsInserted": 972,
+  "activityRelationshipsInserted": 4752,
+  "questionsInserted": 456,
+  "optionsInserted": 1824,
+  "targetRelationshipsInserted": 456,
+  "metadataInserted": 456,
+  "viewsInserted": {
+    "quiz": 156,
+    "review": 156,
+    "study": 156,
+    "questions": 456
+  },
+  "lifecycleExcluded": {
+    "activities": 156,
+    "questions": 456
+  },
+  "rejected": 0,
+  "firstImport": {
+    "inserted": 116351,
+    "updated": 0,
+    "skipped": 0,
+    "excludedFromRelease": 612,
+    "rejected": 0
+  },
+  "idempotentRerun": {
+    "inserted": 0,
+    "updated": 0,
+    "skipped": 116351,
+    "rejected": 0
+  },
+  "transaction": "pass",
+  "parentBeforeChildOrder": "pass",
+  "foreignKeys": "pass",
+  "checksumSkipping": "pass",
+  "checksumIdenticalRerun": true
+}

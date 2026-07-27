@@ -1,0 +1,746 @@
+[
+  {
+    "type": "grammar",
+    "id": "grammar-adjective-noha",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-adjective-te",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-adjective-te-b",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ageru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ano",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-are",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-asoko",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-dake",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-darou",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-datta",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-de-action-location-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-de-means-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-deshou",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-desu",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-doko",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-dono",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-dore",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ga-contrast-conjunction",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ga-subject-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-gaaru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-gaaru-noun",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-gairu",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ha",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-he",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-heiku",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-i-adjective-noun",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-i-adjectivekunakatta",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-i-adjectivepast",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-i-adjectivepredicate",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-i-adjectives",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-i-adjectiveskunai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ii",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-janai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-janakatta",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ka-alternative-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ka-question-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kara-reason-conjunction",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kara-starting-point-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kedo",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kekkou",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-keredomo",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kirai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-koko",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kono",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kore",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kurai1",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kureru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-kuru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-mada",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-mada-teimasen",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-maeni",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-masenka",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-mashou",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-mashouka",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-mo",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-morau",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-mou",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-na",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-na-adjective-noun",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-na-adjectiveda",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-na-adjectives",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-naidekudasai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-naihougaii",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nakucha",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nakutehaikenai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nakutehanaranai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nanika",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ndesu",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ne",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ni",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ninaru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nisuru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-no-explanatory-nominalizer",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-no-nominalizer",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-no-possession-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-node",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nogaheta",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nogajouzu",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nogasuki",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-nonakade-gaichiban",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-noun-made",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-o",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ru-verbdictionary",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ru-verbnegative",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ru-verbnegative-past",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ru-verbpast",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-soko",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-sono",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-sore",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-sugiru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-suru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-tahougaii",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-tai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-takotogaaru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-takusan",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-tari-tarisuru",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-tehaikenai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-teiru1",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-teiru2",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-teiru3",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-tekara",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-tekudasai",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-temoii",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-to-accompaniment-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-to-and-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-to-quotation-marker",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-tsumorida",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-tte",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-u-verbdictionary",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-u-verbnegative",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-u-verbnegative-past",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-u-verbpast",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-verb-made",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-verb-niiku",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-verb-ta-teiru-noun",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-verb-te",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-verb-te-b",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-verbsnon-past",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-ya",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-yo",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-yori-nohouga",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-好ki",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-誰",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  },
+  {
+    "type": "grammar",
+    "id": "grammar-誰ka",
+    "confidence": 0.8,
+    "reason": "Pattern/level mapped, but original JapanGo explanation and formation review are pending."
+  }
+]

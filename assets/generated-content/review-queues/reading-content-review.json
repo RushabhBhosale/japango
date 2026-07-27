@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "reading-content-review",
+  "categories": [
+    "unnatural-passage-wording",
+    "unclear-antecedent",
+    "multiple-possible-answers",
+    "weak-distractor",
+    "unsupported-inference",
+    "reading-ambiguity",
+    "translation-mismatch",
+    "out-of-level-vocabulary",
+    "out-of-level-grammar",
+    "unusual-kanji-reading",
+    "practical-text-inconsistency",
+    "duplicate-passage-structure",
+    "near-template-passage",
+    "lifecycle-conflict",
+    "unresolved-relationship",
+    "glossary-requirement",
+    "inventory-limitation"
+  ],
+  "items": []
+}

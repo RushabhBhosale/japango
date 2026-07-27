@@ -1,0 +1,1721 @@
+{
+  "schemaVersion": 1,
+  "dataset": "japango-n4-grammar-editorial-decisions",
+  "sourceCandidateRows": 131,
+  "decisions": [
+    {
+      "row": 1,
+      "pattern": "間",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-aida",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 2,
+      "pattern": "間に",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-aida-ni",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 3,
+      "pattern": "あまり～ない",
+      "decision": "rejected",
+      "reason": "Basic negative-polarity construction with no distinct N4 objective; add to the N5 editorial backlog.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 4,
+      "pattern": "後で",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-ato-de",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 5,
+      "pattern": "ば",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-ba",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 6,
+      "pattern": "場合は",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-baai-wa",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 7,
+      "pattern": "ばかり",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-bakari",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-dake"
+        ]
+      }
+    },
+    {
+      "row": 8,
+      "pattern": "だけで",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-dake-de",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-dake"
+        ]
+      }
+    },
+    {
+      "row": 9,
+      "pattern": "出す",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-dasu",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 10,
+      "pattern": "でございます",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-de-gozaimasu",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-desu"
+        ]
+      }
+    },
+    {
+      "row": 11,
+      "pattern": "でも",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-demo-alternatives",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-mo"
+        ]
+      }
+    },
+    {
+      "row": 12,
+      "pattern": "ではないか",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-dewa-nai-ka",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-janai",
+          "grammar-ka-question-marker"
+        ]
+      }
+    },
+    {
+      "row": 13,
+      "pattern": "が必要",
+      "decision": "moved-to-vocabulary",
+      "reason": "必要 plus ordinary subject marking is a vocabulary collocation, not a productive grammar identity.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 14,
+      "pattern": "がする",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-ga-suru-senses",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 15,
+      "pattern": "がり",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-gari",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 16,
+      "pattern": "がる・がっている",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-garu",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 17,
+      "pattern": "ございます",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-gozaimasu",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-gaaru"
+        ]
+      }
+    },
+    {
+      "row": 18,
+      "pattern": "始める",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-hajimeru",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 19,
+      "pattern": "はずだ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-hazu-da",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-deshou",
+          "grammar-darou"
+        ]
+      }
+    },
+    {
+      "row": 20,
+      "pattern": "はずがない",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-hazu-ga-nai",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 21,
+      "pattern": "必要がある",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-hitsuyou-ga-aru",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 22,
+      "pattern": "意向形",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-volitional-form",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-mashou",
+          "grammar-mashouka"
+        ]
+      }
+    },
+    {
+      "row": 23,
+      "pattern": "いらっしゃる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-irassharu",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-gairu",
+          "grammar-kuru",
+          "grammar-heiku"
+        ]
+      }
+    },
+    {
+      "row": 24,
+      "pattern": "いたします",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-itasu",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-suru"
+        ]
+      }
+    },
+    {
+      "row": 25,
+      "pattern": "じゃないか",
+      "decision": "merged",
+      "reason": "Colloquial variant of rhetorical or confirmation ～ではないか; the unsupported invitation sense was discarded.",
+      "canonicalGrammarId": "grammar-n4-dewa-nai-ka",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-janai",
+          "grammar-ka-question-marker"
+        ]
+      }
+    },
+    {
+      "row": 26,
+      "pattern": "かどうか",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-ka-dou-ka",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-ka-question-marker"
+        ]
+      }
+    },
+    {
+      "row": 27,
+      "pattern": "かしら",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-kashira",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-ka-question-marker"
+        ]
+      }
+    },
+    {
+      "row": 28,
+      "pattern": "かい",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-kai-question",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-ka-question-marker"
+        ]
+      }
+    },
+    {
+      "row": 29,
+      "pattern": "かもしれない",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-kamo-shirenai",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 30,
+      "pattern": "かな",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-kana",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-ka-question-marker"
+        ]
+      }
+    },
+    {
+      "row": 31,
+      "pattern": "から作る",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-kara-tsukuru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-kara-starting-point-marker"
+        ]
+      }
+    },
+    {
+      "row": 32,
+      "pattern": "きっと",
+      "decision": "moved-to-vocabulary",
+      "reason": "Pure adverb.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 33,
+      "pattern": "頃",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-koro",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-kurai1"
+        ]
+      }
+    },
+    {
+      "row": 34,
+      "pattern": "こと",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-koto-nominalizer",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-no-nominalizer"
+        ]
+      }
+    },
+    {
+      "row": 35,
+      "pattern": "ことがある",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-koto-ga-aru-occasional",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-takotogaaru"
+        ]
+      }
+    },
+    {
+      "row": 36,
+      "pattern": "ことができる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-koto-ga-dekiru",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 37,
+      "pattern": "ことになる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-koto-ni-naru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-ninaru"
+        ]
+      }
+    },
+    {
+      "row": 38,
+      "pattern": "ことにする",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-koto-ni-suru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-nisuru"
+        ]
+      }
+    },
+    {
+      "row": 39,
+      "pattern": "くする",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-ku-suru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-nisuru"
+        ]
+      }
+    },
+    {
+      "row": 40,
+      "pattern": "急に",
+      "decision": "moved-to-vocabulary",
+      "reason": "Pure adverb.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 41,
+      "pattern": "までに",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-made-ni",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-noun-made",
+          "grammar-verb-made"
+        ]
+      }
+    },
+    {
+      "row": 42,
+      "pattern": "まま",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-mama",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 43,
+      "pattern": "または",
+      "decision": "moved-to-vocabulary",
+      "reason": "Lexical conjunction; the supplied gloss also incorrectly includes 'both'.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 44,
+      "pattern": "みたいだ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-mitai-da",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 45,
+      "pattern": "みたいな",
+      "decision": "merged",
+      "reason": "Adnominal variant of ～みたいだ.",
+      "canonicalGrammarId": "grammar-n4-mitai-da",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 46,
+      "pattern": "みたいに",
+      "decision": "merged",
+      "reason": "Adverbial variant of ～みたいだ.",
+      "canonicalGrammarId": "grammar-n4-mitai-da",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 47,
+      "pattern": "も",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-mo-quantity-emphasis",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-mo"
+        ]
+      }
+    },
+    {
+      "row": 48,
+      "pattern": "な",
+      "decision": "rejected",
+      "reason": "Exact pattern and prohibitive meaning already exist as N5 grammar-na.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "duplicate",
+        "grammarIds": [
+          "grammar-na"
+        ]
+      }
+    },
+    {
+      "row": 49,
+      "pattern": "など",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nado",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-ya"
+        ]
+      }
+    },
+    {
+      "row": 50,
+      "pattern": "ながら",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nagara",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 51,
+      "pattern": "なかなか～ない",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nakanaka-nai",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 52,
+      "pattern": "なければいけない",
+      "decision": "merged",
+      "reason": "～なければいけない is the same obligation lesson as ～なければならない; retained as an alternate pattern.",
+      "canonicalGrammarId": "grammar-n4-nakereba-naranai",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-nakutehaikenai",
+          "grammar-nakucha"
+        ]
+      }
+    },
+    {
+      "row": 53,
+      "pattern": "なければならない",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nakereba-naranai",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-nakutehanaranai"
+        ]
+      }
+    },
+    {
+      "row": 54,
+      "pattern": "なら",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nara",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 55,
+      "pattern": "なさい",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nasai",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 56,
+      "pattern": "なさる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nasaru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-suru"
+        ]
+      }
+    },
+    {
+      "row": 57,
+      "pattern": "に気がつく",
+      "decision": "moved-to-vocabulary",
+      "reason": "Lexical verb expression 気がつく, not a productive attachable grammar form.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 58,
+      "pattern": "にみえる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-ni-mieru",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 59,
+      "pattern": "にする",
+      "decision": "rejected",
+      "reason": "Exact N5 grammar-nisuru point with no new formation or learning objective.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "duplicate",
+        "grammarIds": [
+          "grammar-nisuru"
+        ]
+      }
+    },
+    {
+      "row": 60,
+      "pattern": "にくい",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nikui",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 61,
+      "pattern": "の中で",
+      "decision": "rejected",
+      "reason": "The supplied gloss is already covered compositionally and within N5 grammar-nonakade-gaichiban.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "n5-review-item",
+        "grammarIds": [
+          "grammar-nonakade-gaichiban"
+        ]
+      }
+    },
+    {
+      "row": 62,
+      "pattern": "のに",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-noni-contrast",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-kedo",
+          "grammar-keredomo",
+          "grammar-ga-contrast-conjunction"
+        ]
+      }
+    },
+    {
+      "row": 63,
+      "pattern": "のに",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-noni-purpose",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-verb-niiku"
+        ]
+      }
+    },
+    {
+      "row": 64,
+      "pattern": "のは〜だ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-nowa-da",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-no-nominalizer",
+          "grammar-no-explanatory-nominalizer",
+          "grammar-ndesu"
+        ]
+      }
+    },
+    {
+      "row": 65,
+      "pattern": "お～ください",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-o-kudasai",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-tekudasai"
+        ]
+      }
+    },
+    {
+      "row": 66,
+      "pattern": "お～になる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-o-ni-naru",
+      "n5Overlap": {
+        "classification": "different-meaning",
+        "grammarIds": [
+          "grammar-ninaru"
+        ]
+      }
+    },
+    {
+      "row": 67,
+      "pattern": "おきに",
+      "decision": "unresolved",
+      "reason": "The gloss 'every' is unsafe: forms such as 一日おき can be interpreted as every other day and must be distinguished from ～ごとに.",
+      "canonicalGrammarId": "grammar-n4-oki-ni-unresolved",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 68,
+      "pattern": "終わる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-owaru",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 69,
+      "pattern": "られる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-potential-form",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 70,
+      "pattern": "らしい",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-rashii",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-deshou",
+          "grammar-darou"
+        ]
+      }
+    },
+    {
+      "row": 71,
+      "pattern": "さ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-sa-nominalizer",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-adjective-noha",
+          "grammar-no-nominalizer"
+        ]
+      }
+    },
+    {
+      "row": 72,
+      "pattern": "さっき",
+      "decision": "moved-to-vocabulary",
+      "reason": "Temporal adverb or noun.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 73,
+      "pattern": "させられる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-causative-passive-form",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 74,
+      "pattern": "させる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-causative-form",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 75,
+      "pattern": "させてください",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-sasete-kudasai",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-tekudasai"
+        ]
+      }
+    },
+    {
+      "row": 76,
+      "pattern": "さすが",
+      "decision": "moved-to-vocabulary",
+      "reason": "Lexical evaluative adverb or expression.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 77,
+      "pattern": "し",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-shi",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-verb-te-b",
+          "grammar-adjective-te-b"
+        ]
+      }
+    },
+    {
+      "row": 78,
+      "pattern": "そんなに",
+      "decision": "moved-to-vocabulary",
+      "reason": "Demonstrative degree adverb.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 79,
+      "pattern": "それでも",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-sore-demo",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-kedo",
+          "grammar-keredomo",
+          "grammar-ga-contrast-conjunction"
+        ]
+      }
+    },
+    {
+      "row": 80,
+      "pattern": "そうだ [1]",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-souda-hearsay",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 81,
+      "pattern": "そうだ [2]",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-souda-appearance",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-deshou",
+          "grammar-darou"
+        ]
+      }
+    },
+    {
+      "row": 82,
+      "pattern": "そうに・そうな",
+      "decision": "merged",
+      "reason": "Attributive and adverbial variants of appearance ～そうだ, never hearsay.",
+      "canonicalGrammarId": "grammar-n4-souda-appearance",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-deshou",
+          "grammar-darou"
+        ]
+      }
+    },
+    {
+      "row": 83,
+      "pattern": "たばかり",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-ta-bakari",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 84,
+      "pattern": "たところ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-ta-tokoro",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 85,
+      "pattern": "他動詞 & 自動詞",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-transitive-intransitive-verbs",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 86,
+      "pattern": "たがる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-tagaru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-tai"
+        ]
+      }
+    },
+    {
+      "row": 87,
+      "pattern": "たら",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-tara",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 88,
+      "pattern": "たらどう",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-tara-dou",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-tahougaii",
+          "grammar-masenka"
+        ]
+      }
+    },
+    {
+      "row": 89,
+      "pattern": "たらいいですか",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-tara-ii-desu-ka",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-tahougaii"
+        ]
+      }
+    },
+    {
+      "row": 90,
+      "pattern": "て / で",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-de-cause",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-verb-te",
+          "grammar-verb-te-b",
+          "grammar-adjective-te",
+          "grammar-adjective-te-b"
+        ]
+      }
+    },
+    {
+      "row": 91,
+      "pattern": "てあげる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-ageru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-ageru"
+        ]
+      }
+    },
+    {
+      "row": 92,
+      "pattern": "てほしい",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-hoshii",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-tai"
+        ]
+      }
+    },
+    {
+      "row": 93,
+      "pattern": "ていく",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-iku",
+      "n5Overlap": {
+        "classification": "different-meaning",
+        "grammarIds": [
+          "grammar-heiku",
+          "grammar-verb-te"
+        ]
+      }
+    },
+    {
+      "row": 94,
+      "pattern": "ていた",
+      "decision": "rejected",
+      "reason": "Past-continuous ～ていた is a direct tense expansion of the existing N5 ～ている lesson, not a separate N4 point.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "n5-review-item",
+        "grammarIds": [
+          "grammar-teiru1"
+        ]
+      }
+    },
+    {
+      "row": 95,
+      "pattern": "ていただけませんか",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-itadakemasen-ka",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-morau",
+          "grammar-tekudasai",
+          "grammar-masenka"
+        ]
+      }
+    },
+    {
+      "row": 96,
+      "pattern": "てくれる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-kureru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-kureru"
+        ]
+      }
+    },
+    {
+      "row": 97,
+      "pattern": "てくる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-kuru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-kuru",
+          "grammar-verb-te"
+        ]
+      }
+    },
+    {
+      "row": 98,
+      "pattern": "てみる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-miru",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 99,
+      "pattern": "てもらう",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-morau",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-morau"
+        ]
+      }
+    },
+    {
+      "row": 100,
+      "pattern": "ておく",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-oku",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 101,
+      "pattern": "てしまう / ちゃう",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-shimau",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 102,
+      "pattern": "てすみません",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-sumimasen",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 103,
+      "pattern": "てやる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-yaru",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-ageru"
+        ]
+      }
+    },
+    {
+      "row": 104,
+      "pattern": "てよかった",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-te-yokatta",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-ii",
+          "grammar-i-adjectivepast"
+        ]
+      }
+    },
+    {
+      "row": 105,
+      "pattern": "ているところ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-teiru-tokoro",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-teiru1"
+        ]
+      }
+    },
+    {
+      "row": 106,
+      "pattern": "ても",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-temo-concession",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-temoii"
+        ]
+      }
+    },
+    {
+      "row": 107,
+      "pattern": "と",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-to-conditional",
+      "n5Overlap": {
+        "classification": "different-meaning",
+        "grammarIds": [
+          "grammar-to-accompaniment-marker",
+          "grammar-to-and-marker",
+          "grammar-to-quotation-marker"
+        ]
+      }
+    },
+    {
+      "row": 108,
+      "pattern": "と言ってもいい",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-to-ittemo-ii",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-to-quotation-marker"
+        ]
+      }
+    },
+    {
+      "row": 109,
+      "pattern": "という",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-to-iu",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-to-quotation-marker"
+        ]
+      }
+    },
+    {
+      "row": 110,
+      "pattern": "ということ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-to-iu-koto",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-to-quotation-marker",
+          "grammar-no-nominalizer"
+        ]
+      }
+    },
+    {
+      "row": 111,
+      "pattern": "と言われている",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-to-iwarete-iru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-to-quotation-marker",
+          "grammar-teiru2"
+        ]
+      }
+    },
+    {
+      "row": 112,
+      "pattern": "と聞いた",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-to-kiku",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-to-quotation-marker"
+        ]
+      }
+    },
+    {
+      "row": 113,
+      "pattern": "と思う",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-to-omou",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-to-quotation-marker"
+        ]
+      }
+    },
+    {
+      "row": 114,
+      "pattern": "とか～とか",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-toka-toka",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-ya",
+          "grammar-tari-tarisuru"
+        ]
+      }
+    },
+    {
+      "row": 115,
+      "pattern": "ところ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-tokoro",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 116,
+      "pattern": "続ける",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-tsuzukeru",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 117,
+      "pattern": "って",
+      "decision": "rejected",
+      "reason": "Exact N5 grammar-tte casual quotation point with no extension.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "duplicate",
+        "grammarIds": [
+          "grammar-tte"
+        ]
+      }
+    },
+    {
+      "row": 118,
+      "pattern": "受身形",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-passive-form",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 119,
+      "pattern": "は〜が… は",
+      "decision": "unresolved",
+      "reason": "Malformed and underspecified surface conflating contrast and comparison; no safe formation or meaning identity can be recovered.",
+      "canonicalGrammarId": "grammar-n4-wa-ga-wa-unresolved",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-ha",
+          "grammar-ga-contrast-conjunction"
+        ]
+      }
+    },
+    {
+      "row": 120,
+      "pattern": "やすい",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-yasui",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 121,
+      "pattern": "やっと",
+      "decision": "moved-to-vocabulary",
+      "reason": "Pure adverb.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 122,
+      "pattern": "より",
+      "decision": "rejected",
+      "reason": "N5 grammar-yori-nohouga already teaches the supplied comparison objective.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "n5-review-item",
+        "grammarIds": [
+          "grammar-yori-nohouga"
+        ]
+      }
+    },
+    {
+      "row": 123,
+      "pattern": "予定だ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-yotei-da",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-tsumorida"
+        ]
+      }
+    },
+    {
+      "row": 124,
+      "pattern": "ようだ",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-youda-similarity",
+      "n5Overlap": {
+        "classification": "different-formation",
+        "grammarIds": [
+          "grammar-deshou",
+          "grammar-darou"
+        ]
+      }
+    },
+    {
+      "row": 125,
+      "pattern": "ように / ような",
+      "decision": "merged",
+      "reason": "Similarity and manner variants of ～ようだ; purpose ～ように remains a separate record.",
+      "canonicalGrammarId": "grammar-n4-youda-similarity",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 126,
+      "pattern": "ようになる",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-you-ni-naru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-ninaru"
+        ]
+      }
+    },
+    {
+      "row": 127,
+      "pattern": "ようにする",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-you-ni-suru",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-nisuru"
+        ]
+      }
+    },
+    {
+      "row": 128,
+      "pattern": "ようと思う",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-you-to-omou",
+      "n5Overlap": {
+        "classification": "valid-n4-extension",
+        "grammarIds": [
+          "grammar-tsumorida"
+        ]
+      }
+    },
+    {
+      "row": 129,
+      "pattern": "ぜひ",
+      "decision": "moved-to-vocabulary",
+      "reason": "Pure adverb.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 130,
+      "pattern": "全然～ない",
+      "decision": "moved-to-vocabulary",
+      "reason": "Teach 全然 as vocabulary with negative-polarity usage; the candidate has no distinct N4 syntax objective.",
+      "canonicalGrammarId": null,
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    },
+    {
+      "row": 131,
+      "pattern": "づらい",
+      "decision": "approved",
+      "reason": "Approved as a distinct, normalized N4-aligned learning objective.",
+      "canonicalGrammarId": "grammar-n4-zurai",
+      "n5Overlap": {
+        "classification": "none",
+        "grammarIds": []
+      }
+    }
+  ],
+  "manualAdditions": [
+    {
+      "id": "grammar-n4-te-aru",
+      "pattern": "～てある",
+      "reason": "Added from a reviewed cached Minna II heading cross-check; no OCR prose or examples were retained."
+    },
+    {
+      "id": "grammar-n4-nakutemo-ii",
+      "pattern": "～なくてもいい",
+      "reason": "Required N4 coverage gap identified during manual curation."
+    },
+    {
+      "id": "grammar-n4-tame-ni-purpose",
+      "pattern": "～ために",
+      "reason": "Required N4 coverage gap identified during manual curation."
+    },
+    {
+      "id": "grammar-n4-you-ni-purpose",
+      "pattern": "～ように",
+      "reason": "Purpose ～ように is separate from the similarity or manner alternate of ～ようだ."
+    },
+    {
+      "id": "grammar-n4-hodo",
+      "pattern": "～ほど",
+      "reason": "Required N4 coverage gap identified during manual curation."
+    },
+    {
+      "id": "grammar-n4-shika-nai",
+      "pattern": "～しか～ない",
+      "reason": "Required N4 coverage gap identified during manual curation."
+    }
+  ],
+  "requiredCoverageAtN5": [
+    {
+      "pattern": "～前に",
+      "grammarIds": [
+        "grammar-maeni"
+      ]
+    },
+    {
+      "pattern": "～つもりだ",
+      "grammarIds": [
+        "grammar-tsumorida"
+      ]
+    },
+    {
+      "pattern": "～てもいい",
+      "grammarIds": [
+        "grammar-temoii"
+      ]
+    },
+    {
+      "pattern": "～てはいけない",
+      "grammarIds": [
+        "grammar-tehaikenai"
+      ]
+    },
+    {
+      "pattern": "prohibitive ～な",
+      "grammarIds": [
+        "grammar-na"
+      ]
+    },
+    {
+      "pattern": "～だけ",
+      "grammarIds": [
+        "grammar-dake"
+      ]
+    },
+    {
+      "pattern": "～んです",
+      "grammarIds": [
+        "grammar-ndesu"
+      ]
+    },
+    {
+      "pattern": "～ので",
+      "grammarIds": [
+        "grammar-node"
+      ]
+    },
+    {
+      "pattern": "～より",
+      "grammarIds": [
+        "grammar-yori-nohouga"
+      ]
+    }
+  ]
+}

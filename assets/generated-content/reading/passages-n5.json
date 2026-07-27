@@ -1,0 +1,5215 @@
+[
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-001",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "はるの休む日の過ごし方・三時のやさしい記録",
+    "japanese": "今日ははるの予定です。今日は運動をしないで家で休みます。水を飲んで、温かい物を食べます。夕方も痛かったら病院へ連絡します。朝から少し頭が痛いです。終わってから、もう一度見ます。分からないので、近くの人に聞きます。",
+    "reading": "きょうははるのよていです。きょうはうんどうをしないでいえでやすみます。みずをのんで、あたたかいものをたべます。ゆうがたもいたかったらびょういんへれんらくします。あさからすこしあたまがいたいです。おわってから、もういちどみます。わからないので、ちかくのひとにききます。",
+    "english": "This is はる's plan for today. Today exercise is skipped and rest is taken at home. Water is drunk and warm food is eaten. If it still hurts in the evening, the hospital will be contacted. There has been a mild headache since morning. After finishing, it is checked once more. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "health"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-休み-やすみ",
+      "vocab-夕方-ゆうがた",
+      "vocab-少し-すこし",
+      "vocab-暖かい-あたたかい",
+      "vocab-病院-びょういん",
+      "vocab-痛い-いたい",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-休",
+      "kanji-日",
+      "kanji-水",
+      "kanji-聞",
+      "kanji-見",
+      "kanji-食"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-037"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-001-main-idea-1",
+      "question-reading-n5-medium-001-sequence-order-3",
+      "question-reading-n5-medium-001-specific-detail-2",
+      "question-reading-n5-medium-001-true-statement-4"
+    ],
+    "estimatedReadingSeconds": 45,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-002",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "まいの区役所の手続き・四時のやさしい記録",
+    "japanese": "今日はまいの予定です。受付で番号を取って順番を待ちます。分からない場合は案内の人に聞きます。区役所へ行く前に必要な物を調べます。名前を書いた紙とカードを持って行きます。分からないので、近くの人に聞きます。この予定は大切です。",
+    "reading": "きょうはまいのよていです。うけつけでばんごうをとってじゅんばんをまちます。わからないばあいはあんないのひとにききます。くやくしょへいくまえにひつようなものをしらべます。なまえをかいたかみとかーどをもっていきます。わからないので、ちかくのひとにききます。このよていはたいせつです。",
+    "english": "This is まい's plan for today. A number is taken at reception before waiting. If anything is unclear, the information worker is asked. Required items are checked before visiting the ward office. A named form and card are taken. Because it is unclear, someone nearby is asked. This plan is important.",
+    "structuredContent": null,
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      },
+      {
+        "term": "区役所",
+        "reading": "くやくしょ",
+        "meaning": "ward office",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "public-services"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-名前-なまえ",
+      "vocab-大切-たいせつ",
+      "vocab-番号-ばんごう",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-前",
+      "kanji-名",
+      "kanji-大",
+      "kanji-日",
+      "kanji-書",
+      "kanji-聞",
+      "kanji-行"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-038"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-002-main-idea-1",
+      "question-reading-n5-medium-002-sequence-order-3",
+      "question-reading-n5-medium-002-specific-detail-2",
+      "question-reading-n5-medium-002-vocabulary-context-4"
+    ],
+    "estimatedReadingSeconds": 47,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-003",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "ゆうの短い復習・五時のやさしい記録",
+    "japanese": "今日はゆうの予定です。毎週日曜日にできたことを確かめます。長く勉強するより短い復習を続けます。朝は新しい言葉を五つ読みます。夜はまちがえた問題だけ見直します。この予定は大切です。終わってから、もう一度見ます。",
+    "reading": "きょうはゆうのよていです。まいしゅうにちようびにできたことをたしかめます。ながくべんきょうするよりみじかいふくしゅうをつづけます。あさはあたらしいことばをいつつよみます。よるはまちがえたもんだいだけみなおします。このよていはたいせつです。おわってから、もういちどみます。",
+    "english": "This is ゆう's plan for today. Progress is checked every Sunday. Short repeated review is preferred to one long study session. Five new words are read in the morning. At night, only missed questions are reviewed. This plan is important. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "study-habits"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-もう-もう",
+      "vocab-五つ-いつつ",
+      "vocab-今日-きょう",
+      "vocab-問題-もんだい",
+      "vocab-大切-たいせつ",
+      "vocab-新しい-あたらしい",
+      "vocab-日曜日-にちようび",
+      "vocab-毎週-まいしゅう",
+      "vocab-短い-みじかい",
+      "vocab-言葉-ことば"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-五",
+      "kanji-今",
+      "kanji-大",
+      "kanji-日",
+      "kanji-毎",
+      "kanji-見",
+      "kanji-読",
+      "kanji-長"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-039"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-003-appropriate-summary-4",
+      "question-reading-n5-medium-003-main-idea-1",
+      "question-reading-n5-medium-003-sequence-order-3",
+      "question-reading-n5-medium-003-specific-detail-2"
+    ],
+    "estimatedReadingSeconds": 44,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-004",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "りんの祖母への手紙・六時のやさしい記録",
+    "japanese": "今日はりんの予定です。日曜日に家族で祖母へ手紙を書きます。弟は学校の絵を一まい入れます。姉は来月の旅行について知らせます。手紙は月曜日の朝に出します。終わってから、もう一度見ます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはりんのよていです。にちようびにかぞくでそぼへてがみをかきます。おとうとはがっこうのえをいちまいいれます。あねはらいげつのりょこうについてしらせます。てがみはげつようびのあさにだします。おわってから、もういちどみます。わからないので、ちかくのひとにききます。",
+    "english": "This is りん's plan for today. On Sunday the family writes to Grandmother. The younger brother includes one school drawing. The older sister tells her about next month's trip. The letter is mailed Monday morning. After finishing, it is checked once more. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "family"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-学校-がっこう",
+      "vocab-家族-かぞく",
+      "vocab-手紙-てがみ",
+      "vocab-旅行-りょこう",
+      "vocab-日曜日-にちようび",
+      "vocab-月曜日-げつようび",
+      "vocab-来月-らいげつ",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-入",
+      "kanji-出",
+      "kanji-学",
+      "kanji-日",
+      "kanji-書",
+      "kanji-月",
+      "kanji-来",
+      "kanji-校",
+      "kanji-母",
+      "kanji-聞",
+      "kanji-行",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-040"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-004-main-idea-1",
+      "question-reading-n5-medium-004-sequence-order-3",
+      "question-reading-n5-medium-004-specific-detail-2",
+      "question-reading-n5-medium-004-true-statement-4"
+    ],
+    "estimatedReadingSeconds": 45,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-005",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "あきの野菜のスープ・八時のやさしい記録",
+    "japanese": "今日はあきの予定です。なべに水を入れてから火をつけます。十五分たったら塩を少し入れます。火を止めて、二分待ってから食べます。まず野菜をよく洗って小さく切ります。分からないので、近くの人に聞きます。この予定は大切です。",
+    "reading": "きょうはあきのよていです。なべにみずをいれてからひをつけます。じゅうごふんたったらしおをすこしいれます。ひをとめて、にふんまってからたべます。まずやさいをよくあらってちいさくきります。わからないので、ちかくのひとにききます。このよていはたいせつです。",
+    "english": "This is あき's plan for today. The heat is turned on after water goes in the pot. A little salt is added after fifteen minutes. The soup is eaten after turning off the heat and waiting two minutes. First the vegetables are washed and cut small. Because it is unclear, someone nearby is asked. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "cooking"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ",
+      "vocab-少し-すこし",
+      "vocab-近く-ちかく",
+      "vocab-野菜-やさい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-五",
+      "kanji-人",
+      "kanji-今",
+      "kanji-入",
+      "kanji-十",
+      "kanji-大",
+      "kanji-小",
+      "kanji-日",
+      "kanji-水",
+      "kanji-火",
+      "kanji-聞",
+      "kanji-食"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-041"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-005-main-idea-1",
+      "question-reading-n5-medium-005-sequence-order-3",
+      "question-reading-n5-medium-005-specific-detail-2",
+      "question-reading-n5-medium-005-vocabulary-context-4"
+    ],
+    "estimatedReadingSeconds": 45,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-006",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "えみの風の強い日・九時のやさしい記録",
+    "japanese": "今日はえみの予定です。自転車ではなくバスで出かけます。夜には風が弱くなると聞きました。午後から風が強くなるそうです。ベランダの軽い物を部屋へ入れます。この予定は大切です。終わってから、もう一度見ます。",
+    "reading": "きょうはえみのよていです。じてんしゃではなくばすででかけます。よるにはかぜがよわくなるとききました。ごごからかぜがつよくなるそうです。べらんだのかるいものをへやへいれます。このよていはたいせつです。おわってから、もういちどみます。",
+    "english": "This is えみ's plan for today. The bus is used instead of a bicycle. They heard the wind will ease at night. The wind is expected to strengthen this afternoon. Light things on the balcony are brought inside. This plan is important. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "weather"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-では-では",
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-午後-ごご",
+      "vocab-大切-たいせつ",
+      "vocab-自転車-じてんしゃ",
+      "vocab-軽い-かるい",
+      "vocab-部屋-へや"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-入",
+      "kanji-出",
+      "kanji-午",
+      "kanji-大",
+      "kanji-後",
+      "kanji-日",
+      "kanji-聞",
+      "kanji-見",
+      "kanji-車"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-042"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-006-appropriate-summary-4",
+      "question-reading-n5-medium-006-main-idea-1",
+      "question-reading-n5-medium-006-sequence-order-3",
+      "question-reading-n5-medium-006-specific-detail-2"
+    ],
+    "estimatedReadingSeconds": 42,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-007",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "かいの町の音楽会・十時のやさしい記録",
+    "japanese": "今日はかいの予定です。入口で白いカードを見せます。土曜日に町の音楽会があります。会場は川の近くの青空ホールです。席は少ないので早めに行きます。終わってから、もう一度見ます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはかいのよていです。いりぐちでしろいかーどをみせます。どようびにまちのおんがくかいがあります。かいじょうはかわのちかくのあおぞらほーるです。せきはすくないのではやめにいきます。おわってから、もういちどみます。わからないので、ちかくのひとにききます。",
+    "english": "This is かい's plan for today. A white card is shown at the entrance. There is a community concert on Saturday. The venue is fictional Aozora Hall near the river. They go early because seating is limited. After finishing, it is checked once more. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "events"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-入口-いりぐち",
+      "vocab-土曜日-どようび",
+      "vocab-少ない-すくない",
+      "vocab-白い-しろい",
+      "vocab-近く-ちかく",
+      "vocab-音楽-おんがく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-入",
+      "kanji-土",
+      "kanji-川",
+      "kanji-日",
+      "kanji-白",
+      "kanji-聞",
+      "kanji-行",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-001"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-007-main-idea-1",
+      "question-reading-n5-medium-007-sequence-order-3",
+      "question-reading-n5-medium-007-specific-detail-2",
+      "question-reading-n5-medium-007-true-statement-4"
+    ],
+    "estimatedReadingSeconds": 44,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-008",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "さきの名前の直し方・十一時のやさしい記録",
+    "japanese": "今日はさきの予定です。申込書に名前をまちがえて書きました。受付の人に直し方を聞きました。まちがえた所に一本線を引きます。その横に正しい名前を書きます。分からないので、近くの人に聞きます。この予定は大切です。",
+    "reading": "きょうはさきのよていです。もうしこみしょになまえをまちがえてかきました。うけつけのひとになおしかたをききました。まちがえたところにいっぽんせんをひきます。そのよこにただしいなまえをかきます。わからないので、ちかくのひとにききます。このよていはたいせつです。",
+    "english": "This is さき's plan for today. A name was written incorrectly on a form. The receptionist was asked how to correct it. One line is drawn through the error. The correct name is written beside it. Because it is unclear, someone nearby is asked. This plan is important.",
+    "structuredContent": null,
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      },
+      {
+        "term": "申込書",
+        "reading": "もうしこみしょ",
+        "meaning": "application form",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "mistakes-and-corrections"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-その-その",
+      "vocab-今日-きょう",
+      "vocab-名前-なまえ",
+      "vocab-大切-たいせつ",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-前",
+      "kanji-名",
+      "kanji-大",
+      "kanji-日",
+      "kanji-書",
+      "kanji-本",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-002"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-008-main-idea-1",
+      "question-reading-n5-medium-008-sequence-order-3",
+      "question-reading-n5-medium-008-specific-detail-2",
+      "question-reading-n5-medium-008-vocabulary-context-4"
+    ],
+    "estimatedReadingSeconds": 43,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-009",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "たくの公園の約束・一時のやさしい記録",
+    "japanese": "今日はたくの予定です。赤い時計の前で待つことにしました。一人が少しおくれると連絡しました。先に来た二人は木の下で本を読みます。友だちと公園の入口で会う約束です。この予定は大切です。終わってから、もう一度見ます。",
+    "reading": "きょうはたくのよていです。あかいとけいのまえでまつことにしました。ひとりがすこしおくれるとれんらくしました。さきにきたふたりはきのしたでほんをよみます。ともだちとこうえんのいりぐちであうやくそくです。このよていはたいせつです。おわってから、もういちどみます。",
+    "english": "This is たく's plan for today. They decided to wait by the red clock. One friend said they would be a little late. The first two read under a tree. Friends plan to meet at the park entrance. This plan is important. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "friends"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-もう-もう",
+      "vocab-一人-ひとり",
+      "vocab-二人-ふたり",
+      "vocab-今日-きょう",
+      "vocab-会う-あう",
+      "vocab-入口-いりぐち",
+      "vocab-公園-こうえん",
+      "vocab-友達-ともだち",
+      "vocab-大切-たいせつ",
+      "vocab-少し-すこし",
+      "vocab-待つ-まつ",
+      "vocab-時計-とけい",
+      "vocab-赤い-あかい"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-下",
+      "kanji-二",
+      "kanji-人",
+      "kanji-今",
+      "kanji-先",
+      "kanji-入",
+      "kanji-前",
+      "kanji-友",
+      "kanji-大",
+      "kanji-日",
+      "kanji-時",
+      "kanji-木",
+      "kanji-本",
+      "kanji-来",
+      "kanji-見",
+      "kanji-読"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-003"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-009-appropriate-summary-4",
+      "question-reading-n5-medium-009-main-idea-1",
+      "question-reading-n5-medium-009-sequence-order-3",
+      "question-reading-n5-medium-009-specific-detail-2"
+    ],
+    "estimatedReadingSeconds": 44,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-010",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "なおの朝のバス・二時のやさしい記録",
+    "japanese": "今日はなおの予定です。今日は一本早いバスに乗ります。駅に着いたら友だちへ知らせます。朝のバスは駅の北口から出ます。いつものバスでは約束におくれそうです。終わってから、もう一度見ます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはなおのよていです。きょうはいっぽんはやいばすにのります。えきについたらともだちへしらせます。あさのばすはえきのきたぐちからでます。いつものばすではやくそくにおくれそうです。おわってから、もういちどみます。わからないので、ちかくのひとにききます。",
+    "english": "This is なお's plan for today. Today an earlier bus is taken. A friend will be notified upon arrival. The morning bus leaves from the station's north exit. The usual bus may be too late for the appointment. After finishing, it is checked once more. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "transport"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-いつ-いつ",
+      "vocab-では-では",
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-友達-ともだち",
+      "vocab-早い-はやい",
+      "vocab-近く-ちかく",
+      "vocab-速い-はやい"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-出",
+      "kanji-北",
+      "kanji-友",
+      "kanji-日",
+      "kanji-本",
+      "kanji-聞",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-004"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-010-main-idea-1",
+      "question-reading-n5-medium-010-sequence-order-3",
+      "question-reading-n5-medium-010-specific-detail-2",
+      "question-reading-n5-medium-010-true-statement-4"
+    ],
+    "estimatedReadingSeconds": 46,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-011",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "はるの写真の整理・三時のやさしい記録",
+    "japanese": "今日ははるの予定です。名前と日を小さい紙に書いておきます。休みの日に古い写真を整理します。同じ場所の写真を一つの箱に入れます。家族に見せたい写真を十まい選びます。分からないので、近くの人に聞きます。この予定は大切です。",
+    "reading": "きょうははるのよていです。なまえとひをちいさいかみにかいておきます。やすみのひにふるいしゃしんをせいりします。おなじばしょのしゃしんをひとつのはこにいれます。かぞくにみせたいしゃしんをじゅうまいえらびます。わからないので、ちかくのひとにききます。このよていはたいせつです。",
+    "english": "This is はる's plan for today. Names and dates are written on small slips. Old photographs are organized on a day off. Photos from the same place go in one box. Ten photos to show the family are selected. Because it is unclear, someone nearby is asked. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "hobbies"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-一つ-ひとつ",
+      "vocab-今日-きょう",
+      "vocab-休み-やすみ",
+      "vocab-写真-しゃしん",
+      "vocab-古い-ふるい",
+      "vocab-同じ-おなじ",
+      "vocab-名前-なまえ",
+      "vocab-大切-たいせつ",
+      "vocab-家族-かぞく",
+      "vocab-小さい-ちいさい",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-休",
+      "kanji-入",
+      "kanji-前",
+      "kanji-十",
+      "kanji-名",
+      "kanji-大",
+      "kanji-小",
+      "kanji-日",
+      "kanji-書",
+      "kanji-聞",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-005"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-011-main-idea-1",
+      "question-reading-n5-medium-011-sequence-order-3",
+      "question-reading-n5-medium-011-specific-detail-2",
+      "question-reading-n5-medium-011-vocabulary-context-4"
+    ],
+    "estimatedReadingSeconds": 46,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-012",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "まいの本の予約・四時のやさしい記録",
+    "japanese": "今日はまいの予定です。読みたい本が貸し出し中でした。図書館の機械でその本を予約しました。用意できたらメールが来るそうです。メールの後、一週間以内に取りに行きます。この予定は大切です。終わってから、もう一度見ます。",
+    "reading": "きょうはまいのよていです。よみたいほんがかしだしちゅうでした。としょかんのきかいでそのほんをよやくしました。よういできたらめーるがくるそうです。めーるのあと、いっしゅうかんいないにとりにいきます。このよていはたいせつです。おわってから、もういちどみます。",
+    "english": "This is まい's plan for today. The desired book was checked out. The book was reserved on the library machine. An email will arrive when it is ready. It must be collected within one week of the email. This plan is important. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [
+      {
+        "term": "貸し出し中",
+        "reading": "かしだしちゅう",
+        "meaning": "currently checked out",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "libraries"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-その-その",
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-図書館-としょかん",
+      "vocab-大切-たいせつ",
+      "vocab-来る-くる"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-中",
+      "kanji-今",
+      "kanji-出",
+      "kanji-大",
+      "kanji-後",
+      "kanji-日",
+      "kanji-書",
+      "kanji-本",
+      "kanji-来",
+      "kanji-行",
+      "kanji-見",
+      "kanji-読",
+      "kanji-間"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-006"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-012-appropriate-summary-4",
+      "question-reading-n5-medium-012-main-idea-1",
+      "question-reading-n5-medium-012-sequence-order-3",
+      "question-reading-n5-medium-012-specific-detail-2"
+    ],
+    "estimatedReadingSeconds": 45,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-013",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "ゆうの青い手ぶくろ・五時のやさしい記録",
+    "japanese": "今日はゆうの予定です。まず、店の前のいすを見に戻りました。そこにはなかったので店の人に聞きました。手ぶくろは店の入口に届いていました。帰り道で青い手ぶくろがないと気づきました。終わってから、もう一度見ます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはゆうのよていです。まず、みせのまえのいすをみにもどりました。そこにはなかったのでみせのひとにききました。てぶくろはみせのいりぐちにとどいていました。かえりみちであおいてぶくろがないときづきました。おわってから、もういちどみます。わからないので、ちかくのひとにききます。",
+    "english": "This is ゆう's plan for today. First, the bench outside the shop was checked. It was not there, so the shop worker was asked. The glove had been handed in at the entrance. A blue glove was noticed missing on the way home. After finishing, it is checked once more. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "lost-items"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-そこ-そこ",
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-入口-いりぐち",
+      "vocab-近く-ちかく",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-入",
+      "kanji-前",
+      "kanji-日",
+      "kanji-気",
+      "kanji-聞",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-007"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-013-main-idea-1",
+      "question-reading-n5-medium-013-sequence-order-3",
+      "question-reading-n5-medium-013-specific-detail-2",
+      "question-reading-n5-medium-013-true-statement-4"
+    ],
+    "estimatedReadingSeconds": 51,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-014",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "りんの教室の係・六時のやさしい記録",
+    "japanese": "今日はりんの予定です。授業の前に黒板をきれいにします。花の水は昼休みに少しだけあげます。教室では毎週、係がかわります。今週は黒板と花の水がわたしの仕事です。分からないので、近くの人に聞きます。この予定は大切です。",
+    "reading": "きょうはりんのよていです。じゅぎょうのまえにこくばんをきれいにします。はなのみずはひるやすみにすこしだけあげます。きょうしつではまいしゅう、かかりがかわります。こんしゅうはこくばんとはなのみずがわたしのしごとです。わからないので、ちかくのひとにききます。このよていはたいせつです。",
+    "english": "This is りん's plan for today. The board is cleaned before class. The flowers get a little water at lunch. Classroom duties change every week. This week the board and watering flowers are my jobs. Because it is unclear, someone nearby is asked. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "school"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-では-では",
+      "vocab-今日-きょう",
+      "vocab-今週-こんしゅう",
+      "vocab-仕事-しごと",
+      "vocab-休み-やすみ",
+      "vocab-大切-たいせつ",
+      "vocab-少し-すこし",
+      "vocab-授業-じゅぎょう",
+      "vocab-教室-きょうしつ",
+      "vocab-毎週-まいしゅう",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-休",
+      "kanji-前",
+      "kanji-大",
+      "kanji-日",
+      "kanji-毎",
+      "kanji-水",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-008"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-014-main-idea-1",
+      "question-reading-n5-medium-014-sequence-order-3",
+      "question-reading-n5-medium-014-specific-detail-2",
+      "question-reading-n5-medium-014-vocabulary-context-4"
+    ],
+    "estimatedReadingSeconds": 45,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-015",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "あきの海辺の一日・八時のやさしい記録",
+    "japanese": "今日はあきの予定です。雨なら小さな博物館へ行きます。旅行の二日目は海の近くを歩きます。午前は古い橋を見て、写真をとります。昼は港の公園でおべんとうを食べます。この予定は大切です。終わってから、もう一度見ます。",
+    "reading": "きょうはあきのよていです。あめならちいさなはくぶつかんへいきます。りょこうのふつかめはうみのちかくをあるきます。ごぜんはふるいはしをみて、しゃしんをとります。ひるはみなとのこうえんでおべんとうをたべます。このよていはたいせつです。おわってから、もういちどみます。",
+    "english": "This is あき's plan for today. If it rains, they go to a small museum. On the second day, they walk near the sea. In the morning they see an old bridge and take photos. Lunch is eaten in the harbour park. This plan is important. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "travel"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-もう-もう",
+      "vocab-二日-ふつか",
+      "vocab-今日-きょう",
+      "vocab-公園-こうえん",
+      "vocab-写真-しゃしん",
+      "vocab-午前-ごぜん",
+      "vocab-古い-ふるい",
+      "vocab-大切-たいせつ",
+      "vocab-小さな-ちいさな",
+      "vocab-旅行-りょこう",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-二",
+      "kanji-今",
+      "kanji-前",
+      "kanji-午",
+      "kanji-大",
+      "kanji-小",
+      "kanji-日",
+      "kanji-行",
+      "kanji-見",
+      "kanji-雨",
+      "kanji-食"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-009"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-015-appropriate-summary-4",
+      "question-reading-n5-medium-015-main-idea-1",
+      "question-reading-n5-medium-015-sequence-order-3",
+      "question-reading-n5-medium-015-specific-detail-2"
+    ],
+    "estimatedReadingSeconds": 44,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-016",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "えみの歩く目標・九時のやさしい記録",
+    "japanese": "今日はえみの予定です。毎日少しずつ歩くことにしました。朝は川まで十五分歩きます。雨の日は建物の中を歩きます。むりをしないで毎週時間をふやします。終わってから、もう一度見ます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはえみのよていです。まいにちすこしずつあるくことにしました。あさはかわまでじゅうごふんあるきます。あめのひはたてもののなかをあるきます。むりをしないでまいしゅうじかんをふやします。おわってから、もういちどみます。わからないので、ちかくのひとにききます。",
+    "english": "This is えみ's plan for today. A decision was made to walk a little every day. The morning walk to the river takes fifteen minutes. On rainy days, the walking is indoors. Time is increased weekly without overdoing it. After finishing, it is checked once more. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "exercise"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-少し-すこし",
+      "vocab-建物-たてもの",
+      "vocab-時間-じかん",
+      "vocab-歩く-あるく",
+      "vocab-毎日-まいにち",
+      "vocab-毎週-まいしゅう",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-中",
+      "kanji-五",
+      "kanji-人",
+      "kanji-今",
+      "kanji-十",
+      "kanji-川",
+      "kanji-日",
+      "kanji-時",
+      "kanji-毎",
+      "kanji-聞",
+      "kanji-見",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-010"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-016-main-idea-1",
+      "question-reading-n5-medium-016-sequence-order-3",
+      "question-reading-n5-medium-016-specific-detail-2",
+      "question-reading-n5-medium-016-true-statement-4"
+    ],
+    "estimatedReadingSeconds": 44,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-017",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "かいの荷物の受け取り・十時のやさしい記録",
+    "japanese": "今日はかいの予定です。紙に書かれた番号で時間をえらびます。明日の夜なら家にいる予定です。荷物は玄関で名前を確認して受け取ります。きのう荷物を受け取れませんでした。分からないので、近くの人に聞きます。この予定は大切です。",
+    "reading": "きょうはかいのよていです。かみにかかれたばんごうでじかんをえらびます。あしたのよるならいえにいるよていです。にもつはげんかんでなまえをかくにんしてうけとります。きのうにもつをうけとれませんでした。わからないので、ちかくのひとにききます。このよていはたいせつです。",
+    "english": "This is かい's plan for today. A new time is selected using the number on the slip. Someone plans to be home tomorrow evening. The name is checked at the door before receiving it. A parcel could not be received yesterday. Because it is unclear, someone nearby is asked. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "delivery"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-名前-なまえ",
+      "vocab-大切-たいせつ",
+      "vocab-居る-いる",
+      "vocab-明日-あした",
+      "vocab-時間-じかん",
+      "vocab-玄関-げんかん",
+      "vocab-番号-ばんごう",
+      "vocab-荷物-にもつ",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-前",
+      "kanji-名",
+      "kanji-大",
+      "kanji-日",
+      "kanji-時",
+      "kanji-書",
+      "kanji-聞",
+      "kanji-間"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-011"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-017-main-idea-1",
+      "question-reading-n5-medium-017-sequence-order-3",
+      "question-reading-n5-medium-017-specific-detail-2",
+      "question-reading-n5-medium-017-vocabulary-context-4"
+    ],
+    "estimatedReadingSeconds": 46,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-medium-018",
+    "level": "N5",
+    "passageType": "medium",
+    "title": "さきの共同の台所・十一時のやさしい記録",
+    "japanese": "今日はさきの予定です。大きな音が出る機械は夜に使えません。最後に電気を消したか確かめます。共同の台所は朝六時から使えます。使った皿は自分で洗う決まりです。この予定は大切です。終わってから、もう一度見ます。",
+    "reading": "きょうはさきのよていです。おおきなおとがでるきかいはよるにつかえません。さいごにでんきをけしたかたしかめます。きょうどうのだいどころはあさろくじからつかえます。つかったさらはじぶんであらうきまりです。このよていはたいせつです。おわってから、もういちどみます。",
+    "english": "This is さき's plan for today. Noisy machines cannot be used at night. Finally, users check that the light is off. The shared kitchen can be used from six in the morning. Users must wash their own dishes. This plan is important. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [
+      {
+        "term": "共同",
+        "reading": "きょうどう",
+        "meaning": "shared; communal",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "rules"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-出る-でる",
+      "vocab-台所-だいどころ",
+      "vocab-大きな-おおきな",
+      "vocab-大切-たいせつ",
+      "vocab-洗う-あらう",
+      "vocab-自分-じぶん",
+      "vocab-電気-でんき"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-六",
+      "kanji-出",
+      "kanji-大",
+      "kanji-後",
+      "kanji-日",
+      "kanji-時",
+      "kanji-気",
+      "kanji-見",
+      "kanji-電"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-012"
+    ],
+    "questionIds": [
+      "question-reading-n5-medium-018-appropriate-summary-4",
+      "question-reading-n5-medium-018-main-idea-1",
+      "question-reading-n5-medium-018-sequence-order-3",
+      "question-reading-n5-medium-018-specific-detail-2"
+    ],
+    "estimatedReadingSeconds": 43,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-001",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "たくの小さな会議・一時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n午後に短い会議がある予定です。\n日にち：来週の土曜日\n時間：九時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nごごにみじかいかいぎがあるよていです。\nひにち：らいしゅうのどようび\nじかん：くじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about preparing for a short workplace meeting A short meeting is planned for the afternoon. Date: next Saturday Time: two hours from 九時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "notice",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about preparing for a short workplace meeting"
+        },
+        {
+          "position": 2,
+          "japanese": "午後に短い会議がある予定です。",
+          "reading": "ごごにみじかいかいぎがあるよていです。",
+          "english": "A short meeting is planned for the afternoon."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：九時から二時間",
+          "reading": "じかん：くじからにじかん",
+          "english": "Time: two hours from 九時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "work"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-午後-ごご",
+      "vocab-土曜日-どようび",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-短い-みじかい",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-九",
+      "kanji-二",
+      "kanji-人",
+      "kanji-午",
+      "kanji-土",
+      "kanji-後",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-013"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-001-condition-rule-3",
+      "question-reading-n5-practical-001-practical-action-4",
+      "question-reading-n5-practical-001-specific-detail-1",
+      "question-reading-n5-practical-001-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 40,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-002",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "なおの市役所への道・二時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n駅の南口を出て、まっすぐ歩きます。\n日にち：来週の土曜日\n時間：十時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nえきのみなみぐちをでて、まっすぐあるきます。\nひにち：らいしゅうのどようび\nじかん：じゅうじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about following landmarks to reach city hall Leave the south exit and walk straight. Date: next Saturday Time: two hours from 十時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "schedule",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about following landmarks to reach city hall"
+        },
+        {
+          "position": 2,
+          "japanese": "駅の南口を出て、まっすぐ歩きます。",
+          "reading": "えきのみなみぐちをでて、まっすぐあるきます。",
+          "english": "Leave the south exit and walk straight."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：十時から二時間",
+          "reading": "じかん：じゅうじからにじかん",
+          "english": "Time: two hours from 十時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "directions"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-土曜日-どようび",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-人",
+      "kanji-出",
+      "kanji-十",
+      "kanji-南",
+      "kanji-土",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-014"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-002-condition-rule-3",
+      "question-reading-n5-practical-002-practical-action-4",
+      "question-reading-n5-practical-002-specific-detail-1",
+      "question-reading-n5-practical-002-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 40,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-003",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "はるの午後の計画・三時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n午後は店と図書館へ行く予定です。\n日にち：来週の土曜日\n時間：十一時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nごごはみせととしょかんへいくよていです。\nひにち：らいしゅうのどようび\nじかん：じゅういちじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about reordering an afternoon plan The afternoon plan includes a store and library. Date: next Saturday Time: two hours from 十一時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "message",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about reordering an afternoon plan"
+        },
+        {
+          "position": 2,
+          "japanese": "午後は店と図書館へ行く予定です。",
+          "reading": "ごごはみせととしょかんへいくよていです。",
+          "english": "The afternoon plan includes a store and library."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：十一時から二時間",
+          "reading": "じかん：じゅういちじからにじかん",
+          "english": "Time: two hours from 十一時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "plans"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-午後-ごご",
+      "vocab-図書館-としょかん",
+      "vocab-土曜日-どようび",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-二",
+      "kanji-人",
+      "kanji-十",
+      "kanji-午",
+      "kanji-土",
+      "kanji-後",
+      "kanji-日",
+      "kanji-時",
+      "kanji-書",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-015"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-003-condition-rule-3",
+      "question-reading-n5-practical-003-practical-action-4",
+      "question-reading-n5-practical-003-specific-detail-1",
+      "question-reading-n5-practical-003-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 40,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-004",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "まいの宿の部屋・四時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n旅行の宿で二つの部屋を見ました。\n日にち：来週の土曜日\n時間：一時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nりょこうのやどでふたつのへやをみました。\nひにち：らいしゅうのどようび\nじかん：いちじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about choosing a practical room at an inn Two rooms were viewed at the inn. Date: next Saturday Time: two hours from 一時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "event-information",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about choosing a practical room at an inn"
+        },
+        {
+          "position": 2,
+          "japanese": "旅行の宿で二つの部屋を見ました。",
+          "reading": "りょこうのやどでふたつのへやをみました。",
+          "english": "Two rooms were viewed at the inn."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：一時から二時間",
+          "reading": "じかん：いちじからにじかん",
+          "english": "Time: two hours from 一時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "accommodation"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-二つ-ふたつ",
+      "vocab-初めて-はじめて",
+      "vocab-土曜日-どようび",
+      "vocab-旅行-りょこう",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-二",
+      "kanji-人",
+      "kanji-土",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-見",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-016"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-004-condition-rule-3",
+      "question-reading-n5-practical-004-practical-action-4",
+      "question-reading-n5-practical-004-specific-detail-1",
+      "question-reading-n5-practical-004-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 40,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-005",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "ゆうの庭への招待・五時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n友だちから庭でお茶を飲む招待が来ました。\n日にち：来週の土曜日\n時間：二時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nともだちからにわでおちゃをのむしょうたいがきました。\nひにち：らいしゅうのどようび\nじかん：にじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about responding clearly to an invitation A friend invited the writer for tea in the garden. Date: next Saturday Time: two hours from 二時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "instructions",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about responding clearly to an invitation"
+        },
+        {
+          "position": 2,
+          "japanese": "友だちから庭でお茶を飲む招待が来ました。",
+          "reading": "ともだちからにわでおちゃをのむしょうたいがきました。",
+          "english": "A friend invited the writer for tea in the garden."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：二時から二時間",
+          "reading": "じかん：にじからにじかん",
+          "english": "Time: two hours from 二時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "invitations"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-お茶-おちゃ",
+      "vocab-初めて-はじめて",
+      "vocab-友達-ともだち",
+      "vocab-土曜日-どようび",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい",
+      "vocab-飲む-のむ"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-人",
+      "kanji-友",
+      "kanji-土",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-017"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-005-condition-rule-3",
+      "question-reading-n5-practical-005-practical-action-4",
+      "question-reading-n5-practical-005-specific-detail-1",
+      "question-reading-n5-practical-005-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 42,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-006",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "りんの買い物のメモ・六時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n店へ行く前に買い物のメモを作ります。\n日にち：来週の土曜日\n時間：三時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nみせへいくまえにかいもののめもをつくります。\nひにち：らいしゅうのどようび\nじかん：さんじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about using a list to buy only needed items A shopping list is made before going to the store. Date: next Saturday Time: two hours from 三時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "delivery-note",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about using a list to buy only needed items"
+        },
+        {
+          "position": 2,
+          "japanese": "店へ行く前に買い物のメモを作ります。",
+          "reading": "みせへいくまえにかいもののめもをつくります。",
+          "english": "A shopping list is made before going to the store."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：三時から二時間",
+          "reading": "じかん：さんじからにじかん",
+          "english": "Time: two hours from 三時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "shopping"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-土曜日-どようび",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-買い物-かいもの",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-三",
+      "kanji-二",
+      "kanji-人",
+      "kanji-前",
+      "kanji-土",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-018"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-006-condition-rule-3",
+      "question-reading-n5-practical-006-practical-action-4",
+      "question-reading-n5-practical-006-specific-detail-1",
+      "question-reading-n5-practical-006-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 41,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-007",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "あきの歯医者の時間・八時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n歯医者の予約は木曜日の午後です。\n日にち：来週の土曜日\n時間：四時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nはいしゃのよやくはもくようびのごごです。\nひにち：らいしゅうのどようび\nじかん：よじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about changing and confirming an appointment The dentist appointment is Thursday afternoon. Date: next Saturday Time: two hours from 四時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "notice",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about changing and confirming an appointment"
+        },
+        {
+          "position": 2,
+          "japanese": "歯医者の予約は木曜日の午後です。",
+          "reading": "はいしゃのよやくはもくようびのごごです。",
+          "english": "The dentist appointment is Thursday afternoon."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：四時から二時間",
+          "reading": "じかん：よじからにじかん",
+          "english": "Time: two hours from 四時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "topicTags": [
+      "appointments"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-医者-いしゃ",
+      "vocab-午後-ごご",
+      "vocab-土曜日-どようび",
+      "vocab-時間-じかん",
+      "vocab-木曜日-もくようび",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-人",
+      "kanji-午",
+      "kanji-四",
+      "kanji-土",
+      "kanji-後",
+      "kanji-日",
+      "kanji-時",
+      "kanji-木",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-019"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-007-condition-rule-3",
+      "question-reading-n5-practical-007-practical-action-4",
+      "question-reading-n5-practical-007-specific-detail-1",
+      "question-reading-n5-practical-007-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 40,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-008",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "えみの帰宅の伝言・九時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n母へ帰る時間の伝言をのこしました。\n日にち：来週の土曜日\n時間：五時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nははへかえるじかんのでんごんをのこしました。\nひにち：らいしゅうのどようび\nじかん：ごじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about leaving clear information about coming home A message about the return time was left for Mother. Date: next Saturday Time: two hours from 五時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "schedule",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about leaving clear information about coming home"
+        },
+        {
+          "position": 2,
+          "japanese": "母へ帰る時間の伝言をのこしました。",
+          "reading": "ははへかえるじかんのでんごんをのこしました。",
+          "english": "A message about the return time was left for Mother."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：五時から二時間",
+          "reading": "じかん：ごじからにじかん",
+          "english": "Time: two hours from 五時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "topicTags": [
+      "messages"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-土曜日-どようび",
+      "vocab-帰る-かえる",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-五",
+      "kanji-人",
+      "kanji-土",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-母",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-020"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-008-condition-rule-3",
+      "question-reading-n5-practical-008-practical-action-4",
+      "question-reading-n5-practical-008-specific-detail-1",
+      "question-reading-n5-practical-008-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 40,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-009",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "かいの新しい広場・十時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n近所に小さな広場ができました。\n日にち：来週の土曜日\n時間：六時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nきんじょにちいさいひろばができました。\nひにち：らいしゅうのどようび\nじかん：ろくじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about using a new neighbourhood square thoughtfully A small square opened in the neighbourhood. Date: next Saturday Time: two hours from 六時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "message",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about using a new neighbourhood square thoughtfully"
+        },
+        {
+          "position": 2,
+          "japanese": "近所に小さな広場ができました。",
+          "reading": "きんじょにちいさいひろばができました。",
+          "english": "A small square opened in the neighbourhood."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：六時から二時間",
+          "reading": "じかん：ろくじからにじかん",
+          "english": "Time: two hours from 六時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "topicTags": [
+      "neighbourhoods"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-土曜日-どようび",
+      "vocab-小さな-ちいさな",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-人",
+      "kanji-六",
+      "kanji-土",
+      "kanji-小",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-021"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-009-condition-rule-3",
+      "question-reading-n5-practical-009-practical-action-4",
+      "question-reading-n5-practical-009-specific-detail-1",
+      "question-reading-n5-practical-009-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 40,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-010",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "さきの夜の準備・十一時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n朝いそがないように夜に準備します。\n日にち：来週の土曜日\n時間：八時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nあさいそがないようによるにじゅんびします。\nひにち：らいしゅうのどようび\nじかん：はちじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about preparing at night for an easier morning Preparation is done at night to avoid a rushed morning. Date: next Saturday Time: two hours from 八時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "event-information",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about preparing at night for an easier morning"
+        },
+        {
+          "position": 2,
+          "japanese": "朝いそがないように夜に準備します。",
+          "reading": "あさいそがないようによるにじゅんびします。",
+          "english": "Preparation is done at night to avoid a rushed morning."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：八時から二時間",
+          "reading": "じかん：はちじからにじかん",
+          "english": "Time: two hours from 八時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "topicTags": [
+      "daily-routines"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-土曜日-どようび",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-人",
+      "kanji-八",
+      "kanji-土",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-022"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-010-condition-rule-3",
+      "question-reading-n5-practical-010-practical-action-4",
+      "question-reading-n5-practical-010-specific-detail-1",
+      "question-reading-n5-practical-010-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 40,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-011",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "たくの昼のおべんとう・一時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n今日のおべんとうには魚とご飯があります。\n日にち：来週の土曜日\n時間：九時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nきょうのおべんとうにはさかなとごはんがあります。\nひにち：らいしゅうのどようび\nじかん：くじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about choosing a balanced lunch Today's lunch contains fish and rice. Date: next Saturday Time: two hours from 九時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "instructions",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about choosing a balanced lunch"
+        },
+        {
+          "position": 2,
+          "japanese": "今日のおべんとうには魚とご飯があります。",
+          "reading": "きょうのおべんとうにはさかなとごはんがあります。",
+          "english": "Today's lunch contains fish and rice."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：九時から二時間",
+          "reading": "じかん：くじからにじかん",
+          "english": "Time: two hours from 九時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "topicTags": [
+      "food"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-初めて-はじめて",
+      "vocab-土曜日-どようび",
+      "vocab-御飯-ごはん",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-九",
+      "kanji-二",
+      "kanji-人",
+      "kanji-今",
+      "kanji-土",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-023"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-011-condition-rule-3",
+      "question-reading-n5-practical-011-practical-action-4",
+      "question-reading-n5-practical-011-specific-detail-1",
+      "question-reading-n5-practical-011-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 42,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-practical-012",
+    "level": "N5",
+    "passageType": "practical",
+    "title": "なおの一日の順番・二時のやさしい記録",
+    "japanese": "青空センターからのお知らせ\n朝は銀行へ行く予定です。\n日にち：来週の土曜日\n時間：十時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
+    "reading": "あおぞらせんたーからのおしらせ\nあさはぎんこうへいくよていです。\nひにち：らいしゅうのどようび\nじかん：じゅうじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "english": "Aozora Center notice about organizing tasks by time The bank is planned for the morning. Date: next Saturday Time: two hours from 十時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
+    "structuredContent": {
+      "kind": "delivery-note",
+      "lines": [
+        {
+          "position": 1,
+          "japanese": "青空センターからのお知らせ",
+          "reading": "あおぞらせんたーからのおしらせ",
+          "english": "Aozora Center notice about organizing tasks by time"
+        },
+        {
+          "position": 2,
+          "japanese": "朝は銀行へ行く予定です。",
+          "reading": "あさはぎんこうへいくよていです。",
+          "english": "The bank is planned for the morning."
+        },
+        {
+          "position": 3,
+          "japanese": "日にち：来週の土曜日",
+          "reading": "ひにち：らいしゅうのどようび",
+          "english": "Date: next Saturday"
+        },
+        {
+          "position": 4,
+          "japanese": "時間：十時から二時間",
+          "reading": "じかん：じゅうじからにじかん",
+          "english": "Time: two hours from 十時"
+        },
+        {
+          "position": 5,
+          "japanese": "場所：二階の青い部屋",
+          "reading": "ばしょ：にかいのあおいへや",
+          "english": "Place: the blue room on the second floor"
+        },
+        {
+          "position": 6,
+          "japanese": "雨の場合も行います。受付Aへ知らせてください。",
+          "reading": "あめのばあいもおこないます。うけつけえーへしらせてください。",
+          "english": "It will also take place if it rains. Contact Reception A."
+        },
+        {
+          "position": 7,
+          "japanese": "初めての人も参加できます。",
+          "reading": "はじめてのひともさんかできます。",
+          "english": "First-time participants may also join."
+        }
+      ]
+    },
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "topicTags": [
+      "schedules"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-土曜日-どようび",
+      "vocab-時間-じかん",
+      "vocab-来週-らいしゅう",
+      "vocab-部屋-へや",
+      "vocab-銀行-ぎんこう",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-人",
+      "kanji-十",
+      "kanji-土",
+      "kanji-日",
+      "kanji-時",
+      "kanji-来",
+      "kanji-行",
+      "kanji-間",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-024"
+    ],
+    "questionIds": [
+      "question-reading-n5-practical-012-condition-rule-3",
+      "question-reading-n5-practical-012-practical-action-4",
+      "question-reading-n5-practical-012-specific-detail-1",
+      "question-reading-n5-practical-012-time-date-location-2"
+    ],
+    "estimatedReadingSeconds": 38,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-001",
+    "level": "N5",
+    "passageType": "short",
+    "title": "あきの家の仕事・八時のやさしい記録",
+    "japanese": "今日はあきの予定です。朝、まどを開けて部屋をそうじします。父はごみを出し、母は朝ご飯を作ります。この予定は大切です。",
+    "reading": "きょうはあきのよていです。あさ、まどをあけてへやをそうじします。ちちはごみをだし、はははあさごはんをつくります。このよていはたいせつです。",
+    "english": "This is あき's plan for today. In the morning, the room is aired and cleaned. Father takes out the rubbish while Mother makes breakfast. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "home"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ",
+      "vocab-御飯-ごはん",
+      "vocab-朝御飯-あさごはん",
+      "vocab-部屋-へや"
+    ],
+    "kanjiIds": [
+      "kanji-今",
+      "kanji-出",
+      "kanji-大",
+      "kanji-日",
+      "kanji-母",
+      "kanji-父"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-001"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-001-main-idea-2",
+      "question-reading-n5-short-001-specific-detail-1",
+      "question-reading-n5-short-001-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 25,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-002",
+    "level": "N5",
+    "passageType": "short",
+    "title": "えみの静かな席・九時のやさしい記録",
+    "japanese": "今日はえみの予定です。小さい子どもがいるので広い席をたのみます。入口の近くは寒いと聞きました。終わってから、もう一度見ます。",
+    "reading": "きょうはえみのよていです。ちいさいこどもがいるのでひろいせきをたのみます。いりぐちのちかくはさむいとききました。おわってから、もういちどみます。",
+    "english": "This is えみ's plan for today. A wide table is requested because there is a small child. They heard that seats near the entrance are cold. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "restaurants"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-入口-いりぐち",
+      "vocab-子供-こども",
+      "vocab-寒い-さむい",
+      "vocab-小さい-ちいさい",
+      "vocab-居る-いる",
+      "vocab-広い-ひろい",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-入",
+      "kanji-子",
+      "kanji-小",
+      "kanji-日",
+      "kanji-聞",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-002"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-002-false-statement-3",
+      "question-reading-n5-short-002-sequence-order-2",
+      "question-reading-n5-short-002-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 26,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-003",
+    "level": "N5",
+    "passageType": "short",
+    "title": "かいの休む日の過ごし方・十時のやさしい記録",
+    "japanese": "今日はかいの予定です。水を飲んで、温かい物を食べます。夕方も痛かったら病院へ連絡します。分からないので、近くの人に聞きます。",
+    "reading": "きょうはかいのよていです。みずをのんで、あたたかいものをたべます。ゆうがたもいたかったらびょういんへれんらくします。わからないので、ちかくのひとにききます。",
+    "english": "This is かい's plan for today. Water is drunk and warm food is eaten. If it still hurts in the evening, the hospital will be contacted. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "health"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-夕方-ゆうがた",
+      "vocab-暖かい-あたたかい",
+      "vocab-病院-びょういん",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-日",
+      "kanji-水",
+      "kanji-聞",
+      "kanji-食"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-003"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-003-main-idea-2",
+      "question-reading-n5-short-003-specific-detail-1",
+      "question-reading-n5-short-003-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 26,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-004",
+    "level": "N5",
+    "passageType": "short",
+    "title": "さきの区役所の手続き・十一時のやさしい記録",
+    "japanese": "今日はさきの予定です。分からない場合は案内の人に聞きます。区役所へ行く前に必要な物を調べます。この予定は大切です。",
+    "reading": "きょうはさきのよていです。わからないばあいはあんないのひとにききます。くやくしょへいくまえにひつようなものをしらべます。このよていはたいせつです。",
+    "english": "This is さき's plan for today. If anything is unclear, the information worker is asked. Required items are checked before visiting the ward office. This plan is important.",
+    "structuredContent": null,
+    "glossary": [
+      {
+        "term": "区役所",
+        "reading": "くやくしょ",
+        "meaning": "ward office",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "public-services"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-前",
+      "kanji-大",
+      "kanji-日",
+      "kanji-聞",
+      "kanji-行"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-004"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-004-practical-action-3",
+      "question-reading-n5-short-004-sequence-order-2",
+      "question-reading-n5-short-004-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 24,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-005",
+    "level": "N5",
+    "passageType": "short",
+    "title": "たくの短い復習・一時のやさしい記録",
+    "japanese": "今日はたくの予定です。長く勉強するより短い復習を続けます。朝は新しい言葉を五つ読みます。終わってから、もう一度見ます。",
+    "reading": "きょうはたくのよていです。ながくべんきょうするよりみじかいふくしゅうをつづけます。あさはあたらしいことばをいつつよみます。おわってから、もういちどみます。",
+    "english": "This is たく's plan for today. Short repeated review is preferred to one long study session. Five new words are read in the morning. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "study-habits"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-五つ-いつつ",
+      "vocab-今日-きょう",
+      "vocab-新しい-あたらしい",
+      "vocab-短い-みじかい",
+      "vocab-言葉-ことば"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-五",
+      "kanji-今",
+      "kanji-日",
+      "kanji-見",
+      "kanji-読",
+      "kanji-長"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-005"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-005-main-idea-2",
+      "question-reading-n5-short-005-specific-detail-1",
+      "question-reading-n5-short-005-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 25,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-006",
+    "level": "N5",
+    "passageType": "short",
+    "title": "なおの祖母への手紙・二時のやさしい記録",
+    "japanese": "今日はなおの予定です。弟は学校の絵を一まい入れます。姉は来月の旅行について知らせます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはなおのよていです。おとうとはがっこうのえをいちまいいれます。あねはらいげつのりょこうについてしらせます。わからないので、ちかくのひとにききます。",
+    "english": "This is なお's plan for today. The younger brother includes one school drawing. The older sister tells her about next month's trip. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "family"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-学校-がっこう",
+      "vocab-旅行-りょこう",
+      "vocab-来月-らいげつ",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-入",
+      "kanji-学",
+      "kanji-日",
+      "kanji-月",
+      "kanji-来",
+      "kanji-校",
+      "kanji-聞",
+      "kanji-行"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-006"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-006-false-statement-3",
+      "question-reading-n5-short-006-sequence-order-2",
+      "question-reading-n5-short-006-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 26,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-007",
+    "level": "N5",
+    "passageType": "short",
+    "title": "はるの野菜のスープ・三時のやさしい記録",
+    "japanese": "今日ははるの予定です。十五分たったら塩を少し入れます。火を止めて、二分待ってから食べます。この予定は大切です。",
+    "reading": "きょうははるのよていです。じゅうごふんたったらしおをすこしいれます。ひをとめて、にふんまってからたべます。このよていはたいせつです。",
+    "english": "This is はる's plan for today. A little salt is added after fifteen minutes. The soup is eaten after turning off the heat and waiting two minutes. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "cooking"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ",
+      "vocab-少し-すこし"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-五",
+      "kanji-今",
+      "kanji-入",
+      "kanji-十",
+      "kanji-大",
+      "kanji-日",
+      "kanji-火",
+      "kanji-食"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-007"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-007-main-idea-2",
+      "question-reading-n5-short-007-specific-detail-1",
+      "question-reading-n5-short-007-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 23,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-008",
+    "level": "N5",
+    "passageType": "short",
+    "title": "まいの風の強い日・四時のやさしい記録",
+    "japanese": "今日はまいの予定です。夜には風が弱くなると聞きました。午後から風が強くなるそうです。終わってから、もう一度見ます。",
+    "reading": "きょうはまいのよていです。よるにはかぜがよわくなるとききました。ごごからかぜがつよくなるそうです。おわってから、もういちどみます。",
+    "english": "This is まい's plan for today. They heard the wind will ease at night. The wind is expected to strengthen this afternoon. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "weather"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-午後-ごご"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-午",
+      "kanji-後",
+      "kanji-日",
+      "kanji-聞",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-008"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-008-practical-action-3",
+      "question-reading-n5-short-008-sequence-order-2",
+      "question-reading-n5-short-008-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 24,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-009",
+    "level": "N5",
+    "passageType": "short",
+    "title": "ゆうの町の音楽会・五時のやさしい記録",
+    "japanese": "今日はゆうの予定です。土曜日に町の音楽会があります。会場は川の近くの青空ホールです。分からないので、近くの人に聞きます。",
+    "reading": "きょうはゆうのよていです。どようびにまちのおんがくかいがあります。かいじょうはかわのちかくのあおぞらほーるです。わからないので、ちかくのひとにききます。",
+    "english": "This is ゆう's plan for today. There is a community concert on Saturday. The venue is fictional Aozora Hall near the river. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "events"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-土曜日-どようび",
+      "vocab-近く-ちかく",
+      "vocab-音楽-おんがく"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-土",
+      "kanji-川",
+      "kanji-日",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-009"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-009-main-idea-2",
+      "question-reading-n5-short-009-specific-detail-1",
+      "question-reading-n5-short-009-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 25,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-010",
+    "level": "N5",
+    "passageType": "short",
+    "title": "りんの名前の直し方・六時のやさしい記録",
+    "japanese": "今日はりんの予定です。受付の人に直し方を聞きました。まちがえた所に一本線を引きます。この予定は大切です。",
+    "reading": "きょうはりんのよていです。うけつけのひとになおしかたをききました。まちがえたところにいっぽんせんをひきます。このよていはたいせつです。",
+    "english": "This is りん's plan for today. The receptionist was asked how to correct it. One line is drawn through the error. This plan is important.",
+    "structuredContent": null,
+    "glossary": [
+      {
+        "term": "受付",
+        "reading": "うけつけ",
+        "meaning": "reception desk",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "mistakes-and-corrections"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-大",
+      "kanji-日",
+      "kanji-本",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-010"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-010-false-statement-3",
+      "question-reading-n5-short-010-sequence-order-2",
+      "question-reading-n5-short-010-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 22,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-011",
+    "level": "N5",
+    "passageType": "short",
+    "title": "あきの公園の約束・八時のやさしい記録",
+    "japanese": "今日はあきの予定です。一人が少しおくれると連絡しました。先に来た二人は木の下で本を読みます。終わってから、もう一度見ます。",
+    "reading": "きょうはあきのよていです。ひとりがすこしおくれるとれんらくしました。さきにきたふたりはきのしたでほんをよみます。おわってから、もういちどみます。",
+    "english": "This is あき's plan for today. One friend said they would be a little late. The first two read under a tree. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "friends"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-一人-ひとり",
+      "vocab-二人-ふたり",
+      "vocab-今日-きょう",
+      "vocab-少し-すこし"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-下",
+      "kanji-二",
+      "kanji-人",
+      "kanji-今",
+      "kanji-先",
+      "kanji-日",
+      "kanji-木",
+      "kanji-本",
+      "kanji-来",
+      "kanji-見",
+      "kanji-読"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-011"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-011-main-idea-2",
+      "question-reading-n5-short-011-specific-detail-1",
+      "question-reading-n5-short-011-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 26,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-012",
+    "level": "N5",
+    "passageType": "short",
+    "title": "えみの朝のバス・九時のやさしい記録",
+    "japanese": "今日はえみの予定です。駅に着いたら友だちへ知らせます。朝のバスは駅の北口から出ます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはえみのよていです。えきについたらともだちへしらせます。あさのばすはえきのきたぐちからでます。わからないので、ちかくのひとにききます。",
+    "english": "This is えみ's plan for today. A friend will be notified upon arrival. The morning bus leaves from the station's north exit. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "transport"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-友達-ともだち",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-出",
+      "kanji-北",
+      "kanji-友",
+      "kanji-日",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-012"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-012-practical-action-3",
+      "question-reading-n5-short-012-sequence-order-2",
+      "question-reading-n5-short-012-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 25,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-013",
+    "level": "N5",
+    "passageType": "short",
+    "title": "かいの写真の整理・十時のやさしい記録",
+    "japanese": "今日はかいの予定です。休みの日に古い写真を整理します。同じ場所の写真を一つの箱に入れます。この予定は大切です。",
+    "reading": "きょうはかいのよていです。やすみのひにふるいしゃしんをせいりします。おなじばしょのしゃしんをひとつのはこにいれます。このよていはたいせつです。",
+    "english": "This is かい's plan for today. Old photographs are organized on a day off. Photos from the same place go in one box. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "hobbies"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-一つ-ひとつ",
+      "vocab-今日-きょう",
+      "vocab-休み-やすみ",
+      "vocab-写真-しゃしん",
+      "vocab-古い-ふるい",
+      "vocab-同じ-おなじ",
+      "vocab-大切-たいせつ"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-休",
+      "kanji-入",
+      "kanji-大",
+      "kanji-日"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-013"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-013-main-idea-2",
+      "question-reading-n5-short-013-specific-detail-1",
+      "question-reading-n5-short-013-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 23,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-014",
+    "level": "N5",
+    "passageType": "short",
+    "title": "さきの本の予約・十一時のやさしい記録",
+    "japanese": "今日はさきの予定です。図書館の機械でその本を予約しました。用意できたらメールが来るそうです。終わってから、もう一度見ます。",
+    "reading": "きょうはさきのよていです。としょかんのきかいでそのほんをよやくしました。よういできたらめーるがくるそうです。おわってから、もういちどみます。",
+    "english": "This is さき's plan for today. The book was reserved on the library machine. An email will arrive when it is ready. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "libraries"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-その-その",
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-図書館-としょかん",
+      "vocab-来る-くる"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-日",
+      "kanji-書",
+      "kanji-本",
+      "kanji-来",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-014"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-014-false-statement-3",
+      "question-reading-n5-short-014-sequence-order-2",
+      "question-reading-n5-short-014-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 26,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-015",
+    "level": "N5",
+    "passageType": "short",
+    "title": "たくの青い手ぶくろ・一時のやさしい記録",
+    "japanese": "今日はたくの予定です。そこにはなかったので店の人に聞きました。手ぶくろは店の入口に届いていました。分からないので、近くの人に聞きます。",
+    "reading": "きょうはたくのよていです。そこにはなかったのでみせのひとにききました。てぶくろはみせのいりぐちにとどいていました。わからないので、ちかくのひとにききます。",
+    "english": "This is たく's plan for today. It was not there, so the shop worker was asked. The glove had been handed in at the entrance. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "lost-items"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-そこ-そこ",
+      "vocab-今日-きょう",
+      "vocab-入口-いりぐち",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-入",
+      "kanji-日",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-015"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-015-main-idea-2",
+      "question-reading-n5-short-015-specific-detail-1",
+      "question-reading-n5-short-015-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 28,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-016",
+    "level": "N5",
+    "passageType": "short",
+    "title": "なおの教室の係・二時のやさしい記録",
+    "japanese": "今日はなおの予定です。花の水は昼休みに少しだけあげます。教室では毎週、係がかわります。この予定は大切です。",
+    "reading": "きょうはなおのよていです。はなのみずはひるやすみにすこしだけあげます。きょうしつではまいしゅう、かかりがかわります。このよていはたいせつです。",
+    "english": "This is なお's plan for today. The flowers get a little water at lunch. Classroom duties change every week. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "school"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-では-では",
+      "vocab-今日-きょう",
+      "vocab-休み-やすみ",
+      "vocab-大切-たいせつ",
+      "vocab-少し-すこし",
+      "vocab-教室-きょうしつ",
+      "vocab-毎週-まいしゅう"
+    ],
+    "kanjiIds": [
+      "kanji-今",
+      "kanji-休",
+      "kanji-大",
+      "kanji-日",
+      "kanji-毎",
+      "kanji-水"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-016"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-016-practical-action-3",
+      "question-reading-n5-short-016-sequence-order-2",
+      "question-reading-n5-short-016-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 23,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-017",
+    "level": "N5",
+    "passageType": "short",
+    "title": "はるの海辺の一日・三時のやさしい記録",
+    "japanese": "今日ははるの予定です。旅行の二日目は海の近くを歩きます。午前は古い橋を見て、写真をとります。終わってから、もう一度見ます。",
+    "reading": "きょうははるのよていです。りょこうのふつかめはうみのちかくをあるきます。ごぜんはふるいはしをみて、しゃしんをとります。おわってから、もういちどみます。",
+    "english": "This is はる's plan for today. On the second day, they walk near the sea. In the morning they see an old bridge and take photos. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "travel"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-二日-ふつか",
+      "vocab-今日-きょう",
+      "vocab-写真-しゃしん",
+      "vocab-午前-ごぜん",
+      "vocab-古い-ふるい",
+      "vocab-旅行-りょこう",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-二",
+      "kanji-今",
+      "kanji-前",
+      "kanji-午",
+      "kanji-日",
+      "kanji-行",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-017"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-017-main-idea-2",
+      "question-reading-n5-short-017-specific-detail-1",
+      "question-reading-n5-short-017-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 26,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-018",
+    "level": "N5",
+    "passageType": "short",
+    "title": "まいの歩く目標・四時のやさしい記録",
+    "japanese": "今日はまいの予定です。朝は川まで十五分歩きます。雨の日は建物の中を歩きます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはまいのよていです。あさはかわまでじゅうごふんあるきます。あめのひはたてもののなかをあるきます。わからないので、ちかくのひとにききます。",
+    "english": "This is まい's plan for today. The morning walk to the river takes fifteen minutes. On rainy days, the walking is indoors. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "exercise"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-建物-たてもの",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-中",
+      "kanji-五",
+      "kanji-人",
+      "kanji-今",
+      "kanji-十",
+      "kanji-川",
+      "kanji-日",
+      "kanji-聞",
+      "kanji-雨"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-018"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-018-false-statement-3",
+      "question-reading-n5-short-018-sequence-order-2",
+      "question-reading-n5-short-018-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 24,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-019",
+    "level": "N5",
+    "passageType": "short",
+    "title": "ゆうの荷物の受け取り・五時のやさしい記録",
+    "japanese": "今日はゆうの予定です。明日の夜なら家にいる予定です。荷物は玄関で名前を確認して受け取ります。この予定は大切です。",
+    "reading": "きょうはゆうのよていです。あしたのよるならいえにいるよていです。にもつはげんかんでなまえをかくにんしてうけとります。このよていはたいせつです。",
+    "english": "This is ゆう's plan for today. Someone plans to be home tomorrow evening. The name is checked at the door before receiving it. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "delivery"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-名前-なまえ",
+      "vocab-大切-たいせつ",
+      "vocab-居る-いる",
+      "vocab-明日-あした",
+      "vocab-玄関-げんかん",
+      "vocab-荷物-にもつ"
+    ],
+    "kanjiIds": [
+      "kanji-今",
+      "kanji-前",
+      "kanji-名",
+      "kanji-大",
+      "kanji-日"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-019"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-019-main-idea-2",
+      "question-reading-n5-short-019-specific-detail-1",
+      "question-reading-n5-short-019-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 24,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-020",
+    "level": "N5",
+    "passageType": "short",
+    "title": "りんの共同の台所・六時のやさしい記録",
+    "japanese": "今日はりんの予定です。最後に電気を消したか確かめます。共同の台所は朝六時から使えます。終わってから、もう一度見ます。",
+    "reading": "きょうはりんのよていです。さいごにでんきをけしたかたしかめます。きょうどうのだいどころはあさろくじからつかえます。おわってから、もういちどみます。",
+    "english": "This is りん's plan for today. Finally, users check that the light is off. The shared kitchen can be used from six in the morning. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [
+      {
+        "term": "共同",
+        "reading": "きょうどう",
+        "meaning": "shared; communal",
+        "outOfLevel": true
+      }
+    ],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "rules"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-台所-だいどころ",
+      "vocab-電気-でんき"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-六",
+      "kanji-後",
+      "kanji-日",
+      "kanji-時",
+      "kanji-気",
+      "kanji-見",
+      "kanji-電"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-020"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-020-practical-action-3",
+      "question-reading-n5-short-020-sequence-order-2",
+      "question-reading-n5-short-020-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 25,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-021",
+    "level": "N5",
+    "passageType": "short",
+    "title": "あきの小さな会議・八時のやさしい記録",
+    "japanese": "今日はあきの予定です。午後に短い会議がある予定です。資料は朝のうちに三部作ります。分からないので、近くの人に聞きます。",
+    "reading": "きょうはあきのよていです。ごごにみじかいかいぎがあるよていです。しりょうはあさのうちにさんぶつくります。わからないので、ちかくのひとにききます。",
+    "english": "This is あき's plan for today. A short meeting is planned for the afternoon. Three copies of the material are made in the morning. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "work"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-うち-うち",
+      "vocab-今日-きょう",
+      "vocab-午後-ごご",
+      "vocab-短い-みじかい",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-三",
+      "kanji-人",
+      "kanji-今",
+      "kanji-午",
+      "kanji-後",
+      "kanji-日",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-021"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-021-main-idea-2",
+      "question-reading-n5-short-021-specific-detail-1",
+      "question-reading-n5-short-021-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 25,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-022",
+    "level": "N5",
+    "passageType": "short",
+    "title": "えみの市役所への道・九時のやさしい記録",
+    "japanese": "今日はえみの予定です。二つ目の信号を右へ曲がります。青い本屋のとなりに銀行があります。この予定は大切です。",
+    "reading": "きょうはえみのよていです。ふたつめのしんごうをみぎへまがります。あおいほんやのとなりにぎんこうがあります。このよていはたいせつです。",
+    "english": "This is えみ's plan for today. Turn right at the second traffic light. There is a bank beside the blue bookstore. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "directions"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-二つ-ふたつ",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ",
+      "vocab-銀行-ぎんこう",
+      "vocab-青い-あおい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-今",
+      "kanji-右",
+      "kanji-大",
+      "kanji-日",
+      "kanji-本",
+      "kanji-行"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-022"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-022-false-statement-3",
+      "question-reading-n5-short-022-sequence-order-2",
+      "question-reading-n5-short-022-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 23,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-023",
+    "level": "N5",
+    "passageType": "short",
+    "title": "かいの午後の計画・十時のやさしい記録",
+    "japanese": "今日はかいの予定です。本を返した後で店へ向かいます。荷物が多ければバスで帰ります。終わってから、もう一度見ます。",
+    "reading": "きょうはかいのよていです。ほんをかえしたあとでみせへむかいます。にもつがおおければばすでかえります。おわってから、もういちどみます。",
+    "english": "This is かい's plan for today. The store comes after returning books. If there are many bags, the return trip is by bus. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "plans"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-荷物-にもつ"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-後",
+      "kanji-日",
+      "kanji-本",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-023"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-023-main-idea-2",
+      "question-reading-n5-short-023-specific-detail-1",
+      "question-reading-n5-short-023-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 24,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-024",
+    "level": "N5",
+    "passageType": "short",
+    "title": "さきの宿の部屋・十一時のやさしい記録",
+    "japanese": "今日はさきの予定です。荷物が重いので小さい部屋を選びます。旅行の宿で二つの部屋を見ました。分からないので、近くの人に聞きます。",
+    "reading": "きょうはさきのよていです。にもつがおもいのでちいさいへやをえらびます。りょこうのやどでふたつのへやをみました。わからないので、ちかくのひとにききます。",
+    "english": "This is さき's plan for today. The small room is chosen because the luggage is heavy. Two rooms were viewed at the inn. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "accommodation"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-二つ-ふたつ",
+      "vocab-今日-きょう",
+      "vocab-小さい-ちいさい",
+      "vocab-旅行-りょこう",
+      "vocab-荷物-にもつ",
+      "vocab-近く-ちかく",
+      "vocab-部屋-へや",
+      "vocab-重い-おもい"
+    ],
+    "kanjiIds": [
+      "kanji-二",
+      "kanji-人",
+      "kanji-今",
+      "kanji-小",
+      "kanji-日",
+      "kanji-聞",
+      "kanji-行",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-024"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-024-practical-action-3",
+      "question-reading-n5-short-024-sequence-order-2",
+      "question-reading-n5-short-024-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 27,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-025",
+    "level": "N5",
+    "passageType": "short",
+    "title": "たくの庭への招待・一時のやさしい記録",
+    "japanese": "今日はたくの予定です。友だちから庭でお茶を飲む招待が来ました。土曜日は仕事なので日曜日を希望します。この予定は大切です。",
+    "reading": "きょうはたくのよていです。ともだちからにわでおちゃをのむしょうたいがきました。どようびはしごとなのでにちようびをきぼうします。このよていはたいせつです。",
+    "english": "This is たく's plan for today. A friend invited the writer for tea in the garden. Sunday is preferred because Saturday is a workday. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "invitations"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-お茶-おちゃ",
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-仕事-しごと",
+      "vocab-友達-ともだち",
+      "vocab-土曜日-どようび",
+      "vocab-大切-たいせつ",
+      "vocab-日曜日-にちようび",
+      "vocab-飲む-のむ"
+    ],
+    "kanjiIds": [
+      "kanji-今",
+      "kanji-友",
+      "kanji-土",
+      "kanji-大",
+      "kanji-日",
+      "kanji-来"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-025"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-025-main-idea-2",
+      "question-reading-n5-short-025-specific-detail-1",
+      "question-reading-n5-short-025-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 25,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-026",
+    "level": "N5",
+    "passageType": "short",
+    "title": "なおの買い物のメモ・二時のやさしい記録",
+    "japanese": "今日はなおの予定です。牛乳は一本、卵は六つ必要です。野菜は家にあるので買いません。終わってから、もう一度見ます。",
+    "reading": "きょうはなおのよていです。ぎゅうにゅうはいっぽん、たまごはむっつひつようです。やさいはいえにあるのでかいません。おわってから、もういちどみます。",
+    "english": "This is なお's plan for today. One bottle of milk and six eggs are needed. Vegetables are not bought because there are some at home. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "shopping"
+    ],
+    "grammarIds": [
+      "grammar-node",
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-六つ-むっつ",
+      "vocab-牛乳-ぎゅうにゅう",
+      "vocab-野菜-やさい"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-六",
+      "kanji-日",
+      "kanji-本",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-026"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-026-false-statement-3",
+      "question-reading-n5-short-026-sequence-order-2",
+      "question-reading-n5-short-026-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 24,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-027",
+    "level": "N5",
+    "passageType": "short",
+    "title": "はるの歯医者の時間・三時のやさしい記録",
+    "japanese": "今日ははるの予定です。新しい時間は金曜日の十時です。前の日にもう一度予定を確認します。分からないので、近くの人に聞きます。",
+    "reading": "きょうははるのよていです。あたらしいじかんはきんようびのじゅうじです。まえのひにもういちどよていをかくにんします。わからないので、ちかくのひとにききます。",
+    "english": "This is はる's plan for today. The new time is Friday at ten. The appointment is checked again the day before. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "appointments"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-新しい-あたらしい",
+      "vocab-時間-じかん",
+      "vocab-近く-ちかく",
+      "vocab-金曜日-きんようび"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-前",
+      "kanji-十",
+      "kanji-日",
+      "kanji-時",
+      "kanji-聞",
+      "kanji-金",
+      "kanji-間"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-027"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-027-main-idea-2",
+      "question-reading-n5-short-027-specific-detail-1",
+      "question-reading-n5-short-027-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 26,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-028",
+    "level": "N5",
+    "passageType": "short",
+    "title": "まいの帰宅の伝言・四時のやさしい記録",
+    "japanese": "今日はまいの予定です。予定がかわったら電話をします。母へ帰る時間の伝言をのこしました。この予定は大切です。",
+    "reading": "きょうはまいのよていです。よていがかわったらでんわをします。ははへかえるじかんのでんごんをのこしました。このよていはたいせつです。",
+    "english": "This is まい's plan for today. A call will be made if the plan changes. A message about the return time was left for Mother. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "messages"
+    ],
+    "grammarIds": [
+      "grammar-desu"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ",
+      "vocab-帰る-かえる",
+      "vocab-時間-じかん",
+      "vocab-電話-でんわ"
+    ],
+    "kanjiIds": [
+      "kanji-今",
+      "kanji-大",
+      "kanji-日",
+      "kanji-時",
+      "kanji-母",
+      "kanji-話",
+      "kanji-間",
+      "kanji-電"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-028"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-028-practical-action-3",
+      "question-reading-n5-short-028-sequence-order-2",
+      "question-reading-n5-short-028-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 23,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-029",
+    "level": "N5",
+    "passageType": "short",
+    "title": "ゆうの新しい広場・五時のやさしい記録",
+    "japanese": "今日はゆうの予定です。近所に小さな広場ができました。朝は子どもが遊び、夕方は犬を連れた人が来ます。終わってから、もう一度見ます。",
+    "reading": "きょうはゆうのよていです。きんじょにちいさいひろばができました。あさはこどもがあそび、ゆうがたはいぬをつれたひとがきます。おわってから、もういちどみます。",
+    "english": "This is ゆう's plan for today. A small square opened in the neighbourhood. Children visit in the morning and dog walkers in the evening. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "neighbourhoods"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-夕方-ゆうがた",
+      "vocab-子供-こども",
+      "vocab-小さな-ちいさな"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-人",
+      "kanji-今",
+      "kanji-子",
+      "kanji-小",
+      "kanji-日",
+      "kanji-来",
+      "kanji-見"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-029"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-029-main-idea-2",
+      "question-reading-n5-short-029-specific-detail-1",
+      "question-reading-n5-short-029-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 27,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-030",
+    "level": "N5",
+    "passageType": "short",
+    "title": "りんの夜の準備・六時のやさしい記録",
+    "japanese": "今日はりんの予定です。着る物と持って行く本を出しておきます。目覚まし時計は七時に合わせます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはりんのよていです。きるものともっていくほんをだしておきます。めざましどけいはしちじにあわせます。わからないので、ちかくのひとにききます。",
+    "english": "This is りん's plan for today. Clothes and books are set out in advance. The alarm is set for seven. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "topicTags": [
+      "daily-routines"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-時計-とけい",
+      "vocab-着る-きる",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-七",
+      "kanji-人",
+      "kanji-今",
+      "kanji-出",
+      "kanji-日",
+      "kanji-時",
+      "kanji-本",
+      "kanji-聞",
+      "kanji-行"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-030"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-030-false-statement-3",
+      "question-reading-n5-short-030-sequence-order-2",
+      "question-reading-n5-short-030-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 27,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-031",
+    "level": "N5",
+    "passageType": "short",
+    "title": "あきの昼のおべんとう・八時のやさしい記録",
+    "japanese": "今日はあきの予定です。スープは重いので家で飲みます。昼にはお茶を買うつもりです。この予定は大切です。",
+    "reading": "きょうはあきのよていです。すーぷはおもいのでいえでのみます。ひるにはおちゃをかうつもりです。このよていはたいせつです。",
+    "english": "This is あき's plan for today. The soup is left at home because it is heavy. The plan is to buy tea at lunchtime. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "food"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-お茶-おちゃ",
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ",
+      "vocab-買う-かう",
+      "vocab-重い-おもい"
+    ],
+    "kanjiIds": [
+      "kanji-今",
+      "kanji-大",
+      "kanji-日"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-031"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-031-main-idea-2",
+      "question-reading-n5-short-031-specific-detail-1",
+      "question-reading-n5-short-031-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 21,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-032",
+    "level": "N5",
+    "passageType": "short",
+    "title": "えみの一日の順番・九時のやさしい記録",
+    "japanese": "今日はえみの予定です。全部終わったら友だちに電話します。朝は銀行へ行く予定です。終わってから、もう一度見ます。",
+    "reading": "きょうはえみのよていです。ぜんぶおわったらともだちにでんわします。あさはぎんこうへいくよていです。おわってから、もういちどみます。",
+    "english": "This is えみ's plan for today. A friend is called when everything is finished. The bank is planned for the morning. After finishing, it is checked once more.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "schedules"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-もう-もう",
+      "vocab-今日-きょう",
+      "vocab-全部-ぜんぶ",
+      "vocab-友達-ともだち",
+      "vocab-話-はなし",
+      "vocab-銀行-ぎんこう",
+      "vocab-電話-でんわ"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-今",
+      "kanji-友",
+      "kanji-日",
+      "kanji-行",
+      "kanji-見",
+      "kanji-話",
+      "kanji-電"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-032"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-032-practical-action-3",
+      "question-reading-n5-short-032-sequence-order-2",
+      "question-reading-n5-short-032-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 23,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-033",
+    "level": "N5",
+    "passageType": "short",
+    "title": "かいの資料のお礼・十時のやさしい記録",
+    "japanese": "今日はかいの予定です。仕事の資料を送ってくれた人へメールします。まず、早く送ってくれたお礼を書きます。分からないので、近くの人に聞きます。",
+    "reading": "きょうはかいのよていです。しごとのしりょうをおくってくれたひとへめーるします。まず、はやくおくってくれたおれいをかきます。わからないので、ちかくのひとにききます。",
+    "english": "This is かい's plan for today. An email is sent to the person who provided work materials. First, thanks are given for sending them early. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "email"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-仕事-しごと",
+      "vocab-近く-ちかく"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-日",
+      "kanji-書",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-033"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-033-main-idea-2",
+      "question-reading-n5-short-033-specific-detail-1",
+      "question-reading-n5-short-033-true-statement-3"
+    ],
+    "estimatedReadingSeconds": 29,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-034",
+    "level": "N5",
+    "passageType": "short",
+    "title": "さきの写真の送り方・十一時のやさしい記録",
+    "japanese": "今日はさきの予定です。同じ写真を消してから送りたい物を選びます。大きい写真は一度に二まいだけ送ります。この予定は大切です。",
+    "reading": "きょうはさきのよていです。おなじしゃしんをけしてからおくりたいものをえらびます。おおきいしゃしんはいちどににまいだけおくります。このよていはたいせつです。",
+    "english": "This is さき's plan for today. Duplicates are deleted before choosing photos to send. Only two large photos are sent at once. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "technology"
+    ],
+    "grammarIds": [
+      "grammar-tekara"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-写真-しゃしん",
+      "vocab-同じ-おなじ",
+      "vocab-大きい-おおきい",
+      "vocab-大切-たいせつ"
+    ],
+    "kanjiIds": [
+      "kanji-一",
+      "kanji-二",
+      "kanji-今",
+      "kanji-大",
+      "kanji-日"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-034"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-034-false-statement-3",
+      "question-reading-n5-short-034-sequence-order-2",
+      "question-reading-n5-short-034-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 26,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-035",
+    "level": "N5",
+    "passageType": "short",
+    "title": "たくの家の仕事・一時のやさしい記録",
+    "japanese": "今日はたくの予定です。みんなでするので、早く終わります。朝、まどを開けて部屋をそうじします。分からないので、近くの人に聞きます。",
+    "reading": "きょうはたくのよていです。みんなでするので、はやくおわります。あさ、まどをあけてへやをそうじします。わからないので、ちかくのひとにききます。",
+    "english": "This is たく's plan for today. Because everyone helps, the work finishes early. In the morning, the room is aired and cleaned. Because it is unclear, someone nearby is asked.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "home"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-今日-きょう",
+      "vocab-近く-ちかく",
+      "vocab-部屋-へや"
+    ],
+    "kanjiIds": [
+      "kanji-人",
+      "kanji-今",
+      "kanji-日",
+      "kanji-聞"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-035"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-035-main-idea-2",
+      "question-reading-n5-short-035-specific-detail-1",
+      "question-reading-n5-short-035-vocabulary-context-3"
+    ],
+    "estimatedReadingSeconds": 27,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "reading-passage-n5-short-036",
+    "level": "N5",
+    "passageType": "short",
+    "title": "なおの静かな席・二時のやさしい記録",
+    "japanese": "今日はなおの予定です。昼の店はこんでいます。小さい子どもがいるので広い席をたのみます。この予定は大切です。",
+    "reading": "きょうはなおのよていです。ひるのみせはこんでいます。ちいさいこどもがいるのでひろいせきをたのみます。このよていはたいせつです。",
+    "english": "This is なお's plan for today. The restaurant is crowded at noon. A wide table is requested because there is a small child. This plan is important.",
+    "structuredContent": null,
+    "glossary": [],
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "topicTags": [
+      "restaurants"
+    ],
+    "grammarIds": [
+      "grammar-node"
+    ],
+    "vocabularyIds": [
+      "vocab-この-この",
+      "vocab-今日-きょう",
+      "vocab-大切-たいせつ",
+      "vocab-子供-こども",
+      "vocab-小さい-ちいさい",
+      "vocab-居る-いる",
+      "vocab-広い-ひろい"
+    ],
+    "kanjiIds": [
+      "kanji-今",
+      "kanji-大",
+      "kanji-子",
+      "kanji-小",
+      "kanji-日"
+    ],
+    "curriculumUnitIds": [
+      "n5-unit-036"
+    ],
+    "questionIds": [
+      "question-reading-n5-short-036-practical-action-3",
+      "question-reading-n5-short-036-sequence-order-2",
+      "question-reading-n5-short-036-specific-detail-1"
+    ],
+    "estimatedReadingSeconds": 23,
+    "sourceIds": [
+      "japango-reading-passage-corpus-n5"
+    ],
+    "attribution": [
+      "Original JapanGo editorial content; JLPT-aligned, not official JLPT material."
+    ],
+    "provenance": {
+      "sourceType": "original-japango",
+      "authoringMethod": "original-editorial-authoring"
+    },
+    "reviewStatus": "development-only",
+    "releaseBlockers": [
+      "curriculum-parent-not-release-ready"
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false
+  }
+]

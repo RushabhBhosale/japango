@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:kvg="http://kanjivg.tagaini.net">
+  <g id="kvg:StrokePaths_098df" kvg:element="食">
+    <g id="kvg:098df-g1" kvg:element="人">
+      <path id="kvg:098df-s1" d="M1,1 L2,2" />
+    </g>
+    <g id="kvg:098df-g2" kvg:element="良">
+      <path id="kvg:098df-s2" d="M2,2 L3,3" />
+    </g>
+    <g id="kvg:098df-g3" kvg:element="人">
+      <path id="kvg:098df-s3" d="M3,3 L4,4" />
+    </g>
+  </g>
+</svg>

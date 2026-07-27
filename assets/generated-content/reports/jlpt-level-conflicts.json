@@ -1,0 +1,354 @@
+[
+  {
+    "type": "kanji",
+    "identity": "安",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "飲",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "駅",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "花",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "会",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "魚",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "空",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "言",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "古",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "口",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "社",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "手",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "週",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "少",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "新",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "足",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "多",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "店",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "道",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "買",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "目",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "kanji",
+    "identity": "立",
+    "candidateLevels": [
+      "N4",
+      "N5"
+    ],
+    "supportingSources": [
+      "jlpt-kanji",
+      "kanjidic2-legacy"
+    ],
+    "chosenLevel": "N4",
+    "resolutionRule": "Dedicated JLPT mapping overrides legacy KANJIDIC2 metadata.",
+    "confidence": 0.9,
+    "needsReview": true
+  }
+]

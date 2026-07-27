@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "fixedTimestamp": "2026-07-26T00:00:00.000Z",
+  "builds": [
+    {
+      "label": "fixed-build-a",
+      "digests": {
+        "canonicalVocabulary": "sha256:e62e10b94a65a1034c6a3f8afbe6a39adece7a7cce872069118622ddd9e24cb7",
+        "canonicalKanji": "sha256:65ccbfb99459f7a5f2706a17d6a0313716c45ef44439e4d1dcebc8440e90978a",
+        "vocabularyQuestions": "sha256:bfdce7b93d0fbdf1c768f2d1b406405b4b4b38a53c947970dcfb11556c66aa79",
+        "kanjiQuestions": "sha256:38a18c8a474ee2d63c3c2afc4a1bae081fd4dcf3586534785166bfd4d8476bfd",
+        "phase5Options": "sha256:838418ca6480de40a9b80b96214c06af2d845f3e63827b4a6ecb21a91afa1180",
+        "phase5Targets": "sha256:36585f519dd2f0bcb0dbfceff31a7a57a5694cdfc301c22c0ecf3abf6d3ed03d",
+        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
+        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
+        "sqliteVerificationPayload": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d"
+      }
+    },
+    {
+      "label": "fixed-build-b",
+      "digests": {
+        "canonicalVocabulary": "sha256:e62e10b94a65a1034c6a3f8afbe6a39adece7a7cce872069118622ddd9e24cb7",
+        "canonicalKanji": "sha256:65ccbfb99459f7a5f2706a17d6a0313716c45ef44439e4d1dcebc8440e90978a",
+        "vocabularyQuestions": "sha256:bfdce7b93d0fbdf1c768f2d1b406405b4b4b38a53c947970dcfb11556c66aa79",
+        "kanjiQuestions": "sha256:38a18c8a474ee2d63c3c2afc4a1bae081fd4dcf3586534785166bfd4d8476bfd",
+        "phase5Options": "sha256:838418ca6480de40a9b80b96214c06af2d845f3e63827b4a6ecb21a91afa1180",
+        "phase5Targets": "sha256:36585f519dd2f0bcb0dbfceff31a7a57a5694cdfc301c22c0ecf3abf6d3ed03d",
+        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
+        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
+        "sqliteVerificationPayload": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d"
+      }
+    }
+  ],
+  "identical": true
+}

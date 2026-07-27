@@ -1,0 +1,149 @@
+import { describe, expect, it } from 'vitest';
+
+import {
+  CURRENT_DATABASE_VERSION,
+  databaseMigrations,
+  runMigrations,
+  type MigrationDatabase,
+} from './migrations';
+
+class FakeMigrationDatabase implements MigrationDatabase {
+  transactionCount = 0;
+  executedSql: string[] = [];
+  failOnLearningContentSchema = false;
+
+  constructor(public userVersion: number) {}
+
+  async getFirstAsync<T>(source: string): Promise<T | null> {
+    if (source !== 'PRAGMA user_version') throw new Error(`Unexpected query: ${source}`);
+    return { user_version: this.userVersion } as T;
+  }
+
+  async execAsync(source: string): Promise<void> {
+    this.executedSql.push(source);
+    if (
+      this.failOnLearningContentSchema &&
+      source.includes('CREATE TABLE IF NOT EXISTS sentences')
+    ) {
+      throw new Error('simulated migration failure');
+    }
+    const version = source.match(/^PRAGMA user_version = (\d+)$/u)?.[1];
+    if (version) this.userVersion = Number(version);
+  }
+
+  async withTransactionAsync(operation: () => Promise<void>): Promise<void> {
+    this.transactionCount += 1;
+    const versionSnapshot = this.userVersion;
+    try {
+      await operation();
+    } catch (error) {
+      this.userVersion = versionSnapshot;
+      throw error;
+    }
+  }
+}
+
+describe('SQLite migrations', () => {
+  it('applies every missing version in its own transaction', async () => {
+    const database = new FakeMigrationDatabase(0);
+
+    await runMigrations(database);
+
+    expect(database.userVersion).toBe(CURRENT_DATABASE_VERSION);
+    expect(database.transactionCount).toBe(6);
+    expect(
+      database.executedSql.filter((sql) => sql.startsWith('PRAGMA user_version =')),
+    ).toEqual([
+      'PRAGMA user_version = 1',
+      'PRAGMA user_version = 2',
+      'PRAGMA user_version = 3',
+      'PRAGMA user_version = 4',
+      'PRAGMA user_version = 5',
+      'PRAGMA user_version = 6',
+    ]);
+  });
+
+  it('applies v2 through v6 to an existing v1 database and creates no content rows', async () => {
+    const database = new FakeMigrationDatabase(1);
+
+    await runMigrations(database);
+
+    expect(database.transactionCount).toBe(5);
+    expect(database.userVersion).toBe(6);
+    const schemaSql = database.executedSql[0] ?? '';
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS content_import_batches');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS sentences');
+    expect(schemaSql).toContain('schema_version INTEGER NOT NULL');
+    expect(schemaSql).toContain('source_ids_json TEXT NOT NULL');
+    expect(schemaSql).toContain('attribution_json TEXT NOT NULL');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS sentence_grammar_relationships');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS sentence_vocabulary_relationships');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS sentence_kanji_relationships');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS sentence_curriculum_relationships');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS questions');
+    expect(schemaSql).toContain('exam_metadata_json TEXT');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS question_options');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS question_target_relationships');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS learning_item_metadata');
+    expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS review_queue');
+    expect(schemaSql).toContain('CREATE VIEW IF NOT EXISTS grammar_example_view');
+    expect(schemaSql).toContain('CREATE VIEW IF NOT EXISTS vocabulary_example_view');
+    expect(schemaSql).toContain('CREATE VIEW IF NOT EXISTS kanji_example_view');
+    expect(schemaSql).not.toMatch(/\bINSERT\s+INTO\b/iu);
+    expect(schemaSql).not.toMatch(/\bVALUES\s*\(/iu);
+    expect(database.executedSql[2]).toContain(
+      "ALTER TABLE sentences ADD COLUMN editorial_json",
+    );
+    expect(database.executedSql[4]).toContain('CREATE TABLE IF NOT EXISTS reading_passages');
+    expect(database.executedSql[4]).toContain('CREATE TABLE IF NOT EXISTS reading_question_target_relationships');
+    expect(database.executedSql[6]).toContain('CREATE TABLE IF NOT EXISTS listening_speakers');
+    expect(database.executedSql[6]).toContain('CREATE TABLE IF NOT EXISTS listening_activities');
+    expect(database.executedSql[6]).toContain('CREATE TABLE IF NOT EXISTS listening_turns');
+    expect(database.executedSql[6]).toContain('CREATE TABLE IF NOT EXISTS listening_transcripts');
+    expect(database.executedSql[6]).toContain('CREATE TABLE IF NOT EXISTS listening_question_target_relationships');
+    expect(database.executedSql[6]).toContain('CREATE VIEW IF NOT EXISTS listening_quiz_view');
+    expect(database.executedSql[6]).toContain('CREATE VIEW IF NOT EXISTS listening_review_view');
+    expect(database.executedSql[6]).toContain('CREATE VIEW IF NOT EXISTS listening_study_view');
+    expect(database.executedSql[6]).toContain('CREATE VIEW IF NOT EXISTS listening_question_view');
+    expect(database.executedSql[8]).toContain('CREATE TABLE IF NOT EXISTS assessment_blueprints');
+    expect(database.executedSql[8]).toContain('CREATE TABLE IF NOT EXISTS assessment_snapshots');
+    expect(database.executedSql[8]).toContain('CREATE TABLE IF NOT EXISTS assessment_question_placements');
+  });
+
+  it('does nothing when the database is current', async () => {
+    const database = new FakeMigrationDatabase(CURRENT_DATABASE_VERSION);
+
+    await runMigrations(database);
+
+    expect(database.transactionCount).toBe(0);
+    expect(database.executedSql).toEqual([]);
+  });
+
+  it('rejects a database newer than this app without attempting a migration', async () => {
+    const database = new FakeMigrationDatabase(CURRENT_DATABASE_VERSION + 1);
+
+    await expect(runMigrations(database)).rejects.toThrow(
+      'is newer than supported version',
+    );
+    expect(database.transactionCount).toBe(0);
+    expect(database.executedSql).toEqual([]);
+  });
+
+  it('leaves the previous user version intact when a migration transaction fails', async () => {
+    const database = new FakeMigrationDatabase(1);
+    database.failOnLearningContentSchema = true;
+
+    await expect(runMigrations(database)).rejects.toThrow(
+      'simulated migration failure',
+    );
+
+    expect(database.userVersion).toBe(1);
+    expect(database.transactionCount).toBe(1);
+  });
+
+  it('keeps migration definitions contiguous and schema-only through v6', () => {
+    expect(databaseMigrations.map(({ version }) => version)).toEqual([1, 2, 3, 4, 5, 6]);
+    expect(databaseMigrations.at(-1)?.version).toBe(CURRENT_DATABASE_VERSION);
+    expect(databaseMigrations.every(({ sql }) => !/\bINSERT\s+INTO\b/iu.test(sql))).toBe(true);
+  });
+});

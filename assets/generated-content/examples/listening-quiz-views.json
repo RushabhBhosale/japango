@@ -1,0 +1,4046 @@
+[
+  {
+    "activityId": "listening-activity-n4-appropriate-response-001",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-001",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-001-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-002",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-002",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-002-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-003",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-003",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-003-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-004",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-004",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-004-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-005",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-005",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-005-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-006",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-006",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-006-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-007",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-007",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-007-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-008",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-008",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-008-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-009",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-009",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-009-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-010",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-010",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-010-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-011",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-011",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-011-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-012",
+    "level": "N4",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-appropriate-response-012",
+    "questionIds": [
+      "question-listening-n4-appropriate-response-012-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-001",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-001",
+    "questionIds": [
+      "question-listening-n4-dialogue-001-reason-for-action-3",
+      "question-listening-n4-dialogue-001-simple-inference-2",
+      "question-listening-n4-dialogue-001-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-002",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-002",
+    "questionIds": [
+      "question-listening-n4-dialogue-002-information-matching-2",
+      "question-listening-n4-dialogue-002-sequence-3",
+      "question-listening-n4-dialogue-002-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-003",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-003",
+    "questionIds": [
+      "question-listening-n4-dialogue-003-speaker-intention-2",
+      "question-listening-n4-dialogue-003-specific-detail-1",
+      "question-listening-n4-dialogue-003-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-004",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-004",
+    "questionIds": [
+      "question-listening-n4-dialogue-004-reason-for-action-3",
+      "question-listening-n4-dialogue-004-speaker-relationship-2",
+      "question-listening-n4-dialogue-004-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-005",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-005",
+    "questionIds": [
+      "question-listening-n4-dialogue-005-reference-resolution-2",
+      "question-listening-n4-dialogue-005-sequence-3",
+      "question-listening-n4-dialogue-005-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-006",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-006",
+    "questionIds": [
+      "question-listening-n4-dialogue-006-simple-inference-2",
+      "question-listening-n4-dialogue-006-specific-detail-1",
+      "question-listening-n4-dialogue-006-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-007",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-007",
+    "questionIds": [
+      "question-listening-n4-dialogue-007-information-matching-2",
+      "question-listening-n4-dialogue-007-reason-for-action-3",
+      "question-listening-n4-dialogue-007-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-008",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-008",
+    "questionIds": [
+      "question-listening-n4-dialogue-008-sequence-3",
+      "question-listening-n4-dialogue-008-speaker-intention-2",
+      "question-listening-n4-dialogue-008-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-009",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-009",
+    "questionIds": [
+      "question-listening-n4-dialogue-009-speaker-relationship-2",
+      "question-listening-n4-dialogue-009-specific-detail-1",
+      "question-listening-n4-dialogue-009-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-010",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-010",
+    "questionIds": [
+      "question-listening-n4-dialogue-010-reason-for-action-3",
+      "question-listening-n4-dialogue-010-reference-resolution-2",
+      "question-listening-n4-dialogue-010-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-011",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-011",
+    "questionIds": [
+      "question-listening-n4-dialogue-011-sequence-3",
+      "question-listening-n4-dialogue-011-simple-inference-2",
+      "question-listening-n4-dialogue-011-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-012",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-012",
+    "questionIds": [
+      "question-listening-n4-dialogue-012-information-matching-2",
+      "question-listening-n4-dialogue-012-specific-detail-1",
+      "question-listening-n4-dialogue-012-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-013",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-013",
+    "questionIds": [
+      "question-listening-n4-dialogue-013-reason-for-action-3",
+      "question-listening-n4-dialogue-013-speaker-intention-2",
+      "question-listening-n4-dialogue-013-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-014",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-014",
+    "questionIds": [
+      "question-listening-n4-dialogue-014-sequence-3",
+      "question-listening-n4-dialogue-014-speaker-relationship-2",
+      "question-listening-n4-dialogue-014-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-015",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-015",
+    "questionIds": [
+      "question-listening-n4-dialogue-015-reference-resolution-2",
+      "question-listening-n4-dialogue-015-specific-detail-1",
+      "question-listening-n4-dialogue-015-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-016",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-016",
+    "questionIds": [
+      "question-listening-n4-dialogue-016-reason-for-action-3",
+      "question-listening-n4-dialogue-016-simple-inference-2",
+      "question-listening-n4-dialogue-016-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-017",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-017",
+    "questionIds": [
+      "question-listening-n4-dialogue-017-information-matching-2",
+      "question-listening-n4-dialogue-017-sequence-3",
+      "question-listening-n4-dialogue-017-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-018",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-018",
+    "questionIds": [
+      "question-listening-n4-dialogue-018-speaker-intention-2",
+      "question-listening-n4-dialogue-018-specific-detail-1",
+      "question-listening-n4-dialogue-018-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-019",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-019",
+    "questionIds": [
+      "question-listening-n4-dialogue-019-reason-for-action-3",
+      "question-listening-n4-dialogue-019-speaker-relationship-2",
+      "question-listening-n4-dialogue-019-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-020",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-020",
+    "questionIds": [
+      "question-listening-n4-dialogue-020-reference-resolution-2",
+      "question-listening-n4-dialogue-020-sequence-3",
+      "question-listening-n4-dialogue-020-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-021",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-021",
+    "questionIds": [
+      "question-listening-n4-dialogue-021-simple-inference-2",
+      "question-listening-n4-dialogue-021-specific-detail-1",
+      "question-listening-n4-dialogue-021-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-022",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-022",
+    "questionIds": [
+      "question-listening-n4-dialogue-022-information-matching-2",
+      "question-listening-n4-dialogue-022-reason-for-action-3",
+      "question-listening-n4-dialogue-022-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-023",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-023",
+    "questionIds": [
+      "question-listening-n4-dialogue-023-sequence-3",
+      "question-listening-n4-dialogue-023-speaker-intention-2",
+      "question-listening-n4-dialogue-023-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-024",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-024",
+    "questionIds": [
+      "question-listening-n4-dialogue-024-speaker-relationship-2",
+      "question-listening-n4-dialogue-024-specific-detail-1",
+      "question-listening-n4-dialogue-024-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-025",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-025",
+    "questionIds": [
+      "question-listening-n4-dialogue-025-reason-for-action-3",
+      "question-listening-n4-dialogue-025-reference-resolution-2",
+      "question-listening-n4-dialogue-025-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-026",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-026",
+    "questionIds": [
+      "question-listening-n4-dialogue-026-sequence-3",
+      "question-listening-n4-dialogue-026-simple-inference-2",
+      "question-listening-n4-dialogue-026-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-027",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-027",
+    "questionIds": [
+      "question-listening-n4-dialogue-027-information-matching-2",
+      "question-listening-n4-dialogue-027-specific-detail-1",
+      "question-listening-n4-dialogue-027-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-028",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-028",
+    "questionIds": [
+      "question-listening-n4-dialogue-028-reason-for-action-3",
+      "question-listening-n4-dialogue-028-speaker-intention-2",
+      "question-listening-n4-dialogue-028-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-029",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-029",
+    "questionIds": [
+      "question-listening-n4-dialogue-029-sequence-3",
+      "question-listening-n4-dialogue-029-speaker-relationship-2",
+      "question-listening-n4-dialogue-029-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-030",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-030",
+    "questionIds": [
+      "question-listening-n4-dialogue-030-reference-resolution-2",
+      "question-listening-n4-dialogue-030-specific-detail-1",
+      "question-listening-n4-dialogue-030-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-031",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-031",
+    "questionIds": [
+      "question-listening-n4-dialogue-031-reason-for-action-3",
+      "question-listening-n4-dialogue-031-simple-inference-2",
+      "question-listening-n4-dialogue-031-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-032",
+    "level": "N4",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-dialogue-032",
+    "questionIds": [
+      "question-listening-n4-dialogue-032-information-matching-2",
+      "question-listening-n4-dialogue-032-sequence-3",
+      "question-listening-n4-dialogue-032-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-001",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-001",
+    "questionIds": [
+      "question-listening-n4-practical-information-001-condition-rule-3",
+      "question-listening-n4-practical-information-001-date-interpretation-2",
+      "question-listening-n4-practical-information-001-practical-action-4",
+      "question-listening-n4-practical-information-001-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-002",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-002",
+    "questionIds": [
+      "question-listening-n4-practical-information-002-condition-rule-3",
+      "question-listening-n4-practical-information-002-practical-action-4",
+      "question-listening-n4-practical-information-002-price-quantity-interpretation-2",
+      "question-listening-n4-practical-information-002-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-003",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-003",
+    "questionIds": [
+      "question-listening-n4-practical-information-003-condition-rule-3",
+      "question-listening-n4-practical-information-003-location-2",
+      "question-listening-n4-practical-information-003-practical-action-4",
+      "question-listening-n4-practical-information-003-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-004",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-004",
+    "questionIds": [
+      "question-listening-n4-practical-information-004-condition-rule-3",
+      "question-listening-n4-practical-information-004-date-interpretation-2",
+      "question-listening-n4-practical-information-004-practical-action-4",
+      "question-listening-n4-practical-information-004-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-005",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-005",
+    "questionIds": [
+      "question-listening-n4-practical-information-005-condition-rule-3",
+      "question-listening-n4-practical-information-005-practical-action-4",
+      "question-listening-n4-practical-information-005-price-quantity-interpretation-2",
+      "question-listening-n4-practical-information-005-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-006",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-006",
+    "questionIds": [
+      "question-listening-n4-practical-information-006-condition-rule-3",
+      "question-listening-n4-practical-information-006-location-2",
+      "question-listening-n4-practical-information-006-practical-action-4",
+      "question-listening-n4-practical-information-006-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-007",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-007",
+    "questionIds": [
+      "question-listening-n4-practical-information-007-condition-rule-3",
+      "question-listening-n4-practical-information-007-date-interpretation-2",
+      "question-listening-n4-practical-information-007-practical-action-4",
+      "question-listening-n4-practical-information-007-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-008",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-008",
+    "questionIds": [
+      "question-listening-n4-practical-information-008-condition-rule-3",
+      "question-listening-n4-practical-information-008-practical-action-4",
+      "question-listening-n4-practical-information-008-price-quantity-interpretation-2",
+      "question-listening-n4-practical-information-008-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-009",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-009",
+    "questionIds": [
+      "question-listening-n4-practical-information-009-condition-rule-3",
+      "question-listening-n4-practical-information-009-location-2",
+      "question-listening-n4-practical-information-009-practical-action-4",
+      "question-listening-n4-practical-information-009-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-010",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-010",
+    "questionIds": [
+      "question-listening-n4-practical-information-010-condition-rule-3",
+      "question-listening-n4-practical-information-010-date-interpretation-2",
+      "question-listening-n4-practical-information-010-practical-action-4",
+      "question-listening-n4-practical-information-010-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-011",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-011",
+    "questionIds": [
+      "question-listening-n4-practical-information-011-condition-rule-3",
+      "question-listening-n4-practical-information-011-practical-action-4",
+      "question-listening-n4-practical-information-011-price-quantity-interpretation-2",
+      "question-listening-n4-practical-information-011-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-012",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-012",
+    "questionIds": [
+      "question-listening-n4-practical-information-012-condition-rule-3",
+      "question-listening-n4-practical-information-012-location-2",
+      "question-listening-n4-practical-information-012-practical-action-4",
+      "question-listening-n4-practical-information-012-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-013",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-013",
+    "questionIds": [
+      "question-listening-n4-practical-information-013-condition-rule-3",
+      "question-listening-n4-practical-information-013-date-interpretation-2",
+      "question-listening-n4-practical-information-013-practical-action-4",
+      "question-listening-n4-practical-information-013-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-014",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-014",
+    "questionIds": [
+      "question-listening-n4-practical-information-014-condition-rule-3",
+      "question-listening-n4-practical-information-014-practical-action-4",
+      "question-listening-n4-practical-information-014-price-quantity-interpretation-2",
+      "question-listening-n4-practical-information-014-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-015",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-015",
+    "questionIds": [
+      "question-listening-n4-practical-information-015-condition-rule-3",
+      "question-listening-n4-practical-information-015-location-2",
+      "question-listening-n4-practical-information-015-practical-action-4",
+      "question-listening-n4-practical-information-015-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-016",
+    "level": "N4",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n4-practical-information-016",
+    "questionIds": [
+      "question-listening-n4-practical-information-016-condition-rule-3",
+      "question-listening-n4-practical-information-016-date-interpretation-2",
+      "question-listening-n4-practical-information-016-practical-action-4",
+      "question-listening-n4-practical-information-016-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-001",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-001",
+    "questionIds": [
+      "question-listening-n4-short-monologue-001-main-idea-1",
+      "question-listening-n4-short-monologue-001-sequence-3",
+      "question-listening-n4-short-monologue-001-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-002",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-002",
+    "questionIds": [
+      "question-listening-n4-short-monologue-002-main-idea-1",
+      "question-listening-n4-short-monologue-002-specific-detail-2",
+      "question-listening-n4-short-monologue-002-true-statement-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-003",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-003",
+    "questionIds": [
+      "question-listening-n4-short-monologue-003-false-statement-3",
+      "question-listening-n4-short-monologue-003-main-idea-1",
+      "question-listening-n4-short-monologue-003-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-004",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-004",
+    "questionIds": [
+      "question-listening-n4-short-monologue-004-best-summary-3",
+      "question-listening-n4-short-monologue-004-main-idea-1",
+      "question-listening-n4-short-monologue-004-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-005",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-005",
+    "questionIds": [
+      "question-listening-n4-short-monologue-005-main-idea-1",
+      "question-listening-n4-short-monologue-005-specific-detail-2",
+      "question-listening-n4-short-monologue-005-vocabulary-context-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-006",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-006",
+    "questionIds": [
+      "question-listening-n4-short-monologue-006-grammar-context-3",
+      "question-listening-n4-short-monologue-006-main-idea-1",
+      "question-listening-n4-short-monologue-006-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-007",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-007",
+    "questionIds": [
+      "question-listening-n4-short-monologue-007-main-idea-1",
+      "question-listening-n4-short-monologue-007-reason-for-action-3",
+      "question-listening-n4-short-monologue-007-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-008",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-008",
+    "questionIds": [
+      "question-listening-n4-short-monologue-008-main-idea-1",
+      "question-listening-n4-short-monologue-008-sequence-3",
+      "question-listening-n4-short-monologue-008-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-009",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-009",
+    "questionIds": [
+      "question-listening-n4-short-monologue-009-main-idea-1",
+      "question-listening-n4-short-monologue-009-specific-detail-2",
+      "question-listening-n4-short-monologue-009-true-statement-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-010",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-010",
+    "questionIds": [
+      "question-listening-n4-short-monologue-010-false-statement-3",
+      "question-listening-n4-short-monologue-010-main-idea-1",
+      "question-listening-n4-short-monologue-010-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-011",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-011",
+    "questionIds": [
+      "question-listening-n4-short-monologue-011-best-summary-3",
+      "question-listening-n4-short-monologue-011-main-idea-1",
+      "question-listening-n4-short-monologue-011-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-012",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-012",
+    "questionIds": [
+      "question-listening-n4-short-monologue-012-main-idea-1",
+      "question-listening-n4-short-monologue-012-specific-detail-2",
+      "question-listening-n4-short-monologue-012-vocabulary-context-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-013",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-013",
+    "questionIds": [
+      "question-listening-n4-short-monologue-013-grammar-context-3",
+      "question-listening-n4-short-monologue-013-main-idea-1",
+      "question-listening-n4-short-monologue-013-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-014",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-014",
+    "questionIds": [
+      "question-listening-n4-short-monologue-014-main-idea-1",
+      "question-listening-n4-short-monologue-014-reason-for-action-3",
+      "question-listening-n4-short-monologue-014-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-015",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-015",
+    "questionIds": [
+      "question-listening-n4-short-monologue-015-main-idea-1",
+      "question-listening-n4-short-monologue-015-sequence-3",
+      "question-listening-n4-short-monologue-015-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-016",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-016",
+    "questionIds": [
+      "question-listening-n4-short-monologue-016-main-idea-1",
+      "question-listening-n4-short-monologue-016-specific-detail-2",
+      "question-listening-n4-short-monologue-016-true-statement-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-017",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-017",
+    "questionIds": [
+      "question-listening-n4-short-monologue-017-false-statement-3",
+      "question-listening-n4-short-monologue-017-main-idea-1",
+      "question-listening-n4-short-monologue-017-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-018",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-018",
+    "questionIds": [
+      "question-listening-n4-short-monologue-018-best-summary-3",
+      "question-listening-n4-short-monologue-018-main-idea-1",
+      "question-listening-n4-short-monologue-018-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-019",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-019",
+    "questionIds": [
+      "question-listening-n4-short-monologue-019-main-idea-1",
+      "question-listening-n4-short-monologue-019-specific-detail-2",
+      "question-listening-n4-short-monologue-019-vocabulary-context-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-020",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-020",
+    "questionIds": [
+      "question-listening-n4-short-monologue-020-grammar-context-3",
+      "question-listening-n4-short-monologue-020-main-idea-1",
+      "question-listening-n4-short-monologue-020-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-021",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-021",
+    "questionIds": [
+      "question-listening-n4-short-monologue-021-main-idea-1",
+      "question-listening-n4-short-monologue-021-reason-for-action-3",
+      "question-listening-n4-short-monologue-021-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-022",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 2
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-022",
+    "questionIds": [
+      "question-listening-n4-short-monologue-022-main-idea-1",
+      "question-listening-n4-short-monologue-022-sequence-3",
+      "question-listening-n4-short-monologue-022-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-023",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-023",
+    "questionIds": [
+      "question-listening-n4-short-monologue-023-main-idea-1",
+      "question-listening-n4-short-monologue-023-specific-detail-2",
+      "question-listening-n4-short-monologue-023-true-statement-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-024",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-024",
+    "questionIds": [
+      "question-listening-n4-short-monologue-024-false-statement-3",
+      "question-listening-n4-short-monologue-024-main-idea-1",
+      "question-listening-n4-short-monologue-024-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-025",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-025",
+    "questionIds": [
+      "question-listening-n4-short-monologue-025-best-summary-3",
+      "question-listening-n4-short-monologue-025-main-idea-1",
+      "question-listening-n4-short-monologue-025-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-026",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-026",
+    "questionIds": [
+      "question-listening-n4-short-monologue-026-main-idea-1",
+      "question-listening-n4-short-monologue-026-specific-detail-2",
+      "question-listening-n4-short-monologue-026-vocabulary-context-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-027",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-027",
+    "questionIds": [
+      "question-listening-n4-short-monologue-027-grammar-context-3",
+      "question-listening-n4-short-monologue-027-main-idea-1",
+      "question-listening-n4-short-monologue-027-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-028",
+    "level": "N4",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N4",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n4-short-monologue-028",
+    "questionIds": [
+      "question-listening-n4-short-monologue-028-main-idea-1",
+      "question-listening-n4-short-monologue-028-reason-for-action-3",
+      "question-listening-n4-short-monologue-028-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 1,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-001",
+    "level": "N5",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-appropriate-response-001",
+    "questionIds": [
+      "question-listening-n5-appropriate-response-001-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-002",
+    "level": "N5",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-appropriate-response-002",
+    "questionIds": [
+      "question-listening-n5-appropriate-response-002-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-003",
+    "level": "N5",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n5-appropriate-response-003",
+    "questionIds": [
+      "question-listening-n5-appropriate-response-003-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-004",
+    "level": "N5",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n5-appropriate-response-004",
+    "questionIds": [
+      "question-listening-n5-appropriate-response-004-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-005",
+    "level": "N5",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n5-appropriate-response-005",
+    "questionIds": [
+      "question-listening-n5-appropriate-response-005-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-006",
+    "level": "N5",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n5-appropriate-response-006",
+    "questionIds": [
+      "question-listening-n5-appropriate-response-006-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-007",
+    "level": "N5",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n5-appropriate-response-007",
+    "questionIds": [
+      "question-listening-n5-appropriate-response-007-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-008",
+    "level": "N5",
+    "activityType": "appropriate-response",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 4
+    },
+    "audioReference": "audio-future-listening-n5-appropriate-response-008",
+    "questionIds": [
+      "question-listening-n5-appropriate-response-008-appropriate-response-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-001",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-001",
+    "questionIds": [
+      "question-listening-n5-dialogue-001-information-matching-2",
+      "question-listening-n5-dialogue-001-specific-detail-1",
+      "question-listening-n5-dialogue-001-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-002",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-002",
+    "questionIds": [
+      "question-listening-n5-dialogue-002-reason-for-action-3",
+      "question-listening-n5-dialogue-002-speaker-intention-2",
+      "question-listening-n5-dialogue-002-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-003",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-003",
+    "questionIds": [
+      "question-listening-n5-dialogue-003-sequence-3",
+      "question-listening-n5-dialogue-003-speaker-relationship-2",
+      "question-listening-n5-dialogue-003-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-004",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-004",
+    "questionIds": [
+      "question-listening-n5-dialogue-004-reference-resolution-2",
+      "question-listening-n5-dialogue-004-specific-detail-1",
+      "question-listening-n5-dialogue-004-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-005",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-005",
+    "questionIds": [
+      "question-listening-n5-dialogue-005-reason-for-action-3",
+      "question-listening-n5-dialogue-005-simple-inference-2",
+      "question-listening-n5-dialogue-005-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-006",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-006",
+    "questionIds": [
+      "question-listening-n5-dialogue-006-information-matching-2",
+      "question-listening-n5-dialogue-006-sequence-3",
+      "question-listening-n5-dialogue-006-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-007",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-007",
+    "questionIds": [
+      "question-listening-n5-dialogue-007-speaker-intention-2",
+      "question-listening-n5-dialogue-007-specific-detail-1",
+      "question-listening-n5-dialogue-007-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-008",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-008",
+    "questionIds": [
+      "question-listening-n5-dialogue-008-reason-for-action-3",
+      "question-listening-n5-dialogue-008-speaker-relationship-2",
+      "question-listening-n5-dialogue-008-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-009",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-009",
+    "questionIds": [
+      "question-listening-n5-dialogue-009-reference-resolution-2",
+      "question-listening-n5-dialogue-009-sequence-3",
+      "question-listening-n5-dialogue-009-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-010",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-010",
+    "questionIds": [
+      "question-listening-n5-dialogue-010-simple-inference-2",
+      "question-listening-n5-dialogue-010-specific-detail-1",
+      "question-listening-n5-dialogue-010-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-011",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-011",
+    "questionIds": [
+      "question-listening-n5-dialogue-011-information-matching-2",
+      "question-listening-n5-dialogue-011-reason-for-action-3",
+      "question-listening-n5-dialogue-011-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-012",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-012",
+    "questionIds": [
+      "question-listening-n5-dialogue-012-sequence-3",
+      "question-listening-n5-dialogue-012-speaker-intention-2",
+      "question-listening-n5-dialogue-012-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-013",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-013",
+    "questionIds": [
+      "question-listening-n5-dialogue-013-speaker-relationship-2",
+      "question-listening-n5-dialogue-013-specific-detail-1",
+      "question-listening-n5-dialogue-013-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-014",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-014",
+    "questionIds": [
+      "question-listening-n5-dialogue-014-reason-for-action-3",
+      "question-listening-n5-dialogue-014-reference-resolution-2",
+      "question-listening-n5-dialogue-014-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-015",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-015",
+    "questionIds": [
+      "question-listening-n5-dialogue-015-sequence-3",
+      "question-listening-n5-dialogue-015-simple-inference-2",
+      "question-listening-n5-dialogue-015-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-016",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-016",
+    "questionIds": [
+      "question-listening-n5-dialogue-016-information-matching-2",
+      "question-listening-n5-dialogue-016-specific-detail-1",
+      "question-listening-n5-dialogue-016-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-017",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-017",
+    "questionIds": [
+      "question-listening-n5-dialogue-017-reason-for-action-3",
+      "question-listening-n5-dialogue-017-speaker-intention-2",
+      "question-listening-n5-dialogue-017-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-018",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-018",
+    "questionIds": [
+      "question-listening-n5-dialogue-018-sequence-3",
+      "question-listening-n5-dialogue-018-speaker-relationship-2",
+      "question-listening-n5-dialogue-018-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-019",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-019",
+    "questionIds": [
+      "question-listening-n5-dialogue-019-reference-resolution-2",
+      "question-listening-n5-dialogue-019-specific-detail-1",
+      "question-listening-n5-dialogue-019-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-020",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-020",
+    "questionIds": [
+      "question-listening-n5-dialogue-020-reason-for-action-3",
+      "question-listening-n5-dialogue-020-simple-inference-2",
+      "question-listening-n5-dialogue-020-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-021",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-021",
+    "questionIds": [
+      "question-listening-n5-dialogue-021-information-matching-2",
+      "question-listening-n5-dialogue-021-sequence-3",
+      "question-listening-n5-dialogue-021-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-022",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-022",
+    "questionIds": [
+      "question-listening-n5-dialogue-022-speaker-intention-2",
+      "question-listening-n5-dialogue-022-specific-detail-1",
+      "question-listening-n5-dialogue-022-what-happens-next-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-023",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-023",
+    "questionIds": [
+      "question-listening-n5-dialogue-023-reason-for-action-3",
+      "question-listening-n5-dialogue-023-speaker-relationship-2",
+      "question-listening-n5-dialogue-023-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-024",
+    "level": "N5",
+    "activityType": "dialogue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-dialogue-024",
+    "questionIds": [
+      "question-listening-n5-dialogue-024-reference-resolution-2",
+      "question-listening-n5-dialogue-024-sequence-3",
+      "question-listening-n5-dialogue-024-specific-detail-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": true
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-001",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-001",
+    "questionIds": [
+      "question-listening-n5-practical-information-001-condition-rule-3",
+      "question-listening-n5-practical-information-001-date-interpretation-2",
+      "question-listening-n5-practical-information-001-practical-action-4",
+      "question-listening-n5-practical-information-001-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-002",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-002",
+    "questionIds": [
+      "question-listening-n5-practical-information-002-condition-rule-3",
+      "question-listening-n5-practical-information-002-practical-action-4",
+      "question-listening-n5-practical-information-002-price-quantity-interpretation-2",
+      "question-listening-n5-practical-information-002-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-003",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-003",
+    "questionIds": [
+      "question-listening-n5-practical-information-003-condition-rule-3",
+      "question-listening-n5-practical-information-003-location-2",
+      "question-listening-n5-practical-information-003-practical-action-4",
+      "question-listening-n5-practical-information-003-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-004",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-004",
+    "questionIds": [
+      "question-listening-n5-practical-information-004-condition-rule-3",
+      "question-listening-n5-practical-information-004-date-interpretation-2",
+      "question-listening-n5-practical-information-004-practical-action-4",
+      "question-listening-n5-practical-information-004-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-005",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-005",
+    "questionIds": [
+      "question-listening-n5-practical-information-005-condition-rule-3",
+      "question-listening-n5-practical-information-005-practical-action-4",
+      "question-listening-n5-practical-information-005-price-quantity-interpretation-2",
+      "question-listening-n5-practical-information-005-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-006",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-006",
+    "questionIds": [
+      "question-listening-n5-practical-information-006-condition-rule-3",
+      "question-listening-n5-practical-information-006-location-2",
+      "question-listening-n5-practical-information-006-practical-action-4",
+      "question-listening-n5-practical-information-006-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-007",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-007",
+    "questionIds": [
+      "question-listening-n5-practical-information-007-condition-rule-3",
+      "question-listening-n5-practical-information-007-date-interpretation-2",
+      "question-listening-n5-practical-information-007-practical-action-4",
+      "question-listening-n5-practical-information-007-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-008",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-008",
+    "questionIds": [
+      "question-listening-n5-practical-information-008-condition-rule-3",
+      "question-listening-n5-practical-information-008-practical-action-4",
+      "question-listening-n5-practical-information-008-price-quantity-interpretation-2",
+      "question-listening-n5-practical-information-008-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-009",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-009",
+    "questionIds": [
+      "question-listening-n5-practical-information-009-condition-rule-3",
+      "question-listening-n5-practical-information-009-location-2",
+      "question-listening-n5-practical-information-009-practical-action-4",
+      "question-listening-n5-practical-information-009-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-010",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-010",
+    "questionIds": [
+      "question-listening-n5-practical-information-010-condition-rule-3",
+      "question-listening-n5-practical-information-010-date-interpretation-2",
+      "question-listening-n5-practical-information-010-practical-action-4",
+      "question-listening-n5-practical-information-010-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-011",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-011",
+    "questionIds": [
+      "question-listening-n5-practical-information-011-condition-rule-3",
+      "question-listening-n5-practical-information-011-practical-action-4",
+      "question-listening-n5-practical-information-011-price-quantity-interpretation-2",
+      "question-listening-n5-practical-information-011-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-012",
+    "level": "N5",
+    "activityType": "practical-information",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 3
+    },
+    "audioReference": "audio-future-listening-n5-practical-information-012",
+    "questionIds": [
+      "question-listening-n5-practical-information-012-condition-rule-3",
+      "question-listening-n5-practical-information-012-location-2",
+      "question-listening-n5-practical-information-012-practical-action-4",
+      "question-listening-n5-practical-information-012-time-interpretation-1"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-001",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-001",
+    "questionIds": [
+      "question-listening-n5-short-monologue-001-main-idea-1",
+      "question-listening-n5-short-monologue-001-sequence-3",
+      "question-listening-n5-short-monologue-001-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-002",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-002",
+    "questionIds": [
+      "question-listening-n5-short-monologue-002-main-idea-1",
+      "question-listening-n5-short-monologue-002-specific-detail-2",
+      "question-listening-n5-short-monologue-002-true-statement-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-003",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-003",
+    "questionIds": [
+      "question-listening-n5-short-monologue-003-false-statement-3",
+      "question-listening-n5-short-monologue-003-main-idea-1",
+      "question-listening-n5-short-monologue-003-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-004",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-004",
+    "questionIds": [
+      "question-listening-n5-short-monologue-004-best-summary-3",
+      "question-listening-n5-short-monologue-004-main-idea-1",
+      "question-listening-n5-short-monologue-004-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-005",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-005",
+    "questionIds": [
+      "question-listening-n5-short-monologue-005-main-idea-1",
+      "question-listening-n5-short-monologue-005-specific-detail-2",
+      "question-listening-n5-short-monologue-005-vocabulary-context-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-006",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-006",
+    "questionIds": [
+      "question-listening-n5-short-monologue-006-grammar-context-3",
+      "question-listening-n5-short-monologue-006-main-idea-1",
+      "question-listening-n5-short-monologue-006-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-007",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-007",
+    "questionIds": [
+      "question-listening-n5-short-monologue-007-main-idea-1",
+      "question-listening-n5-short-monologue-007-reason-for-action-3",
+      "question-listening-n5-short-monologue-007-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-008",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-008",
+    "questionIds": [
+      "question-listening-n5-short-monologue-008-main-idea-1",
+      "question-listening-n5-short-monologue-008-sequence-3",
+      "question-listening-n5-short-monologue-008-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-009",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-009",
+    "questionIds": [
+      "question-listening-n5-short-monologue-009-main-idea-1",
+      "question-listening-n5-short-monologue-009-specific-detail-2",
+      "question-listening-n5-short-monologue-009-true-statement-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-010",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-010",
+    "questionIds": [
+      "question-listening-n5-short-monologue-010-false-statement-3",
+      "question-listening-n5-short-monologue-010-main-idea-1",
+      "question-listening-n5-short-monologue-010-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-011",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-011",
+    "questionIds": [
+      "question-listening-n5-short-monologue-011-best-summary-3",
+      "question-listening-n5-short-monologue-011-main-idea-1",
+      "question-listening-n5-short-monologue-011-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-012",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-012",
+    "questionIds": [
+      "question-listening-n5-short-monologue-012-main-idea-1",
+      "question-listening-n5-short-monologue-012-specific-detail-2",
+      "question-listening-n5-short-monologue-012-vocabulary-context-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-013",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-013",
+    "questionIds": [
+      "question-listening-n5-short-monologue-013-grammar-context-3",
+      "question-listening-n5-short-monologue-013-main-idea-1",
+      "question-listening-n5-short-monologue-013-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-014",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-014",
+    "questionIds": [
+      "question-listening-n5-short-monologue-014-main-idea-1",
+      "question-listening-n5-short-monologue-014-reason-for-action-3",
+      "question-listening-n5-short-monologue-014-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-015",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-015",
+    "questionIds": [
+      "question-listening-n5-short-monologue-015-main-idea-1",
+      "question-listening-n5-short-monologue-015-sequence-3",
+      "question-listening-n5-short-monologue-015-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-016",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-016",
+    "questionIds": [
+      "question-listening-n5-short-monologue-016-main-idea-1",
+      "question-listening-n5-short-monologue-016-specific-detail-2",
+      "question-listening-n5-short-monologue-016-true-statement-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-017",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-017",
+    "questionIds": [
+      "question-listening-n5-short-monologue-017-false-statement-3",
+      "question-listening-n5-short-monologue-017-main-idea-1",
+      "question-listening-n5-short-monologue-017-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-018",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-018",
+    "questionIds": [
+      "question-listening-n5-short-monologue-018-best-summary-3",
+      "question-listening-n5-short-monologue-018-main-idea-1",
+      "question-listening-n5-short-monologue-018-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-019",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-019",
+    "questionIds": [
+      "question-listening-n5-short-monologue-019-main-idea-1",
+      "question-listening-n5-short-monologue-019-specific-detail-2",
+      "question-listening-n5-short-monologue-019-vocabulary-context-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-020",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-020",
+    "questionIds": [
+      "question-listening-n5-short-monologue-020-grammar-context-3",
+      "question-listening-n5-short-monologue-020-main-idea-1",
+      "question-listening-n5-short-monologue-020-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-021",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-021",
+    "questionIds": [
+      "question-listening-n5-short-monologue-021-main-idea-1",
+      "question-listening-n5-short-monologue-021-reason-for-action-3",
+      "question-listening-n5-short-monologue-021-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-022",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-022",
+    "questionIds": [
+      "question-listening-n5-short-monologue-022-main-idea-1",
+      "question-listening-n5-short-monologue-022-sequence-3",
+      "question-listening-n5-short-monologue-022-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-023",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-023",
+    "questionIds": [
+      "question-listening-n5-short-monologue-023-main-idea-1",
+      "question-listening-n5-short-monologue-023-specific-detail-2",
+      "question-listening-n5-short-monologue-023-true-statement-3"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-024",
+    "level": "N5",
+    "activityType": "short-monologue",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 1
+    },
+    "audioReference": "audio-future-listening-n5-short-monologue-024",
+    "questionIds": [
+      "question-listening-n5-short-monologue-024-false-statement-3",
+      "question-listening-n5-short-monologue-024-main-idea-1",
+      "question-listening-n5-short-monologue-024-specific-detail-2"
+    ],
+    "replay": {
+      "maxFirstAttemptReplays": 2,
+      "hintAvailable": true,
+      "transcriptUnlock": "after-answer",
+      "slowPlaybackAvailable": true,
+      "sentenceBySentenceReplay": true,
+      "speakerIsolation": false
+    },
+    "transcriptHidden": true,
+    "translationHidden": true,
+    "releaseReady": false
+  }
+]

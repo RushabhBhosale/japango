@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kanjidic2>
+  <header>
+    <file_version>4</file_version>
+    <database_version>2026-206</database_version>
+  </header>
+  <character>
+    <literal>食</literal>
+    <misc>
+      <grade>2</grade>
+      <stroke_count>9</stroke_count>
+      <freq>328</freq>
+      <jlpt>4</jlpt>
+    </misc>
+    <radical>
+      <rad_value rad_type="classical">184</rad_value>
+      <rad_value rad_type="nelson_c">8</rad_value>
+    </radical>
+    <reading_meaning>
+      <rmgroup>
+        <reading r_type="ja_on">ショク</reading>
+        <reading r_type="ja_on">ショク</reading>
+        <reading r_type="ja_kun">た.べる</reading>
+        <reading r_type="pinyin">shi2</reading>
+        <meaning>eat</meaning>
+        <meaning>food</meaning>
+        <meaning m_lang="es">comer</meaning>
+      </rmgroup>
+      <nanori>じき</nanori>
+    </reading_meaning>
+  </character>
+  <character>
+    <literal>飲</literal>
+    <misc>
+      <stroke_count>12</stroke_count>
+    </misc>
+    <reading_meaning>
+      <rmgroup>
+        <reading r_type="ja_on">イン</reading>
+        <reading r_type="ja_kun">の.む</reading>
+        <meaning>drink</meaning>
+      </rmgroup>
+    </reading_meaning>
+  </character>
+</kanjidic2>

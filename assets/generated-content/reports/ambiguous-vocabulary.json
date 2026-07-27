@@ -1,0 +1,868 @@
+[
+  {
+    "candidate": {
+      "sourceRow": 7256,
+      "written": "あ",
+      "reading": "あ",
+      "englishHint": "Ah",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 2220160,
+        "matchMethod": "kana-only",
+        "form": "あ",
+        "reading": "あ"
+      },
+      {
+        "sequence": 2394370,
+        "matchMethod": "exact",
+        "form": "あ",
+        "reading": "あ"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7414,
+      "written": "ああ",
+      "reading": "ああ",
+      "englishHint": "Ah!, Oh!",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1565440,
+        "matchMethod": "exact",
+        "form": "ああ",
+        "reading": "ああ"
+      },
+      {
+        "sequence": 2085080,
+        "matchMethod": "exact",
+        "form": "ああ",
+        "reading": "ああ"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7445,
+      "written": "あの",
+      "reading": "あの",
+      "englishHint": "that over there; like that, that way; um...",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1000420,
+        "matchMethod": "exact",
+        "form": "あの",
+        "reading": "あの"
+      },
+      {
+        "sequence": 1000430,
+        "matchMethod": "exact",
+        "form": "あの",
+        "reading": "あの"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 6850,
+      "written": "アルバイト",
+      "reading": "あるばいと",
+      "englishHint": "part-time job",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1019420,
+        "matchMethod": "exact",
+        "form": "アルバイト",
+        "reading": "あるばいと"
+      },
+      {
+        "sequence": 2855080,
+        "matchMethod": "exact",
+        "form": "アルバイト",
+        "reading": "あるばいと"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7456,
+      "written": "あれ",
+      "reading": "あれ",
+      "englishHint": "that one (over there)",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1000580,
+        "matchMethod": "exact",
+        "form": "あれ",
+        "reading": "あれ"
+      },
+      {
+        "sequence": 2847612,
+        "matchMethod": "exact",
+        "form": "あれ",
+        "reading": "あれ"
+      },
+      {
+        "sequence": 2859257,
+        "matchMethod": "exact",
+        "form": "あれ",
+        "reading": "あれ"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 6798,
+      "written": "うん",
+      "reading": "うん",
+      "englishHint": "yes (informal), all right (ok)",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1001090,
+        "matchMethod": "exact",
+        "form": "うん",
+        "reading": "うん"
+      },
+      {
+        "sequence": 2759530,
+        "matchMethod": "exact",
+        "form": "うん",
+        "reading": "うん"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7168,
+      "written": "きっと",
+      "reading": "きっと",
+      "englishHint": "surely, definitely, undoubtedly, certainly",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1003430,
+        "matchMethod": "exact",
+        "form": "きっと",
+        "reading": "きっと"
+      },
+      {
+        "sequence": 1041200,
+        "matchMethod": "kana-only",
+        "form": "きっと",
+        "reading": "きっと"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7151,
+      "written": "こう",
+      "reading": "こう",
+      "englishHint": "like this, this way",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1004310,
+        "matchMethod": "exact",
+        "form": "こう",
+        "reading": "こう"
+      },
+      {
+        "sequence": 1578910,
+        "matchMethod": "kana-only",
+        "form": "こう",
+        "reading": "こう"
+      },
+      {
+        "sequence": 2079550,
+        "matchMethod": "exact",
+        "form": "こう",
+        "reading": "こう"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7663,
+      "written": "コート",
+      "reading": "こーと",
+      "englishHint": "coat; court (e.g., tennis)",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1049000,
+        "matchMethod": "exact",
+        "form": "コート",
+        "reading": "こーと"
+      },
+      {
+        "sequence": 2842174,
+        "matchMethod": "exact",
+        "form": "コート",
+        "reading": "こーと"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7673,
+      "written": "コップ",
+      "reading": "こっぷ",
+      "englishHint": "a tumbler; a glass",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1050390,
+        "matchMethod": "exact",
+        "form": "コップ",
+        "reading": "こっぷ"
+      },
+      {
+        "sequence": 2846389,
+        "matchMethod": "exact",
+        "form": "コップ",
+        "reading": "こっぷ"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7681,
+      "written": "これ",
+      "reading": "これ",
+      "englishHint": "this one",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1628530,
+        "matchMethod": "exact",
+        "form": "これ",
+        "reading": "これ"
+      },
+      {
+        "sequence": 2216120,
+        "matchMethod": "exact",
+        "form": "これ",
+        "reading": "これ"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7754,
+      "written": "ズボン",
+      "reading": "ずぼん",
+      "englishHint": "trousers",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1074260,
+        "matchMethod": "exact",
+        "form": "ズボン",
+        "reading": "ずぼん"
+      },
+      {
+        "sequence": 2735420,
+        "matchMethod": "kana-only",
+        "form": "ズボン",
+        "reading": "ずぼん"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7756,
+      "written": "する",
+      "reading": "する",
+      "englishHint": "to do, to try; to wear small items (e.g., necktie, watch, etc.)",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1157170,
+        "matchMethod": "exact",
+        "form": "する",
+        "reading": "する"
+      },
+      {
+        "sequence": 1567440,
+        "matchMethod": "kana-only",
+        "form": "する",
+        "reading": "する"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 6822,
+      "written": "そう",
+      "reading": "そう",
+      "englishHint": "really, (is that) so; yes, right",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1006610,
+        "matchMethod": "exact",
+        "form": "そう",
+        "reading": "そう"
+      },
+      {
+        "sequence": 2137720,
+        "matchMethod": "exact",
+        "form": "そう",
+        "reading": "そう"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7781,
+      "written": "それ",
+      "reading": "それ",
+      "englishHint": "that one",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1006970,
+        "matchMethod": "exact",
+        "form": "それ",
+        "reading": "それ"
+      },
+      {
+        "sequence": 2216210,
+        "matchMethod": "exact",
+        "form": "それ",
+        "reading": "それ"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7848,
+      "written": "でも",
+      "reading": "でも",
+      "englishHint": "but, however",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1008460,
+        "matchMethod": "exact",
+        "form": "でも",
+        "reading": "でも"
+      },
+      {
+        "sequence": 1084000,
+        "matchMethod": "kana-only",
+        "form": "でも",
+        "reading": "でも"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7859,
+      "written": "どう",
+      "reading": "どう",
+      "englishHint": "how, in what way",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1008910,
+        "matchMethod": "exact",
+        "form": "どう",
+        "reading": "どう"
+      },
+      {
+        "sequence": 2252690,
+        "matchMethod": "exact",
+        "form": "どう",
+        "reading": "どう"
+      },
+      {
+        "sequence": 2255350,
+        "matchMethod": "exact",
+        "form": "どう",
+        "reading": "どう"
+      },
+      {
+        "sequence": 2838941,
+        "matchMethod": "kana-only",
+        "form": "どう",
+        "reading": "どう"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7890,
+      "written": "ない",
+      "reading": "ない",
+      "englishHint": "there isn't, doesn't have",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 2257550,
+        "matchMethod": "exact",
+        "form": "ない",
+        "reading": "ない"
+      },
+      {
+        "sequence": 2861097,
+        "matchMethod": "exact",
+        "form": "ない",
+        "reading": "ない"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7907,
+      "written": "なる",
+      "reading": "なる",
+      "englishHint": "to become",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1092330,
+        "matchMethod": "kana-only",
+        "form": "なる",
+        "reading": "なる"
+      },
+      {
+        "sequence": 2120190,
+        "matchMethod": "kana-only",
+        "form": "なる",
+        "reading": "なる"
+      },
+      {
+        "sequence": 2138260,
+        "matchMethod": "exact",
+        "form": "なる",
+        "reading": "なる"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7932,
+      "written": "はい",
+      "reading": "はい",
+      "englishHint": "yes",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1010080,
+        "matchMethod": "exact",
+        "form": "はい",
+        "reading": "はい"
+      },
+      {
+        "sequence": 1094900,
+        "matchMethod": "kana-only",
+        "form": "はい",
+        "reading": "はい"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7044,
+      "written": "はず",
+      "reading": "はず",
+      "englishHint": "it should be so",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 2461070,
+        "matchMethod": "kana-only",
+        "form": "はず",
+        "reading": "はず"
+      },
+      {
+        "sequence": 2463700,
+        "matchMethod": "kana-only",
+        "form": "はず",
+        "reading": "はず"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7945,
+      "written": "バス",
+      "reading": "ばす",
+      "englishHint": "bus; bath; bass",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1098390,
+        "matchMethod": "exact",
+        "form": "バス",
+        "reading": "ばす"
+      },
+      {
+        "sequence": 2845312,
+        "matchMethod": "exact",
+        "form": "バス",
+        "reading": "ばす"
+      },
+      {
+        "sequence": 2845314,
+        "matchMethod": "exact",
+        "form": "バス",
+        "reading": "ばす"
+      },
+      {
+        "sequence": 2845315,
+        "matchMethod": "exact",
+        "form": "バス",
+        "reading": "ばす"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7965,
+      "written": "パン",
+      "reading": "ぱん",
+      "englishHint": "bread",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1103090,
+        "matchMethod": "exact",
+        "form": "パン",
+        "reading": "ぱん"
+      },
+      {
+        "sequence": 2827858,
+        "matchMethod": "exact",
+        "form": "パン",
+        "reading": "ぱん"
+      },
+      {
+        "sequence": 2850596,
+        "matchMethod": "exact",
+        "form": "パン",
+        "reading": "ぱん"
+      },
+      {
+        "sequence": 2850597,
+        "matchMethod": "exact",
+        "form": "パン",
+        "reading": "ぱん"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 6899,
+      "written": "ビル",
+      "reading": "びる",
+      "englishHint": "(abbr.) building",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1106010,
+        "matchMethod": "exact",
+        "form": "ビル",
+        "reading": "びる"
+      },
+      {
+        "sequence": 2409210,
+        "matchMethod": "kana-only",
+        "form": "ビル",
+        "reading": "びる"
+      },
+      {
+        "sequence": 2856006,
+        "matchMethod": "exact",
+        "form": "ビル",
+        "reading": "びる"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7992,
+      "written": "フォーク",
+      "reading": "ふぉーく",
+      "englishHint": "fork",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1110110,
+        "matchMethod": "exact",
+        "form": "フォーク",
+        "reading": "ふぉーく"
+      },
+      {
+        "sequence": 2848171,
+        "matchMethod": "exact",
+        "form": "フォーク",
+        "reading": "ふぉーく"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 8008,
+      "written": "ペット",
+      "reading": "ぺっと",
+      "englishHint": "pet",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1120990,
+        "matchMethod": "exact",
+        "form": "ペット",
+        "reading": "ぺっと"
+      },
+      {
+        "sequence": 2669050,
+        "matchMethod": "kana-only",
+        "form": "ペット",
+        "reading": "ぺっと"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 6968,
+      "written": "ベル",
+      "reading": "べる",
+      "englishHint": "bell",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1120010,
+        "matchMethod": "exact",
+        "form": "ベル",
+        "reading": "べる"
+      },
+      {
+        "sequence": 2857911,
+        "matchMethod": "exact",
+        "form": "ベル",
+        "reading": "べる"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 8021,
+      "written": "ボタン",
+      "reading": "ぼたん",
+      "englishHint": "button",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1123880,
+        "matchMethod": "exact",
+        "form": "ボタン",
+        "reading": "ぼたん"
+      },
+      {
+        "sequence": 1182880,
+        "matchMethod": "exact",
+        "form": "ボタン",
+        "reading": "ぼたん"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 8043,
+      "written": "マッチ",
+      "reading": "まっち",
+      "englishHint": "match",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1128430,
+        "matchMethod": "exact",
+        "form": "マッチ",
+        "reading": "まっち"
+      },
+      {
+        "sequence": 2784220,
+        "matchMethod": "exact",
+        "form": "マッチ",
+        "reading": "まっち"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 6777,
+      "written": "もし",
+      "reading": "もし",
+      "englishHint": "if",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1012500,
+        "matchMethod": "exact",
+        "form": "もし",
+        "reading": "もし"
+      },
+      {
+        "sequence": 2607730,
+        "matchMethod": "exact",
+        "form": "もし",
+        "reading": "もし"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7190,
+      "written": "妻",
+      "reading": "つま",
+      "englishHint": "wife (humble)",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1294330,
+        "matchMethod": "exact",
+        "form": "妻",
+        "reading": "つま"
+      },
+      {
+        "sequence": 2746070,
+        "matchMethod": "exact",
+        "form": "妻",
+        "reading": "つま"
+      },
+      {
+        "sequence": 2852371,
+        "matchMethod": "exact",
+        "form": "妻",
+        "reading": "つま"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 7701,
+      "written": "三",
+      "reading": "さん",
+      "englishHint": "three",
+      "level": "N5"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1579350,
+        "matchMethod": "exact",
+        "form": "三",
+        "reading": "さん"
+      },
+      {
+        "sequence": 2747950,
+        "matchMethod": "exact",
+        "form": "三",
+        "reading": "さん"
+      }
+    ]
+  }
+]

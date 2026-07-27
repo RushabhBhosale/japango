@@ -1,0 +1,938 @@
+[
+  {
+    "activityId": "listening-activity-n4-appropriate-response-001",
+    "transcript": "予約を午後に変えたいんですが、空いている時間はありますか。",
+    "learnerTranscript": "予約を午後に変えたいんですが、空いている時間はありますか。",
+    "english": "I would like to move my appointment to the afternoon; is there an opening?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-002",
+    "transcript": "駅に着いたら、電話で知らせていただけますか。",
+    "learnerTranscript": "駅に着いたら、電話で知らせていただけますか。",
+    "english": "Could you call me when you arrive at the station?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-003",
+    "transcript": "明日が雨なら、外のイベントはどうなりますか。",
+    "learnerTranscript": "明日が雨なら、外のイベントはどうなりますか。",
+    "english": "What will happen to the outdoor event if it rains tomorrow?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-004",
+    "transcript": "会議の前に、この資料をコピーしておいてもらえますか。",
+    "learnerTranscript": "会議の前に、この資料をコピーしておいてもらえますか。",
+    "english": "Could you make copies of these materials before the meeting?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-005",
+    "transcript": "確認ですが、荷物は今日の午後に届くはずですよね。",
+    "learnerTranscript": "確認ですが、荷物は今日の午後に届くはずですよね。",
+    "english": "Just to confirm, The package should arrive this afternoon, right?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-006",
+    "transcript": "明日は雪になるかもしれないそうですが、出発しますか。",
+    "learnerTranscript": "明日は雪になるかもしれないそうですが、出発しますか。",
+    "english": "They say it may snow tomorrow; will you still leave?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-007",
+    "transcript": "音楽を聞きながら勉強しても、集中できますか。",
+    "learnerTranscript": "音楽を聞きながら勉強しても、集中できますか。",
+    "english": "Can you concentrate while studying with music playing?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-008",
+    "transcript": "提出する前に、この書類を確認してもらえませんか。",
+    "learnerTranscript": "提出する前に、この書類を確認してもらえませんか。",
+    "english": "Could you check this document before I submit it?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-009",
+    "transcript": "電車が止まった場合は、会社へどう連絡すればいいですか。",
+    "learnerTranscript": "電車が止まった場合は、会社へどう連絡すればいいですか。",
+    "english": "If the train stops, how should I contact the office?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-010",
+    "transcript": "確認ですが、来週は大阪へ出張する予定ですか。",
+    "learnerTranscript": "確認ですが、来週は大阪へ出張する予定ですか。",
+    "english": "Just to confirm, Are you scheduled to travel to Osaka for work next week?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-011",
+    "transcript": "二つの案では、こちらの方法が一番いいと思いますか。",
+    "learnerTranscript": "二つの案では、こちらの方法が一番いいと思いますか。",
+    "english": "Of the two proposals, do you think this approach is best?"
+  },
+  {
+    "activityId": "listening-activity-n4-appropriate-response-012",
+    "transcript": "練習して、毎朝早く起きられるようになりましたか。",
+    "learnerTranscript": "練習して、毎朝早く起きられるようになりましたか。",
+    "english": "After practicing, have you become able to wake up early every morning?"
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-001",
+    "transcript": "問題の解決について大切なお知らせです。\n店が開いている間に、一度だけ行きたいです。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "問題の解決について大切なお知らせです。\n店が開いている間に、一度だけ行きたいです。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "This is an important update about problems and solutions. I want to go once while the shop is still open. Then, shall we start at 2:00 p.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-002",
+    "transcript": "買い物のことで相談があります。\n後で電話すると言いましたが、まだ連絡がありません。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "買い物のことで相談があります。\n後で電話すると言いましたが、まだ連絡がありません。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I would like advice about shopping. They said they would call later, but I have not heard from them yet. Then, shall we start at 3:00 p.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-003",
+    "transcript": "今日は道案内について話します。\n締め切りまでに全部できなくても、できた分を送ってください。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "今日は道案内について話します。\n締め切りまでに全部できなくても、できた分を送ってください。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "Today I will talk about directions. Even if you cannot finish everything by the deadline, please send what you have completed. Then, shall we start at 4:00 p.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-004",
+    "transcript": "趣味の予定を確認します。\n急いでいると言いながら、彼はまだコーヒーを飲んでいます。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "趣味の予定を確認します。\n急いでいると言いながら、彼はまだコーヒーを飲んでいます。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will confirm the plan for hobbies. Although he says he is in a hurry, he is still drinking coffee. Then, shall we start at 5:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-005",
+    "transcript": "行事で一つ困ったことがあります。\n友達が手伝ってくれたので、予定より早く終わりました。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "行事で一つ困ったことがあります。\n友達が手伝ってくれたので、予定より早く終わりました。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "There is one problem involving events. Because a friend helped me, I finished earlier than planned. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-006",
+    "transcript": "勉強の新しい方法を説明します。\n全部してもらうのではなく、難しい所だけ頼みました。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "勉強の新しい方法を説明します。\n全部してもらうのではなく、難しい所だけ頼みました。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will explain a new approach to study. Rather than having them do everything, I asked only for help with the difficult parts. Then, shall we start at 9:00 a.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-007",
+    "transcript": "店の案内について大切なお知らせです。\n窓は開けたままにせず、閉めておいてください。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "店の案内について大切なお知らせです。\n窓は開けたままにせず、閉めておいてください。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "This is an important update about customer service. Please close the window in advance rather than leaving it open. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-008",
+    "transcript": "おすすめのことで相談があります。\n見るだけで決めずに、実際に使ってみたいです。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "おすすめのことで相談があります。\n見るだけで決めずに、実際に使ってみたいです。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I would like advice about recommendations. I want to try actually using it instead of deciding just by looking. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-009",
+    "transcript": "今日は仕事について話します。\n少し休むつもりが、二時間も寝てしまいました。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "今日は仕事について話します。\n少し休むつもりが、二時間も寝てしまいました。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "Today I will talk about work. I meant to rest briefly, but I ended up sleeping for two hours. Then, shall we start at 2:00 p.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-010",
+    "transcript": "旅行の予定を確認します。\n雨が降れば中止ですが、少し曇るだけなら行います。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "旅行の予定を確認します。\n雨が降れば中止ですが、少し曇るだけなら行います。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will confirm the plan for travel. If it rains, it will be canceled, but if it is only a little cloudy, it will go ahead. Then, shall we start at 3:00 p.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-011",
+    "transcript": "招待で一つ困ったことがあります。\n春になったら花は咲きますが、温度が上がれば必ず咲くわけではありません。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "招待で一つ困ったことがあります。\n春になったら花は咲きますが、温度が上がれば必ず咲くわけではありません。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "There is one problem involving invitations. Flowers bloom when spring comes, but a rise in temperature does not guarantee blooming. Then, shall we start at 4:00 p.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-012",
+    "transcript": "図書館の新しい方法を説明します。\n雨が降ったら中止ですが、曇りなら予定どおり行います。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "図書館の新しい方法を説明します。\n雨が降ったら中止ですが、曇りなら予定どおり行います。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will explain a new approach to libraries. If it rains, it will be canceled, but if it is cloudy, it will proceed as planned. Then, shall we start at 5:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-013",
+    "transcript": "機械について大切なお知らせです。\n雨なら傘で足りますが、台風の場合は外へ出ないでください。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "機械について大切なお知らせです。\n雨なら傘で足りますが、台風の場合は外へ出ないでください。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "This is an important update about technology. An umbrella is enough for rain, but in the event of a typhoon, please do not go outside. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-014",
+    "transcript": "お願いのことで相談があります。\n駅に着いたら電話しますが、遅れても先に始めてください。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "お願いのことで相談があります。\n駅に着いたら電話しますが、遅れても先に始めてください。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I would like advice about requests. I will call when I reach the station, but even if I am late, please start without me. Then, shall we start at 9:00 a.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-015",
+    "transcript": "今日は品物の比較について話します。\n急ぐ必要はありませんが、受付には九時までに来なければなりません。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "今日は品物の比較について話します。\n急ぐ必要はありませんが、受付には九時までに来なければなりません。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "Today I will talk about comparisons. There is no need to hurry, but you must arrive at reception by nine. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-016",
+    "transcript": "学校の予定を確認します。\n来なくてもいいという意味ではなく、無理なら休んでもいいということです。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "学校の予定を確認します。\n来なくてもいいという意味ではなく、無理なら休んでもいいということです。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will confirm the plan for school. It does not mean you do not have to come; it means you may rest if coming is too difficult. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-017",
+    "transcript": "交通で一つ困ったことがあります。\n会社が決めたのではなく、私が家で働くことにしました。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "交通で一つ困ったことがあります。\n会社が決めたのではなく、私が家で働くことにしました。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "There is one problem involving transport. The company did not decide it; I decided to work from home. Then, shall we start at 2:00 p.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-018",
+    "transcript": "予定の新しい方法を説明します。\n行くつもりでしたが、今の予定では家にいることになっています。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "予定の新しい方法を説明します。\n行くつもりでしたが、今の予定では家にいることになっています。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will explain a new approach to schedules. I intended to go, but under the current plan I am to stay home. Then, shall we start at 3:00 p.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-019",
+    "transcript": "公共施設について大切なお知らせです。\n雨が降るかもしれませんが、予報では午後には止むはずです。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "公共施設について大切なお知らせです。\n雨が降るかもしれませんが、予報では午後には止むはずです。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "This is an important update about public facilities. It might rain, but according to the forecast it should stop in the afternoon. Then, shall we start at 4:00 p.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-020",
+    "transcript": "近所のことで相談があります。\n彼は来るはずですが、仕事が終わらなければ遅れるかもしれません。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "近所のことで相談があります。\n彼は来るはずですが、仕事が終わらなければ遅れるかもしれません。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I would like advice about the neighbourhood. He should come, but he might be late if his work does not finish. Then, shall we start at 5:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-021",
+    "transcript": "今日は決まりについて話します。\n空を見ると雨が降りそうですが、予報では晴れるそうです。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "今日は決まりについて話します。\n空を見ると雨が降りそうですが、予報では晴れるそうです。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "Today I will talk about rules. It looks like rain from the sky, but the forecast says it will clear up. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-022",
+    "transcript": "予定の変更の予定を確認します。\n魚が猫に食べられたのではなく、この猫は魚を食べられます。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "予定の変更の予定を確認します。\n魚が猫に食べられたのではなく、この猫は魚を食べられます。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will confirm the plan for changes of plan. This is not saying the fish was eaten by the cat; it says this cat can eat fish. Then, shall we start at 9:00 a.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-023",
+    "transcript": "家で一つ困ったことがあります。\n自分でできる目的には『ために』を使い、忘れないという目標には『ように』が自然です。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "家で一つ困ったことがあります。\n自分でできる目的には『ために』を使い、忘れないという目標には『ように』が自然です。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "There is one problem involving home. Tame ni suits a controllable purpose, while yō ni is natural for a goal such as not forgetting. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-024",
+    "transcript": "料理の新しい方法を説明します。\n毎日読むようにしていたら、長い文も読めるようになりました。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "料理の新しい方法を説明します。\n毎日読むようにしていたら、長い文も読めるようになりました。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will explain a new approach to cooking. After making a point of reading every day, I became able to read long sentences too. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-025",
+    "transcript": "予約について大切なお知らせです。\n便利でも、毎日は使わないと思います。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "予約について大切なお知らせです。\n便利でも、毎日は使わないと思います。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "This is an important update about appointments. Even if it is convenient, I do not think I will use it every day. Then, shall we start at 2:00 p.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-026",
+    "transcript": "健康のことで相談があります。\n店は休みだと聞きましたが、電気がついています。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "健康のことで相談があります。\n店は休みだと聞きましたが、電気がついています。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I would like advice about health. I heard the shop was closed, but the lights are on. Then, shall we start at 3:00 p.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-027",
+    "transcript": "今日は宿について話します。\n店が開いている間に、一度だけ行きたいです。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "今日は宿について話します。\n店が開いている間に、一度だけ行きたいです。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "Today I will talk about accommodation. I want to go once while the shop is still open. Then, shall we start at 4:00 p.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-028",
+    "transcript": "落とし物の予定を確認します。\n後で電話すると言いましたが、まだ連絡がありません。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "落とし物の予定を確認します。\n後で電話すると言いましたが、まだ連絡がありません。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will confirm the plan for lost items. They said they would call later, but I have not heard from them yet. Then, shall we start at 5:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-029",
+    "transcript": "計画で一つ困ったことがあります。\n締め切りまでに全部できなくても、できた分を送ってください。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "計画で一つ困ったことがあります。\n締め切りまでに全部できなくても、できた分を送ってください。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "There is one problem involving plans. Even if you cannot finish everything by the deadline, please send what you have completed. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-030",
+    "transcript": "家族の新しい方法を説明します。\n急いでいると言いながら、彼はまだコーヒーを飲んでいます。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "家族の新しい方法を説明します。\n急いでいると言いながら、彼はまだコーヒーを飲んでいます。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I will explain a new approach to family. Although he says he is in a hurry, he is still drinking coffee. Then, shall we start at 9:00 a.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-031",
+    "transcript": "レストランについて大切なお知らせです。\n友達が手伝ってくれたので、予定より早く終わりました。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "レストランについて大切なお知らせです。\n友達が手伝ってくれたので、予定より早く終わりました。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "This is an important update about restaurants. Because a friend helped me, I finished earlier than planned. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-dialogue-032",
+    "transcript": "天気のことで相談があります。\n全部してもらうのではなく、難しい所だけ頼みました。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "learnerTranscript": "天気のことで相談があります。\n全部してもらうのではなく、難しい所だけ頼みました。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。\nもし予定が変わっても、出発する前に相談しましょう。\n分かりました。必要な物も前の日に用意しておきます。\nでは、確認した内容を短いメモにして送ります。\n助かります。届いたらすぐに読みます。",
+    "english": "I would like advice about weather. Rather than having them do everything, I asked only for help with the difficult parts. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late. Even if plans change, let us discuss it before leaving. Understood. I will prepare what we need the day before. Then I will send a short note with the confirmed details. That helps. I will read it as soon as it arrives."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-001",
+    "transcript": "青空センターから、運動のお知らせです。\n土曜日の受付は午後2時から始まります。\n料金は300円で、必要な物は2つです。\n窓は開けたままにせず、閉めておいてください。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、青空センターの受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "青空センターから、運動のお知らせです。\n土曜日の受付は午後2時から始まります。\n料金は300円で、必要な物は2つです。\n窓は開けたままにせず、閉めておいてください。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、青空センターの受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Aozora Center announcement about exercise. Saturday reception begins at 2:00 p.m.. The fee is 300 yen and two items are required. Please close the window in advance rather than leaving it open. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Aozora Center reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-002",
+    "transcript": "若葉会館から、配達のお知らせです。\n土曜日の受付は午後3時から始まります。\n料金は300円で、必要な物は2つです。\n見るだけで決めずに、実際に使ってみたいです。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、若葉会館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "若葉会館から、配達のお知らせです。\n土曜日の受付は午後3時から始まります。\n料金は300円で、必要な物は2つです。\n見るだけで決めずに、実際に使ってみたいです。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、若葉会館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Wakaba Hall announcement about delivery. Saturday reception begins at 3:00 p.m.. The fee is 300 yen and two items are required. I want to try actually using it instead of deciding just by looking. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Wakaba Hall reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-003",
+    "transcript": "ひかり学校から、間違いのお知らせです。\n土曜日の受付は午後4時から始まります。\n料金は300円で、必要な物は2つです。\n少し休むつもりが、二時間も寝てしまいました。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、ひかり学校の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "ひかり学校から、間違いのお知らせです。\n土曜日の受付は午後4時から始まります。\n料金は300円で、必要な物は2つです。\n少し休むつもりが、二時間も寝てしまいました。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、ひかり学校の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Hikari School announcement about mistakes. Saturday reception begins at 4:00 p.m.. The fee is 300 yen and two items are required. I meant to rest briefly, but I ended up sleeping for two hours. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Hikari School reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-004",
+    "transcript": "みどり図書館から、電話の伝言のお知らせです。\n土曜日の受付は午後5時から始まります。\n料金は300円で、必要な物は2つです。\n雨が降れば中止ですが、少し曇るだけなら行います。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、みどり図書館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "みどり図書館から、電話の伝言のお知らせです。\n土曜日の受付は午後5時から始まります。\n料金は300円で、必要な物は2つです。\n雨が降れば中止ですが、少し曇るだけなら行います。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、みどり図書館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Midori Library announcement about phone messages. Saturday reception begins at 5:00 p.m.. The fee is 300 yen and two items are required. If it rains, it will be canceled, but if it is only a little cloudy, it will go ahead. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Midori Library reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-005",
+    "transcript": "青空センターから、問題の解決のお知らせです。\n土曜日の受付は午前8時から始まります。\n料金は300円で、必要な物は2つです。\n春になったら花は咲きますが、温度が上がれば必ず咲くわけではありません。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、青空センターの受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "青空センターから、問題の解決のお知らせです。\n土曜日の受付は午前8時から始まります。\n料金は300円で、必要な物は2つです。\n春になったら花は咲きますが、温度が上がれば必ず咲くわけではありません。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、青空センターの受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Aozora Center announcement about problems and solutions. Saturday reception begins at 8:00 a.m.. The fee is 300 yen and two items are required. Flowers bloom when spring comes, but a rise in temperature does not guarantee blooming. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Aozora Center reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-006",
+    "transcript": "若葉会館から、買い物のお知らせです。\n土曜日の受付は午前9時から始まります。\n料金は300円で、必要な物は2つです。\n雨が降ったら中止ですが、曇りなら予定どおり行います。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、若葉会館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "若葉会館から、買い物のお知らせです。\n土曜日の受付は午前9時から始まります。\n料金は300円で、必要な物は2つです。\n雨が降ったら中止ですが、曇りなら予定どおり行います。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、若葉会館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Wakaba Hall announcement about shopping. Saturday reception begins at 9:00 a.m.. The fee is 300 yen and two items are required. If it rains, it will be canceled, but if it is cloudy, it will proceed as planned. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Wakaba Hall reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-007",
+    "transcript": "ひかり学校から、道案内のお知らせです。\n土曜日の受付は午前10時から始まります。\n料金は300円で、必要な物は2つです。\n雨なら傘で足りますが、台風の場合は外へ出ないでください。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、ひかり学校の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "ひかり学校から、道案内のお知らせです。\n土曜日の受付は午前10時から始まります。\n料金は300円で、必要な物は2つです。\n雨なら傘で足りますが、台風の場合は外へ出ないでください。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、ひかり学校の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Hikari School announcement about directions. Saturday reception begins at 10:00 a.m.. The fee is 300 yen and two items are required. An umbrella is enough for rain, but in the event of a typhoon, please do not go outside. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Hikari School reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-008",
+    "transcript": "みどり図書館から、趣味のお知らせです。\n土曜日の受付は午後1時から始まります。\n料金は300円で、必要な物は2つです。\n駅に着いたら電話しますが、遅れても先に始めてください。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、みどり図書館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "みどり図書館から、趣味のお知らせです。\n土曜日の受付は午後1時から始まります。\n料金は300円で、必要な物は2つです。\n駅に着いたら電話しますが、遅れても先に始めてください。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、みどり図書館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Midori Library announcement about hobbies. Saturday reception begins at 1:00 p.m.. The fee is 300 yen and two items are required. I will call when I reach the station, but even if I am late, please start without me. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Midori Library reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-009",
+    "transcript": "青空センターから、行事のお知らせです。\n土曜日の受付は午後2時から始まります。\n料金は300円で、必要な物は2つです。\n急ぐ必要はありませんが、受付には九時までに来なければなりません。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、青空センターの受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "青空センターから、行事のお知らせです。\n土曜日の受付は午後2時から始まります。\n料金は300円で、必要な物は2つです。\n急ぐ必要はありませんが、受付には九時までに来なければなりません。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、青空センターの受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Aozora Center announcement about events. Saturday reception begins at 2:00 p.m.. The fee is 300 yen and two items are required. There is no need to hurry, but you must arrive at reception by nine. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Aozora Center reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-010",
+    "transcript": "若葉会館から、勉強のお知らせです。\n土曜日の受付は午後3時から始まります。\n料金は300円で、必要な物は2つです。\n来なくてもいいという意味ではなく、無理なら休んでもいいということです。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、若葉会館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "若葉会館から、勉強のお知らせです。\n土曜日の受付は午後3時から始まります。\n料金は300円で、必要な物は2つです。\n来なくてもいいという意味ではなく、無理なら休んでもいいということです。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、若葉会館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Wakaba Hall announcement about study. Saturday reception begins at 3:00 p.m.. The fee is 300 yen and two items are required. It does not mean you do not have to come; it means you may rest if coming is too difficult. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Wakaba Hall reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-011",
+    "transcript": "ひかり学校から、店の案内のお知らせです。\n土曜日の受付は午後4時から始まります。\n料金は300円で、必要な物は2つです。\n会社が決めたのではなく、私が家で働くことにしました。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、ひかり学校の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "ひかり学校から、店の案内のお知らせです。\n土曜日の受付は午後4時から始まります。\n料金は300円で、必要な物は2つです。\n会社が決めたのではなく、私が家で働くことにしました。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、ひかり学校の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Hikari School announcement about customer service. Saturday reception begins at 4:00 p.m.. The fee is 300 yen and two items are required. The company did not decide it; I decided to work from home. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Hikari School reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-012",
+    "transcript": "みどり図書館から、おすすめのお知らせです。\n土曜日の受付は午後5時から始まります。\n料金は300円で、必要な物は2つです。\n行くつもりでしたが、今の予定では家にいることになっています。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、みどり図書館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "みどり図書館から、おすすめのお知らせです。\n土曜日の受付は午後5時から始まります。\n料金は300円で、必要な物は2つです。\n行くつもりでしたが、今の予定では家にいることになっています。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、みどり図書館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Midori Library announcement about recommendations. Saturday reception begins at 5:00 p.m.. The fee is 300 yen and two items are required. I intended to go, but under the current plan I am to stay home. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Midori Library reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-013",
+    "transcript": "青空センターから、仕事のお知らせです。\n土曜日の受付は午前8時から始まります。\n料金は300円で、必要な物は2つです。\n雨が降るかもしれませんが、予報では午後には止むはずです。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、青空センターの受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "青空センターから、仕事のお知らせです。\n土曜日の受付は午前8時から始まります。\n料金は300円で、必要な物は2つです。\n雨が降るかもしれませんが、予報では午後には止むはずです。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、青空センターの受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Aozora Center announcement about work. Saturday reception begins at 8:00 a.m.. The fee is 300 yen and two items are required. It might rain, but according to the forecast it should stop in the afternoon. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Aozora Center reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-014",
+    "transcript": "若葉会館から、旅行のお知らせです。\n土曜日の受付は午前9時から始まります。\n料金は300円で、必要な物は2つです。\n彼は来るはずですが、仕事が終わらなければ遅れるかもしれません。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、若葉会館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "若葉会館から、旅行のお知らせです。\n土曜日の受付は午前9時から始まります。\n料金は300円で、必要な物は2つです。\n彼は来るはずですが、仕事が終わらなければ遅れるかもしれません。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、若葉会館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Wakaba Hall announcement about travel. Saturday reception begins at 9:00 a.m.. The fee is 300 yen and two items are required. He should come, but he might be late if his work does not finish. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Wakaba Hall reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-015",
+    "transcript": "ひかり学校から、招待のお知らせです。\n土曜日の受付は午前10時から始まります。\n料金は300円で、必要な物は2つです。\n空を見ると雨が降りそうですが、予報では晴れるそうです。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、ひかり学校の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "ひかり学校から、招待のお知らせです。\n土曜日の受付は午前10時から始まります。\n料金は300円で、必要な物は2つです。\n空を見ると雨が降りそうですが、予報では晴れるそうです。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、ひかり学校の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Hikari School announcement about invitations. Saturday reception begins at 10:00 a.m.. The fee is 300 yen and two items are required. It looks like rain from the sky, but the forecast says it will clear up. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Hikari School reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-practical-information-016",
+    "transcript": "みどり図書館から、図書館のお知らせです。\n土曜日の受付は午後1時から始まります。\n料金は300円で、必要な物は2つです。\n魚が猫に食べられたのではなく、この猫は魚を食べられます。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、みどり図書館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "みどり図書館から、図書館のお知らせです。\n土曜日の受付は午後1時から始まります。\n料金は300円で、必要な物は2つです。\n魚が猫に食べられたのではなく、この猫は魚を食べられます。\n雨の場合も二階の青い部屋で行います。\n参加する人は開始十分前までに受付を済ませてください。\n予定が変わった場合は、みどり図書館の受付で確認できます。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Midori Library announcement about libraries. Saturday reception begins at 1:00 p.m.. The fee is 300 yen and two items are required. This is not saying the fish was eaten by the cat; it says this cat can eat fish. Even if it rains, it will take place in the blue room on the second floor. Participants must finish reception ten minutes before the start. If the schedule changes, it can be confirmed at Midori Library reception. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-001",
+    "transcript": "今日は仕事について話します。\n便利でも、毎日は使わないと思います。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "learnerTranscript": "今日は仕事について話します。\n便利でも、毎日は使わないと思います。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "english": "Today I will talk about work. Even if it is convenient, I do not think I will use it every day. The plan starts at 8:00 a.m.. Afterward, I will check the necessary details once more. If there is a sudden change, I intend to notify the people involved first. I will compare what I heard with my own schedule before deciding the final order."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-002",
+    "transcript": "旅行の予定を確認します。\n店は休みだと聞きましたが、電気がついています。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "learnerTranscript": "旅行の予定を確認します。\n店は休みだと聞きましたが、電気がついています。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "english": "I will confirm the plan for travel. I heard the shop was closed, but the lights are on. The plan starts at 9:00 a.m.. Afterward, I will check the necessary details once more. After finishing the preparations, I will contact the person in charge to confirm. I will choose a reasonable method while watching how preparations progress."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-003",
+    "transcript": "招待で一つ困ったことがあります。\n店が開いている間に、一度だけ行きたいです。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "learnerTranscript": "招待で一つ困ったことがあります。\n店が開いている間に、一度だけ行きたいです。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "english": "There is one problem involving invitations. I want to go once while the shop is still open. The plan starts at 10:00 a.m.. Afterward, I will check the necessary details once more. I plan to organize the differences from last time and explain them clearly. If necessary, I will adjust the schedule and send everyone the new information."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-004",
+    "transcript": "図書館の新しい方法を説明します。\n後で電話すると言いましたが、まだ連絡がありません。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "learnerTranscript": "図書館の新しい方法を説明します。\n後で電話すると言いましたが、まだ連絡がありません。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "english": "I will explain a new approach to libraries. They said they would call later, but I have not heard from them yet. The plan starts at 1:00 p.m.. Afterward, I will check the necessary details once more. If a problem remains, I will discuss it again instead of deciding alone. Afterward, I will summarize the result and use it next time."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-005",
+    "transcript": "機械について大切なお知らせです。\n締め切りまでに全部できなくても、できた分を送ってください。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "learnerTranscript": "機械について大切なお知らせです。\n締め切りまでに全部できなくても、できた分を送ってください。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "english": "This is an important update about technology. Even if you cannot finish everything by the deadline, please send what you have completed. The plan starts at 2:00 p.m.. Afterward, I will check the necessary details once more. If there is a sudden change, I intend to notify the people involved first. I will compare what I heard with my own schedule before deciding the final order."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-006",
+    "transcript": "お願いのことで相談があります。\n急いでいると言いながら、彼はまだコーヒーを飲んでいます。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "learnerTranscript": "お願いのことで相談があります。\n急いでいると言いながら、彼はまだコーヒーを飲んでいます。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "english": "I would like advice about requests. Although he says he is in a hurry, he is still drinking coffee. The plan starts at 3:00 p.m.. Afterward, I will check the necessary details once more. After finishing the preparations, I will contact the person in charge to confirm. I will choose a reasonable method while watching how preparations progress."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-007",
+    "transcript": "今日は品物の比較について話します。\n友達が手伝ってくれたので、予定より早く終わりました。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "learnerTranscript": "今日は品物の比較について話します。\n友達が手伝ってくれたので、予定より早く終わりました。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "english": "Today I will talk about comparisons. Because a friend helped me, I finished earlier than planned. The plan starts at 4:00 p.m.. Afterward, I will check the necessary details once more. I plan to organize the differences from last time and explain them clearly. If necessary, I will adjust the schedule and send everyone the new information."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-008",
+    "transcript": "学校の予定を確認します。\n全部してもらうのではなく、難しい所だけ頼みました。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "learnerTranscript": "学校の予定を確認します。\n全部してもらうのではなく、難しい所だけ頼みました。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "english": "I will confirm the plan for school. Rather than having them do everything, I asked only for help with the difficult parts. The plan starts at 5:00 p.m.. Afterward, I will check the necessary details once more. If a problem remains, I will discuss it again instead of deciding alone. Afterward, I will summarize the result and use it next time."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-009",
+    "transcript": "交通で一つ困ったことがあります。\n窓は開けたままにせず、閉めておいてください。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "learnerTranscript": "交通で一つ困ったことがあります。\n窓は開けたままにせず、閉めておいてください。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "english": "There is one problem involving transport. Please close the window in advance rather than leaving it open. The plan starts at 8:00 a.m.. Afterward, I will check the necessary details once more. If there is a sudden change, I intend to notify the people involved first. I will compare what I heard with my own schedule before deciding the final order."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-010",
+    "transcript": "予定の新しい方法を説明します。\n見るだけで決めずに、実際に使ってみたいです。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "learnerTranscript": "予定の新しい方法を説明します。\n見るだけで決めずに、実際に使ってみたいです。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "english": "I will explain a new approach to schedules. I want to try actually using it instead of deciding just by looking. The plan starts at 9:00 a.m.. Afterward, I will check the necessary details once more. After finishing the preparations, I will contact the person in charge to confirm. I will choose a reasonable method while watching how preparations progress."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-011",
+    "transcript": "公共施設について大切なお知らせです。\n少し休むつもりが、二時間も寝てしまいました。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "learnerTranscript": "公共施設について大切なお知らせです。\n少し休むつもりが、二時間も寝てしまいました。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "english": "This is an important update about public facilities. I meant to rest briefly, but I ended up sleeping for two hours. The plan starts at 10:00 a.m.. Afterward, I will check the necessary details once more. I plan to organize the differences from last time and explain them clearly. If necessary, I will adjust the schedule and send everyone the new information."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-012",
+    "transcript": "近所のことで相談があります。\n雨が降れば中止ですが、少し曇るだけなら行います。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "learnerTranscript": "近所のことで相談があります。\n雨が降れば中止ですが、少し曇るだけなら行います。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "english": "I would like advice about the neighbourhood. If it rains, it will be canceled, but if it is only a little cloudy, it will go ahead. The plan starts at 1:00 p.m.. Afterward, I will check the necessary details once more. If a problem remains, I will discuss it again instead of deciding alone. Afterward, I will summarize the result and use it next time."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-013",
+    "transcript": "今日は決まりについて話します。\n春になったら花は咲きますが、温度が上がれば必ず咲くわけではありません。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "learnerTranscript": "今日は決まりについて話します。\n春になったら花は咲きますが、温度が上がれば必ず咲くわけではありません。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "english": "Today I will talk about rules. Flowers bloom when spring comes, but a rise in temperature does not guarantee blooming. The plan starts at 2:00 p.m.. Afterward, I will check the necessary details once more. If there is a sudden change, I intend to notify the people involved first. I will compare what I heard with my own schedule before deciding the final order."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-014",
+    "transcript": "予定の変更の予定を確認します。\n雨が降ったら中止ですが、曇りなら予定どおり行います。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "learnerTranscript": "予定の変更の予定を確認します。\n雨が降ったら中止ですが、曇りなら予定どおり行います。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "english": "I will confirm the plan for changes of plan. If it rains, it will be canceled, but if it is cloudy, it will proceed as planned. The plan starts at 3:00 p.m.. Afterward, I will check the necessary details once more. After finishing the preparations, I will contact the person in charge to confirm. I will choose a reasonable method while watching how preparations progress."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-015",
+    "transcript": "家で一つ困ったことがあります。\n雨なら傘で足りますが、台風の場合は外へ出ないでください。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "learnerTranscript": "家で一つ困ったことがあります。\n雨なら傘で足りますが、台風の場合は外へ出ないでください。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "english": "There is one problem involving home. An umbrella is enough for rain, but in the event of a typhoon, please do not go outside. The plan starts at 4:00 p.m.. Afterward, I will check the necessary details once more. I plan to organize the differences from last time and explain them clearly. If necessary, I will adjust the schedule and send everyone the new information."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-016",
+    "transcript": "料理の新しい方法を説明します。\n駅に着いたら電話しますが、遅れても先に始めてください。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "learnerTranscript": "料理の新しい方法を説明します。\n駅に着いたら電話しますが、遅れても先に始めてください。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "english": "I will explain a new approach to cooking. I will call when I reach the station, but even if I am late, please start without me. The plan starts at 5:00 p.m.. Afterward, I will check the necessary details once more. If a problem remains, I will discuss it again instead of deciding alone. Afterward, I will summarize the result and use it next time."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-017",
+    "transcript": "予約について大切なお知らせです。\n急ぐ必要はありませんが、受付には九時までに来なければなりません。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "learnerTranscript": "予約について大切なお知らせです。\n急ぐ必要はありませんが、受付には九時までに来なければなりません。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "english": "This is an important update about appointments. There is no need to hurry, but you must arrive at reception by nine. The plan starts at 8:00 a.m.. Afterward, I will check the necessary details once more. If there is a sudden change, I intend to notify the people involved first. I will compare what I heard with my own schedule before deciding the final order."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-018",
+    "transcript": "健康のことで相談があります。\n来なくてもいいという意味ではなく、無理なら休んでもいいということです。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "learnerTranscript": "健康のことで相談があります。\n来なくてもいいという意味ではなく、無理なら休んでもいいということです。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "english": "I would like advice about health. It does not mean you do not have to come; it means you may rest if coming is too difficult. The plan starts at 9:00 a.m.. Afterward, I will check the necessary details once more. After finishing the preparations, I will contact the person in charge to confirm. I will choose a reasonable method while watching how preparations progress."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-019",
+    "transcript": "今日は宿について話します。\n会社が決めたのではなく、私が家で働くことにしました。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "learnerTranscript": "今日は宿について話します。\n会社が決めたのではなく、私が家で働くことにしました。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "english": "Today I will talk about accommodation. The company did not decide it; I decided to work from home. The plan starts at 10:00 a.m.. Afterward, I will check the necessary details once more. I plan to organize the differences from last time and explain them clearly. If necessary, I will adjust the schedule and send everyone the new information."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-020",
+    "transcript": "落とし物の予定を確認します。\n行くつもりでしたが、今の予定では家にいることになっています。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "learnerTranscript": "落とし物の予定を確認します。\n行くつもりでしたが、今の予定では家にいることになっています。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "english": "I will confirm the plan for lost items. I intended to go, but under the current plan I am to stay home. The plan starts at 1:00 p.m.. Afterward, I will check the necessary details once more. If a problem remains, I will discuss it again instead of deciding alone. Afterward, I will summarize the result and use it next time."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-021",
+    "transcript": "計画で一つ困ったことがあります。\n雨が降るかもしれませんが、予報では午後には止むはずです。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "learnerTranscript": "計画で一つ困ったことがあります。\n雨が降るかもしれませんが、予報では午後には止むはずです。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "english": "There is one problem involving plans. It might rain, but according to the forecast it should stop in the afternoon. The plan starts at 2:00 p.m.. Afterward, I will check the necessary details once more. If there is a sudden change, I intend to notify the people involved first. I will compare what I heard with my own schedule before deciding the final order."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-022",
+    "transcript": "家族の新しい方法を説明します。\n彼は来るはずですが、仕事が終わらなければ遅れるかもしれません。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "learnerTranscript": "家族の新しい方法を説明します。\n彼は来るはずですが、仕事が終わらなければ遅れるかもしれません。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "english": "I will explain a new approach to family. He should come, but he might be late if his work does not finish. The plan starts at 3:00 p.m.. Afterward, I will check the necessary details once more. After finishing the preparations, I will contact the person in charge to confirm. I will choose a reasonable method while watching how preparations progress."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-023",
+    "transcript": "レストランについて大切なお知らせです。\n空を見ると雨が降りそうですが、予報では晴れるそうです。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "learnerTranscript": "レストランについて大切なお知らせです。\n空を見ると雨が降りそうですが、予報では晴れるそうです。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "english": "This is an important update about restaurants. It looks like rain from the sky, but the forecast says it will clear up. The plan starts at 4:00 p.m.. Afterward, I will check the necessary details once more. I plan to organize the differences from last time and explain them clearly. If necessary, I will adjust the schedule and send everyone the new information."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-024",
+    "transcript": "天気のことで相談があります。\n魚が猫に食べられたのではなく、この猫は魚を食べられます。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "learnerTranscript": "天気のことで相談があります。\n魚が猫に食べられたのではなく、この猫は魚を食べられます。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "english": "I would like advice about weather. This is not saying the fish was eaten by the cat; it says this cat can eat fish. The plan starts at 5:00 p.m.. Afterward, I will check the necessary details once more. If a problem remains, I will discuss it again instead of deciding alone. Afterward, I will summarize the result and use it next time."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-025",
+    "transcript": "今日は運動について話します。\n自分でできる目的には『ために』を使い、忘れないという目標には『ように』が自然です。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "learnerTranscript": "今日は運動について話します。\n自分でできる目的には『ために』を使い、忘れないという目標には『ように』が自然です。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n急な変更があれば、先に関係する人へ知らせるつもりです。\n聞いた内容と自分の予定を比べてから、最後の順番を決めます。",
+    "english": "Today I will talk about exercise. Tame ni suits a controllable purpose, while yō ni is natural for a goal such as not forgetting. The plan starts at 8:00 a.m.. Afterward, I will check the necessary details once more. If there is a sudden change, I intend to notify the people involved first. I will compare what I heard with my own schedule before deciding the final order."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-026",
+    "transcript": "配達の予定を確認します。\n毎日読むようにしていたら、長い文も読めるようになりました。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "learnerTranscript": "配達の予定を確認します。\n毎日読むようにしていたら、長い文も読めるようになりました。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な準備を終えてから、担当者に確認の連絡をします。\n準備の進み方を見ながら、無理のない方法を選びます。",
+    "english": "I will confirm the plan for delivery. After making a point of reading every day, I became able to read long sentences too. The plan starts at 9:00 a.m.. Afterward, I will check the necessary details once more. After finishing the preparations, I will contact the person in charge to confirm. I will choose a reasonable method while watching how preparations progress."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-027",
+    "transcript": "間違いで一つ困ったことがあります。\n便利でも、毎日は使わないと思います。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "learnerTranscript": "間違いで一つ困ったことがあります。\n便利でも、毎日は使わないと思います。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n前回との違いを整理して、分かりやすい順番で伝える予定です。\n必要なら予定を少し変えて、全員に新しい情報を送ります。",
+    "english": "There is one problem involving mistakes. Even if it is convenient, I do not think I will use it every day. The plan starts at 10:00 a.m.. Afterward, I will check the necessary details once more. I plan to organize the differences from last time and explain them clearly. If necessary, I will adjust the schedule and send everyone the new information."
+  },
+  {
+    "activityId": "listening-activity-n4-short-monologue-028",
+    "transcript": "電話の伝言の新しい方法を説明します。\n店は休みだと聞きましたが、電気がついています。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "learnerTranscript": "電話の伝言の新しい方法を説明します。\n店は休みだと聞きましたが、電気がついています。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n問題が残った場合は、一人で決めずにもう一度相談します。\n終わった後で結果を短くまとめ、次の機会に役立てます。",
+    "english": "I will explain a new approach to phone messages. I heard the shop was closed, but the lights are on. The plan starts at 1:00 p.m.. Afterward, I will check the necessary details once more. If a problem remains, I will discuss it again instead of deciding alone. Afterward, I will summarize the result and use it next time."
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-001",
+    "transcript": "明日、一緒に図書館へ行きませんか。",
+    "learnerTranscript": "明日、一緒に図書館へ行きませんか。",
+    "english": "Would you like to go to the library together tomorrow?"
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-002",
+    "transcript": "その荷物を持ちましょうか。",
+    "learnerTranscript": "その荷物を持ちましょうか。",
+    "english": "Shall I carry that luggage?"
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-003",
+    "transcript": "寒いので、窓を閉めてください。",
+    "learnerTranscript": "寒いので、窓を閉めてください。",
+    "english": "It is cold, so please close the window."
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-004",
+    "transcript": "ここに座ってもいいですか。",
+    "learnerTranscript": "ここに座ってもいいですか。",
+    "english": "May I sit here?"
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-005",
+    "transcript": "京都へ行ったことがありますか。",
+    "learnerTranscript": "京都へ行ったことがありますか。",
+    "english": "Have you ever been to Kyoto?"
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-006",
+    "transcript": "どんな料理が好きですか。",
+    "learnerTranscript": "どんな料理が好きですか。",
+    "english": "What kind of food do you like?"
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-007",
+    "transcript": "週末は何をしたいですか。",
+    "learnerTranscript": "週末は何をしたいですか。",
+    "english": "What do you want to do this weekend?"
+  },
+  {
+    "activityId": "listening-activity-n5-appropriate-response-008",
+    "transcript": "午後三時に駅で会いましょう。",
+    "learnerTranscript": "午後三時に駅で会いましょう。",
+    "english": "Let us meet at the station at 3 p.m."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-001",
+    "transcript": "今日は予定について話します。\n電車よりバスのほうが安いです。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "learnerTranscript": "今日は予定について話します。\n電車よりバスのほうが安いです。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "english": "Today I will talk about schedules. The bus is cheaper than the train. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-002",
+    "transcript": "公共施設の予定を確認します。\n雨が降っているので、家にいます。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "learnerTranscript": "公共施設の予定を確認します。\n雨が降っているので、家にいます。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "english": "I will confirm the plan for public facilities. Because it is raining, I am staying home. Then, shall we start at 9:00 a.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-003",
+    "transcript": "近所で一つ困ったことがあります。\n私は会社員です。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "learnerTranscript": "近所で一つ困ったことがあります。\n私は会社員です。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "english": "There is one problem involving the neighbourhood. I am an office worker. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-004",
+    "transcript": "決まりの新しい方法を説明します。\n寒いから、窓を閉めます。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "learnerTranscript": "決まりの新しい方法を説明します。\n寒いから、窓を閉めます。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "english": "I will explain a new approach to rules. It is cold, so I will close the window. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-005",
+    "transcript": "予定の変更について大切なお知らせです。\n少し遠いけど、歩いて行けるよ。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "learnerTranscript": "予定の変更について大切なお知らせです。\n少し遠いけど、歩いて行けるよ。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "english": "This is an important update about changes of plan. It is a little far, but we can walk there. Then, shall we start at 2:00 p.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-006",
+    "transcript": "家のことで相談があります。\n一緒に昼ご飯を食べませんか。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "learnerTranscript": "家のことで相談があります。\n一緒に昼ご飯を食べませんか。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "english": "I would like advice about home. Would you like to have lunch together? Then, shall we start at 3:00 p.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-007",
+    "transcript": "今日は料理について話します。\n次の駅で降りましょう。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "learnerTranscript": "今日は料理について話します。\n次の駅で降りましょう。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "english": "Today I will talk about cooking. Let's get off at the next station. Then, shall we start at 4:00 p.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-008",
+    "transcript": "予約の予定を確認します。\n窓を閉めましょうか。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "learnerTranscript": "予約の予定を確認します。\n窓を閉めましょうか。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "english": "I will confirm the plan for appointments. Shall I close the window? Then, shall we start at 5:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-009",
+    "transcript": "健康で一つ困ったことがあります。\nこの扉を開けないでください。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "learnerTranscript": "健康で一つ困ったことがあります。\nこの扉を開けないでください。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "english": "There is one problem involving health. Please do not open this door. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-010",
+    "transcript": "宿の新しい方法を説明します。\n今夜は出かけないほうがいいです。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "learnerTranscript": "宿の新しい方法を説明します。\n今夜は出かけないほうがいいです。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "english": "I will explain a new approach to accommodation. You had better not go out tonight. Then, shall we start at 9:00 a.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-011",
+    "transcript": "落とし物について大切なお知らせです。\nここでは靴を脱がなくてはいけません。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "learnerTranscript": "落とし物について大切なお知らせです。\nここでは靴を脱がなくてはいけません。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "english": "This is an important update about lost items. You have to take off your shoes here. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-012",
+    "transcript": "計画のことで相談があります。\n空がだんだん暗くなりました。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "learnerTranscript": "計画のことで相談があります。\n空がだんだん暗くなりました。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "english": "I would like advice about plans. The sky gradually became dark. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-013",
+    "transcript": "今日は家族について話します。\n飲み物はお茶にします。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "learnerTranscript": "今日は家族について話します。\n飲み物はお茶にします。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "english": "Today I will talk about family. I will have tea for my drink. Then, shall we start at 2:00 p.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-014",
+    "transcript": "レストランの予定を確認します。\n私は朝に歩くのが好きです。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "learnerTranscript": "レストランの予定を確認します。\n私は朝に歩くのが好きです。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "english": "I will confirm the plan for restaurants. I like walking in the morning. Then, shall we start at 3:00 p.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-015",
+    "transcript": "天気で一つ困ったことがあります。\n果物の中で、桃が一番好きです。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "learnerTranscript": "天気で一つ困ったことがあります。\n果物の中で、桃が一番好きです。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "english": "There is one problem involving weather. Of all fruits, I like peaches best. Then, shall we start at 4:00 p.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-016",
+    "transcript": "運動の新しい方法を説明します。\nこの靴は少し大きすぎます。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "learnerTranscript": "運動の新しい方法を説明します。\nこの靴は少し大きすぎます。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "english": "I will explain a new approach to exercise. These shoes are a little too big. Then, shall we start at 5:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-017",
+    "transcript": "配達について大切なお知らせです。\n疲れているなら、早く寝たほうがいいです。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "learnerTranscript": "配達について大切なお知らせです。\n疲れているなら、早く寝たほうがいいです。\nでは、午前8時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "english": "This is an important update about delivery. If you are tired, you should go to bed early. Then, shall we start at 8:00 a.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-018",
+    "transcript": "間違いのことで相談があります。\n今夜は温かいスープを食べたいです。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "learnerTranscript": "間違いのことで相談があります。\n今夜は温かいスープを食べたいです。\nでは、午前9時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "english": "I would like advice about mistakes. I want to eat warm soup tonight. Then, shall we start at 9:00 a.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-019",
+    "transcript": "今日は電話の伝言について話します。\n京都へ二回行ったことがあります。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "learnerTranscript": "今日は電話の伝言について話します。\n京都へ二回行ったことがあります。\nでは、午前10時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "english": "Today I will talk about phone messages. I have been to Kyoto twice. Then, shall we start at 10:00 a.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-020",
+    "transcript": "問題の解決の予定を確認します。\n休みの日は本を読んだり、料理をしたりします。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "learnerTranscript": "問題の解決の予定を確認します。\n休みの日は本を読んだり、料理をしたりします。\nでは、午後1時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "english": "I will confirm the plan for problems and solutions. On days off, I do things like read and cook. Then, shall we start at 1:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-021",
+    "transcript": "買い物で一つ困ったことがあります。\nここに車を止めてはいけません。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "learnerTranscript": "買い物で一つ困ったことがあります。\nここに車を止めてはいけません。\nでは、午後2時に始めますか。\nはい。その時間なら大丈夫です。\n場所は入口の近くでいいですか。\nはい。着いたら連絡してください。",
+    "english": "There is one problem involving shopping. You must not park here. Then, shall we start at 2:00 p.m.? Yes, that time works. Is a place near the entrance all right? Yes. Please contact me when you arrive."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-022",
+    "transcript": "道案内の新しい方法を説明します。\n父は今、新聞を読んでいます。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "learnerTranscript": "道案内の新しい方法を説明します。\n父は今、新聞を読んでいます。\nでは、午後3時に始めますか。\nはい。その時間なら大丈夫です。\n図書館の前で待ち合わせませんか。\nいいですね。私は青い鞄を持って行きます。",
+    "english": "I will explain a new approach to directions. My father is reading the newspaper now. Then, shall we start at 3:00 p.m.? Yes, that time works. Shall we meet in front of the library? Sounds good. I will carry a blue bag."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-023",
+    "transcript": "趣味について大切なお知らせです。\n手を洗ってから、ご飯を食べます。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "learnerTranscript": "趣味について大切なお知らせです。\n手を洗ってから、ご飯を食べます。\nでは、午後4時に始めますか。\nはい。その時間なら大丈夫です。\n二階の休憩室で話してもいいですか。\nはい。先に席を取っておきます。",
+    "english": "This is an important update about hobbies. I wash my hands before eating. Then, shall we start at 4:00 p.m.? Yes, that time works. May we talk in the second-floor lounge? Yes. I will save us seats in advance."
+  },
+  {
+    "activityId": "listening-activity-n5-dialogue-024",
+    "transcript": "行事のことで相談があります。\nこの紙に名前を書いてください。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "learnerTranscript": "行事のことで相談があります。\nこの紙に名前を書いてください。\nでは、午後5時に始めますか。\nはい。その時間なら大丈夫です。\n受付の横に集まるのはどうですか。\n分かりました。遅れる時は電話します。",
+    "english": "I would like advice about events. Please write your name on this paper. Then, shall we start at 5:00 p.m.? Yes, that time works. How about gathering beside reception? Understood. I will call if I am late."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-001",
+    "transcript": "青空センターから、勉強のお知らせです。\n土曜日の受付は午前8時から始まります。\n料金は300円で、必要な物は2つです。\nここに座ってもいいですか。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "青空センターから、勉強のお知らせです。\n土曜日の受付は午前8時から始まります。\n料金は300円で、必要な物は2つです。\nここに座ってもいいですか。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Aozora Center announcement about study. Saturday reception begins at 8:00 a.m.. The fee is 300 yen and two items are required. May I sit here? Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-002",
+    "transcript": "若葉会館から、店の案内のお知らせです。\n土曜日の受付は午前9時から始まります。\n料金は300円で、必要な物は2つです。\n来年、車を買うつもりです。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "若葉会館から、店の案内のお知らせです。\n土曜日の受付は午前9時から始まります。\n料金は300円で、必要な物は2つです。\n来年、車を買うつもりです。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Wakaba Hall announcement about customer service. Saturday reception begins at 9:00 a.m.. The fee is 300 yen and two items are required. I intend to buy a car next year. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-003",
+    "transcript": "ひかり学校から、おすすめのお知らせです。\n土曜日の受付は午前10時から始まります。\n料金は300円で、必要な物は2つです。\n電車よりバスのほうが安いです。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "ひかり学校から、おすすめのお知らせです。\n土曜日の受付は午前10時から始まります。\n料金は300円で、必要な物は2つです。\n電車よりバスのほうが安いです。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Hikari School announcement about recommendations. Saturday reception begins at 10:00 a.m.. The fee is 300 yen and two items are required. The bus is cheaper than the train. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-004",
+    "transcript": "みどり図書館から、仕事のお知らせです。\n土曜日の受付は午後1時から始まります。\n料金は300円で、必要な物は2つです。\n雨が降っているので、家にいます。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "みどり図書館から、仕事のお知らせです。\n土曜日の受付は午後1時から始まります。\n料金は300円で、必要な物は2つです。\n雨が降っているので、家にいます。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Midori Library announcement about work. Saturday reception begins at 1:00 p.m.. The fee is 300 yen and two items are required. Because it is raining, I am staying home. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-005",
+    "transcript": "青空センターから、旅行のお知らせです。\n土曜日の受付は午後2時から始まります。\n料金は300円で、必要な物は2つです。\n私は会社員です。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "青空センターから、旅行のお知らせです。\n土曜日の受付は午後2時から始まります。\n料金は300円で、必要な物は2つです。\n私は会社員です。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Aozora Center announcement about travel. Saturday reception begins at 2:00 p.m.. The fee is 300 yen and two items are required. I am an office worker. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-006",
+    "transcript": "若葉会館から、招待のお知らせです。\n土曜日の受付は午後3時から始まります。\n料金は300円で、必要な物は2つです。\n寒いから、窓を閉めます。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "若葉会館から、招待のお知らせです。\n土曜日の受付は午後3時から始まります。\n料金は300円で、必要な物は2つです。\n寒いから、窓を閉めます。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Wakaba Hall announcement about invitations. Saturday reception begins at 3:00 p.m.. The fee is 300 yen and two items are required. It is cold, so I will close the window. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-007",
+    "transcript": "ひかり学校から、図書館のお知らせです。\n土曜日の受付は午後4時から始まります。\n料金は300円で、必要な物は2つです。\n少し遠いけど、歩いて行けるよ。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "ひかり学校から、図書館のお知らせです。\n土曜日の受付は午後4時から始まります。\n料金は300円で、必要な物は2つです。\n少し遠いけど、歩いて行けるよ。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Hikari School announcement about libraries. Saturday reception begins at 4:00 p.m.. The fee is 300 yen and two items are required. It is a little far, but we can walk there. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-008",
+    "transcript": "みどり図書館から、機械のお知らせです。\n土曜日の受付は午後5時から始まります。\n料金は300円で、必要な物は2つです。\n一緒に昼ご飯を食べませんか。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "みどり図書館から、機械のお知らせです。\n土曜日の受付は午後5時から始まります。\n料金は300円で、必要な物は2つです。\n一緒に昼ご飯を食べませんか。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Midori Library announcement about technology. Saturday reception begins at 5:00 p.m.. The fee is 300 yen and two items are required. Would you like to have lunch together? Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-009",
+    "transcript": "青空センターから、お願いのお知らせです。\n土曜日の受付は午前8時から始まります。\n料金は300円で、必要な物は2つです。\n次の駅で降りましょう。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "青空センターから、お願いのお知らせです。\n土曜日の受付は午前8時から始まります。\n料金は300円で、必要な物は2つです。\n次の駅で降りましょう。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Aozora Center announcement about requests. Saturday reception begins at 8:00 a.m.. The fee is 300 yen and two items are required. Let's get off at the next station. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-010",
+    "transcript": "若葉会館から、品物の比較のお知らせです。\n土曜日の受付は午前9時から始まります。\n料金は300円で、必要な物は2つです。\n窓を閉めましょうか。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "若葉会館から、品物の比較のお知らせです。\n土曜日の受付は午前9時から始まります。\n料金は300円で、必要な物は2つです。\n窓を閉めましょうか。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Wakaba Hall announcement about comparisons. Saturday reception begins at 9:00 a.m.. The fee is 300 yen and two items are required. Shall I close the window? Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-011",
+    "transcript": "ひかり学校から、学校のお知らせです。\n土曜日の受付は午前10時から始まります。\n料金は300円で、必要な物は2つです。\nこの扉を開けないでください。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "ひかり学校から、学校のお知らせです。\n土曜日の受付は午前10時から始まります。\n料金は300円で、必要な物は2つです。\nこの扉を開けないでください。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Hikari School announcement about school. Saturday reception begins at 10:00 a.m.. The fee is 300 yen and two items are required. Please do not open this door. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-practical-information-012",
+    "transcript": "みどり図書館から、交通のお知らせです。\n土曜日の受付は午後1時から始まります。\n料金は300円で、必要な物は2つです。\n今夜は出かけないほうがいいです。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "learnerTranscript": "みどり図書館から、交通のお知らせです。\n土曜日の受付は午後1時から始まります。\n料金は300円で、必要な物は2つです。\n今夜は出かけないほうがいいです。\n雨の場合も二階の青い部屋で行います。\n聞き終わったら、時間と場所をもう一度確かめてください。",
+    "english": "This is a Midori Library announcement about transport. Saturday reception begins at 1:00 p.m.. The fee is 300 yen and two items are required. You had better not go out tonight. Even if it rains, it will take place in the blue room on the second floor. After listening, please check the time and place once more."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-001",
+    "transcript": "今日は家族について話します。\n私は会社員です。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "learnerTranscript": "今日は家族について話します。\n私は会社員です。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "english": "Today I will talk about family. I am an office worker. The plan starts at 8:00 a.m.. Afterward, I will check the necessary details once more. I will also write the important points on paper."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-002",
+    "transcript": "レストランの予定を確認します。\n寒いから、窓を閉めます。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "learnerTranscript": "レストランの予定を確認します。\n寒いから、窓を閉めます。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "english": "I will confirm the plan for restaurants. It is cold, so I will close the window. The plan starts at 9:00 a.m.. Afterward, I will check the necessary details once more. I will prepare what I need tonight."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-003",
+    "transcript": "天気で一つ困ったことがあります。\n少し遠いけど、歩いて行けるよ。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "learnerTranscript": "天気で一つ困ったことがあります。\n少し遠いけど、歩いて行けるよ。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "english": "There is one problem involving weather. It is a little far, but we can walk there. The plan starts at 10:00 a.m.. Afterward, I will check the necessary details once more. I will ask the teacher if I do not understand."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-004",
+    "transcript": "運動の新しい方法を説明します。\n一緒に昼ご飯を食べませんか。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "learnerTranscript": "運動の新しい方法を説明します。\n一緒に昼ご飯を食べませんか。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "english": "I will explain a new approach to exercise. Would you like to have lunch together? The plan starts at 1:00 p.m.. Afterward, I will check the necessary details once more. Finally, I will also tell my family."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-005",
+    "transcript": "配達について大切なお知らせです。\n次の駅で降りましょう。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "learnerTranscript": "配達について大切なお知らせです。\n次の駅で降りましょう。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "english": "This is an important update about delivery. Let's get off at the next station. The plan starts at 2:00 p.m.. Afterward, I will check the necessary details once more. I will also write the important points on paper."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-006",
+    "transcript": "間違いのことで相談があります。\n窓を閉めましょうか。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "learnerTranscript": "間違いのことで相談があります。\n窓を閉めましょうか。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "english": "I would like advice about mistakes. Shall I close the window? The plan starts at 3:00 p.m.. Afterward, I will check the necessary details once more. I will prepare what I need tonight."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-007",
+    "transcript": "今日は電話の伝言について話します。\nこの扉を開けないでください。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "learnerTranscript": "今日は電話の伝言について話します。\nこの扉を開けないでください。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "english": "Today I will talk about phone messages. Please do not open this door. The plan starts at 4:00 p.m.. Afterward, I will check the necessary details once more. I will ask the teacher if I do not understand."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-008",
+    "transcript": "問題の解決の予定を確認します。\n今夜は出かけないほうがいいです。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "learnerTranscript": "問題の解決の予定を確認します。\n今夜は出かけないほうがいいです。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "english": "I will confirm the plan for problems and solutions. You had better not go out tonight. The plan starts at 5:00 p.m.. Afterward, I will check the necessary details once more. Finally, I will also tell my family."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-009",
+    "transcript": "買い物で一つ困ったことがあります。\nここでは靴を脱がなくてはいけません。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "learnerTranscript": "買い物で一つ困ったことがあります。\nここでは靴を脱がなくてはいけません。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "english": "There is one problem involving shopping. You have to take off your shoes here. The plan starts at 8:00 a.m.. Afterward, I will check the necessary details once more. I will also write the important points on paper."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-010",
+    "transcript": "道案内の新しい方法を説明します。\n空がだんだん暗くなりました。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "learnerTranscript": "道案内の新しい方法を説明します。\n空がだんだん暗くなりました。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "english": "I will explain a new approach to directions. The sky gradually became dark. The plan starts at 9:00 a.m.. Afterward, I will check the necessary details once more. I will prepare what I need tonight."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-011",
+    "transcript": "趣味について大切なお知らせです。\n飲み物はお茶にします。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "learnerTranscript": "趣味について大切なお知らせです。\n飲み物はお茶にします。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "english": "This is an important update about hobbies. I will have tea for my drink. The plan starts at 10:00 a.m.. Afterward, I will check the necessary details once more. I will ask the teacher if I do not understand."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-012",
+    "transcript": "行事のことで相談があります。\n私は朝に歩くのが好きです。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "learnerTranscript": "行事のことで相談があります。\n私は朝に歩くのが好きです。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "english": "I would like advice about events. I like walking in the morning. The plan starts at 1:00 p.m.. Afterward, I will check the necessary details once more. Finally, I will also tell my family."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-013",
+    "transcript": "今日は勉強について話します。\n果物の中で、桃が一番好きです。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "learnerTranscript": "今日は勉強について話します。\n果物の中で、桃が一番好きです。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "english": "Today I will talk about study. Of all fruits, I like peaches best. The plan starts at 2:00 p.m.. Afterward, I will check the necessary details once more. I will also write the important points on paper."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-014",
+    "transcript": "店の案内の予定を確認します。\nこの靴は少し大きすぎます。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "learnerTranscript": "店の案内の予定を確認します。\nこの靴は少し大きすぎます。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "english": "I will confirm the plan for customer service. These shoes are a little too big. The plan starts at 3:00 p.m.. Afterward, I will check the necessary details once more. I will prepare what I need tonight."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-015",
+    "transcript": "おすすめで一つ困ったことがあります。\n疲れているなら、早く寝たほうがいいです。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "learnerTranscript": "おすすめで一つ困ったことがあります。\n疲れているなら、早く寝たほうがいいです。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "english": "There is one problem involving recommendations. If you are tired, you should go to bed early. The plan starts at 4:00 p.m.. Afterward, I will check the necessary details once more. I will ask the teacher if I do not understand."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-016",
+    "transcript": "仕事の新しい方法を説明します。\n今夜は温かいスープを食べたいです。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "learnerTranscript": "仕事の新しい方法を説明します。\n今夜は温かいスープを食べたいです。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "english": "I will explain a new approach to work. I want to eat warm soup tonight. The plan starts at 5:00 p.m.. Afterward, I will check the necessary details once more. Finally, I will also tell my family."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-017",
+    "transcript": "旅行について大切なお知らせです。\n京都へ二回行ったことがあります。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "learnerTranscript": "旅行について大切なお知らせです。\n京都へ二回行ったことがあります。\n予定は午前8時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "english": "This is an important update about travel. I have been to Kyoto twice. The plan starts at 8:00 a.m.. Afterward, I will check the necessary details once more. I will also write the important points on paper."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-018",
+    "transcript": "招待のことで相談があります。\n休みの日は本を読んだり、料理をしたりします。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "learnerTranscript": "招待のことで相談があります。\n休みの日は本を読んだり、料理をしたりします。\n予定は午前9時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "english": "I would like advice about invitations. On days off, I do things like read and cook. The plan starts at 9:00 a.m.. Afterward, I will check the necessary details once more. I will prepare what I need tonight."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-019",
+    "transcript": "今日は図書館について話します。\nここに車を止めてはいけません。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "learnerTranscript": "今日は図書館について話します。\nここに車を止めてはいけません。\n予定は午前10時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "english": "Today I will talk about libraries. You must not park here. The plan starts at 10:00 a.m.. Afterward, I will check the necessary details once more. I will ask the teacher if I do not understand."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-020",
+    "transcript": "機械の予定を確認します。\n父は今、新聞を読んでいます。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "learnerTranscript": "機械の予定を確認します。\n父は今、新聞を読んでいます。\n予定は午後1時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "english": "I will confirm the plan for technology. My father is reading the newspaper now. The plan starts at 1:00 p.m.. Afterward, I will check the necessary details once more. Finally, I will also tell my family."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-021",
+    "transcript": "お願いで一つ困ったことがあります。\n手を洗ってから、ご飯を食べます。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "learnerTranscript": "お願いで一つ困ったことがあります。\n手を洗ってから、ご飯を食べます。\n予定は午後2時からです。\n終わったら、必要なことをもう一度確認します。\n大切な所は紙にも書きます。",
+    "english": "There is one problem involving requests. I wash my hands before eating. The plan starts at 2:00 p.m.. Afterward, I will check the necessary details once more. I will also write the important points on paper."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-022",
+    "transcript": "品物の比較の新しい方法を説明します。\nこの紙に名前を書いてください。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "learnerTranscript": "品物の比較の新しい方法を説明します。\nこの紙に名前を書いてください。\n予定は午後3時からです。\n終わったら、必要なことをもう一度確認します。\n必要な物は今夜用意します。",
+    "english": "I will explain a new approach to comparisons. Please write your name on this paper. The plan starts at 3:00 p.m.. Afterward, I will check the necessary details once more. I will prepare what I need tonight."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-023",
+    "transcript": "学校について大切なお知らせです。\nここに座ってもいいですか。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "learnerTranscript": "学校について大切なお知らせです。\nここに座ってもいいですか。\n予定は午後4時からです。\n終わったら、必要なことをもう一度確認します。\n分からない時は先生に聞きます。",
+    "english": "This is an important update about school. May I sit here? The plan starts at 4:00 p.m.. Afterward, I will check the necessary details once more. I will ask the teacher if I do not understand."
+  },
+  {
+    "activityId": "listening-activity-n5-short-monologue-024",
+    "transcript": "交通のことで相談があります。\n来年、車を買うつもりです。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "learnerTranscript": "交通のことで相談があります。\n来年、車を買うつもりです。\n予定は午後5時からです。\n終わったら、必要なことをもう一度確認します。\n最後に家族にも知らせます。",
+    "english": "I would like advice about transport. I intend to buy a car next year. The plan starts at 5:00 p.m.. Afterward, I will check the necessary details once more. Finally, I will also tell my family."
+  }
+]

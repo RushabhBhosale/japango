@@ -1,0 +1,634 @@
+[
+  {
+    "id": "n4-grammar-candidate-680e5dcdfdf0",
+    "pattern": "Causative Sentences",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 22,
+        "page": 240,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 22,
+        "page": 241,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 23,
+        "page": 262,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-32413c2cd2d5",
+    "pattern": "Causative verb sentences",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 48,
+        "page": 158,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-130353b1d11f",
+    "pattern": "Causative-passive Sentences",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 23,
+        "page": 262,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 23,
+        "page": 269,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-e3b0bc8f1403",
+    "pattern": "Expressions for giving and receiving",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 41,
+        "page": 116,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-8575eb8ac6b6",
+    "pattern": "Extra-modest Expressions",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 20,
+        "page": 192,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 20,
+        "page": 193,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 20,
+        "page": 195,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 20,
+        "page": 199,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 20,
+        "page": 200,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-dacb5fbd50fe",
+    "pattern": "Honorific Verbs",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 19,
+        "page": 172,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 19,
+        "page": 173,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 19,
+        "page": 174,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-a485fd368aee",
+    "pattern": "Humble Expressions",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 20,
+        "page": 193,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 20,
+        "page": 195,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 20,
+        "page": 201,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-e91ba9f1d30b",
+    "pattern": "mperative and prohibitive forms",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 33,
+        "page": 68,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-c5508a605ca7",
+    "pattern": "Passive Sentences",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 21,
+        "page": 218,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 21,
+        "page": 219,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 21,
+        "page": 220,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 23,
+        "page": 262,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-2cf13a73207c",
+    "pattern": "Potential verb sentences",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 27,
+        "page": 32,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-525e8721ad3d",
+    "pattern": "Potential Verbs",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 13,
+        "page": 34,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 13,
+        "page": 35,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 13,
+        "page": 36,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 19,
+        "page": 173,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 21,
+        "page": 219,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 27,
+        "page": 32,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.5,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-ecdd29553262",
+    "pattern": "Usage of a causative \"",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 48,
+        "page": 158,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-e1df0a323c6b",
+    "pattern": "V T-form いただけませんか",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 26,
+        "page": 27,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-b78d211fed58",
+    "pattern": "Volitional Form",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 15,
+        "page": 82,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 15,
+        "page": 83,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Genki II",
+        "sourceFile": "genki-2.pdf",
+        "edition": "Third Edition",
+        "lesson": 23,
+        "page": 265,
+        "section": "grammar-heading"
+      },
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 31,
+        "page": 56,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.5,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-93087282aa4a",
+    "pattern": "ありました",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 29,
+        "page": 45,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-caf8c5be96aa",
+    "pattern": "とか",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 36,
+        "page": 87,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-65dc6ded3df5",
+    "pattern": "まして",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 49,
+        "page": 165,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-06ccdf06d752",
+    "pattern": "も",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 27,
+        "page": 33,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-a0214c134b1f",
+    "pattern": "よく この 喫茶店に 来るんですか",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 28,
+        "page": 39,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-f34cdcc245a6",
+    "pattern": "一と 読みますand 一と 書いて あります",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 33,
+        "page": 69,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-706beb8c5c53",
+    "pattern": "見えますand 聞こえます",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 27,
+        "page": 32,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-8dd890c32b12",
+    "pattern": "謙譲語 (humble expressions)",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 50,
+        "page": 170,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-0b9cccc5e6a8",
+    "pattern": "声音におい/味が します",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 47,
+        "page": 153,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-grammar-candidate-d9b7c7c79671",
+    "pattern": "途中で",
+    "targetLevel": "N4",
+    "levelEvidence": "Volume II OCR curriculum reference; not an authoritative JLPT mapping.",
+    "references": [
+      {
+        "sourceBook": "Minna no Nihongo II Grammar",
+        "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+        "edition": null,
+        "lesson": 39,
+        "page": 105,
+        "section": "grammar-heading"
+      }
+    ],
+    "confidence": 0.35,
+    "needsReview": true,
+    "releaseReady": false
+  }
+]

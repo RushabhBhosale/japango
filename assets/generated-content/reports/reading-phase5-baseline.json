@@ -1,0 +1,131 @@
+{
+  "auditStage": "phase5-baseline",
+  "performedBeforePassageAuthoring": true,
+  "levels": {
+    "N5": {
+      "curriculum": {
+        "total": 42,
+        "releaseReady": 0,
+        "excluded": 42
+      },
+      "grammar": {
+        "total": 124,
+        "releaseReady": 0,
+        "excluded": 124
+      },
+      "vocabulary": {
+        "total": 598,
+        "releaseReady": 598,
+        "excluded": 0
+      },
+      "kanji": {
+        "total": 79,
+        "releaseReady": 79,
+        "excluded": 0
+      },
+      "sentences": {
+        "total": 372,
+        "releaseReady": 0,
+        "developmentOnly": 372
+      },
+      "examples": {
+        "grammar": 372,
+        "vocabulary": 474,
+        "kanji": 1013
+      },
+      "existingReadingPassages": 0,
+      "existingReadingQuestions": 0
+    },
+    "N4": {
+      "curriculum": {
+        "total": 38,
+        "releaseReady": 0,
+        "excluded": 38
+      },
+      "grammar": {
+        "total": 113,
+        "releaseReady": 111,
+        "excluded": 2
+      },
+      "vocabulary": {
+        "total": 554,
+        "releaseReady": 554,
+        "excluded": 0
+      },
+      "kanji": {
+        "total": 166,
+        "releaseReady": 144,
+        "excluded": 22
+      },
+      "sentences": {
+        "total": 444,
+        "releaseReady": 444,
+        "developmentOnly": 0
+      },
+      "examples": {
+        "grammar": 444,
+        "vocabulary": 717,
+        "kanji": 1542
+      },
+      "existingReadingPassages": 0,
+      "existingReadingQuestions": 0
+    }
+  },
+  "lifecycle": {
+    "releaseEligibleCurriculumUnits": 0,
+    "excludedCurriculumUnits": 80,
+    "phase6ReleaseEligiblePassages": 0,
+    "phase6DevelopmentOnlyPassages": 146,
+    "reason": "Every N5 and N4 curriculum unit is currently lifecycle-excluded; passages linked to those parents must remain development-only."
+  },
+  "inventoryLimitations": {
+    "kanjiRecordsWithLimitations": 51,
+    "recordsWithoutSupportedVocabulary": 4,
+    "policy": "Preserve Phase 3/5 effective inventory targets; do not add vocabulary or kanji to inflate reading coverage."
+  },
+  "gaps": {
+    "readingPassages": 0,
+    "readingQuestions": 0,
+    "targetPassages": {
+      "N5": 66,
+      "N4": 80,
+      "total": 146
+    },
+    "requiredTopics": [
+      "accommodation",
+      "appointments",
+      "cooking",
+      "daily-routines",
+      "delivery",
+      "directions",
+      "email",
+      "events",
+      "exercise",
+      "family",
+      "food",
+      "friends",
+      "health",
+      "hobbies",
+      "home",
+      "invitations",
+      "libraries",
+      "lost-items",
+      "messages",
+      "mistakes-and-corrections",
+      "neighbourhoods",
+      "plans",
+      "public-services",
+      "restaurants",
+      "rules",
+      "schedules",
+      "school",
+      "shopping",
+      "study-habits",
+      "technology",
+      "transport",
+      "travel",
+      "weather",
+      "work"
+    ]
+  }
+}

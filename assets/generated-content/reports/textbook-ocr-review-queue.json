@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "lesson-heading-e7c590bb7056",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "lesson-11",
+    "lesson": 11,
+    "pageRanges": [
+      {
+        "start": 92,
+        "end": 92
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-a2d0778ddd1c",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "lesson-12",
+    "lesson": 12,
+    "pageRanges": [
+      {
+        "start": 98,
+        "end": 98
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-78cb28d9159c",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo I",
+    "sourceFile": "minna-no-nihongo-1-textbook.pdf",
+    "normalizedCandidate": "lesson-2",
+    "lesson": 2,
+    "pageRanges": [
+      {
+        "start": 36,
+        "end": 36
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-9f43929ec339",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-32",
+    "lesson": 32,
+    "pageRanges": [
+      {
+        "start": 70,
+        "end": 70
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-b90453969b0c",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-33",
+    "lesson": 33,
+    "pageRanges": [
+      {
+        "start": 80,
+        "end": 80
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-74fd945d7bcd",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-34",
+    "lesson": 34,
+    "pageRanges": [
+      {
+        "start": 88,
+        "end": 88
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-b33f819db4e7",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-35",
+    "lesson": 35,
+    "pageRanges": [
+      {
+        "start": 96,
+        "end": 96
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-9b3e41461916",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-36",
+    "lesson": 36,
+    "pageRanges": [
+      {
+        "start": 106,
+        "end": 106
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-f83026bacfb5",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-38",
+    "lesson": 38,
+    "pageRanges": [
+      {
+        "start": 122,
+        "end": 122
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-9ba9a2ec9df7",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-41",
+    "lesson": 41,
+    "pageRanges": [
+      {
+        "start": 148,
+        "end": 148
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-e243ed32d7d8",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-43",
+    "lesson": 43,
+    "pageRanges": [
+      {
+        "start": 164,
+        "end": 164
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "id": "lesson-heading-82ef0dfc62ad",
+    "priority": "P0",
+    "reason": "Lesson heading is OCR-damaged; page cadence and adjacent headings establish the provisional boundary.",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "lesson-47",
+    "lesson": 47,
+    "pageRanges": [
+      {
+        "start": 198,
+        "end": 198
+      }
+    ],
+    "conflictType": "lesson-heading candidate",
+    "matchedIds": [],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-392493acedc6",
+    "sourceBook": "Genki I",
+    "sourceFile": "genki-1.pdf",
+    "normalizedCandidate": "早い",
+    "lesson": 3,
+    "pageRanges": [
+      {
+        "start": 93,
+        "end": 93
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-早い-はやい",
+      "vocab-速い-はやい"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-74520791765a",
+    "sourceBook": "Genki I",
+    "sourceFile": "genki-1.pdf",
+    "normalizedCandidate": "明日",
+    "lesson": 3,
+    "pageRanges": [
+      {
+        "start": 92,
+        "end": 92
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-明日-あした",
+      "vocab-明日-あす"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-999df0187dd4",
+    "sourceBook": "Genki I",
+    "sourceFile": "genki-1.pdf",
+    "normalizedCandidate": "明日",
+    "lesson": 4,
+    "pageRanges": [
+      {
+        "start": 135,
+        "end": 135
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-明日-あした",
+      "vocab-明日-あす"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-9496acbbf8c5",
+    "sourceBook": "Genki I",
+    "sourceFile": "genki-1.pdf",
+    "normalizedCandidate": "降りる",
+    "lesson": 6,
+    "pageRanges": [
+      {
+        "start": 157,
+        "end": 157
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-下りる-おりる",
+      "vocab-降りる-おりる"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-9b961ff49a3a",
+    "sourceBook": "Genki I",
+    "sourceFile": "genki-1.pdf",
+    "normalizedCandidate": "速い",
+    "lesson": 7,
+    "pageRanges": [
+      {
+        "start": 176,
+        "end": 176
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-早い-はやい",
+      "vocab-速い-はやい"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-aabd53164bc0",
+    "sourceBook": "Genki I",
+    "sourceFile": "genki-1.pdf",
+    "normalizedCandidate": "早い",
+    "lesson": 8,
+    "pageRanges": [
+      {
+        "start": 205,
+        "end": 205
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-早い-はやい",
+      "vocab-速い-はやい"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-30da98878b6c",
+    "sourceBook": "Genki II",
+    "sourceFile": "genki-2.pdf",
+    "normalizedCandidate": "一日",
+    "lesson": 15,
+    "pageRanges": [
+      {
+        "start": 87,
+        "end": 87
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-一日-いちにち",
+      "vocab-一日-ついたち"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-bb032724c126",
+    "sourceBook": "Genki II",
+    "sourceFile": "genki-2.pdf",
+    "normalizedCandidate": "開く",
+    "lesson": 18,
+    "pageRanges": [
+      {
+        "start": 146,
+        "end": 146
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-空く-あく",
+      "vocab-開く-あく",
+      "vocab-開く-ひらく"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-83cc085ad961",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "米",
+    "lesson": 37,
+    "pageRanges": [
+      {
+        "start": 88,
+        "end": 88
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-メートル-めーとる",
+      "vocab-米-こめ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-5f9d74b0af3d",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "降りる",
+    "lesson": 40,
+    "pageRanges": [
+      {
+        "start": 145,
+        "end": 145
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-下りる-おりる",
+      "vocab-降りる-おりる"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P1",
+    "reason": "Resolve canonical vocabulary identity within a bounded lesson.",
+    "id": "ocr-conflict-ec82a4068bbe",
+    "sourceBook": "Minna no Nihongo II",
+    "sourceFile": "minna-no-nihongo-2-textbook.pdf",
+    "normalizedCandidate": "米",
+    "lesson": 40,
+    "pageRanges": [
+      {
+        "start": 146,
+        "end": 146
+      }
+    ],
+    "conflictType": "ambiguous JMdict match",
+    "matchedIds": [
+      "vocab-メートル-めーとる",
+      "vocab-米-こめ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-3c24e9cc5d7f",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "から",
+    "lesson": 1,
+    "pageRanges": [
+      {
+        "start": 33,
+        "end": 33
+      },
+      {
+        "start": 55,
+        "end": 55
+      },
+      {
+        "start": 186,
+        "end": 186
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kara-reason-conjunction",
+      "grammar-kara-starting-point-marker"
+    ],
+    "occurrenceCount": 3,
+    "duplicateOccurrenceCount": 2,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-16d55db27b8a",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 2,
+    "pageRanges": [
+      {
+        "start": 42,
+        "end": 42
+      },
+      {
+        "start": 61,
+        "end": 61
+      },
+      {
+        "start": 127,
+        "end": 127
+      },
+      {
+        "start": 145,
+        "end": 145
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 4,
+    "duplicateOccurrenceCount": 3,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-100c69803bc2",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "その",
+    "lesson": 2,
+    "pageRanges": [
+      {
+        "start": 42,
+        "end": 42
+      },
+      {
+        "start": 49,
+        "end": 49
+      },
+      {
+        "start": 127,
+        "end": 127
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-sono",
+      "vocab-その-その"
+    ],
+    "occurrenceCount": 3,
+    "duplicateOccurrenceCount": 2,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-1bddd857d6a7",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "あそこ",
+    "lesson": 3,
+    "pageRanges": [
+      {
+        "start": 44,
+        "end": 44
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-asoko",
+      "vocab-あそこ-あそこ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-09f2dc75f89a",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "ここ",
+    "lesson": 3,
+    "pageRanges": [
+      {
+        "start": 44,
+        "end": 44
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-koko",
+      "vocab-ここ-ここ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-4a6683af273c",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "そこ",
+    "lesson": 3,
+    "pageRanges": [
+      {
+        "start": 44,
+        "end": 44
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-soko",
+      "vocab-そこ-そこ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-67620306ae92",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "から",
+    "lesson": 4,
+    "pageRanges": [
+      {
+        "start": 15,
+        "end": 15
+      },
+      {
+        "start": 51,
+        "end": 51
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kara-reason-conjunction",
+      "grammar-kara-starting-point-marker"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-33f2b5f97a9e",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "から",
+    "lesson": 7,
+    "pageRanges": [
+      {
+        "start": 73,
+        "end": 73
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kara-reason-conjunction",
+      "grammar-kara-starting-point-marker"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-287c1298b312",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "まだ",
+    "lesson": 7,
+    "pageRanges": [
+      {
+        "start": 69,
+        "end": 69
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mada",
+      "vocab-まだ-まだ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-69d5922dde3b",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "もう",
+    "lesson": 7,
+    "pageRanges": [
+      {
+        "start": 73,
+        "end": 73
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mou",
+      "vocab-もう-もう"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-831578c50b6b",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 8,
+    "pageRanges": [
+      {
+        "start": 78,
+        "end": 78
+      },
+      {
+        "start": 126,
+        "end": 126
+      },
+      {
+        "start": 151,
+        "end": 151
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 3,
+    "duplicateOccurrenceCount": 2,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-7126f7db1caa",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "どれ",
+    "lesson": 8,
+    "pageRanges": [
+      {
+        "start": 75,
+        "end": 75
+      },
+      {
+        "start": 79,
+        "end": 79
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-dore",
+      "vocab-どれ-どれ"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-9b7734d6123b",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "もう",
+    "lesson": 8,
+    "pageRanges": [
+      {
+        "start": 75,
+        "end": 75
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mou",
+      "vocab-もう-もう"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-fcca7524f42f",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "から",
+    "lesson": 9,
+    "pageRanges": [
+      {
+        "start": 81,
+        "end": 81
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kara-reason-conjunction",
+      "grammar-kara-starting-point-marker"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-af700d207209",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "好き",
+    "lesson": 9,
+    "pageRanges": [
+      {
+        "start": 80,
+        "end": 80
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-好ki",
+      "vocab-好き-すき"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-4df2d9af9337",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 14,
+    "pageRanges": [
+      {
+        "start": 114,
+        "end": 114
+      },
+      {
+        "start": 120,
+        "end": 120
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-92b572183f18",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "もう",
+    "lesson": 14,
+    "pageRanges": [
+      {
+        "start": 111,
+        "end": 111
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mou",
+      "vocab-もう-もう"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-abc540fb886f",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 21,
+    "pageRanges": [
+      {
+        "start": 156,
+        "end": 156
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-92c0e95366d8",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "もう",
+    "lesson": 21,
+    "pageRanges": [
+      {
+        "start": 156,
+        "end": 156
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mou",
+      "vocab-もう-もう"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-17341fe0092f",
+    "sourceBook": "Minna no Nihongo I Grammar",
+    "sourceFile": "minna-no-nihongo-1-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 25,
+    "pageRanges": [
+      {
+        "start": 169,
+        "end": 169
+      },
+      {
+        "start": 180,
+        "end": 180
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-4719cf71390a",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 27,
+    "pageRanges": [
+      {
+        "start": 28,
+        "end": 28
+      },
+      {
+        "start": 32,
+        "end": 32
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-dc30db9f061d",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "どの",
+    "lesson": 27,
+    "pageRanges": [
+      {
+        "start": 28,
+        "end": 28
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-dono",
+      "vocab-どの-どの"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-b98618eeb7bb",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 28,
+    "pageRanges": [
+      {
+        "start": 38,
+        "end": 39
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-506f9bf767f9",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "ここ",
+    "lesson": 29,
+    "pageRanges": [
+      {
+        "start": 43,
+        "end": 43
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-koko",
+      "vocab-ここ-ここ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-b44f05d7173e",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 29,
+    "pageRanges": [
+      {
+        "start": 41,
+        "end": 41
+      },
+      {
+        "start": 44,
+        "end": 44
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-adc9ebbf6ec1",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "もう",
+    "lesson": 29,
+    "pageRanges": [
+      {
+        "start": 44,
+        "end": 44
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mou",
+      "vocab-もう-もう"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-ae0a7fec657b",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 30,
+    "pageRanges": [
+      {
+        "start": 51,
+        "end": 51
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-7737c505d938",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "その",
+    "lesson": 30,
+    "pageRanges": [
+      {
+        "start": 51,
+        "end": 51
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-sono",
+      "vocab-その-その"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-3e895578d3a0",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "まだ",
+    "lesson": 30,
+    "pageRanges": [
+      {
+        "start": 47,
+        "end": 47
+      },
+      {
+        "start": 51,
+        "end": 51
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mada",
+      "vocab-まだ-まだ"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-f5c5528bcb82",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "もう",
+    "lesson": 30,
+    "pageRanges": [
+      {
+        "start": 50,
+        "end": 50
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mou",
+      "vocab-もう-もう"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-801e35b2f336",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "まだ",
+    "lesson": 31,
+    "pageRanges": [
+      {
+        "start": 57,
+        "end": 57
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mada",
+      "vocab-まだ-まだ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-1d340d0b733f",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "もう",
+    "lesson": 31,
+    "pageRanges": [
+      {
+        "start": 57,
+        "end": 57
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mou",
+      "vocab-もう-もう"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-871ec66fc03b",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "その",
+    "lesson": 36,
+    "pageRanges": [
+      {
+        "start": 83,
+        "end": 83
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-sono",
+      "vocab-その-その"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-27c2867c539b",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "から",
+    "lesson": 37,
+    "pageRanges": [
+      {
+        "start": 93,
+        "end": 93
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kara-reason-conjunction",
+      "grammar-kara-starting-point-marker"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-0ee331a400bd",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "その",
+    "lesson": 37,
+    "pageRanges": [
+      {
+        "start": 89,
+        "end": 89
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-sono",
+      "vocab-その-その"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-f9bcc3fb8900",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 40,
+    "pageRanges": [
+      {
+        "start": 110,
+        "end": 110
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-d0e0083863e8",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "その",
+    "lesson": 40,
+    "pageRanges": [
+      {
+        "start": 110,
+        "end": 110
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-sono",
+      "vocab-その-その"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-cf26dc247999",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "から",
+    "lesson": 43,
+    "pageRanges": [
+      {
+        "start": 128,
+        "end": 129
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kara-reason-conjunction",
+      "grammar-kara-starting-point-marker"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-86c596878381",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 43,
+    "pageRanges": [
+      {
+        "start": 128,
+        "end": 128
+      },
+      {
+        "start": 152,
+        "end": 152
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 2,
+    "duplicateOccurrenceCount": 1,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-103bb4a0886a",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 44,
+    "pageRanges": [
+      {
+        "start": 134,
+        "end": 134
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-ec1b0966d8fc",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 46,
+    "pageRanges": [
+      {
+        "start": 147,
+        "end": 147
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-3942bdf65197",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "まだ",
+    "lesson": 46,
+    "pageRanges": [
+      {
+        "start": 146,
+        "end": 146
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mada",
+      "vocab-まだ-まだ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-7fcf4e4344a3",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "ここ",
+    "lesson": 47,
+    "pageRanges": [
+      {
+        "start": 151,
+        "end": 151
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-koko",
+      "vocab-ここ-ここ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-2e86cf8c96cd",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "まだ",
+    "lesson": 49,
+    "pageRanges": [
+      {
+        "start": 165,
+        "end": 165
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mada",
+      "vocab-まだ-まだ"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-27cde3268e78",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "もう",
+    "lesson": 49,
+    "pageRanges": [
+      {
+        "start": 164,
+        "end": 164
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-mou",
+      "vocab-もう-もう"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  },
+  {
+    "priority": "P2",
+    "reason": "Resolve grammar identity in a dedicated grammar-reference section.",
+    "id": "ocr-conflict-8fb131d574cb",
+    "sourceBook": "Minna no Nihongo II Grammar",
+    "sourceFile": "minna-no-nihongo-2-grammer.pdf",
+    "normalizedCandidate": "この",
+    "lesson": 50,
+    "pageRanges": [
+      {
+        "start": 171,
+        "end": 171
+      }
+    ],
+    "conflictType": "grammar candidate",
+    "matchedIds": [
+      "grammar-kono",
+      "vocab-この-この"
+    ],
+    "occurrenceCount": 1,
+    "duplicateOccurrenceCount": 0,
+    "affectsCurriculumBand": true
+  }
+]

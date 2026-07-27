@@ -1,0 +1,384 @@
+[
+  {
+    "schemaVersion": 1,
+    "id": "assessment-snapshot-4ae5c9d23605c19c",
+    "assessmentType": "daily-challenge",
+    "level": "N5",
+    "seed": "sample-daily-challenge-n5-v1",
+    "contentVersion": "2.2.0+2fee5756b369",
+    "pipelineVersion": "6.0.0",
+    "generationTimestamp": "2026-07-27T00:00:00.000Z",
+    "lifecycleMode": "development",
+    "blueprintId": "assessment-blueprint-sample-daily-challenge-n5",
+    "configuration": {
+      "assessmentType": "daily-challenge",
+      "level": "N5",
+      "seed": "sample-daily-challenge-n5-v1",
+      "lifecycleMode": "development",
+      "domains": [
+        "vocabulary",
+        "kanji",
+        "grammar"
+      ],
+      "remediationMode": false,
+      "strictTimeLimit": false,
+      "resultMode": "full"
+    },
+    "sections": [
+      {
+        "id": "assessment-section-4ae5c9d23605c19c-1",
+        "blueprintSectionId": "assessment-section-blueprint-sample-daily-challenge-n5",
+        "title": "Practice",
+        "order": 1,
+        "recommendedMinutes": 10,
+        "strictTimeLimit": false,
+        "questionPlacementIds": [
+          "assessment-placement-question-4ae5c9d23605c19c-1-590e2c28",
+          "assessment-placement-question-4ae5c9d23605c19c-2-756411cd",
+          "assessment-placement-question-4ae5c9d23605c19c-3-01885df7",
+          "assessment-placement-question-4ae5c9d23605c19c-4-b89b8af0",
+          "assessment-placement-question-4ae5c9d23605c19c-5-677335b4",
+          "assessment-placement-question-4ae5c9d23605c19c-6-4a99a922",
+          "assessment-placement-question-4ae5c9d23605c19c-7-dc3f8887",
+          "assessment-placement-question-4ae5c9d23605c19c-8-1af04be4",
+          "assessment-placement-question-4ae5c9d23605c19c-9-563fdcb3",
+          "assessment-placement-question-4ae5c9d23605c19c-10-50399049"
+        ],
+        "parentPlacementIds": []
+      }
+    ],
+    "questionPlacements": [
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-1-590e2c28",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-vocabulary-u50cdu304f-u306fu305fu3089u304f-usage-context-3",
+        "position": 1,
+        "domain": "vocabulary",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "vocab-働く-はたらく",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-2-756411cd",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-vocabulary-u5f3eu304f-u3072u304f-written-form-6",
+        "position": 2,
+        "domain": "vocabulary",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "vocab-弾く-ひく",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-3-01885df7",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-vocabulary-u671d-u3042u3055-written-form-6",
+        "position": 3,
+        "domain": "vocabulary",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "vocab-朝-あさ",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-4-b89b8af0",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-kanji-u98df-character-meaning-1",
+        "position": 4,
+        "domain": "kanji",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "kanji-食",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-5-677335b4",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-kanji-u4e09-character-meaning-1",
+        "position": 5,
+        "domain": "kanji",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "kanji-三",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-6-4a99a922",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-kanji-u8a71-reading-context-1",
+        "position": 6,
+        "domain": "kanji",
+        "questionType": "choose-reading",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "kanji-話",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-7-dc3f8887",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-grammar-n5-bridge-010-meaning",
+        "position": 7,
+        "domain": "grammar",
+        "questionType": "bridge-meaning",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "grammar-datta",
+        "estimatedSeconds": 35
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-8-1af04be4",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-grammar-n5-bridge-001-meaning",
+        "position": 8,
+        "domain": "grammar",
+        "questionType": "bridge-meaning",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "grammar-adjective-noha",
+        "estimatedSeconds": 35
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-9-563fdcb3",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-grammar-n5-bridge-015-meaning",
+        "position": 9,
+        "domain": "grammar",
+        "questionType": "bridge-meaning",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "grammar-doko",
+        "estimatedSeconds": 35
+      },
+      {
+        "id": "assessment-placement-question-4ae5c9d23605c19c-10-50399049",
+        "sectionId": "assessment-section-4ae5c9d23605c19c-1",
+        "questionId": "question-grammar-n5-bridge-011-recognition",
+        "position": 10,
+        "domain": "grammar",
+        "questionType": "bridge-recognition",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "grammar-de-action-location-marker",
+        "estimatedSeconds": 35
+      }
+    ],
+    "parentPlacements": [],
+    "scoringRule": {
+      "id": "assessment-scoring-4ae5c9d23605c19c",
+      "ordinaryQuestionPoints": 1,
+      "unansweredPoints": 0,
+      "negativeMarking": false,
+      "domainWeights": {},
+      "label": "JapanGo raw score"
+    },
+    "timingRule": {
+      "id": "assessment-timing-4ae5c9d23605c19c",
+      "mode": "recommended",
+      "totalMinutes": 10,
+      "sectionTransitionsSeconds": 30,
+      "playbackAndReplayIncluded": true,
+      "resumable": true
+    },
+    "relaxedConstraints": [],
+    "checksum": "sha256:d91c8278d6dce2e407cacf6d8e8ad67e653ca4a2b05dce79959cc36902cb0057",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-snapshot-3f38c74748f02b8d",
+    "assessmentType": "daily-challenge",
+    "level": "N4",
+    "seed": "sample-daily-challenge-n4-v1",
+    "contentVersion": "2.2.0+2fee5756b369",
+    "pipelineVersion": "6.0.0",
+    "generationTimestamp": "2026-07-27T00:00:00.000Z",
+    "lifecycleMode": "development",
+    "blueprintId": "assessment-blueprint-sample-daily-challenge-n4",
+    "configuration": {
+      "assessmentType": "daily-challenge",
+      "level": "N4",
+      "seed": "sample-daily-challenge-n4-v1",
+      "lifecycleMode": "development",
+      "domains": [
+        "vocabulary",
+        "kanji",
+        "grammar"
+      ],
+      "remediationMode": false,
+      "strictTimeLimit": false,
+      "resultMode": "full"
+    },
+    "sections": [
+      {
+        "id": "assessment-section-3f38c74748f02b8d-1",
+        "blueprintSectionId": "assessment-section-blueprint-sample-daily-challenge-n4",
+        "title": "Practice",
+        "order": 1,
+        "recommendedMinutes": 10,
+        "strictTimeLimit": false,
+        "questionPlacementIds": [
+          "assessment-placement-question-3f38c74748f02b8d-1-016104c8",
+          "assessment-placement-question-3f38c74748f02b8d-2-e32fb40a",
+          "assessment-placement-question-3f38c74748f02b8d-3-77100293",
+          "assessment-placement-question-3f38c74748f02b8d-4-f72bb04c",
+          "assessment-placement-question-3f38c74748f02b8d-5-1b611a58",
+          "assessment-placement-question-3f38c74748f02b8d-6-a5785bfa",
+          "assessment-placement-question-3f38c74748f02b8d-7-1666671e",
+          "assessment-placement-question-3f38c74748f02b8d-8-a3e396fa",
+          "assessment-placement-question-3f38c74748f02b8d-9-ec23a9dc",
+          "assessment-placement-question-3f38c74748f02b8d-10-5b358b4f"
+        ],
+        "parentPlacementIds": []
+      }
+    ],
+    "questionPlacements": [
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-1-016104c8",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-vocabulary-u660eu65e5-u3042u3059-usage-choice-4",
+        "position": 1,
+        "domain": "vocabulary",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "vocab-明日-あす",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-2-e32fb40a",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-vocabulary-u53cdu5bfe-u306fu3093u305fu3044-usage-choice-4",
+        "position": 2,
+        "domain": "vocabulary",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "vocab-反対-はんたい",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-3-77100293",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-vocabulary-u53d6u308b-u3068u308b-usage-choice-4",
+        "position": 3,
+        "domain": "vocabulary",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "vocab-取る-とる",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-4-f72bb04c",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-kanji-u65c5-word-distinction-1",
+        "position": 4,
+        "domain": "kanji",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "kanji-旅",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-5-1b611a58",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-kanji-u5834-character-meaning-1",
+        "position": 5,
+        "domain": "kanji",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "kanji-場",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-6-a5785bfa",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-kanji-u5341-vocabulary-context-1",
+        "position": 6,
+        "domain": "kanji",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "kanji-十",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-7-1666671e",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-grammar-n4-sore-demo-context-application-2",
+        "position": 7,
+        "domain": "grammar",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "grammar-n4-sore-demo",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-8-a3e396fa",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-grammar-n4-you-ni-suru-context-application-1",
+        "position": 8,
+        "domain": "grammar",
+        "questionType": "multiple-choice",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "grammar-n4-you-ni-suru",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-9-ec23a9dc",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-grammar-n4-dewa-nai-ka-usage-1",
+        "position": 9,
+        "domain": "grammar",
+        "questionType": "fill-blank",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "grammar-n4-dewa-nai-ka",
+        "estimatedSeconds": 45
+      },
+      {
+        "id": "assessment-placement-question-3f38c74748f02b8d-10-5b358b4f",
+        "sectionId": "assessment-section-3f38c74748f02b8d-1",
+        "questionId": "question-grammar-n5-bridge-007-meaning",
+        "position": 10,
+        "domain": "grammar",
+        "questionType": "bridge-meaning",
+        "parentType": null,
+        "parentId": null,
+        "primaryTargetId": "grammar-asoko",
+        "estimatedSeconds": 35
+      }
+    ],
+    "parentPlacements": [],
+    "scoringRule": {
+      "id": "assessment-scoring-3f38c74748f02b8d",
+      "ordinaryQuestionPoints": 1,
+      "unansweredPoints": 0,
+      "negativeMarking": false,
+      "domainWeights": {},
+      "label": "JapanGo raw score"
+    },
+    "timingRule": {
+      "id": "assessment-timing-3f38c74748f02b8d",
+      "mode": "recommended",
+      "totalMinutes": 10,
+      "sectionTransitionsSeconds": 30,
+      "playbackAndReplayIncluded": true,
+      "resumable": true
+    },
+    "relaxedConstraints": [],
+    "checksum": "sha256:c5c203780071b0aaeed4e4058a97957dc297e4997b960d1093c57ebfc7f15e4e",
+    "releaseReady": false
+  }
+]

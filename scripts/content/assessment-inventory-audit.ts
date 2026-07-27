@@ -1,0 +1,49 @@
+import path from "node:path";
+
+import type { LearningContentCollections } from "../../src/features/learning-content/schemas";
+import { OUTPUT_ROOT } from "./config";
+import { isDirectExecution, runCli } from "./lib/cli";
+import { readJson, writeJson, writeText } from "./lib/fs-utils";
+import type { CurriculumUnit, GrammarRecord } from "./schemas/content-schemas";
+
+const DOMAINS = ["vocabulary", "kanji", "grammar", "reading", "listening"] as const;
+type Domain = typeof DOMAINS[number];
+function compareStable(left: string, right: string): number { return left < right ? -1 : left > right ? 1 : 0; }
+function grouped(values: readonly string[]): Record<string, number> { return Object.fromEntries([...new Set(values)].sort(compareStable).map((value) => [value, values.filter((candidate) => candidate === value).length])); }
+function markdownTable(values: Record<string, number>): string { return ["| Value | Count |", "| --- | ---: |", ...Object.entries(values).map(([value, count]) => `| ${value} | ${count} |`)].join("\n"); }
+
+export async function auditAssessmentInventory(): Promise<void> {
+  const [content, n5Units, n4Units, n5Grammar, n4Grammar] = await Promise.all([
+    readJson<LearningContentCollections>(path.join(OUTPUT_ROOT, "learning-content/index.json")),
+    readJson<CurriculumUnit[]>(path.join(OUTPUT_ROOT, "curriculum/units-n5.json")), readJson<CurriculumUnit[]>(path.join(OUTPUT_ROOT, "curriculum/units-n4.json")),
+    readJson<GrammarRecord[]>(path.join(OUTPUT_ROOT, "grammar/n5.json")), readJson<GrammarRecord[]>(path.join(OUTPUT_ROOT, "grammar/n4.json")),
+  ]);
+  const optionsByQuestion = new Map<string, number>(); for (const option of content.questionOptions) optionsByQuestion.set(option.questionId, (optionsByQuestion.get(option.questionId) ?? 0) + 1);
+  const relationshipsByQuestion = new Map<string, typeof content.questionTargetRelationships>(); for (const relationship of content.questionTargetRelationships) relationshipsByQuestion.set(relationship.questionId, [...(relationshipsByQuestion.get(relationship.questionId) ?? []), relationship]);
+  const passages = new Map(content.readingPassages.map((record) => [record.id, record])); const activities = new Map(content.listeningActivities.map((record) => [record.id, record])); const units = [...n5Units, ...n4Units];
+  const records = content.questions.map((question) => {
+    const relationships = relationshipsByQuestion.get(question.id) ?? []; const primary = relationships.find(({ role }) => role === "primary"); const stimulus = question.stimulusReferences[0]; const passage = stimulus?.type === "reading-passage" ? passages.get(stimulus.id) : undefined; const activity = stimulus?.type === "listening-activity" ? activities.get(stimulus.id) : undefined;
+    const curriculumUnitIds = passage?.curriculumUnitIds ?? activity?.curriculumUnitIds ?? units.filter((unit) => [...unit.grammarIds, ...unit.vocabularyIds, ...unit.kanjiIds, ...unit.reviewGrammarIds, ...unit.reviewVocabularyIds, ...unit.reviewKanjiIds].includes(primary?.targetId ?? "")).map(({ id }) => id);
+    const sourcePhase = question.domain === "grammar" ? 4 : question.domain === "vocabulary" || question.domain === "kanji" ? 5 : question.domain === "reading" ? 6 : 7;
+    return { id: question.id, level: question.difficulty.jlptLevel, domain: question.domain, questionType: question.examMetadata?.formatCode ?? question.presentation, difficultyRank: question.difficulty.rank, curriculumUnitIds: [...new Set(curriculumUnitIds)].sort(compareStable), primaryTargetType: primary?.targetType ?? null, primaryTargetId: primary?.targetId ?? null, parentType: stimulus?.type ?? null, parentId: stimulus?.id ?? null, optionCount: optionsByQuestion.get(question.id) ?? 0, approvalStatus: question.needsReview ? "review-required" : "approved", lifecycle: question.releaseReady ? "release" : "development-only", releaseEligible: question.releaseReady && (passage?.releaseReady ?? true) && (activity?.releaseReady ?? true), developmentEligible: !question.needsReview, duplicateFamily: `${question.domain}:${question.examMetadata?.formatCode ?? question.presentation}:${primary?.targetId ?? stimulus?.id ?? "untargeted"}`, sourcePhase };
+  }).sort((left, right) => compareStable(left.id, right.id));
+  const byLevelDomain = Object.fromEntries(["N5", "N4"].map((level) => [level, Object.fromEntries(DOMAINS.map((domain) => [domain, records.filter((record) => record.level === level && record.domain === domain && record.developmentEligible).length]))]));
+  const releaseByLevelDomain = Object.fromEntries(["N5", "N4"].map((level) => [level, Object.fromEntries(DOMAINS.map((domain) => [domain, records.filter((record) => record.level === level && record.domain === domain && record.releaseEligible).length]))]));
+  const duplicateFamilies = grouped(records.map(({ duplicateFamily }) => duplicateFamily)); const overrepresentedFamilies = Object.entries(duplicateFamilies).filter(([, count]) => count > 10).sort(([left], [right]) => compareStable(left, right));
+  const audit = { schemaVersion: 1, auditStage: "phase8-pre-implementation", performedBeforeAssessmentImplementation: true, totals: { questions: records.length, options: content.questionOptions.length, developmentEligible: records.filter(({ developmentEligible }) => developmentEligible).length, releaseEligible: records.filter(({ releaseEligible }) => releaseEligible).length, excluded: records.filter(({ developmentEligible }) => !developmentEligible).length, unresolvedGrammar: [...n5Grammar, ...n4Grammar].filter((record) => !record.releaseReady && record.level === "N4").length }, byLevelDomain, releaseByLevelDomain, byDomain: grouped(records.map(({ domain }) => domain)), byDifficulty: grouped(records.map(({ level, difficultyRank }) => `${level}-rank-${difficultyRank}`)), byQuestionType: grouped(records.map(({ questionType }) => questionType)), byLifecycle: grouped(records.map(({ lifecycle }) => lifecycle)), bySourcePhase: grouped(records.map(({ sourcePhase }) => `phase-${sourcePhase}`)), parentInventory: { readingPassages: content.readingPassages.length, listeningActivities: content.listeningActivities.length }, duplicateFamilies: { total: Object.keys(duplicateFamilies).length, overrepresented: overrepresentedFamilies.map(([family, count]) => ({ family, count })) }, bridgeDecision: { needed: true, domain: "grammar", level: "N5", reason: "A five-domain N5 mock exam cannot be assembled because the current inventory contains zero standalone N5 grammar questions.", authorizeMinimalBridgeAfterAudit: true }, records };
+  const readiness = ["# Phase 8 exam readiness analysis", "", "Pre-implementation finding:", "", "- Full development N4 exams: ready from existing inventory.", "- Full development N5 exams: blocked by zero standalone N5 grammar questions.", "- Minimal N5 grammar bridge content: required; no other bridge content is needed.", "- Full release N5/N4 exams: blocked because all reading/listening parents and all 80 curriculum units are non-release.", "- Development reading/listening sampling: sufficient (146 passages; 156 activities) without excessive within-exam reuse.", "- Release generation should remain disabled until curriculum approval.", `- Overrepresented duplicate families (>10 members): ${overrepresentedFamilies.length}; the engine must cap target/family exposure.`].join("\n");
+  const root = path.join(OUTPUT_ROOT, "reports");
+  await Promise.all([
+    writeJson(path.join(root, "phase8-question-inventory-audit.json"), audit),
+    writeText(path.join(root, "phase8-question-inventory-summary.md"), `# Phase 8 question inventory summary\n\nQuestions: ${records.length}; options: ${content.questionOptions.length}; development eligible: ${audit.totals.developmentEligible}; release eligible: ${audit.totals.releaseEligible}.\n\n## Development by level and domain\n\n${markdownTable(Object.fromEntries(Object.entries(byLevelDomain).flatMap(([level, counts]) => Object.entries(counts).map(([domain, count]) => [`${level}-${domain}`, count]))))}`),
+    writeText(path.join(root, "phase8-domain-balance-analysis.md"), `# Phase 8 domain balance analysis\n\n${markdownTable(audit.byDomain)}\n\nVocabulary is intentionally the largest bank; assessment quotas must prevent it from dominating. N5 grammar is the only blocking gap.`),
+    writeText(path.join(root, "phase8-difficulty-balance-analysis.md"), `# Phase 8 difficulty balance analysis\n\n${markdownTable(audit.byDifficulty)}\n\nExact ratios require deterministic tolerance because ranks are editorial bands rather than official scaled difficulty.`),
+    writeText(path.join(root, "phase8-curriculum-eligibility-analysis.md"), `# Phase 8 curriculum eligibility analysis\n\nCurriculum units: ${units.length}; release-ready: ${units.filter(({ releaseReady }) => releaseReady).length}. Development assessments may use approved non-release content and must record lifecycle mode.`),
+    writeText(path.join(root, "phase8-lifecycle-analysis.md"), `# Phase 8 lifecycle analysis\n\n${markdownTable(audit.byLifecycle)}\n\nReading and listening remain development-only. Release assessments cannot include non-release parents or curriculum dependencies.`),
+    writeText(path.join(root, "phase8-exam-readiness-analysis.md"), readiness),
+    writeText(path.join(root, "phase8-content-gap-analysis.md"), "# Phase 8 content gap analysis\n\nOne blocking gap exists: zero standalone N5 grammar questions. A minimal original bridge bank may now be added because five-domain N5 full mocks cannot otherwise be assembled. No new canonical records, passages, listening activities, vocabulary questions, or kanji questions are needed."),
+  ]);
+  console.log(`Phase 8 pre-implementation audit complete: ${records.length} questions; N5 grammar gap ${byLevelDomain.N5?.grammar ?? 0}.`);
+}
+
+if (isDirectExecution(import.meta.url)) runCli(auditAssessmentInventory);

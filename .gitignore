@@ -33,6 +33,11 @@ yarn-error.*
 # local env files
 .env*.local
 
+# Private content references and derived OCR cache
+assets/docs-reference/*.pdf
+.cache/japango-content/
+assets/generated-content/reports/raw-ocr/
+
 # typescript
 *.tsbuildinfo
 
@@ -41,3 +46,13 @@ example
 # generated native folders
 /ios
 /android
+
+# Private reference sources stay local; original JapanGo canonical metadata is versioned.
+assets/docs-reference/*
+!assets/docs-reference/japango-n4-grammar-reviewed.json
+!assets/docs-reference/japango-n4-grammar-editorial-decisions.json
+!assets/docs-reference/japango-sentences/
+assets/docs-reference/japango-sentences/*
+!assets/docs-reference/japango-sentences/sentence-corpus-n5.json
+!assets/docs-reference/japango-sentences/sentence-corpus-n4.json
+!assets/docs-reference/japango-sentences/sentence-editorial-decisions.json

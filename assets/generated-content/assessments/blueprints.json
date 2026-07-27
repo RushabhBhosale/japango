@@ -1,0 +1,1474 @@
+[
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-full-mock-n5",
+    "assessmentType": "full-mock",
+    "level": "N5",
+    "title": "JapanGo N5 full mock",
+    "intendedUse": "A complete five-domain N5-aligned development assessment.",
+    "defaultQuestionCount": 90,
+    "defaultTimeLimitMinutes": 90,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-n5-language",
+        "title": "Vocabulary and Kanji",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji"
+        ],
+        "questionCount": 30,
+        "recommendedMinutes": 25,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 18,
+            "preferred": 18,
+            "maximum": 18
+          },
+          {
+            "domain": "kanji",
+            "minimum": 12,
+            "preferred": 12,
+            "maximum": 12
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      },
+      {
+        "id": "assessment-section-blueprint-n5-grammar-reading",
+        "title": "Grammar and Reading",
+        "order": 2,
+        "domains": [
+          "grammar",
+          "reading"
+        ],
+        "questionCount": 35,
+        "recommendedMinutes": 40,
+        "domainQuotas": [
+          {
+            "domain": "grammar",
+            "minimum": 18,
+            "preferred": 18,
+            "maximum": 18
+          },
+          {
+            "domain": "reading",
+            "minimum": 17,
+            "preferred": 17,
+            "maximum": 17
+          }
+        ],
+        "parentQuotas": [
+          {
+            "parentType": "reading-passage",
+            "format": "short",
+            "count": 3
+          },
+          {
+            "parentType": "reading-passage",
+            "format": "medium",
+            "count": 1
+          },
+          {
+            "parentType": "reading-passage",
+            "format": "practical",
+            "count": 1
+          }
+        ],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      },
+      {
+        "id": "assessment-section-blueprint-n5-listening",
+        "title": "Listening",
+        "order": 3,
+        "domains": [
+          "listening"
+        ],
+        "questionCount": 25,
+        "recommendedMinutes": 25,
+        "domainQuotas": [
+          {
+            "domain": "listening",
+            "minimum": 25,
+            "preferred": 25,
+            "maximum": 25
+          }
+        ],
+        "parentQuotas": [
+          {
+            "parentType": "listening-activity",
+            "format": "short-monologue",
+            "count": 3
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "dialogue",
+            "count": 3
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "practical-information",
+            "count": 1
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "appropriate-response",
+            "count": 3
+          }
+        ],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-full-mock-n4",
+    "assessmentType": "full-mock",
+    "level": "N4",
+    "title": "JapanGo N4 full mock",
+    "intendedUse": "A complete five-domain N4-aligned development assessment with controlled N5 prerequisite review.",
+    "defaultQuestionCount": 112,
+    "defaultTimeLimitMinutes": 115,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-n4-language",
+        "title": "Vocabulary and Kanji",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji"
+        ],
+        "questionCount": 35,
+        "recommendedMinutes": 30,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 22,
+            "preferred": 22,
+            "maximum": 22
+          },
+          {
+            "domain": "kanji",
+            "minimum": 13,
+            "preferred": 13,
+            "maximum": 13
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.25,
+          "medium": 0.55,
+          "hard": 0.2
+        }
+      },
+      {
+        "id": "assessment-section-blueprint-n4-grammar-reading",
+        "title": "Grammar and Reading",
+        "order": 2,
+        "domains": [
+          "grammar",
+          "reading"
+        ],
+        "questionCount": 45,
+        "recommendedMinutes": 55,
+        "domainQuotas": [
+          {
+            "domain": "grammar",
+            "minimum": 24,
+            "preferred": 24,
+            "maximum": 24
+          },
+          {
+            "domain": "reading",
+            "minimum": 21,
+            "preferred": 21,
+            "maximum": 21
+          }
+        ],
+        "parentQuotas": [
+          {
+            "parentType": "reading-passage",
+            "format": "short",
+            "count": 3
+          },
+          {
+            "parentType": "reading-passage",
+            "format": "medium",
+            "count": 2
+          },
+          {
+            "parentType": "reading-passage",
+            "format": "practical",
+            "count": 1
+          }
+        ],
+        "difficultyDistribution": {
+          "easy": 0.25,
+          "medium": 0.55,
+          "hard": 0.2
+        }
+      },
+      {
+        "id": "assessment-section-blueprint-n4-listening",
+        "title": "Listening",
+        "order": 3,
+        "domains": [
+          "listening"
+        ],
+        "questionCount": 32,
+        "recommendedMinutes": 30,
+        "domainQuotas": [
+          {
+            "domain": "listening",
+            "minimum": 32,
+            "preferred": 32,
+            "maximum": 32
+          }
+        ],
+        "parentQuotas": [
+          {
+            "parentType": "listening-activity",
+            "format": "short-monologue",
+            "count": 4
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "dialogue",
+            "count": 4
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "practical-information",
+            "count": 1
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "appropriate-response",
+            "count": 4
+          }
+        ],
+        "difficultyDistribution": {
+          "easy": 0.25,
+          "medium": 0.55,
+          "hard": 0.2
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-section-exam-n5",
+    "assessmentType": "section-exam",
+    "level": "N5",
+    "title": "N5 section-exam sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 20,
+    "defaultTimeLimitMinutes": 20,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-section-exam-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji"
+        ],
+        "questionCount": 20,
+        "recommendedMinutes": 20,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 10,
+            "preferred": 10,
+            "maximum": 10
+          },
+          {
+            "domain": "kanji",
+            "minimum": 10,
+            "preferred": 10,
+            "maximum": 10
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-quick-practice-n5",
+    "assessmentType": "quick-practice",
+    "level": "N5",
+    "title": "N5 quick-practice sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 10,
+    "defaultTimeLimitMinutes": 10,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-quick-practice-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 10,
+        "recommendedMinutes": 10,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 3,
+            "preferred": 3,
+            "maximum": 3
+          },
+          {
+            "domain": "kanji",
+            "minimum": 3,
+            "preferred": 3,
+            "maximum": 3
+          },
+          {
+            "domain": "grammar",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-daily-challenge-n5",
+    "assessmentType": "daily-challenge",
+    "level": "N5",
+    "title": "N5 daily-challenge sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 10,
+    "defaultTimeLimitMinutes": 10,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-daily-challenge-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 10,
+        "recommendedMinutes": 10,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 3,
+            "preferred": 3,
+            "maximum": 3
+          },
+          {
+            "domain": "kanji",
+            "minimum": 3,
+            "preferred": 3,
+            "maximum": 3
+          },
+          {
+            "domain": "grammar",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-weak-area-n5",
+    "assessmentType": "weak-area",
+    "level": "N5",
+    "title": "N5 weak-area sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-weak-area-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 15,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          },
+          {
+            "domain": "kanji",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          },
+          {
+            "domain": "grammar",
+            "minimum": 7,
+            "preferred": 7,
+            "maximum": 7
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-mixed-review-n5",
+    "assessmentType": "mixed-review",
+    "level": "N5",
+    "title": "N5 mixed-review sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 20,
+    "defaultTimeLimitMinutes": 20,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-mixed-review-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 20,
+        "recommendedMinutes": 20,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 7,
+            "preferred": 7,
+            "maximum": 7
+          },
+          {
+            "domain": "kanji",
+            "minimum": 6,
+            "preferred": 6,
+            "maximum": 6
+          },
+          {
+            "domain": "grammar",
+            "minimum": 7,
+            "preferred": 7,
+            "maximum": 7
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-curriculum-unit-test-n5",
+    "assessmentType": "curriculum-unit-test",
+    "level": "N5",
+    "title": "N5 curriculum-unit-test sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-curriculum-unit-test-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 15,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 5,
+            "preferred": 5,
+            "maximum": 5
+          },
+          {
+            "domain": "kanji",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          },
+          {
+            "domain": "grammar",
+            "minimum": 6,
+            "preferred": 6,
+            "maximum": 6
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-grammar-mastery-n5",
+    "assessmentType": "grammar-mastery",
+    "level": "N5",
+    "title": "N5 grammar-mastery sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-grammar-mastery-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "grammar"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 15,
+        "domainQuotas": [
+          {
+            "domain": "grammar",
+            "minimum": 15,
+            "preferred": 15,
+            "maximum": 15
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-vocabulary-mastery-n5",
+    "assessmentType": "vocabulary-mastery",
+    "level": "N5",
+    "title": "N5 vocabulary-mastery sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 12,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-vocabulary-mastery-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 12,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 15,
+            "preferred": 15,
+            "maximum": 15
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-kanji-mastery-n5",
+    "assessmentType": "kanji-mastery",
+    "level": "N5",
+    "title": "N5 kanji-mastery sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 12,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-kanji-mastery-n5",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "kanji"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 12,
+        "domainQuotas": [
+          {
+            "domain": "kanji",
+            "minimum": 15,
+            "preferred": 15,
+            "maximum": 15
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-section-exam-n4",
+    "assessmentType": "section-exam",
+    "level": "N4",
+    "title": "N4 section-exam sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 20,
+    "defaultTimeLimitMinutes": 20,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-section-exam-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji"
+        ],
+        "questionCount": 20,
+        "recommendedMinutes": 20,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 10,
+            "preferred": 10,
+            "maximum": 10
+          },
+          {
+            "domain": "kanji",
+            "minimum": 10,
+            "preferred": 10,
+            "maximum": 10
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-quick-practice-n4",
+    "assessmentType": "quick-practice",
+    "level": "N4",
+    "title": "N4 quick-practice sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 10,
+    "defaultTimeLimitMinutes": 10,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-quick-practice-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 10,
+        "recommendedMinutes": 10,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 3,
+            "preferred": 3,
+            "maximum": 3
+          },
+          {
+            "domain": "kanji",
+            "minimum": 3,
+            "preferred": 3,
+            "maximum": 3
+          },
+          {
+            "domain": "grammar",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-daily-challenge-n4",
+    "assessmentType": "daily-challenge",
+    "level": "N4",
+    "title": "N4 daily-challenge sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 10,
+    "defaultTimeLimitMinutes": 10,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-daily-challenge-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 10,
+        "recommendedMinutes": 10,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 3,
+            "preferred": 3,
+            "maximum": 3
+          },
+          {
+            "domain": "kanji",
+            "minimum": 3,
+            "preferred": 3,
+            "maximum": 3
+          },
+          {
+            "domain": "grammar",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-weak-area-n4",
+    "assessmentType": "weak-area",
+    "level": "N4",
+    "title": "N4 weak-area sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-weak-area-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 15,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          },
+          {
+            "domain": "kanji",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          },
+          {
+            "domain": "grammar",
+            "minimum": 7,
+            "preferred": 7,
+            "maximum": 7
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-mixed-review-n4",
+    "assessmentType": "mixed-review",
+    "level": "N4",
+    "title": "N4 mixed-review sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 20,
+    "defaultTimeLimitMinutes": 20,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-mixed-review-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 20,
+        "recommendedMinutes": 20,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 7,
+            "preferred": 7,
+            "maximum": 7
+          },
+          {
+            "domain": "kanji",
+            "minimum": 6,
+            "preferred": 6,
+            "maximum": 6
+          },
+          {
+            "domain": "grammar",
+            "minimum": 7,
+            "preferred": 7,
+            "maximum": 7
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-curriculum-unit-test-n4",
+    "assessmentType": "curriculum-unit-test",
+    "level": "N4",
+    "title": "N4 curriculum-unit-test sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-curriculum-unit-test-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary",
+          "kanji",
+          "grammar"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 15,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 5,
+            "preferred": 5,
+            "maximum": 5
+          },
+          {
+            "domain": "kanji",
+            "minimum": 4,
+            "preferred": 4,
+            "maximum": 4
+          },
+          {
+            "domain": "grammar",
+            "minimum": 6,
+            "preferred": 6,
+            "maximum": 6
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-grammar-mastery-n4",
+    "assessmentType": "grammar-mastery",
+    "level": "N4",
+    "title": "N4 grammar-mastery sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 15,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-grammar-mastery-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "grammar"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 15,
+        "domainQuotas": [
+          {
+            "domain": "grammar",
+            "minimum": 15,
+            "preferred": 15,
+            "maximum": 15
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-vocabulary-mastery-n4",
+    "assessmentType": "vocabulary-mastery",
+    "level": "N4",
+    "title": "N4 vocabulary-mastery sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 12,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-vocabulary-mastery-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "vocabulary"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 12,
+        "domainQuotas": [
+          {
+            "domain": "vocabulary",
+            "minimum": 15,
+            "preferred": 15,
+            "maximum": 15
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-kanji-mastery-n4",
+    "assessmentType": "kanji-mastery",
+    "level": "N4",
+    "title": "N4 kanji-mastery sample",
+    "intendedUse": "A deterministic development sample for engine and app integration.",
+    "defaultQuestionCount": 15,
+    "defaultTimeLimitMinutes": 12,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-kanji-mastery-n4",
+        "title": "Practice",
+        "order": 1,
+        "domains": [
+          "kanji"
+        ],
+        "questionCount": 15,
+        "recommendedMinutes": 12,
+        "domainQuotas": [
+          {
+            "domain": "kanji",
+            "minimum": 15,
+            "preferred": 15,
+            "maximum": 15
+          }
+        ],
+        "parentQuotas": [],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-reading-practice-n5",
+    "assessmentType": "reading-practice",
+    "level": "N5",
+    "title": "N5 reading-practice sample",
+    "intendedUse": "A deterministic coherent-parent development practice sample.",
+    "defaultQuestionCount": 13,
+    "defaultTimeLimitMinutes": 20,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-reading-practice-n5",
+        "title": "Comprehension",
+        "order": 1,
+        "domains": [
+          "reading"
+        ],
+        "questionCount": 13,
+        "recommendedMinutes": 20,
+        "domainQuotas": [
+          {
+            "domain": "reading",
+            "minimum": 13,
+            "preferred": 13,
+            "maximum": 13
+          }
+        ],
+        "parentQuotas": [
+          {
+            "parentType": "reading-passage",
+            "format": "short",
+            "count": 3
+          },
+          {
+            "parentType": "reading-passage",
+            "format": "medium",
+            "count": 1
+          }
+        ],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-listening-practice-n5",
+    "assessmentType": "listening-practice",
+    "level": "N5",
+    "title": "N5 listening-practice sample",
+    "intendedUse": "A deterministic coherent-parent development practice sample.",
+    "defaultQuestionCount": 11,
+    "defaultTimeLimitMinutes": 20,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-listening-practice-n5",
+        "title": "Comprehension",
+        "order": 1,
+        "domains": [
+          "listening"
+        ],
+        "questionCount": 11,
+        "recommendedMinutes": 20,
+        "domainQuotas": [
+          {
+            "domain": "listening",
+            "minimum": 11,
+            "preferred": 11,
+            "maximum": 11
+          }
+        ],
+        "parentQuotas": [
+          {
+            "parentType": "listening-activity",
+            "format": "short-monologue",
+            "count": 1
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "dialogue",
+            "count": 1
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "practical-information",
+            "count": 1
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "appropriate-response",
+            "count": 1
+          }
+        ],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-reading-practice-n4",
+    "assessmentType": "reading-practice",
+    "level": "N4",
+    "title": "N4 reading-practice sample",
+    "intendedUse": "A deterministic coherent-parent development practice sample.",
+    "defaultQuestionCount": 13,
+    "defaultTimeLimitMinutes": 20,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-reading-practice-n4",
+        "title": "Comprehension",
+        "order": 1,
+        "domains": [
+          "reading"
+        ],
+        "questionCount": 13,
+        "recommendedMinutes": 20,
+        "domainQuotas": [
+          {
+            "domain": "reading",
+            "minimum": 13,
+            "preferred": 13,
+            "maximum": 13
+          }
+        ],
+        "parentQuotas": [
+          {
+            "parentType": "reading-passage",
+            "format": "short",
+            "count": 3
+          },
+          {
+            "parentType": "reading-passage",
+            "format": "medium",
+            "count": 1
+          }
+        ],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  },
+  {
+    "schemaVersion": 1,
+    "id": "assessment-blueprint-sample-listening-practice-n4",
+    "assessmentType": "listening-practice",
+    "level": "N4",
+    "title": "N4 listening-practice sample",
+    "intendedUse": "A deterministic coherent-parent development practice sample.",
+    "defaultQuestionCount": 11,
+    "defaultTimeLimitMinutes": 20,
+    "sections": [
+      {
+        "id": "assessment-section-blueprint-sample-listening-practice-n4",
+        "title": "Comprehension",
+        "order": 1,
+        "domains": [
+          "listening"
+        ],
+        "questionCount": 11,
+        "recommendedMinutes": 20,
+        "domainQuotas": [
+          {
+            "domain": "listening",
+            "minimum": 11,
+            "preferred": 11,
+            "maximum": 11
+          }
+        ],
+        "parentQuotas": [
+          {
+            "parentType": "listening-activity",
+            "format": "short-monologue",
+            "count": 1
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "dialogue",
+            "count": 1
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "practical-information",
+            "count": 1
+          },
+          {
+            "parentType": "listening-activity",
+            "format": "appropriate-response",
+            "count": 1
+          }
+        ],
+        "difficultyDistribution": {
+          "easy": 0.4,
+          "medium": 0.5,
+          "hard": 0.1
+        }
+      }
+    ],
+    "targetLimits": {
+      "grammar": 2,
+      "vocabulary": 2,
+      "kanji": 2
+    },
+    "completionRule": "all-placed-questions-answered-or-time-expired",
+    "resultMode": "full",
+    "releaseReady": false
+  }
+]

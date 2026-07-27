@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "profile": "release",
+  "engine": "sqlite3",
+  "checksum": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
+  "firstImport": {
+    "inserted": 96047,
+    "updated": 0,
+    "skipped": 0,
+    "rejected": 0,
+    "relationships": 2487
+  },
+  "idempotentRerun": {
+    "inserted": 0,
+    "updated": 0,
+    "skipped": 96047,
+    "rejected": 0,
+    "relationships": 0
+  },
+  "tableCounts": {
+    "sentences": 444,
+    "grammarRelationships": 444,
+    "vocabularyRelationships": 717,
+    "kanjiRelationships": 1326,
+    "learningItemMetadata": 9080,
+    "completedBatches": 1
+  },
+  "transaction": "pass",
+  "parentBeforeChildOrder": "pass",
+  "foreignKeys": "pass",
+  "checksumSkipping": "pass"
+}

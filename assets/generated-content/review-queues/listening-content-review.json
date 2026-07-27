@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "listening-content-review",
+  "categories": [
+    "unnatural-dialogue",
+    "unnatural-spoken-japanese",
+    "ambiguous-response",
+    "multiple-correct-answers",
+    "weak-distractor",
+    "unclear-speaker-intention",
+    "unsupported-inference",
+    "unclear-pronoun-reference",
+    "out-of-level-grammar",
+    "out-of-level-vocabulary",
+    "unsupported-kanji-reading",
+    "tts-pronunciation-ambiguity",
+    "number-reading-ambiguity",
+    "counter-reading-ambiguity",
+    "inconsistent-time-or-price",
+    "duplicate-script-structure",
+    "near-template-dialogue",
+    "lifecycle-conflict",
+    "unresolved-relationship",
+    "glossary-requirement",
+    "inventory-limitation"
+  ],
+  "items": []
+}

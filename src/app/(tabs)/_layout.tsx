@@ -1,0 +1,52 @@
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { Tabs } from 'expo-router';
+import type { ColorValue } from 'react-native';
+
+import { useTheme } from '@/hooks/use-theme';
+
+type IconName = React.ComponentProps<typeof Ionicons>['name'];
+type TabIconProps = { focused: boolean; color: ColorValue; size: number };
+
+function tabIcon(name: IconName) {
+  const TabIcon = ({ color, size }: TabIconProps) => (
+    <Ionicons name={name} color={color} size={size} />
+  );
+  TabIcon.displayName = `TabIcon(${name})`;
+  return TabIcon;
+}
+
+export default function TabLayout() {
+  const theme = useTheme();
+  return (
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: theme.primary,
+        tabBarInactiveTintColor: theme.textSecondary,
+        tabBarStyle: { backgroundColor: theme.surface, borderTopColor: theme.border },
+        tabBarLabelStyle: { fontSize: 11, fontWeight: '600' },
+        tabBarHideOnKeyboard: true,
+      }}>
+      <Tabs.Screen
+        name="index"
+        options={{ title: 'Home', tabBarAccessibilityLabel: 'Home tab', tabBarIcon: tabIcon('home-outline') }}
+      />
+      <Tabs.Screen
+        name="learn"
+        options={{ title: 'Learn', tabBarAccessibilityLabel: 'Learn tab', tabBarIcon: tabIcon('book-outline') }}
+      />
+      <Tabs.Screen
+        name="review"
+        options={{ title: 'Review', tabBarAccessibilityLabel: 'Review tab', tabBarIcon: tabIcon('refresh-outline') }}
+      />
+      <Tabs.Screen
+        name="progress"
+        options={{ title: 'Progress', tabBarAccessibilityLabel: 'Progress tab', tabBarIcon: tabIcon('stats-chart-outline') }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{ title: 'Settings', tabBarAccessibilityLabel: 'Settings tab', tabBarIcon: tabIcon('settings-outline') }}
+      />
+    </Tabs>
+  );
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "profile": "development",
+  "engine": "sqlite3",
+  "databaseVersion": 6,
+  "checksum": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
+  "existingRecordsRetained": 116351,
+  "blueprintsInserted": 24,
+  "presetsInserted": 12,
+  "examsInserted": 32,
+  "sectionsInserted": 52,
+  "questionPlacementsInserted": 1328,
+  "parentPlacementsInserted": 186,
+  "scoringRecordsInserted": 32,
+  "timingRecordsInserted": 32,
+  "readinessRecordsInserted": 1,
+  "viewsInserted": 1509,
+  "developmentOnlyExclusions": 32,
+  "releaseExclusions": 32,
+  "rejectedRecords": 0,
+  "totalPhase8RowsInserted": 3208,
+  "totalImportedRecords": 119559,
+  "foreignKeys": "pass",
+  "transaction": "pass",
+  "parentBeforeChildOrdering": "pass",
+  "snapshotImmutability": "pass",
+  "checksumResult": "pass",
+  "idempotentRerun": {
+    "inserted": 0,
+    "skipped": 119559,
+    "checksumIdentical": true
+  },
+  "sqlViews": {
+    "list": 32,
+    "questions": 1328
+  }
+}

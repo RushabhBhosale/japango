@@ -1,0 +1,82 @@
+[
+  [
+    "食べる",
+    "たべる",
+    "v1 vt",
+    "",
+    10,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "data": {
+              "content": "glossary"
+            },
+            "content": [
+              {
+                "tag": "span",
+                "content": "to eat"
+              },
+              {
+                "tag": "span",
+                "content": "to consume"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    1358280,
+    "ichi1 ⭐"
+  ],
+  [
+    "食べる",
+    "たべる",
+    "forms",
+    "",
+    0,
+    [
+      "喰べる"
+    ],
+    1358280,
+    ""
+  ],
+  [
+    "コンビニ",
+    "コンビニ",
+    "n",
+    "",
+    5,
+    [
+      "convenience store"
+    ],
+    1000001,
+    "ichi1"
+  ],
+  [
+    "橋",
+    "はし",
+    "n",
+    "",
+    2,
+    [
+      "bridge"
+    ],
+    2000001,
+    ""
+  ],
+  [
+    "橋",
+    "はし",
+    "n",
+    "",
+    1,
+    [
+      "bridge (alternate entry)"
+    ],
+    2000002,
+    ""
+  ]
+]

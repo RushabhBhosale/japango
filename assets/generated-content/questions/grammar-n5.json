@@ -1,0 +1,1442 @@
+[
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-001-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “赤いのは私の傘です。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-adjective-u2d-noha-core"
+      }
+    ],
+    "explanation": "Adjective + の(は): The red one is my umbrella. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-001-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-001-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “Adjective + の(は)” in target 001?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-adjective-u2d-noha-core"
+      }
+    ],
+    "explanation": "Adjective + の(は): The red one is my umbrella. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-001-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-002-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “この部屋は明るくて広いです。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-adjective-u2d-te-core"
+      }
+    ],
+    "explanation": "Adjective + て: This room is bright and spacious. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-002-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-002-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “Adjective + て” in target 002?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-adjective-u2d-te-core"
+      }
+    ],
+    "explanation": "Adjective + て: This room is bright and spacious. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-002-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-003-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “道が狭くて、車が通れません。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-adjective-u2d-te-u2d-b-core"
+      }
+    ],
+    "explanation": "Adjective + て + B: The road is narrow, so cars cannot pass. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-003-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-003-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “Adjective + て + B” in target 003?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-adjective-u2d-te-u2d-b-core"
+      }
+    ],
+    "explanation": "Adjective + て + B: The road is narrow, so cars cannot pass. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-003-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-004-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “妹に青いペンをあげます。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-ageru-core"
+      }
+    ],
+    "explanation": "あげる: I will give my younger sister a blue pen. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-004-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-004-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “あげる” in target 004?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-ageru-core"
+      }
+    ],
+    "explanation": "あげる: I will give my younger sister a blue pen. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-004-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-005-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “あの建物は図書館です。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-ano-core"
+      }
+    ],
+    "explanation": "あの: That building over there is the library. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-005-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-005-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “あの” in target 005?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-ano-core"
+      }
+    ],
+    "explanation": "あの: That building over there is the library. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-005-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-006-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “あれは父の自転車です。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-are-core"
+      }
+    ],
+    "explanation": "あれ: That over there is my father's bicycle. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-006-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-006-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “あれ” in target 006?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-are-core"
+      }
+    ],
+    "explanation": "あれ: That over there is my father's bicycle. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-006-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-007-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “あそこに交番があります。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-asoko-core"
+      }
+    ],
+    "explanation": "あそこ: There is a police box over there. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-007-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-007-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “あそこ” in target 007?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-asoko-core"
+      }
+    ],
+    "explanation": "あそこ: There is a police box over there. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-007-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-008-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “今日は水だけ飲みます。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-dake-core"
+      }
+    ],
+    "explanation": "だけ: Today I will drink only water. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-008-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-008-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “だけ” in target 008?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-dake-core"
+      }
+    ],
+    "explanation": "だけ: Today I will drink only water. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-008-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-009-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “明日は雨だろう。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-darou-core"
+      }
+    ],
+    "explanation": "だろう: It will probably rain tomorrow. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-009-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-009-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “だろう” in target 009?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-darou-core"
+      }
+    ],
+    "explanation": "だろう: It will probably rain tomorrow. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-009-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-010-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “昨日は休みだった。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-datta-core"
+      }
+    ],
+    "explanation": "だった: Yesterday was a day off. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-010-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-010-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “だった” in target 010?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-datta-core"
+      }
+    ],
+    "explanation": "だった: Yesterday was a day off. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-010-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-011-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “台所で朝ご飯を作ります。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-de-u2d-action-u2d-location-u2d-marker-core"
+      }
+    ],
+    "explanation": "で: I make breakfast in the kitchen. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-011-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-011-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “で” in target 011?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-de-u2d-action-u2d-location-u2d-marker-core"
+      }
+    ],
+    "explanation": "で: I make breakfast in the kitchen. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-011-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-012-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “電車で会社へ行きます。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-de-u2d-means-u2d-marker-core"
+      }
+    ],
+    "explanation": "で: I go to work by train. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-012-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-012-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “で” in target 012?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-de-u2d-means-u2d-marker-core"
+      }
+    ],
+    "explanation": "で: I go to work by train. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-012-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-013-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “週末は晴れるでしょう。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-deshou-core"
+      }
+    ],
+    "explanation": "でしょう: It will probably be sunny this weekend. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-013-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-013-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “でしょう” in target 013?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-deshou-core"
+      }
+    ],
+    "explanation": "でしょう: It will probably be sunny this weekend. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-013-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-014-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “私は会社員です。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-desu-core"
+      }
+    ],
+    "explanation": "です: I am an office worker. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-014-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-014-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “です” in target 014?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-desu-core"
+      }
+    ],
+    "explanation": "です: I am an office worker. Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-014-recognition-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-015-meaning",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which meaning matches “薬局はどこですか。”?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-doko-core"
+      }
+    ],
+    "explanation": "どこ: Where is the pharmacy? Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-meaning",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-meaning"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-015-meaning-1"
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "id": "question-grammar-n5-bridge-015-recognition",
+    "domain": "grammar",
+    "presentation": "multiple-choice",
+    "prompt": {
+      "text": "Which sentence uses the N5 pattern “どこ” in target 015?",
+      "language": "bilingual"
+    },
+    "stimulusReferences": [
+      {
+        "type": "sentence",
+        "id": "sentence-doko-core"
+      }
+    ],
+    "explanation": "どこ: Where is the pharmacy? Each distractor is a valid canonical sentence but represents a different grammar target. Common mistake: choosing a grammatical sentence that does not use the named target.",
+    "difficulty": {
+      "jlptLevel": "N5",
+      "rank": 2
+    },
+    "examMetadata": {
+      "jlptLevel": "N5",
+      "section": "grammar",
+      "formatCode": "bridge-recognition",
+      "recommendedSeconds": 35
+    },
+    "usageContexts": [
+      "assessment",
+      "review"
+    ],
+    "tags": [
+      "phase8-bridge",
+      "type-recognition"
+    ],
+    "sourceIds": [
+      "japango-assessment-n5-grammar-bridge"
+    ],
+    "attribution": [
+      "Original JapanGo editorial assessment bridge content; JLPT-aligned, not official JLPT material."
+    ],
+    "confidence": 0.96,
+    "needsReview": false,
+    "releaseReady": false,
+    "responseType": "single-select",
+    "correctOptionIds": [
+      "question-option-grammar-n5-bridge-015-recognition-1"
+    ]
+  }
+]

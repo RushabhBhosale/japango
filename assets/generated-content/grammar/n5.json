@@ -1,0 +1,4520 @@
+[
+  {
+    "id": "grammar-adjective-noha",
+    "pattern": "Adjective + の(は)",
+    "alternatePatterns": [],
+    "title": "Pattern Adjective + の(は)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-121"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-adjective-te",
+    "pattern": "Adjective + て",
+    "alternatePatterns": [
+      "Noun + で"
+    ],
+    "title": "Pattern Adjective + て",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-117"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-adjective-te-b",
+    "pattern": "Adjective + て + B",
+    "alternatePatterns": [],
+    "title": "Pattern Adjective + て + B",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-118"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ageru",
+    "pattern": "あげる",
+    "alternatePatterns": [],
+    "title": "Pattern あげる",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-122"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ano",
+    "pattern": "あの",
+    "alternatePatterns": [],
+    "title": "Pattern あの",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-35"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-are",
+    "pattern": "あれ",
+    "alternatePatterns": [],
+    "title": "Pattern あれ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-7"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-asoko",
+    "pattern": "あそこ",
+    "alternatePatterns": [],
+    "title": "Pattern あそこ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-24"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-dake",
+    "pattern": "だけ",
+    "alternatePatterns": [],
+    "title": "Pattern だけ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-76"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-darou",
+    "pattern": "だろう",
+    "alternatePatterns": [],
+    "title": "Pattern だろう",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-30"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-datta",
+    "pattern": "だった",
+    "alternatePatterns": [
+      "でした"
+    ],
+    "title": "Pattern だった",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-66"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-de-action-location-marker",
+    "pattern": "で",
+    "alternatePatterns": [],
+    "title": "Action-location marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-de-means-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-25"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-de-means-marker",
+    "pattern": "で",
+    "alternatePatterns": [],
+    "title": "Means marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-de-action-location-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-51"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-deshou",
+    "pattern": "でしょう",
+    "alternatePatterns": [],
+    "title": "Pattern でしょう",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-29"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-desu",
+    "pattern": "です",
+    "alternatePatterns": [],
+    "title": "Pattern です",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-2"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-doko",
+    "pattern": "どこ",
+    "alternatePatterns": [],
+    "title": "Pattern どこ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-78"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-dono",
+    "pattern": "どの",
+    "alternatePatterns": [],
+    "title": "Pattern どの",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-79"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-dore",
+    "pattern": "どれ",
+    "alternatePatterns": [],
+    "title": "Pattern どれ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-77"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ga-contrast-conjunction",
+    "pattern": "が",
+    "alternatePatterns": [],
+    "title": "Contrast conjunction",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ga-subject-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-56"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ga-subject-marker",
+    "pattern": "が",
+    "alternatePatterns": [],
+    "title": "Subject marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ga-contrast-conjunction"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-13"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-gaaru",
+    "pattern": "がある",
+    "alternatePatterns": [],
+    "title": "Pattern がある",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-31"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-gaaru-noun",
+    "pattern": "がある + Noun",
+    "alternatePatterns": [],
+    "title": "Pattern がある + Noun",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-49"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-gairu",
+    "pattern": "がいる",
+    "alternatePatterns": [],
+    "title": "Pattern がいる",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-32"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ha",
+    "pattern": "は",
+    "alternatePatterns": [],
+    "title": "Pattern は",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-3"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-he",
+    "pattern": "へ",
+    "alternatePatterns": [],
+    "title": "Pattern へ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-61"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-heiku",
+    "pattern": "へいく",
+    "alternatePatterns": [],
+    "title": "Pattern へいく",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-41"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-i-adjective-noun",
+    "pattern": "い-Adjective + Noun",
+    "alternatePatterns": [],
+    "title": "Pattern い-Adjective + Noun",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-39"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-i-adjectivekunakatta",
+    "pattern": "い-Adjective くなかった",
+    "alternatePatterns": [],
+    "title": "Pattern い-Adjective くなかった",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-69"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-i-adjectivepast",
+    "pattern": "い-Adjective (Past)",
+    "alternatePatterns": [],
+    "title": "Pattern い-Adjective (Past)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-37"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-i-adjectivepredicate",
+    "pattern": "い-Adjective (Predicate)",
+    "alternatePatterns": [],
+    "title": "Pattern い-Adjective (Predicate)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-64"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-i-adjectives",
+    "pattern": "い-Adjectives",
+    "alternatePatterns": [],
+    "title": "Pattern い-Adjectives",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-10"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-i-adjectiveskunai",
+    "pattern": "い-Adjectives くない",
+    "alternatePatterns": [],
+    "title": "Pattern い-Adjectives くない",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-50"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ii",
+    "pattern": "いい",
+    "alternatePatterns": [],
+    "title": "Pattern いい",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-9"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-janai",
+    "pattern": "じゃない",
+    "alternatePatterns": [],
+    "title": "Pattern じゃない",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-67"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-janakatta",
+    "pattern": "じゃなかった",
+    "alternatePatterns": [],
+    "title": "Pattern じゃなかった",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-68"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ka-alternative-marker",
+    "pattern": "か",
+    "alternatePatterns": [],
+    "title": "Alternative marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ka-question-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-27"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ka-question-marker",
+    "pattern": "か",
+    "alternatePatterns": [],
+    "title": "Question marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ka-alternative-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-12"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kara-reason-conjunction",
+    "pattern": "から",
+    "alternatePatterns": [],
+    "title": "Reason conjunction",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-kara-starting-point-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-53"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kara-starting-point-marker",
+    "pattern": "から",
+    "alternatePatterns": [],
+    "title": "Starting-point marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-kara-reason-conjunction"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-54"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kedo",
+    "pattern": "けど",
+    "alternatePatterns": [
+      "だけど"
+    ],
+    "title": "Pattern けど",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-55"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kekkou",
+    "pattern": "けっこう",
+    "alternatePatterns": [],
+    "title": "Pattern けっこう",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-89"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-keredomo",
+    "pattern": "けれども",
+    "alternatePatterns": [],
+    "title": "Pattern けれども",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-125"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kirai",
+    "pattern": "きらい",
+    "alternatePatterns": [],
+    "title": "Pattern きらい",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-47"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-koko",
+    "pattern": "ここ",
+    "alternatePatterns": [],
+    "title": "Pattern ここ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-22"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kono",
+    "pattern": "この",
+    "alternatePatterns": [],
+    "title": "Pattern この",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-33"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kore",
+    "pattern": "これ",
+    "alternatePatterns": [],
+    "title": "Pattern これ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-5"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kurai1",
+    "pattern": "くらい 1",
+    "alternatePatterns": [],
+    "title": "Pattern くらい 1",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-92"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kureru",
+    "pattern": "くれる",
+    "alternatePatterns": [],
+    "title": "Pattern くれる",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-123"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-kuru",
+    "pattern": "くる",
+    "alternatePatterns": [],
+    "title": "Pattern くる",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-43"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-mada",
+    "pattern": "まだ",
+    "alternatePatterns": [],
+    "title": "Pattern まだ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-84"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-mada-teimasen",
+    "pattern": "まだ～ていません",
+    "alternatePatterns": [],
+    "title": "Pattern まだ～ていません",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-85"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-maeni",
+    "pattern": "まえに",
+    "alternatePatterns": [],
+    "title": "Pattern まえに",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-91"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-masenka",
+    "pattern": "ませんか",
+    "alternatePatterns": [],
+    "title": "Pattern ませんか",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-104"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-mashou",
+    "pattern": "ましょう",
+    "alternatePatterns": [],
+    "title": "Pattern ましょう",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-102"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-mashouka",
+    "pattern": "～ましょうか",
+    "alternatePatterns": [],
+    "title": "Pattern ～ましょうか",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-103"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-mo",
+    "pattern": "も",
+    "alternatePatterns": [],
+    "title": "Pattern も",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-4"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-morau",
+    "pattern": "もらう",
+    "alternatePatterns": [],
+    "title": "Pattern もらう",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-124"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-mou",
+    "pattern": "もう",
+    "alternatePatterns": [],
+    "title": "Pattern もう",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-83"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-na",
+    "pattern": "な",
+    "alternatePatterns": [],
+    "title": "Pattern な",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-75"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-na-adjective-noun",
+    "pattern": "な-Adjective + Noun",
+    "alternatePatterns": [],
+    "title": "Pattern な-Adjective + Noun",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-40"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-na-adjectiveda",
+    "pattern": "な-Adjective だ",
+    "alternatePatterns": [],
+    "title": "Pattern な-Adjective だ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-65"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-na-adjectives",
+    "pattern": "な-Adjectives",
+    "alternatePatterns": [],
+    "title": "Pattern な-Adjectives",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-11"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-naidekudasai",
+    "pattern": "ないでください",
+    "alternatePatterns": [],
+    "title": "Pattern ないでください",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-107"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-naihougaii",
+    "pattern": "ないほうがいい",
+    "alternatePatterns": [],
+    "title": "Pattern ないほうがいい",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-112"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nakucha",
+    "pattern": "なくちゃ",
+    "alternatePatterns": [
+      "なきゃ"
+    ],
+    "title": "Pattern なくちゃ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-113"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nakutehaikenai",
+    "pattern": "なくてはいけない",
+    "alternatePatterns": [],
+    "title": "Pattern なくてはいけない",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-109"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nakutehanaranai",
+    "pattern": "なくてはならない",
+    "alternatePatterns": [],
+    "title": "Pattern なくてはならない",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-110"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nanika",
+    "pattern": "なにか",
+    "alternatePatterns": [
+      "なにも"
+    ],
+    "title": "Pattern なにか",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-100"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ndesu",
+    "pattern": "～んです",
+    "alternatePatterns": [
+      "のです"
+    ],
+    "title": "Pattern ～んです",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-36"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ne",
+    "pattern": "ね",
+    "alternatePatterns": [],
+    "title": "Pattern ね",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-15"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ni",
+    "pattern": "に",
+    "alternatePatterns": [],
+    "title": "Pattern に",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-26"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ninaru",
+    "pattern": "～になる",
+    "alternatePatterns": [
+      "～くなる"
+    ],
+    "title": "Pattern ～になる",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-97"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nisuru",
+    "pattern": "にする",
+    "alternatePatterns": [],
+    "title": "Pattern にする",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-96"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-no-explanatory-nominalizer",
+    "pattern": "の",
+    "alternatePatterns": [],
+    "title": "Explanatory nominalizer",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-no-possession-marker",
+      "grammar-no-nominalizer"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-74"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-no-nominalizer",
+    "pattern": "の",
+    "alternatePatterns": [],
+    "title": "Nominalizer",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-no-possession-marker",
+      "grammar-no-explanatory-nominalizer"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-38"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-no-possession-marker",
+    "pattern": "の",
+    "alternatePatterns": [],
+    "title": "Possession marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-no-nominalizer",
+      "grammar-no-explanatory-nominalizer"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-8"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-node",
+    "pattern": "ので",
+    "alternatePatterns": [],
+    "title": "Pattern ので",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-52"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nogaheta",
+    "pattern": "のがへた",
+    "alternatePatterns": [],
+    "title": "Pattern のがへた",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-119"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nogajouzu",
+    "pattern": "のがじょうず",
+    "alternatePatterns": [],
+    "title": "Pattern のがじょうず",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-120"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nogasuki",
+    "pattern": "のがすき",
+    "alternatePatterns": [],
+    "title": "Pattern のがすき",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-48"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-nonakade-gaichiban",
+    "pattern": "のなかで～がいちばん～",
+    "alternatePatterns": [],
+    "title": "Pattern のなかで～がいちばん～",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-98"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-noun-made",
+    "pattern": "Noun + まで",
+    "alternatePatterns": [],
+    "title": "Pattern Noun + まで",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-93"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-o",
+    "pattern": "を",
+    "alternatePatterns": [],
+    "title": "Pattern を",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-18"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ru-verbdictionary",
+    "pattern": "る-Verb (Dictionary)",
+    "alternatePatterns": [],
+    "title": "Pattern る-Verb (Dictionary)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-16"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ru-verbnegative",
+    "pattern": "る-Verb (Negative)",
+    "alternatePatterns": [],
+    "title": "Pattern る-Verb (Negative)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-19"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ru-verbnegative-past",
+    "pattern": "る-Verb (Negative-Past)",
+    "alternatePatterns": [],
+    "title": "Pattern る-Verb (Negative-Past)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-57"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ru-verbpast",
+    "pattern": "る-Verb (Past)",
+    "alternatePatterns": [],
+    "title": "Pattern る-Verb (Past)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-44"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-soko",
+    "pattern": "そこ",
+    "alternatePatterns": [],
+    "title": "Pattern そこ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-23"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-sono",
+    "pattern": "その",
+    "alternatePatterns": [],
+    "title": "Pattern その",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-34"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-sore",
+    "pattern": "それ",
+    "alternatePatterns": [],
+    "title": "Pattern それ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-6"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-sugiru",
+    "pattern": "すぎる",
+    "alternatePatterns": [],
+    "title": "Pattern すぎる",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-95"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-suru",
+    "pattern": "する",
+    "alternatePatterns": [],
+    "title": "Pattern する",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-42"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-tahougaii",
+    "pattern": "たほうがいい",
+    "alternatePatterns": [],
+    "title": "Pattern たほうがいい",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-111"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-tai",
+    "pattern": "たい",
+    "alternatePatterns": [],
+    "title": "Pattern たい",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-87"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-takotogaaru",
+    "pattern": "たことがある",
+    "alternatePatterns": [],
+    "title": "Pattern たことがある",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-115"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-takusan",
+    "pattern": "たくさん",
+    "alternatePatterns": [],
+    "title": "Pattern たくさん",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-90"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-tari-tarisuru",
+    "pattern": "たり～たりする",
+    "alternatePatterns": [],
+    "title": "Pattern たり～たりする",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-88"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-tehaikenai",
+    "pattern": "てはいけない",
+    "alternatePatterns": [],
+    "title": "Pattern てはいけない",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-108"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-teiru1",
+    "pattern": "ている1",
+    "alternatePatterns": [],
+    "title": "Pattern ている1",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-60"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-teiru2",
+    "pattern": "ている2",
+    "alternatePatterns": [],
+    "title": "Pattern ている2",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-80"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-teiru3",
+    "pattern": "ている3",
+    "alternatePatterns": [],
+    "title": "Pattern ている3",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-116"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-tekara",
+    "pattern": "てから",
+    "alternatePatterns": [],
+    "title": "Pattern てから",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-81"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-tekudasai",
+    "pattern": "てください",
+    "alternatePatterns": [],
+    "title": "Pattern てください",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-106"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-temoii",
+    "pattern": "てもいい",
+    "alternatePatterns": [
+      "Verb + てもいい"
+    ],
+    "title": "Pattern てもいい",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-86"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-to-accompaniment-marker",
+    "pattern": "と",
+    "alternatePatterns": [],
+    "title": "Accompaniment marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-to-and-marker",
+      "grammar-to-quotation-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-28"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-to-and-marker",
+    "pattern": "と",
+    "alternatePatterns": [],
+    "title": "And marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-to-accompaniment-marker",
+      "grammar-to-quotation-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-21"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-to-quotation-marker",
+    "pattern": "と",
+    "alternatePatterns": [],
+    "title": "Quotation marker",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-to-and-marker",
+      "grammar-to-accompaniment-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-70"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-tsumorida",
+    "pattern": "つもりだ",
+    "alternatePatterns": [],
+    "title": "Pattern つもりだ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-126"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-tte",
+    "pattern": "って",
+    "alternatePatterns": [],
+    "title": "Pattern って",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-71"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-u-verbdictionary",
+    "pattern": "う-Verb (Dictionary)",
+    "alternatePatterns": [],
+    "title": "Pattern う-Verb (Dictionary)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-17"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-u-verbnegative",
+    "pattern": "う-Verb (Negative)",
+    "alternatePatterns": [],
+    "title": "Pattern う-Verb (Negative)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-20"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-u-verbnegative-past",
+    "pattern": "う-Verb (Negative-Past)",
+    "alternatePatterns": [],
+    "title": "Pattern う-Verb (Negative-Past)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-58"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-u-verbpast",
+    "pattern": "う-Verb (Past)",
+    "alternatePatterns": [],
+    "title": "Pattern う-Verb (Past)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-45"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-verb-made",
+    "pattern": "Verb + まで",
+    "alternatePatterns": [],
+    "title": "Pattern Verb + まで",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-94"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-verb-niiku",
+    "pattern": "Verb + にいく",
+    "alternatePatterns": [],
+    "title": "Pattern Verb + にいく",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-62"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-verb-ta-teiru-noun",
+    "pattern": "Verb[た・ている]+ Noun",
+    "alternatePatterns": [],
+    "title": "Pattern Verb[た・ている]+ Noun",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-73"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-verb-te",
+    "pattern": "Verb + て",
+    "alternatePatterns": [],
+    "title": "Pattern Verb + て",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-59"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-verb-te-b",
+    "pattern": "Verb + て+ B",
+    "alternatePatterns": [],
+    "title": "Pattern Verb + て+ B",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-82"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-verbsnon-past",
+    "pattern": "Verbs (Non-past)",
+    "alternatePatterns": [],
+    "title": "Pattern Verbs (Non-past)",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-72"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-ya",
+    "pattern": "や",
+    "alternatePatterns": [],
+    "title": "Pattern や",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-114"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-yo",
+    "pattern": "よ",
+    "alternatePatterns": [],
+    "title": "Pattern よ",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-14"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-yori-nohouga",
+    "pattern": "より～のほうが",
+    "alternatePatterns": [],
+    "title": "Pattern より～のほうが",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-99"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-好ki",
+    "pattern": "好き",
+    "alternatePatterns": [],
+    "title": "Pattern 好き",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-46"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-誰",
+    "pattern": "誰",
+    "alternatePatterns": [],
+    "title": "Pattern 誰",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-63"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "grammar-誰ka",
+    "pattern": "誰か",
+    "alternatePatterns": [
+      "どこか",
+      "誰も",
+      "どこも"
+    ],
+    "title": "Pattern 誰か",
+    "level": "N5",
+    "levelConfidence": 0.9,
+    "formationRules": [],
+    "shortExplanation": null,
+    "detailedExplanation": null,
+    "usage": {
+      "intentions": [],
+      "register": null,
+      "politeness": null,
+      "restrictions": []
+    },
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "commonMistakes": [],
+    "exampleIds": [],
+    "exerciseTemplateIds": [],
+    "textbookReferences": [],
+    "sources": [
+      {
+        "sourceId": "kotoba-brew-grammar-n5",
+        "sourceRecordId": "row-101"
+      }
+    ],
+    "attribution": [
+      "Grammar pattern and level mapping from the locally supplied Kotoba Brew tracker; redistribution terms require review."
+    ],
+    "confidence": 0.8,
+    "needsReview": true,
+    "releaseReady": false
+  }
+]

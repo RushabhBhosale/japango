@@ -9,18 +9,44 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#1D2925',
+    background: '#F7F6F2',
+    surface: '#FFFFFF',
+    surfaceElevated: '#FFFFFF',
+    backgroundElement: '#E9EEEB',
+    backgroundSelected: '#DCEBE5',
+    textSecondary: '#68736E',
+    primary: '#26735F',
+    primaryPressed: '#1D5D4D',
+    primarySoft: '#DFEEE8',
+    border: '#DCE3DF',
+    success: '#287A55',
+    successSoft: '#DDF1E5',
+    error: '#B14A48',
+    errorSoft: '#F8E3E1',
+    warning: '#9A641F',
+    warningSoft: '#F8ECD7',
+    onPrimary: '#FFFFFF',
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
+    text: '#EDF3F0',
+    background: '#101714',
+    surface: '#18221E',
+    surfaceElevated: '#1D2924',
+    backgroundElement: '#24322C',
+    backgroundSelected: '#294A3F',
+    textSecondary: '#AAB7B1',
+    primary: '#71C4A7',
+    primaryPressed: '#8BD5BB',
+    primarySoft: '#203C33',
+    border: '#31443C',
+    success: '#7DCCA4',
+    successSoft: '#1E3C2D',
+    error: '#F0A4A0',
+    errorSoft: '#462A29',
+    warning: '#E7BD7B',
+    warningSoft: '#42351F',
+    onPrimary: '#10231D',
   },
 } as const;
 
@@ -61,5 +87,12 @@ export const Spacing = {
   six: 64,
 } as const;
 
+export const Radius = {
+  small: 10,
+  medium: 16,
+  large: 24,
+  pill: 999,
+} as const;
+
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
-export const MaxContentWidth = 800;
+export const MaxContentWidth = 680;

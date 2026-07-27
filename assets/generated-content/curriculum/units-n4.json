@@ -1,0 +1,3618 @@
+[
+  {
+    "id": "n4-unit-001",
+    "title": "N4 focused unit 01",
+    "level": "N4",
+    "order": 1,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Read 7 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 14 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-koto-nominalizer",
+      "grammar-n4-sa-nominalizer",
+      "grammar-n4-nowa-da"
+    ],
+    "vocabularyIds": [
+      "vocab-あんな-あんな",
+      "vocab-ごみ-ごみ",
+      "vocab-新聞社-しんぶんしゃ",
+      "vocab-湯-ゆ",
+      "vocab-道具-どうぐ",
+      "vocab-漫画-まんが",
+      "vocab-畳-たたみ",
+      "vocab-値段-ねだん",
+      "vocab-番組-ばんぐみ",
+      "vocab-品物-しなもの",
+      "vocab-場所-ばしょ",
+      "vocab-眠い-ねむい",
+      "vocab-だめ-だめ",
+      "vocab-頑張る-がんばる",
+      "vocab-文法-ぶんぽう",
+      "vocab-会議室-かいぎしつ",
+      "vocab-売り場-うりば",
+      "vocab-確か-たしか",
+      "vocab-事務所-じむしょ",
+      "vocab-店員-てんいん",
+      "vocab-引き出し-ひきだし",
+      "vocab-鏡-かがみ",
+      "vocab-隅-すみ",
+      "vocab-講義-こうぎ",
+      "vocab-周り-まわり",
+      "vocab-息子-むすこ",
+      "vocab-昼休み-ひるやすみ",
+      "vocab-数学-すうがく",
+      "vocab-アメリカ-あめりか"
+    ],
+    "kanjiIds": [
+      "kanji-館",
+      "kanji-方",
+      "kanji-手",
+      "kanji-空",
+      "kanji-多",
+      "kanji-魚",
+      "kanji-肉"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-新聞社-しんぶんしゃ",
+      "vocab-道具-どうぐ",
+      "vocab-漫画-まんが",
+      "vocab-品物-しなもの",
+      "vocab-場所-ばしょ",
+      "vocab-文法-ぶんぽう",
+      "vocab-会議室-かいぎしつ",
+      "vocab-売り場-うりば",
+      "vocab-事務所-じむしょ",
+      "vocab-店員-てんいん",
+      "vocab-引き出し-ひきだし",
+      "vocab-息子-むすこ",
+      "vocab-昼休み-ひるやすみ",
+      "vocab-数学-すうがく"
+    ],
+    "reviewGrammarIds": [],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n5-unit-042"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 0,
+      "vocabulary": 0,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 1,
+    "recommendedListeningDifficulty": 1,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-002",
+    "title": "N4 focused unit 02",
+    "level": "N4",
+    "order": 2,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Practise 1 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-to-iu"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-sa-nominalizer",
+      "grammar-n4-nowa-da"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-周り-まわり",
+      "vocab-息子-むすこ",
+      "vocab-昼休み-ひるやすみ",
+      "vocab-数学-すうがく",
+      "vocab-アメリカ-あめりか"
+    ],
+    "reviewKanjiIds": [
+      "kanji-魚",
+      "kanji-肉"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-001"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 1,
+    "recommendedListeningDifficulty": 1,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-003",
+    "title": "N4 focused unit 03",
+    "level": "N4",
+    "order": 3,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 17 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-to-iu-koto",
+      "grammar-n4-to-omou",
+      "grammar-n4-to-kiku"
+    ],
+    "vocabularyIds": [
+      "vocab-はっきり-はっきり",
+      "vocab-今夜-こんや",
+      "vocab-十分-じゅうぶん",
+      "vocab-水道-すいどう",
+      "vocab-屋上-おくじょう",
+      "vocab-習慣-しゅうかん",
+      "vocab-普通-ふつう",
+      "vocab-ぶどう-ぶどう",
+      "vocab-続ける-つづける",
+      "vocab-予定-よてい",
+      "vocab-以内-いない",
+      "vocab-規則-きそく",
+      "vocab-注意-ちゅうい",
+      "vocab-電報-でんぽう",
+      "vocab-プレゼント-ぷれぜんと",
+      "vocab-空港-くうこう",
+      "vocab-苦い-にがい",
+      "vocab-アフリカ-あふりか",
+      "vocab-機会-きかい",
+      "vocab-近所-きんじょ",
+      "vocab-港-みなと",
+      "vocab-葉-は",
+      "vocab-思い出す-おもいだす",
+      "vocab-彼女-かのじょ",
+      "vocab-約束-やくそく",
+      "vocab-将来-しょうらい",
+      "vocab-楽しみ-たのしみ",
+      "vocab-気持ち-きもち",
+      "vocab-汽車-きしゃ"
+    ],
+    "kanjiIds": [
+      "kanji-通",
+      "kanji-主",
+      "kanji-青",
+      "kanji-少",
+      "kanji-新",
+      "kanji-有",
+      "kanji-場",
+      "kanji-地"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-今夜-こんや",
+      "vocab-十分-じゅうぶん",
+      "vocab-水道-すいどう",
+      "vocab-屋上-おくじょう",
+      "vocab-習慣-しゅうかん",
+      "vocab-普通-ふつう",
+      "vocab-以内-いない",
+      "vocab-注意-ちゅうい",
+      "vocab-電報-でんぽう",
+      "vocab-機会-きかい",
+      "vocab-近所-きんじょ",
+      "vocab-思い出す-おもいだす",
+      "vocab-彼女-かのじょ",
+      "vocab-将来-しょうらい",
+      "vocab-楽しみ-たのしみ",
+      "vocab-気持ち-きもち",
+      "vocab-汽車-きしゃ"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-to-iu"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-002"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 1,
+      "vocabulary": 0,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 1,
+    "recommendedListeningDifficulty": 1,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-004",
+    "title": "N4 focused unit 04",
+    "level": "N4",
+    "order": 4,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-to-iwarete-iru",
+      "grammar-n4-ka-dou-ka",
+      "grammar-n4-aida"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-to-omou",
+      "grammar-n4-to-kiku"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-約束-やくそく",
+      "vocab-将来-しょうらい",
+      "vocab-楽しみ-たのしみ",
+      "vocab-気持ち-きもち",
+      "vocab-汽車-きしゃ"
+    ],
+    "reviewKanjiIds": [
+      "kanji-場",
+      "kanji-地"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-003"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 1,
+    "recommendedListeningDifficulty": 1,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-005",
+    "title": "N4 focused unit 05",
+    "level": "N4",
+    "order": 5,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 19 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-aida-ni",
+      "grammar-n4-ato-de",
+      "grammar-n4-koro"
+    ],
+    "vocabularyIds": [
+      "vocab-柔らかい-やわらかい",
+      "vocab-乗り物-のりもの",
+      "vocab-水泳-すいえい",
+      "vocab-特別-とくべつ",
+      "vocab-サンドイッチ-さんどいっち",
+      "vocab-急行-きゅうこう",
+      "vocab-専門-せんもん",
+      "vocab-急ぐ-いそぐ",
+      "vocab-見える-みえる",
+      "vocab-生きる-いきる",
+      "vocab-棚-たな",
+      "vocab-地震-じしん",
+      "vocab-味-あじ",
+      "vocab-用事-ようじ",
+      "vocab-線-せん",
+      "vocab-利用-りよう",
+      "vocab-林-はやし",
+      "vocab-必要-ひつよう",
+      "vocab-海岸-かいがん",
+      "vocab-研究室-けんきゅうしつ",
+      "vocab-月-つき",
+      "vocab-テニス-てにす",
+      "vocab-教会-きょうかい",
+      "vocab-聞こえる-きこえる",
+      "vocab-日-ひ",
+      "vocab-明日-あす",
+      "vocab-形-かたち",
+      "vocab-医学-いがく",
+      "vocab-気-き"
+    ],
+    "kanjiIds": [
+      "kanji-思",
+      "kanji-味",
+      "kanji-問",
+      "kanji-代",
+      "kanji-明",
+      "kanji-元",
+      "kanji-台",
+      "kanji-早"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-乗り物-のりもの",
+      "vocab-水泳-すいえい",
+      "vocab-特別-とくべつ",
+      "vocab-急行-きゅうこう",
+      "vocab-急ぐ-いそぐ",
+      "vocab-見える-みえる",
+      "vocab-生きる-いきる",
+      "vocab-味-あじ",
+      "vocab-用事-ようじ",
+      "vocab-利用-りよう",
+      "vocab-海岸-かいがん",
+      "vocab-研究室-けんきゅうしつ",
+      "vocab-月-つき",
+      "vocab-教会-きょうかい",
+      "vocab-聞こえる-きこえる",
+      "vocab-日-ひ",
+      "vocab-明日-あす",
+      "vocab-医学-いがく",
+      "vocab-気-き"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-ka-dou-ka",
+      "grammar-n4-aida"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-004"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 2,
+    "recommendedListeningDifficulty": 2,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-006",
+    "title": "N4 focused unit 06",
+    "level": "N4",
+    "order": 6,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-made-ni",
+      "grammar-n4-nagara",
+      "grammar-n4-koto-ga-aru-occasional"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-ato-de",
+      "grammar-n4-koro"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-日-ひ",
+      "vocab-明日-あす",
+      "vocab-形-かたち",
+      "vocab-医学-いがく",
+      "vocab-気-き"
+    ],
+    "reviewKanjiIds": [
+      "kanji-台",
+      "kanji-早"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-005"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 2,
+    "recommendedListeningDifficulty": 2,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-007",
+    "title": "N4 focused unit 07",
+    "level": "N4",
+    "order": 7,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 15 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-ta-bakari",
+      "grammar-n4-te-ageru",
+      "grammar-n4-te-kureru"
+    ],
+    "vocabularyIds": [
+      "vocab-邪魔-じゃま",
+      "vocab-複雑-ふくざつ",
+      "vocab-珍しい-めずらしい",
+      "vocab-経済-けいざい",
+      "vocab-すると-すると",
+      "vocab-字-じ",
+      "vocab-そんな-そんな",
+      "vocab-危険-きけん",
+      "vocab-指輪-ゆびわ",
+      "vocab-やっと-やっと",
+      "vocab-必ず-かならず",
+      "vocab-返事-へんじ",
+      "vocab-以外-いがい",
+      "vocab-研究-けんきゅう",
+      "vocab-見つかる-みつかる",
+      "vocab-親-おや",
+      "vocab-直す-なおす",
+      "vocab-文化-ぶんか",
+      "vocab-お土産-おみやげ",
+      "vocab-住所-じゅうしょ",
+      "vocab-特急-とっきゅう",
+      "vocab-お子さん-おこさん",
+      "vocab-留守-るす",
+      "vocab-興味-きょうみ",
+      "vocab-親切-しんせつ",
+      "vocab-祖父-そふ",
+      "vocab-発音-はつおん",
+      "vocab-歴史-れきし",
+      "vocab-会話-かいわ"
+    ],
+    "kanjiIds": [
+      "kanji-家",
+      "kanji-習",
+      "kanji-朝",
+      "kanji-図",
+      "kanji-不",
+      "kanji-料",
+      "kanji-作",
+      "kanji-字"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-字-じ",
+      "vocab-返事-へんじ",
+      "vocab-以外-いがい",
+      "vocab-研究-けんきゅう",
+      "vocab-見つかる-みつかる",
+      "vocab-親-おや",
+      "vocab-文化-ぶんか",
+      "vocab-お土産-おみやげ",
+      "vocab-住所-じゅうしょ",
+      "vocab-特急-とっきゅう",
+      "vocab-お子さん-おこさん",
+      "vocab-親切-しんせつ",
+      "vocab-祖父-そふ",
+      "vocab-発音-はつおん",
+      "vocab-会話-かいわ"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-nagara",
+      "grammar-n4-koto-ga-aru-occasional"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-006"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 2,
+    "recommendedListeningDifficulty": 2,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-008",
+    "title": "N4 focused unit 08",
+    "level": "N4",
+    "order": 8,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-te-morau",
+      "grammar-n4-te-itadakemasen-ka",
+      "grammar-n4-te-yaru"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-京",
+      "kanji-体",
+      "kanji-夜",
+      "kanji-員",
+      "kanji-親",
+      "kanji-帰",
+      "kanji-理",
+      "kanji-犬"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-te-ageru",
+      "grammar-n4-te-kureru"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-親切-しんせつ",
+      "vocab-祖父-そふ",
+      "vocab-発音-はつおん",
+      "vocab-歴史-れきし",
+      "vocab-会話-かいわ"
+    ],
+    "reviewKanjiIds": [
+      "kanji-作",
+      "kanji-字"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-007"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 2,
+    "recommendedListeningDifficulty": 2,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-009",
+    "title": "N4 focused unit 09",
+    "level": "N4",
+    "order": 9,
+    "kind": "learning",
+    "stage": "foundation",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 9 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-hajimeru",
+      "grammar-n4-dasu",
+      "grammar-n4-owaru"
+    ],
+    "vocabularyIds": [
+      "vocab-米-こめ",
+      "vocab-合う-あう",
+      "vocab-それに-それに",
+      "vocab-昔-むかし",
+      "vocab-島-しま",
+      "vocab-これから-これから",
+      "vocab-小説-しょうせつ",
+      "vocab-特に-とくに",
+      "vocab-美術館-びじゅつかん",
+      "vocab-関係-かんけい",
+      "vocab-教育-きょういく",
+      "vocab-止める-とめる",
+      "vocab-消しゴム-けしごむ",
+      "vocab-石-いし",
+      "vocab-打つ-うつ",
+      "vocab-法律-ほうりつ",
+      "vocab-だから-だから",
+      "vocab-再来月-さらいげつ",
+      "vocab-再来週-さらいしゅう",
+      "vocab-運転手-うんてんしゅ",
+      "vocab-アジア-あじあ",
+      "vocab-寺-てら",
+      "vocab-布団-ふとん",
+      "vocab-集める-あつめる",
+      "vocab-夫-おっと",
+      "vocab-優しい-やさしい",
+      "vocab-旅館-りょかん",
+      "vocab-全然-ぜんぜん",
+      "vocab-もうすぐ-もうすぐ"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-小説-しょうせつ",
+      "vocab-特に-とくに",
+      "vocab-教育-きょういく",
+      "vocab-止める-とめる",
+      "vocab-再来月-さらいげつ",
+      "vocab-再来週-さらいしゅう",
+      "vocab-運転手-うんてんしゅ",
+      "vocab-集める-あつめる",
+      "vocab-旅館-りょかん"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-te-itadakemasen-ka",
+      "grammar-n4-te-yaru"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-理",
+      "kanji-犬"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-008"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 2,
+    "recommendedListeningDifficulty": 2,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-010",
+    "title": "N4 focused unit 10",
+    "level": "N4",
+    "order": 10,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-tsuzukeru",
+      "grammar-n4-te-oku",
+      "grammar-n4-te-miru"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-目",
+      "kanji-花",
+      "kanji-海",
+      "kanji-週",
+      "kanji-買",
+      "kanji-紙",
+      "kanji-文",
+      "kanji-自"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-dasu",
+      "grammar-n4-owaru"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-夫-おっと",
+      "vocab-優しい-やさしい",
+      "vocab-旅館-りょかん",
+      "vocab-全然-ぜんぜん",
+      "vocab-もうすぐ-もうすぐ"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-009"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 3,
+    "recommendedListeningDifficulty": 3,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-011",
+    "title": "N4 focused unit 11",
+    "level": "N4",
+    "order": 11,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 14 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-te-shimau",
+      "grammar-n4-te-aru",
+      "grammar-n4-mama"
+    ],
+    "vocabularyIds": [
+      "vocab-安全-あんぜん",
+      "vocab-間-あいだ",
+      "vocab-暖房-だんぼう",
+      "vocab-適当-てきとう",
+      "vocab-様-よう",
+      "vocab-パソコン-ぱそこん",
+      "vocab-送る-おくる",
+      "vocab-答-こたえ",
+      "vocab-内-うち",
+      "vocab-ひげ-ひげ",
+      "vocab-火事-かじ",
+      "vocab-花見-はなみ",
+      "vocab-慣れる-なれる",
+      "vocab-空気-くうき",
+      "vocab-赤ちゃん-あかちゃん",
+      "vocab-選ぶ-えらぶ",
+      "vocab-足りる-たりる",
+      "vocab-丁寧-ていねい",
+      "vocab-理由-りゆう",
+      "vocab-例えば-たとえば",
+      "vocab-ソフト-そふと",
+      "vocab-泣く-なく",
+      "vocab-歯医者-はいしゃ",
+      "vocab-床屋-とこや",
+      "vocab-調べる-しらべる",
+      "vocab-今度-こんど",
+      "vocab-一杯-いっぱい",
+      "vocab-ピアノ-ぴあの",
+      "vocab-駐車場-ちゅうしゃじょう"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-安全-あんぜん",
+      "vocab-間-あいだ",
+      "vocab-送る-おくる",
+      "vocab-答-こたえ",
+      "vocab-火事-かじ",
+      "vocab-花見-はなみ",
+      "vocab-空気-くうき",
+      "vocab-赤ちゃん-あかちゃん",
+      "vocab-足りる-たりる",
+      "vocab-歯医者-はいしゃ",
+      "vocab-床屋-とこや",
+      "vocab-今度-こんど",
+      "vocab-一杯-いっぱい",
+      "vocab-駐車場-ちゅうしゃじょう"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-te-oku",
+      "grammar-n4-te-miru"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-文",
+      "kanji-自"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-010"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 3,
+    "recommendedListeningDifficulty": 3,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-012",
+    "title": "N4 focused unit 12",
+    "level": "N4",
+    "order": 12,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-te-kuru",
+      "grammar-n4-te-iku",
+      "grammar-n4-tokoro"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-族",
+      "kanji-兄",
+      "kanji-姉",
+      "kanji-牛",
+      "kanji-駅",
+      "kanji-赤",
+      "kanji-正",
+      "kanji-病"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-te-aru",
+      "grammar-n4-mama"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-調べる-しらべる",
+      "vocab-今度-こんど",
+      "vocab-一杯-いっぱい",
+      "vocab-ピアノ-ぴあの",
+      "vocab-駐車場-ちゅうしゃじょう"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-011"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 3,
+    "recommendedListeningDifficulty": 3,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-013",
+    "title": "N4 focused unit 13",
+    "level": "N4",
+    "order": 13,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Recognize 30 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 14 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-teiru-tokoro",
+      "grammar-n4-ta-tokoro",
+      "grammar-n4-ba"
+    ],
+    "vocabularyIds": [
+      "vocab-投げる-なげる",
+      "vocab-払う-はらう",
+      "vocab-失礼-しつれい",
+      "vocab-場合-ばあい",
+      "vocab-贈り物-おくりもの",
+      "vocab-点-てん",
+      "vocab-探す-さがす",
+      "vocab-着物-きもの",
+      "vocab-一度-いちど",
+      "vocab-最近-さいきん",
+      "vocab-柔道-じゅうどう",
+      "vocab-台風-たいふう",
+      "vocab-輸入-ゆにゅう",
+      "vocab-くれる-くれる",
+      "vocab-ジャム-じゃむ",
+      "vocab-具合-ぐあい",
+      "vocab-原因-げんいん",
+      "vocab-日記-にっき",
+      "vocab-僕-ぼく",
+      "vocab-怖い-こわい",
+      "vocab-そろそろ-そろそろ",
+      "vocab-終わり-おわり",
+      "vocab-焼く-やく",
+      "vocab-無理-むり",
+      "vocab-お祝い-おいわい",
+      "vocab-科学-かがく",
+      "vocab-女性-じょせい",
+      "vocab-男性-だんせい",
+      "vocab-天気予報-てんきよほう",
+      "vocab-文学-ぶんがく"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-贈り物-おくりもの",
+      "vocab-着物-きもの",
+      "vocab-一度-いちど",
+      "vocab-最近-さいきん",
+      "vocab-柔道-じゅうどう",
+      "vocab-台風-たいふう",
+      "vocab-輸入-ゆにゅう",
+      "vocab-日記-にっき",
+      "vocab-終わり-おわり",
+      "vocab-科学-かがく",
+      "vocab-女性-じょせい",
+      "vocab-男性-だんせい",
+      "vocab-天気予報-てんきよほう",
+      "vocab-文学-ぶんがく"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-te-iku",
+      "grammar-n4-tokoro"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-正",
+      "kanji-病"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-012"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 3,
+    "recommendedListeningDifficulty": 3,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-014",
+    "title": "N4 focused unit 14",
+    "level": "N4",
+    "order": 14,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-tara",
+      "grammar-n4-to-conditional",
+      "grammar-n4-nara"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-町",
+      "kanji-弟",
+      "kanji-起",
+      "kanji-安",
+      "kanji-店",
+      "kanji-会",
+      "kanji-歩",
+      "kanji-夏"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-ta-tokoro",
+      "grammar-n4-ba"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-科学-かがく",
+      "vocab-女性-じょせい",
+      "vocab-男性-だんせい",
+      "vocab-天気予報-てんきよほう",
+      "vocab-文学-ぶんがく"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-013"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 3,
+    "recommendedListeningDifficulty": 3,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-015",
+    "title": "N4 focused unit 15",
+    "level": "N4",
+    "order": 15,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 9 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-baai-wa",
+      "grammar-n4-temo-concession",
+      "grammar-n4-tara-dou"
+    ],
+    "vocabularyIds": [
+      "vocab-それで-それで",
+      "vocab-課長-かちょう",
+      "vocab-動物園-どうぶつえん",
+      "vocab-意見-いけん",
+      "vocab-交通-こうつう",
+      "vocab-工場-こうじょう",
+      "vocab-校長-こうちょう",
+      "vocab-市-し",
+      "vocab-中学校-ちゅうがっこう",
+      "vocab-不便-ふべん",
+      "vocab-悲しい-かなしい",
+      "vocab-汚れる-よごれる",
+      "vocab-壊す-こわす",
+      "vocab-壊れる-こわれる",
+      "vocab-開く-ひらく",
+      "vocab-客-きゃく",
+      "vocab-空く-あく",
+      "vocab-謝る-あやまる",
+      "vocab-沸かす-わかす",
+      "vocab-片付ける-かたづける",
+      "vocab-落す-おとす",
+      "vocab-落る-おちる",
+      "vocab-久しぶり-ひさしぶり",
+      "vocab-泥棒-どろぼう",
+      "vocab-盗む-ぬすむ",
+      "vocab-太る-ふとる",
+      "vocab-寂しい-さびしい",
+      "vocab-小学校-しょうがっこう",
+      "vocab-運ぶ-はこぶ"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-課長-かちょう",
+      "vocab-動物園-どうぶつえん",
+      "vocab-意見-いけん",
+      "vocab-工場-こうじょう",
+      "vocab-校長-こうちょう",
+      "vocab-中学校-ちゅうがっこう",
+      "vocab-開く-ひらく",
+      "vocab-小学校-しょうがっこう",
+      "vocab-運ぶ-はこぶ"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-to-conditional",
+      "grammar-n4-nara"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-歩",
+      "kanji-夏"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-014"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 4,
+    "recommendedListeningDifficulty": 4,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-016",
+    "title": "N4 focused unit 16",
+    "level": "N4",
+    "order": 16,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-tara-ii-desu-ka",
+      "grammar-n4-hitsuyou-ga-aru",
+      "grammar-n4-nakereba-naranai"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-考",
+      "kanji-風",
+      "kanji-去",
+      "kanji-院",
+      "kanji-社",
+      "kanji-開",
+      "kanji-秋",
+      "kanji-春"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-temo-concession",
+      "grammar-n4-tara-dou"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-盗む-ぬすむ",
+      "vocab-太る-ふとる",
+      "vocab-寂しい-さびしい",
+      "vocab-小学校-しょうがっこう",
+      "vocab-運ぶ-はこぶ"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-015"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 4,
+    "recommendedListeningDifficulty": 4,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-017",
+    "title": "N4 focused unit 17",
+    "level": "N4",
+    "order": 17,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 10 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-nakutemo-ii",
+      "grammar-n4-nasai",
+      "grammar-n4-te-hoshii"
+    ],
+    "vocabularyIds": [
+      "vocab-建てる-たてる",
+      "vocab-押し入れ-おしいれ",
+      "vocab-下着-したぎ",
+      "vocab-サラダ-さらだ",
+      "vocab-細かい-こまかい",
+      "vocab-大学生-だいがくせい",
+      "vocab-会場-かいじょう",
+      "vocab-美しい-うつくしい",
+      "vocab-下りる-おりる",
+      "vocab-手伝う-てつだう",
+      "vocab-試験-しけん",
+      "vocab-パパ-ぱぱ",
+      "vocab-正月-しょうがつ",
+      "vocab-通り-とおり",
+      "vocab-郊外-こうがい",
+      "vocab-子-こ",
+      "vocab-趣味-しゅみ",
+      "vocab-そんなに-そんなに",
+      "vocab-いらっしゃる-いらっしゃる",
+      "vocab-会議-かいぎ",
+      "vocab-季節-きせつ",
+      "vocab-世界-せかい",
+      "vocab-説明-せつめい",
+      "vocab-お宅-おたく",
+      "vocab-お礼-おれい",
+      "vocab-なさる-なさる",
+      "vocab-引っ越す-ひっこす",
+      "vocab-寄る-よる",
+      "vocab-決まる-きまる"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-建てる-たてる",
+      "vocab-押し入れ-おしいれ",
+      "vocab-下着-したぎ",
+      "vocab-大学生-だいがくせい",
+      "vocab-下りる-おりる",
+      "vocab-試験-しけん",
+      "vocab-正月-しょうがつ",
+      "vocab-郊外-こうがい",
+      "vocab-子-こ",
+      "vocab-世界-せかい"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-hitsuyou-ga-aru",
+      "grammar-n4-nakereba-naranai"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-秋",
+      "kanji-春"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-016"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 4,
+    "recommendedListeningDifficulty": 4,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-018",
+    "title": "N4 focused unit 18",
+    "level": "N4",
+    "order": 18,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-volitional-form",
+      "grammar-n4-koto-ni-suru",
+      "grammar-n4-koto-ni-naru"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-度",
+      "kanji-楽",
+      "kanji-強",
+      "kanji-切",
+      "kanji-待",
+      "kanji-道",
+      "kanji-私",
+      "kanji-田"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-nasai",
+      "grammar-n4-te-hoshii"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-お礼-おれい",
+      "vocab-なさる-なさる",
+      "vocab-引っ越す-ひっこす",
+      "vocab-寄る-よる",
+      "vocab-決まる-きまる"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-017"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 4,
+    "recommendedListeningDifficulty": 4,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-019",
+    "title": "N4 focused unit 19",
+    "level": "N4",
+    "order": 19,
+    "kind": "learning",
+    "stage": "recovery",
+    "learningGoals": [
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-yotei-da",
+      "grammar-n4-you-to-omou",
+      "grammar-n4-hazu-da"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-koto-ni-suru",
+      "grammar-n4-koto-ni-naru"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-私",
+      "kanji-田"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-018"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 4,
+    "recommendedListeningDifficulty": 4,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-020",
+    "title": "N4 focused unit 20",
+    "level": "N4",
+    "order": 20,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Read 7 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 12 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-hazu-ga-nai",
+      "grammar-n4-kamo-shirenai",
+      "grammar-n4-souda-hearsay"
+    ],
+    "vocabularyIds": [
+      "vocab-召し上がる-めしあがる",
+      "vocab-彼-かれ",
+      "vocab-億-おく",
+      "vocab-田舎-いなか",
+      "vocab-部長-ぶちょう",
+      "vocab-家内-かない",
+      "vocab-指-ゆび",
+      "vocab-背中-せなか",
+      "vocab-用-よう",
+      "vocab-さっき-さっき",
+      "vocab-以上-いじょう",
+      "vocab-一生懸命-いっしょうけんめい",
+      "vocab-戦争-せんそう",
+      "vocab-復習-ふくしゅう",
+      "vocab-笑う-わらう",
+      "vocab-この間-このあいだ",
+      "vocab-ちっとも-ちっとも",
+      "vocab-下る-さがる",
+      "vocab-社会-しゃかい",
+      "vocab-音-おと",
+      "vocab-差し上げる-さしあげる",
+      "vocab-参る-まいる",
+      "vocab-伺う-うかがう",
+      "vocab-申す-もうす",
+      "vocab-致す-いたす",
+      "vocab-伝える-つたえる",
+      "vocab-火-ひ",
+      "vocab-考える-かんがえる",
+      "vocab-社長-しゃちょう"
+    ],
+    "kanjiIds": [
+      "kanji-貸",
+      "kanji-使",
+      "kanji-知",
+      "kanji-妹",
+      "kanji-用",
+      "kanji-近",
+      "kanji-者"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-召し上がる-めしあがる",
+      "vocab-部長-ぶちょう",
+      "vocab-背中-せなか",
+      "vocab-用-よう",
+      "vocab-以上-いじょう",
+      "vocab-一生懸命-いっしょうけんめい",
+      "vocab-この間-このあいだ",
+      "vocab-下る-さがる",
+      "vocab-音-おと",
+      "vocab-差し上げる-さしあげる",
+      "vocab-火-ひ",
+      "vocab-社長-しゃちょう"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-you-to-omou",
+      "grammar-n4-hazu-da"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-019"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 5,
+    "recommendedListeningDifficulty": 5,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-021",
+    "title": "N4 focused unit 21",
+    "level": "N4",
+    "order": 21,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-souda-appearance",
+      "grammar-n4-rashii",
+      "grammar-n4-youda-similarity"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-物",
+      "kanji-同",
+      "kanji-音",
+      "kanji-画",
+      "kanji-業",
+      "kanji-集",
+      "kanji-言",
+      "kanji-写"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-kamo-shirenai",
+      "grammar-n4-souda-hearsay"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-致す-いたす",
+      "vocab-伝える-つたえる",
+      "vocab-火-ひ",
+      "vocab-考える-かんがえる",
+      "vocab-社長-しゃちょう"
+    ],
+    "reviewKanjiIds": [
+      "kanji-近",
+      "kanji-者"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-020"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 5,
+    "recommendedListeningDifficulty": 5,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-022",
+    "title": "N4 focused unit 22",
+    "level": "N4",
+    "order": 22,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 7 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-mitai-da",
+      "grammar-n4-ni-mieru",
+      "grammar-n4-koto-ga-dekiru"
+    ],
+    "vocabularyIds": [
+      "vocab-始める-はじめる",
+      "vocab-思う-おもう",
+      "vocab-乗り換える-のりかえる",
+      "vocab-予約-よやく",
+      "vocab-捨てる-すてる",
+      "vocab-お祭り-おまつり",
+      "vocab-受付-うけつけ",
+      "vocab-注射-ちゅうしゃ",
+      "vocab-政治-せいじ",
+      "vocab-すり-すり",
+      "vocab-レジ-れじ",
+      "vocab-間違える-まちがえる",
+      "vocab-見つける-みつける",
+      "vocab-事-こと",
+      "vocab-触る-さわる",
+      "vocab-神社-じんじゃ",
+      "vocab-踏む-ふむ",
+      "vocab-比べる-くらべる",
+      "vocab-変-へん",
+      "vocab-展覧会-てんらんかい",
+      "vocab-森-もり",
+      "vocab-是非-ぜひ",
+      "vocab-踊る-おどる",
+      "vocab-別れる-わかれる",
+      "vocab-残念-ざんねん",
+      "vocab-お嬢さん-おじょうさん",
+      "vocab-間に合う-まにあう",
+      "vocab-自由-じゆう",
+      "vocab-拾う-ひろう"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-始める-はじめる",
+      "vocab-注射-ちゅうしゃ",
+      "vocab-間違える-まちがえる",
+      "vocab-見つける-みつける",
+      "vocab-事-こと",
+      "vocab-別れる-わかれる",
+      "vocab-間に合う-まにあう"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-rashii",
+      "grammar-n4-youda-similarity"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-言",
+      "kanji-写"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-021"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 5,
+    "recommendedListeningDifficulty": 5,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-023",
+    "title": "N4 focused unit 23",
+    "level": "N4",
+    "order": 23,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-potential-form",
+      "grammar-n4-passive-form",
+      "grammar-n4-causative-form"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-持",
+      "kanji-計",
+      "kanji-事",
+      "kanji-医",
+      "kanji-口",
+      "kanji-色",
+      "kanji-足",
+      "kanji-鳥"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-ni-mieru",
+      "grammar-n4-koto-ga-dekiru"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-残念-ざんねん",
+      "vocab-お嬢さん-おじょうさん",
+      "vocab-間に合う-まにあう",
+      "vocab-自由-じゆう",
+      "vocab-拾う-ひろう"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-022"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 5,
+    "recommendedListeningDifficulty": 5,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-024",
+    "title": "N4 focused unit 24",
+    "level": "N4",
+    "order": 24,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 2 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-causative-passive-form",
+      "grammar-n4-transitive-intransitive-verbs",
+      "grammar-n4-sasete-kudasai"
+    ],
+    "vocabularyIds": [
+      "vocab-勝つ-かつ",
+      "vocab-負ける-まける",
+      "vocab-予習-よしゅう",
+      "vocab-簡単-かんたん",
+      "vocab-決める-きめる",
+      "vocab-手袋-てぶくろ",
+      "vocab-舟-ふね",
+      "vocab-泊まる-とまる",
+      "vocab-受ける-うける",
+      "vocab-湖-みずうみ",
+      "vocab-アクセサリー-あくせさりー",
+      "vocab-アナウンサー-あなうんさー",
+      "vocab-アルコール-あるこーる",
+      "vocab-エスカレーター-えすかれーたー",
+      "vocab-オートバイ-おーとばい",
+      "vocab-オーバー-おーばー",
+      "vocab-お陰-おかげ",
+      "vocab-お見舞い-おみまい",
+      "vocab-カーテン-かーてん",
+      "vocab-ガス-がす",
+      "vocab-ガソリン-がそりん",
+      "vocab-ガソリンスタンド-がそりんすたんど",
+      "vocab-ガラス-がらす",
+      "vocab-ケーキ-けーき",
+      "vocab-この頃-このごろ",
+      "vocab-コンサート-こんさーと",
+      "vocab-ご主人-ごしゅじん",
+      "vocab-ご存じ-ごぞんじ",
+      "vocab-サンダル-さんだる"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-お見舞い-おみまい",
+      "vocab-ご主人-ごしゅじん"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-passive-form",
+      "grammar-n4-causative-form"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-足",
+      "kanji-鳥"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-023"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 6,
+    "recommendedListeningDifficulty": 6,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-025",
+    "title": "N4 focused unit 25",
+    "level": "N4",
+    "order": 25,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-tame-ni-purpose",
+      "grammar-n4-you-ni-purpose",
+      "grammar-n4-noni-purpose"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-終",
+      "kanji-広",
+      "kanji-服",
+      "kanji-悪",
+      "kanji-以",
+      "kanji-意",
+      "kanji-飲",
+      "kanji-運"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-transitive-intransitive-verbs",
+      "grammar-n4-sasete-kudasai"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-この頃-このごろ",
+      "vocab-コンサート-こんさーと",
+      "vocab-ご主人-ごしゅじん",
+      "vocab-ご存じ-ごぞんじ",
+      "vocab-サンダル-さんだる"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-024"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 6,
+    "recommendedListeningDifficulty": 6,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-026",
+    "title": "N4 focused unit 26",
+    "level": "N4",
+    "order": 26,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Recognize 30 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 4 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-kara-tsukuru",
+      "grammar-n4-ku-suru",
+      "grammar-n4-you-ni-naru"
+    ],
+    "vocabularyIds": [
+      "vocab-しっかり-しっかり",
+      "vocab-スーツ-すーつ",
+      "vocab-スーツケース-すーつけーす",
+      "vocab-スクリーン-すくりーん",
+      "vocab-すっかり-すっかり",
+      "vocab-すっと-すっと",
+      "vocab-ステーキ-すてーき",
+      "vocab-ステレオ-すてれお",
+      "vocab-タイプ-たいぷ",
+      "vocab-テキスト-てきすと",
+      "vocab-とうとう-とうとう",
+      "vocab-どんどん-どんどん",
+      "vocab-ハンバーグ-はんばーぐ",
+      "vocab-ワープロ-わーぷろ",
+      "vocab-安心-あんしん",
+      "vocab-以下-いか",
+      "vocab-為-ため",
+      "vocab-移る-うつる",
+      "vocab-育てる-そだてる",
+      "vocab-嘘-うそ",
+      "vocab-雲-くも",
+      "vocab-遠く-とおく",
+      "vocab-下げる-さげる",
+      "vocab-下宿-げしゅく",
+      "vocab-過ぎる-すぎる",
+      "vocab-皆-みな",
+      "vocab-格好-かっこう",
+      "vocab-割れる-われる",
+      "vocab-割合-わりあい",
+      "vocab-滑る-すべる"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-安心-あんしん",
+      "vocab-以下-いか",
+      "vocab-下げる-さげる",
+      "vocab-下宿-げしゅく"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-you-ni-purpose",
+      "grammar-n4-noni-purpose"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-飲",
+      "kanji-運"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-025"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 6,
+    "recommendedListeningDifficulty": 6,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-027",
+    "title": "N4 focused unit 27",
+    "level": "N4",
+    "order": 27,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-you-ni-suru",
+      "grammar-n4-hodo",
+      "grammar-n4-dake-de"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-映",
+      "kanji-英",
+      "kanji-屋",
+      "kanji-歌",
+      "kanji-界",
+      "kanji-漢",
+      "kanji-急",
+      "kanji-究"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-ku-suru",
+      "grammar-n4-you-ni-naru"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-皆-みな",
+      "vocab-格好-かっこう",
+      "vocab-割れる-われる",
+      "vocab-割合-わりあい",
+      "vocab-滑る-すべる"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-026"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 6,
+    "recommendedListeningDifficulty": 6,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-028",
+    "title": "N4 focused unit 28",
+    "level": "N4",
+    "order": 28,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 4 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-shika-nai",
+      "grammar-n4-bakari",
+      "grammar-n4-mo-quantity-emphasis"
+    ],
+    "vocabularyIds": [
+      "vocab-噛む-かむ",
+      "vocab-乾く-かわく",
+      "vocab-看護婦-かんごふ",
+      "vocab-喜ぶ-よろこぶ",
+      "vocab-嬉しい-うれしい",
+      "vocab-帰り-かえり",
+      "vocab-気分-きぶん",
+      "vocab-祈る-いのる",
+      "vocab-起こす-おこす",
+      "vocab-技術-ぎじゅつ",
+      "vocab-急-きゅう",
+      "vocab-競争-きょうそう",
+      "vocab-驚く-おどろく",
+      "vocab-空く-すく",
+      "vocab-君-きみ",
+      "vocab-景色-けしき",
+      "vocab-警察-けいさつ",
+      "vocab-迎える-むかえる",
+      "vocab-決して-けっして",
+      "vocab-血-ち",
+      "vocab-絹-きぬ",
+      "vocab-見物-けんぶつ",
+      "vocab-厳しい-きびしい",
+      "vocab-光-ひかり",
+      "vocab-光る-ひかる",
+      "vocab-公務員-こうむいん",
+      "vocab-向かう-むかう",
+      "vocab-喉-のど",
+      "vocab-工業-こうぎょう"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-気分-きぶん",
+      "vocab-見物-けんぶつ",
+      "vocab-公務員-こうむいん",
+      "vocab-工業-こうぎょう"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-hodo",
+      "grammar-n4-dake-de"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-急",
+      "kanji-究"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-027"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 6,
+    "recommendedListeningDifficulty": 6,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-029",
+    "title": "N4 focused unit 29",
+    "level": "N4",
+    "order": 29,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-nado",
+      "grammar-n4-demo-alternatives",
+      "grammar-n4-toka-toka"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-教",
+      "kanji-銀",
+      "kanji-建",
+      "kanji-研",
+      "kanji-験",
+      "kanji-古",
+      "kanji-公",
+      "kanji-工"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-bakari",
+      "grammar-n4-mo-quantity-emphasis"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-光る-ひかる",
+      "vocab-公務員-こうむいん",
+      "vocab-向かう-むかう",
+      "vocab-喉-のど",
+      "vocab-工業-こうぎょう"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-028"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 7,
+    "recommendedListeningDifficulty": 7,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-030",
+    "title": "N4 focused unit 30",
+    "level": "N4",
+    "order": 30,
+    "kind": "learning",
+    "stage": "development",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Practise 2 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 10 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-ga-suru-senses",
+      "grammar-n4-garu"
+    ],
+    "vocabularyIds": [
+      "vocab-行う-おこなう",
+      "vocab-講堂-こうどう",
+      "vocab-高校生-こうこうせい",
+      "vocab-国際-こくさい",
+      "vocab-込む-こむ",
+      "vocab-砂-すな",
+      "vocab-最も-もっとも",
+      "vocab-最後-さいご",
+      "vocab-最初-さいしょ",
+      "vocab-済む-すむ",
+      "vocab-坂-さか",
+      "vocab-産業-さんぎょう",
+      "vocab-残る-のこる",
+      "vocab-仕方-しかた",
+      "vocab-市民-しみん",
+      "vocab-枝-えだ",
+      "vocab-止む-やむ",
+      "vocab-止める-やめる",
+      "vocab-糸-いと",
+      "vocab-試合-しあい",
+      "vocab-事故-じこ",
+      "vocab-似る-にる",
+      "vocab-時代-じだい",
+      "vocab-治る-なおる",
+      "vocab-辞典-じてん",
+      "vocab-叱る-しかる",
+      "vocab-失敗-しっぱい",
+      "vocab-写す-うつす",
+      "vocab-取り替える-とりかえる"
+    ],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [
+      "vocab-行う-おこなう",
+      "vocab-講堂-こうどう",
+      "vocab-高校生-こうこうせい",
+      "vocab-国際-こくさい",
+      "vocab-最後-さいご",
+      "vocab-仕方-しかた",
+      "vocab-止む-やむ",
+      "vocab-止める-やめる",
+      "vocab-試合-しあい",
+      "vocab-時代-じだい"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-demo-alternatives",
+      "grammar-n4-toka-toka"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-公",
+      "kanji-工"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-029"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 7,
+    "recommendedListeningDifficulty": 7,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-031",
+    "title": "N4 focused unit 31",
+    "level": "N4",
+    "order": 31,
+    "kind": "learning",
+    "stage": "consolidation",
+    "learningGoals": [
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-gari",
+      "grammar-n4-tagaru",
+      "grammar-n4-nakanaka-nai"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [
+      "kanji-黒",
+      "kanji-仕",
+      "kanji-始",
+      "kanji-止",
+      "kanji-死",
+      "kanji-試",
+      "kanji-室",
+      "kanji-質"
+    ],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-ga-suru-senses",
+      "grammar-n4-garu"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-辞典-じてん",
+      "vocab-叱る-しかる",
+      "vocab-失敗-しっぱい",
+      "vocab-写す-うつす",
+      "vocab-取り替える-とりかえる"
+    ],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-030"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 7,
+    "recommendedListeningDifficulty": 7,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-032",
+    "title": "N4 focused unit 32",
+    "level": "N4",
+    "order": 32,
+    "kind": "learning",
+    "stage": "consolidation",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 10 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-nikui",
+      "grammar-n4-yasui",
+      "grammar-n4-zurai"
+    ],
+    "vocabularyIds": [
+      "vocab-首-くび",
+      "vocab-集まる-あつまる",
+      "vocab-小鳥-ことり",
+      "vocab-焼ける-やける",
+      "vocab-紹介-しょうかい",
+      "vocab-上がる-あがる",
+      "vocab-飾る-かざる",
+      "vocab-植える-うえる",
+      "vocab-食料品-しょくりょうひん",
+      "vocab-寝坊-ねぼう",
+      "vocab-心-こころ",
+      "vocab-深い-ふかい",
+      "vocab-申し上げる-もうしあげる",
+      "vocab-真面目-まじめ",
+      "vocab-進む-すすむ",
+      "vocab-人形-にんぎょう",
+      "vocab-人口-じんこう",
+      "vocab-尋ねる-たずねる",
+      "vocab-随分-ずいぶん",
+      "vocab-凄い-すごい",
+      "vocab-星-ほし",
+      "vocab-正しい-ただしい",
+      "vocab-盛ん-さかん",
+      "vocab-西洋-せいよう",
+      "vocab-席-せき",
+      "vocab-赤ん坊-あかんぼう",
+      "vocab-折る-おる",
+      "vocab-折れる-おれる",
+      "vocab-先輩-せんぱい"
+    ],
+    "kanjiIds": [
+      "kanji-借",
+      "kanji-住",
+      "kanji-重",
+      "kanji-心",
+      "kanji-真",
+      "kanji-世",
+      "kanji-走",
+      "kanji-送"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-小鳥-ことり",
+      "vocab-上がる-あがる",
+      "vocab-食料品-しょくりょうひん",
+      "vocab-心-こころ",
+      "vocab-申し上げる-もうしあげる",
+      "vocab-真面目-まじめ",
+      "vocab-人形-にんぎょう",
+      "vocab-人口-じんこう",
+      "vocab-西洋-せいよう",
+      "vocab-先輩-せんぱい"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-tagaru",
+      "grammar-n4-nakanaka-nai"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [
+      "kanji-室",
+      "kanji-質"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-031"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 7,
+    "recommendedListeningDifficulty": 7,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-033",
+    "title": "N4 focused unit 33",
+    "level": "N4",
+    "order": 33,
+    "kind": "learning",
+    "stage": "consolidation",
+    "learningGoals": [
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-noni-contrast",
+      "grammar-n4-shi",
+      "grammar-n4-sore-demo"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-yasui",
+      "grammar-n4-zurai"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-席-せき",
+      "vocab-赤ん坊-あかんぼう",
+      "vocab-折る-おる",
+      "vocab-折れる-おれる",
+      "vocab-先輩-せんぱい"
+    ],
+    "reviewKanjiIds": [
+      "kanji-走",
+      "kanji-送"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-032"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 7,
+    "recommendedListeningDifficulty": 7,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-034",
+    "title": "N4 focused unit 34",
+    "level": "N4",
+    "order": 34,
+    "kind": "learning",
+    "stage": "consolidation",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 7 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-dewa-nai-ka",
+      "grammar-n4-kashira",
+      "grammar-n4-kai-question"
+    ],
+    "vocabularyIds": [
+      "vocab-浅い-あさい",
+      "vocab-祖母-そぼ",
+      "vocab-素晴らしい-すばらしい",
+      "vocab-痩せる-やせる",
+      "vocab-草-くさ",
+      "vocab-騒ぐ-さわぐ",
+      "vocab-増える-ふえる",
+      "vocab-足す-たす",
+      "vocab-続く-つづく",
+      "vocab-卒業-そつぎょう",
+      "vocab-代わり-かわり",
+      "vocab-大事-だいじ",
+      "vocab-大体-だいたい",
+      "vocab-大抵-たいてい",
+      "vocab-大分-だいぶ",
+      "vocab-知らせる-しらせる",
+      "vocab-地理-ちり",
+      "vocab-恥ずかしい-はずかしい",
+      "vocab-遅れる-おくれる",
+      "vocab-中々-なかなか",
+      "vocab-昼間-ひるま",
+      "vocab-虫-むし",
+      "vocab-直る-なおる",
+      "vocab-通う-かよう",
+      "vocab-通る-とおる",
+      "vocab-漬ける-つける",
+      "vocab-釣る-つる",
+      "vocab-程-ほど",
+      "vocab-点く-つく"
+    ],
+    "kanjiIds": [
+      "kanji-題",
+      "kanji-茶",
+      "kanji-着",
+      "kanji-昼",
+      "kanji-注",
+      "kanji-転",
+      "kanji-冬",
+      "kanji-答"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-祖母-そぼ",
+      "vocab-大事-だいじ",
+      "vocab-大体-だいたい",
+      "vocab-大抵-たいてい",
+      "vocab-大分-だいぶ",
+      "vocab-中々-なかなか",
+      "vocab-昼間-ひるま"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-shi",
+      "grammar-n4-sore-demo"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-033"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 8,
+    "recommendedListeningDifficulty": 8,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-035",
+    "title": "N4 focused unit 35",
+    "level": "N4",
+    "order": 35,
+    "kind": "learning",
+    "stage": "consolidation",
+    "learningGoals": [
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-kana",
+      "grammar-n4-te-sumimasen",
+      "grammar-n4-te-yokatta"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-kashira",
+      "grammar-n4-kai-question"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-通る-とおる",
+      "vocab-漬ける-つける",
+      "vocab-釣る-つる",
+      "vocab-程-ほど",
+      "vocab-点く-つく"
+    ],
+    "reviewKanjiIds": [
+      "kanji-冬",
+      "kanji-答"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-034"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 8,
+    "recommendedListeningDifficulty": 8,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-036",
+    "title": "N4 focused unit 36",
+    "level": "N4",
+    "order": 36,
+    "kind": "learning",
+    "stage": "consolidation",
+    "learningGoals": [
+      "Recognize 29 N4 vocabulary items in short contexts.",
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 5 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-to-ittemo-ii",
+      "grammar-n4-te-de-cause",
+      "grammar-n4-de-gozaimasu"
+    ],
+    "vocabularyIds": [
+      "vocab-電灯-でんとう",
+      "vocab-塗る-ぬる",
+      "vocab-途中-とちゅう",
+      "vocab-都-と",
+      "vocab-都合-つごう",
+      "vocab-怒る-おこる",
+      "vocab-倒れる-たおれる",
+      "vocab-逃げる-にげる",
+      "vocab-動く-うごく",
+      "vocab-届ける-とどける",
+      "vocab-匂い-におい",
+      "vocab-濡れる-ぬれる",
+      "vocab-熱-ねつ",
+      "vocab-熱心-ねっしん",
+      "vocab-倍-ばい",
+      "vocab-髪-かみ",
+      "vocab-反対-はんたい",
+      "vocab-彼ら-かれら",
+      "vocab-非常に-ひじょうに",
+      "vocab-飛行場-ひこうじょう",
+      "vocab-表-おもて",
+      "vocab-沸く-わく",
+      "vocab-壁-かべ",
+      "vocab-別-べつ",
+      "vocab-変える-かえる",
+      "vocab-変わる-かわる",
+      "vocab-捕まえる-つかまえる",
+      "vocab-暮れる-くれる",
+      "vocab-包む-つつむ"
+    ],
+    "kanjiIds": [
+      "kanji-動",
+      "kanji-堂",
+      "kanji-特",
+      "kanji-売",
+      "kanji-発",
+      "kanji-飯",
+      "kanji-品",
+      "kanji-別"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-電灯-でんとう",
+      "vocab-途中-とちゅう",
+      "vocab-動く-うごく",
+      "vocab-飛行場-ひこうじょう",
+      "vocab-別-べつ"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-te-sumimasen",
+      "grammar-n4-te-yokatta"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-035"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 8,
+    "recommendedListeningDifficulty": 8,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-037",
+    "title": "N4 focused unit 37",
+    "level": "N4",
+    "order": 37,
+    "kind": "learning",
+    "stage": "consolidation",
+    "learningGoals": [
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning."
+    ],
+    "grammarIds": [
+      "grammar-n4-gozaimasu",
+      "grammar-n4-irassharu",
+      "grammar-n4-nasaru"
+    ],
+    "vocabularyIds": [],
+    "kanjiIds": [],
+    "kanaFirstVocabularyIds": [],
+    "reviewGrammarIds": [
+      "grammar-n4-te-de-cause",
+      "grammar-n4-de-gozaimasu"
+    ],
+    "reviewVocabularyIds": [
+      "vocab-変える-かえる",
+      "vocab-変わる-かわる",
+      "vocab-捕まえる-つかまえる",
+      "vocab-暮れる-くれる",
+      "vocab-包む-つつむ"
+    ],
+    "reviewKanjiIds": [
+      "kanji-品",
+      "kanji-別"
+    ],
+    "prerequisiteUnitIds": [
+      "n4-unit-036"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 5,
+      "kanji": 2
+    },
+    "recommendedReadingDifficulty": 8,
+    "recommendedListeningDifficulty": 8,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "n4-unit-038",
+    "title": "N4 focused unit 38",
+    "level": "N4",
+    "order": 38,
+    "kind": "learning",
+    "stage": "consolidation",
+    "learningGoals": [
+      "Recognize 30 N4 vocabulary items in short contexts.",
+      "Read 8 N4 kanji through vocabulary, not isolated readings.",
+      "Practise 3 N4 grammar patterns across recognition and sentence meaning.",
+      "Learn 4 items kana-first until their required kanji are introduced."
+    ],
+    "grammarIds": [
+      "grammar-n4-o-ni-naru",
+      "grammar-n4-itasu",
+      "grammar-n4-o-kudasai"
+    ],
+    "vocabularyIds": [
+      "vocab-褒める-ほめる",
+      "vocab-訪ねる-たずねる",
+      "vocab-亡くなる-なくなる",
+      "vocab-忘れ物-わすれもの",
+      "vocab-貿易-ぼうえき",
+      "vocab-翻訳-ほんやく",
+      "vocab-味噌-みそ",
+      "vocab-眠る-ねむる",
+      "vocab-夢-ゆめ",
+      "vocab-無くなる-なくなる",
+      "vocab-娘-むすめ",
+      "vocab-鳴る-なる",
+      "vocab-毛-け",
+      "vocab-木綿-もめん",
+      "vocab-戻る-もどる",
+      "vocab-役に立つ-やくにたつ",
+      "vocab-訳-わけ",
+      "vocab-遊び-あそび",
+      "vocab-揺れる-ゆれる",
+      "vocab-用意-ようい",
+      "vocab-踊り-おどり",
+      "vocab-裏-うら",
+      "vocab-立てる-たてる",
+      "vocab-両方-りょうほう",
+      "vocab-力-ちから",
+      "vocab-冷える-ひえる",
+      "vocab-冷房-れいぼう",
+      "vocab-連れる-つれる",
+      "vocab-連絡-れんらく",
+      "vocab-腕-うで"
+    ],
+    "kanjiIds": [
+      "kanji-勉",
+      "kanji-野",
+      "kanji-夕",
+      "kanji-曜",
+      "kanji-洋",
+      "kanji-立",
+      "kanji-旅",
+      "kanji-力"
+    ],
+    "kanaFirstVocabularyIds": [
+      "vocab-木綿-もめん",
+      "vocab-役に立つ-やくにたつ",
+      "vocab-立てる-たてる",
+      "vocab-力-ちから"
+    ],
+    "reviewGrammarIds": [
+      "grammar-n4-irassharu",
+      "grammar-n4-nasaru"
+    ],
+    "reviewVocabularyIds": [],
+    "reviewKanjiIds": [],
+    "prerequisiteUnitIds": [
+      "n4-unit-037"
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "japango-n4-grammar-reviewed"
+      },
+      {
+        "sourceId": "jlpt-kanji"
+      },
+      {
+        "sourceId": "jlpt-vocabulary"
+      },
+      {
+        "sourceId": "jmdict"
+      },
+      {
+        "sourceId": "kanjidic2"
+      },
+      {
+        "sourceId": "kanjivg"
+      },
+      {
+        "sourceId": "textbook-genki-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii"
+      },
+      {
+        "sourceId": "textbook-minna-no-nihongo-ii-grammar"
+      }
+    ],
+    "reviewTargets": {
+      "grammar": 2,
+      "vocabulary": 0,
+      "kanji": 0
+    },
+    "recommendedReadingDifficulty": 8,
+    "recommendedListeningDifficulty": 8,
+    "masteryRequirements": {
+      "minimumAccuracy": 0.8,
+      "minimumReviews": 2
+    },
+    "confidence": 0.55,
+    "needsReview": true,
+    "releaseReady": false
+  }
+]

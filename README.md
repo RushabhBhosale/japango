@@ -1,56 +1,59 @@
-# Welcome to your Expo app 👋
+# JapanGo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+JapanGo is an Android-first Japanese learning app built with Expo, React Native, and TypeScript. Phase 1 is fully local: onboarding, a resumable JLPT N5 assessment, curated curriculum, deterministic mastery and review scheduling, and progress screens backed by SQLite.
 
-## Get started
+No account, backend, analytics service, notification service, or AI provider is connected in this phase.
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Run the app
 
 ```bash
-npm run reset-project
+npm install
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Use `npm run android` to open the Android target from Expo. Application routes live in `src/app` and use Expo Router.
 
-### Other setup steps
+## Quality checks
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```bash
+npm run typecheck
+npm run lint
+npm test
+```
 
-## Learn more
+## Local architecture
 
-To learn more about developing your project with Expo, look at the following resources:
+- `src/features` contains validated curriculum seeds and deterministic assessment/mastery logic.
+- `src/services/database` owns SQLite initialization, migrations, row validation, and repositories.
+- `src/store` holds the small shared app session; SQLite remains the persisted source of truth.
+- `src/components` contains the reusable design system and focused learning UI.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The app creates `japango.db` with migrations for learner profiles, curriculum, assessment questions, attempts, mastery, and settings. Seeded and stored data is validated with Zod. Assessment position and every confirmed answer are persisted so the skill check resumes after an app restart.
 
-## Join the community
+## Phase 1 learning model
 
-Join our community of developers creating universal apps.
+Mastery is calculated locally in `src/features/progress/mastery-engine.ts`. Correct answers add mastery, incorrect answers reduce it, confidence combines accuracy and exposure, and the next review interval grows from hours to days. An item cannot become mastered after a single correct answer. The algorithm is intentionally documented, deterministic, and covered by unit tests so it can be replaced without changing screens.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Deterministic content pipeline
+
+The local N5/N4 content pipeline lives in `scripts/content`. It treats JMdict and KANJIDIC2 as canonical language sources, the supplied JLPT files as level mappings, KanjiVG as the stroke/component source, and textbook PDFs only as private curriculum references. It does not use AI or cloud OCR.
+
+```bash
+npm run content:inspect
+npm run content:build
+```
+
+Generated, validated JSON is written in focused files under `assets/generated-content`. Compact app-facing bundles are separated into `assets/generated-content-compact/development/content.json` and `assets/generated-content-compact/release/content.json`; each embeds its profile, `releaseReadyOnly` setting, deterministic `contentVersion`, and payload `checksum`. Legacy N5 grammar mappings and generated curriculum units remain development-only, while approved records from `assets/docs-reference/japango-n4-grammar-reviewed.json` enter both bundles. That project-owned manual source has canonical priority over OCR-only candidates; its companion editorial ledger makes every merge, rejection, vocabulary move, N5 overlap, and unresolved row reproducible.
+
+The compact schema includes reusable sentences and example views, reading passages, listening activities and speakers, questions and options, static learning metadata, target relationships, and deterministic assessment collections. `src/features/curriculum/generated-content-import.ts` defines the release/development guard and transactional import contract. SQLite migrations through v6 normalize learning, reading, listening, and assessment records without inserting authored content during schema migration. See [Learning content architecture](docs/learning-content-architecture.md), [Reading content](docs/reading-content.md), [Listening content](docs/listening-content.md), and [Assessment platform](docs/assessment-platform.md).
+
+Intermediate normalized data and private OCR text are cached under `.cache/japango-content`, which is ignored by Git. `content:build` reads an existing OCR cache but never invokes OCR. Set `SOURCE_DATE_EPOCH` or `JAPANGO_GENERATED_AT` for a reproducible manifest timestamp. Curriculum cleanup reports cover N4 grammar sources/candidates, OCR conflict deduplication, textbook placement review, and assignment coverage under `assets/generated-content/reports`.
+
+All supplied textbook PDFs are image-only. To opt into incremental local OCR, install the minimum macOS toolchain and select a book/page range:
+
+```bash
+brew install poppler ocrmypdf tesseract-lang
+npm run content:ocr -- --book genki-1 --start 1 --end 20
+```
+
+OCR cache data is only used to propose book/lesson/page-to-canonical-ID metadata. It is never used for canonical readings, meanings, explanations, examples, or answers, and it must not be committed or redistributed.

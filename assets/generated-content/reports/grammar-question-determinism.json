@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "fixedTimestamp": "2026-07-26T00:00:00.000Z",
+  "builds": [
+    {
+      "label": "fixed-build-a",
+      "digests": {
+        "canonical": "sha256:1801c3afe6019157ee59a1c523ba2362695d60044bcf148d352d16ef388ebdd7",
+        "questions": "sha256:ad4086bff684f39142ca6c697f2b41410e666fcfb60f5d0144643ea51b6ea7bd",
+        "questionOptions": "sha256:1ddfeb8aa2707e35959303b33164578b6d324d8fe25bb3e8c6aa23f436b73610",
+        "questionTargets": "sha256:fef049cc65cbb790663a1d6184896ccca6cb4636a84af2854885dd6dfb53a916",
+        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
+        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
+        "sqliteVerificationPayload": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d"
+      }
+    },
+    {
+      "label": "fixed-build-b",
+      "digests": {
+        "canonical": "sha256:1801c3afe6019157ee59a1c523ba2362695d60044bcf148d352d16ef388ebdd7",
+        "questions": "sha256:ad4086bff684f39142ca6c697f2b41410e666fcfb60f5d0144643ea51b6ea7bd",
+        "questionOptions": "sha256:1ddfeb8aa2707e35959303b33164578b6d324d8fe25bb3e8c6aa23f436b73610",
+        "questionTargets": "sha256:fef049cc65cbb790663a1d6184896ccca6cb4636a84af2854885dd6dfb53a916",
+        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
+        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
+        "sqliteVerificationPayload": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d"
+      }
+    }
+  ],
+  "identical": true
+}

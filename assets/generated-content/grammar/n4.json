@@ -1,0 +1,5325 @@
+[
+  {
+    "id": "grammar-n4-koto-nominalizer",
+    "pattern": "～こと",
+    "normalizedPattern": "こと",
+    "romaji": "koto",
+    "title": "Verb and clause nominalization",
+    "meanings": [
+      "turn a verb or clause into a noun-like unit"
+    ],
+    "level": "N4",
+    "contentType": "structural-concept",
+    "category": "explanation-and-nominalization",
+    "familyId": "nominalization",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-plain-form",
+        "structure": "Verb plain form + こと"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-no-nominalizer"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 1,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-sa-nominalizer",
+    "pattern": "～さ",
+    "normalizedPattern": "さ",
+    "romaji": "sa",
+    "title": "Adjective quality nominalization",
+    "meanings": [
+      "the quality or degree expressed by an adjective",
+      "-ness"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "explanation-and-nominalization",
+    "familyId": "adjective-nominalization",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "adjective-stem",
+        "structure": "Adjective stem + さ"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-adjective-noha",
+      "grammar-no-nominalizer"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 2,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-nowa-da",
+    "pattern": "～のは～だ",
+    "normalizedPattern": "のは～だ",
+    "romaji": "no wa da",
+    "title": "Focused nominalized clause",
+    "meanings": [
+      "identify or emphasize information about a nominalized clause"
+    ],
+    "level": "N4",
+    "contentType": "structural-concept",
+    "category": "explanation-and-nominalization",
+    "familyId": "focus-cleft",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + のは + focused information + だ"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-no-nominalizer"
+    ],
+    "relatedGrammarIds": [
+      "grammar-no-explanatory-nominalizer",
+      "grammar-ndesu"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 3,
+    "extendsGrammarId": "grammar-no-nominalizer"
+  },
+  {
+    "id": "grammar-n4-to-iu",
+    "pattern": "～という",
+    "normalizedPattern": "という",
+    "romaji": "to iu",
+    "title": "Quotation and naming with という",
+    "meanings": [
+      "called or named",
+      "the statement that"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "explanation-and-nominalization",
+    "familyId": "quotation-naming",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "quoted-content",
+        "structure": "Quoted content + という + noun"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-to-quotation-marker"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 4,
+    "extendsGrammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "id": "grammar-n4-to-iu-koto",
+    "pattern": "～ということ",
+    "normalizedPattern": "ということ",
+    "romaji": "to iu koto",
+    "title": "Nominalized quoted content",
+    "meanings": [
+      "the fact or idea that",
+      "turn quoted content into a noun-like unit"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "explanation-and-nominalization",
+    "familyId": "clause-nominalization",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + ということ"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-to-quotation-marker",
+      "grammar-n4-to-iu",
+      "grammar-n4-koto-nominalizer"
+    ],
+    "relatedGrammarIds": [
+      "grammar-no-nominalizer"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 5,
+    "extendsGrammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "id": "grammar-n4-to-omou",
+    "pattern": "～と思う",
+    "normalizedPattern": "と思う",
+    "romaji": "to omou",
+    "title": "Thoughts and opinions",
+    "meanings": [
+      "think that",
+      "express an opinion"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "explanation-and-nominalization",
+    "familyId": "thought-opinion",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + と思う"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-to-quotation-marker"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 6,
+    "extendsGrammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "id": "grammar-n4-to-kiku",
+    "pattern": "～と聞く",
+    "normalizedPattern": "と聞く",
+    "romaji": "to kiku",
+    "title": "Reporting what was heard",
+    "meanings": [
+      "hear that",
+      "have heard that"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "explanation-and-nominalization",
+    "familyId": "reported-speech",
+    "alternatePatterns": [
+      "～と聞いた"
+    ],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + と聞く"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-to-quotation-marker"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 7,
+    "extendsGrammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "id": "grammar-n4-to-iwarete-iru",
+    "pattern": "～と言われている",
+    "normalizedPattern": "と言われている",
+    "romaji": "to iwarete iru",
+    "title": "Generally reported information",
+    "meanings": [
+      "it is said that",
+      "be commonly described as"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "explanation-and-nominalization",
+    "familyId": "reported-speech",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + と言われている"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-to-quotation-marker"
+    ],
+    "relatedGrammarIds": [
+      "grammar-teiru2"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 8,
+    "extendsGrammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "id": "grammar-n4-ka-dou-ka",
+    "pattern": "～かどうか",
+    "normalizedPattern": "かどうか",
+    "romaji": "ka dou ka",
+    "title": "Embedded whether questions",
+    "meanings": [
+      "whether or not"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "explanation-and-nominalization",
+    "familyId": "embedded-questions",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + かどうか"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-ka-question-marker"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 9,
+    "extendsGrammarId": "grammar-ka-question-marker"
+  },
+  {
+    "id": "grammar-n4-aida",
+    "pattern": "～間",
+    "normalizedPattern": "間",
+    "romaji": "aida",
+    "title": "Action or state throughout a period",
+    "meanings": [
+      "while",
+      "during",
+      "throughout"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "time-and-sequence",
+    "familyId": "aida-time",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "continuing-clause",
+        "structure": "Continuing action or state + 間"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 10,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-aida-ni",
+    "pattern": "～間に",
+    "normalizedPattern": "間に",
+    "romaji": "aida ni",
+    "title": "Event within a time span",
+    "meanings": [
+      "during a period, an event occurs"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "time-and-sequence",
+    "familyId": "aida-time",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "continuing-clause",
+        "structure": "Continuing action or state + 間に + bounded event"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-n4-aida"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [
+      "grammar-n4-aida"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 11,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-ato-de",
+    "pattern": "～後で",
+    "normalizedPattern": "後で",
+    "romaji": "ato de",
+    "title": "Action after another event",
+    "meanings": [
+      "after",
+      "later"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "time-and-sequence",
+    "familyId": "sequence",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "past-clause-or-noun",
+        "structure": "Verb past form + 後で; Noun + の後で"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "Retained to satisfy the reviewed N4 sequence curriculum because the current canonical N5 file has no equivalent record.",
+    "curriculumOrder": 12,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-koro",
+    "pattern": "～頃",
+    "normalizedPattern": "頃",
+    "romaji": "koro",
+    "title": "Approximate time",
+    "meanings": [
+      "around a time",
+      "when"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "time-and-sequence",
+    "familyId": "approximate-time",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "time-expression",
+        "structure": "Time expression + 頃"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-kurai1"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 13,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-made-ni",
+    "pattern": "～までに",
+    "normalizedPattern": "までに",
+    "romaji": "made ni",
+    "title": "Deadline by a stated time",
+    "meanings": [
+      "by",
+      "by the time"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "time-and-sequence",
+    "familyId": "deadlines",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "time-expression",
+        "structure": "Time expression or clause + までに"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-noun-made"
+    ],
+    "relatedGrammarIds": [
+      "grammar-verb-made"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 14,
+    "extendsGrammarId": "grammar-noun-made"
+  },
+  {
+    "id": "grammar-n4-nagara",
+    "pattern": "～ながら",
+    "normalizedPattern": "ながら",
+    "romaji": "nagara",
+    "title": "Simultaneous actions",
+    "meanings": [
+      "while doing",
+      "at the same time as"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "time-and-sequence",
+    "familyId": "simultaneous-actions",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + ながら + main action"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 15,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-koto-ga-aru-occasional",
+    "pattern": "～ことがある",
+    "normalizedPattern": "ことがある",
+    "romaji": "koto ga aru",
+    "title": "Occasional events",
+    "meanings": [
+      "there are times when",
+      "sometimes"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "time-and-sequence",
+    "familyId": "occasional-events",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-dictionary-or-negative",
+        "structure": "Verb dictionary or negative form + ことがある"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-takotogaaru"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "Distinct from the N5 past-experience construction ～たことがある.",
+    "curriculumOrder": 16,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-ta-bakari",
+    "pattern": "～たばかり",
+    "normalizedPattern": "たばかり",
+    "romaji": "ta bakari",
+    "title": "Subjectively recent completion",
+    "meanings": [
+      "have just done",
+      "something happened recently"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "time-and-sequence",
+    "familyId": "recent-past",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-past",
+        "structure": "Verb past form + ばかり"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 17,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-te-ageru",
+    "pattern": "～てあげる",
+    "normalizedPattern": "てあげる",
+    "romaji": "te ageru",
+    "title": "Doing something for another person",
+    "meanings": [
+      "do something for someone"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "giving-and-receiving",
+    "familyId": "giving-receiving",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + あげる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-ageru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 41,
+        "page": 116,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 18,
+    "extendsGrammarId": "grammar-ageru"
+  },
+  {
+    "id": "grammar-n4-te-kureru",
+    "pattern": "～てくれる",
+    "normalizedPattern": "てくれる",
+    "romaji": "te kureru",
+    "title": "An action benefiting the speaker's side",
+    "meanings": [
+      "someone does something for the speaker or the speaker's in-group"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "giving-and-receiving",
+    "familyId": "giving-receiving",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + くれる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-kureru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 41,
+        "page": 116,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 19,
+    "extendsGrammarId": "grammar-kureru"
+  },
+  {
+    "id": "grammar-n4-te-morau",
+    "pattern": "～てもらう",
+    "normalizedPattern": "てもらう",
+    "romaji": "te morau",
+    "title": "Receiving the benefit of an action",
+    "meanings": [
+      "receive the benefit of someone's action",
+      "have someone do something"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "giving-and-receiving",
+    "familyId": "giving-receiving",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Agent + に + Verb te-form + もらう"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-morau"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 41,
+        "page": 116,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 20,
+    "extendsGrammarId": "grammar-morau"
+  },
+  {
+    "id": "grammar-n4-te-itadakemasen-ka",
+    "pattern": "～ていただけませんか",
+    "normalizedPattern": "ていただけませんか",
+    "romaji": "te itadakemasen ka",
+    "title": "Polite benefactive request",
+    "meanings": [
+      "could you please do"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "giving-and-receiving",
+    "familyId": "polite-benefactive-requests",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + いただけませんか"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-morau"
+    ],
+    "relatedGrammarIds": [
+      "grammar-tekudasai",
+      "grammar-masenka"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 26,
+        "page": 27,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 21,
+    "extendsGrammarId": "grammar-morau"
+  },
+  {
+    "id": "grammar-n4-te-yaru",
+    "pattern": "～てやる",
+    "normalizedPattern": "てやる",
+    "romaji": "te yaru",
+    "title": "Casual or downward giving through an action",
+    "meanings": [
+      "do something for an animal, younger person, or lower-status recipient"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "giving-and-receiving",
+    "familyId": "giving-receiving",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + やる"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ageru",
+      "grammar-n4-te-ageru"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "Kept separate from ～てあげる because recipient constraints and register are a distinct learning objective.",
+    "curriculumOrder": 22,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-hajimeru",
+    "pattern": "～始める",
+    "normalizedPattern": "始める",
+    "romaji": "hajimeru",
+    "title": "Beginning an action",
+    "meanings": [
+      "begin doing",
+      "start to do"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "aspect-onset",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + 始める"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 23,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-dasu",
+    "pattern": "～出す",
+    "normalizedPattern": "出す",
+    "romaji": "dasu",
+    "title": "Sudden onset",
+    "meanings": [
+      "begin suddenly",
+      "burst into"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "aspect-onset",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + 出す"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-n4-hajimeru"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 24,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-owaru",
+    "pattern": "～終わる",
+    "normalizedPattern": "終わる",
+    "romaji": "owaru",
+    "title": "Finishing an action",
+    "meanings": [
+      "finish doing"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "aspect-endpoint",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + 終わる"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 25,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-tsuzukeru",
+    "pattern": "～続ける",
+    "normalizedPattern": "続ける",
+    "romaji": "tsuzukeru",
+    "title": "Continuing an action",
+    "meanings": [
+      "continue doing"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "aspect-continuation",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + 続ける"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 26,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-te-oku",
+    "pattern": "～ておく",
+    "normalizedPattern": "ておく",
+    "romaji": "te oku",
+    "title": "Preparation in advance",
+    "meanings": [
+      "do in advance",
+      "leave in a prepared state"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "preparation",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + おく"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-verb-te"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 27,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-te-miru",
+    "pattern": "～てみる",
+    "normalizedPattern": "てみる",
+    "romaji": "te miru",
+    "title": "Trying an action",
+    "meanings": [
+      "try doing"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "attempt",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + みる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-verb-te"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 28,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-te-shimau",
+    "pattern": "～てしまう",
+    "normalizedPattern": "てしまう",
+    "romaji": "te shimau",
+    "title": "Completion and unintended outcome",
+    "meanings": [
+      "finish completely",
+      "do regrettably or unintentionally"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "completion-regret",
+    "alternatePatterns": [
+      "～ちゃう",
+      "～じゃう"
+    ],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + しまう"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-verb-te"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 29,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-te-aru",
+    "pattern": "～てある",
+    "normalizedPattern": "てある",
+    "romaji": "te aru",
+    "title": "Resulting state from an intentional action",
+    "meanings": [
+      "an action has been done and its result remains"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "resulting-state",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "transitive-verb-te-form",
+        "structure": "Transitive verb te-form + ある"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-verb-te",
+      "grammar-gaaru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 33,
+        "page": 69,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "Added from a reviewed cached Minna II heading cross-check; no OCR prose or examples were retained.",
+    "curriculumOrder": 30,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-mama",
+    "pattern": "～まま",
+    "normalizedPattern": "まま",
+    "romaji": "mama",
+    "title": "Maintaining a state",
+    "meanings": [
+      "as it is",
+      "without changing"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "maintained-state",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-modifier",
+        "structure": "Plain modifier + まま"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 31,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-te-kuru",
+    "pattern": "～てくる",
+    "normalizedPattern": "てくる",
+    "romaji": "te kuru",
+    "title": "Action toward the present or speaker",
+    "meanings": [
+      "do and come",
+      "a development continuing up to now"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "directional-aspect",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + くる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-kuru",
+      "grammar-verb-te"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 32,
+    "extendsGrammarId": "grammar-kuru"
+  },
+  {
+    "id": "grammar-n4-te-iku",
+    "pattern": "～ていく",
+    "normalizedPattern": "ていく",
+    "romaji": "te iku",
+    "title": "Action away from the present or speaker",
+    "meanings": [
+      "continue or change from now on",
+      "do and go"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "directional-aspect",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + いく"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-verb-te"
+    ],
+    "relatedGrammarIds": [
+      "grammar-heiku",
+      "grammar-n4-te-kuru"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "This auxiliary aspectual use is distinct from the N5 motion construction.",
+    "curriculumOrder": 33,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-tokoro",
+    "pattern": "～ところ",
+    "normalizedPattern": "ところ",
+    "romaji": "tokoro",
+    "title": "Action about to begin",
+    "meanings": [
+      "be just about to do"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "tokoro-aspect",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-dictionary",
+        "structure": "Verb dictionary form + ところ"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-n4-teiru-tokoro",
+      "grammar-n4-ta-tokoro"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 34,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-teiru-tokoro",
+    "pattern": "～ているところ",
+    "normalizedPattern": "ているところ",
+    "romaji": "te iru tokoro",
+    "title": "Action currently in progress",
+    "meanings": [
+      "be in the middle of doing"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "tokoro-aspect",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-teiru",
+        "structure": "Verb ている form + ところ"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-teiru1",
+      "grammar-n4-tokoro"
+    ],
+    "relatedGrammarIds": [
+      "grammar-n4-tokoro",
+      "grammar-n4-ta-tokoro"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 35,
+    "extendsGrammarId": "grammar-teiru1"
+  },
+  {
+    "id": "grammar-n4-ta-tokoro",
+    "pattern": "～たところ",
+    "normalizedPattern": "たところ",
+    "romaji": "ta tokoro",
+    "title": "Action just completed",
+    "meanings": [
+      "have just done"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "aspect-and-completion",
+    "familyId": "tokoro-aspect",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-past",
+        "structure": "Verb past form + ところ"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-n4-tokoro"
+    ],
+    "relatedGrammarIds": [
+      "grammar-n4-tokoro",
+      "grammar-n4-teiru-tokoro"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 36,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-ba",
+    "pattern": "～ば",
+    "normalizedPattern": "ば",
+    "romaji": "ba",
+    "title": "Ba conditional",
+    "meanings": [
+      "if",
+      "when"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "conditionals",
+    "familyId": "conditionals",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-or-adjective-conditional",
+        "structure": "Verb or adjective conditional form + result clause"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 37,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-tara",
+    "pattern": "～たら",
+    "normalizedPattern": "たら",
+    "romaji": "tara",
+    "title": "Tara conditional",
+    "meanings": [
+      "if",
+      "when",
+      "after"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "conditionals",
+    "familyId": "conditionals",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "past-plain-form",
+        "structure": "Past plain form + ら + result clause"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-n4-ba"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 38,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-to-conditional",
+    "pattern": "～と",
+    "normalizedPattern": "と",
+    "romaji": "to",
+    "title": "Automatic-result conditional",
+    "meanings": [
+      "when or whenever",
+      "an automatic or regular result"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "conditionals",
+    "familyId": "conditionals",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "nonpast-plain-form",
+        "structure": "Nonpast plain form + と + automatic result"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-to-accompaniment-marker",
+      "grammar-to-and-marker",
+      "grammar-to-quotation-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "A different meaning from all three N5 と particle records.",
+    "curriculumOrder": 39,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-nara",
+    "pattern": "～なら",
+    "normalizedPattern": "なら",
+    "romaji": "nara",
+    "title": "Contextual nara conditional",
+    "meanings": [
+      "if it is the case",
+      "as for"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "conditionals",
+    "familyId": "conditionals",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-form-or-noun",
+        "structure": "Plain form or noun + なら + response"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-n4-ba",
+      "grammar-n4-tara",
+      "grammar-n4-to-conditional"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 40,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-baai-wa",
+    "pattern": "～場合は",
+    "normalizedPattern": "場合は",
+    "romaji": "baai wa",
+    "title": "Case or event condition",
+    "meanings": [
+      "in the event that",
+      "in the case of"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "conditionals",
+    "familyId": "conditionals",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-modifier",
+        "structure": "Plain modifier + 場合は + response"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 41,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-temo-concession",
+    "pattern": "～ても",
+    "normalizedPattern": "ても",
+    "romaji": "temo",
+    "title": "Concessive condition",
+    "meanings": [
+      "even if",
+      "even though"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "conditionals",
+    "familyId": "conditional-concession",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-or-adjective-te-form",
+        "structure": "Verb or adjective te-form + も"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-temoii"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "Concessive ～ても is not the N5 permission expression ～てもいい.",
+    "curriculumOrder": 42,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-tara-dou",
+    "pattern": "～たらどう",
+    "normalizedPattern": "たらどう",
+    "romaji": "tara dou",
+    "title": "Suggestion with a conditional",
+    "meanings": [
+      "why don't you",
+      "how about"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "conditionals",
+    "familyId": "conditional-advice",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-past",
+        "structure": "Verb past form + らどう"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-n4-tara"
+    ],
+    "relatedGrammarIds": [
+      "grammar-tahougaii",
+      "grammar-masenka"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 43,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-tara-ii-desu-ka",
+    "pattern": "～たらいいですか",
+    "normalizedPattern": "たらいいですか",
+    "romaji": "tara ii desu ka",
+    "title": "Seeking guidance",
+    "meanings": [
+      "what should I do",
+      "ask for guidance"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "conditionals",
+    "familyId": "conditional-advice",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-past",
+        "structure": "Verb past form + らいいですか"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-n4-tara"
+    ],
+    "relatedGrammarIds": [
+      "grammar-tahougaii"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 44,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-hitsuyou-ga-aru",
+    "pattern": "～必要がある",
+    "normalizedPattern": "必要がある",
+    "romaji": "hitsuyou ga aru",
+    "title": "Necessity",
+    "meanings": [
+      "need to",
+      "it is necessary to"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "obligation-permission-and-prohibition",
+    "familyId": "necessity",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-dictionary-or-noun",
+        "structure": "Verb dictionary form + 必要がある; Noun + の必要がある"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 45,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-nakereba-naranai",
+    "pattern": "～なければならない",
+    "normalizedPattern": "なければならない",
+    "romaji": "nakereba naranai",
+    "title": "Obligation with a conditional negative",
+    "meanings": [
+      "must",
+      "have to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "obligation-permission-and-prohibition",
+    "familyId": "obligation",
+    "alternatePatterns": [
+      "～なければいけない"
+    ],
+    "formation": [
+      {
+        "base": "verb-negative-conditional",
+        "structure": "Verb negative stem + なければならない"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-nakutehanaranai"
+    ],
+    "relatedGrammarIds": [
+      "grammar-nakutehaikenai",
+      "grammar-nakucha"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 46,
+    "extendsGrammarId": "grammar-nakutehanaranai"
+  },
+  {
+    "id": "grammar-n4-nakutemo-ii",
+    "pattern": "～なくてもいい",
+    "normalizedPattern": "なくてもいい",
+    "romaji": "nakutemo ii",
+    "title": "Permission not to act",
+    "meanings": [
+      "do not have to",
+      "it is all right not to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "obligation-permission-and-prohibition",
+    "familyId": "permission-nonrequirement",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-negative-te-form",
+        "structure": "Verb negative stem + なくてもいい"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-temoii"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [
+      "grammar-n4-nakereba-naranai"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 47,
+    "extendsGrammarId": "grammar-temoii"
+  },
+  {
+    "id": "grammar-n4-nasai",
+    "pattern": "～なさい",
+    "normalizedPattern": "なさい",
+    "romaji": "nasai",
+    "title": "Firm instruction",
+    "meanings": [
+      "do this",
+      "a firm but non-abrupt instruction"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "obligation-permission-and-prohibition",
+    "familyId": "commands",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + なさい"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 48,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-te-hoshii",
+    "pattern": "～てほしい",
+    "normalizedPattern": "てほしい",
+    "romaji": "te hoshii",
+    "title": "Wanting another person to act",
+    "meanings": [
+      "want someone to do",
+      "need someone to do"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "obligation-permission-and-prohibition",
+    "familyId": "requests-desires",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Person + に + Verb te-form + ほしい"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-tai"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 49,
+    "extendsGrammarId": "grammar-tai"
+  },
+  {
+    "id": "grammar-n4-volitional-form",
+    "pattern": "意向形（～おう／～よう）",
+    "normalizedPattern": "おう／よう",
+    "romaji": "ikoukei",
+    "title": "Volitional form",
+    "meanings": [
+      "volitional form",
+      "let's",
+      "intend to"
+    ],
+    "level": "N4",
+    "contentType": "conjugation",
+    "category": "decisions-and-intentions",
+    "familyId": "volitional",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-class",
+        "structure": "Godan final u-row → o-row + う; ichidan stem + よう; する → しよう; 来る → こよう"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-mashou"
+    ],
+    "relatedGrammarIds": [
+      "grammar-mashouka"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 15,
+        "page": 82,
+        "referenceType": "curriculum-cross-check"
+      },
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 31,
+        "page": 56,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 50,
+    "extendsGrammarId": "grammar-mashou"
+  },
+  {
+    "id": "grammar-n4-koto-ni-suru",
+    "pattern": "～ことにする",
+    "normalizedPattern": "ことにする",
+    "romaji": "koto ni suru",
+    "title": "Personal decision",
+    "meanings": [
+      "decide to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "decisions-and-intentions",
+    "familyId": "decisions",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-plain-form",
+        "structure": "Verb plain form + ことにする"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-nisuru",
+      "grammar-n4-koto-nominalizer"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 51,
+    "extendsGrammarId": "grammar-nisuru"
+  },
+  {
+    "id": "grammar-n4-koto-ni-naru",
+    "pattern": "～ことになる",
+    "normalizedPattern": "ことになる",
+    "romaji": "koto ni naru",
+    "title": "Decision or outcome outside the speaker",
+    "meanings": [
+      "be decided",
+      "turn out that"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "decisions-and-intentions",
+    "familyId": "decisions",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-plain-form",
+        "structure": "Verb plain form + ことになる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-ninaru",
+      "grammar-n4-koto-nominalizer"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [
+      "grammar-n4-koto-ni-suru"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 52,
+    "extendsGrammarId": "grammar-ninaru"
+  },
+  {
+    "id": "grammar-n4-yotei-da",
+    "pattern": "～予定だ",
+    "normalizedPattern": "予定だ",
+    "romaji": "yotei da",
+    "title": "Plan or schedule",
+    "meanings": [
+      "be scheduled to",
+      "plan to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "decisions-and-intentions",
+    "familyId": "plans",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-plain-or-noun",
+        "structure": "Verb plain form + 予定だ; Noun + の予定だ"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-tsumorida"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 53,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-you-to-omou",
+    "pattern": "～ようと思う",
+    "normalizedPattern": "ようと思う",
+    "romaji": "you to omou",
+    "title": "Present intention",
+    "meanings": [
+      "be thinking of doing",
+      "intend to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "decisions-and-intentions",
+    "familyId": "intention",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-volitional",
+        "structure": "Verb volitional form + と思う"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-tsumorida",
+      "grammar-n4-volitional-form"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 54,
+    "extendsGrammarId": "grammar-tsumorida"
+  },
+  {
+    "id": "grammar-n4-hazu-da",
+    "pattern": "～はずだ",
+    "normalizedPattern": "はずだ",
+    "romaji": "hazu da",
+    "title": "Evidence-based expectation",
+    "meanings": [
+      "should be",
+      "be expected to be"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "expectation",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-modifier",
+        "structure": "Plain modifier + はずだ"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-deshou",
+      "grammar-darou"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 55,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-hazu-ga-nai",
+    "pattern": "～はずがない",
+    "normalizedPattern": "はずがない",
+    "romaji": "hazu ga nai",
+    "title": "Strong expectation of impossibility",
+    "meanings": [
+      "cannot be",
+      "is not expected to be possible"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "expectation",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-modifier",
+        "structure": "Plain modifier + はずがない"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-n4-hazu-da"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [
+      "grammar-n4-hazu-da"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 56,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-kamo-shirenai",
+    "pattern": "～かもしれない",
+    "normalizedPattern": "かもしれない",
+    "romaji": "kamo shirenai",
+    "title": "Possibility",
+    "meanings": [
+      "might",
+      "perhaps"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "possibility",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + かもしれない"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 57,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-souda-hearsay",
+    "pattern": "～そうだ",
+    "normalizedPattern": "そうだ",
+    "romaji": "sou da",
+    "title": "Hearsay with そうだ",
+    "meanings": [
+      "I hear that",
+      "it is said that"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "souda-hearsay",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + そうだ"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [
+      "grammar-n4-souda-appearance"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 58,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-souda-appearance",
+    "pattern": "～そうだ",
+    "normalizedPattern": "そうだ",
+    "romaji": "sou da",
+    "title": "Appearance with そうだ",
+    "meanings": [
+      "look likely",
+      "seem about to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "souda-appearance",
+    "alternatePatterns": [
+      "～そうな",
+      "～そうに"
+    ],
+    "formation": [
+      {
+        "base": "verb-masu-stem-or-adjective-stem",
+        "structure": "Verb masu-stem or adjective stem + そうだ"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-deshou",
+      "grammar-darou"
+    ],
+    "confusedWithGrammarIds": [
+      "grammar-n4-souda-hearsay"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 59,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-rashii",
+    "pattern": "～らしい",
+    "normalizedPattern": "らしい",
+    "romaji": "rashii",
+    "title": "Inference from information",
+    "meanings": [
+      "apparently",
+      "seems",
+      "reportedly"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "evidence-inference",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-form",
+        "structure": "Plain form + らしい"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-deshou",
+      "grammar-darou"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 60,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-youda-similarity",
+    "pattern": "～ようだ",
+    "normalizedPattern": "ようだ",
+    "romaji": "you da",
+    "title": "Formal similarity or manner",
+    "meanings": [
+      "seem like",
+      "resemble",
+      "in the manner of"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "resemblance",
+    "alternatePatterns": [
+      "～ような",
+      "～ように"
+    ],
+    "formation": [
+      {
+        "base": "plain-modifier",
+        "structure": "Plain modifier + ようだ"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-deshou",
+      "grammar-darou",
+      "grammar-n4-mitai-da"
+    ],
+    "confusedWithGrammarIds": [
+      "grammar-n4-you-ni-purpose"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "The alternate ～ように here expresses similarity or manner, not purpose.",
+    "curriculumOrder": 61,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-mitai-da",
+    "pattern": "～みたいだ",
+    "normalizedPattern": "みたいだ",
+    "romaji": "mitai da",
+    "title": "Conversational similarity or appearance",
+    "meanings": [
+      "seem like",
+      "resemble"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "resemblance",
+    "alternatePatterns": [
+      "～みたいな",
+      "～みたいに"
+    ],
+    "formation": [
+      {
+        "base": "plain-form",
+        "structure": "Plain form + みたいだ"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-n4-youda-similarity"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 62,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-ni-mieru",
+    "pattern": "～に見える",
+    "normalizedPattern": "に見える",
+    "romaji": "ni mieru",
+    "title": "Visible appearance",
+    "meanings": [
+      "look",
+      "seem",
+      "appear"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "appearance",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "noun-or-adjective-stem",
+        "structure": "Noun + に見える; adjective connective form + 見える"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 63,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-koto-ga-dekiru",
+    "pattern": "～ことができる",
+    "normalizedPattern": "ことができる",
+    "romaji": "koto ga dekiru",
+    "title": "Ability through nominalization",
+    "meanings": [
+      "can",
+      "be able to"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "appearance-inference-and-hearsay",
+    "familyId": "ability",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-dictionary",
+        "structure": "Verb dictionary form + ことができる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-n4-koto-nominalizer"
+    ],
+    "relatedGrammarIds": [
+      "grammar-n4-potential-form"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 64,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-potential-form",
+    "pattern": "可能形（～える／～られる）",
+    "normalizedPattern": "られる",
+    "romaji": "kanoukei",
+    "title": "Potential verb form",
+    "meanings": [
+      "can do",
+      "be able to do"
+    ],
+    "level": "N4",
+    "contentType": "conjugation",
+    "category": "voice-and-valency",
+    "familyId": "potential",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-class",
+        "structure": "Godan final u-row → e-row + る; ichidan stem + られる; する → できる; 来る → こられる"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [
+      "grammar-n4-passive-form"
+    ],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 13,
+        "page": 34,
+        "referenceType": "curriculum-cross-check"
+      },
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 27,
+        "page": 32,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 65,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-passive-form",
+    "pattern": "受身形（～れる／～られる）",
+    "normalizedPattern": "られる",
+    "romaji": "ukemikei",
+    "title": "Passive verb form",
+    "meanings": [
+      "be acted upon",
+      "describe an action from the affected participant's viewpoint"
+    ],
+    "level": "N4",
+    "contentType": "conjugation",
+    "category": "voice-and-valency",
+    "familyId": "passive",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-class",
+        "structure": "Godan final u-row → a-row + れる; ichidan stem + られる; する → される; 来る → こられる"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [
+      "grammar-n4-potential-form"
+    ],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 21,
+        "page": 218,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 66,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-causative-form",
+    "pattern": "使役形（～せる／～させる）",
+    "normalizedPattern": "使役形(～せる/～させる)",
+    "romaji": "shiekikei",
+    "title": "Causative verb form",
+    "meanings": [
+      "make someone do",
+      "let someone do"
+    ],
+    "level": "N4",
+    "contentType": "conjugation",
+    "category": "voice-and-valency",
+    "familyId": "causative",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-class",
+        "structure": "Godan final u-row → a-row + せる; ichidan stem + させる; する → させる; 来る → こさせる"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 22,
+        "page": 240,
+        "referenceType": "curriculum-cross-check"
+      },
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 48,
+        "page": 158,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 67,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-causative-passive-form",
+    "pattern": "使役受身形（～される／～させられる）",
+    "normalizedPattern": "使役受身形(～される/～させられる)",
+    "romaji": "shiekiukemikei",
+    "title": "Causative-passive verb form",
+    "meanings": [
+      "be made or forced to do"
+    ],
+    "level": "N4",
+    "contentType": "conjugation",
+    "category": "voice-and-valency",
+    "familyId": "causative-passive",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-causative",
+        "structure": "Causative stem + られる; contracted godan forms may use ～される"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-n4-causative-form",
+      "grammar-n4-passive-form"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 23,
+        "page": 262,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 68,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-transitive-intransitive-verbs",
+    "pattern": "他動詞と自動詞",
+    "normalizedPattern": "他動詞と自動詞",
+    "romaji": "tadoushi to jidoushi",
+    "title": "Transitive and intransitive verb pairs",
+    "meanings": [
+      "distinguish actions on an object from changes or states without a direct object"
+    ],
+    "level": "N4",
+    "contentType": "structural-concept",
+    "category": "voice-and-valency",
+    "familyId": "transitivity",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-pair",
+        "structure": "Transitive: subject + が/は + object + を + verb; intransitive: subject + が/は + verb"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 69,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-sasete-kudasai",
+    "pattern": "～させてください",
+    "normalizedPattern": "させてください",
+    "romaji": "sasete kudasai",
+    "title": "Requesting permission with the causative",
+    "meanings": [
+      "please let me do"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "voice-and-valency",
+    "familyId": "causative-permission",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-causative-te-form",
+        "structure": "Verb causative te-form + ください"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-tekudasai",
+      "grammar-n4-causative-form"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 70,
+    "extendsGrammarId": "grammar-tekudasai"
+  },
+  {
+    "id": "grammar-n4-tame-ni-purpose",
+    "pattern": "～ために",
+    "normalizedPattern": "ために",
+    "romaji": "tame ni",
+    "title": "Purpose with ために",
+    "meanings": [
+      "in order to",
+      "for the purpose of"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "purpose-and-change",
+    "familyId": "purpose",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "volitional-verb-or-noun",
+        "structure": "Volitional verb dictionary form + ために; Noun + のために"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 71,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-you-ni-purpose",
+    "pattern": "～ように",
+    "normalizedPattern": "ように",
+    "romaji": "you ni",
+    "title": "Purpose with a target outcome",
+    "meanings": [
+      "so that",
+      "in order that"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "purpose-and-change",
+    "familyId": "purpose",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "nonvolitional-verb",
+        "structure": "Nonvolitional verb dictionary or negative form + ように"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [
+      "grammar-n4-youda-similarity"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "Purpose ～ように is separate from the similarity or manner alternate of ～ようだ.",
+    "curriculumOrder": 72,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-noni-purpose",
+    "pattern": "～のに",
+    "normalizedPattern": "のに",
+    "romaji": "noni",
+    "title": "Use or requirement for a purpose",
+    "meanings": [
+      "for doing",
+      "needed in order to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "purpose-and-change",
+    "familyId": "noni-purpose",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-dictionary",
+        "structure": "Verb dictionary form + のに + useful, necessary, or required expression"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-verb-niiku"
+    ],
+    "confusedWithGrammarIds": [
+      "grammar-n4-noni-contrast"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 73,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-kara-tsukuru",
+    "pattern": "～から作る",
+    "normalizedPattern": "から作る",
+    "romaji": "kara tsukuru",
+    "title": "Material source",
+    "meanings": [
+      "make from",
+      "be made using"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "purpose-and-change",
+    "familyId": "material-source",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "material-noun",
+        "structure": "Material noun + から作る"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-kara-starting-point-marker"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 74,
+    "extendsGrammarId": "grammar-kara-starting-point-marker"
+  },
+  {
+    "id": "grammar-n4-ku-suru",
+    "pattern": "～くする",
+    "normalizedPattern": "くする",
+    "romaji": "ku suru",
+    "title": "Controlled change to an i-adjective state",
+    "meanings": [
+      "make something become an i-adjective state"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "purpose-and-change",
+    "familyId": "controlled-change",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "i-adjective-stem",
+        "structure": "I-adjective stem + くする"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-nisuru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 75,
+    "extendsGrammarId": "grammar-nisuru"
+  },
+  {
+    "id": "grammar-n4-you-ni-naru",
+    "pattern": "～ようになる",
+    "normalizedPattern": "ようになる",
+    "romaji": "you ni naru",
+    "title": "Change in ability or habitual state",
+    "meanings": [
+      "come to be able to",
+      "reach a changed state"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "purpose-and-change",
+    "familyId": "change-of-state",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-dictionary-or-negative",
+        "structure": "Verb dictionary or negative form + ようになる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-ninaru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 76,
+    "extendsGrammarId": "grammar-ninaru"
+  },
+  {
+    "id": "grammar-n4-you-ni-suru",
+    "pattern": "～ようにする",
+    "normalizedPattern": "ようにする",
+    "romaji": "you ni suru",
+    "title": "Deliberate habit or effort",
+    "meanings": [
+      "make an effort to",
+      "make sure that"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "purpose-and-change",
+    "familyId": "controlled-change",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-dictionary-or-negative",
+        "structure": "Verb dictionary or negative form + ようにする"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-nisuru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 77,
+    "extendsGrammarId": "grammar-nisuru"
+  },
+  {
+    "id": "grammar-n4-hodo",
+    "pattern": "～ほど",
+    "normalizedPattern": "ほど",
+    "romaji": "hodo",
+    "title": "Degree and comparison",
+    "meanings": [
+      "to the extent of",
+      "as much as",
+      "comparison degree"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "comparison-and-limitation",
+    "familyId": "degree-comparison",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "quantity-or-clause",
+        "structure": "Quantity, noun, or plain clause + ほど"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 78,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-dake-de",
+    "pattern": "～だけで",
+    "normalizedPattern": "だけで",
+    "romaji": "dake de",
+    "title": "Sufficiency with only one action or condition",
+    "meanings": [
+      "just by",
+      "merely by doing"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "comparison-and-limitation",
+    "familyId": "limitation",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "noun-or-plain-clause",
+        "structure": "Noun or plain clause + だけで"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-dake"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 79,
+    "extendsGrammarId": "grammar-dake"
+  },
+  {
+    "id": "grammar-n4-shika-nai",
+    "pattern": "～しか～ない",
+    "normalizedPattern": "しか～ない",
+    "romaji": "shika nai",
+    "title": "Exclusive limitation",
+    "meanings": [
+      "nothing but",
+      "only"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "comparison-and-limitation",
+    "familyId": "limitation",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "noun-or-quantity",
+        "structure": "Noun or quantity + しか + negative predicate"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 80,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-bakari",
+    "pattern": "～ばかり",
+    "normalizedPattern": "ばかり",
+    "romaji": "bakari",
+    "title": "Repeated or exclusive focus",
+    "meanings": [
+      "only",
+      "nothing but"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "comparison-and-limitation",
+    "familyId": "limitation",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "noun-or-plain-form",
+        "structure": "Noun or plain form + ばかり"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-dake"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 81,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-mo-quantity-emphasis",
+    "pattern": "～も",
+    "normalizedPattern": "も",
+    "romaji": "mo",
+    "title": "Unexpectedly large quantity",
+    "meanings": [
+      "as many or much as",
+      "up to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "comparison-and-limitation",
+    "familyId": "quantity-emphasis",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "quantity-expression",
+        "structure": "Quantity expression + も"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-mo"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 27,
+        "page": 33,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "A quantitative emphasis objective distinct from the basic N5 additive particle.",
+    "curriculumOrder": 82,
+    "extendsGrammarId": "grammar-mo"
+  },
+  {
+    "id": "grammar-n4-nado",
+    "pattern": "～など",
+    "normalizedPattern": "など",
+    "romaji": "nado",
+    "title": "Non-exhaustive examples",
+    "meanings": [
+      "such as",
+      "things like"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "comparison-and-limitation",
+    "familyId": "exemplification",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "noun-or-phrase",
+        "structure": "Noun or quoted phrase + など"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ya"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 83,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-demo-alternatives",
+    "pattern": "～でも",
+    "normalizedPattern": "でも",
+    "romaji": "demo",
+    "title": "Example or casual alternative",
+    "meanings": [
+      "or something such as",
+      "for example"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "comparison-and-limitation",
+    "familyId": "exemplification",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "noun",
+        "structure": "Noun + でも"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-mo"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 84,
+    "extendsGrammarId": "grammar-mo"
+  },
+  {
+    "id": "grammar-n4-toka-toka",
+    "pattern": "～とか～とか",
+    "normalizedPattern": "とか～とか",
+    "romaji": "toka toka",
+    "title": "Non-exhaustive alternatives",
+    "meanings": [
+      "such as",
+      "among other things"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "comparison-and-limitation",
+    "familyId": "exemplification",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "noun-or-plain-clause",
+        "structure": "Noun or plain clause + とか + Noun or plain clause + とか"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ya",
+      "grammar-tari-tarisuru"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 36,
+        "page": 87,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 85,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-ga-suru-senses",
+    "pattern": "～がする",
+    "normalizedPattern": "がする",
+    "romaji": "ga suru",
+    "title": "Sensory perception",
+    "meanings": [
+      "sense a smell, sound, taste, or feeling"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "sensory-perception",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "sensory-noun",
+        "structure": "Sound, smell, taste, or feeling noun + がする"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 47,
+        "page": 153,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 86,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-garu",
+    "pattern": "～がる／～がっている",
+    "normalizedPattern": "がる/～がっている",
+    "romaji": "garu",
+    "title": "Observable feelings",
+    "meanings": [
+      "show signs of a feeling"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "observed-feelings",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "adjective-stem",
+        "structure": "Feeling adjective stem + がる; continuing observation uses がっている"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 87,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-gari",
+    "pattern": "～がり",
+    "normalizedPattern": "がり",
+    "romaji": "gari",
+    "title": "Person with an observable disposition",
+    "meanings": [
+      "a person prone or sensitive to a feeling"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "observed-disposition",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "adjective-stem",
+        "structure": "Feeling adjective stem + がり"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-n4-garu"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 88,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-tagaru",
+    "pattern": "～たがる",
+    "normalizedPattern": "たがる",
+    "romaji": "tagaru",
+    "title": "Observable desire",
+    "meanings": [
+      "show signs of wanting to do"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "observed-desire",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + たがる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-tai"
+    ],
+    "relatedGrammarIds": [
+      "grammar-n4-garu"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 89,
+    "extendsGrammarId": "grammar-tai"
+  },
+  {
+    "id": "grammar-n4-nakanaka-nai",
+    "pattern": "なかなか～ない",
+    "normalizedPattern": "なかなか～ない",
+    "romaji": "nakanaka nai",
+    "title": "Difficulty achieving a result",
+    "meanings": [
+      "not easily",
+      "have difficulty doing"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "negative-difficulty",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "negative-clause",
+        "structure": "なかなか + negative predicate"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 90,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-nikui",
+    "pattern": "～にくい",
+    "normalizedPattern": "にくい",
+    "romaji": "nikui",
+    "title": "Objective difficulty",
+    "meanings": [
+      "difficult to do"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "ease-difficulty",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + にくい"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-n4-yasui",
+      "grammar-n4-zurai"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 91,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-yasui",
+    "pattern": "～やすい",
+    "normalizedPattern": "やすい",
+    "romaji": "yasui",
+    "title": "Ease or tendency",
+    "meanings": [
+      "easy to do",
+      "prone to"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "ease-difficulty",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + やすい"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-n4-nikui",
+      "grammar-n4-zurai"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 92,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-zurai",
+    "pattern": "～づらい",
+    "normalizedPattern": "づらい",
+    "romaji": "zurai",
+    "title": "Practical or emotional difficulty",
+    "meanings": [
+      "difficult to do",
+      "emotionally hard to do"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "ease-difficulty",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "Verb masu-stem + づらい"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-n4-nikui",
+      "grammar-n4-yasui"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 93,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-noni-contrast",
+    "pattern": "～のに",
+    "normalizedPattern": "のに",
+    "romaji": "noni",
+    "title": "Unexpected contrast",
+    "meanings": [
+      "although",
+      "despite"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "noni-contrast",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-form",
+        "structure": "Plain form + のに + unexpected result"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-kedo",
+      "grammar-keredomo",
+      "grammar-ga-contrast-conjunction"
+    ],
+    "confusedWithGrammarIds": [
+      "grammar-n4-noni-purpose"
+    ],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 94,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-shi",
+    "pattern": "～し",
+    "normalizedPattern": "し",
+    "romaji": "shi",
+    "title": "Additive reasons or qualities",
+    "meanings": [
+      "and",
+      "moreover",
+      "give one or more reasons"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "additive-reasons",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-form",
+        "structure": "Plain form + し"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-verb-te-b",
+      "grammar-adjective-te-b"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 95,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-sore-demo",
+    "pattern": "それでも",
+    "normalizedPattern": "それでも",
+    "romaji": "sore demo",
+    "title": "Discourse contrast",
+    "meanings": [
+      "even so",
+      "nevertheless"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "functional-expressions",
+    "familyId": "contrast-connectors",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "prior-discourse",
+        "structure": "Prior statement. それでも + contrasting continuation"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-kedo",
+      "grammar-keredomo",
+      "grammar-ga-contrast-conjunction"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "Retained as a functional discourse-expression lesson rather than isolated vocabulary because it links propositions and signals concession.",
+    "curriculumOrder": 96,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-dewa-nai-ka",
+    "pattern": "～ではないか",
+    "normalizedPattern": "ではないか",
+    "romaji": "de wa nai ka",
+    "title": "Rhetorical confirmation",
+    "meanings": [
+      "isn't it",
+      "rhetorical confirmation"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "functional-expressions",
+    "familyId": "confirmation-questions",
+    "alternatePatterns": [
+      "～じゃないか"
+    ],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + ではないか"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-janai"
+    ],
+    "relatedGrammarIds": [
+      "grammar-ka-question-marker"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "The unsupported invitation sense in the supplied gloss was not retained.",
+    "curriculumOrder": 97,
+    "extendsGrammarId": "grammar-janai"
+  },
+  {
+    "id": "grammar-n4-kashira",
+    "pattern": "～かしら",
+    "normalizedPattern": "かしら",
+    "romaji": "kashira",
+    "title": "Soft speaker uncertainty",
+    "meanings": [
+      "I wonder"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "functional-expressions",
+    "familyId": "speaker-uncertainty",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + かしら"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-ka-question-marker"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 98,
+    "extendsGrammarId": "grammar-ka-question-marker"
+  },
+  {
+    "id": "grammar-n4-kai-question",
+    "pattern": "～かい",
+    "normalizedPattern": "かい",
+    "romaji": "kai",
+    "title": "Informal yes-no question",
+    "meanings": [
+      "mark an informal yes-no question"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "functional-expressions",
+    "familyId": "question-particles",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + かい"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-ka-question-marker"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 99,
+    "extendsGrammarId": "grammar-ka-question-marker"
+  },
+  {
+    "id": "grammar-n4-kana",
+    "pattern": "～かな",
+    "normalizedPattern": "かな",
+    "romaji": "kana",
+    "title": "Casual speaker uncertainty",
+    "meanings": [
+      "I wonder",
+      "should I"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "functional-expressions",
+    "familyId": "speaker-uncertainty",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + かな"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-ka-question-marker"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 100,
+    "extendsGrammarId": "grammar-ka-question-marker"
+  },
+  {
+    "id": "grammar-n4-te-sumimasen",
+    "pattern": "～てすみません",
+    "normalizedPattern": "てすみません",
+    "romaji": "te sumimasen",
+    "title": "Apology for an action",
+    "meanings": [
+      "sorry for doing"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "functional-expressions",
+    "familyId": "apology",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + すみません"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-verb-te"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 101,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-te-yokatta",
+    "pattern": "～てよかった",
+    "normalizedPattern": "てよかった",
+    "romaji": "te yokatta",
+    "title": "Positive evaluation of an outcome",
+    "meanings": [
+      "be glad that"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "functional-expressions",
+    "familyId": "evaluation",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-te-form",
+        "structure": "Verb te-form + よかった"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-ii"
+    ],
+    "relatedGrammarIds": [
+      "grammar-i-adjectivepast"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 102,
+    "extendsGrammarId": "grammar-ii"
+  },
+  {
+    "id": "grammar-n4-to-ittemo-ii",
+    "pattern": "～と言ってもいい",
+    "normalizedPattern": "と言ってもいい",
+    "romaji": "to itte mo ii",
+    "title": "Qualified stance",
+    "meanings": [
+      "one could say",
+      "it is fair to say"
+    ],
+    "level": "N4",
+    "contentType": "functional-expression",
+    "category": "functional-expressions",
+    "familyId": "quotation-stance",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "plain-clause",
+        "structure": "Plain clause + と言ってもいい"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-to-quotation-marker",
+      "grammar-n4-to-iu"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 103,
+    "extendsGrammarId": "grammar-to-quotation-marker"
+  },
+  {
+    "id": "grammar-n4-te-de-cause",
+    "pattern": "～て／～で",
+    "normalizedPattern": "て/～で",
+    "romaji": "te de",
+    "title": "Cause or resulting connection",
+    "meanings": [
+      "and",
+      "because",
+      "resulting in"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "functional-expressions",
+    "familyId": "cause-connection",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-or-adjective-connective",
+        "structure": "Verb or i-adjective te-form; noun or na-adjective + で + result"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-verb-te"
+    ],
+    "relatedGrammarIds": [
+      "grammar-verb-te-b",
+      "grammar-adjective-te",
+      "grammar-adjective-te-b"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 104,
+    "extendsGrammarId": "grammar-verb-te"
+  },
+  {
+    "id": "grammar-n4-de-gozaimasu",
+    "pattern": "～でございます",
+    "normalizedPattern": "でございます",
+    "romaji": "de gozaimasu",
+    "title": "Formal polite copula",
+    "meanings": [
+      "formal polite equivalent of です"
+    ],
+    "level": "N4",
+    "contentType": "politeness-form",
+    "category": "honorific-and-humble-language",
+    "familyId": "polite-copula",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "noun-or-na-adjective",
+        "structure": "Noun or na-adjective stem + でございます"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-desu"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 105,
+    "extendsGrammarId": "grammar-desu"
+  },
+  {
+    "id": "grammar-n4-gozaimasu",
+    "pattern": "ございます",
+    "normalizedPattern": "ございます",
+    "romaji": "gozaimasu",
+    "title": "Formal polite existence",
+    "meanings": [
+      "formal polite equivalent of ある"
+    ],
+    "level": "N4",
+    "contentType": "politeness-form",
+    "category": "honorific-and-humble-language",
+    "familyId": "polite-existence",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "existence-predicate",
+        "structure": "ございます"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-gaaru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 106,
+    "extendsGrammarId": "grammar-gaaru"
+  },
+  {
+    "id": "grammar-n4-irassharu",
+    "pattern": "いらっしゃる",
+    "normalizedPattern": "いらっしゃる",
+    "romaji": "irassharu",
+    "title": "Honorific be, go, or come",
+    "meanings": [
+      "honorific equivalent of いる, 行く, or 来る"
+    ],
+    "level": "N4",
+    "contentType": "politeness-form",
+    "category": "honorific-and-humble-language",
+    "familyId": "honorific-verbs",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "lexical-honorific",
+        "structure": "いらっしゃる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-gairu"
+    ],
+    "relatedGrammarIds": [
+      "grammar-kuru",
+      "grammar-heiku"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 19,
+        "page": 172,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 107,
+    "extendsGrammarId": "grammar-gairu"
+  },
+  {
+    "id": "grammar-n4-nasaru",
+    "pattern": "なさる",
+    "normalizedPattern": "なさる",
+    "romaji": "nasaru",
+    "title": "Honorific do",
+    "meanings": [
+      "honorific equivalent of する"
+    ],
+    "level": "N4",
+    "contentType": "politeness-form",
+    "category": "honorific-and-humble-language",
+    "familyId": "honorific-verbs",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "lexical-honorific",
+        "structure": "なさる"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-suru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 19,
+        "page": 172,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 108,
+    "extendsGrammarId": "grammar-suru"
+  },
+  {
+    "id": "grammar-n4-o-ni-naru",
+    "pattern": "お～になる",
+    "normalizedPattern": "お～になる",
+    "romaji": "o ni naru",
+    "title": "Productive honorific action form",
+    "meanings": [
+      "express another person's action respectfully"
+    ],
+    "level": "N4",
+    "contentType": "politeness-form",
+    "category": "honorific-and-humble-language",
+    "familyId": "honorific-actions",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "お + Verb masu-stem + になる"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ninaru"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 19,
+        "page": 173,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": "A different honorific meaning from the N5 change-of-state ～になる record.",
+    "curriculumOrder": 109,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-itasu",
+    "pattern": "いたす",
+    "normalizedPattern": "いたす",
+    "romaji": "itasu",
+    "title": "Humble do",
+    "meanings": [
+      "humble equivalent of する"
+    ],
+    "level": "N4",
+    "contentType": "politeness-form",
+    "category": "honorific-and-humble-language",
+    "familyId": "humble-verbs",
+    "alternatePatterns": [
+      "いたします"
+    ],
+    "formation": [
+      {
+        "base": "lexical-humble",
+        "structure": "いたす"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-suru"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 20,
+        "page": 193,
+        "referenceType": "curriculum-cross-check"
+      },
+      {
+        "source": "Minna no Nihongo II",
+        "lesson": 50,
+        "page": 170,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 110,
+    "extendsGrammarId": "grammar-suru"
+  },
+  {
+    "id": "grammar-n4-o-kudasai",
+    "pattern": "お～ください",
+    "normalizedPattern": "お～ください",
+    "romaji": "o kudasai",
+    "title": "Respectful request",
+    "meanings": [
+      "please do, respectfully"
+    ],
+    "level": "N4",
+    "contentType": "politeness-form",
+    "category": "honorific-and-humble-language",
+    "familyId": "honorific-requests",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "verb-masu-stem",
+        "structure": "お + Verb masu-stem + ください"
+      }
+    ],
+    "prerequisiteGrammarIds": [
+      "grammar-tekudasai"
+    ],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [
+      {
+        "source": "Genki II",
+        "lesson": 19,
+        "page": 174,
+        "referenceType": "curriculum-cross-check"
+      }
+    ],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      },
+      {
+        "name": "Cached textbook curriculum mapping",
+        "role": "curriculum-cross-check"
+      }
+    ],
+    "confidence": 1,
+    "reviewStatus": "approved",
+    "needsReview": false,
+    "releaseReady": true,
+    "notes": null,
+    "curriculumOrder": 111,
+    "extendsGrammarId": "grammar-tekudasai"
+  },
+  {
+    "id": "grammar-n4-oki-ni-unresolved",
+    "pattern": "～おきに",
+    "normalizedPattern": "おきに",
+    "romaji": "oki ni",
+    "title": "Interval expression pending semantic review",
+    "meanings": [
+      "at stated intervals; the exact interval interpretation requires review"
+    ],
+    "level": "N4",
+    "contentType": "grammar-pattern",
+    "category": "time-and-sequence",
+    "familyId": "interval-frequency",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "interval-expression",
+        "structure": "Interval expression + おきに"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 0.4,
+    "reviewStatus": "needs-more-review",
+    "needsReview": true,
+    "releaseReady": false,
+    "notes": "Forms such as 一日おき can be interpreted as every other day and must be distinguished from other interval readings and ～ごとに before approval.",
+    "curriculumOrder": 112,
+    "extendsGrammarId": null
+  },
+  {
+    "id": "grammar-n4-wa-ga-wa-unresolved",
+    "pattern": "は～が…は",
+    "normalizedPattern": "は～が…は",
+    "romaji": "wa ga wa",
+    "title": "Contrast or comparison structure pending review",
+    "meanings": [
+      "the supplied contrast or comparison function requires editorial resolution"
+    ],
+    "level": "N4",
+    "contentType": "structural-concept",
+    "category": "functional-expressions",
+    "familyId": "contrast-comparison-unresolved",
+    "alternatePatterns": [],
+    "formation": [
+      {
+        "base": "paired-clauses",
+        "structure": "Provisional supplied surface: は～が…は"
+      }
+    ],
+    "prerequisiteGrammarIds": [],
+    "relatedGrammarIds": [
+      "grammar-ha",
+      "grammar-ga-contrast-conjunction"
+    ],
+    "confusedWithGrammarIds": [],
+    "textbookReferences": [],
+    "editorialSources": [
+      {
+        "name": "JapanGo manual curation",
+        "role": "canonical-classification"
+      },
+      {
+        "name": "User-supplied N4 editorial candidate list",
+        "role": "candidate-identification"
+      }
+    ],
+    "confidence": 0.2,
+    "reviewStatus": "needs-more-review",
+    "needsReview": true,
+    "releaseReady": false,
+    "notes": "The candidate surface is malformed and underspecified, conflating contrast and comparison. It must not be used for lessons until a safe identity, meaning, and formation are established.",
+    "curriculumOrder": 113,
+    "extendsGrammarId": null
+  }
+]
