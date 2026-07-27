@@ -6,15 +6,15 @@ This report describes the generated source-backed snapshot. It does **not** clai
 
 | Content | N5 | N4 | Supplemental |
 |---|---:|---:|---:|
-| Vocabulary | 598 | 554 | 0 |
-| Kanji | 79 | 166 | — |
+| Vocabulary | 598 | 1142 | 0 |
+| Kanji | 79 | 221 | — |
 | Grammar | 124 | 113 | — |
-| Curriculum units | 42 | 38 | — |
+| Curriculum units | 42 | 39 | — |
 
 ## Canonical matching
 
-- JMdict strict form-and-reading match rate: 1152/1386 (83.1%).
-- KANJIDIC2 match rate for selected JLPT kanji: 245/245 (100.0%).
+- JMdict strict form-and-reading match rate: 1860/2125 (87.5%).
+- KANJIDIC2 match rate for selected JLPT kanji: 300/300 (100.0%).
 - Grammar: legacy N5 mappings remain review-only; N4 records come from JapanGo's manually curated, release-ready editorial source.
 - Examples from the JMdict Yomitan bundle were excluded because their separate provenance and redistribution terms were not supplied.
 
@@ -24,17 +24,17 @@ All six PDFs are image-only. The completed cached OCR was read without reprocess
 
 | Book | OCR status | Canonical-hit occurrences | Unambiguous hits | Unambiguous share |
 |---|---|---:|---:|---:|
-| Genki I | Cached OCR candidates; review required | 1481 | 996 | 67.3% |
-| Genki II | Cached OCR candidates; review required | 1393 | 917 | 65.8% |
-| Minna no Nihongo I Grammar | Cached OCR candidates; review required | 893 | 648 | 72.6% |
-| Minna no Nihongo I | Cached OCR candidates; review required | 1855 | 1203 | 64.9% |
-| Minna no Nihongo II Grammar | Cached OCR candidates; review required | 934 | 594 | 63.6% |
-| Minna no Nihongo II | Cached OCR candidates; review required | 2244 | 1446 | 64.4% |
+| Genki I | Cached OCR candidates; review required | 1504 | 1015 | 67.5% |
+| Genki II | Cached OCR candidates; review required | 1453 | 975 | 67.1% |
+| Minna no Nihongo I Grammar | Cached OCR candidates; review required | 922 | 674 | 73.1% |
+| Minna no Nihongo I | Cached OCR candidates; review required | 1907 | 1252 | 65.7% |
+| Minna no Nihongo II Grammar | Cached OCR candidates; review required | 1013 | 672 | 66.3% |
+| Minna no Nihongo II | Cached OCR candidates; review required | 2304 | 1504 | 65.3% |
 
 ## Unresolved and review counts
 
-- unmatchedVocabulary: 202
-- ambiguousVocabulary: 32
+- unmatchedVocabulary: 229
+- ambiguousVocabulary: 36
 - unmatchedKanji: 0
 - unmatchedGrammar: 0
 - jlptLevelConflicts: 22
@@ -44,7 +44,7 @@ All six PDFs are image-only. The completed cached OCR was read without reprocess
 - validationErrors: 0
 - validationWarnings: 0
 
-- Duplicate/conflicting mapping records: 15.
+- Duplicate/conflicting mapping records: 137.
 - JLPT-level conflicts: 22.
 - Missing source information: licences/provenance for the JLPT vocabulary CSV and Kotoba Brew N5 CSV; a complete local KANJIDIC2/JMdict licence copy; textbook OCR metadata.
 

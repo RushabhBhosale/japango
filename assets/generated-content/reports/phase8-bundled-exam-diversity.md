@@ -9,8 +9,8 @@
 - uniqueListeningActivities: 100
 - listeningReuseRate: 13.04%
 - grammarTargetBreadth: 77
-- vocabularyTargetBreadth: 192
-- kanjiTargetBreadth: 99
+- vocabularyTargetBreadth: 193
+- kanjiTargetBreadth: 102
 - questionTypeBreadth: 32
 - maximumQuestionExposure: 4
 - maximumPassageExposure: 1

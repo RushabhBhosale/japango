@@ -21394,7 +21394,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-勤"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -22790,7 +22792,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-官"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -26625,7 +26629,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-向"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -26763,7 +26769,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-好"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -36838,7 +36846,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-初"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -39280,7 +39290,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-夫"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -39495,7 +39507,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-乗"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -41750,7 +41764,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-声"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -44381,7 +44397,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-全"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -46238,7 +46256,8 @@
       "conflicts": []
     },
     "kanjiIds": [
-      "kanji-大"
+      "kanji-大",
+      "kanji-好"
     ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
@@ -46447,7 +46466,8 @@
       "conflicts": []
     },
     "kanjiIds": [
-      "kanji-大"
+      "kanji-大",
+      "kanji-夫"
     ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
@@ -46877,7 +46897,8 @@
       "conflicts": []
     },
     "kanjiIds": [
-      "kanji-大"
+      "kanji-大",
+      "kanji-変"
     ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
@@ -52250,7 +52271,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-働"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -57176,7 +57199,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-号"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -60182,7 +60207,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-利"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -66916,7 +66943,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-冷"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],
@@ -66990,7 +67019,9 @@
       ],
       "conflicts": []
     },
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-冷"
+    ],
     "relatedVocabularyIds": [],
     "confusableVocabularyIds": [],
     "topicTags": [],

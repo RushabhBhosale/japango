@@ -1,0 +1,24 @@
+{
+  "n5": 598,
+  "n4New": 1142,
+  "cumulativeThroughN4": 1740,
+  "lifecycle": {
+    "total": 1740,
+    "releaseEligible": 1740,
+    "reviewRequired": 0,
+    "developmentOnly": 0
+  },
+  "sixQuestionCoverage": 1740,
+  "partialQuestionCoverage": 0,
+  "noQuestionCoverage": 0,
+  "representedInSentences": 920,
+  "representedInReading": 0,
+  "representedInListening": 0,
+  "representedInAssessments": 0,
+  "orphaned": [],
+  "inventoryLimited": {
+    "belowN5ReferenceRange": true,
+    "belowCumulativeN4ReferenceRange": false,
+    "rangesAreAuditComparisonsOnly": true
+  }
+}

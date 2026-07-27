@@ -3,8 +3,8 @@
   "profile": "development",
   "engine": "sqlite3",
   "databaseVersion": 6,
-  "checksum": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
-  "existingRecordsRetained": 116351,
+  "checksum": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602",
+  "existingRecordsRetained": 163938,
   "blueprintsInserted": 24,
   "presetsInserted": 12,
   "examsInserted": 32,
@@ -19,7 +19,7 @@
   "releaseExclusions": 32,
   "rejectedRecords": 0,
   "totalPhase8RowsInserted": 3208,
-  "totalImportedRecords": 119559,
+  "totalImportedRecords": 167146,
   "foreignKeys": "pass",
   "transaction": "pass",
   "parentBeforeChildOrdering": "pass",
@@ -27,7 +27,7 @@
   "checksumResult": "pass",
   "idempotentRerun": {
     "inserted": 0,
-    "skipped": 119559,
+    "skipped": 167146,
     "checksumIdentical": true
   },
   "sqlViews": {

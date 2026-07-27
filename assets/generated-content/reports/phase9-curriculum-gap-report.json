@@ -1,0 +1,12 @@
+{
+  "confirmed": [
+    "N4 kanji breadth",
+    "standalone N5 grammar questions",
+    "vocabulary breadth"
+  ],
+  "vocabularyComparison": {
+    "belowN5ReferenceRange": true,
+    "belowCumulativeN4ReferenceRange": false,
+    "rangesAreAuditComparisonsOnly": true
+  }
+}

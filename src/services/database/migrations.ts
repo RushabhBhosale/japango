@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 6;
+export const CURRENT_DATABASE_VERSION = 7;
 
 export interface DatabaseMigration {
   version: number;
@@ -726,6 +726,29 @@ const versionSixSql = `
       parent_type, parent_id, primary_target_id FROM assessment_question_placements;
 `;
 
+// Phase 9 stores audit provenance separately from canonical learning records.
+// It is intentionally append-only metadata: lifecycle decisions are still made
+// by the canonical item/question tables and are never inferred from this view.
+const versionSevenSql = `
+  CREATE TABLE IF NOT EXISTS curriculum_audit_records (
+    id TEXT PRIMARY KEY NOT NULL,
+    audit_phase TEXT NOT NULL,
+    subject_type TEXT NOT NULL,
+    subject_id TEXT NOT NULL,
+    status TEXT NOT NULL,
+    evidence_json TEXT NOT NULL,
+    fixed_timestamp TEXT NOT NULL,
+    import_batch_id TEXT,
+    FOREIGN KEY (import_batch_id) REFERENCES content_import_batches(id)
+  );
+  CREATE INDEX IF NOT EXISTS curriculum_audit_subject_idx
+    ON curriculum_audit_records(subject_type, subject_id, audit_phase);
+  CREATE VIEW IF NOT EXISTS curriculum_audit_review_view AS
+    SELECT audit_phase, subject_type, subject_id, status, fixed_timestamp
+    FROM curriculum_audit_records
+    WHERE status IN ('review-required', 'deferred', 'insufficient-evidence');
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -733,6 +756,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 4, sql: versionFourSql },
   { version: 5, sql: versionFiveSql },
   { version: 6, sql: versionSixSql },
+  { version: 7, sql: versionSevenSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

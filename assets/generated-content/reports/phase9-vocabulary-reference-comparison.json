@@ -1,0 +1,17 @@
+{
+  "japanGo": {
+    "n5": 598,
+    "cumulative": 1740
+  },
+  "comparisonRanges": {
+    "n5Vocabulary": [
+      750,
+      850
+    ],
+    "cumulativeN4Vocabulary": [
+      1400,
+      1600
+    ]
+  },
+  "authoritative": false
+}

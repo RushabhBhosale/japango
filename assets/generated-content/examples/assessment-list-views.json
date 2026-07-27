@@ -110,8 +110,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-cf17ac3bea610803",
-    "assessmentId": "assessment-snapshot-cf17ac3bea610803",
+    "id": "assessment-list-view-e102fc4ba50fad30",
+    "assessmentId": "assessment-snapshot-e102fc4ba50fad30",
     "title": "N5 section-exam sample",
     "level": "N5",
     "assessmentType": "section-exam",
@@ -121,8 +121,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-d5edfaf9f1da26d0",
-    "assessmentId": "assessment-snapshot-d5edfaf9f1da26d0",
+    "id": "assessment-list-view-35ea0471dd9355db",
+    "assessmentId": "assessment-snapshot-35ea0471dd9355db",
     "title": "N5 quick-practice sample",
     "level": "N5",
     "assessmentType": "quick-practice",
@@ -132,8 +132,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-4ae5c9d23605c19c",
-    "assessmentId": "assessment-snapshot-4ae5c9d23605c19c",
+    "id": "assessment-list-view-cbca0fbdc06b9963",
+    "assessmentId": "assessment-snapshot-cbca0fbdc06b9963",
     "title": "N5 daily-challenge sample",
     "level": "N5",
     "assessmentType": "daily-challenge",
@@ -143,8 +143,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-f8908d53ed14932a",
-    "assessmentId": "assessment-snapshot-f8908d53ed14932a",
+    "id": "assessment-list-view-9f09b38c421ec484",
+    "assessmentId": "assessment-snapshot-9f09b38c421ec484",
     "title": "N5 weak-area sample",
     "level": "N5",
     "assessmentType": "weak-area",
@@ -154,8 +154,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-4a29047c7b7de1b4",
-    "assessmentId": "assessment-snapshot-4a29047c7b7de1b4",
+    "id": "assessment-list-view-284343b1034436eb",
+    "assessmentId": "assessment-snapshot-284343b1034436eb",
     "title": "N5 mixed-review sample",
     "level": "N5",
     "assessmentType": "mixed-review",
@@ -165,8 +165,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-bc7d312413bc0c99",
-    "assessmentId": "assessment-snapshot-bc7d312413bc0c99",
+    "id": "assessment-list-view-f11b3192abd9e26a",
+    "assessmentId": "assessment-snapshot-f11b3192abd9e26a",
     "title": "N5 curriculum-unit-test sample",
     "level": "N5",
     "assessmentType": "curriculum-unit-test",
@@ -176,8 +176,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-9db92bd5c331b82b",
-    "assessmentId": "assessment-snapshot-9db92bd5c331b82b",
+    "id": "assessment-list-view-8d67db7e6f7b43c9",
+    "assessmentId": "assessment-snapshot-8d67db7e6f7b43c9",
     "title": "N5 grammar-mastery sample",
     "level": "N5",
     "assessmentType": "grammar-mastery",
@@ -187,8 +187,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-3fe16514a5ba1c53",
-    "assessmentId": "assessment-snapshot-3fe16514a5ba1c53",
+    "id": "assessment-list-view-92feb0a3fc543d2a",
+    "assessmentId": "assessment-snapshot-92feb0a3fc543d2a",
     "title": "N5 vocabulary-mastery sample",
     "level": "N5",
     "assessmentType": "vocabulary-mastery",
@@ -198,8 +198,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-d96093f7e69835cc",
-    "assessmentId": "assessment-snapshot-d96093f7e69835cc",
+    "id": "assessment-list-view-d26bfacebca72905",
+    "assessmentId": "assessment-snapshot-d26bfacebca72905",
     "title": "N5 kanji-mastery sample",
     "level": "N5",
     "assessmentType": "kanji-mastery",
@@ -209,8 +209,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-e04a807853d6cf56",
-    "assessmentId": "assessment-snapshot-e04a807853d6cf56",
+    "id": "assessment-list-view-792a4a011ef3d858",
+    "assessmentId": "assessment-snapshot-792a4a011ef3d858",
     "title": "N4 section-exam sample",
     "level": "N4",
     "assessmentType": "section-exam",
@@ -220,8 +220,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-5399c1328e3f60fb",
-    "assessmentId": "assessment-snapshot-5399c1328e3f60fb",
+    "id": "assessment-list-view-6bdc89d41636a09b",
+    "assessmentId": "assessment-snapshot-6bdc89d41636a09b",
     "title": "N4 quick-practice sample",
     "level": "N4",
     "assessmentType": "quick-practice",
@@ -231,8 +231,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-3f38c74748f02b8d",
-    "assessmentId": "assessment-snapshot-3f38c74748f02b8d",
+    "id": "assessment-list-view-17701844a2222e2c",
+    "assessmentId": "assessment-snapshot-17701844a2222e2c",
     "title": "N4 daily-challenge sample",
     "level": "N4",
     "assessmentType": "daily-challenge",
@@ -242,8 +242,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-57ac6d0f3e728c21",
-    "assessmentId": "assessment-snapshot-57ac6d0f3e728c21",
+    "id": "assessment-list-view-821821ffd210a86f",
+    "assessmentId": "assessment-snapshot-821821ffd210a86f",
     "title": "N4 weak-area sample",
     "level": "N4",
     "assessmentType": "weak-area",
@@ -253,8 +253,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-e6d9f876e706453c",
-    "assessmentId": "assessment-snapshot-e6d9f876e706453c",
+    "id": "assessment-list-view-28e73b4d8c03518c",
+    "assessmentId": "assessment-snapshot-28e73b4d8c03518c",
     "title": "N4 mixed-review sample",
     "level": "N4",
     "assessmentType": "mixed-review",
@@ -264,8 +264,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-646af8fc6f9c24bc",
-    "assessmentId": "assessment-snapshot-646af8fc6f9c24bc",
+    "id": "assessment-list-view-b1649d76487a59ab",
+    "assessmentId": "assessment-snapshot-b1649d76487a59ab",
     "title": "N4 curriculum-unit-test sample",
     "level": "N4",
     "assessmentType": "curriculum-unit-test",
@@ -275,8 +275,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-ab5bf43efcfe4a2b",
-    "assessmentId": "assessment-snapshot-ab5bf43efcfe4a2b",
+    "id": "assessment-list-view-d9eb740aa3b83df7",
+    "assessmentId": "assessment-snapshot-d9eb740aa3b83df7",
     "title": "N4 grammar-mastery sample",
     "level": "N4",
     "assessmentType": "grammar-mastery",
@@ -286,8 +286,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-b0c049cd55d3266a",
-    "assessmentId": "assessment-snapshot-b0c049cd55d3266a",
+    "id": "assessment-list-view-d4c4f869a2469611",
+    "assessmentId": "assessment-snapshot-d4c4f869a2469611",
     "title": "N4 vocabulary-mastery sample",
     "level": "N4",
     "assessmentType": "vocabulary-mastery",
@@ -297,8 +297,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-c9f146808eb49c43",
-    "assessmentId": "assessment-snapshot-c9f146808eb49c43",
+    "id": "assessment-list-view-d387d1e5f70a2a73",
+    "assessmentId": "assessment-snapshot-d387d1e5f70a2a73",
     "title": "N4 kanji-mastery sample",
     "level": "N4",
     "assessmentType": "kanji-mastery",
@@ -308,8 +308,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-53fd04cd7207b757",
-    "assessmentId": "assessment-snapshot-53fd04cd7207b757",
+    "id": "assessment-list-view-876483798112ba91",
+    "assessmentId": "assessment-snapshot-876483798112ba91",
     "title": "N5 reading-practice sample",
     "level": "N5",
     "assessmentType": "reading-practice",
@@ -319,8 +319,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-c357bbde3f197b2e",
-    "assessmentId": "assessment-snapshot-c357bbde3f197b2e",
+    "id": "assessment-list-view-073f771aef5a5859",
+    "assessmentId": "assessment-snapshot-073f771aef5a5859",
     "title": "N5 listening-practice sample",
     "level": "N5",
     "assessmentType": "listening-practice",
@@ -330,8 +330,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-5b5fb8e1c2bf23e7",
-    "assessmentId": "assessment-snapshot-5b5fb8e1c2bf23e7",
+    "id": "assessment-list-view-6e6ca886d32b0804",
+    "assessmentId": "assessment-snapshot-6e6ca886d32b0804",
     "title": "N4 reading-practice sample",
     "level": "N4",
     "assessmentType": "reading-practice",
@@ -341,8 +341,8 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-list-view-9ec752d4914b5f7a",
-    "assessmentId": "assessment-snapshot-9ec752d4914b5f7a",
+    "id": "assessment-list-view-5d10b41449aa34c5",
+    "assessmentId": "assessment-snapshot-5d10b41449aa34c5",
     "title": "N4 listening-practice sample",
     "level": "N4",
     "assessmentType": "listening-practice",

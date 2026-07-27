@@ -805,6 +805,23 @@
   },
   {
     "candidate": {
+      "sourceRow": 175,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "あいにく",
+      "reading": "あいにく",
+      "englishHint": "unfortunately",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
       "sourceRow": 7207,
       "written": "あげる",
       "reading": "あげる",
@@ -822,6 +839,40 @@
       "reading": "あなた",
       "englishHint": "you",
       "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 206,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "あるいは",
+      "reading": "あるいは",
+      "englishHint": "or; alternatively",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 213,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "あんまり",
+      "reading": "あんまり",
+      "englishHint": "not very; not much",
+      "level": "N4"
     },
     "status": "unmatched",
     "reason": "No JMdict entry matched both a verified form and reading.",
@@ -901,11 +952,96 @@
   },
   {
     "candidate": {
+      "sourceRow": 232,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "いつか",
+      "reading": "いつか",
+      "englishHint": "someday",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 240,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "いつでも",
+      "reading": "いつでも",
+      "englishHint": "anytime",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 241,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "いつのまにか",
+      "reading": "いつのまにか",
+      "englishHint": "before one knows it",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
       "sourceRow": 7477,
       "written": "いつも",
       "reading": "いつも",
       "englishHint": "always, usually, every time, never (with neg. verb)",
       "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 245,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "いとこ",
+      "reading": "いとこ",
+      "englishHint": "cousin",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 258,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "いわゆる",
+      "reading": "いわゆる",
+      "englishHint": "so-called",
+      "level": "N4"
     },
     "status": "unmatched",
     "reason": "No JMdict entry matched both a verified form and reading.",
@@ -1021,6 +1157,23 @@
   },
   {
     "candidate": {
+      "sourceRow": 313,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "おととい",
+      "reading": "おととい",
+      "englishHint": "the day before yesterday",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
       "sourceRow": 7535,
       "written": "おととし",
       "reading": "おととし",
@@ -1045,6 +1198,23 @@
   },
   {
     "candidate": {
+      "sourceRow": 316,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "おば",
+      "reading": "おば",
+      "englishHint": "aunt",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
       "sourceRow": 7546,
       "written": "おまわりさん",
       "reading": "おまわりさん",
@@ -1061,6 +1231,23 @@
       "written": "おもちゃ",
       "reading": "おもちゃ",
       "englishHint": "a toy",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 321,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "およそ",
+      "reading": "およそ",
+      "englishHint": "about; approximately",
       "level": "N4"
     },
     "status": "unmatched",
@@ -1141,6 +1328,40 @@
   },
   {
     "candidate": {
+      "sourceRow": 341,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "かまう",
+      "reading": "かまう",
+      "englishHint": "to mind; to care",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 342,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "かもしれない",
+      "reading": "かもしれない",
+      "englishHint": "may; might",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
       "sourceRow": 7625,
       "written": "キロ; キログラム",
       "reading": "きろ;きろぐらむ",
@@ -1181,6 +1402,23 @@
       "written": "けがする",
       "reading": "けがする",
       "englishHint": "injury (to animate object), hurt",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 414,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "けっして",
+      "reading": "けっして",
+      "englishHint": "never; by no means",
       "level": "N4"
     },
     "status": "unmatched",
@@ -1273,11 +1511,96 @@
   },
   {
     "candidate": {
+      "sourceRow": 476,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "さっそく",
+      "reading": "さっそく",
+      "englishHint": "immediately; at once",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 479,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "さらに",
+      "reading": "さらに",
+      "englishHint": "further; still more",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
       "sourceRow": 7699,
       "written": "さ来年",
       "reading": "さらいねん",
       "englishHint": "year after next",
       "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 490,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "しきりに",
+      "reading": "しきりに",
+      "englishHint": "frequently; eagerly",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 33,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "したがって",
+      "reading": "したがって",
+      "englishHint": "therefore; accordingly",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 499,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "しばらく",
+      "reading": "しばらく",
+      "englishHint": "for a while",
+      "level": "N4"
     },
     "status": "unmatched",
     "reason": "No JMdict entry matched both a verified form and reading.",
@@ -1326,6 +1649,57 @@
       "reading": "すぐに",
       "englishHint": "immediately, soon",
       "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 139,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "すっぱい",
+      "reading": "すっぱい",
+      "englishHint": "sour",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 140,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "すてき",
+      "reading": "すてき",
+      "englishHint": "lovely; wonderful",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 541,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "すでに",
+      "reading": "すでに",
+      "englishHint": "already",
+      "level": "N4"
     },
     "status": "unmatched",
     "reason": "No JMdict entry matched both a verified form and reading.",
@@ -1393,6 +1767,23 @@
   },
   {
     "candidate": {
+      "sourceRow": 588,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "たとえ",
+      "reading": "たとえ",
+      "englishHint": "even if; for example",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
       "sourceRow": 7803,
       "written": "たばこ",
       "reading": "たばこ",
@@ -1421,6 +1812,23 @@
       "written": "チェックする",
       "reading": "ちぇっくする",
       "englishHint": "check",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 609,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "ちょうど",
+      "reading": "ちょうど",
+      "englishHint": "just; exactly",
       "level": "N4"
     },
     "status": "unmatched",
@@ -1506,6 +1914,23 @@
       "reading": "どなた",
       "englishHint": "who",
       "level": "N5"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 644,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "なお",
+      "reading": "なお",
+      "englishHint": "still; furthermore",
+      "level": "N4"
     },
     "status": "unmatched",
     "reason": "No JMdict entry matched both a verified form and reading.",
@@ -2185,6 +2610,23 @@
   },
   {
     "candidate": {
+      "sourceRow": 533,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "新宿",
+      "reading": "しんじゅく",
+      "englishHint": "Shinjuku",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
       "sourceRow": 7356,
       "written": "真中",
       "reading": "まんなか",
@@ -2285,6 +2727,23 @@
       "written": "退院",
       "reading": "たいいんする",
       "englishHint": "leaving hospital",
+      "level": "N4"
+    },
+    "status": "unmatched",
+    "reason": "No JMdict entry matched both a verified form and reading.",
+    "candidateSequences": []
+  },
+  {
+    "candidate": {
+      "sourceRow": 107,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "知合い",
+      "reading": "しりあい",
+      "englishHint": "acquaintance",
       "level": "N4"
     },
     "status": "unmatched",

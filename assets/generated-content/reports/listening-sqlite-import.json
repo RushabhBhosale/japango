@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "profile": "development",
   "engine": "sqlite3",
-  "checksum": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
-  "retainedExistingRecords": 107115,
+  "checksum": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602",
+  "retainedExistingRecords": 154702,
   "speakersInserted": 8,
   "activitiesInserted": 156,
   "transcriptsInserted": 156,
@@ -26,7 +26,7 @@
   },
   "rejected": 0,
   "firstImport": {
-    "inserted": 116351,
+    "inserted": 163938,
     "updated": 0,
     "skipped": 0,
     "excludedFromRelease": 612,
@@ -35,7 +35,7 @@
   "idempotentRerun": {
     "inserted": 0,
     "updated": 0,
-    "skipped": 116351,
+    "skipped": 163938,
     "rejected": 0
   },
   "transaction": "pass",

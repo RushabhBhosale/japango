@@ -9,7 +9,7 @@
     "attributionText": "JapanGo assessment blueprints; original JapanGo JLPT-aligned material and metadata.",
     "redistributionNotes": "Original JapanGo material; not official JLPT content.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:8ba71910fe03ba374929280c83885545bd2ea52063629b953730d35ba490735e"
   },
   {
@@ -22,7 +22,7 @@
     "attributionText": "JapanGo bundled mock-exam seeds; original JapanGo JLPT-aligned material and metadata.",
     "redistributionNotes": "Original JapanGo material; not official JLPT content.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:f4a74a15a6142094b4a64bdae5304d1af570ce544c4bb9d9b7c35e1370f8e90b"
   },
   {
@@ -35,7 +35,7 @@
     "attributionText": "JapanGo assessment editorial decisions; original JapanGo JLPT-aligned material and metadata.",
     "redistributionNotes": "Original JapanGo material; not official JLPT content.",
     "role": "supplemental",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:bd1d38c909fc8a21c36a4f773c243c63cbf680cb3401b8444d73912074552b12"
   },
   {
@@ -48,7 +48,7 @@
     "attributionText": "JapanGo audited N5 grammar assessment bridge; original JapanGo JLPT-aligned material and metadata.",
     "redistributionNotes": "Original JapanGo material; not official JLPT content.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:a272b7a6311f7b205941275a3d31edbfeb9b08d98611bf1f8e1dc6047fd3e248"
   },
   {
@@ -61,7 +61,7 @@
     "attributionText": "JapanGo assessment presets; original JapanGo JLPT-aligned material and metadata.",
     "redistributionNotes": "Original JapanGo material; not official JLPT content.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:70f6dd7a385c9477e0e28fa4e711af67e838add90a76d48327872ffc2f9e6c6d"
   },
   {
@@ -74,7 +74,7 @@
     "attributionText": "JapanGo readiness model; original JapanGo JLPT-aligned material and metadata.",
     "redistributionNotes": "Original JapanGo material; not official JLPT content.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:6d5010b3a18679bce7d5fa17d7f09de9b56956eb5f869505f7bcf1f92d098fc5"
   },
   {
@@ -87,7 +87,7 @@
     "attributionText": "JapanGo assessment scoring model; original JapanGo JLPT-aligned material and metadata.",
     "redistributionNotes": "Original JapanGo material; not official JLPT content.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:35b62f1cf9222c2f1ec9a052993d6cb3ac2eeb826311bc839bac97aa443375a2"
   },
   {
@@ -100,7 +100,7 @@
     "attributionText": "Original JapanGo grammar learning questions, options, feedback, and explanations.",
     "redistributionNotes": "Original JapanGo content; it is not official JLPT material and contains no copied examination or textbook questions.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:1801c3afe6019157ee59a1c523ba2362695d60044bcf148d352d16ef388ebdd7"
   },
   {
@@ -113,7 +113,7 @@
     "attributionText": "Original JapanGo kanji learning questions, options, feedback, and explanations.",
     "redistributionNotes": "Original JapanGo content; it is not official JLPT material and contains no copied examination or textbook questions.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:65ccbfb99459f7a5f2706a17d6a0313716c45ef44439e4d1dcebc8440e90978a"
   },
   {
@@ -126,7 +126,7 @@
     "attributionText": "Original JapanGo N4 listening scripts and transcripts.",
     "redistributionNotes": "Original JLPT-aligned JapanGo content; no audio or official examination material.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:00c4b6e4eaa2c3176e94ba66ce705b064a00e712738d5b80a65046b32b7aa7b7"
   },
   {
@@ -139,7 +139,7 @@
     "attributionText": "Original JapanGo N5 listening scripts and transcripts.",
     "redistributionNotes": "Original JLPT-aligned JapanGo content; no audio or official examination material.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:55699a53806de33d5b37bdb7b95dbeacbe9cfe2ec33357d09dcff5e62c263c1d"
   },
   {
@@ -152,7 +152,7 @@
     "attributionText": "JapanGo listening-corpus editorial decisions.",
     "redistributionNotes": "Stores original lifecycle, TTS, and coverage decisions.",
     "role": "supplemental",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:0d823fe5c77af2d2b03da70c44f4de38fd53517b576af07dd5a00d58ecd28fb9"
   },
   {
@@ -165,7 +165,7 @@
     "attributionText": "Original JapanGo listening questions, options, feedback, and explanations.",
     "redistributionNotes": "Contains no copied examination, textbook, podcast, or application content.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:d4f825789ef580ccc074433ad1108a2b67a158f8ac2d4122c5d27cca860d7161"
   },
   {
@@ -178,7 +178,7 @@
     "attributionText": "Original fictional JapanGo speaker metadata.",
     "redistributionNotes": "Contains no real public figures or personal information.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:94b1c68aad642778d91d34af405c7c05bea21a39d44676f1036d6411db82be71"
   },
   {
@@ -191,7 +191,7 @@
     "attributionText": "JapanGo manual N4 grammar curation audit ledger.",
     "redistributionNotes": "Stores classifications and short original reasons, without copied textbook content.",
     "role": "supplemental",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:caa844c92e7148d18327530b5ad7926807d22339d084a8753718401453b3d509"
   },
   {
@@ -204,8 +204,99 @@
     "attributionText": "JapanGo manual curation; textbook references are coverage metadata only.",
     "redistributionNotes": "Contains original classification metadata and concise formation summaries; no textbook prose, examples, exercises, or answer material.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:1458ccaa75fce947a317a341c61868da04c0991d68892b65304b1c2904c6b7a4"
+  },
+  {
+    "id": "japango-n5-grammar-question-corpus",
+    "displayName": "JapanGo original N5 grammar question corpus",
+    "localPath": "assets/docs-reference/japango-questions/n5-grammar-question-corpus.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo content and metadata",
+    "attributionText": "JapanGo original N5 grammar question corpus; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "canonical",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:732093359bf03c6693d09f859372f1103ed38f3ec0d3a4c06555b524011a4e47"
+  },
+  {
+    "id": "japango-phase10-vocabulary-expansion",
+    "displayName": "JapanGo Phase 10 curated vocabulary expansion",
+    "localPath": "assets/docs-reference/japango-phase10/vocabulary-expansion.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo content and metadata",
+    "attributionText": "JapanGo Phase 10 curated vocabulary expansion; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "canonical",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:e393db231f4101277cd987dc57c1b7e62126aa7f748e7af9710cd8072e2db185"
+  },
+  {
+    "id": "japango-phase9-editorial-decisions",
+    "displayName": "JapanGo Phase 9 editorial decisions",
+    "localPath": "assets/docs-reference/japango-phase9/editorial-decisions.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo editorial metadata",
+    "attributionText": "JapanGo Phase 9 editorial decisions; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "supplemental",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:4fe7062b928aa9b96404f56a675d47f68c8dba0d91316d0d9f1e2e008aae1180"
+  },
+  {
+    "id": "japango-phase9-n4-kanji-expansion",
+    "displayName": "JapanGo Phase 9 N4 kanji audit candidates",
+    "localPath": "assets/docs-reference/japango-phase9/n4-kanji-expansion.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo editorial metadata",
+    "attributionText": "JapanGo Phase 9 N4 kanji audit candidates; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "curriculum-reference",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:7da39a9f0f3d8b42785e9710b20fa7b476e7d48cae732e4cdc764361e5cc7d4a"
+  },
+  {
+    "id": "japango-phase9-reference-manifest",
+    "displayName": "JapanGo Phase 9 curriculum audit reference manifest",
+    "localPath": "assets/docs-reference/japango-phase9/curriculum-reference-manifest.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo editorial metadata",
+    "attributionText": "JapanGo Phase 9 curriculum audit reference manifest; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "curriculum-reference",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:7c0f8b1fa55a86e4e19b7668143a580852d0e9b44d15377b9c9dfdfc48fb875e"
+  },
+  {
+    "id": "japango-phase96-kanji-support",
+    "displayName": "JapanGo Phase 9.6 narrow N4 kanji support corpus",
+    "localPath": "assets/docs-reference/japango-phase9/phase96-kanji-support.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo content and metadata",
+    "attributionText": "JapanGo Phase 9.6 narrow N4 kanji support corpus; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "canonical",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:aa3a7e3744153c91b971c7f52ddabe2d8001bbeee59415b98770914fa8419ffa"
+  },
+  {
+    "id": "japango-phase96-kanji-vocabulary-support",
+    "displayName": "JapanGo Phase 9.6 narrow N4 kanji vocabulary support",
+    "localPath": "assets/docs-reference/japango-phase9/phase96-kanji-vocabulary-support.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo content and metadata",
+    "attributionText": "JapanGo Phase 9.6 narrow N4 kanji vocabulary support; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "canonical",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:b759f3fcd6777503e93e06ba6309b6209244a208fe6b86940403641e12e413ee"
   },
   {
     "id": "japango-reading-editorial-decisions",
@@ -217,7 +308,7 @@
     "attributionText": "JapanGo reading-corpus editorial decisions.",
     "redistributionNotes": "Stores original editorial decisions and lifecycle constraints.",
     "role": "supplemental",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:98e089d715b283550205d51c2c8e2a5131911ded38be0c2e61681a57f15e1bb8"
   },
   {
@@ -230,7 +321,7 @@
     "attributionText": "Original JapanGo N4 reading passages and translations.",
     "redistributionNotes": "Original JapanGo content; it is JLPT-aligned, not official JLPT material.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:3d31db45832b2dc1cdd202561bcd6a49634d9f90f89964850bbd5f9926ca0d08"
   },
   {
@@ -243,7 +334,7 @@
     "attributionText": "Original JapanGo N5 reading passages and translations.",
     "redistributionNotes": "Original JapanGo content; it is JLPT-aligned, not official JLPT material.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:e50cd46565e7b5e5e766a5d8886aefdd33107967eeb2775d855cd85b545af00d"
   },
   {
@@ -256,7 +347,7 @@
     "attributionText": "Original JapanGo reading-comprehension questions, options, feedback, and explanations.",
     "redistributionNotes": "Original JapanGo content; it contains no copied examination or textbook questions.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:e503db8a32040eeeaba6da8ec3f6f4f7204234041e04331155a63f3047ca86da"
   },
   {
@@ -269,7 +360,7 @@
     "attributionText": "Original JapanGo N4 grammar examples and translations.",
     "redistributionNotes": "Original JapanGo content; it is not official JLPT material and contains no copied textbook examples.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:4013a4ffc0d6b43dcc77f776db06934a5d07405f7eba10d38591631f23f78279"
   },
   {
@@ -282,7 +373,7 @@
     "attributionText": "Original JapanGo N5 grammar examples and translations.",
     "redistributionNotes": "Original JapanGo content; it is not official JLPT material and contains no copied textbook examples.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:ec273e210e030581f9549c362b525135b5669cc18425288758624cacc966f4f0"
   },
   {
@@ -295,7 +386,7 @@
     "attributionText": "JapanGo sentence-corpus editorial decisions.",
     "redistributionNotes": "Stores original editorial decisions and no third-party example text.",
     "role": "supplemental",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:2134fb5cbd30a470a0312ba4be19c0e07fff75646c13372270790b10c593b6bb"
   },
   {
@@ -308,8 +399,21 @@
     "attributionText": "Original JapanGo vocabulary learning questions, options, feedback, and explanations.",
     "redistributionNotes": "Original JapanGo content; it is not official JLPT material and contains no copied examination, dictionary-example, or textbook questions.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:e62e10b94a65a1034c6a3f8afbe6a39adece7a7cce872069118622ddd9e24cb7"
+  },
+  {
+    "id": "jisho-vocabulary-reference",
+    "displayName": "Jisho vocabulary comparison reference",
+    "localPath": "assets/docs-reference/japango-phase10/vocabulary-expansion.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo editorial metadata",
+    "attributionText": "Jisho vocabulary comparison reference; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "curriculum-reference",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:e393db231f4101277cd987dc57c1b7e62126aa7f748e7af9710cd8072e2db185"
   },
   {
     "id": "jlpt-kanji",
@@ -321,7 +425,7 @@
     "attributionText": "Data/API: kanjiapi.dev; dictionary material: EDRDG; JLPT mapping: Jonathan Waller's JLPT resources.",
     "redistributionNotes": "The supplied README names sources but no complete local licence text; review all upstream terms before release.",
     "role": "mapping",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:fd5f88a5e689123bcfd3c99897ddd8fd8eaba450ce4858255fa3a63f57401523"
   },
   {
@@ -334,7 +438,7 @@
     "attributionText": "Locally supplied JLPT vocabulary mapping; upstream attribution was not included.",
     "redistributionNotes": "Do not publish this source or its mapping-derived output until provenance and redistribution terms are confirmed.",
     "role": "mapping",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:0d77e8bc14e8788d6f8279f9b885009f57f845c88177d8222fea1615a6685f72"
   },
   {
@@ -347,7 +451,7 @@
     "attributionText": "This product uses material from JMdict supplied by the Electronic Dictionary Research and Development Group.",
     "redistributionNotes": "Retain EDRDG attribution, provide an in-app Sources/About acknowledgement, apply ShareAlike where required, and maintain an update procedure. See https://www.edrdg.org/edrdg/licence.html.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:fb2a4aeaff8c816564f0c428ed21460eedf279ac36cf601d1777ed6dd7edb880"
   },
   {
@@ -360,7 +464,7 @@
     "attributionText": "This product uses KANJIDIC2 material supplied by the Electronic Dictionary Research and Development Group.",
     "redistributionNotes": "Retain EDRDG attribution, provide an in-app Sources/About acknowledgement, apply ShareAlike where required, and omit unused specially attributed dictionary/query fields. See https://www.edrdg.org/edrdg/licence.html.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:0fb8f6bedad650e868756bea16737d75f9e34e7b031a69908389e7c88d1e71eb"
   },
   {
@@ -373,7 +477,7 @@
     "attributionText": "KanjiVG © Ulrich Apel and contributors, https://kanjivg.tagaini.net/",
     "redistributionNotes": "Attribution and ShareAlike conditions apply to KanjiVG and adaptations.",
     "role": "canonical",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:cc5e8d01083c389421567a355da06182c8275a69be7d35f282aa920941a2f914"
   },
   {
@@ -386,8 +490,21 @@
     "attributionText": "Locally supplied Kotoba Brew JLPT Grammar Tracker export.",
     "redistributionNotes": "No local licence or provenance file was supplied; publish only after terms are confirmed.",
     "role": "mapping",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:a45cf0f530dca23c7577236c06b70aeb21e5e13cbf8737ca6ac610238ba86b1f"
+  },
+  {
+    "id": "tanos-vocabulary-reference",
+    "displayName": "Tanos JLPT vocabulary comparison reference",
+    "localPath": "assets/docs-reference/japango-phase10/vocabulary-expansion.json",
+    "format": "UTF-8 JSON",
+    "version": "1",
+    "licence": "Original JapanGo editorial metadata",
+    "attributionText": "Tanos JLPT vocabulary comparison reference; original JapanGo JLPT-aligned material and metadata.",
+    "redistributionNotes": "Original JapanGo material; not official JLPT content.",
+    "role": "curriculum-reference",
+    "parserVersion": "7.0.0",
+    "checksum": "sha256:e393db231f4101277cd987dc57c1b7e62126aa7f748e7af9710cd8072e2db185"
   },
   {
     "id": "textbook-genki-i",
@@ -399,7 +516,7 @@
     "attributionText": "Genki I; locally supplied private reference copy.",
     "redistributionNotes": "Never redistribute the PDF, OCR text, explanations, dialogues, exercises, answer keys, examples, transcripts, or illustrations.",
     "role": "curriculum-reference",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:a25622bb7cc96b3937241ede1226938ecb3a45a5c35471ef5724ed58b9e127e9"
   },
   {
@@ -412,7 +529,7 @@
     "attributionText": "Genki II; locally supplied private reference copy.",
     "redistributionNotes": "Never redistribute the PDF, OCR text, explanations, dialogues, exercises, answer keys, examples, transcripts, or illustrations.",
     "role": "curriculum-reference",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:83e583d258677e6c0b20171687884e10de6896da4904d910a671dff893547820"
   },
   {
@@ -425,7 +542,7 @@
     "attributionText": "Minna no Nihongo I; locally supplied private reference copy.",
     "redistributionNotes": "Never redistribute the PDF, OCR text, explanations, dialogues, exercises, answer keys, examples, transcripts, or illustrations.",
     "role": "curriculum-reference",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:3bab78f8c3406ef2eaa47393d3b286ad1785b3b704d847b45ba0463bf9ab3255"
   },
   {
@@ -438,7 +555,7 @@
     "attributionText": "Minna no Nihongo I Grammar; locally supplied private reference copy.",
     "redistributionNotes": "Never redistribute the PDF, OCR text, explanations, dialogues, exercises, answer keys, examples, transcripts, or illustrations.",
     "role": "curriculum-reference",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:04adb332e76e0a1ecd690fac3092fac466219c3e008fa6829d7ec725fae35ca0"
   },
   {
@@ -451,7 +568,7 @@
     "attributionText": "Minna no Nihongo II; locally supplied private reference copy.",
     "redistributionNotes": "Never redistribute the PDF, OCR text, explanations, dialogues, exercises, answer keys, examples, transcripts, or illustrations.",
     "role": "curriculum-reference",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:3a23f998089ff6912859887c1649bc1eb0374906b4cb9c93e5950d3e63e61af3"
   },
   {
@@ -464,7 +581,7 @@
     "attributionText": "Minna no Nihongo II Grammar; locally supplied private reference copy.",
     "redistributionNotes": "Never redistribute the PDF, OCR text, explanations, dialogues, exercises, answer keys, examples, transcripts, or illustrations.",
     "role": "curriculum-reference",
-    "parserVersion": "6.0.0",
+    "parserVersion": "7.0.0",
     "checksum": "sha256:a0d7904234e821d84e4259cd53dc173c61c7e50fa8349364995f82d6b770a3ce"
   }
 ]

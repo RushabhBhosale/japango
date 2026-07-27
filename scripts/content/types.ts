@@ -2,6 +2,12 @@ export type TargetLevel = "N5" | "N4";
 
 export interface JlptVocabularyCandidate {
   sourceRow: number;
+  sourceId?: string;
+  /**
+   * Additional independent comparison evidence retained on the canonical
+   * record. The primary sourceId identifies the local editorial source.
+   */
+  supportingSourceIds?: string[];
   written: string;
   reading: string;
   englishHint: string;
@@ -84,4 +90,3 @@ export interface PdfInspection {
   multiColumn: "detected" | "not-detected" | "unknown";
   notes: string[];
 }
-

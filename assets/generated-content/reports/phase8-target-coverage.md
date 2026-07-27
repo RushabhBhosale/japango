@@ -1,3 +1,3 @@
 # Target coverage
 
-Unique primary targets: 523. Grammar: 77; vocabulary: 192; kanji: 99.
+Unique primary targets: 527. Grammar: 77; vocabulary: 193; kanji: 102.

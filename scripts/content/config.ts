@@ -1,6 +1,6 @@
 import path from "node:path";
 
-export const PIPELINE_VERSION = "6.0.0";
+export const PIPELINE_VERSION = "7.0.0";
 export const CONTENT_SCHEMA_VERSION = "2.2.0";
 
 export const PROJECT_ROOT = path.resolve(import.meta.dirname, "../..");
@@ -86,6 +86,16 @@ export const SOURCE_PATHS = {
   assessmentReadinessModel: path.join(SOURCE_ROOT, "japango-assessments/readiness-model.json"),
   assessmentEditorialDecisions: path.join(SOURCE_ROOT, "japango-assessments/assessment-editorial-decisions.json"),
   assessmentN5GrammarBridge: path.join(SOURCE_ROOT, "japango-assessments/n5-grammar-bridge-questions.json"),
+  phase9ReferenceManifest: path.join(SOURCE_ROOT, "japango-phase9/curriculum-reference-manifest.json"),
+  phase9KanjiExpansion: path.join(SOURCE_ROOT, "japango-phase9/n4-kanji-expansion.json"),
+  phase9EditorialDecisions: path.join(SOURCE_ROOT, "japango-phase9/editorial-decisions.json"),
+  phase96KanjiSupport: path.join(SOURCE_ROOT, "japango-phase9/phase96-kanji-support.json"),
+  phase96KanjiVocabularySupport: path.join(SOURCE_ROOT, "japango-phase9/phase96-kanji-vocabulary-support.json"),
+  phase10VocabularyExpansion: path.join(
+    SOURCE_ROOT,
+    "japango-phase10/vocabulary-expansion.json",
+  ),
+  n5GrammarQuestionCorpus: path.join(SOURCE_ROOT, "japango-questions/n5-grammar-question-corpus.json"),
 } as const;
 
 export const TEXTBOOKS = [

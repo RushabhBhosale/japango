@@ -33,6 +33,20 @@ function candidateKey(candidate: JlptVocabularyCandidate): string {
   return `${candidate.written}\u0000${candidate.reading}`;
 }
 
+function candidateSources(candidate: JlptVocabularyCandidate) {
+  const sourceRecordId = `row-${candidate.sourceRow}`;
+  return [
+    {
+      sourceId: candidate.sourceId ?? "jlpt-vocabulary",
+      sourceRecordId,
+    },
+    ...(candidate.supportingSourceIds ?? []).map((sourceId) => ({
+      sourceId,
+      sourceRecordId,
+    })),
+  ];
+}
+
 function matchConfidence(method: string): number {
   if (method === "exact") return 0.99;
   if (method === "normalized") return 0.96;
@@ -80,7 +94,7 @@ export async function mergeVocabulary(
         type: "vocabulary",
         identity: key.replace("\u0000", " / "),
         candidateLevels: levels,
-        supportingSources: sourceRows.map((row) => ({ sourceId: "jlpt-vocabulary", row })),
+        supportingSources: grouped.map(({ candidate }) => ({ sourceId: candidate.sourceId ?? "jlpt-vocabulary", row: candidate.sourceRow })),
         chosenLevel: "unknown",
         resolutionRule: "Internal mapping disagreement is not guessed; record is supplemental pending review.",
         confidence: 0,
@@ -158,10 +172,7 @@ export async function mergeVocabulary(
       jlpt: {
         level,
         confidence: levels.length === 1 ? 0.99 : 0,
-        sources: sourceRows.map((row) => ({
-          sourceId: "jlpt-vocabulary",
-          sourceRecordId: `row-${row}`,
-        })),
+        sources: grouped.flatMap(({ candidate }) => candidateSources(candidate)),
         conflicts: levels.length > 1 ? [`Conflicting levels: ${levels.join(", ")}`] : [],
       },
       kanjiIds: extractKanji(primaryForm)
@@ -174,10 +185,7 @@ export async function mergeVocabulary(
       examples: [],
       sources: [
         { sourceId: "jmdict", sourceRecordId: String(match.sequence) },
-        ...sourceRows.map((row) => ({
-          sourceId: "jlpt-vocabulary",
-          sourceRecordId: `row-${row}`,
-        })),
+        ...grouped.flatMap(({ candidate }) => candidateSources(candidate)),
       ],
       attribution: [
         "JMdict data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",

@@ -5,7 +5,7 @@
 | Value | Count |
 | --- | ---: |
 | appointments | 74 |
-| daily-life | 77 |
+| daily-life | 629 |
 | directions | 73 |
 | family | 78 |
 | food | 36 |
@@ -27,8 +27,9 @@
 | --- | ---: |
 | honorific | 21 |
 | humble | 5 |
+| neutral | 522 |
 | plain | 284 |
-| polite | 506 |
+| polite | 536 |
 
 ## Sentence types
 
@@ -39,6 +40,6 @@
 | prohibition | 5 |
 | question | 71 |
 | reported-speech | 72 |
-| request | 43 |
-| statement | 594 |
+| request | 46 |
+| statement | 1143 |
 | suggestion | 11 |

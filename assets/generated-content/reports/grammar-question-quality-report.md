@@ -7,7 +7,7 @@ Automated validation checks structure, canonical relationships, level boundaries
 | Questions without exactly four options | 0 | pass |
 | Questions without explanations | 0 | pass |
 | Options without feedback | 0 | pass |
-| Exact duplicate prompts | 0 | pass |
-| Duplicate option sets within a question | 0 | pass |
-| Release questions targeting excluded grammar | 30 | pass |
+| Exact duplicate prompts | 12 | review |
+| Duplicate option sets within a question | 61 | review |
+| Release questions targeting excluded grammar | 1022 | pass |
 | New sentence references | 0 | pass |

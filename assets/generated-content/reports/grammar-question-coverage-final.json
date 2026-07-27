@@ -1306,7 +1306,8 @@
       "sentence-n4-u2d-ato-u2d-de-contrast-aware",
       "sentence-n4-u2d-ato-u2d-de-core",
       "sentence-n4-u2d-ato-u2d-de-real-life",
-      "sentence-n4-u2d-ato-u2d-de-structural-variation"
+      "sentence-n4-u2d-ato-u2d-de-structural-variation",
+      "sentence-n4-zphase96-jimusho"
     ],
     "curriculumUnitIds": [
       "n4-unit-005",
@@ -1370,7 +1371,8 @@
       "sentence-n4-u2d-baai-u2d-wa-contrast-aware",
       "sentence-n4-u2d-baai-u2d-wa-core",
       "sentence-n4-u2d-baai-u2d-wa-real-life",
-      "sentence-n4-u2d-baai-u2d-wa-structural-variation"
+      "sentence-n4-u2d-baai-u2d-wa-structural-variation",
+      "sentence-n4-zphase96-oogata"
     ],
     "curriculumUnitIds": [
       "n4-unit-015"
@@ -1404,8 +1406,8 @@
       "sentence-n4-u2d-bakari-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-028",
-      "n4-unit-029"
+      "n4-unit-029",
+      "n4-unit-030"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-bakari-context-application-1",
@@ -1436,8 +1438,8 @@
       "sentence-n4-u2d-causative-u2d-form-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-023",
-      "n4-unit-024"
+      "n4-unit-024",
+      "n4-unit-025"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-causative-form-context-application-1",
@@ -1468,7 +1470,7 @@
       "sentence-n4-u2d-causative-u2d-passive-u2d-form-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-024"
+      "n4-unit-025"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-causative-passive-form-context-application-1",
@@ -1499,8 +1501,8 @@
       "sentence-n4-u2d-dake-u2d-de-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-027",
-      "n4-unit-028"
+      "n4-unit-028",
+      "n4-unit-029"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-dake-de-context-application-1",
@@ -1563,8 +1565,8 @@
       "sentence-n4-u2d-de-u2d-gozaimasu-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-036",
-      "n4-unit-037"
+      "n4-unit-037",
+      "n4-unit-038"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-de-gozaimasu-context-application-1",
@@ -1595,8 +1597,8 @@
       "sentence-n4-u2d-demo-u2d-alternatives-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-029",
-      "n4-unit-030"
+      "n4-unit-030",
+      "n4-unit-031"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-demo-alternatives-context-application-1",
@@ -1627,7 +1629,7 @@
       "sentence-n4-u2d-dewa-u2d-nai-u2d-ka-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-034"
+      "n4-unit-035"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-dewa-nai-ka-context-application-1",
@@ -1658,8 +1660,8 @@
       "sentence-n4-u2d-ga-u2d-suru-u2d-senses-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-030",
-      "n4-unit-031"
+      "n4-unit-031",
+      "n4-unit-032"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-ga-suru-senses-context-application-1",
@@ -1690,7 +1692,7 @@
       "sentence-n4-u2d-gari-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-031"
+      "n4-unit-032"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-gari-context-application-1",
@@ -1721,8 +1723,8 @@
       "sentence-n4-u2d-garu-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-030",
-      "n4-unit-031"
+      "n4-unit-031",
+      "n4-unit-032"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-garu-context-application-1",
@@ -1753,7 +1755,7 @@
       "sentence-n4-u2d-gozaimasu-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-037"
+      "n4-unit-038"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-gozaimasu-context-application-1",
@@ -1781,7 +1783,9 @@
       "sentence-n4-u2d-hajimeru-contrast-aware",
       "sentence-n4-u2d-hajimeru-core",
       "sentence-n4-u2d-hajimeru-real-life",
-      "sentence-n4-u2d-hajimeru-structural-variation"
+      "sentence-n4-u2d-hajimeru-structural-variation",
+      "sentence-n4-zphase96-shouten",
+      "sentence-n4-zphase96-tsutomeru"
     ],
     "curriculumUnitIds": [
       "n4-unit-009"
@@ -1847,7 +1851,7 @@
       "sentence-n4-u2d-hazu-u2d-ga-u2d-nai-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-020"
+      "n4-unit-021"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-hazu-ga-nai-context-application-1",
@@ -1907,11 +1911,12 @@
       "sentence-n4-u2d-hodo-contrast-aware",
       "sentence-n4-u2d-hodo-core",
       "sentence-n4-u2d-hodo-real-life",
-      "sentence-n4-u2d-hodo-structural-variation"
+      "sentence-n4-u2d-hodo-structural-variation",
+      "sentence-n4-zphase96-kantan"
     ],
     "curriculumUnitIds": [
-      "n4-unit-027",
-      "n4-unit-028"
+      "n4-unit-028",
+      "n4-unit-029"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-hodo-context-application-1",
@@ -1942,8 +1947,8 @@
       "sentence-n4-u2d-irassharu-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-037",
-      "n4-unit-038"
+      "n4-unit-038",
+      "n4-unit-039"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-irassharu-context-application-1",
@@ -1974,7 +1979,7 @@
       "sentence-n4-u2d-itasu-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-038"
+      "n4-unit-039"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-itasu-context-application-1",
@@ -2037,8 +2042,8 @@
       "sentence-n4-u2d-kai-u2d-question-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-034",
-      "n4-unit-035"
+      "n4-unit-035",
+      "n4-unit-036"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-kai-question-context-application-1",
@@ -2069,8 +2074,8 @@
       "sentence-n4-u2d-kamo-u2d-shirenai-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-020",
-      "n4-unit-021"
+      "n4-unit-021",
+      "n4-unit-022"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-kamo-shirenai-context-application-1",
@@ -2101,7 +2106,7 @@
       "sentence-n4-u2d-kana-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-035"
+      "n4-unit-036"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-kana-context-application-1",
@@ -2132,7 +2137,7 @@
       "sentence-n4-u2d-kara-u2d-tsukuru-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-026"
+      "n4-unit-027"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-kara-tsukuru-context-application-1",
@@ -2163,8 +2168,8 @@
       "sentence-n4-u2d-kashira-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-034",
-      "n4-unit-035"
+      "n4-unit-035",
+      "n4-unit-036"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-kashira-context-application-1",
@@ -2224,7 +2229,9 @@
       "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-contrast-aware",
       "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-core",
       "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-real-life",
-      "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-structural-variation"
+      "sentence-n4-u2d-koto-u2d-ga-u2d-aru-u2d-occasional-structural-variation",
+      "sentence-n4-zphase96-bunka",
+      "sentence-n4-zphase96-jouken"
     ],
     "curriculumUnitIds": [
       "n4-unit-006",
@@ -2259,8 +2266,8 @@
       "sentence-n4-u2d-koto-u2d-ga-u2d-dekiru-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-022",
-      "n4-unit-023"
+      "n4-unit-023",
+      "n4-unit-024"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-koto-ga-dekiru-context-application-1",
@@ -2288,7 +2295,9 @@
       "sentence-n4-u2d-koto-u2d-ni-u2d-naru-contrast-aware",
       "sentence-n4-u2d-koto-u2d-ni-u2d-naru-core",
       "sentence-n4-u2d-koto-u2d-ni-u2d-naru-real-life",
-      "sentence-n4-u2d-koto-u2d-ni-u2d-naru-structural-variation"
+      "sentence-n4-u2d-koto-u2d-ni-u2d-naru-structural-variation",
+      "sentence-n4-zphase96-jitsuha",
+      "sentence-n4-zphase96-shikai"
     ],
     "curriculumUnitIds": [
       "n4-unit-018",
@@ -2320,7 +2329,8 @@
       "sentence-n4-u2d-koto-u2d-ni-u2d-suru-contrast-aware",
       "sentence-n4-u2d-koto-u2d-ni-u2d-suru-core",
       "sentence-n4-u2d-koto-u2d-ni-u2d-suru-real-life",
-      "sentence-n4-u2d-koto-u2d-ni-u2d-suru-structural-variation"
+      "sentence-n4-u2d-koto-u2d-ni-u2d-suru-structural-variation",
+      "sentence-n4-zphase96-keiei"
     ],
     "curriculumUnitIds": [
       "n4-unit-018",
@@ -2386,8 +2396,8 @@
       "sentence-n4-u2d-ku-u2d-suru-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-026",
-      "n4-unit-027"
+      "n4-unit-027",
+      "n4-unit-028"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-ku-suru-context-application-1",
@@ -2481,7 +2491,7 @@
       "sentence-n4-u2d-mitai-u2d-da-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-022"
+      "n4-unit-023"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-mitai-da-context-application-1",
@@ -2512,8 +2522,8 @@
       "sentence-n4-u2d-mo-u2d-quantity-u2d-emphasis-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-028",
-      "n4-unit-029"
+      "n4-unit-029",
+      "n4-unit-030"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-mo-quantity-emphasis-context-application-1",
@@ -2544,7 +2554,7 @@
       "sentence-n4-u2d-nado-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-029"
+      "n4-unit-030"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-nado-context-application-1",
@@ -2607,8 +2617,8 @@
       "sentence-n4-u2d-nakanaka-u2d-nai-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-031",
-      "n4-unit-032"
+      "n4-unit-032",
+      "n4-unit-033"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-nakanaka-nai-context-application-1",
@@ -2699,7 +2709,8 @@
       "sentence-n4-u2d-nara-contrast-aware",
       "sentence-n4-u2d-nara-core",
       "sentence-n4-u2d-nara-real-life",
-      "sentence-n4-u2d-nara-structural-variation"
+      "sentence-n4-u2d-nara-structural-variation",
+      "sentence-n4-zphase96-otto"
     ],
     "curriculumUnitIds": [
       "n4-unit-014",
@@ -2766,8 +2777,8 @@
       "sentence-n4-u2d-nasaru-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-037",
-      "n4-unit-038"
+      "n4-unit-038",
+      "n4-unit-039"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-nasaru-context-application-1",
@@ -2798,8 +2809,8 @@
       "sentence-n4-u2d-ni-u2d-mieru-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-022",
-      "n4-unit-023"
+      "n4-unit-023",
+      "n4-unit-024"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-ni-mieru-context-application-1",
@@ -2827,10 +2838,11 @@
       "sentence-n4-u2d-nikui-contrast-aware",
       "sentence-n4-u2d-nikui-core",
       "sentence-n4-u2d-nikui-real-life",
-      "sentence-n4-u2d-nikui-structural-variation"
+      "sentence-n4-u2d-nikui-structural-variation",
+      "sentence-n4-zphase96-katai"
     ],
     "curriculumUnitIds": [
-      "n4-unit-032"
+      "n4-unit-033"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-nikui-context-application-1",
@@ -2861,7 +2873,7 @@
       "sentence-n4-u2d-noni-u2d-contrast-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-033"
+      "n4-unit-034"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-noni-contrast-context-application-1",
@@ -2892,8 +2904,8 @@
       "sentence-n4-u2d-noni-u2d-purpose-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-025",
-      "n4-unit-026"
+      "n4-unit-026",
+      "n4-unit-027"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-noni-purpose-context-application-1",
@@ -2921,7 +2933,8 @@
       "sentence-n4-u2d-nowa-u2d-da-contrast-aware",
       "sentence-n4-u2d-nowa-u2d-da-core",
       "sentence-n4-u2d-nowa-u2d-da-real-life",
-      "sentence-n4-u2d-nowa-u2d-da-structural-variation"
+      "sentence-n4-u2d-nowa-u2d-da-structural-variation",
+      "sentence-n4-zphase96-kyoutsu"
     ],
     "curriculumUnitIds": [
       "n4-unit-001",
@@ -2956,7 +2969,7 @@
       "sentence-n4-u2d-o-u2d-kudasai-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-038"
+      "n4-unit-039"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-o-kudasai-context-application-1",
@@ -2987,7 +3000,7 @@
       "sentence-n4-u2d-o-u2d-ni-u2d-naru-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-038"
+      "n4-unit-039"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-o-ni-naru-context-application-1",
@@ -3065,8 +3078,8 @@
       "sentence-n4-u2d-passive-u2d-form-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-023",
-      "n4-unit-024"
+      "n4-unit-024",
+      "n4-unit-025"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-passive-form-context-application-1",
@@ -3097,7 +3110,7 @@
       "sentence-n4-u2d-potential-u2d-form-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-023"
+      "n4-unit-024"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-potential-form-context-application-1",
@@ -3128,8 +3141,8 @@
       "sentence-n4-u2d-rashii-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-021",
-      "n4-unit-022"
+      "n4-unit-022",
+      "n4-unit-023"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-rashii-context-application-1",
@@ -3192,8 +3205,8 @@
       "sentence-n4-u2d-sasete-u2d-kudasai-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-024",
-      "n4-unit-025"
+      "n4-unit-025",
+      "n4-unit-026"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-sasete-kudasai-context-application-1",
@@ -3224,8 +3237,8 @@
       "sentence-n4-u2d-shi-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-033",
-      "n4-unit-034"
+      "n4-unit-034",
+      "n4-unit-035"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-shi-context-application-1",
@@ -3256,7 +3269,7 @@
       "sentence-n4-u2d-shika-u2d-nai-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-028"
+      "n4-unit-029"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-shika-nai-context-application-1",
@@ -3287,8 +3300,8 @@
       "sentence-n4-u2d-sore-u2d-demo-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-033",
-      "n4-unit-034"
+      "n4-unit-034",
+      "n4-unit-035"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-sore-demo-context-application-1",
@@ -3319,7 +3332,7 @@
       "sentence-n4-u2d-souda-u2d-appearance-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-021"
+      "n4-unit-022"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-souda-appearance-context-application-1",
@@ -3350,8 +3363,8 @@
       "sentence-n4-u2d-souda-u2d-hearsay-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-020",
-      "n4-unit-021"
+      "n4-unit-021",
+      "n4-unit-022"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-souda-hearsay-context-application-1",
@@ -3445,8 +3458,8 @@
       "sentence-n4-u2d-tagaru-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-031",
-      "n4-unit-032"
+      "n4-unit-032",
+      "n4-unit-033"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-tagaru-context-application-1",
@@ -3477,7 +3490,7 @@
       "sentence-n4-u2d-tame-u2d-ni-u2d-purpose-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-025"
+      "n4-unit-026"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-tame-ni-purpose-context-application-1",
@@ -3631,7 +3644,9 @@
       "sentence-n4-u2d-te-u2d-aru-contrast-aware",
       "sentence-n4-u2d-te-u2d-aru-core",
       "sentence-n4-u2d-te-u2d-aru-real-life",
-      "sentence-n4-u2d-te-u2d-aru-structural-variation"
+      "sentence-n4-u2d-te-u2d-aru-structural-variation",
+      "sentence-n4-zphase96-futon",
+      "sentence-n4-zphase96-ryougawa"
     ],
     "curriculumUnitIds": [
       "n4-unit-011",
@@ -3666,8 +3681,8 @@
       "sentence-n4-u2d-te-u2d-de-u2d-cause-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-036",
-      "n4-unit-037"
+      "n4-unit-037",
+      "n4-unit-038"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-te-de-cause-context-application-1",
@@ -3854,7 +3869,9 @@
       "sentence-n4-u2d-te-u2d-miru-contrast-aware",
       "sentence-n4-u2d-te-u2d-miru-core",
       "sentence-n4-u2d-te-u2d-miru-real-life",
-      "sentence-n4-u2d-te-u2d-miru-structural-variation"
+      "sentence-n4-u2d-te-u2d-miru-structural-variation",
+      "sentence-n4-zphase96-kakkoku",
+      "sentence-n4-zphase96-kankei"
     ],
     "curriculumUnitIds": [
       "n4-unit-010",
@@ -3917,7 +3934,8 @@
       "sentence-n4-u2d-te-u2d-oku-contrast-aware",
       "sentence-n4-u2d-te-u2d-oku-core",
       "sentence-n4-u2d-te-u2d-oku-real-life",
-      "sentence-n4-u2d-te-u2d-oku-structural-variation"
+      "sentence-n4-u2d-te-u2d-oku-structural-variation",
+      "sentence-n4-zphase96-norikae"
     ],
     "curriculumUnitIds": [
       "n4-unit-010",
@@ -3983,8 +4001,8 @@
       "sentence-n4-u2d-te-u2d-sumimasen-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-035",
-      "n4-unit-036"
+      "n4-unit-036",
+      "n4-unit-037"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-te-sumimasen-context-application-1",
@@ -4047,8 +4065,8 @@
       "sentence-n4-u2d-te-u2d-yokatta-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-035",
-      "n4-unit-036"
+      "n4-unit-036",
+      "n4-unit-037"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-te-yokatta-context-application-1",
@@ -4139,7 +4157,8 @@
       "sentence-n4-u2d-to-u2d-conditional-contrast-aware",
       "sentence-n4-u2d-to-u2d-conditional-core",
       "sentence-n4-u2d-to-u2d-conditional-real-life",
-      "sentence-n4-u2d-to-u2d-conditional-structural-variation"
+      "sentence-n4-u2d-to-u2d-conditional-structural-variation",
+      "sentence-n4-zphase96-mukau"
     ],
     "curriculumUnitIds": [
       "n4-unit-014",
@@ -4174,7 +4193,7 @@
       "sentence-n4-u2d-to-u2d-ittemo-u2d-ii-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-036"
+      "n4-unit-037"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-to-ittemo-ii-context-application-1",
@@ -4199,6 +4218,528 @@
     "pattern": "～という",
     "releaseReady": true,
     "approvedExampleSentenceIds": [
+      "sentence-n4-phase10-u3042u3061u3053u3061-u3042u3061u3053u3061",
+      "sentence-n4-phase10-u3044u305fu305au3089-u3044u305fu305au3089",
+      "sentence-n4-phase10-u3044u3089u3044u3089-u3044u3089u3044u3089",
+      "sentence-n4-phase10-u3046u3055u304e-u3046u3055u304e",
+      "sentence-n4-phase10-u3046u3063u304bu308a-u3046u3063u304bu308a",
+      "sentence-n4-phase10-u3048u3055-u3048u3055",
+      "sentence-n4-phase10-u304bu306au308a-u304bu306au308a",
+      "sentence-n4-phase10-u3051u304c-u3051u304c",
+      "sentence-n4-phase10-u3053u306eu307eu307e-u3053u306eu307eu307e",
+      "sentence-n4-phase10-u3053u308cu3089-u3053u308cu3089",
+      "sentence-n4-phase10-u3053u3093u306au306b-u3053u3093u306au306b",
+      "sentence-n4-phase10-u3055u3063u3071u308a-u3055u3063u3071u308a",
+      "sentence-n4-phase10-u3057u304bu3082-u3057u304bu3082",
+      "sentence-n4-phase10-u3057u3070u3057u3070-u3057u3070u3057u3070",
+      "sentence-n4-phase10-u3057u3083u3079u308b-u3057u3083u3079u308b",
+      "sentence-n4-phase10-u3058u3063u3068-u3058u3063u3068",
+      "sentence-n4-phase10-u3059u308cu9055u3046-u3059u308cu3061u304cu3046",
+      "sentence-n4-phase10-u305au3063u3068-u305au3063u3068",
+      "sentence-n4-phase10-u305au308cu308b-u305au308cu308b",
+      "sentence-n4-phase10-u305du306eu4ed6-u305du306eu307bu304b",
+      "sentence-n4-phase10-u305du308cu305eu308c-u305du308cu305eu308c",
+      "sentence-n4-phase10-u3068u3093u3067u3082u306au3044-u3068u3093u3067u3082u306au3044",
+      "sentence-n4-phase10-u306bu3063u3053u308a-u306bu3063u3053u308a",
+      "sentence-n4-phase10-u306eu3093u3073u308a-u306eu3093u3073u308a",
+      "sentence-n4-phase10-u30a2u30a4u30b9u30afu30eau30fcu30e0-u3042u3044u3059u304fu308au30fcu3080",
+      "sentence-n4-phase10-u30a2u30ebu30d0u30e0-u3042u308bu3070u3080",
+      "sentence-n4-phase10-u30a4u30f3u30af-u3044u3093u304f",
+      "sentence-n4-phase10-u30a4u30f3u30bfu30d3u30e5u30fc-u3044u3093u305fu3073u3085u30fc",
+      "sentence-n4-phase10-u30a8u30f3u30b8u30f3-u3048u3093u3058u3093",
+      "sentence-n4-phase10-u30b8u30a7u30c3u30c8u6a5f-u3058u3047u3063u3068u304d",
+      "sentence-n4-phase10-u30b8u30fcu30f3u30ba-u3058u30fcu3093u305a",
+      "sentence-n4-phase10-u30b9u30a4u30c3u30c1-u3059u3044u3063u3061",
+      "sentence-n4-phase10-u30b9u30adu30fc-u3059u304du30fc",
+      "sentence-n4-phase10-u30b9u30b1u30b8u30e5u30fcu30eb-u3059u3051u3058u3085u30fcu308b",
+      "sentence-n4-phase10-u30b9u30b1u30fcu30c8-u3059u3051u30fcu3068",
+      "sentence-n4-phase10-u30b9u30d4u30fcu30c1-u3059u3074u30fcu3061",
+      "sentence-n4-phase10-u30bbu30c3u30c8-u305bu3063u3068",
+      "sentence-n4-phase10-u30ceu30c3u30af-u306eu3063u304f",
+      "sentence-n4-phase10-u30cfu30a4u30adu30f3u30b0-u306fu3044u304du3093u3050",
+      "sentence-n4-phase10-u30d0u30e9u30f3u30b9-u3070u3089u3093u3059",
+      "sentence-n4-phase10-u30d1u30a4u30edu30c3u30c8-u3071u3044u308du3063u3068",
+      "sentence-n4-phase10-u30d1u30fcu30bbu30f3u30c8-u3071u30fcu305bu3093u3068",
+      "sentence-n4-phase10-u4e00u4f53-u3044u3063u305fu3044",
+      "sentence-n4-phase10-u4e00u5bb6-u3044u3063u304b",
+      "sentence-n4-phase10-u4e00u5c64-u3044u3063u305du3046",
+      "sentence-n4-phase10-u4e00u5ea6u306b-u3044u3061u3069u306b",
+      "sentence-n4-phase10-u4e00u65b9-u3044u3063u307du3046",
+      "sentence-n4-phase10-u4e00u77ac-u3044u3063u3057u3085u3093",
+      "sentence-n4-phase10-u4e00u7a2e-u3044u3063u3057u3085",
+      "sentence-n4-phase10-u4e00u81f4-u3044u3063u3061",
+      "sentence-n4-phase10-u4e00u822c-u3044u3063u3071u3093",
+      "sentence-n4-phase10-u4e0bu308du3059-u304au308du3059",
+      "sentence-n4-phase10-u4e0eu3048u308b-u3042u305fu3048u308b",
+      "sentence-n4-phase10-u4e16u7d00-u305bu3044u304d",
+      "sentence-n4-phase10-u4e16u9593-u305bu3051u3093",
+      "sentence-n4-phase10-u4e18-u304au304b",
+      "sentence-n4-phase10-u4e2du592e-u3061u3085u3046u304au3046",
+      "sentence-n4-phase10-u4e2du5b66-u3061u3085u3046u304cu304f",
+      "sentence-n4-phase10-u4e2du8eab-u306au304bu307f",
+      "sentence-n4-phase10-u4e3bu306b-u304au3082u306b",
+      "sentence-n4-phase10-u4e3bu5a66-u3057u3085u3075",
+      "sentence-n4-phase10-u4e57u305bu308b-u306eu305bu308b",
+      "sentence-n4-phase10-u4e57u5ba2-u3058u3087u3046u304du3083u304f",
+      "sentence-n4-phase10-u4e7eu304bu3059-u304bu308fu304bu3059",
+      "sentence-n4-phase10-u4e89u3046-u3042u3089u305du3046",
+      "sentence-n4-phase10-u4e8bu4ef6-u3058u3051u3093",
+      "sentence-n4-phase10-u4e8bu524d-u3058u305cu3093",
+      "sentence-n4-phase10-u4e8bu5b9f-u3058u3058u3064",
+      "sentence-n4-phase10-u4e8bu60c5-u3058u3058u3087u3046",
+      "sentence-n4-phase10-u4e8bu696d-u3058u304eu3087u3046",
+      "sentence-n4-phase10-u4e92u3044-u305fu304cu3044",
+      "sentence-n4-phase10-u4ea1u304fu3059-u306au304fu3059",
+      "sentence-n4-phase10-u4ea4u63db-u3053u3046u304bu3093",
+      "sentence-n4-phase10-u4ebau6c17-u306bu3093u304d",
+      "sentence-n4-phase10-u4ebau751f-u3058u3093u305bu3044",
+      "sentence-n4-phase10-u4ebau9593-u306bu3093u3052u3093",
+      "sentence-n4-phase10-u4ecau306b-u3044u307eu306b",
+      "sentence-n4-phase10-u4ecau5f8c-u3053u3093u3054",
+      "sentence-n4-phase10-u4ed5u4e0au3052u308b-u3057u3042u3052u308b",
+      "sentence-n4-phase10-u4ed8u304du5408u3046-u3064u304du3042u3046",
+      "sentence-n4-phase10-u4ee3u8868-u3060u3044u3072u3087u3046",
+      "sentence-n4-phase10-u4ee5u524d-u3044u305cu3093",
+      "sentence-n4-phase10-u4ee5u6765-u3044u3089u3044",
+      "sentence-n4-phase10-u4ef2-u306au304b",
+      "sentence-n4-phase10-u4ef2u9593-u306au304bu307e",
+      "sentence-n4-phase10-u4f1du7d71-u3067u3093u3068u3046",
+      "sentence-n4-phase10-u4f38u3070u3059-u306eu3070u3059",
+      "sentence-n4-phase10-u4f38u3073u308b-u306eu3073u308b",
+      "sentence-n4-phase10-u4f3cu5408u3046-u306bu3042u3046",
+      "sentence-n4-phase10-u4f4du7f6e-u3044u3061",
+      "sentence-n4-phase10-u4f4fu5b85-u3058u3085u3046u305fu304f",
+      "sentence-n4-phase10-u4f4fu6c11-u3058u3085u3046u307fu3093",
+      "sentence-n4-phase10-u4f55u3068u304b-u306au3093u3068u304b",
+      "sentence-n4-phase10-u4f5cu54c1-u3055u304fu3072u3093",
+      "sentence-n4-phase10-u4f5cu5bb6-u3055u3063u304b",
+      "sentence-n4-phase10-u4f5cu66f2-u3055u3063u304du3087u304f",
+      "sentence-n4-phase10-u4f5cu696d-u3055u304eu3087u3046",
+      "sentence-n4-phase10-u4f5cu6cd5-u3055u307bu3046",
+      "sentence-n4-phase10-u4f7fu7528-u3057u3088u3046",
+      "sentence-n4-phase10-u4f9du983c-u3044u3089u3044",
+      "sentence-n4-phase10-u4fa1u683c-u304bu304bu304f",
+      "sentence-n4-phase10-u4fe1u3058u308b-u3057u3093u3058u308b",
+      "sentence-n4-phase10-u4fe1u53f7-u3057u3093u3054u3046",
+      "sentence-n4-phase10-u4fe1u983c-u3057u3093u3089u3044",
+      "sentence-n4-phase10-u4feeu6b63-u3057u3085u3046u305bu3044",
+      "sentence-n4-phase10-u4feeu7406-u3057u3085u3046u308a",
+      "sentence-n4-phase10-u5012u3059-u305fu304au3059",
+      "sentence-n4-phase10-u501fu91d1-u3057u3083u3063u304du3093",
+      "sentence-n4-phase10-u5076u7136-u3050u3046u305cu3093",
+      "sentence-n4-phase10-u512au308cu308b-u3059u3050u308cu308b",
+      "sentence-n4-phase10-u5148u307bu3069-u3055u304du307bu3069",
+      "sentence-n4-phase10-u5150u7ae5-u3058u3069u3046",
+      "sentence-n4-phase10-u5165u5834-u306bu3085u3046u3058u3087u3046",
+      "sentence-n4-phase10-u5168u3066-u3059u3079u3066",
+      "sentence-n4-phase10-u5171u306b-u3068u3082u306b",
+      "sentence-n4-phase10-u518du3073-u3075u305fu305fu3073",
+      "sentence-n4-phase10-u518du4f1a-u3055u3044u304bu3044",
+      "sentence-n4-phase10-u5197u8ac7-u3058u3087u3046u3060u3093",
+      "sentence-n4-phase10-u5199u308b-u3046u3064u308b",
+      "sentence-n4-phase10-u5199u771fu5bb6-u3057u3083u3057u3093u304b",
+      "sentence-n4-phase10-u51b7u307eu3059-u3055u307eu3059",
+      "sentence-n4-phase10-u51b7u3081u308b-u3055u3081u308b",
+      "sentence-n4-phase10-u51fau5e2d-u3057u3085u3063u305bu304d",
+      "sentence-n4-phase10-u51fau7248-u3057u3085u3063u3071u3093",
+      "sentence-n4-phase10-u51fau8eab-u3057u3085u3063u3057u3093",
+      "sentence-n4-phase10-u5224u65ad-u306fu3093u3060u3093",
+      "sentence-n4-phase10-u5236u5ea6-u305bu3044u3069",
+      "sentence-n4-phase10-u5236u9650-u305bu3044u3052u3093",
+      "sentence-n4-phase10-u523au6fc0-u3057u3052u304d",
+      "sentence-n4-phase10-u52a0u3048u308b-u304fu308fu3048u308b",
+      "sentence-n4-phase10-u52b9u679c-u3053u3046u304b",
+      "sentence-n4-phase10-u52d5u304bu3059-u3046u3054u304bu3059",
+      "sentence-n4-phase10-u52ddu3061-u304bu3061",
+      "sentence-n4-phase10-u52e2u3044-u3044u304du304au3044",
+      "sentence-n4-phase10-u52e7u3081u308b-u3059u3059u3081u308b",
+      "sentence-n4-phase10-u5316u5b66-u304bu304cu304f",
+      "sentence-n4-phase10-u5316u7ca7-u3051u3057u3087u3046",
+      "sentence-n4-phase10-u533bu5e2b-u3044u3057",
+      "sentence-n4-phase10-u533bu7642-u3044u308au3087u3046",
+      "sentence-n4-phase10-u535au58eb-u306fu304bu305b",
+      "sentence-n4-phase10-u535au7269u9928-u306fu304fu3076u3064u304bu3093",
+      "sentence-n4-phase10-u5360u3081u308b-u3057u3081u308b",
+      "sentence-n4-phase10-u5370-u3057u308bu3057",
+      "sentence-n4-phase10-u5370u5237-u3044u3093u3055u3064",
+      "sentence-n4-phase10-u5370u8c61-u3044u3093u3057u3087u3046",
+      "sentence-n4-phase10-u5371u6a5f-u304du304d",
+      "sentence-n4-phase10-u53bbu308b-u3055u308b",
+      "sentence-n4-phase10-u53c2u8003-u3055u3093u3053u3046",
+      "sentence-n4-phase10-u53cb-u3068u3082",
+      "sentence-n4-phase10-u53cdu7701-u306fu3093u305bu3044",
+      "sentence-n4-phase10-u53ceu3081u308b-u304au3055u3081u308b",
+      "sentence-n4-phase10-u53ceu7a6b-u3057u3085u3046u304bu304f",
+      "sentence-n4-phase10-u53d7u3051u53d6u308b-u3046u3051u3068u308b",
+      "sentence-n4-phase10-u5408u308fu305bu308b-u3042u308fu305bu308b",
+      "sentence-n4-phase10-u5408u56f3-u3042u3044u305a",
+      "sentence-n4-phase10-u5468u56f2-u3057u3085u3046u3044",
+      "sentence-n4-phase10-u547d-u3044u306eu3061",
+      "sentence-n4-phase10-u54b3-u305bu304d",
+      "sentence-n4-phase10-u54c1-u3057u306a",
+      "sentence-n4-phase10-u5546u4eba-u3057u3087u3046u306bu3093",
+      "sentence-n4-phase10-u5546u58f2-u3057u3087u3046u3070u3044",
+      "sentence-n4-phase10-u5546u696d-u3057u3087u3046u304eu3087u3046",
+      "sentence-n4-phase10-u55b6u696d-u3048u3044u304eu3087u3046",
+      "sentence-n4-phase10-u5642-u3046u308fu3055",
+      "sentence-n4-phase10-u56dbu5b63-u3057u304d",
+      "sentence-n4-phase10-u56dbu89d2-u3057u304bu304f",
+      "sentence-n4-phase10-u56f0u96e3-u3053u3093u306au3093",
+      "sentence-n4-phase10-u5730u4e0b-u3061u304b",
+      "sentence-n4-phase10-u5730u5473-u3058u307f",
+      "sentence-n4-phase10-u5730u65b9-u3061u307bu3046",
+      "sentence-n4-phase10-u5730u7403-u3061u304du3085u3046",
+      "sentence-n4-phase10-u57cbu3081u308b-u3046u3081u308b",
+      "sentence-n4-phase10-u57ce-u3057u308d",
+      "sentence-n4-phase10-u57fau672c-u304du307bu3093",
+      "sentence-n4-phase10-u5893-u306fu304b",
+      "sentence-n4-phase10-u58f2u308cu308b-u3046u308cu308b",
+      "sentence-n4-phase10-u5916u3059-u306fu305au3059",
+      "sentence-n4-phase10-u5916u308cu308b-u306fu305au308cu308b",
+      "sentence-n4-phase10-u5927u3044u306b-u304au304au3044u306b",
+      "sentence-n4-phase10-u5927u5bb6-u304au304au3084",
+      "sentence-n4-phase10-u5931u3046-u3046u3057u306au3046",
+      "sentence-n4-phase10-u5965-u304au304f",
+      "sentence-n4-phase10-u5968u5b66u91d1-u3057u3087u3046u304cu304fu304du3093",
+      "sentence-n4-phase10-u596au3046-u3046u3070u3046",
+      "sentence-n4-phase10-u597du307f-u3053u306eu307f",
+      "sentence-n4-phase10-u59c9u59b9-u3057u307eu3044",
+      "sentence-n4-phase10-u59cbu307eu308a-u306fu3058u307eu308a",
+      "sentence-n4-phase10-u59d4u54e1-u3044u3044u3093",
+      "sentence-n4-phase10-u59ff-u3059u304cu305f",
+      "sentence-n4-phase10-u5b58u5728-u305du3093u3056u3044",
+      "sentence-n4-phase10-u5b87u5b99-u3046u3061u3085u3046",
+      "sentence-n4-phase10-u5b89u5b9a-u3042u3093u3066u3044",
+      "sentence-n4-phase10-u5b8cu6210-u304bu3093u305bu3044",
+      "sentence-n4-phase10-u5b97u6559-u3057u3085u3046u304du3087u3046",
+      "sentence-n4-phase10-u5b9d-u305fu304bu3089",
+      "sentence-n4-phase10-u5b9fu306b-u3058u3064u306b",
+      "sentence-n4-phase10-u5b9fu9a13-u3058u3063u3051u3093",
+      "sentence-n4-phase10-u5bb6u5177-u304bu3050",
+      "sentence-n4-phase10-u5bbfu6cca-u3057u3085u304fu306fu304f",
+      "sentence-n4-phase10-u5c11u3057u3082-u3059u3053u3057u3082",
+      "sentence-n4-phase10-u5c31u8077-u3057u3085u3046u3057u3087u304f",
+      "sentence-n4-phase10-u5c45u7720u308a-u3044u306du3080u308a",
+      "sentence-n4-phase10-u5c45u9593-u3044u307e",
+      "sentence-n4-phase10-u5c4au304f-u3068u3069u304f",
+      "sentence-n4-phase10-u5ca9-u3044u308f",
+      "sentence-n4-phase10-u5d50-u3042u3089u3057",
+      "sentence-n4-phase10-u5de6u53f3-u3055u3086u3046",
+      "sentence-n4-phase10-u5dee-u3055",
+      "sentence-n4-phase10-u5e03-u306cu306e",
+      "sentence-n4-phase10-u5e38u8b58-u3058u3087u3046u3057u304d",
+      "sentence-n4-phase10-u5e45-u306fu3070",
+      "sentence-n4-phase10-u5e74u9f62-u306du3093u308cu3044",
+      "sentence-n4-phase10-u5e78u3044-u3055u3044u308fu3044",
+      "sentence-n4-phase10-u5e78u305b-u3057u3042u308fu305b",
+      "sentence-n4-phase10-u5e7cu3044-u304au3055u306au3044",
+      "sentence-n4-phase10-u5ef6u671f-u3048u3093u304d",
+      "sentence-n4-phase10-u5f53u305fu308au524d-u3042u305fu308au307eu3048",
+      "sentence-n4-phase10-u5f53u305fu308b-u3042u305fu308b",
+      "sentence-n4-phase10-u5f53u3066u308b-u3042u3066u308b",
+      "sentence-n4-phase10-u5f93u3046-u3057u305fu304cu3046",
+      "sentence-n4-phase10-u5f97u308b-u3048u308b",
+      "sentence-n4-phase10-u5fc3u7406-u3057u3093u308a",
+      "sentence-n4-phase10-u5fc3u81d3-u3057u3093u305eu3046",
+      "sentence-n4-phase10-u5fc5u305au3057u3082-u304bu306au3089u305au3057u3082",
+      "sentence-n4-phase10-u5fdcu3058u308b-u304au3046u3058u308b",
+      "sentence-n4-phase10-u5fdcu63f4-u304au3046u3048u3093",
+      "sentence-n4-phase10-u601du308fu305a-u304au3082u308fu305a",
+      "sentence-n4-phase10-u6020u3051u308b-u306au307eu3051u308b",
+      "sentence-n4-phase10-u6027u683c-u305bu3044u304bu304f",
+      "sentence-n4-phase10-u604bu4eba-u3053u3044u3073u3068",
+      "sentence-n4-phase10-u6050u3089u304f-u304au305du3089u304f",
+      "sentence-n4-phase10-u60a9u3080-u306au3084u3080",
+      "sentence-n4-phase10-u60b2u3057u3080-u304bu306au3057u3080",
+      "sentence-n4-phase10-u60f3u50cf-u305du3046u305eu3046",
+      "sentence-n4-phase10-u610fu5916-u3044u304cu3044",
+      "sentence-n4-phase10-u610fu601d-u3044u3057",
+      "sentence-n4-phase10-u610fu8b58-u3044u3057u304d",
+      "sentence-n4-phase10-u611fu52d5-u304bu3093u3069u3046",
+      "sentence-n4-phase10-u611fu60f3-u304bu3093u305du3046",
+      "sentence-n4-phase10-u614cu3066u308b-u3042u308fu3066u308b",
+      "sentence-n4-phase10-u614eu91cd-u3057u3093u3061u3087u3046",
+      "sentence-n4-phase10-u6210u7e3e-u305bu3044u305bu304d",
+      "sentence-n4-phase10-u6210u9577-u305bu3044u3061u3087u3046",
+      "sentence-n4-phase10-u624bu4f1du3044-u3066u3064u3060u3044",
+      "sentence-n4-phase10-u624bu6bb5-u3057u3085u3060u3093",
+      "sentence-n4-phase10-u624bu8853-u3057u3085u3058u3085u3064",
+      "sentence-n4-phase10-u6271u3046-u3042u3064u304bu3046",
+      "sentence-n4-phase10-u629cu304f-u306cu304f",
+      "sentence-n4-phase10-u629cu3051u308b-u306cu3051u308b",
+      "sentence-n4-phase10-u62bcu3048u308b-u304au3055u3048u308b",
+      "sentence-n4-phase10-u62cdu624b-u306fu304fu3057u3085",
+      "sentence-n4-phase10-u6307u3059-u3055u3059",
+      "sentence-n4-phase10-u6307u5b9a-u3057u3066u3044",
+      "sentence-n4-phase10-u6383u304f-u306fu304f",
+      "sentence-n4-phase10-u63a8u85a6-u3059u3044u305bu3093",
+      "sentence-n4-phase10-u63cfu304f-u3048u304cu304f",
+      "sentence-n4-phase10-u63dau3052u308b-u3042u3052u308b",
+      "sentence-n4-phase10-u63e1u308b-u306bu304eu308b",
+      "sentence-n4-phase10-u63e1u624b-u3042u304fu3057u3085",
+      "sentence-n4-phase10-u63f4u52a9-u3048u3093u3058u3087",
+      "sentence-n4-phase10-u640d-u305du3093",
+      "sentence-n4-phase10-u64aeu5f71-u3055u3064u3048u3044",
+      "sentence-n4-phase10-u652fu3048u308b-u3055u3055u3048u308b",
+      "sentence-n4-phase10-u652fu51fa-u3057u3057u3085u3064",
+      "sentence-n4-phase10-u652fu5e97-u3057u3066u3093",
+      "sentence-n4-phase10-u652fu6255-u3057u306fu3089u3044",
+      "sentence-n4-phase10-u652fu6255u3046-u3057u306fu3089u3046",
+      "sentence-n4-phase10-u652fu7d66-u3057u304du3085u3046",
+      "sentence-n4-phase10-u652fu914d-u3057u306fu3044",
+      "sentence-n4-phase10-u653fu5e9c-u305bu3044u3075",
+      "sentence-n4-phase10-u6545u969c-u3053u3057u3087u3046",
+      "sentence-n4-phase10-u6551u3046-u3059u304fu3046",
+      "sentence-n4-phase10-u6570u5b57-u3059u3046u3058",
+      "sentence-n4-phase10-u6574u7406-u305bu3044u308a",
+      "sentence-n4-phase10-u65adu308b-u3053u3068u308fu308b",
+      "sentence-n4-phase10-u65b0u305f-u3042u3089u305f",
+      "sentence-n4-phase10-u65b0u90ce-u3057u3093u308du3046",
+      "sentence-n4-phase10-u65b0u9bae-u3057u3093u305bu3093",
+      "sentence-n4-phase10-u65d7-u306fu305f",
+      "sentence-n4-phase10-u65e2u306b-u3059u3067u306b",
+      "sentence-n4-phase10-u65e5u5149-u306bu3063u3053u3046",
+      "sentence-n4-phase10-u65e5u5e38-u306bu3061u3058u3087u3046",
+      "sentence-n4-phase10-u660eu304bu308a-u3042u304bu308a",
+      "sentence-n4-phase10-u660eu3089u304b-u3042u304du3089u304b",
+      "sentence-n4-phase10-u6620u3059-u3046u3064u3059",
+      "sentence-n4-phase10-u6642u523b-u3058u3053u304f",
+      "sentence-n4-phase10-u6642u671f-u3058u304d",
+      "sentence-n4-phase10-u6642u9593u5272-u3058u304bu3093u308fu308a",
+      "sentence-n4-phase10-u666fu6c17-u3051u3044u304d",
+      "sentence-n4-phase10-u6696u307eu308b-u3042u305fu305fu307eu308b",
+      "sentence-n4-phase10-u6697u8a18-u3042u3093u304d",
+      "sentence-n4-phase10-u66aeu3089u3057-u304fu3089u3057",
+      "sentence-n4-phase10-u66f4u306b-u3055u3089u306b",
+      "sentence-n4-phase10-u66f8u5e97-u3057u3087u3066u3093",
+      "sentence-n4-phase10-u66f8u9053-u3057u3087u3069u3046",
+      "sentence-n4-phase10-u6700u4f4e-u3055u3044u3066u3044",
+      "sentence-n4-phase10-u671bu3080-u306eu305eu3080",
+      "sentence-n4-phase10-u671fu9650-u304du3052u3093",
+      "sentence-n4-phase10-u677f-u3044u305f",
+      "sentence-n4-phase10-u6804u990a-u3048u3044u3088u3046",
+      "sentence-n4-phase10-u6848u5916-u3042u3093u304cu3044",
+      "sentence-n4-phase10-u6885u96e8-u3070u3044u3046",
+      "sentence-n4-phase10-u690du7269-u3057u3087u304fu3076u3064",
+      "sentence-n4-phase10-u69d8u3005-u3055u307eu3056u307e",
+      "sentence-n4-phase10-u6a2au65ad-u304au3046u3060u3093",
+      "sentence-n4-phase10-u6b20u5e2d-u3051u3063u305bu304d",
+      "sentence-n4-phase10-u6b63u306b-u307eu3055u306b",
+      "sentence-n4-phase10-u6b63u5348-u3057u3087u3046u3054",
+      "sentence-n4-phase10-u6b63u5f0f-u305bu3044u3057u304d",
+      "sentence-n4-phase10-u6b63u76f4-u3057u3087u3046u3058u304d",
+      "sentence-n4-phase10-u6b63u78ba-u305bu3044u304bu304f",
+      "sentence-n4-phase10-u6b7bu4ea1-u3057u307cu3046",
+      "sentence-n4-phase10-u6b8bu3059-u306eu3053u3059",
+      "sentence-n4-phase10-u6b8bu308a-u306eu3053u308a",
+      "sentence-n4-phase10-u6b8bu696d-u3056u3093u304eu3087u3046",
+      "sentence-n4-phase10-u6bb5-u3060u3093",
+      "sentence-n4-phase10-u6bbau3059-u3053u308du3059",
+      "sentence-n4-phase10-u6bcdu89aa-u306fu306fu304au3084",
+      "sentence-n4-phase10-u6c34u5e73-u3059u3044u3078u3044",
+      "sentence-n4-phase10-u6c57-u3042u305b",
+      "sentence-n4-phase10-u6c7au307eu308a-u304du307eu308a",
+      "sentence-n4-phase10-u6c7au3081u624b-u304du3081u3066",
+      "sentence-n4-phase10-u6c7au5b9a-u3051u3063u3066u3044",
+      "sentence-n4-phase10-u6c7au5fc3-u3051u3063u3057u3093",
+      "sentence-n4-phase10-u6c88u3080-u3057u305au3080",
+      "sentence-n4-phase10-u6cb9-u3042u3076u3089",
+      "sentence-n4-phase10-u6cc9-u3044u305au307f",
+      "sentence-n4-phase10-u6ce2-u306au307f",
+      "sentence-n4-phase10-u6ce8u6587-u3061u3085u3046u3082u3093",
+      "sentence-n4-phase10-u6cf3u304e-u304au3088u304e",
+      "sentence-n4-phase10-u6d17u6fefu6a5f-u305bu3093u305fu304fu304d",
+      "sentence-n4-phase10-u6d3bu8e8d-u304bu3064u3084u304f",
+      "sentence-n4-phase10-u6d41u3059-u306au304cu3059",
+      "sentence-n4-phase10-u6d41u308cu308b-u306au304cu308cu308b",
+      "sentence-n4-phase10-u6d41u884cu308b-u306fu3084u308b",
+      "sentence-n4-phase10-u6d88u8cbb-u3057u3087u3046u3072",
+      "sentence-n4-phase10-u6d88u9632-u3057u3087u3046u307cu3046",
+      "sentence-n4-phase10-u6d99-u306au307fu3060",
+      "sentence-n4-phase10-u6df1u523b-u3057u3093u3053u304f",
+      "sentence-n4-phase10-u6df7u4e71-u3053u3093u3089u3093",
+      "sentence-n4-phase10-u6df7u96d1-u3053u3093u3056u3064",
+      "sentence-n4-phase10-u6e05u6f54-u305bu3044u3051u3064",
+      "sentence-n4-phase10-u6e08u307eu305bu308b-u3059u307eu305bu308b",
+      "sentence-n4-phase10-u6e0bu6ede-u3058u3085u3046u305fu3044",
+      "sentence-n4-phase10-u6e29u304bu3044-u3042u305fu305fu304bu3044",
+      "sentence-n4-phase10-u6e29u3081u308b-u3042u305fu305fu3081u308b",
+      "sentence-n4-phase10-u6e7fu5ea6-u3057u3064u3069",
+      "sentence-n4-phase10-u6e7fu6c17-u3057u3063u3051",
+      "sentence-n4-phase10-u6f14u594f-u3048u3093u305du3046",
+      "sentence-n4-phase10-u6f14u6280-u3048u3093u304e",
+      "sentence-n4-phase10-u6f84u3080-u3059u3080",
+      "sentence-n4-phase10-u6fc0u3057u3044-u306fu3052u3057u3044",
+      "sentence-n4-phase10-u6fe1u3089u3059-u306cu3089u3059",
+      "sentence-n4-phase10-u716eu308b-u306bu308b",
+      "sentence-n4-phase10-u7247u4ed8u304f-u304bu305fu3065u304f",
+      "sentence-n4-phase10-u725b-u3046u3057",
+      "sentence-n4-phase10-u72afu4eba-u306fu3093u306bu3093",
+      "sentence-n4-phase10-u72afu7f6a-u306fu3093u3056u3044",
+      "sentence-n4-phase10-u72b6u6cc1-u3058u3087u3046u304du3087u3046",
+      "sentence-n4-phase10-u73feu308cu308b-u3042u3089u308fu308cu308b",
+      "sentence-n4-phase10-u73feu4ee3-u3052u3093u3060u3044",
+      "sentence-n4-phase10-u73feu5b9f-u3052u3093u3058u3064",
+      "sentence-n4-phase10-u73feu91d1-u3052u3093u304du3093",
+      "sentence-n4-phase10-u751f-u306au307e",
+      "sentence-n4-phase10-u751fu304du7269-u3044u304du3082u306e",
+      "sentence-n4-phase10-u751fu547d-u305bu3044u3081u3044",
+      "sentence-n4-phase10-u751fu6d3b-u305bu3044u304bu3064",
+      "sentence-n4-phase10-u751fu7523-u305bu3044u3055u3093",
+      "sentence-n4-phase10-u7551-u306fu305fu3051",
+      "sentence-n4-phase10-u7570u5e38-u3044u3058u3087u3046",
+      "sentence-n4-phase10-u7591u3046-u3046u305fu304cu3046",
+      "sentence-n4-phase10-u75c7u72b6-u3057u3087u3046u3058u3087u3046",
+      "sentence-n4-phase10-u75dbu307f-u3044u305fu307f",
+      "sentence-n4-phase10-u767au8868-u306fu3063u3074u3087u3046",
+      "sentence-n4-phase10-u767au898b-u306fu3063u3051u3093",
+      "sentence-n4-phase10-u767au8eca-u306fu3063u3057u3083",
+      "sentence-n4-phase10-u767au9054-u306fu3063u305fu3064",
+      "sentence-n4-phase10-u76bf-u3055u3089",
+      "sentence-n4-phase10-u76f4u63a5-u3061u3087u304fu305bu3064",
+      "sentence-n4-phase10-u76f8u5909u308fu3089u305a-u3042u3044u304bu308fu3089u305a",
+      "sentence-n4-phase10-u76f8u8ac7-u305du3046u3060u3093",
+      "sentence-n4-phase10-u773au3081-u306au304cu3081",
+      "sentence-n4-phase10-u773au3081u308b-u306au304cu3081u308b",
+      "sentence-n4-phase10-u7761u7720-u3059u3044u307fu3093",
+      "sentence-n4-phase10-u77acu9593-u3057u3085u3093u304bu3093",
+      "sentence-n4-phase10-u77f3u6cb9-u305bu304du3086",
+      "sentence-n4-phase10-u77f3u70ad-u305bu304du305fu3093",
+      "sentence-n4-phase10-u78bau304bu3081u308b-u305fu3057u304bu3081u308b",
+      "sentence-n4-phase10-u793au3059-u3057u3081u3059",
+      "sentence-n4-phase10-u795du3046-u3044u308fu3046",
+      "sentence-n4-phase10-u7981u6b62-u304du3093u3057",
+      "sentence-n4-phase10-u79fbu52d5-u3044u3069u3046",
+      "sentence-n4-phase10-u7a0eu91d1-u305cu3044u304du3093",
+      "sentence-n4-phase10-u7a2eu985e-u3057u3085u308bu3044",
+      "sentence-n4-phase10-u7a4du3082u308b-u3064u3082u308b",
+      "sentence-n4-phase10-u7a4du6975u7684-u305bu3063u304du3087u304fu3066u304d",
+      "sentence-n4-phase10-u7a74-u3042u306a",
+      "sentence-n4-phase10-u7a7a-u304bu3089",
+      "sentence-n4-phase10-u7aef-u306fu3057",
+      "sentence-n4-phase10-u7af6u6280-u304du3087u3046u304e",
+      "sentence-n4-phase10-u7b11u9854-u3048u304cu304a",
+      "sentence-n4-phase10-u7b4b-u3059u3058",
+      "sentence-n4-phase10-u7ba1u7406-u304bu3093u308a",
+      "sentence-n4-phase10-u7bc4u56f2-u306fu3093u3044",
+      "sentence-n4-phase10-u7d42u3048u308b-u304au3048u308b",
+      "sentence-n4-phase10-u7d4cu9a13-u3051u3044u3051u3093",
+      "sentence-n4-phase10-u7d50u5a5au5f0f-u3051u3063u3053u3093u3057u304d",
+      "sentence-n4-phase10-u7d50u5c40-u3051u3063u304du3087u304f",
+      "sentence-n4-phase10-u7d50u8ad6-u3051u3064u308du3093",
+      "sentence-n4-phase10-u7d76u5bfe-u305cu3063u305fu3044",
+      "sentence-n4-phase10-u7d9au304d-u3064u3065u304d",
+      "sentence-n4-phase10-u7e70u308au8fd4u3059-u304fu308au304bu3048u3059",
+      "sentence-n4-phase10-u7fa8u307eu3057u3044-u3046u3089u3084u307eu3057u3044",
+      "sentence-n4-phase10-u8003u616e-u3053u3046u308au3087",
+      "sentence-n4-phase10-u8077u696d-u3057u3087u304fu304eu3087u3046",
+      "sentence-n4-phase10-u808c-u306fu3060",
+      "sentence-n4-phase10-u80c3-u3044",
+      "sentence-n4-phase10-u8179-u306fu3089",
+      "sentence-n4-phase10-u81eau52d5-u3058u3069u3046",
+      "sentence-n4-phase10-u81eau6162-u3058u307eu3093",
+      "sentence-n4-phase10-u81eau8eab-u3058u3057u3093",
+      "sentence-n4-phase10-u81f3u6025-u3057u304du3085u3046",
+      "sentence-n4-phase10-u820c-u3057u305f",
+      "sentence-n4-phase10-u829du5c45-u3057u3070u3044",
+      "sentence-n4-phase10-u829du751f-u3057u3070u3075",
+      "sentence-n4-phase10-u82e6u3057u3044-u304fu308bu3057u3044",
+      "sentence-n4-phase10-u82e6u52b4-u304fu308du3046",
+      "sentence-n4-phase10-u82e6u624b-u306bu304cu3066",
+      "sentence-n4-phase10-u843du3061u7740u304f-u304au3061u3064u304f",
+      "sentence-n4-phase10-u8840u5727-u3051u3064u3042u3064",
+      "sentence-n4-phase10-u885du7a81-u3057u3087u3046u3068u3064",
+      "sentence-n4-phase10-u8863u670d-u3044u3075u304f",
+      "sentence-n4-phase10-u8868u3059-u3042u3089u308fu3059",
+      "sentence-n4-phase10-u88cfu5207u308b-u3046u3089u304eu308b",
+      "sentence-n4-phase10-u88fdu54c1-u305bu3044u3072u3093",
+      "sentence-n4-phase10-u8986u3046-u304au304au3046",
+      "sentence-n4-phase10-u899au307eu3059-u3055u307eu3059",
+      "sentence-n4-phase10-u899au3081u308b-u3055u3081u308b",
+      "sentence-n4-phase10-u89aau53cb-u3057u3093u3086u3046",
+      "sentence-n4-phase10-u89aau621a-u3057u3093u305bu304d",
+      "sentence-n4-phase10-u8a00u8a9e-u3052u3093u3054",
+      "sentence-n4-phase10-u8a13u7df4-u304fu3093u308cu3093",
+      "sentence-n4-phase10-u8a18u61b6-u304du304au304f",
+      "sentence-n4-phase10-u8a18u9332-u304du308du304f",
+      "sentence-n4-phase10-u8a3au5bdf-u3057u3093u3055u3064",
+      "sentence-n4-phase10-u8a3cu660e-u3057u3087u3046u3081u3044",
+      "sentence-n4-phase10-u8a71u3057u5408u3046-u306fu306au3057u3042u3046",
+      "sentence-n4-phase10-u8a73u3057u3044-u304fu308fu3057u3044",
+      "sentence-n4-phase10-u8a98u3046-u3055u305du3046",
+      "sentence-n4-phase10-u8aa4u308a-u3042u3084u307eu308a",
+      "sentence-n4-phase10-u8abfu5b50-u3061u3087u3046u3057",
+      "sentence-n4-phase10-u8abfu67fb-u3061u3087u3046u3055",
+      "sentence-n4-phase10-u8ae6u3081u308b-u3042u304du3089u3081u308b",
+      "sentence-n4-phase10-u8b66u544a-u3051u3044u3053u304f",
+      "sentence-n4-phase10-u8b66u5bdfu5b98-u3051u3044u3055u3064u304bu3093",
+      "sentence-n4-phase10-u8ca9u58f2-u306fu3093u3070u3044",
+      "sentence-n4-phase10-u8cacu4efb-u305bu304du306bu3093",
+      "sentence-n4-phase10-u8cafu91d1-u3061u3087u304du3093",
+      "sentence-n4-phase10-u8cc7u6e90-u3057u3052u3093",
+      "sentence-n4-phase10-u8cc7u91d1-u3057u304du3093",
+      "sentence-n4-phase10-u8cdbu6210-u3055u3093u305bu3044",
+      "sentence-n4-phase10-u8cde-u3057u3087u3046",
+      "sentence-n4-phase10-u8d08u308b-u304au304fu308b",
+      "sentence-n4-phase10-u8d77u3053u308b-u304au3053u308b",
+      "sentence-n4-phase10-u8d8au3048u308b-u3053u3048u308b",
+      "sentence-n4-phase10-u8dddu96e2-u304du3087u308a",
+      "sentence-n4-phase10-u8de1-u3042u3068",
+      "sentence-n4-phase10-u8eabu4ee3u308fu308a-u307fu304cu308fu308a",
+      "sentence-n4-phase10-u8eabu9577-u3057u3093u3061u3087u3046",
+      "sentence-n4-phase10-u8fb2u696d-u306eu3046u304eu3087u3046",
+      "sentence-n4-phase10-u8fbau308a-u3042u305fu308a",
+      "sentence-n4-phase10-u8fd1u3065u304f-u3061u304bu3065u304f",
+      "sentence-n4-phase10-u8ffdu3044u4ed8u304f-u304au3044u3064u304f",
+      "sentence-n4-phase10-u8ffdu3046-u304au3046",
+      "sentence-n4-phase10-u901fu5ea6-u305du304fu3069",
+      "sentence-n4-phase10-u9031-u3057u3085u3046",
+      "sentence-n4-phase10-u9032u3081u308b-u3059u3059u3081u308b",
+      "sentence-n4-phase10-u9032u5b66-u3057u3093u304cu304f",
+      "sentence-n4-phase10-u9032u6b69-u3057u3093u307d",
+      "sentence-n4-phase10-u904b-u3046u3093",
+      "sentence-n4-phase10-u904bu8ee2-u3046u3093u3066u3093",
+      "sentence-n4-phase10-u904eu3054u3059-u3059u3054u3059",
+      "sentence-n4-phase10-u9055u53cd-u3044u306fu3093",
+      "sentence-n4-phase10-u914du9054-u306fu3044u305fu3064",
+      "sentence-n4-phase10-u9162-u3059",
+      "sentence-n4-phase10-u91cc-u3055u3068",
+      "sentence-n4-phase10-u91cdu8981-u3058u3085u3046u3088u3046",
+      "sentence-n4-phase10-u91dd-u306fu308a",
+      "sentence-n4-phase10-u9280u884cu54e1-u304eu3093u3053u3046u3044u3093",
+      "sentence-n4-phase10-u92edu3044-u3059u308bu3069u3044",
+      "sentence-n4-phase10-u934b-u306au3079",
+      "sentence-n4-phase10-u95a2u5fc3-u304bu3093u3057u3093",
+      "sentence-n4-phase10-u95a2u9023-u304bu3093u308cu3093",
+      "sentence-n4-phase10-u9650u308a-u304bu304eu308a",
+      "sentence-n4-phase10-u9664u304f-u306eu305eu304f",
+      "sentence-n4-phase10-u969cu5bb3-u3057u3087u3046u304cu3044",
+      "sentence-n4-phase10-u96a0u3059-u304bu304fu3059",
+      "sentence-n4-phase10-u96c6u307eu308a-u3042u3064u307eu308a",
+      "sentence-n4-phase10-u96c6u4e2d-u3057u3085u3046u3061u3085u3046",
+      "sentence-n4-phase10-u96e2u3059-u306fu306au3059",
+      "sentence-n4-phase10-u96e2u308cu308b-u306fu306au308cu308b",
+      "sentence-n4-phase10-u96fbu8a71u5e33-u3067u3093u308fu3061u3087u3046",
+      "sentence-n4-phase10-u971c-u3057u3082",
+      "sentence-n4-phase10-u9752u5e74-u305bu3044u306du3093",
+      "sentence-n4-phase10-u9759u307eu308b-u3057u305au307eu308b",
+      "sentence-n4-phase10-u9803-u3053u308d",
+      "sentence-n4-phase10-u9810u304bu308b-u3042u305au304bu308b",
+      "sentence-n4-phase10-u9810u3051u308b-u3042u305au3051u308b",
+      "sentence-n4-phase10-u982du75db-u305au3064u3046",
+      "sentence-n4-phase10-u983cu308a-u305fu3088u308a",
+      "sentence-n4-phase10-u98dfu5353-u3057u3087u304fu305fu304f",
+      "sentence-n4-phase10-u98dfu54c1-u3057u3087u304fu3072u3093",
+      "sentence-n4-phase10-u98dfu6599-u3057u3087u304fu308au3087u3046",
+      "sentence-n4-phase10-u98dfu6b32-u3057u3087u304fu3088u304f",
+      "sentence-n4-phase10-u98fdu304du308b-u3042u304du308b",
+      "sentence-n4-phase10-u9996u90fd-u3057u3085u3068",
+      "sentence-n4-phase10-u99ac-u3046u307e",
+      "sentence-n4-phase10-u9a12u304e-u3055u308fu304e",
+      "sentence-n4-phase10-u9a5au304bu3059-u304au3069u308du304bu3059",
+      "sentence-n4-phase10-u9a5au304d-u304au3069u308du304d",
+      "sentence-n4-phase10-u9ad8u3081u308b-u305fu304bu3081u308b",
+      "sentence-n4-phase10-u9cf4u3089u3059-u306au3089u3059",
       "sentence-n4-u2d-to-u2d-iu-contrast-aware",
       "sentence-n4-u2d-to-u2d-iu-core",
       "sentence-n4-u2d-to-u2d-iu-real-life",
@@ -4328,7 +4869,8 @@
       "sentence-n4-u2d-to-u2d-omou-contrast-aware",
       "sentence-n4-u2d-to-u2d-omou-core",
       "sentence-n4-u2d-to-u2d-omou-real-life",
-      "sentence-n4-u2d-to-u2d-omou-structural-variation"
+      "sentence-n4-u2d-to-u2d-omou-structural-variation",
+      "sentence-n4-zphase96-hantai"
     ],
     "curriculumUnitIds": [
       "n4-unit-003",
@@ -4363,8 +4905,8 @@
       "sentence-n4-u2d-toka-u2d-toka-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-029",
-      "n4-unit-030"
+      "n4-unit-030",
+      "n4-unit-031"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-toka-toka-context-application-1",
@@ -4427,8 +4969,8 @@
       "sentence-n4-u2d-transitive-u2d-intransitive-u2d-verbs-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-024",
-      "n4-unit-025"
+      "n4-unit-025",
+      "n4-unit-026"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-transitive-intransitive-verbs-context-application-1",
@@ -4456,7 +4998,8 @@
       "sentence-n4-u2d-tsuzukeru-contrast-aware",
       "sentence-n4-u2d-tsuzukeru-core",
       "sentence-n4-u2d-tsuzukeru-real-life",
-      "sentence-n4-u2d-tsuzukeru-structural-variation"
+      "sentence-n4-u2d-tsuzukeru-structural-variation",
+      "sentence-n4-zphase96-isshoukenmei"
     ],
     "curriculumUnitIds": [
       "n4-unit-010"
@@ -4536,8 +5079,8 @@
       "sentence-n4-u2d-yasui-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-032",
-      "n4-unit-033"
+      "n4-unit-033",
+      "n4-unit-034"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-yasui-context-application-1",
@@ -4565,7 +5108,9 @@
       "sentence-n4-u2d-yotei-u2d-da-contrast-aware",
       "sentence-n4-u2d-yotei-u2d-da-core",
       "sentence-n4-u2d-yotei-u2d-da-real-life",
-      "sentence-n4-u2d-yotei-u2d-da-structural-variation"
+      "sentence-n4-u2d-yotei-u2d-da-structural-variation",
+      "sentence-n4-zphase96-sanka",
+      "sentence-n4-zphase96-sotsugyo"
     ],
     "curriculumUnitIds": [
       "n4-unit-019"
@@ -4596,11 +5141,12 @@
       "sentence-n4-u2d-you-u2d-ni-u2d-naru-contrast-aware",
       "sentence-n4-u2d-you-u2d-ni-u2d-naru-core",
       "sentence-n4-u2d-you-u2d-ni-u2d-naru-real-life",
-      "sentence-n4-u2d-you-u2d-ni-u2d-naru-structural-variation"
+      "sentence-n4-u2d-you-u2d-ni-u2d-naru-structural-variation",
+      "sentence-n4-zphase96-kimi"
     ],
     "curriculumUnitIds": [
-      "n4-unit-026",
-      "n4-unit-027"
+      "n4-unit-027",
+      "n4-unit-028"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-you-ni-naru-context-application-1",
@@ -4628,11 +5174,13 @@
       "sentence-n4-u2d-you-u2d-ni-u2d-purpose-contrast-aware",
       "sentence-n4-u2d-you-u2d-ni-u2d-purpose-core",
       "sentence-n4-u2d-you-u2d-ni-u2d-purpose-real-life",
-      "sentence-n4-u2d-you-u2d-ni-u2d-purpose-structural-variation"
+      "sentence-n4-u2d-you-u2d-ni-u2d-purpose-structural-variation",
+      "sentence-n4-zphase96-heiwa",
+      "sentence-n4-zphase96-shuunyuu"
     ],
     "curriculumUnitIds": [
-      "n4-unit-025",
-      "n4-unit-026"
+      "n4-unit-026",
+      "n4-unit-027"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-you-ni-purpose-context-application-1",
@@ -4660,10 +5208,14 @@
       "sentence-n4-u2d-you-u2d-ni-u2d-suru-contrast-aware",
       "sentence-n4-u2d-you-u2d-ni-u2d-suru-core",
       "sentence-n4-u2d-you-u2d-ni-u2d-suru-real-life",
-      "sentence-n4-u2d-you-u2d-ni-u2d-suru-structural-variation"
+      "sentence-n4-u2d-you-u2d-ni-u2d-suru-structural-variation",
+      "sentence-n4-zphase96-bangou",
+      "sentence-n4-zphase96-kenkou",
+      "sentence-n4-zphase96-koe",
+      "sentence-n4-zphase96-tanin"
     ],
     "curriculumUnitIds": [
-      "n4-unit-027"
+      "n4-unit-028"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-you-ni-suru-context-application-1",
@@ -4726,8 +5278,8 @@
       "sentence-n4-u2d-youda-u2d-similarity-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-021",
-      "n4-unit-022"
+      "n4-unit-022",
+      "n4-unit-023"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-youda-similarity-context-application-1",
@@ -4758,8 +5310,8 @@
       "sentence-n4-u2d-zurai-structural-variation"
     ],
     "curriculumUnitIds": [
-      "n4-unit-032",
-      "n4-unit-033"
+      "n4-unit-033",
+      "n4-unit-034"
     ],
     "approvedQuestionIds": [
       "question-grammar-n4-zurai-context-application-1",

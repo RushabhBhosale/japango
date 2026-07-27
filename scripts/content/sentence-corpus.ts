@@ -8,14 +8,18 @@ import {
 } from "../../src/features/learning-content/schemas";
 import { SOURCE_PATHS } from "./config";
 import { readJson } from "./lib/fs-utils";
+import { loadPhase96KanjiSupport } from "./phase96-kanji-support";
+import { loadPhase10VocabularySupport } from "./phase10-vocabulary-support";
 import type {
   GrammarRecord,
   CurriculumUnit,
+  VocabularyRecord,
 } from "./schemas/content-schemas";
 
 export interface SentenceCorpusCatalog {
   grammar: readonly GrammarRecord[];
   curriculumUnits: readonly CurriculumUnit[];
+  vocabulary?: readonly VocabularyRecord[];
 }
 
 export interface GrammarCoverageRow {
@@ -264,14 +268,22 @@ export function grammarCoverage(
 export async function loadSentenceCorpus(
   catalog: SentenceCorpusCatalog,
 ): Promise<LearningContentCollections> {
-  const [n5Raw, n4Raw] = await Promise.all([
+  const [n5Raw, n4Raw, phase96] = await Promise.all([
     readJson<unknown>(SOURCE_PATHS.sentenceCorpusN5),
     readJson<unknown>(SOURCE_PATHS.sentenceCorpusN4),
+    loadPhase96KanjiSupport(),
   ]);
   const n5 = learningContentCollectionsSchema.parse(n5Raw);
   const n4 = learningContentCollectionsSchema.parse(n4Raw);
+  const phase10 = catalog.vocabulary
+    ? await loadPhase10VocabularySupport(
+      catalog.vocabulary,
+      [...n5.sentences, ...n4.sentences, ...phase96.sentences],
+      catalog.curriculumUnits,
+    )
+    : emptyCollections();
   const combined = learningContentCollectionsSchema.parse(
-    combineCollections([n5, n4]),
+    combineCollections([n5, n4, phase96, phase10]),
   );
   const errors = sentenceCorpusErrors(combined, catalog);
   if (errors.length > 0) {

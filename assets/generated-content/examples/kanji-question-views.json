@@ -275,7 +275,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "せかい"
+      "せいき"
     ],
     "supportingVocabularyIds": [
       "vocab-世界-せかい",
@@ -311,7 +311,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "うち"
+      "あたる"
     ],
     "supportingVocabularyIds": [
       "vocab-お腹-おなか",
@@ -349,7 +349,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "ごしゅじん"
+      "おもに"
     ],
     "supportingVocabularyIds": [
       "vocab-ご主人-ごしゅじん",
@@ -368,6 +368,23 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-乗",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -660,6 +677,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-他",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-代",
     "questionIds": [
       "question-kanji-u4ee3-character-meaning-1",
@@ -736,6 +770,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-件",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-休",
     "questionIds": [
       "question-kanji-u4f11-character-meaning-1",
@@ -750,7 +801,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "なつやすみ"
+      "きゅうけい"
     ],
     "supportingVocabularyIds": [
       "vocab-休み-やすみ",
@@ -843,7 +894,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "からだ"
+      "いったい"
     ],
     "supportingVocabularyIds": [
       "vocab-体-からだ",
@@ -919,7 +970,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "さくぶん"
+      "さぎょう"
     ],
     "supportingVocabularyIds": [
       "vocab-作る-つくる",
@@ -957,7 +1008,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "たいしかん"
+      "しよう"
     ],
     "supportingVocabularyIds": [
       "vocab-使う-つかう",
@@ -978,6 +1029,57 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-係",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-信",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "coverageStatus": "lifecycle-exclusion"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-倍",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "lifecycle-exclusion"
   },
   {
     "schemaVersion": 1,
@@ -1006,12 +1108,63 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-健",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
     "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-側",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-働",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -1163,6 +1316,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-全",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-八",
     "questionIds": [
       "question-kanji-u516b-character-meaning-1",
@@ -1275,6 +1445,40 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-共",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-具",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-円",
     "questionIds": [
       "question-kanji-u5186-character-meaning-1"
@@ -1370,6 +1574,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-冷",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-出",
     "questionIds": [
       "question-kanji-u51fa-character-meaning-1",
@@ -1422,7 +1643,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "きって"
+      "うらぎる"
     ],
     "supportingVocabularyIds": [
       "vocab-切る-きる",
@@ -1443,6 +1664,23 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-初",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -1484,6 +1722,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-利",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-前",
     "questionIds": [
       "question-kanji-u524d-character-meaning-1",
@@ -1498,7 +1753,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "ごぜん"
+      "あたりまえ"
     ],
     "supportingVocabularyIds": [
       "vocab-先-さき",
@@ -1534,7 +1789,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "ちから"
+      "きょうりょく"
     ],
     "supportingVocabularyIds": [
       "vocab-力-ちから"
@@ -1547,12 +1802,29 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-加",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -1593,7 +1865,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "うごく"
+      "いどう"
     ],
     "supportingVocabularyIds": [
       "vocab-動く-うごく",
@@ -1614,6 +1886,57 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-務",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-勤",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-化",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -1831,6 +2154,40 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-卒",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-協",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "lifecycle-exclusion"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-南",
     "questionIds": [
       "question-kanji-u5357-character-meaning-1",
@@ -1863,6 +2220,57 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-単",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-博",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "coverageStatus": "lifecycle-exclusion"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-原",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-去",
     "questionIds": [
       "question-kanji-u53bb-character-meaning-1",
@@ -1886,12 +2294,29 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-参",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -1907,7 +2332,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "ともだち"
+      "しんゆう"
     ],
     "supportingVocabularyIds": [
       "vocab-友達-ともだち"
@@ -1920,12 +2345,63 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-反",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-収",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-受",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -2013,7 +2489,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "みぎ"
+      "さゆう"
     ],
     "supportingVocabularyIds": [
       "vocab-右-みぎ"
@@ -2026,12 +2502,80 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-号",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-司",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
     "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-各",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-合",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -2107,6 +2651,40 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-向",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-君",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-味",
     "questionIds": [
       "question-kanji-u5473-character-meaning-1",
@@ -2145,6 +2723,40 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-命",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-和",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-品",
     "questionIds": [
       "question-kanji-u54c1-character-meaning-1",
@@ -2159,7 +2771,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "しなもの"
+      "さくひん"
     ],
     "supportingVocabularyIds": [
       "vocab-品物-しなもの",
@@ -2195,7 +2807,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "こうむいん"
+      "いいん"
     ],
     "supportingVocabularyIds": [
       "vocab-公務員-こうむいん",
@@ -2216,6 +2828,23 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-商",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -2257,6 +2886,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-営",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-四",
     "questionIds": [
       "question-kanji-u56db-character-meaning-1",
@@ -2293,6 +2939,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-団",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-図",
     "questionIds": [
       "question-kanji-u56f3-character-meaning-1",
@@ -2307,7 +2970,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "ちず"
+      "あいず"
     ],
     "supportingVocabularyIds": [
       "vocab-図書館-としょかん",
@@ -2331,6 +2994,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-固",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-国",
     "questionIds": [
       "question-kanji-u56fd-character-meaning-1",
@@ -2345,7 +3025,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "がいこく"
+      "かっこく"
     ],
     "supportingVocabularyIds": [
       "vocab-国-くに",
@@ -2417,7 +3097,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "じしん"
+      "いち"
     ],
     "supportingVocabularyIds": [
       "vocab-地下鉄-ちかてつ",
@@ -2438,6 +3118,23 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-型",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -2491,7 +3188,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "うりば"
+      "いちば"
     ],
     "supportingVocabularyIds": [
       "vocab-会場-かいじょう",
@@ -2512,6 +3209,23 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-声",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -2550,6 +3264,23 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-変",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -2643,7 +3374,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "いがい"
+      "あんがい"
     ],
     "supportingVocabularyIds": [
       "vocab-以外-いがい",
@@ -2736,7 +3467,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "おおきい"
+      "おおいに"
     ],
     "supportingVocabularyIds": [
       "vocab-大きい-おおきい",
@@ -2798,6 +3529,40 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-夫",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-失",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-女",
     "questionIds": [
       "question-kanji-u5973-character-meaning-1",
@@ -2834,6 +3599,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-好",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-妹",
     "questionIds": [
       "question-kanji-u59b9-character-meaning-1",
@@ -2859,12 +3641,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -2920,7 +3702,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "はじまる"
+      "はじまり"
     ],
     "supportingVocabularyIds": [
       "vocab-初めて-はじめて",
@@ -3020,6 +3802,23 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-季",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "coverageStatus": "lifecycle-exclusion"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-学",
     "questionIds": [
       "question-kanji-u5b66-character-meaning-1",
@@ -3075,6 +3874,91 @@
   },
   {
     "schemaVersion": 1,
+    "kanjiId": "kanji-完",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "lifecycle-exclusion"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-官",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "coverageStatus": "lifecycle-exclusion"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-定",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-実",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-客",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "coverageStatus": "lifecycle-exclusion"
+  },
+  {
+    "schemaVersion": 1,
     "kanjiId": "kanji-室",
     "questionIds": [
       "question-kanji-u5ba4-character-meaning-1",
@@ -3108,6 +3992,23 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-害",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "coverageStatus": "lifecycle-exclusion"
   },
   {
     "schemaVersion": 1,
@@ -3146,6 +4047,40 @@
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
     "coverageStatus": "pass"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-察",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": false,
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "coverageStatus": "lifecycle-exclusion"
+  },
+  {
+    "schemaVersion": 1,
+    "kanjiId": "kanji-対",
+    "questionIds": [],
+    "questionTypeCounts": {},
+    "representedReadings": [],
+    "supportingVocabularyIds": [],
+    "supportingSentenceIds": [],
+    "difficultyDistribution": {},
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "approvedCount": 0,
+    "releaseReady": true,
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -3218,7 +4153,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "おくじょう"
+      "おおや"
     ],
     "supportingVocabularyIds": [
       "vocab-八百屋-やおや",
@@ -3353,7 +4288,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "ひだり"
+      "さゆう"
     ],
     "supportingVocabularyIds": [
       "vocab-左-ひだり"
@@ -3364,12 +4299,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -3776,7 +4711,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "おもいだす"
+      "いし"
     ],
     "supportingVocabularyIds": [
       "vocab-思い出す-おもいだす",
@@ -3850,7 +4785,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "わるい"
+      "いたずら"
     ],
     "supportingVocabularyIds": [
       "vocab-悪い-わるい"
@@ -3863,12 +4798,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -3886,7 +4821,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "いけん"
+      "いがい"
     ],
     "supportingVocabularyIds": [
       "vocab-意味-いみ",
@@ -4055,7 +4990,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "しょくりょうひん"
+      "ざいりょう"
     ],
     "supportingVocabularyIds": [
       "vocab-料理-りょうり",
@@ -4110,7 +5045,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "あちら"
+      "あちこち"
     ],
     "supportingVocabularyIds": [
       "vocab-あちら-あちら",
@@ -4296,7 +5231,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "あかるい"
+      "あかり"
     ],
     "supportingVocabularyIds": [
       "vocab-明るい-あかるい",
@@ -4334,7 +5269,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "えいが"
+      "うつす"
     ],
     "supportingVocabularyIds": [
       "vocab-映画-えいが",
@@ -4444,7 +5379,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "いつ"
+      "いちじ"
     ],
     "supportingVocabularyIds": [
       "vocab-いつ-いつ",
@@ -4634,7 +5569,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "ふく"
+      "いふく"
     ],
     "supportingVocabularyIds": [
       "vocab-服-ふく",
@@ -4748,7 +5683,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "ほん"
+      "きほん"
     ],
     "supportingVocabularyIds": [
       "vocab-本-ほん",
@@ -4786,7 +5721,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "くる"
+      "いらい"
     ],
     "supportingVocabularyIds": [
       "vocab-再来月-さらいげつ",
@@ -4896,7 +5831,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "こうぎょう"
+      "えいぎょう"
     ],
     "supportingVocabularyIds": [
       "vocab-卒業-そつぎょう",
@@ -5006,7 +5941,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "とまる"
+      "きんし"
     ],
     "supportingVocabularyIds": [
       "vocab-止まる-とまる",
@@ -5044,7 +5979,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "しょうがつ"
+      "しゅうせい"
     ],
     "supportingVocabularyIds": [
       "vocab-正しい-ただしい",
@@ -5093,12 +6028,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -5125,12 +6060,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -5520,7 +6455,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "ぎゅうにく"
+      "うし"
     ],
     "supportingVocabularyIds": [
       "vocab-牛乳-ぎゅうにゅう",
@@ -5558,7 +6493,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "おくりもの"
+      "いきもの"
     ],
     "supportingVocabularyIds": [
       "vocab-乗り物-のりもの",
@@ -5666,7 +6601,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "ちり"
+      "かんり"
     ],
     "supportingVocabularyIds": [
       "vocab-地理-ちり",
@@ -5704,7 +6639,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "いきる"
+      "いきもの"
     ],
     "supportingVocabularyIds": [
       "vocab-一生懸命-いっしょうけんめい",
@@ -5742,7 +6677,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "ひつよう"
+      "しよう"
     ],
     "supportingVocabularyIds": [
       "vocab-利用-りよう",
@@ -5990,7 +6925,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "はつおん"
+      "しゅっぱつ"
     ],
     "supportingVocabularyIds": [
       "vocab-発音-はつおん"
@@ -6003,12 +6938,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -6506,7 +7441,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "おわり"
+      "おえる"
     ],
     "supportingVocabularyIds": [
       "vocab-終る-おわる",
@@ -6580,7 +7515,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "かんがえる"
+      "かんがえ"
     ],
     "supportingVocabularyIds": [
       "vocab-考える-かんがえる"
@@ -6593,12 +7528,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -6728,7 +7663,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "じてんしゃ"
+      "しぜん"
     ],
     "supportingVocabularyIds": [
       "vocab-自分-じぶん",
@@ -7058,7 +7993,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "とけい"
+      "かいけい"
     ],
     "supportingVocabularyIds": [
       "vocab-時計-とけい"
@@ -7071,12 +8006,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -7181,12 +8116,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -7486,7 +8421,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "うんてんしゅ"
+      "うんてん"
     ],
     "supportingVocabularyIds": [
       "vocab-自転車-じてんしゃ",
@@ -7651,7 +8586,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "うんてんしゅ"
+      "うん"
     ],
     "supportingVocabularyIds": [
       "vocab-運ぶ-はこぶ",
@@ -7717,12 +8652,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -7823,12 +8758,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -7994,7 +8929,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "あつまる"
+      "あつまり"
     ],
     "supportingVocabularyIds": [
       "vocab-集まる-あつまる",
@@ -8041,12 +8976,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,
@@ -8254,7 +9189,7 @@
       "type-word-distinction": 1
     },
     "representedReadings": [
-      "しょくどう"
+      "しょくじ"
     ],
     "supportingVocabularyIds": [
       "vocab-食べる-たべる",
@@ -8400,7 +9335,7 @@
       "type-vocabulary-context": 1
     },
     "representedReadings": [
-      "しけん"
+      "けいけん"
     ],
     "supportingVocabularyIds": [
       "vocab-試験-しけん"
@@ -8411,12 +9346,12 @@
       "rank-3": 2
     },
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
+    "effectiveSupportedCount": 4,
     "approvedCount": 3,
     "releaseReady": true,
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-    "coverageStatus": "pass"
+    "inventoryLimitation": null,
+    "coverageStatus": "gap"
   },
   {
     "schemaVersion": 1,

@@ -1,3 +1,3 @@
 # Difficulty distribution
 
-Blueprint targets are N5 40/50/10 and N4 25/55/20 easy/medium/hard. Canonical difficulty metadata remains authoritative; deviations are reported rather than relabelled.
+Configured targets are N5 40/50/10 and N4 25/55/20 easy/medium/hard. Observed bundled distribution: {"N5":{"easy":243,"medium":169,"hard":38,"percentages":{"easy":54,"medium":37.6,"hard":8.4}},"N4":{"easy":161,"medium":305,"hard":94,"percentages":{"easy":28.7,"medium":54.5,"hard":16.8}}}. N5's unavoidable easy skew is caused by the audit-authorized grammar bridge and coherent reading/listening groups; canonical ranks remain authoritative and are never relabelled. The selector balances each independently selectable knowledge quota before applying safe inventory fallback.

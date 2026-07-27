@@ -6,24 +6,24 @@
       "label": "fixed-build-a",
       "digests": {
         "canonical": "sha256:1801c3afe6019157ee59a1c523ba2362695d60044bcf148d352d16ef388ebdd7",
-        "questions": "sha256:ad4086bff684f39142ca6c697f2b41410e666fcfb60f5d0144643ea51b6ea7bd",
-        "questionOptions": "sha256:1ddfeb8aa2707e35959303b33164578b6d324d8fe25bb3e8c6aa23f436b73610",
-        "questionTargets": "sha256:fef049cc65cbb790663a1d6184896ccca6cb4636a84af2854885dd6dfb53a916",
-        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
-        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
-        "sqliteVerificationPayload": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d"
+        "questions": "sha256:668342230f6169f5c83bdde63021b798b85789ad3379ba71e5de364dc6be29f2",
+        "questionOptions": "sha256:fb720a82241bc7d4cb774bca1df0118df4482b78e1e3b91c29782337f404acd3",
+        "questionTargets": "sha256:7e77ce348acb732dc385de22fcf7dfebe91f6b214001e2d554a2664c7853e15d",
+        "compactRelease": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
+        "compactDevelopment": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602",
+        "sqliteVerificationPayload": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608"
       }
     },
     {
       "label": "fixed-build-b",
       "digests": {
         "canonical": "sha256:1801c3afe6019157ee59a1c523ba2362695d60044bcf148d352d16ef388ebdd7",
-        "questions": "sha256:ad4086bff684f39142ca6c697f2b41410e666fcfb60f5d0144643ea51b6ea7bd",
-        "questionOptions": "sha256:1ddfeb8aa2707e35959303b33164578b6d324d8fe25bb3e8c6aa23f436b73610",
-        "questionTargets": "sha256:fef049cc65cbb790663a1d6184896ccca6cb4636a84af2854885dd6dfb53a916",
-        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
-        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
-        "sqliteVerificationPayload": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d"
+        "questions": "sha256:668342230f6169f5c83bdde63021b798b85789ad3379ba71e5de364dc6be29f2",
+        "questionOptions": "sha256:fb720a82241bc7d4cb774bca1df0118df4482b78e1e3b91c29782337f404acd3",
+        "questionTargets": "sha256:7e77ce348acb732dc385de22fcf7dfebe91f6b214001e2d554a2664c7853e15d",
+        "compactRelease": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
+        "compactDevelopment": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602",
+        "sqliteVerificationPayload": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608"
       }
     }
   ],

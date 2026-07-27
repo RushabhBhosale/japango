@@ -27,7 +27,7 @@ const phase4Content: LearningContentCollections = {
   questionTargetRelationships: content.questionTargetRelationships.filter(({ id }) => !phase8Bridge(id)),
   learningItemMetadata: content.learningItemMetadata.filter(({ id }) => !phase8Bridge(id)),
 };
-const grammarQuestions = phase4Content.questions.filter(({ domain }) => domain === "grammar");
+const grammarQuestions = phase4Content.questions.filter(({ domain, releaseReady }) => domain === "grammar" && releaseReady);
 const grammarQuestionIds = new Set(grammarQuestions.map(({ id }) => id));
 const grammarOptions = content.questionOptions.filter(({ questionId }) => grammarQuestionIds.has(questionId));
 const grammar = [
@@ -91,14 +91,17 @@ describe("canonical grammar learning question corpus", () => {
     }
   });
 
-  it("reuses approved sentences and creates no new sentence records", () => {
+  it("reuses approved sentences and includes the narrowly authored Phase 9.6 kanji support", () => {
     const n5 = json<LearningContentCollections>(
       "assets/docs-reference/japango-sentences/sentence-corpus-n5.json",
     );
     const n4 = json<LearningContentCollections>(
       "assets/docs-reference/japango-sentences/sentence-corpus-n4.json",
     );
-    expect(content.sentences).toHaveLength(n5.sentences.length + n4.sentences.length);
+    const phase10Sentences = content.sentences.filter(({ id }) => id.startsWith("sentence-n4-phase10-"));
+    expect(content.sentences).toHaveLength(
+      n5.sentences.length + n4.sentences.length + 30 + phase10Sentences.length,
+    );
     const sentenceById = new Map(content.sentences.map((sentence) => [sentence.id, sentence]));
     expect(content.questions.every((question) =>
       question.stimulusReferences.every(

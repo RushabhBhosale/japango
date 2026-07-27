@@ -6,22 +6,22 @@
       "label": "fixed-build-a",
       "digests": {
         "canonicalN5": "sha256:ca74c6a685f474aee873b953f0aee226035896b4b2790f317d97c044f1958a3d",
-        "canonicalN4": "sha256:b24423c848611d49c71559151cc530fda35e279bc3b1e660fec55568cddba984",
-        "combinedSentences": "sha256:461174fc87bf2755e689eda7b6f51bf9260bd2f15e39b5baecdf0bb99fd099fe",
-        "grammarExampleViews": "sha256:aeabc29234fa5fda3946b5be69562faf33a7516d7090b6ea9e4fd25b1eae373b",
-        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
-        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434"
+        "canonicalN4": "sha256:5307a078fcd4d119b0634c41378cea501d01a425a9f2b1d80f2023916f84dc59",
+        "combinedSentences": "sha256:6fd028d3823bd4c3b664a8ad3da8fb6cec9a5640f1c8f5c706c8a70bcd1ab63e",
+        "grammarExampleViews": "sha256:4bc30e156b8dffd4f95bbc20d2a922d2be0684d457d8b7c6fb7887cf1743fb25",
+        "compactRelease": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
+        "compactDevelopment": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602"
       }
     },
     {
       "label": "fixed-build-b",
       "digests": {
         "canonicalN5": "sha256:ca74c6a685f474aee873b953f0aee226035896b4b2790f317d97c044f1958a3d",
-        "canonicalN4": "sha256:b24423c848611d49c71559151cc530fda35e279bc3b1e660fec55568cddba984",
-        "combinedSentences": "sha256:461174fc87bf2755e689eda7b6f51bf9260bd2f15e39b5baecdf0bb99fd099fe",
-        "grammarExampleViews": "sha256:aeabc29234fa5fda3946b5be69562faf33a7516d7090b6ea9e4fd25b1eae373b",
-        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
-        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434"
+        "canonicalN4": "sha256:5307a078fcd4d119b0634c41378cea501d01a425a9f2b1d80f2023916f84dc59",
+        "combinedSentences": "sha256:6fd028d3823bd4c3b664a8ad3da8fb6cec9a5640f1c8f5c706c8a70bcd1ab63e",
+        "grammarExampleViews": "sha256:4bc30e156b8dffd4f95bbc20d2a922d2be0684d457d8b7c6fb7887cf1743fb25",
+        "compactRelease": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
+        "compactDevelopment": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602"
       }
     }
   ],

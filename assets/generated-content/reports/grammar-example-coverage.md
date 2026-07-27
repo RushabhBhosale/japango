@@ -61,9 +61,9 @@
 | grammar-mou | N5 | もう | 3 | 0 | 3 | directions, food, shopping | plain, polite | not-required/core-only | blocked-by-canonical-grammar | pass |
 | grammar-n4-aida | N4 | ～間 | 4 | 0 | 4 | family, food, public-transport, weather | plain, polite | covered | ready | pass |
 | grammar-n4-aida-ni | N4 | ～間に | 4 | 0 | 4 | family, home, shopping, travel | plain, polite | covered | ready | pass |
-| grammar-n4-ato-de | N4 | ～後で | 4 | 0 | 4 | appointments, health, phone-and-email, work | plain, polite | covered | ready | pass |
+| grammar-n4-ato-de | N4 | ～後で | 5 | 0 | 4 | appointments, daily-life, health, phone-and-email, work | plain, polite | covered | ready | pass |
 | grammar-n4-ba | N4 | ～ば | 4 | 0 | 4 | directions, public-transport, shopping, weather | polite | covered | ready | pass |
-| grammar-n4-baai-wa | N4 | ～場合は | 4 | 0 | 4 | daily-life, hobbies, weather, work | polite | covered | ready | pass |
+| grammar-n4-baai-wa | N4 | ～場合は | 5 | 0 | 4 | daily-life, hobbies, weather, work | polite | covered | ready | pass |
 | grammar-n4-bakari | N4 | ～ばかり | 4 | 0 | 4 | family, hobbies, public-transport, shopping | plain, polite | covered | ready | pass |
 | grammar-n4-causative-form | N4 | 使役形（～せる／～させる） | 4 | 0 | 4 | directions, food, school, shopping | plain | covered | ready | pass |
 | grammar-n4-causative-passive-form | N4 | 使役受身形（～される／～させられる） | 4 | 0 | 4 | appointments, family, plans, school | plain, polite | covered | ready | pass |
@@ -76,11 +76,11 @@
 | grammar-n4-gari | N4 | ～がり | 4 | 0 | 4 | appointments, directions, weather | plain, polite | covered | ready | pass |
 | grammar-n4-garu | N4 | ～がる／～がっている | 4 | 0 | 4 | appointments, daily-life, hobbies, home | plain, polite | covered | ready | pass |
 | grammar-n4-gozaimasu | N4 | ございます | 4 | 0 | 4 | appointments, daily-life, hobbies, home | honorific | covered | ready | pass |
-| grammar-n4-hajimeru | N4 | ～始める | 4 | 0 | 4 | daily-life, plans, weather, work | plain, polite | covered | ready | pass |
+| grammar-n4-hajimeru | N4 | ～始める | 6 | 0 | 4 | daily-life, plans, weather, work | plain, polite | covered | ready | pass |
 | grammar-n4-hazu-da | N4 | ～はずだ | 4 | 0 | 4 | family, public-transport, shopping, weather | plain, polite | covered | ready | pass |
 | grammar-n4-hazu-ga-nai | N4 | ～はずがない | 4 | 0 | 4 | appointments, family, plans, shopping | plain, polite | covered | ready | pass |
 | grammar-n4-hitsuyou-ga-aru | N4 | ～必要がある | 4 | 0 | 4 | appointments, health, hobbies, plans | plain, polite | covered | ready | pass |
-| grammar-n4-hodo | N4 | ～ほど | 4 | 0 | 4 | appointments, directions, hobbies, weather | plain, polite | covered | ready | pass |
+| grammar-n4-hodo | N4 | ～ほど | 5 | 0 | 4 | appointments, daily-life, directions, hobbies, weather | plain, polite | covered | ready | pass |
 | grammar-n4-irassharu | N4 | いらっしゃる | 4 | 0 | 4 | daily-life, hobbies, school | honorific | covered | ready | pass |
 | grammar-n4-itasu | N4 | いたす | 4 | 0 | 4 | daily-life, family, hobbies, school | humble | covered | ready | pass |
 | grammar-n4-ka-dou-ka | N4 | ～かどうか | 4 | 0 | 4 | daily-life, directions, plans, public-transport | plain, polite | covered | ready | pass |
@@ -90,10 +90,10 @@
 | grammar-n4-kara-tsukuru | N4 | ～から作る | 4 | 0 | 4 | appointments, daily-life, family, hobbies | polite | covered | ready | pass |
 | grammar-n4-kashira | N4 | ～かしら | 4 | 0 | 4 | daily-life, family, plans, weather | plain, polite | covered | ready | pass |
 | grammar-n4-koro | N4 | ～頃 | 4 | 0 | 4 | family, home, plans, work | plain, polite | covered | ready | pass |
-| grammar-n4-koto-ga-aru-occasional | N4 | ～ことがある | 4 | 0 | 4 | directions, food, public-transport, work | plain, polite | covered | ready | pass |
+| grammar-n4-koto-ga-aru-occasional | N4 | ～ことがある | 6 | 0 | 4 | daily-life, directions, food, public-transport, work | plain, polite | covered | ready | pass |
 | grammar-n4-koto-ga-dekiru | N4 | ～ことができる | 4 | 0 | 4 | directions, hobbies, phone-and-email, plans | polite | covered | ready | pass |
-| grammar-n4-koto-ni-naru | N4 | ～ことになる | 4 | 0 | 4 | daily-life, directions, weather, work | plain, polite | covered | ready | pass |
-| grammar-n4-koto-ni-suru | N4 | ～ことにする | 4 | 0 | 4 | appointments, daily-life, food, work | plain, polite | covered | ready | pass |
+| grammar-n4-koto-ni-naru | N4 | ～ことになる | 6 | 0 | 4 | daily-life, directions, weather, work | plain, polite | covered | ready | pass |
+| grammar-n4-koto-ni-suru | N4 | ～ことにする | 5 | 0 | 4 | appointments, daily-life, food, work | plain, polite | covered | ready | pass |
 | grammar-n4-koto-nominalizer | N4 | ～こと | 4 | 0 | 4 | family, hobbies, plans, work | polite | covered | ready | pass |
 | grammar-n4-ku-suru | N4 | ～くする | 4 | 0 | 4 | daily-life, family, home | plain, polite | covered | ready | pass |
 | grammar-n4-made-ni | N4 | ～までに | 4 | 0 | 4 | appointments, family, home, shopping | polite | covered | ready | pass |
@@ -105,14 +105,14 @@
 | grammar-n4-nakanaka-nai | N4 | なかなか～ない | 4 | 0 | 4 | appointments, directions, phone-and-email, public-transport | plain, polite | covered | ready | pass |
 | grammar-n4-nakereba-naranai | N4 | ～なければならない | 4 | 0 | 4 | hobbies, home, plans | plain, polite | covered | ready | pass |
 | grammar-n4-nakutemo-ii | N4 | ～なくてもいい | 4 | 0 | 4 | appointments, daily-life, directions, hobbies | plain, polite | covered | ready | pass |
-| grammar-n4-nara | N4 | ～なら | 4 | 0 | 4 | daily-life, home, public-transport, weather | polite | covered | ready | pass |
+| grammar-n4-nara | N4 | ～なら | 5 | 0 | 4 | daily-life, home, public-transport, weather | polite | covered | ready | pass |
 | grammar-n4-nasai | N4 | ～なさい | 4 | 0 | 4 | daily-life, family, hobbies, school | plain, polite | covered | ready | pass |
 | grammar-n4-nasaru | N4 | なさる | 4 | 0 | 4 | plans, school, work | honorific, polite | covered | ready | pass |
 | grammar-n4-ni-mieru | N4 | ～に見える | 4 | 0 | 4 | appointments, directions, home, plans | plain, polite | covered | ready | pass |
-| grammar-n4-nikui | N4 | ～にくい | 4 | 0 | 4 | directions, plans, school, weather | plain, polite | covered | ready | pass |
+| grammar-n4-nikui | N4 | ～にくい | 5 | 0 | 4 | daily-life, directions, plans, school, weather | plain, polite | covered | ready | pass |
 | grammar-n4-noni-contrast | N4 | ～のに | 4 | 0 | 4 | daily-life, health, public-transport, weather | polite | covered | ready | pass |
 | grammar-n4-noni-purpose | N4 | ～のに | 4 | 0 | 4 | appointments, home, public-transport, weather | plain, polite | covered | ready | pass |
-| grammar-n4-nowa-da | N4 | ～のは～だ | 4 | 0 | 4 | family, hobbies, school, work | plain, polite | covered | ready | pass |
+| grammar-n4-nowa-da | N4 | ～のは～だ | 5 | 0 | 4 | daily-life, family, hobbies, school, work | plain, polite | covered | ready | pass |
 | grammar-n4-o-kudasai | N4 | お～ください | 4 | 0 | 4 | daily-life, directions, family, plans | honorific, polite | covered | ready | pass |
 | grammar-n4-o-ni-naru | N4 | お～になる | 4 | 0 | 4 | directions, plans, school | honorific | covered | ready | pass |
 | grammar-n4-owaru | N4 | ～終わる | 4 | 0 | 4 | hobbies, home, plans, work | plain, polite | covered | ready | pass |
@@ -134,39 +134,39 @@
 | grammar-n4-tara-dou | N4 | ～たらどう | 4 | 0 | 4 | daily-life, directions, plans, public-transport | plain, polite | covered | ready | pass |
 | grammar-n4-tara-ii-desu-ka | N4 | ～たらいいですか | 4 | 0 | 4 | directions, family, public-transport | polite | covered | ready | pass |
 | grammar-n4-te-ageru | N4 | ～てあげる | 4 | 0 | 4 | appointments, hobbies, plans, public-transport | plain, polite | covered | ready | pass |
-| grammar-n4-te-aru | N4 | ～てある | 4 | 0 | 4 | appointments, daily-life, directions, home | plain, polite | covered | ready | pass |
+| grammar-n4-te-aru | N4 | ～てある | 6 | 0 | 4 | appointments, daily-life, directions, home | plain, polite | covered | ready | pass |
 | grammar-n4-te-de-cause | N4 | ～て／～で | 4 | 0 | 4 | daily-life, public-transport, school, work | plain, polite | covered | ready | pass |
 | grammar-n4-te-hoshii | N4 | ～てほしい | 4 | 0 | 4 | hobbies, home, plans, work | plain, polite | covered | ready | pass |
 | grammar-n4-te-iku | N4 | ～ていく | 4 | 0 | 4 | directions, family, public-transport, travel | plain, polite | covered | ready | pass |
 | grammar-n4-te-itadakemasen-ka | N4 | ～ていただけませんか | 4 | 0 | 4 | appointments, directions, family, plans | polite | covered | ready | pass |
 | grammar-n4-te-kureru | N4 | ～てくれる | 4 | 0 | 4 | hobbies, shopping, travel, work | plain | covered | ready | pass |
 | grammar-n4-te-kuru | N4 | ～てくる | 4 | 0 | 4 | hobbies, shopping, weather, work | plain, polite | covered | ready | pass |
-| grammar-n4-te-miru | N4 | ～てみる | 4 | 0 | 4 | daily-life, family, food, public-transport | plain, polite | covered | ready | pass |
+| grammar-n4-te-miru | N4 | ～てみる | 6 | 0 | 4 | daily-life, family, food, public-transport | plain, polite | covered | ready | pass |
 | grammar-n4-te-morau | N4 | ～てもらう | 4 | 0 | 4 | daily-life, plans, public-transport, school | plain, polite | covered | ready | pass |
-| grammar-n4-te-oku | N4 | ～ておく | 4 | 0 | 4 | directions, plans, shopping, work | plain, polite | covered | ready | pass |
+| grammar-n4-te-oku | N4 | ～ておく | 5 | 0 | 4 | daily-life, directions, plans, shopping, work | plain, polite | covered | ready | pass |
 | grammar-n4-te-shimau | N4 | ～てしまう | 4 | 0 | 4 | appointments, directions, public-transport, school | plain | covered | ready | pass |
 | grammar-n4-te-sumimasen | N4 | ～てすみません | 4 | 0 | 4 | appointments, hobbies, phone-and-email, plans | polite | covered | ready | pass |
 | grammar-n4-te-yaru | N4 | ～てやる | 4 | 0 | 4 | appointments, daily-life, directions, home | humble, plain, polite | covered | ready | pass |
 | grammar-n4-te-yokatta | N4 | ～てよかった | 4 | 0 | 4 | family, public-transport, weather | plain, polite | covered | ready | pass |
 | grammar-n4-teiru-tokoro | N4 | ～ているところ | 4 | 0 | 4 | family, food, plans, public-transport | polite | covered | ready | pass |
 | grammar-n4-temo-concession | N4 | ～ても | 4 | 0 | 4 | family, food, public-transport, weather | polite | covered | ready | pass |
-| grammar-n4-to-conditional | N4 | ～と | 4 | 0 | 4 | appointments, family, plans, public-transport | polite | covered | ready | pass |
+| grammar-n4-to-conditional | N4 | ～と | 5 | 0 | 4 | appointments, daily-life, family, plans, public-transport | polite | covered | ready | pass |
 | grammar-n4-to-ittemo-ii | N4 | ～と言ってもいい | 4 | 0 | 4 | appointments, hobbies, plans, shopping | plain, polite | covered | ready | pass |
-| grammar-n4-to-iu | N4 | ～という | 4 | 0 | 4 | appointments, daily-life, hobbies, shopping | plain, polite | covered | ready | pass |
+| grammar-n4-to-iu | N4 | ～という | 526 | 0 | 4 | appointments, daily-life, hobbies, shopping | neutral, plain, polite | covered | ready | pass |
 | grammar-n4-to-iu-koto | N4 | ～ということ | 4 | 0 | 4 | daily-life, family, hobbies, shopping | plain, polite | covered | ready | pass |
 | grammar-n4-to-iwarete-iru | N4 | ～と言われている | 4 | 0 | 4 | daily-life, family, hobbies, shopping | plain, polite | covered | ready | pass |
 | grammar-n4-to-kiku | N4 | ～と聞く | 4 | 0 | 4 | family, plans, public-transport, shopping | plain, polite | covered | ready | pass |
-| grammar-n4-to-omou | N4 | ～と思う | 4 | 0 | 4 | appointments, family, plans, public-transport | plain, polite | covered | ready | pass |
+| grammar-n4-to-omou | N4 | ～と思う | 5 | 0 | 4 | appointments, daily-life, family, plans, public-transport | plain, polite | covered | ready | pass |
 | grammar-n4-toka-toka | N4 | ～とか～とか | 4 | 0 | 4 | appointments, food, hobbies, travel | polite | covered | ready | pass |
 | grammar-n4-tokoro | N4 | ～ところ | 4 | 0 | 4 | daily-life, food, home, work | plain, polite | covered | ready | pass |
 | grammar-n4-transitive-intransitive-verbs | N4 | 他動詞と自動詞 | 4 | 0 | 4 | family, hobbies, shopping, weather | plain, polite | covered | ready | pass |
-| grammar-n4-tsuzukeru | N4 | ～続ける | 4 | 0 | 4 | daily-life, family, plans, weather | plain, polite | covered | ready | pass |
+| grammar-n4-tsuzukeru | N4 | ～続ける | 5 | 0 | 4 | daily-life, family, plans, weather | plain, polite | covered | ready | pass |
 | grammar-n4-volitional-form | N4 | 意向形（～おう／～よう） | 4 | 0 | 4 | daily-life, family, home, public-transport | plain, polite | covered | ready | pass |
 | grammar-n4-yasui | N4 | ～やすい | 4 | 0 | 4 | appointments, directions, family, plans | plain, polite | covered | ready | pass |
-| grammar-n4-yotei-da | N4 | ～予定だ | 4 | 0 | 4 | appointments, health, home, public-transport | plain, polite | covered | ready | pass |
-| grammar-n4-you-ni-naru | N4 | ～ようになる | 4 | 0 | 4 | appointments, daily-life, directions, food | plain | covered | ready | pass |
-| grammar-n4-you-ni-purpose | N4 | ～ように | 4 | 0 | 4 | appointments, hobbies, public-transport, travel | plain, polite | covered | ready | pass |
-| grammar-n4-you-ni-suru | N4 | ～ようにする | 4 | 0 | 4 | daily-life, family, hobbies, plans | plain, polite | covered | ready | pass |
+| grammar-n4-yotei-da | N4 | ～予定だ | 6 | 0 | 4 | appointments, daily-life, health, home, public-transport | plain, polite | covered | ready | pass |
+| grammar-n4-you-ni-naru | N4 | ～ようになる | 5 | 0 | 4 | appointments, daily-life, directions, food | plain, polite | covered | ready | pass |
+| grammar-n4-you-ni-purpose | N4 | ～ように | 6 | 0 | 4 | appointments, daily-life, hobbies, public-transport, travel | plain, polite | covered | ready | pass |
+| grammar-n4-you-ni-suru | N4 | ～ようにする | 8 | 0 | 4 | daily-life, family, hobbies, plans | plain, polite | covered | ready | pass |
 | grammar-n4-you-to-omou | N4 | ～ようと思う | 4 | 0 | 4 | home, public-transport, shopping | plain, polite | covered | ready | pass |
 | grammar-n4-youda-similarity | N4 | ～ようだ | 4 | 0 | 4 | appointments, directions, family, plans | plain, polite | covered | ready | pass |
 | grammar-n4-zurai | N4 | ～づらい | 4 | 0 | 4 | directions, hobbies, plans, shopping | plain, polite | covered | ready | pass |

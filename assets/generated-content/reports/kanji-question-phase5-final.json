@@ -15,15 +15,26 @@
       "vocab-一-いち",
       "vocab-一つ-ひとつ",
       "vocab-一人-ひとり",
+      "vocab-一体-いったい",
+      "vocab-一家-いっか",
+      "vocab-一層-いっそう",
       "vocab-一度-いちど",
+      "vocab-一度に-いちどに",
+      "vocab-一方-いっぽう",
       "vocab-一日-いちにち",
       "vocab-一日-ついたち",
       "vocab-一昨日-おととい",
+      "vocab-一時-いちじ",
       "vocab-一月-ひとつき",
       "vocab-一杯-いっぱい",
+      "vocab-一生-いっしょう",
       "vocab-一生懸命-いっしょうけんめい",
       "vocab-一番-いちばん",
+      "vocab-一瞬-いっしゅん",
+      "vocab-一種-いっしゅ",
       "vocab-一緒-いっしょ",
+      "vocab-一致-いっち",
+      "vocab-一般-いっぱん",
       "vocab-十-じゅう",
       "vocab-十日-とおか",
       "vocab-百-ひゃく"
@@ -66,12 +77,23 @@
     ],
     "demonstratedReadings": [
       "いち",
+      "いちじ",
       "いちど",
+      "いちどに",
       "いちにち",
       "いちばん",
+      "いっか",
+      "いっしゅ",
+      "いっしゅん",
       "いっしょ",
+      "いっしょう",
       "いっしょうけんめい",
+      "いっそう",
+      "いったい",
+      "いっち",
       "いっぱい",
+      "いっぱん",
+      "いっぽう",
       "おととい",
       "じゅう",
       "ちょっと",
@@ -277,6 +299,7 @@
       "vocab-上げる-あげる",
       "vocab-上手-じょうず",
       "vocab-上着-うわぎ",
+      "vocab-仕上げる-しあげる",
       "vocab-以上-いじょう",
       "vocab-召し上がる-めしあがる",
       "vocab-屋上-おくじょう",
@@ -309,6 +332,7 @@
       "うわぎ",
       "おくじょう",
       "さしあげる",
+      "しあげる",
       "じょうず",
       "のぼる",
       "めしあがる",
@@ -363,10 +387,12 @@
       "vocab-下さい-ください",
       "vocab-下りる-おりる",
       "vocab-下る-さがる",
+      "vocab-下ろす-おろす",
       "vocab-下宿-げしゅく",
       "vocab-下手-へた",
       "vocab-下着-したぎ",
       "vocab-以下-いか",
+      "vocab-地下-ちか",
       "vocab-地下鉄-ちかてつ",
       "vocab-廊下-ろうか",
       "vocab-降りる-おりる",
@@ -383,6 +409,7 @@
     "demonstratedReadings": [
       "いか",
       "おりる",
+      "おろす",
       "ください",
       "くつした",
       "げしゅく",
@@ -390,6 +417,7 @@
       "さげる",
       "した",
       "したぎ",
+      "ちか",
       "ちかてつ",
       "へた",
       "ろうか"
@@ -467,11 +495,15 @@
     ],
     "supportedVocabularyIds": [
       "vocab-世界-せかい",
+      "vocab-世紀-せいき",
+      "vocab-世間-せけん",
       "vocab-店-みせ"
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
+      "せいき",
       "せかい",
+      "せけん",
       "みせ"
     ],
     "approvedQuestionIds": [
@@ -487,7 +519,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "せかい"
+      "せいき"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -511,10 +543,16 @@
       "vocab-お腹-おなか",
       "vocab-中-なか",
       "vocab-中々-なかなか",
+      "vocab-中央-ちゅうおう",
+      "vocab-中学-ちゅうがく",
       "vocab-中学校-ちゅうがっこう",
+      "vocab-中止-ちゅうし",
+      "vocab-中身-なかみ",
       "vocab-内-うち",
+      "vocab-当たる-あたる",
       "vocab-背中-せなか",
-      "vocab-途中-とちゅう"
+      "vocab-途中-とちゅう",
+      "vocab-集中-しゅうちゅう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-deshou-structural-variation",
@@ -541,13 +579,19 @@
       "sentence-tte-core"
     ],
     "demonstratedReadings": [
+      "あたる",
       "うち",
       "おなか",
+      "しゅうちゅう",
       "せなか",
+      "ちゅうおう",
+      "ちゅうがく",
       "ちゅうがっこう",
+      "ちゅうし",
       "とちゅう",
       "なか",
-      "なかなか"
+      "なかなか",
+      "なかみ"
     ],
     "approvedQuestionIds": [
       "question-kanji-u4e2d-character-meaning-1",
@@ -562,7 +606,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "うち"
+      "あたる"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -586,11 +630,15 @@
     ],
     "supportedVocabularyIds": [
       "vocab-ご主人-ごしゅじん",
+      "vocab-主に-おもに",
+      "vocab-主婦-しゅふ",
       "vocab-留守-るす"
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
+      "おもに",
       "ごしゅじん",
+      "しゅふ",
       "るす"
     ],
     "approvedQuestionIds": [
@@ -606,7 +654,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "ごしゅじん"
+      "おもに"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -614,6 +662,43 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-乗",
+    "character": "乗",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-の.り",
+      "の.せる",
+      "の.る",
+      "ショウ",
+      "ジョウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-乗せる-のせる",
+      "vocab-乗り換える-のりかえる",
+      "vocab-乗り物-のりもの",
+      "vocab-乗る-のる",
+      "vocab-乗客-じょうきゃく"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "じょうきゃく",
+      "のせる",
+      "のりかえる",
+      "のりもの",
+      "のる"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-九",
@@ -681,13 +766,20 @@
     ],
     "supportedVocabularyIds": [
       "vocab-事-こと",
+      "vocab-事件-じけん",
+      "vocab-事前-じぜん",
       "vocab-事務所-じむしょ",
+      "vocab-事実-じじつ",
+      "vocab-事情-じじょう",
       "vocab-事故-じこ",
+      "vocab-事業-じぎょう",
       "vocab-仕事-しごと",
       "vocab-大事-だいじ",
+      "vocab-工事-こうじ",
       "vocab-火事-かじ",
       "vocab-用事-ようじ",
-      "vocab-返事-へんじ"
+      "vocab-返事-へんじ",
+      "vocab-食事-しょくじ"
     ],
     "approvedExampleSentenceIds": [
       "sentence-heiku-structural-variation",
@@ -712,9 +804,16 @@
     ],
     "demonstratedReadings": [
       "かじ",
+      "こうじ",
       "こと",
       "しごと",
+      "しょくじ",
+      "じぎょう",
+      "じけん",
       "じこ",
+      "じじつ",
+      "じじょう",
+      "じぜん",
       "じむしょ",
       "だいじ",
       "へんじ",
@@ -760,7 +859,8 @@
       "vocab-二人-ふたり",
       "vocab-二十日-はつか",
       "vocab-二十歳-はたち",
-      "vocab-二日-ふつか"
+      "vocab-二日-ふつか",
+      "vocab-再び-ふたたび"
     ],
     "approvedExampleSentenceIds": [
       "sentence-kurai1-real-life",
@@ -778,6 +878,7 @@
       "に",
       "はたち",
       "はつか",
+      "ふたたび",
       "ふたつ",
       "ふたり",
       "ふつか"
@@ -905,9 +1006,17 @@
       "vocab-人-ひと",
       "vocab-人口-じんこう",
       "vocab-人形-にんぎょう",
+      "vocab-人気-にんき",
+      "vocab-人生-じんせい",
+      "vocab-人間-にんげん",
+      "vocab-他人-たにん",
+      "vocab-個人-こじん",
+      "vocab-商人-しょうにん",
       "vocab-外国人-がいこくじん",
       "vocab-大人-おとな",
-      "vocab-夫-おっと"
+      "vocab-夫-おっと",
+      "vocab-恋人-こいびと",
+      "vocab-犯人-はんにん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-adjective-u2d-te-u2d-b-real-life",
@@ -943,9 +1052,17 @@
       "おっと",
       "おとな",
       "がいこくじん",
+      "こいびと",
+      "こじん",
       "ごしゅじん",
+      "しょうにん",
       "じんこう",
+      "じんせい",
+      "たにん",
+      "にんき",
       "にんぎょう",
+      "にんげん",
+      "はんにん",
       "ひと",
       "ひとり",
       "ふたり"
@@ -984,9 +1101,12 @@
     ],
     "supportedVocabularyIds": [
       "vocab-今-いま",
+      "vocab-今に-いまに",
+      "vocab-今回-こんかい",
       "vocab-今夜-こんや",
       "vocab-今年-ことし",
       "vocab-今度-こんど",
+      "vocab-今後-こんご",
       "vocab-今日-きょう",
       "vocab-今晩-こんばん",
       "vocab-今月-こんげつ",
@@ -1047,10 +1167,13 @@
     ],
     "demonstratedReadings": [
       "いま",
+      "いまに",
       "きょう",
       "けさ",
       "ことし",
+      "こんかい",
       "こんげつ",
+      "こんご",
       "こんしゅう",
       "こんど",
       "こんばん",
@@ -1089,8 +1212,10 @@
       "ジ"
     ],
     "supportedVocabularyIds": [
+      "vocab-仕上げる-しあげる",
       "vocab-仕事-しごと",
       "vocab-仕方-しかた",
+      "vocab-幸せ-しあわせ",
       "vocab-試合-しあい"
     ],
     "approvedExampleSentenceIds": [
@@ -1109,6 +1234,8 @@
     ],
     "demonstratedReadings": [
       "しあい",
+      "しあげる",
+      "しあわせ",
       "しかた",
       "しごと"
     ],
@@ -1135,6 +1262,36 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-他",
+    "character": "他",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "ほか",
+      "タ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-その他-そのほか",
+      "vocab-他人-たにん",
+      "vocab-外-ほか"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "そのほか",
+      "たにん",
+      "ほか"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-代",
     "character": "代",
     "level": "N4",
@@ -1154,14 +1311,20 @@
     ],
     "supportedVocabularyIds": [
       "vocab-代わり-かわり",
-      "vocab-時代-じだい"
+      "vocab-代表-だいひょう",
+      "vocab-時代-じだい",
+      "vocab-現代-げんだい",
+      "vocab-身代わり-みがわり"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-koto-u2d-ga-u2d-dekiru-contrast-aware"
     ],
     "demonstratedReadings": [
       "かわり",
-      "じだい"
+      "げんだい",
+      "じだい",
+      "だいひょう",
+      "みがわり"
     ],
     "approvedQuestionIds": [
       "question-kanji-u4ee3-character-meaning-1",
@@ -1198,7 +1361,9 @@
       "vocab-以上-いじょう",
       "vocab-以下-いか",
       "vocab-以内-いない",
-      "vocab-以外-いがい"
+      "vocab-以前-いぜん",
+      "vocab-以外-いがい",
+      "vocab-以来-いらい"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-to-u2d-iwarete-u2d-iru-core"
@@ -1207,7 +1372,9 @@
       "いか",
       "いがい",
       "いじょう",
-      "いない"
+      "いぜん",
+      "いない",
+      "いらい"
     ],
     "approvedQuestionIds": [
       "question-kanji-u4ee5-character-meaning-1",
@@ -1232,6 +1399,34 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-件",
+    "character": "件",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "くだん",
+      "ケン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-事件-じけん",
+      "vocab-条件-じょうけん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "じけん",
+      "じょうけん"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-休",
     "character": "休",
     "level": "N5",
@@ -1245,6 +1440,7 @@
     "supportedVocabularyIds": [
       "vocab-休み-やすみ",
       "vocab-休む-やすむ",
+      "vocab-休憩-きゅうけい",
       "vocab-夏休み-なつやすみ",
       "vocab-昼休み-ひるやすみ"
     ],
@@ -1282,6 +1478,7 @@
       "sentence-ya-structural-variation"
     ],
     "demonstratedReadings": [
+      "きゅうけい",
       "なつやすみ",
       "ひるやすみ",
       "やすみ",
@@ -1300,7 +1497,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "なつやすみ"
+      "きゅうけい"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -1325,9 +1522,12 @@
       "vocab-会う-あう",
       "vocab-会場-かいじょう",
       "vocab-会社-かいしゃ",
+      "vocab-会計-かいけい",
       "vocab-会話-かいわ",
       "vocab-会議-かいぎ",
       "vocab-会議室-かいぎしつ",
+      "vocab-再会-さいかい",
+      "vocab-司会-しかい",
       "vocab-展覧会-てんらんかい",
       "vocab-教会-きょうかい",
       "vocab-機会-きかい",
@@ -1370,11 +1570,14 @@
       "あう",
       "かいぎ",
       "かいぎしつ",
+      "かいけい",
       "かいしゃ",
       "かいじょう",
       "かいわ",
       "きかい",
       "きょうかい",
+      "さいかい",
+      "しかい",
       "しゃかい",
       "てんらんかい"
     ],
@@ -1403,7 +1606,9 @@
     ],
     "supportedVocabularyIds": [
       "vocab-住む-すむ",
-      "vocab-住所-じゅうしょ"
+      "vocab-住宅-じゅうたく",
+      "vocab-住所-じゅうしょ",
+      "vocab-住民-じゅうみん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-gaaru-u2d-noun-real-life",
@@ -1415,6 +1620,8 @@
     ],
     "demonstratedReadings": [
       "じゅうしょ",
+      "じゅうたく",
+      "じゅうみん",
       "すむ"
     ],
     "approvedQuestionIds": [
@@ -1451,6 +1658,7 @@
       "テイ"
     ],
     "supportedVocabularyIds": [
+      "vocab-一体-いったい",
       "vocab-体-からだ",
       "vocab-大体-だいたい"
     ],
@@ -1459,6 +1667,7 @@
       "sentence-n4-u2d-to-u2d-iwarete-u2d-iru-real-life"
     ],
     "demonstratedReadings": [
+      "いったい",
       "からだ",
       "だいたい"
     ],
@@ -1475,7 +1684,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "からだ"
+      "いったい"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -1502,7 +1711,8 @@
       "vocab-どちら-どちら",
       "vocab-どっち-どっち",
       "vocab-どの-どの",
-      "vocab-どれ-どれ"
+      "vocab-どれ-どれ",
+      "vocab-何とか-なんとか"
     ],
     "approvedExampleSentenceIds": [
       "sentence-are-real-life",
@@ -1525,7 +1735,8 @@
       "どちら",
       "どっち",
       "どの",
-      "どれ"
+      "どれ",
+      "なんとか"
     ],
     "approvedQuestionIds": [
       "question-kanji-u4f55-character-meaning-1",
@@ -1563,7 +1774,12 @@
     ],
     "supportedVocabularyIds": [
       "vocab-作る-つくる",
-      "vocab-作文-さくぶん"
+      "vocab-作品-さくひん",
+      "vocab-作家-さっか",
+      "vocab-作文-さくぶん",
+      "vocab-作曲-さっきょく",
+      "vocab-作業-さぎょう",
+      "vocab-作法-さほう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-de-u2d-action-u2d-location-u2d-marker-core",
@@ -1579,7 +1795,12 @@
       "sentence-verb-u2d-te-structural-variation"
     ],
     "demonstratedReadings": [
+      "さぎょう",
+      "さくひん",
       "さくぶん",
+      "さっか",
+      "さっきょく",
+      "さほう",
       "つくる"
     ],
     "approvedQuestionIds": [
@@ -1595,7 +1816,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "さくぶん"
+      "さぎょう"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -1617,7 +1838,9 @@
       "シ"
     ],
     "supportedVocabularyIds": [
+      "vocab-使い方-つかいかた",
       "vocab-使う-つかう",
+      "vocab-使用-しよう",
       "vocab-大使館-たいしかん"
     ],
     "approvedExampleSentenceIds": [
@@ -1646,7 +1869,9 @@
       "sentence-to-u2d-accompaniment-u2d-marker-structural-variation"
     ],
     "demonstratedReadings": [
+      "しよう",
       "たいしかん",
+      "つかいかた",
       "つかう"
     ],
     "approvedQuestionIds": [
@@ -1662,7 +1887,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "たいしかん"
+      "しよう"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -1670,6 +1895,89 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-係",
+    "character": "係",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-がかり",
+      "かか.る",
+      "かか.わる",
+      "かかり",
+      "ケイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-関係-かんけい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "かんけい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-信",
+    "character": "信",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "シン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-信じる-しんじる",
+      "vocab-信号-しんごう",
+      "vocab-信頼-しんらい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "しんごう",
+      "しんじる",
+      "しんらい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "kanjiId": "kanji-倍",
+    "character": "倍",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "バイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-倍-ばい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "ばい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
   },
   {
     "kanjiId": "kanji-借",
@@ -1681,13 +1989,15 @@
       "シャク"
     ],
     "supportedVocabularyIds": [
-      "vocab-借りる-かりる"
+      "vocab-借りる-かりる",
+      "vocab-借金-しゃっきん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-koto-u2d-ga-u2d-dekiru-core"
     ],
     "demonstratedReadings": [
-      "かりる"
+      "かりる",
+      "しゃっきん"
     ],
     "approvedQuestionIds": [
       "question-kanji-u501f-character-meaning-1",
@@ -1703,11 +2013,93 @@
       "かりる"
     ],
     "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-健",
+    "character": "健",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "すこ.やか",
+      "ケン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-健康-けんこう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "けんこう"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
     "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
     "preferredCount": 4,
     "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-側",
+    "character": "側",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "かわ",
+      "がわ",
+      "そば",
+      "ソク"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-両側-りょうがわ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "りょうがわ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-働",
+    "character": "働",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "はたら.く",
+      "ドウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-働く-はたらく",
+      "vocab-自動-じどう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "じどう",
+      "はたらく"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-元",
@@ -1814,6 +2206,7 @@
     "supportedVocabularyIds": [
       "vocab-さっき-さっき",
       "vocab-先-さき",
+      "vocab-先ほど-さきほど",
       "vocab-先月-せんげつ",
       "vocab-先生-せんせい",
       "vocab-先輩-せんぱい",
@@ -1845,6 +2238,7 @@
     ],
     "demonstratedReadings": [
       "さき",
+      "さきほど",
       "さっき",
       "せんげつ",
       "せんしゅう",
@@ -1892,6 +2286,8 @@
       "vocab-入る-はいる",
       "vocab-入れる-いれる",
       "vocab-入口-いりぐち",
+      "vocab-入場-にゅうじょう",
+      "vocab-収入-しゅうにゅう",
       "vocab-押し入れ-おしいれ",
       "vocab-輸入-ゆにゅう"
     ],
@@ -1907,6 +2303,8 @@
       "いりぐち",
       "いれる",
       "おしいれ",
+      "しゅうにゅう",
+      "にゅうじょう",
       "はいる",
       "ゆにゅう"
     ],
@@ -1931,6 +2329,39 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-全",
+    "character": "全",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "すべ.て",
+      "まった.く",
+      "ゼン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-全て-すべて",
+      "vocab-全然-ぜんぜん",
+      "vocab-全部-ぜんぶ",
+      "vocab-安全-あんぜん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "あんぜん",
+      "すべて",
+      "ぜんぜん",
+      "ぜんぶ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-八",
@@ -2084,6 +2515,67 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-共",
+    "character": "共",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-ども",
+      "とも",
+      "とも.に",
+      "キョウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-共に-ともに",
+      "vocab-共通-きょうつう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "きょうつう",
+      "ともに"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-具",
+    "character": "具",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "そな.える",
+      "つぶさ.に",
+      "グ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-具合-ぐあい",
+      "vocab-家具-かぐ",
+      "vocab-道具-どうぐ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "かぐ",
+      "ぐあい",
+      "どうぐ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-円",
     "character": "円",
     "level": "N5",
@@ -2130,7 +2622,9 @@
     ],
     "supportedVocabularyIds": [
       "vocab-写す-うつす",
-      "vocab-写真-しゃしん"
+      "vocab-写る-うつる",
+      "vocab-写真-しゃしん",
+      "vocab-写真家-しゃしんか"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ageru-real-life",
@@ -2144,7 +2638,9 @@
     ],
     "demonstratedReadings": [
       "うつす",
-      "しゃしん"
+      "うつる",
+      "しゃしん",
+      "しゃしんか"
     ],
     "approvedQuestionIds": [
       "question-kanji-u5199-character-meaning-1",
@@ -2209,6 +2705,49 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-冷",
+    "character": "冷",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "さ.ます",
+      "さ.める",
+      "つめ.たい",
+      "ひ.える",
+      "ひ.や",
+      "ひ.やかす",
+      "ひ.やす",
+      "ひ.ややか",
+      "レイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-冷える-ひえる",
+      "vocab-冷たい-つめたい",
+      "vocab-冷ます-さます",
+      "vocab-冷める-さめる",
+      "vocab-冷房-れいぼう",
+      "vocab-冷蔵庫-れいぞうこ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "さます",
+      "さめる",
+      "つめたい",
+      "ひえる",
+      "れいぞうこ",
+      "れいぼう"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-出",
     "character": "出",
     "level": "N5",
@@ -2228,8 +2767,13 @@
       "vocab-出す-だす",
       "vocab-出る-でる",
       "vocab-出口-でぐち",
+      "vocab-出席-しゅっせき",
+      "vocab-出版-しゅっぱん",
+      "vocab-出発-しゅっぱつ",
+      "vocab-出身-しゅっしん",
       "vocab-引き出し-ひきだし",
-      "vocab-思い出す-おもいだす"
+      "vocab-思い出す-おもいだす",
+      "vocab-支出-ししゅつ"
     ],
     "approvedExampleSentenceIds": [
       "sentence-asoko-real-life",
@@ -2264,6 +2808,11 @@
     ],
     "demonstratedReadings": [
       "おもいだす",
+      "ししゅつ",
+      "しゅっしん",
+      "しゅっせき",
+      "しゅっぱつ",
+      "しゅっぱん",
       "だす",
       "でかける",
       "でぐち",
@@ -2316,6 +2865,7 @@
       "vocab-切手-きって",
       "vocab-切符-きっぷ",
       "vocab-大切-たいせつ",
+      "vocab-裏切る-うらぎる",
       "vocab-親切-しんせつ"
     ],
     "approvedExampleSentenceIds": [
@@ -2339,6 +2889,7 @@
       "sentence-verb-u2d-niiku-core"
     ],
     "demonstratedReadings": [
+      "うらぎる",
       "きって",
       "きっぷ",
       "きる",
@@ -2358,7 +2909,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "きって"
+      "うらぎる"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -2366,6 +2917,42 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-初",
+    "character": "初",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-そ.める",
+      "-ぞ.め",
+      "うい-",
+      "はじ.め",
+      "はじ.めて",
+      "はつ",
+      "はつ-",
+      "ショ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-初めて-はじめて",
+      "vocab-始まり-はじまり",
+      "vocab-最初-さいしょ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "さいしょ",
+      "はじまり",
+      "はじめて"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-別",
@@ -2414,6 +3001,38 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-利",
+    "character": "利",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "き.く",
+      "リ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-アフリカ-あふりか",
+      "vocab-アメリカ-あめりか",
+      "vocab-便利-べんり",
+      "vocab-利用-りよう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "あふりか",
+      "あめりか",
+      "べんり",
+      "りよう"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-前",
     "character": "前",
     "level": "N5",
@@ -2424,10 +3043,13 @@
       "ゼン"
     ],
     "supportedVocabularyIds": [
+      "vocab-事前-じぜん",
+      "vocab-以前-いぜん",
       "vocab-先-さき",
       "vocab-前-まえ",
       "vocab-午前-ごぜん",
-      "vocab-名前-なまえ"
+      "vocab-名前-なまえ",
+      "vocab-当たり前-あたりまえ"
     ],
     "approvedExampleSentenceIds": [
       "sentence-de-u2d-means-u2d-marker-structural-variation",
@@ -2464,8 +3086,11 @@
       "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-real-life"
     ],
     "demonstratedReadings": [
+      "あたりまえ",
+      "いぜん",
       "ごぜん",
       "さき",
+      "じぜん",
       "なまえ",
       "まえ"
     ],
@@ -2482,7 +3107,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "ごぜん"
+      "あたりまえ"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -2503,13 +3128,17 @@
       "リョク"
     ],
     "supportedVocabularyIds": [
-      "vocab-力-ちから"
+      "vocab-力-ちから",
+      "vocab-協力-きょうりょく",
+      "vocab-能力-のうりょく"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-yasui-contrast-aware"
     ],
     "demonstratedReadings": [
-      "ちから"
+      "きょうりょく",
+      "ちから",
+      "のうりょく"
     ],
     "approvedQuestionIds": [
       "question-kanji-u529b-character-meaning-1",
@@ -2522,14 +3151,47 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "ちから"
+      "きょうりょく"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-加",
+    "character": "加",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "くわ.える",
+      "くわ.わる",
+      "カ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-アフリカ-あふりか",
+      "vocab-アメリカ-あめりか",
+      "vocab-加える-くわえる",
+      "vocab-参加-さんか"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "あふりか",
+      "あめりか",
+      "くわえる",
+      "さんか"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-勉",
@@ -2568,10 +3230,15 @@
       "ドウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-動かす-うごかす",
       "vocab-動く-うごく",
       "vocab-動物-どうぶつ",
       "vocab-動物園-どうぶつえん",
-      "vocab-自動車-じどうしゃ"
+      "vocab-感動-かんどう",
+      "vocab-移動-いどう",
+      "vocab-自動-じどう",
+      "vocab-自動車-じどうしゃ",
+      "vocab-行動-こうどう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-ga-u2d-suru-u2d-senses-contrast-aware",
@@ -2582,7 +3249,12 @@
       "sentence-n4-u2d-tsuzukeru-structural-variation"
     ],
     "demonstratedReadings": [
+      "いどう",
+      "うごかす",
       "うごく",
+      "かんどう",
+      "こうどう",
+      "じどう",
       "じどうしゃ",
       "どうぶつ",
       "どうぶつえん"
@@ -2600,7 +3272,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "うごく"
+      "いどう"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -2608,6 +3280,102 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-務",
+    "character": "務",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "つと.める",
+      "ム"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-事務所-じむしょ",
+      "vocab-公務員-こうむいん",
+      "vocab-勤め-つとめ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "こうむいん",
+      "じむしょ",
+      "つとめ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-勤",
+    "character": "勤",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-づと.め",
+      "いそ.しむ",
+      "つと.まる",
+      "つと.める",
+      "キン",
+      "ゴン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-勤め-つとめ",
+      "vocab-勤める-つとめる"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "つとめ",
+      "つとめる"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-化",
+    "character": "化",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "け.する",
+      "ば.かす",
+      "ば.ける",
+      "ふ.ける",
+      "カ",
+      "ケ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-化学-かがく",
+      "vocab-化粧-けしょう",
+      "vocab-文化-ぶんか"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "かがく",
+      "けしょう",
+      "ぶんか"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-北",
@@ -2660,13 +3428,17 @@
     ],
     "supportedVocabularyIds": [
       "vocab-医学-いがく",
+      "vocab-医師-いし",
+      "vocab-医療-いりょう",
       "vocab-医者-いしゃ",
       "vocab-歯医者-はいしゃ"
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
       "いがく",
+      "いし",
       "いしゃ",
+      "いりょう",
       "はいしゃ"
     ],
     "approvedQuestionIds": [
@@ -2803,7 +3575,8 @@
     "supportedVocabularyIds": [
       "vocab-午前-ごぜん",
       "vocab-午後-ごご",
-      "vocab-昼-ひる"
+      "vocab-昼-ひる",
+      "vocab-正午-しょうご"
     ],
     "approvedExampleSentenceIds": [
       "sentence-gaaru-real-life",
@@ -2816,6 +3589,7 @@
     "demonstratedReadings": [
       "ごご",
       "ごぜん",
+      "しょうご",
       "ひる"
     ],
     "approvedQuestionIds": [
@@ -2881,6 +3655,64 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-卒",
+    "character": "卒",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "お.える",
+      "お.わる",
+      "そっ.する",
+      "ついに",
+      "にわか",
+      "シュツ",
+      "ソツ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-卒業-そつぎょう",
+      "vocab-終る-おわる"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "おわる",
+      "そつぎょう"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-協",
+    "character": "協",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "キョウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-協力-きょうりょく"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "きょうりょく"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
     "kanjiId": "kanji-南",
     "character": "南",
     "level": "N5",
@@ -2918,6 +3750,86 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-単",
+    "character": "単",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "ひとえ",
+      "タン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-簡単-かんたん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "かんたん"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-博",
+    "character": "博",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "ハク",
+      "バク"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-博士-はかせ",
+      "vocab-博物館-はくぶつかん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "はかせ",
+      "はくぶつかん"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "kanjiId": "kanji-原",
+    "character": "原",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "はら",
+      "ゲン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-原因-げんいん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "げんいん"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-去",
     "character": "去",
     "level": "N4",
@@ -2929,13 +3841,15 @@
       "コ"
     ],
     "supportedVocabularyIds": [
+      "vocab-去る-さる",
       "vocab-去年-きょねん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-kono-structural-variation"
     ],
     "demonstratedReadings": [
-      "きょねん"
+      "きょねん",
+      "さる"
     ],
     "approvedQuestionIds": [
       "question-kanji-u53bb-character-meaning-1",
@@ -2951,11 +3865,45 @@
       "きょねん"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-参",
+    "character": "参",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "まい-",
+      "まい.る",
+      "まじわる",
+      "みつ",
+      "サン",
+      "シン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-参る-まいる",
+      "vocab-参加-さんか",
+      "vocab-参考-さんこう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "さんか",
+      "さんこう",
+      "まいる"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-友",
@@ -2967,7 +3915,9 @@
       "ユウ"
     ],
     "supportedVocabularyIds": [
-      "vocab-友達-ともだち"
+      "vocab-友-とも",
+      "vocab-友達-ともだち",
+      "vocab-親友-しんゆう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ageru-real-life",
@@ -2985,6 +3935,8 @@
       "sentence-verb-u2d-niiku-structural-variation"
     ],
     "demonstratedReadings": [
+      "しんゆう",
+      "とも",
       "ともだち"
     ],
     "approvedQuestionIds": [
@@ -2998,14 +3950,116 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "ともだち"
+      "しんゆう"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-反",
+    "character": "反",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-かえ.る",
+      "かえ.す",
+      "かえ.る",
+      "そ.らす",
+      "そ.る",
+      "タン",
+      "ハン",
+      "ホ",
+      "ホン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-反対-はんたい",
+      "vocab-反省-はんせい",
+      "vocab-返す-かえす",
+      "vocab-違反-いはん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "いはん",
+      "かえす",
+      "はんせい",
+      "はんたい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-収",
+    "character": "収",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "おさ.まる",
+      "おさ.める",
+      "シュウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-収める-おさめる",
+      "vocab-収入-しゅうにゅう",
+      "vocab-収穫-しゅうかく"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "おさめる",
+      "しゅうかく",
+      "しゅうにゅう"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-受",
+    "character": "受",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-う.け",
+      "う.かる",
+      "う.ける",
+      "ジュ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-受ける-うける",
+      "vocab-受け取る-うけとる",
+      "vocab-受付-うけつけ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "うけつけ",
+      "うけとる",
+      "うける"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-口",
@@ -3138,7 +4192,8 @@
       "ユウ"
     ],
     "supportedVocabularyIds": [
-      "vocab-右-みぎ"
+      "vocab-右-みぎ",
+      "vocab-左右-さゆう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-kono-real-life",
@@ -3146,6 +4201,7 @@
       "sentence-soko-structural-variation"
     ],
     "demonstratedReadings": [
+      "さゆう",
       "みぎ"
     ],
     "approvedQuestionIds": [
@@ -3159,14 +4215,155 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "みぎ"
+      "さゆう"
     ],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-号",
+    "character": "号",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "さけ.ぶ",
+      "よびな",
+      "ゴウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-信号-しんごう",
+      "vocab-番号-ばんごう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "しんごう",
+      "ばんごう"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-司",
+    "character": "司",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "つかさど.る",
+      "シ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-司会-しかい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "しかい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
     "lifecycleExclusion": null,
     "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
     "preferredCount": 4,
     "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-各",
+    "character": "各",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "おのおの",
+      "カク"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-各国-かっこく"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "かっこく"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-合",
+    "character": "合",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-あ.い",
+      "-あ.う",
+      "-あ.わせる",
+      "-あい",
+      "あ.い",
+      "あ.う",
+      "あ.わす",
+      "あ.わせる",
+      "あい-",
+      "カッ",
+      "ガッ",
+      "ゴウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-付き合う-つきあう",
+      "vocab-似合う-にあう",
+      "vocab-具合-ぐあい",
+      "vocab-割合-わりあい",
+      "vocab-合う-あう",
+      "vocab-合わせる-あわせる",
+      "vocab-合図-あいず",
+      "vocab-場合-ばあい",
+      "vocab-幸せ-しあわせ",
+      "vocab-試合-しあい",
+      "vocab-話し合う-はなしあう",
+      "vocab-都合-つごう",
+      "vocab-間に合う-まにあう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "あいず",
+      "あう",
+      "あわせる",
+      "ぐあい",
+      "しあい",
+      "しあわせ",
+      "つきあう",
+      "つごう",
+      "にあう",
+      "はなしあう",
+      "ばあい",
+      "まにあう",
+      "わりあい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-同",
@@ -3270,6 +4467,71 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-向",
+    "character": "向",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-む.き",
+      "-む.け",
+      "む.い",
+      "む.かい",
+      "む.かう",
+      "む.く",
+      "む.ける",
+      "む.こう",
+      "む.こう-",
+      "むか.い",
+      "むこ",
+      "コウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-向かう-むかう",
+      "vocab-向こう-むこう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "むかう",
+      "むこう"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-君",
+    "character": "君",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-ぎみ",
+      "きみ",
+      "クン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-君-きみ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "きみ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-味",
     "character": "味",
     "level": "N4",
@@ -3280,8 +4542,10 @@
       "ミ"
     ],
     "supportedVocabularyIds": [
+      "vocab-中身-なかみ",
       "vocab-味-あじ",
       "vocab-味噌-みそ",
+      "vocab-地味-じみ",
       "vocab-意味-いみ",
       "vocab-美味しい-おいしい",
       "vocab-興味-きょうみ",
@@ -3299,6 +4563,8 @@
       "おいしい",
       "きょうみ",
       "しゅみ",
+      "じみ",
+      "なかみ",
       "みそ"
     ],
     "approvedQuestionIds": [
@@ -3324,6 +4590,69 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-命",
+    "character": "命",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "いのち",
+      "ミョウ",
+      "メイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-一生懸命-いっしょうけんめい",
+      "vocab-命-いのち",
+      "vocab-生命-せいめい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "いっしょうけんめい",
+      "いのち",
+      "せいめい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-和",
+    "character": "和",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "あ.える",
+      "なご.む",
+      "なご.やか",
+      "やわ.らぐ",
+      "やわ.らげる",
+      "オ",
+      "カ",
+      "ワ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-平和-へいわ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "へいわ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-品",
     "character": "品",
     "level": "N4",
@@ -3334,13 +4663,23 @@
       "ホン"
     ],
     "supportedVocabularyIds": [
+      "vocab-作品-さくひん",
+      "vocab-品-しな",
       "vocab-品物-しなもの",
+      "vocab-商品-しょうひん",
+      "vocab-製品-せいひん",
+      "vocab-食品-しょくひん",
       "vocab-食料品-しょくりょうひん"
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
+      "さくひん",
+      "しな",
       "しなもの",
-      "しょくりょうひん"
+      "しょうひん",
+      "しょくひん",
+      "しょくりょうひん",
+      "せいひん"
     ],
     "approvedQuestionIds": [
       "question-kanji-u54c1-character-meaning-1",
@@ -3355,7 +4694,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "しなもの"
+      "さくひん"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -3374,7 +4713,9 @@
     ],
     "supportedVocabularyIds": [
       "vocab-公務員-こうむいん",
-      "vocab-店員-てんいん"
+      "vocab-委員-いいん",
+      "vocab-店員-てんいん",
+      "vocab-銀行員-ぎんこういん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-desu-core",
@@ -3390,6 +4731,8 @@
       "sentence-n4-u2d-zurai-structural-variation"
     ],
     "demonstratedReadings": [
+      "いいん",
+      "ぎんこういん",
       "こうむいん",
       "てんいん"
     ],
@@ -3406,7 +4749,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "こうむいん"
+      "いいん"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -3414,6 +4757,40 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-商",
+    "character": "商",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "あきな.う",
+      "ショウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-商人-しょうにん",
+      "vocab-商品-しょうひん",
+      "vocab-商売-しょうばい",
+      "vocab-商店-しょうてん",
+      "vocab-商業-しょうぎょう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "しょうぎょう",
+      "しょうてん",
+      "しょうにん",
+      "しょうばい",
+      "しょうひん"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-問",
@@ -3472,6 +4849,37 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-営",
+    "character": "営",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "いとな.み",
+      "いとな.む",
+      "エイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-営業-えいぎょう",
+      "vocab-栄養-えいよう",
+      "vocab-経営-けいえい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "えいぎょう",
+      "えいよう",
+      "けいえい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-四",
     "character": "四",
     "level": "N5",
@@ -3486,11 +4894,15 @@
     "supportedVocabularyIds": [
       "vocab-四-し",
       "vocab-四つ-よっつ",
-      "vocab-四日-よっか"
+      "vocab-四季-しき",
+      "vocab-四日-よっか",
+      "vocab-四角-しかく"
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
       "し",
+      "しかく",
+      "しき",
       "よっか",
       "よっつ"
     ],
@@ -3517,6 +4929,34 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-団",
+    "character": "団",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "かたまり",
+      "まる.い",
+      "ダン",
+      "トン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-布団-ふとん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "ふとん"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-図",
     "character": "図",
     "level": "N4",
@@ -3528,6 +4968,7 @@
       "ト"
     ],
     "supportedVocabularyIds": [
+      "vocab-合図-あいず",
       "vocab-図書館-としょかん",
       "vocab-地図-ちず"
     ],
@@ -3542,6 +4983,7 @@
       "sentence-to-u2d-and-u2d-marker-structural-variation"
     ],
     "demonstratedReadings": [
+      "あいず",
       "ちず",
       "としょかん"
     ],
@@ -3558,7 +5000,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "ちず"
+      "あいず"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -3566,6 +5008,35 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-固",
+    "character": "固",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "かた.い",
+      "かた.まり",
+      "かた.まる",
+      "かた.める",
+      "コ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-固い-かたい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "かたい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-国",
@@ -3577,6 +5048,7 @@
       "コク"
     ],
     "supportedVocabularyIds": [
+      "vocab-各国-かっこく",
       "vocab-国-くに",
       "vocab-国際-こくさい",
       "vocab-外国-がいこく",
@@ -3584,6 +5056,7 @@
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
+      "かっこく",
       "がいこく",
       "がいこくじん",
       "くに",
@@ -3602,7 +5075,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "がいこく"
+      "かっこく"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -3668,8 +5141,14 @@
       "チ"
     ],
     "supportedVocabularyIds": [
+      "vocab-位置-いち",
+      "vocab-地下-ちか",
       "vocab-地下鉄-ちかてつ",
+      "vocab-地味-じみ",
       "vocab-地図-ちず",
+      "vocab-地域-ちいき",
+      "vocab-地方-ちほう",
+      "vocab-地球-ちきゅう",
       "vocab-地理-ちり",
       "vocab-地震-じしん"
     ],
@@ -3682,9 +5161,15 @@
       "sentence-to-u2d-and-u2d-marker-structural-variation"
     ],
     "demonstratedReadings": [
+      "いち",
       "じしん",
+      "じみ",
+      "ちいき",
+      "ちか",
       "ちかてつ",
+      "ちきゅう",
       "ちず",
+      "ちほう",
       "ちり"
     ],
     "approvedQuestionIds": [
@@ -3700,7 +5185,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "じしん"
+      "いち"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -3708,6 +5193,33 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-型",
+    "character": "型",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "-がた",
+      "かた",
+      "ケイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-大型-おおがた"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "おおがた"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-堂",
@@ -3760,10 +5272,12 @@
     ],
     "supportedVocabularyIds": [
       "vocab-会場-かいじょう",
+      "vocab-入場-にゅうじょう",
       "vocab-場合-ばあい",
       "vocab-場所-ばしょ",
       "vocab-売り場-うりば",
       "vocab-工場-こうじょう",
+      "vocab-市場-いちば",
       "vocab-飛行場-ひこうじょう",
       "vocab-駐車場-ちゅうしゃじょう"
     ],
@@ -3784,10 +5298,12 @@
       "sentence-ya-real-life"
     ],
     "demonstratedReadings": [
+      "いちば",
       "うりば",
       "かいじょう",
       "こうじょう",
       "ちゅうしゃじょう",
+      "にゅうじょう",
       "ばあい",
       "ばしょ",
       "ひこうじょう"
@@ -3805,7 +5321,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "うりば"
+      "いちば"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -3813,6 +5329,34 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-声",
+    "character": "声",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "こえ",
+      "こわ-",
+      "ショウ",
+      "セイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-声-こえ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "こえ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 3,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-売",
@@ -3825,15 +5369,21 @@
       "バイ"
     ],
     "supportedVocabularyIds": [
+      "vocab-商売-しょうばい",
       "vocab-売り場-うりば",
-      "vocab-売る-うる"
+      "vocab-売る-うる",
+      "vocab-売れる-うれる",
+      "vocab-販売-はんばい"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-souda-u2d-hearsay-structural-variation"
     ],
     "demonstratedReadings": [
       "うりば",
-      "うる"
+      "うる",
+      "うれる",
+      "しょうばい",
+      "はんばい"
     ],
     "approvedQuestionIds": [
       "question-kanji-u58f2-character-meaning-1",
@@ -3856,6 +5406,44 @@
     "effectiveSupportedCount": 4,
     "coverageGap": 0,
     "status": "pass"
+  },
+  {
+    "kanjiId": "kanji-変",
+    "character": "変",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "か.える",
+      "か.わり",
+      "か.わる",
+      "ヘン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-変-へん",
+      "vocab-変える-かえる",
+      "vocab-変わり-かわり",
+      "vocab-変わる-かわる",
+      "vocab-大変-たいへん",
+      "vocab-相変わらず-あいかわらず"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "あいかわらず",
+      "かえる",
+      "かわり",
+      "かわる",
+      "たいへん",
+      "へん"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-夏",
@@ -3966,11 +5554,16 @@
       "ゲ"
     ],
     "supportedVocabularyIds": [
+      "vocab-その他-そのほか",
       "vocab-以外-いがい",
       "vocab-外-そと",
       "vocab-外-ほか",
+      "vocab-外す-はずす",
+      "vocab-外れる-はずれる",
       "vocab-外国-がいこく",
       "vocab-外国人-がいこくじん",
+      "vocab-意外-いがい",
+      "vocab-案外-あんがい",
       "vocab-郊外-こうがい"
     ],
     "approvedExampleSentenceIds": [
@@ -3987,11 +5580,15 @@
       "sentence-tsumorida-real-life"
     ],
     "demonstratedReadings": [
+      "あんがい",
       "いがい",
       "がいこく",
       "がいこくじん",
       "こうがい",
       "そと",
+      "そのほか",
+      "はずす",
+      "はずれる",
       "ほか"
     ],
     "approvedQuestionIds": [
@@ -4007,7 +5604,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "いがい"
+      "あんがい"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -4029,7 +5626,8 @@
     ],
     "supportedVocabularyIds": [
       "vocab-多い-おおい",
-      "vocab-多分-たぶん"
+      "vocab-多分-たぶん",
+      "vocab-大いに-おおいに"
     ],
     "approvedExampleSentenceIds": [
       "sentence-i-u2d-adjectiveskunai-real-life",
@@ -4038,6 +5636,7 @@
     ],
     "demonstratedReadings": [
       "おおい",
+      "おおいに",
       "たぶん"
     ],
     "approvedQuestionIds": [],
@@ -4121,6 +5720,7 @@
       "ダイ"
     ],
     "supportedVocabularyIds": [
+      "vocab-大いに-おおいに",
       "vocab-大きい-おおきい",
       "vocab-大きな-おおきな",
       "vocab-大丈夫-だいじょうぶ",
@@ -4131,10 +5731,12 @@
       "vocab-大分-だいぶ",
       "vocab-大切-たいせつ",
       "vocab-大勢-おおぜい",
+      "vocab-大型-おおがた",
       "vocab-大変-たいへん",
       "vocab-大好き-だいすき",
       "vocab-大学-だいがく",
       "vocab-大学生-だいがくせい",
+      "vocab-大家-おおや",
       "vocab-大抵-たいてい"
     ],
     "approvedExampleSentenceIds": [
@@ -4157,9 +5759,12 @@
       "sentence-teiru2-core"
     ],
     "demonstratedReadings": [
+      "おおいに",
+      "おおがた",
       "おおきい",
       "おおきな",
       "おおぜい",
+      "おおや",
       "おとな",
       "たいしかん",
       "たいせつ",
@@ -4186,7 +5791,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "おおきい"
+      "おおいに"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -4241,6 +5846,74 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-夫",
+    "character": "夫",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "おっと",
+      "それ",
+      "フ",
+      "フウ",
+      "ブ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-それぞれ-それぞれ",
+      "vocab-丈夫-じょうぶ",
+      "vocab-大丈夫-だいじょうぶ",
+      "vocab-夫-おっと"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "おっと",
+      "じょうぶ",
+      "それぞれ",
+      "だいじょうぶ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-失",
+    "character": "失",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "う.せる",
+      "うしな.う",
+      "シツ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-失う-うしなう",
+      "vocab-失敗-しっぱい",
+      "vocab-失礼-しつれい",
+      "vocab-無くす-なくす"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "うしなう",
+      "しっぱい",
+      "しつれい",
+      "なくす"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-女",
     "character": "女",
     "level": "N5",
@@ -4290,6 +5963,41 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-好",
+    "character": "好",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "い.い",
+      "この.む",
+      "す.く",
+      "よ.い",
+      "コウ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-大好き-だいすき",
+      "vocab-好き-すき",
+      "vocab-好み-このみ",
+      "vocab-格好-かっこう"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "かっこう",
+      "このみ",
+      "すき",
+      "だいすき"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-妹",
     "character": "妹",
     "level": "N4",
@@ -4299,7 +6007,8 @@
       "マイ"
     ],
     "supportedVocabularyIds": [
-      "vocab-妹-いもうと"
+      "vocab-妹-いもうと",
+      "vocab-姉妹-しまい"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ageru-core",
@@ -4312,7 +6021,8 @@
       "sentence-u597d-ki-real-life"
     ],
     "demonstratedReadings": [
-      "いもうと"
+      "いもうと",
+      "しまい"
     ],
     "approvedQuestionIds": [
       "question-kanji-u59b9-character-meaning-1",
@@ -4328,11 +6038,11 @@
       "いもうと"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-姉",
@@ -4346,7 +6056,8 @@
     ],
     "supportedVocabularyIds": [
       "vocab-お姉さん-おねえさん",
-      "vocab-姉-あね"
+      "vocab-姉-あね",
+      "vocab-姉妹-しまい"
     ],
     "approvedExampleSentenceIds": [
       "sentence-de-u2d-action-u2d-location-u2d-marker-real-life",
@@ -4359,7 +6070,8 @@
     ],
     "demonstratedReadings": [
       "あね",
-      "おねえさん"
+      "おねえさん",
+      "しまい"
     ],
     "approvedQuestionIds": [
       "question-kanji-u59c9-character-meaning-1",
@@ -4396,6 +6108,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-初めて-はじめて",
+      "vocab-始まり-はじまり",
       "vocab-始まる-はじまる",
       "vocab-始める-はじめる"
     ],
@@ -4415,6 +6128,7 @@
       "sentence-n4-u2d-tokoro-structural-variation"
     ],
     "demonstratedReadings": [
+      "はじまり",
       "はじまる",
       "はじめて",
       "はじめる"
@@ -4432,7 +6146,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "はじまる"
+      "はじまり"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -4465,7 +6179,8 @@
       "vocab-帽子-ぼうし",
       "vocab-息子-むすこ",
       "vocab-椅子-いす",
-      "vocab-男の子-おとこのこ"
+      "vocab-男の子-おとこのこ",
+      "vocab-調子-ちょうし"
     ],
     "approvedExampleSentenceIds": [
       "sentence-datta-real-life",
@@ -4498,6 +6213,7 @@
       "こ",
       "こども",
       "たまご",
+      "ちょうし",
       "ぼうし",
       "むすこ"
     ],
@@ -4537,6 +6253,7 @@
     "supportedVocabularyIds": [
       "vocab-字-じ",
       "vocab-字引-じびき",
+      "vocab-数字-すうじ",
       "vocab-漢字-かんじ"
     ],
     "approvedExampleSentenceIds": [
@@ -4549,7 +6266,8 @@
     "demonstratedReadings": [
       "かんじ",
       "じ",
-      "じびき"
+      "じびき",
+      "すうじ"
     ],
     "approvedQuestionIds": [
       "question-kanji-u5b57-character-meaning-1",
@@ -4574,6 +6292,33 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-季",
+    "character": "季",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "キ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-四季-しき",
+      "vocab-季節-きせつ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "きせつ",
+      "しき"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
     "kanjiId": "kanji-学",
     "character": "学",
     "level": "N5",
@@ -4583,17 +6328,21 @@
       "ガク"
     ],
     "supportedVocabularyIds": [
+      "vocab-中学-ちゅうがく",
       "vocab-中学校-ちゅうがっこう",
+      "vocab-化学-かがく",
       "vocab-医学-いがく",
       "vocab-大学-だいがく",
       "vocab-大学生-だいがくせい",
+      "vocab-奨学金-しょうがくきん",
       "vocab-学校-がっこう",
       "vocab-学生-がくせい",
       "vocab-小学校-しょうがっこう",
       "vocab-数学-すうがく",
       "vocab-文学-ぶんがく",
       "vocab-留学生-りゅうがくせい",
-      "vocab-科学-かがく"
+      "vocab-科学-かがく",
+      "vocab-進学-しんがく"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-causative-u2d-form-real-life",
@@ -4605,10 +6354,13 @@
       "かがく",
       "がくせい",
       "がっこう",
+      "しょうがくきん",
       "しょうがっこう",
+      "しんがく",
       "すうがく",
       "だいがく",
       "だいがくせい",
+      "ちゅうがく",
       "ちゅうがっこう",
       "ぶんがく",
       "りゅうがくせい"
@@ -4650,6 +6402,7 @@
     "supportedVocabularyIds": [
       "vocab-安い-やすい",
       "vocab-安全-あんぜん",
+      "vocab-安定-あんてい",
       "vocab-安心-あんしん"
     ],
     "approvedExampleSentenceIds": [
@@ -4668,7 +6421,164 @@
     "demonstratedReadings": [
       "あんしん",
       "あんぜん",
+      "あんてい",
       "やすい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "kanjiId": "kanji-完",
+    "character": "完",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "カン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-完成-かんせい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "かんせい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "kanjiId": "kanji-官",
+    "character": "官",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "カン"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-警官-けいかん",
+      "vocab-警察官-けいさつかん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "けいかん",
+      "けいさつかん"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "kanjiId": "kanji-定",
+    "character": "定",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "さだ.か",
+      "さだ.まる",
+      "さだ.める",
+      "ジョウ",
+      "テイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-予定-よてい",
+      "vocab-安定-あんてい",
+      "vocab-指定-してい",
+      "vocab-決定-けってい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "あんてい",
+      "けってい",
+      "してい",
+      "よてい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-実",
+    "character": "実",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "まこと",
+      "み",
+      "みち.る",
+      "みの",
+      "みの.る",
+      "シツ",
+      "ジツ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-事実-じじつ",
+      "vocab-実に-じつに",
+      "vocab-実は-じつは",
+      "vocab-実際-じっさい",
+      "vocab-実験-じっけん",
+      "vocab-現実-げんじつ"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "げんじつ",
+      "じじつ",
+      "じっけん",
+      "じっさい",
+      "じつに",
+      "じつは"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
+    "kanjiId": "kanji-客",
+    "character": "客",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "カク",
+      "キャク"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-乗客-じょうきゃく",
+      "vocab-客-きゃく"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "きゃく",
+      "じょうきゃく"
     ],
     "approvedQuestionIds": [],
     "representedQuestionTypes": [],
@@ -4723,6 +6633,31 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-害",
+    "character": "害",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "ガイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-障害-しょうがい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "しょうがい"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "preferredCount": 4,
+    "effectiveSupportedCount": 3,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
     "kanjiId": "kanji-家",
     "character": "家",
     "level": "N4",
@@ -4735,7 +6670,12 @@
       "ケ"
     ],
     "supportedVocabularyIds": [
+      "vocab-一家-いっか",
+      "vocab-作家-さっか",
+      "vocab-写真家-しゃしんか",
+      "vocab-大家-おおや",
       "vocab-家-いえ",
+      "vocab-家具-かぐ",
       "vocab-家内-かない",
       "vocab-家庭-かてい",
       "vocab-家族-かぞく"
@@ -4768,9 +6708,14 @@
     ],
     "demonstratedReadings": [
       "いえ",
+      "いっか",
+      "おおや",
+      "かぐ",
       "かぞく",
       "かてい",
-      "かない"
+      "かない",
+      "さっか",
+      "しゃしんか"
     ],
     "approvedQuestionIds": [
       "question-kanji-u5bb6-character-meaning-1",
@@ -4795,6 +6740,71 @@
     "status": "pass"
   },
   {
+    "kanjiId": "kanji-察",
+    "character": "察",
+    "level": "N4",
+    "releaseReady": false,
+    "canonicalReadings": [
+      "サツ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-診察-しんさつ",
+      "vocab-警察-けいさつ",
+      "vocab-警察官-けいさつかん"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "けいさつ",
+      "けいさつかん",
+      "しんさつ"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": "canonical-kanji-not-release-ready",
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 0,
+    "status": "lifecycle-exclusion"
+  },
+  {
+    "kanjiId": "kanji-対",
+    "character": "対",
+    "level": "N4",
+    "releaseReady": true,
+    "canonicalReadings": [
+      "あいて",
+      "こた.える",
+      "そろ.い",
+      "つれあ.い",
+      "なら.ぶ",
+      "むか.う",
+      "タイ",
+      "ツイ"
+    ],
+    "supportedVocabularyIds": [
+      "vocab-反対-はんたい",
+      "vocab-向かう-むかう",
+      "vocab-絶対-ぜったい"
+    ],
+    "approvedExampleSentenceIds": [],
+    "demonstratedReadings": [
+      "ぜったい",
+      "はんたい",
+      "むかう"
+    ],
+    "approvedQuestionIds": [],
+    "representedQuestionTypes": [],
+    "representedReadings": [],
+    "lifecycleExclusion": null,
+    "inventoryLimitation": null,
+    "preferredCount": 4,
+    "effectiveSupportedCount": 4,
+    "coverageGap": 4,
+    "status": "gap"
+  },
+  {
     "kanjiId": "kanji-小",
     "character": "小",
     "level": "N5",
@@ -4811,7 +6821,8 @@
       "vocab-小さな-ちいさな",
       "vocab-小学校-しょうがっこう",
       "vocab-小説-しょうせつ",
-      "vocab-小鳥-ことり"
+      "vocab-小鳥-ことり",
+      "vocab-少々-しょうしょう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ga-u2d-contrast-u2d-conjunction-core",
@@ -4824,6 +6835,7 @@
     "demonstratedReadings": [
       "ことり",
       "しょうがっこう",
+      "しょうしょう",
       "しょうせつ",
       "ちいさい",
       "ちいさな"
@@ -4861,7 +6873,9 @@
       "ショウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-少々-しょうしょう",
       "vocab-少し-すこし",
+      "vocab-少しも-すこしも",
       "vocab-少ない-すくない"
     ],
     "approvedExampleSentenceIds": [
@@ -4891,8 +6905,10 @@
       "sentence-tekudasai-structural-variation"
     ],
     "demonstratedReadings": [
+      "しょうしょう",
       "すくない",
-      "すこし"
+      "すこし",
+      "すこしも"
     ],
     "approvedQuestionIds": [],
     "representedQuestionTypes": [],
@@ -4915,6 +6931,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-八百屋-やおや",
+      "vocab-大家-おおや",
       "vocab-屋上-おくじょう",
       "vocab-床屋-とこや",
       "vocab-部屋-へや"
@@ -4945,6 +6962,7 @@
       "sentence-to-u2d-accompaniment-u2d-marker-structural-variation"
     ],
     "demonstratedReadings": [
+      "おおや",
       "おくじょう",
       "とこや",
       "へや",
@@ -4963,7 +6981,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "おくじょう"
+      "おおや"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -5057,6 +7075,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-具合-ぐあい",
+      "vocab-工事-こうじ",
       "vocab-工場-こうじょう",
       "vocab-工業-こうぎょう"
     ],
@@ -5066,6 +7085,7 @@
     "demonstratedReadings": [
       "ぐあい",
       "こうぎょう",
+      "こうじ",
       "こうじょう"
     ],
     "approvedQuestionIds": [
@@ -5101,12 +7121,14 @@
       "シャ"
     ],
     "supportedVocabularyIds": [
-      "vocab-左-ひだり"
+      "vocab-左-ひだり",
+      "vocab-左右-さゆう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-tekudasai-real-life"
     ],
     "demonstratedReadings": [
+      "さゆう",
       "ひだり"
     ],
     "approvedQuestionIds": [
@@ -5120,14 +7142,14 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "ひだり"
+      "さゆう"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-帰",
@@ -5202,7 +7224,9 @@
       "vocab-今年-ことし",
       "vocab-去年-きょねん",
       "vocab-年-とし",
-      "vocab-来年-らいねん"
+      "vocab-年齢-ねんれい",
+      "vocab-来年-らいねん",
+      "vocab-青年-せいねん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-kono-structural-variation",
@@ -5214,7 +7238,9 @@
     "demonstratedReadings": [
       "きょねん",
       "ことし",
+      "せいねん",
       "とし",
+      "ねんれい",
       "まんねんひつ",
       "らいねん"
     ],
@@ -5299,9 +7325,12 @@
       "テン"
     ],
     "supportedVocabularyIds": [
+      "vocab-商店-しょうてん",
       "vocab-喫茶店-きっさてん",
       "vocab-店-みせ",
-      "vocab-店員-てんいん"
+      "vocab-店員-てんいん",
+      "vocab-支店-してん",
+      "vocab-書店-しょてん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-adjective-u2d-te-real-life",
@@ -5339,6 +7368,9 @@
     ],
     "demonstratedReadings": [
       "きっさてん",
+      "してん",
+      "しょうてん",
+      "しょてん",
       "てんいん",
       "みせ"
     ],
@@ -5366,8 +7398,14 @@
     ],
     "supportedVocabularyIds": [
       "vocab-一度-いちど",
+      "vocab-一度に-いちどに",
       "vocab-丁度-ちょうど",
-      "vocab-今度-こんど"
+      "vocab-今度-こんど",
+      "vocab-再び-ふたたび",
+      "vocab-制度-せいど",
+      "vocab-温度-おんど",
+      "vocab-湿度-しつど",
+      "vocab-速度-そくど"
     ],
     "approvedExampleSentenceIds": [
       "sentence-mou-real-life",
@@ -5384,8 +7422,14 @@
     ],
     "demonstratedReadings": [
       "いちど",
+      "いちどに",
+      "おんど",
       "こんど",
-      "ちょうど"
+      "しつど",
+      "せいど",
+      "そくど",
+      "ちょうど",
+      "ふたたび"
     ],
     "approvedQuestionIds": [
       "question-kanji-u5ea6-character-meaning-1",
@@ -5629,6 +7673,7 @@
       "ゴ"
     ],
     "supportedVocabularyIds": [
+      "vocab-今後-こんご",
       "vocab-午後-ごご",
       "vocab-後-あと",
       "vocab-後ろ-うしろ",
@@ -5660,6 +7705,7 @@
       "あと",
       "うしろ",
       "おくれる",
+      "こんご",
       "ごご",
       "さいご"
     ],
@@ -5698,14 +7744,22 @@
     "supportedVocabularyIds": [
       "vocab-安心-あんしん",
       "vocab-心-こころ",
-      "vocab-熱心-ねっしん"
+      "vocab-心理-しんり",
+      "vocab-心臓-しんぞう",
+      "vocab-決心-けっしん",
+      "vocab-熱心-ねっしん",
+      "vocab-関心-かんしん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-ka-u2d-dou-u2d-ka-structural-variation"
     ],
     "demonstratedReadings": [
       "あんしん",
+      "かんしん",
+      "けっしん",
       "こころ",
+      "しんぞう",
+      "しんり",
       "ねっしん"
     ],
     "approvedQuestionIds": [
@@ -5743,7 +7797,9 @@
     ],
     "supportedVocabularyIds": [
       "vocab-思い出す-おもいだす",
-      "vocab-思う-おもう"
+      "vocab-思う-おもう",
+      "vocab-思わず-おもわず",
+      "vocab-意思-いし"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-demo-u2d-alternatives-real-life",
@@ -5763,8 +7819,10 @@
       "sentence-to-u2d-quotation-u2d-marker-structural-variation"
     ],
     "demonstratedReadings": [
+      "いし",
       "おもいだす",
-      "おもう"
+      "おもう",
+      "おもわず"
     ],
     "approvedQuestionIds": [
       "question-kanji-u601d-character-meaning-1",
@@ -5779,7 +7837,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "おもいだす"
+      "いし"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -5802,8 +7860,10 @@
     "supportedVocabularyIds": [
       "vocab-急-きゅう",
       "vocab-急ぐ-いそぐ",
+      "vocab-急に-きゅうに",
       "vocab-急行-きゅうこう",
-      "vocab-特急-とっきゅう"
+      "vocab-特急-とっきゅう",
+      "vocab-至急-しきゅう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-dasu-contrast-aware",
@@ -5819,6 +7879,8 @@
       "いそぐ",
       "きゅう",
       "きゅうこう",
+      "きゅうに",
+      "しきゅう",
       "とっきゅう"
     ],
     "approvedQuestionIds": [
@@ -5862,6 +7924,7 @@
       "オ"
     ],
     "supportedVocabularyIds": [
+      "vocab-いたずら-いたずら",
       "vocab-悪い-わるい"
     ],
     "approvedExampleSentenceIds": [
@@ -5869,6 +7932,7 @@
       "sentence-n4-u2d-to-u2d-iu-u2d-koto-contrast-aware"
     ],
     "demonstratedReadings": [
+      "いたずら",
       "わるい"
     ],
     "approvedQuestionIds": [
@@ -5882,14 +7946,14 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "わるい"
+      "いたずら"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-意",
@@ -5901,7 +7965,10 @@
     ],
     "supportedVocabularyIds": [
       "vocab-意味-いみ",
+      "vocab-意外-いがい",
+      "vocab-意思-いし",
       "vocab-意見-いけん",
+      "vocab-意識-いしき",
       "vocab-注意-ちゅうい",
       "vocab-用意-ようい"
     ],
@@ -5914,7 +7981,10 @@
       "sentence-n4-u2d-you-u2d-ni-u2d-purpose-contrast-aware"
     ],
     "demonstratedReadings": [
+      "いがい",
       "いけん",
+      "いし",
+      "いしき",
       "いみ",
       "ちゅうい",
       "ようい"
@@ -5932,7 +8002,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "いけん"
+      "いがい"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -5960,9 +8030,17 @@
       "vocab-下手-へた",
       "vocab-切手-きって",
       "vocab-手-て",
+      "vocab-手伝い-てつだい",
       "vocab-手伝う-てつだう",
+      "vocab-手段-しゅだん",
       "vocab-手紙-てがみ",
+      "vocab-手術-しゅじゅつ",
       "vocab-手袋-てぶくろ",
+      "vocab-拍手-はくしゅ",
+      "vocab-握手-あくしゅ",
+      "vocab-決め手-きめて",
+      "vocab-相手-あいて",
+      "vocab-苦手-にがて",
       "vocab-運転手-うんてんしゅ"
     ],
     "approvedExampleSentenceIds": [
@@ -5993,14 +8071,22 @@
       "sentence-u-u2d-verbnegative-u2d-past-core"
     ],
     "demonstratedReadings": [
+      "あいて",
+      "あくしゅ",
       "うんてんしゅ",
       "おてあらい",
       "きって",
+      "きめて",
+      "しゅじゅつ",
+      "しゅだん",
       "じょうず",
       "て",
       "てがみ",
+      "てつだい",
       "てつだう",
       "てぶくろ",
+      "にがて",
+      "はくしゅ",
       "へた"
     ],
     "approvedQuestionIds": [],
@@ -6078,6 +8164,7 @@
       "キョウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-宗教-しゅうきょう",
       "vocab-教える-おしえる",
       "vocab-教会-きょうかい",
       "vocab-教室-きょうしつ",
@@ -6091,7 +8178,8 @@
       "おしえる",
       "きょういく",
       "きょうかい",
-      "きょうしつ"
+      "きょうしつ",
+      "しゅうきょう"
     ],
     "approvedQuestionIds": [
       "question-kanji-u6559-character-meaning-1",
@@ -6131,7 +8219,8 @@
       "vocab-文化-ぶんか",
       "vocab-文学-ぶんがく",
       "vocab-文法-ぶんぽう",
-      "vocab-文章-ぶんしょう"
+      "vocab-文章-ぶんしょう",
+      "vocab-注文-ちゅうもん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-dono-real-life",
@@ -6145,6 +8234,7 @@
     ],
     "demonstratedReadings": [
       "さくぶん",
+      "ちゅうもん",
       "ぶんか",
       "ぶんがく",
       "ぶんしょう",
@@ -6182,6 +8272,9 @@
     ],
     "supportedVocabularyIds": [
       "vocab-料理-りょうり",
+      "vocab-材料-ざいりょう",
+      "vocab-資料-しりょう",
+      "vocab-食料-しょくりょう",
       "vocab-食料品-しょくりょうひん"
     ],
     "approvedExampleSentenceIds": [
@@ -6202,7 +8295,10 @@
       "sentence-tari-u2d-tarisuru-core"
     ],
     "demonstratedReadings": [
+      "ざいりょう",
+      "しょくりょう",
       "しょくりょうひん",
+      "しりょう",
       "りょうり"
     ],
     "approvedQuestionIds": [
@@ -6218,7 +8314,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "しょくりょうひん"
+      "ざいりょう"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -6241,8 +8337,11 @@
     ],
     "supportedVocabularyIds": [
       "vocab-新しい-あたらしい",
+      "vocab-新た-あらた",
       "vocab-新聞-しんぶん",
-      "vocab-新聞社-しんぶんしゃ"
+      "vocab-新聞社-しんぶんしゃ",
+      "vocab-新郎-しんろう",
+      "vocab-新鮮-しんせん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-desu-real-life",
@@ -6264,8 +8363,11 @@
     ],
     "demonstratedReadings": [
       "あたらしい",
+      "あらた",
+      "しんせん",
       "しんぶん",
-      "しんぶんしゃ"
+      "しんぶんしゃ",
+      "しんろう"
     ],
     "approvedQuestionIds": [],
     "representedQuestionTypes": [],
@@ -6289,6 +8391,7 @@
       "ホウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-あちこち-あちこち",
       "vocab-あちら-あちら",
       "vocab-あっち-あっち",
       "vocab-こちら-こちら",
@@ -6297,8 +8400,11 @@
       "vocab-そっち-そっち",
       "vocab-どちら-どちら",
       "vocab-どっち-どっち",
+      "vocab-一方-いっぽう",
       "vocab-両方-りょうほう",
       "vocab-仕方-しかた",
+      "vocab-使い方-つかいかた",
+      "vocab-地方-ちほう",
       "vocab-夕方-ゆうがた",
       "vocab-方-かた"
     ],
@@ -6311,14 +8417,18 @@
       "sentence-o-structural-variation"
     ],
     "demonstratedReadings": [
+      "あちこち",
       "あちら",
       "あっち",
+      "いっぽう",
       "かた",
       "こちら",
       "こっち",
       "しかた",
       "そちら",
       "そっち",
+      "ちほう",
+      "つかいかた",
       "どちら",
       "どっち",
       "ゆうがた",
@@ -6337,7 +8447,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "あちら"
+      "あちこち"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -6465,6 +8575,8 @@
       "vocab-四日-よっか",
       "vocab-土曜日-どようび",
       "vocab-日-ひ",
+      "vocab-日光-にっこう",
+      "vocab-日常-にちじょう",
       "vocab-日曜日-にちようび",
       "vocab-日記-にっき",
       "vocab-明後日-あさって",
@@ -6583,8 +8695,10 @@
       "とおか",
       "どようび",
       "なのか",
+      "にちじょう",
       "にちようび",
       "にっき",
+      "にっこう",
       "はつか",
       "ひ",
       "ふつか",
@@ -6703,11 +8817,15 @@
       "メイ"
     ],
     "supportedVocabularyIds": [
+      "vocab-明かり-あかり",
+      "vocab-明らか-あきらか",
       "vocab-明るい-あかるい",
       "vocab-明後日-あさって",
       "vocab-明日-あした",
       "vocab-明日-あす",
+      "vocab-空き-あき",
       "vocab-空く-あく",
+      "vocab-証明-しょうめい",
       "vocab-説明-せつめい",
       "vocab-開く-あく",
       "vocab-開ける-あける"
@@ -6751,12 +8869,16 @@
       "sentence-verbsnon-u2d-past-structural-variation"
     ],
     "demonstratedReadings": [
+      "あかり",
       "あかるい",
+      "あき",
+      "あきらか",
       "あく",
       "あける",
       "あさって",
       "あした",
       "あす",
+      "しょうめい",
       "せつめい"
     ],
     "approvedQuestionIds": [
@@ -6772,7 +8894,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "あかるい"
+      "あかり"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -6794,6 +8916,7 @@
       "エイ"
     ],
     "supportedVocabularyIds": [
+      "vocab-映す-うつす",
       "vocab-映画-えいが",
       "vocab-映画館-えいがかん"
     ],
@@ -6805,6 +8928,7 @@
       "sentence-ru-u2d-verbnegative-u2d-past-structural-variation"
     ],
     "demonstratedReadings": [
+      "うつす",
       "えいが",
       "えいがかん"
     ],
@@ -6821,7 +8945,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "えいが"
+      "うつす"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -6943,10 +9067,14 @@
     ],
     "supportedVocabularyIds": [
       "vocab-いつ-いつ",
+      "vocab-一時-いちじ",
       "vocab-時々-ときどき",
       "vocab-時代-じだい",
+      "vocab-時刻-じこく",
+      "vocab-時期-じき",
       "vocab-時計-とけい",
-      "vocab-時間-じかん"
+      "vocab-時間-じかん",
+      "vocab-時間割-じかんわり"
     ],
     "approvedExampleSentenceIds": [
       "sentence-datta-real-life",
@@ -6997,8 +9125,12 @@
       "sentence-verbsnon-u2d-past-structural-variation"
     ],
     "demonstratedReadings": [
+      "いちじ",
       "いつ",
       "じかん",
+      "じかんわり",
+      "じき",
+      "じこく",
       "じだい",
       "ときどき",
       "とけい"
@@ -7016,7 +9148,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "いつ"
+      "いちじ"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -7102,6 +9234,9 @@
     "supportedVocabularyIds": [
       "vocab-図書館-としょかん",
       "vocab-書く-かく",
+      "vocab-書店-しょてん",
+      "vocab-書道-しょどう",
+      "vocab-書類-しょるい",
       "vocab-葉書-はがき",
       "vocab-辞書-じしょ"
     ],
@@ -7133,6 +9268,9 @@
     ],
     "demonstratedReadings": [
       "かく",
+      "しょてん",
+      "しょどう",
+      "しょるい",
       "じしょ",
       "としょかん",
       "はがき"
@@ -7282,7 +9420,8 @@
     ],
     "supportedVocabularyIds": [
       "vocab-服-ふく",
-      "vocab-洋服-ようふく"
+      "vocab-洋服-ようふく",
+      "vocab-衣服-いふく"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-causative-u2d-form-contrast-aware",
@@ -7292,6 +9431,7 @@
       "sentence-n4-u2d-yasui-structural-variation"
     ],
     "demonstratedReadings": [
+      "いふく",
       "ふく",
       "ようふく"
     ],
@@ -7308,7 +9448,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "ふく"
+      "いふく"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -7458,6 +9598,7 @@
       "ホン"
     ],
     "supportedVocabularyIds": [
+      "vocab-基本-きほん",
       "vocab-本-ほん",
       "vocab-本当-ほんとう",
       "vocab-本棚-ほんだな"
@@ -7486,6 +9627,7 @@
       "sentence-ya-core"
     ],
     "demonstratedReadings": [
+      "きほん",
       "ほん",
       "ほんだな",
       "ほんとう"
@@ -7503,7 +9645,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "ほん"
+      "きほん"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -7529,6 +9671,7 @@
       "ライ"
     ],
     "supportedVocabularyIds": [
+      "vocab-以来-いらい",
       "vocab-再来月-さらいげつ",
       "vocab-再来週-さらいしゅう",
       "vocab-将来-しょうらい",
@@ -7573,6 +9716,7 @@
       "sentence-yo-real-life"
     ],
     "demonstratedReadings": [
+      "いらい",
       "くる",
       "さらいげつ",
       "さらいしゅう",
@@ -7594,7 +9738,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "くる"
+      "いらい"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -7701,17 +9845,31 @@
       "ゴウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-事業-じぎょう",
+      "vocab-作業-さぎょう",
       "vocab-卒業-そつぎょう",
+      "vocab-商業-しょうぎょう",
+      "vocab-営業-えいぎょう",
       "vocab-工業-こうぎょう",
       "vocab-授業-じゅぎょう",
-      "vocab-産業-さんぎょう"
+      "vocab-残業-ざんぎょう",
+      "vocab-産業-さんぎょう",
+      "vocab-職業-しょくぎょう",
+      "vocab-農業-のうぎょう"
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
+      "えいぎょう",
       "こうぎょう",
+      "さぎょう",
       "さんぎょう",
+      "ざんぎょう",
+      "しょうぎょう",
+      "しょくぎょう",
+      "じぎょう",
       "じゅぎょう",
-      "そつぎょう"
+      "そつぎょう",
+      "のうぎょう"
     ],
     "approvedQuestionIds": [
       "question-kanji-u696d-character-meaning-1",
@@ -7726,7 +9884,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "こうぎょう"
+      "えいぎょう"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -7853,10 +10011,12 @@
       "シ"
     ],
     "supportedVocabularyIds": [
+      "vocab-中止-ちゅうし",
       "vocab-止まる-とまる",
       "vocab-止む-やむ",
       "vocab-止める-とめる",
-      "vocab-止める-やめる"
+      "vocab-止める-やめる",
+      "vocab-禁止-きんし"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-ba-contrast-aware",
@@ -7872,6 +10032,8 @@
       "sentence-verb-u2d-te-u2d-b-structural-variation"
     ],
     "demonstratedReadings": [
+      "きんし",
+      "ちゅうし",
       "とまる",
       "とめる",
       "やむ",
@@ -7890,7 +10052,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "とまる"
+      "きんし"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -7913,8 +10075,14 @@
       "セイ"
     ],
     "supportedVocabularyIds": [
+      "vocab-修正-しゅうせい",
       "vocab-正しい-ただしい",
+      "vocab-正に-まさに",
+      "vocab-正午-しょうご",
+      "vocab-正式-せいしき",
       "vocab-正月-しょうがつ",
+      "vocab-正直-しょうじき",
+      "vocab-正確-せいかく",
       "vocab-醤油-しょうゆ"
     ],
     "approvedExampleSentenceIds": [
@@ -7922,9 +10090,15 @@
       "sentence-n4-u2d-dewa-u2d-nai-u2d-ka-structural-variation"
     ],
     "demonstratedReadings": [
+      "しゅうせい",
       "しょうがつ",
+      "しょうご",
+      "しょうじき",
       "しょうゆ",
-      "ただしい"
+      "せいかく",
+      "せいしき",
+      "ただしい",
+      "まさに"
     ],
     "approvedQuestionIds": [
       "question-kanji-u6b63-character-meaning-1",
@@ -7939,7 +10113,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "しょうがつ"
+      "しゅうせい"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -7961,7 +10135,9 @@
       "ホ"
     ],
     "supportedVocabularyIds": [
-      "vocab-歩く-あるく"
+      "vocab-散歩-さんぽ",
+      "vocab-歩く-あるく",
+      "vocab-進歩-しんぽ"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ii-real-life",
@@ -7994,7 +10170,9 @@
       "sentence-verb-u2d-te-real-life"
     ],
     "demonstratedReadings": [
-      "あるく"
+      "あるく",
+      "さんぽ",
+      "しんぽ"
     ],
     "approvedQuestionIds": [
       "question-kanji-u6b69-character-meaning-1",
@@ -8010,11 +10188,11 @@
       "あるく"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-死",
@@ -8027,11 +10205,13 @@
       "シ"
     ],
     "supportedVocabularyIds": [
-      "vocab-死ぬ-しぬ"
+      "vocab-死ぬ-しぬ",
+      "vocab-死亡-しぼう"
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
-      "しぬ"
+      "しぬ",
+      "しぼう"
     ],
     "approvedQuestionIds": [
       "question-kanji-u6b7b-character-meaning-1",
@@ -8047,11 +10227,11 @@
       "しぬ"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-母",
@@ -8066,6 +10246,7 @@
     "supportedVocabularyIds": [
       "vocab-お母さん-おかあさん",
       "vocab-母-はは",
+      "vocab-母親-ははおや",
       "vocab-祖母-そぼ"
     ],
     "approvedExampleSentenceIds": [
@@ -8084,7 +10265,8 @@
     "demonstratedReadings": [
       "おかあさん",
       "そぼ",
-      "はは"
+      "はは",
+      "ははおや"
     ],
     "approvedQuestionIds": [
       "question-kanji-u6bcd-character-meaning-1",
@@ -8189,12 +10371,15 @@
       "ケ"
     ],
     "supportedVocabularyIds": [
+      "vocab-人気-にんき",
       "vocab-元気-げんき",
       "vocab-天気-てんき",
       "vocab-天気予報-てんきよほう",
+      "vocab-景気-けいき",
       "vocab-気-き",
       "vocab-気分-きぶん",
       "vocab-気持ち-きもち",
+      "vocab-湿気-しっけ",
       "vocab-病気-びょうき",
       "vocab-空気-くうき",
       "vocab-電気-でんき"
@@ -8221,10 +10406,13 @@
       "きぶん",
       "きもち",
       "くうき",
+      "けいき",
       "げんき",
+      "しっけ",
       "てんき",
       "てんきよほう",
       "でんき",
+      "にんき",
       "びょうき"
     ],
     "approvedQuestionIds": [
@@ -8261,6 +10449,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-水-みず",
+      "vocab-水平-すいへい",
       "vocab-水曜日-すいようび",
       "vocab-水泳-すいえい",
       "vocab-水道-すいどう"
@@ -8282,6 +10471,7 @@
     "demonstratedReadings": [
       "すいえい",
       "すいどう",
+      "すいへい",
       "すいようび",
       "みず"
     ],
@@ -8320,14 +10510,16 @@
     ],
     "supportedVocabularyIds": [
       "vocab-注射-ちゅうしゃ",
-      "vocab-注意-ちゅうい"
+      "vocab-注意-ちゅうい",
+      "vocab-注文-ちゅうもん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-dono-real-life"
     ],
     "demonstratedReadings": [
       "ちゅうい",
-      "ちゅうしゃ"
+      "ちゅうしゃ",
+      "ちゅうもん"
     ],
     "approvedQuestionIds": [
       "question-kanji-u6ce8-character-meaning-1",
@@ -8588,6 +10780,7 @@
       "ギュウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-牛-うし",
       "vocab-牛乳-ぎゅうにゅう",
       "vocab-牛肉-ぎゅうにく"
     ],
@@ -8599,6 +10792,7 @@
       "sentence-u-u2d-verbnegative-core"
     ],
     "demonstratedReadings": [
+      "うし",
       "ぎゅうにく",
       "ぎゅうにゅう"
     ],
@@ -8615,7 +10809,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "ぎゅうにく"
+      "うし"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -8639,11 +10833,14 @@
       "vocab-乗り物-のりもの",
       "vocab-動物-どうぶつ",
       "vocab-動物園-どうぶつえん",
+      "vocab-博物館-はくぶつかん",
       "vocab-品物-しなもの",
       "vocab-建物-たてもの",
       "vocab-忘れ物-わすれもの",
       "vocab-果物-くだもの",
+      "vocab-植物-しょくぶつ",
       "vocab-物-もの",
+      "vocab-生き物-いきもの",
       "vocab-着物-きもの",
       "vocab-荷物-にもつ",
       "vocab-見物-けんぶつ",
@@ -8681,12 +10878,14 @@
       "sentence-u8ab0-ka-real-life"
     ],
     "demonstratedReadings": [
+      "いきもの",
       "おくりもの",
       "かいもの",
       "きもの",
       "くだもの",
       "けんぶつ",
       "しなもの",
+      "しょくぶつ",
       "たてもの",
       "たべもの",
       "どうぶつ",
@@ -8694,6 +10893,7 @@
       "にもつ",
       "のみもの",
       "のりもの",
+      "はくぶつかん",
       "もの",
       "わすれもの"
     ],
@@ -8710,7 +10910,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "おくりもの"
+      "いきもの"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -8817,10 +11017,14 @@
       "リ"
     ],
     "supportedVocabularyIds": [
+      "vocab-修理-しゅうり",
       "vocab-地理-ちり",
+      "vocab-心理-しんり",
+      "vocab-整理-せいり",
       "vocab-料理-りょうり",
       "vocab-無理-むり",
-      "vocab-理由-りゆう"
+      "vocab-理由-りゆう",
+      "vocab-管理-かんり"
     ],
     "approvedExampleSentenceIds": [
       "sentence-dono-real-life",
@@ -8839,6 +11043,10 @@
       "sentence-tari-u2d-tarisuru-core"
     ],
     "demonstratedReadings": [
+      "かんり",
+      "しゅうり",
+      "しんり",
+      "せいり",
       "ちり",
       "むり",
       "りゆう",
@@ -8857,7 +11065,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "ちり"
+      "かんり"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -8894,14 +11102,22 @@
       "セイ"
     ],
     "supportedVocabularyIds": [
+      "vocab-一生-いっしょう",
       "vocab-一生懸命-いっしょうけんめい",
+      "vocab-人生-じんせい",
       "vocab-先生-せんせい",
       "vocab-大学生-だいがくせい",
       "vocab-学生-がくせい",
+      "vocab-生-なま",
       "vocab-生きる-いきる",
+      "vocab-生き物-いきもの",
       "vocab-生まれる-うまれる",
+      "vocab-生命-せいめい",
       "vocab-生徒-せいと",
+      "vocab-生活-せいかつ",
+      "vocab-生産-せいさん",
       "vocab-留学生-りゅうがくせい",
+      "vocab-芝生-しばふ",
       "vocab-誕生日-たんじょうび",
       "vocab-高校生-こうこうせい"
     ],
@@ -8925,15 +11141,23 @@
       "sentence-ru-u2d-verbpast-structural-variation"
     ],
     "demonstratedReadings": [
+      "いきもの",
       "いきる",
+      "いっしょう",
       "いっしょうけんめい",
       "うまれる",
       "がくせい",
       "こうこうせい",
+      "しばふ",
+      "じんせい",
+      "せいかつ",
+      "せいさん",
       "せいと",
+      "せいめい",
       "せんせい",
       "たんじょうび",
       "だいがくせい",
+      "なま",
       "りゅうがくせい"
     ],
     "approvedQuestionIds": [
@@ -8949,7 +11173,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "いきる"
+      "いきもの"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -8968,6 +11192,7 @@
       "ヨウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-使用-しよう",
       "vocab-利用-りよう",
       "vocab-必要-ひつよう",
       "vocab-用-よう",
@@ -8981,6 +11206,7 @@
       "sentence-n4-u2d-you-u2d-ni-u2d-purpose-contrast-aware"
     ],
     "demonstratedReadings": [
+      "しよう",
       "ひつよう",
       "よう",
       "ようい",
@@ -9000,7 +11226,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "ひつよう"
+      "しよう"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -9165,10 +11391,12 @@
       "ガ"
     ],
     "supportedVocabularyIds": [
+      "vocab-描く-えがく",
       "vocab-映画-えいが",
       "vocab-映画館-えいがかん",
       "vocab-漫画-まんが",
-      "vocab-絵-え"
+      "vocab-絵-え",
+      "vocab-計画-けいかく"
     ],
     "approvedExampleSentenceIds": [
       "sentence-i-u2d-adjectivepast-real-life",
@@ -9183,6 +11411,8 @@
       "え",
       "えいが",
       "えいがかん",
+      "えがく",
+      "けいかく",
       "まんが"
     ],
     "approvedQuestionIds": [
@@ -9305,6 +11535,11 @@
       "ホツ"
     ],
     "supportedVocabularyIds": [
+      "vocab-出発-しゅっぱつ",
+      "vocab-発表-はっぴょう",
+      "vocab-発見-はっけん",
+      "vocab-発車-はっしゃ",
+      "vocab-発達-はったつ",
       "vocab-発音-はつおん"
     ],
     "approvedExampleSentenceIds": [
@@ -9313,6 +11548,11 @@
       "sentence-verbsnon-u2d-past-structural-variation"
     ],
     "demonstratedReadings": [
+      "しゅっぱつ",
+      "はっけん",
+      "はっしゃ",
+      "はったつ",
+      "はっぴょう",
       "はつおん"
     ],
     "approvedQuestionIds": [
@@ -9326,14 +11566,14 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "はつおん"
+      "しゅっぱつ"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-白",
@@ -9478,6 +11718,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-写真-しゃしん",
+      "vocab-写真家-しゃしんか",
       "vocab-真面目-まじめ"
     ],
     "approvedExampleSentenceIds": [
@@ -9492,6 +11733,7 @@
     ],
     "demonstratedReadings": [
       "しゃしん",
+      "しゃしんか",
       "まじめ"
     ],
     "approvedQuestionIds": [
@@ -9534,7 +11776,9 @@
       "vocab-下着-したぎ",
       "vocab-着く-つく",
       "vocab-着る-きる",
-      "vocab-着物-きもの"
+      "vocab-着物-きもの",
+      "vocab-落ち着く-おちつく",
+      "vocab-追い付く-おいつく"
     ],
     "approvedExampleSentenceIds": [
       "sentence-kore-real-life",
@@ -9553,6 +11797,8 @@
     ],
     "demonstratedReadings": [
       "うわぎ",
+      "おいつく",
+      "おちつく",
       "きもの",
       "きる",
       "したぎ",
@@ -9592,6 +11838,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-ご存じ-ごぞんじ",
+      "vocab-知らせ-しらせ",
       "vocab-知らせる-しらせる",
       "vocab-知る-しる"
     ],
@@ -9606,6 +11853,7 @@
     ],
     "demonstratedReadings": [
       "ごぞんじ",
+      "しらせ",
       "しらせる",
       "しる"
     ],
@@ -9894,7 +12142,9 @@
       "クウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-空-から",
       "vocab-空-そら",
+      "vocab-空き-あき",
       "vocab-空く-あく",
       "vocab-空く-すく",
       "vocab-空気-くうき",
@@ -9918,8 +12168,10 @@
       "sentence-verb-u2d-niiku-structural-variation"
     ],
     "demonstratedReadings": [
+      "あき",
       "あく",
       "あける",
+      "から",
       "くうき",
       "くうこう",
       "すく",
@@ -10088,6 +12340,7 @@
       "シュウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-終える-おえる",
       "vocab-終る-おわる",
       "vocab-終わり-おわり"
     ],
@@ -10108,6 +12361,7 @@
       "sentence-tekara-real-life"
     ],
     "demonstratedReadings": [
+      "おえる",
       "おわり",
       "おわる"
     ],
@@ -10124,7 +12378,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "おわり"
+      "おえる"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -10193,7 +12447,10 @@
       "コウ"
     ],
     "supportedVocabularyIds": [
-      "vocab-考える-かんがえる"
+      "vocab-参考-さんこう",
+      "vocab-考え-かんがえ",
+      "vocab-考える-かんがえる",
+      "vocab-考慮-こうりょ"
     ],
     "approvedExampleSentenceIds": [
       "sentence-mashou-structural-variation",
@@ -10202,7 +12459,10 @@
       "sentence-n4-u2d-tsuzukeru-contrast-aware"
     ],
     "demonstratedReadings": [
-      "かんがえる"
+      "かんがえ",
+      "かんがえる",
+      "こうりょ",
+      "さんこう"
     ],
     "approvedQuestionIds": [
       "question-kanji-u8003-character-meaning-1",
@@ -10215,14 +12475,14 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "かんがえる"
+      "かんがえ"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-者",
@@ -10394,8 +12654,12 @@
     ],
     "supportedVocabularyIds": [
       "vocab-自分-じぶん",
+      "vocab-自動-じどう",
       "vocab-自動車-じどうしゃ",
+      "vocab-自慢-じまん",
+      "vocab-自然-しぜん",
       "vocab-自由-じゆう",
+      "vocab-自身-じしん",
       "vocab-自転車-じてんしゃ"
     ],
     "approvedExampleSentenceIds": [
@@ -10422,9 +12686,13 @@
       "sentence-u-u2d-verbnegative-structural-variation"
     ],
     "demonstratedReadings": [
+      "しぜん",
+      "じしん",
       "じてんしゃ",
+      "じどう",
       "じどうしゃ",
       "じぶん",
+      "じまん",
       "じゆう"
     ],
     "approvedQuestionIds": [
@@ -10440,7 +12708,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "じてんしゃ"
+      "しぜん"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -10654,8 +12922,11 @@
     "supportedVocabularyIds": [
       "vocab-急行-きゅうこう",
       "vocab-旅行-りょこう",
+      "vocab-流行る-はやる",
       "vocab-行う-おこなう",
+      "vocab-行動-こうどう",
       "vocab-銀行-ぎんこう",
+      "vocab-銀行員-ぎんこういん",
       "vocab-飛行場-ひこうじょう",
       "vocab-飛行機-ひこうき"
     ],
@@ -10721,6 +12992,9 @@
       "おこなう",
       "きゅうこう",
       "ぎんこう",
+      "ぎんこういん",
+      "こうどう",
+      "はやる",
       "ひこうき",
       "ひこうじょう",
       "りょこう"
@@ -10804,6 +13078,7 @@
       "vocab-お見舞い-おみまい",
       "vocab-店-みせ",
       "vocab-意見-いけん",
+      "vocab-発見-はっけん",
       "vocab-花見-はなみ",
       "vocab-見える-みえる",
       "vocab-見せる-みせる",
@@ -10843,6 +13118,7 @@
       "いけん",
       "おみまい",
       "けんぶつ",
+      "はっけん",
       "はなみ",
       "みえる",
       "みせ",
@@ -10887,15 +13163,23 @@
     ],
     "supportedVocabularyIds": [
       "vocab-両親-りょうしん",
+      "vocab-母親-ははおや",
       "vocab-親-おや",
-      "vocab-親切-しんせつ"
+      "vocab-親しい-したしい",
+      "vocab-親切-しんせつ",
+      "vocab-親友-しんゆう",
+      "vocab-親戚-しんせき"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-kai-u2d-question-contrast-aware"
     ],
     "demonstratedReadings": [
       "おや",
+      "したしい",
+      "しんせき",
       "しんせつ",
+      "しんゆう",
+      "ははおや",
       "りょうしん"
     ],
     "approvedQuestionIds": [
@@ -10933,7 +13217,8 @@
     ],
     "supportedVocabularyIds": [
       "vocab-言う-いう",
-      "vocab-言葉-ことば"
+      "vocab-言葉-ことば",
+      "vocab-言語-げんご"
     ],
     "approvedExampleSentenceIds": [
       "sentence-n4-u2d-ato-u2d-de-contrast-aware",
@@ -10971,6 +13256,7 @@
     ],
     "demonstratedReadings": [
       "いう",
+      "げんご",
       "ことば"
     ],
     "approvedQuestionIds": [],
@@ -10994,7 +13280,9 @@
       "ケイ"
     ],
     "supportedVocabularyIds": [
-      "vocab-時計-とけい"
+      "vocab-会計-かいけい",
+      "vocab-時計-とけい",
+      "vocab-計画-けいかく"
     ],
     "approvedExampleSentenceIds": [
       "sentence-kureru-real-life",
@@ -11005,6 +13293,8 @@
       "sentence-nogasuki-real-life"
     ],
     "demonstratedReadings": [
+      "かいけい",
+      "けいかく",
       "とけい"
     ],
     "approvedQuestionIds": [
@@ -11018,14 +13308,14 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "とけい"
+      "かいけい"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-試",
@@ -11088,8 +13378,10 @@
     "supportedVocabularyIds": [
       "vocab-会話-かいわ",
       "vocab-話-はなし",
+      "vocab-話し合う-はなしあう",
       "vocab-話す-はなす",
-      "vocab-電話-でんわ"
+      "vocab-電話-でんわ",
+      "vocab-電話帳-でんわちょう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ii-structural-variation",
@@ -11118,7 +13410,9 @@
     "demonstratedReadings": [
       "かいわ",
       "でんわ",
+      "でんわちょう",
       "はなし",
+      "はなしあう",
       "はなす"
     ],
     "approvedQuestionIds": [
@@ -11154,7 +13448,8 @@
       "ゴ"
     ],
     "supportedVocabularyIds": [
-      "vocab-英語-えいご"
+      "vocab-英語-えいご",
+      "vocab-言語-げんご"
     ],
     "approvedExampleSentenceIds": [
       "sentence-de-u2d-means-u2d-marker-structural-variation",
@@ -11162,7 +13457,8 @@
       "sentence-n4-u2d-rashii-structural-variation"
     ],
     "demonstratedReadings": [
-      "えいご"
+      "えいご",
+      "げんご"
     ],
     "approvedQuestionIds": [
       "question-kanji-u8a9e-character-meaning-1",
@@ -11178,11 +13474,11 @@
       "えいご"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-読",
@@ -11501,7 +13797,8 @@
     ],
     "supportedVocabularyIds": [
       "vocab-起きる-おきる",
-      "vocab-起こす-おこす"
+      "vocab-起こす-おこす",
+      "vocab-起こる-おこる"
     ],
     "approvedExampleSentenceIds": [
       "sentence-kirai-structural-variation",
@@ -11521,7 +13818,8 @@
     ],
     "demonstratedReadings": [
       "おきる",
-      "おこす"
+      "おこす",
+      "おこる"
     ],
     "approvedQuestionIds": [
       "question-kanji-u8d77-character-meaning-1",
@@ -11591,6 +13889,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-汽車-きしゃ",
+      "vocab-発車-はっしゃ",
       "vocab-自動車-じどうしゃ",
       "vocab-自転車-じてんしゃ",
       "vocab-車-くるま",
@@ -11647,7 +13946,8 @@
       "じてんしゃ",
       "じどうしゃ",
       "ちゅうしゃじょう",
-      "でんしゃ"
+      "でんしゃ",
+      "はっしゃ"
     ],
     "approvedQuestionIds": [
       "question-kanji-u8eca-character-meaning-1",
@@ -11689,6 +13989,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-自転車-じてんしゃ",
+      "vocab-運転-うんてん",
       "vocab-運転手-うんてんしゅ"
     ],
     "approvedExampleSentenceIds": [
@@ -11702,6 +14003,7 @@
       "sentence-u-u2d-verbnegative-structural-variation"
     ],
     "demonstratedReadings": [
+      "うんてん",
       "うんてんしゅ",
       "じてんしゃ"
     ],
@@ -11718,7 +14020,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "うんてんしゅ"
+      "うんてん"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -11741,6 +14043,7 @@
       "vocab-最近-さいきん",
       "vocab-近い-ちかい",
       "vocab-近く-ちかく",
+      "vocab-近づく-ちかづく",
       "vocab-近所-きんじょ"
     ],
     "approvedExampleSentenceIds": [
@@ -11759,7 +14062,8 @@
       "きんじょ",
       "さいきん",
       "ちかい",
-      "ちかく"
+      "ちかく",
+      "ちかづく"
     ],
     "approvedQuestionIds": [
       "question-kanji-u8fd1-character-meaning-1",
@@ -11841,6 +14145,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-交通-こうつう",
+      "vocab-共通-きょうつう",
       "vocab-普通-ふつう",
       "vocab-通う-かよう",
       "vocab-通り-とおり",
@@ -11856,6 +14161,7 @@
     ],
     "demonstratedReadings": [
       "かよう",
+      "きょうつう",
       "こうつう",
       "とおり",
       "とおる",
@@ -11896,7 +14202,9 @@
       "vocab-先週-せんしゅう",
       "vocab-再来週-さらいしゅう",
       "vocab-来週-らいしゅう",
-      "vocab-毎週-まいしゅう"
+      "vocab-毎週-まいしゅう",
+      "vocab-週-しゅう",
+      "vocab-週末-しゅうまつ"
     ],
     "approvedExampleSentenceIds": [
       "sentence-deshou-core",
@@ -11919,6 +14227,8 @@
     "demonstratedReadings": [
       "こんしゅう",
       "さらいしゅう",
+      "しゅう",
+      "しゅうまつ",
       "せんしゅう",
       "まいしゅう",
       "らいしゅう"
@@ -11943,7 +14253,9 @@
       "ウン"
     ],
     "supportedVocabularyIds": [
+      "vocab-運-うん",
       "vocab-運ぶ-はこぶ",
+      "vocab-運転-うんてん",
       "vocab-運転手-うんてんしゅ"
     ],
     "approvedExampleSentenceIds": [
@@ -11951,6 +14263,8 @@
       "sentence-n4-u2d-tsuzukeru-structural-variation"
     ],
     "demonstratedReadings": [
+      "うん",
+      "うんてん",
       "うんてんしゅ",
       "はこぶ"
     ],
@@ -11967,7 +14281,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "うんてんしゅ"
+      "うん"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -11988,6 +14302,7 @@
       "ドウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-書道-しょどう",
       "vocab-柔道-じゅうどう",
       "vocab-水道-すいどう",
       "vocab-道-みち",
@@ -12022,6 +14337,7 @@
       "sentence-yo-core"
     ],
     "demonstratedReadings": [
+      "しょどう",
       "じゅうどう",
       "すいどう",
       "どうぐ",
@@ -12054,7 +14370,9 @@
       "チョウ"
     ],
     "supportedVocabularyIds": [
-      "vocab-重い-おもい"
+      "vocab-慎重-しんちょう",
+      "vocab-重い-おもい",
+      "vocab-重要-じゅうよう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-adjective-u2d-te-u2d-b-real-life",
@@ -12063,7 +14381,9 @@
       "sentence-n4-u2d-souda-u2d-appearance-structural-variation"
     ],
     "demonstratedReadings": [
-      "おもい"
+      "おもい",
+      "しんちょう",
+      "じゅうよう"
     ],
     "approvedQuestionIds": [
       "question-kanji-u91cd-character-meaning-1",
@@ -12079,11 +14399,11 @@
       "おもい"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-野",
@@ -12145,6 +14465,12 @@
     ],
     "supportedVocabularyIds": [
       "vocab-お金-おかね",
+      "vocab-借金-しゃっきん",
+      "vocab-奨学金-しょうがくきん",
+      "vocab-現金-げんきん",
+      "vocab-税金-ぜいきん",
+      "vocab-貯金-ちょきん",
+      "vocab-資金-しきん",
       "vocab-金曜日-きんようび"
     ],
     "approvedExampleSentenceIds": [
@@ -12157,7 +14483,13 @@
     ],
     "demonstratedReadings": [
       "おかね",
-      "きんようび"
+      "きんようび",
+      "げんきん",
+      "しきん",
+      "しゃっきん",
+      "しょうがくきん",
+      "ぜいきん",
+      "ちょきん"
     ],
     "approvedQuestionIds": [
       "question-kanji-u91d1-character-meaning-1",
@@ -12191,14 +14523,16 @@
       "ギン"
     ],
     "supportedVocabularyIds": [
-      "vocab-銀行-ぎんこう"
+      "vocab-銀行-ぎんこう",
+      "vocab-銀行員-ぎんこういん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ka-u2d-question-u2d-marker-real-life",
       "sentence-n4-u2d-aida-u2d-ni-core"
     ],
     "demonstratedReadings": [
-      "ぎんこう"
+      "ぎんこう",
+      "ぎんこういん"
     ],
     "approvedQuestionIds": [
       "question-kanji-u9280-character-meaning-1",
@@ -12214,11 +14548,11 @@
       "ぎんこう"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-長",
@@ -12231,9 +14565,11 @@
       "チョウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-成長-せいちょう",
       "vocab-校長-こうちょう",
       "vocab-社長-しゃちょう",
       "vocab-課長-かちょう",
+      "vocab-身長-しんちょう",
       "vocab-部長-ぶちょう",
       "vocab-長い-ながい"
     ],
@@ -12254,6 +14590,8 @@
       "かちょう",
       "こうちょう",
       "しゃちょう",
+      "しんちょう",
+      "せいちょう",
       "ながい",
       "ぶちょう"
     ],
@@ -12366,8 +14704,14 @@
     ],
     "supportedVocabularyIds": [
       "vocab-この間-このあいだ",
+      "vocab-世間-せけん",
+      "vocab-人間-にんげん",
+      "vocab-仲間-なかま",
+      "vocab-居間-いま",
       "vocab-昼間-ひるま",
       "vocab-時間-じかん",
+      "vocab-時間割-じかんわり",
+      "vocab-瞬間-しゅんかん",
       "vocab-間-あいだ",
       "vocab-間に合う-まにあう",
       "vocab-間違える-まちがえる"
@@ -12402,8 +14746,14 @@
     ],
     "demonstratedReadings": [
       "あいだ",
+      "いま",
       "このあいだ",
+      "しゅんかん",
       "じかん",
+      "じかんわり",
+      "せけん",
+      "なかま",
+      "にんげん",
       "ひるま",
       "まちがえる",
       "まにあう"
@@ -12482,15 +14832,19 @@
       "シュウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-集まり-あつまり",
       "vocab-集まる-あつまる",
-      "vocab-集める-あつめる"
+      "vocab-集める-あつめる",
+      "vocab-集中-しゅうちゅう"
     ],
     "approvedExampleSentenceIds": [
       "sentence-nogasuki-real-life"
     ],
     "demonstratedReadings": [
+      "あつまり",
       "あつまる",
-      "あつめる"
+      "あつめる",
+      "しゅうちゅう"
     ],
     "approvedQuestionIds": [
       "question-kanji-u96c6-character-meaning-1",
@@ -12505,7 +14859,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "あつまる"
+      "あつまり"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -12526,6 +14880,7 @@
       "ウ"
     ],
     "supportedVocabularyIds": [
+      "vocab-梅雨-ばいう",
       "vocab-雨-あめ"
     ],
     "approvedExampleSentenceIds": [
@@ -12562,7 +14917,8 @@
       "sentence-verb-u2d-made-core"
     ],
     "demonstratedReadings": [
-      "あめ"
+      "あめ",
+      "ばいう"
     ],
     "approvedQuestionIds": [
       "question-kanji-u96e8-character-meaning-1",
@@ -12578,11 +14934,11 @@
       "あめ"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-電",
@@ -12597,6 +14953,7 @@
       "vocab-電気-でんき",
       "vocab-電灯-でんとう",
       "vocab-電話-でんわ",
+      "vocab-電話帳-でんわちょう",
       "vocab-電車-でんしゃ"
     ],
     "approvedExampleSentenceIds": [
@@ -12651,7 +15008,8 @@
       "でんしゃ",
       "でんとう",
       "でんぽう",
-      "でんわ"
+      "でんわ",
+      "でんわちょう"
     ],
     "approvedQuestionIds": [
       "question-kanji-u96fb-character-meaning-1",
@@ -12689,7 +15047,8 @@
     ],
     "supportedVocabularyIds": [
       "vocab-青-あお",
-      "vocab-青い-あおい"
+      "vocab-青い-あおい",
+      "vocab-青年-せいねん"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ageru-core",
@@ -12702,7 +15061,8 @@
     ],
     "demonstratedReadings": [
       "あお",
-      "あおい"
+      "あおい",
+      "せいねん"
     ],
     "approvedQuestionIds": [
       "question-kanji-u9752-character-meaning-1",
@@ -12895,8 +15255,13 @@
     "supportedVocabularyIds": [
       "vocab-食べる-たべる",
       "vocab-食べ物-たべもの",
+      "vocab-食事-しょくじ",
+      "vocab-食卓-しょくたく",
+      "vocab-食品-しょくひん",
       "vocab-食堂-しょくどう",
-      "vocab-食料品-しょくりょうひん"
+      "vocab-食料-しょくりょう",
+      "vocab-食料品-しょくりょうひん",
+      "vocab-食欲-しょくよく"
     ],
     "approvedExampleSentenceIds": [
       "sentence-ka-u2d-question-u2d-marker-structural-variation",
@@ -12938,7 +15303,12 @@
       "sentence-verbsnon-u2d-past-core"
     ],
     "demonstratedReadings": [
+      "しょくじ",
+      "しょくたく",
       "しょくどう",
+      "しょくひん",
+      "しょくよく",
+      "しょくりょう",
       "しょくりょうひん",
       "たべもの",
       "たべる"
@@ -12956,7 +15326,7 @@
       "type-word-distinction"
     ],
     "representedReadings": [
-      "しょくどう"
+      "しょくじ"
     ],
     "lifecycleExclusion": null,
     "inventoryLimitation": null,
@@ -13091,6 +15461,7 @@
       "カン"
     ],
     "supportedVocabularyIds": [
+      "vocab-博物館-はくぶつかん",
       "vocab-図書館-としょかん",
       "vocab-大使館-たいしかん",
       "vocab-旅館-りょかん",
@@ -13106,6 +15477,7 @@
       "えいがかん",
       "たいしかん",
       "としょかん",
+      "はくぶつかん",
       "びじゅつかん",
       "りょかん"
     ],
@@ -13231,11 +15603,15 @@
       "ゲン"
     ],
     "supportedVocabularyIds": [
+      "vocab-実験-じっけん",
+      "vocab-経験-けいけん",
       "vocab-試験-しけん"
     ],
     "approvedExampleSentenceIds": [],
     "demonstratedReadings": [
-      "しけん"
+      "けいけん",
+      "しけん",
+      "じっけん"
     ],
     "approvedQuestionIds": [
       "question-kanji-u9a13-character-meaning-1",
@@ -13248,14 +15624,14 @@
       "type-vocabulary-context"
     ],
     "representedReadings": [
-      "しけん"
+      "けいけん"
     ],
     "lifecycleExclusion": null,
-    "inventoryLimitation": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+    "inventoryLimitation": null,
     "preferredCount": 4,
-    "effectiveSupportedCount": 3,
-    "coverageGap": 0,
-    "status": "pass"
+    "effectiveSupportedCount": 4,
+    "coverageGap": 1,
+    "status": "gap"
   },
   {
     "kanjiId": "kanji-高",
@@ -13272,6 +15648,7 @@
     ],
     "supportedVocabularyIds": [
       "vocab-高い-たかい",
+      "vocab-高める-たかめる",
       "vocab-高校生-こうこうせい"
     ],
     "approvedExampleSentenceIds": [
@@ -13284,7 +15661,8 @@
     ],
     "demonstratedReadings": [
       "こうこうせい",
-      "たかい"
+      "たかい",
+      "たかめる"
     ],
     "approvedQuestionIds": [
       "question-kanji-u9ad8-character-meaning-1",

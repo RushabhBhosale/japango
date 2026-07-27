@@ -2,27 +2,27 @@
   "schemaVersion": 1,
   "profile": "release",
   "engine": "sqlite3",
-  "checksum": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
+  "checksum": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
   "firstImport": {
-    "inserted": 96047,
+    "inserted": 135698,
     "updated": 0,
     "skipped": 0,
     "rejected": 0,
-    "relationships": 2487
+    "relationships": 3642
   },
   "idempotentRerun": {
     "inserted": 0,
     "updated": 0,
-    "skipped": 96047,
+    "skipped": 135698,
     "rejected": 0,
     "relationships": 0
   },
   "tableCounts": {
-    "sentences": 444,
-    "grammarRelationships": 444,
-    "vocabularyRelationships": 717,
+    "sentences": 996,
+    "grammarRelationships": 996,
+    "vocabularyRelationships": 1320,
     "kanjiRelationships": 1326,
-    "learningItemMetadata": 9080,
+    "learningItemMetadata": 12608,
     "completedBatches": 1
   },
   "transaction": "pass",

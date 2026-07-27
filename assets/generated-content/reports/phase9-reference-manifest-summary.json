@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "fixedTimestamp": "2026-07-27T00:00:00.000Z",
+  "purpose": "Audit-only, minimum factual scope comparison. These references are not authoritative JLPT requirements and are never fetched at runtime.",
+  "references": [
+    {
+      "id": "jt4u-n4-kanji",
+      "url": "https://japanesetest4you.com/jlpt-n4-kanji-list/",
+      "scope": "N4 kanji comparison",
+      "normalization": "Character presence only; no definitions, examples, or annotations copied."
+    },
+    {
+      "id": "jlptglobal-n4-kanji",
+      "url": "https://www.jlptglobal.com/jlpt-n4-kanji-list/",
+      "scope": "N4 kanji comparison",
+      "normalization": "Character presence only; independent comparison reference."
+    },
+    {
+      "id": "tanos-n4",
+      "url": "https://www.tanos.co.uk/jlpt/jlpt4/",
+      "scope": "N4 vocabulary and kanji comparison",
+      "normalization": "Presence and broad practical category only; no word-list text copied."
+    },
+    {
+      "id": "jlpt-scope-note",
+      "url": "https://www.jlpt.jp/e/about/levelsummary.html",
+      "scope": "Official level summary",
+      "normalization": "Modern JLPT does not publish a definitive prescribed vocabulary or kanji list."
+    }
+  ],
+  "comparisonRanges": {
+    "n5Vocabulary": [
+      750,
+      850
+    ],
+    "cumulativeN4Vocabulary": [
+      1400,
+      1600
+    ]
+  },
+  "limitations": [
+    "Reference lists disagree and are not official requirements.",
+    "The manifest records audit evidence only; JapanGo authored content remains original.",
+    "Candidate kanji are review-required until a human curriculum editor approves scope and placement."
+  ]
+}

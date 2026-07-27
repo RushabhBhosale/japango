@@ -87,8 +87,8 @@ describe("Phase 6 reading passage and comprehension corpus", () => {
   });
 
   it("preserves Phase 1-5 IDs and lifecycle separation", () => {
-    expect(content.sentences).toHaveLength(816);
-    expect(content.questions.filter(({ domain, id }) => domain !== "reading" && domain !== "listening" && !id.includes("grammar-n5-bridge"))).toHaveLength(8636);
+    expect(content.sentences).toHaveLength(1368);
+    expect(content.questions.filter(({ domain, id, releaseReady }) => domain !== "reading" && domain !== "listening" && releaseReady && !id.includes("grammar-n5-bridge"))).toHaveLength(12164);
     expect(passages.every(({ releaseReady, reviewStatus, releaseBlockers }) => !releaseReady && reviewStatus === "development-only" && releaseBlockers.includes("curriculum-parent-not-release-ready"))).toBe(true);
     expect(units.every(({ releaseReady }) => !releaseReady)).toBe(true);
   });

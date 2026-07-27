@@ -1,5 +1,1103 @@
 [
   {
+    "type": "vocabulary-mapping",
+    "identity": "お祝い / おいわい",
+    "sourceRows": [
+      317,
+      7033
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "ごみ / ごみ",
+    "sourceRows": [
+      442,
+      6803
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "しばらく / しばらく",
+    "sourceRows": [
+      499,
+      7144
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "雲 / くも",
+    "sourceRows": [
+      387,
+      6931
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "下げる / さげる",
+    "sourceRows": [
+      467,
+      7364
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "下宿 / げしゅく",
+    "sourceRows": [
+      413,
+      7040
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "会場 / かいじょう",
+    "sourceRows": [
+      326,
+      7242
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "会話 / かいわ",
+    "sourceRows": [
+      327,
+      7061
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "壊す / こわす",
+    "sourceRows": [
+      448,
+      6771
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "壊れる / こわれる",
+    "sourceRows": [
+      449,
+      6841
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "確か / たしか",
+    "sourceRows": [
+      585,
+      7001
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "確かめる / たしかめる",
+    "sourceRows": [
+      333,
+      586
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "楽しみ / たのしみ",
+    "sourceRows": [
+      590,
+      7406
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "乾く / かわく",
+    "sourceRows": [
+      348,
+      7008
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "機会 / きかい",
+    "sourceRows": [
+      359,
+      6808
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "気持ち / きもち",
+    "sourceRows": [
+      367,
+      7083
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "気分 / きぶん",
+    "sourceRows": [
+      363,
+      6906
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "客 / きゃく",
+    "sourceRows": [
+      368,
+      6940
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "急行 / きゅうこう",
+    "sourceRows": [
+      369,
+      7066
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "教育 / きょういく",
+    "sourceRows": [
+      372,
+      7111
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "興味 / きょうみ",
+    "sourceRows": [
+      375,
+      7074
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "鏡 / かがみ",
+    "sourceRows": [
+      329,
+      7043
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "具合 / ぐあい",
+    "sourceRows": [
+      382,
+      7192
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "空き / あき",
+    "sourceRows": [
+      177,
+      383
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "空気 / くうき",
+    "sourceRows": [
+      384,
+      7062
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "空港 / くうこう",
+    "sourceRows": [
+      385,
+      7069
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "景色 / けしき",
+    "sourceRows": [
+      411,
+      7000
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "経済 / けいざい",
+    "sourceRows": [
+      401,
+      7150
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "原因 / げんいん",
+    "sourceRows": [
+      417,
+      6978
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "現れる / あらわれる",
+    "sourceRows": [
+      205,
+      421
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "交通 / こうつう",
+    "sourceRows": [
+      429,
+      7063
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "公務員 / こうむいん",
+    "sourceRows": [
+      432,
+      7017
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "工場 / こうじょう",
+    "sourceRows": [
+      428,
+      7328
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "講堂 / こうどう",
+    "sourceRows": [
+      430,
+      7140
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "込む / こむ",
+    "sourceRows": [
+      443,
+      7361
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "最も / もっとも",
+    "sourceRows": [
+      460,
+      7257
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "最近 / さいきん",
+    "sourceRows": [
+      458,
+      7121
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "最後 / さいご",
+    "sourceRows": [
+      457,
+      7260
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "最初 / さいしょ",
+    "sourceRows": [
+      456,
+      7274
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "妻 / つま",
+    "sourceRows": [
+      619,
+      7190
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "細かい / こまかい",
+    "sourceRows": [
+      441,
+      7012
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "産業 / さんぎょう",
+    "sourceRows": [
+      481,
+      7177
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "賛成 / さんせい",
+    "sourceRows": [
+      13,
+      483
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "残念 / ざんねん",
+    "sourceRows": [
+      482,
+      6880
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "仕方 / しかた",
+    "sourceRows": [
+      487,
+      7318
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "止める / とめる",
+    "sourceRows": [
+      638,
+      6895
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "事 / こと",
+    "sourceRows": [
+      437,
+      6945
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "寺 / てら",
+    "sourceRows": [
+      626,
+      7234
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "自由 / じゆう",
+    "sourceRows": [
+      506,
+      7317
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "社会 / しゃかい",
+    "sourceRows": [
+      503,
+      7413
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "謝る / あやまる",
+    "sourceRows": [
+      505,
+      7109
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "手袋 / てぶくろ",
+    "sourceRows": [
+      625,
+      7070
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "趣味 / しゅみ",
+    "sourceRows": [
+      512,
+      7407
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "終わり / おわり",
+    "sourceRows": [
+      323,
+      6952
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "習慣 / しゅうかん",
+    "sourceRows": [
+      507,
+      7290
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "十分 / じゅうぶん",
+    "sourceRows": [
+      509,
+      7166
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "書類 / しょるい",
+    "sourceRows": [
+      106,
+      525
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "将来 / しょうらい",
+    "sourceRows": [
+      513,
+      7285
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "小学校 / しょうがっこう",
+    "sourceRows": [
+      515,
+      6939
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "小説 / しょうせつ",
+    "sourceRows": [
+      516,
+      6857
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "消しゴム / けしごむ",
+    "sourceRows": [
+      517,
+      7026
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "紹介 / しょうかい",
+    "sourceRows": [
+      514,
+      7329
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "食料品 / しょくりょうひん",
+    "sourceRows": [
+      521,
+      7003
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "新聞社 / しんぶんしゃ",
+    "sourceRows": [
+      536,
+      7305
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "親切 / しんせつ",
+    "sourceRows": [
+      534,
+      6956
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "水泳 / すいえい",
+    "sourceRows": [
+      538,
+      7341
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "水道 / すいどう",
+    "sourceRows": [
+      539,
+      6966
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "世界 / せかい",
+    "sourceRows": [
+      544,
+      6917
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "成功 / せいこう",
+    "sourceRows": [
+      155,
+      550
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "政治 / せいじ",
+    "sourceRows": [
+      545,
+      7211
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "星 / ほし",
+    "sourceRows": [
+      551,
+      6909
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "正しい / ただしい",
+    "sourceRows": [
+      547,
+      7173
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "正月 / しょうがつ",
+    "sourceRows": [
+      546,
+      6796
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "席 / せき",
+    "sourceRows": [
+      553,
+      7248
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "石油 / せきゆ",
+    "sourceRows": [
+      166,
+      555
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "説明 / せつめい",
+    "sourceRows": [
+      556,
+      7180
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "専門 / せんもん",
+    "sourceRows": [
+      559,
+      7204
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "線 / せん",
+    "sourceRows": [
+      560,
+      6923
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "選ぶ / えらぶ",
+    "sourceRows": [
+      558,
+      6993
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "全然 / ぜんぜん",
+    "sourceRows": [
+      543,
+      7350
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "祖父 / そふ",
+    "sourceRows": [
+      567,
+      7084
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "祖母 / そぼ",
+    "sourceRows": [
+      568,
+      6981
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "素晴らしい / すばらしい",
+    "sourceRows": [
+      542,
+      6949
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "送る / おくる",
+    "sourceRows": [
+      564,
+      7206
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "足りる / たりる",
+    "sourceRows": [
+      592,
+      6912
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "卒業 / そつぎょう",
+    "sourceRows": [
+      566,
+      7201
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "代わり / かわり",
+    "sourceRows": [
+      349,
+      7321
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "台風 / たいふう",
+    "sourceRows": [
+      577,
+      6819
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "大学生 / だいがくせい",
+    "sourceRows": [
+      574,
+      6779
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "大事 / だいじ",
+    "sourceRows": [
+      578,
+      6814
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "大体 / だいたい",
+    "sourceRows": [
+      575,
+      7171
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "大分 / だいぶ",
+    "sourceRows": [
+      576,
+      7405
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "探す / さがす",
+    "sourceRows": [
+      466,
+      7020
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "暖房 / だんぼう",
+    "sourceRows": [
+      595,
+      7231
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "男性 / だんせい",
+    "sourceRows": [
+      594,
+      7099
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "注意 / ちゅうい",
+    "sourceRows": [
+      603,
+      6818
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "丁寧 / ていねい",
+    "sourceRows": [
+      622,
+      6882
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "通う / かよう",
+    "sourceRows": [
+      343,
+      7036
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "釣る / つる",
+    "sourceRows": [
+      621,
+      7105
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "適当 / てきとう",
+    "sourceRows": [
+      623,
+      6948
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "展覧会 / てんらんかい",
+    "sourceRows": [
+      629,
+      7263
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "点 / てん",
+    "sourceRows": [
+      627,
+      6805
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "伝える / つたえる",
+    "sourceRows": [
+      616,
+      7178
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "電灯 / でんとう",
+    "sourceRows": [
+      630,
+      7134
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "電報 / でんぽう",
+    "sourceRows": [
+      631,
+      7408
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "途中 / とちゅう",
+    "sourceRows": [
+      635,
+      7366
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "都合 / つごう",
+    "sourceRows": [
+      617,
+      7077
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "倒れる / たおれる",
+    "sourceRows": [
+      581,
+      7312
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "島 / しま",
+    "sourceRows": [
+      502,
+      7181
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "特急 / とっきゅう",
+    "sourceRows": [
+      633,
+      7187
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "特別 / とくべつ",
+    "sourceRows": [
+      634,
+      7351
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "届ける / とどける",
+    "sourceRows": [
+      637,
+      6998
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "泊まる / とまる",
+    "sourceRows": [
+      639,
+      7056
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "彼 / かれ",
+    "sourceRows": [
+      345,
+      6811
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "彼女 / かのじょ",
+    "sourceRows": [
+      346,
+      7199
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "比べる / くらべる",
+    "sourceRows": [
+      389,
+      6790
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "品物 / しなもの",
+    "sourceRows": [
+      497,
+      6891
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "米 / こめ",
+    "sourceRows": [
+      444,
+      7113
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "毛 / け",
+    "sourceRows": [
+      409,
+      7127
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "踊り / おどり",
+    "sourceRows": [
+      314,
+      7073
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "力 / ちから",
+    "sourceRows": [
+      597,
+      6904
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
+    "type": "vocabulary-mapping",
+    "identity": "例えば / たとえば",
+    "sourceRows": [
+      589,
+      7129
+    ],
+    "resolution": "deduplicated-identical-level"
+  },
+  {
     "type": "grammar-pattern",
     "pattern": "の",
     "sourceRow": 8,

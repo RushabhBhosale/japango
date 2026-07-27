@@ -88,7 +88,7 @@ describe("Phase 7 listening script and comprehension corpus", () => {
   });
 
   it("preserves Phase 1-6 records and keeps the entire Phase 7 corpus development-only", () => {
-    expect(content.sentences).toHaveLength(816); expect(content.readingPassages).toHaveLength(146); expect(content.questions.filter(({ domain, id }) => domain !== "listening" && !id.includes("grammar-n5-bridge"))).toHaveLength(9144);
+    expect(content.sentences).toHaveLength(1368); expect(content.readingPassages).toHaveLength(146); expect(content.questions.filter(({ domain, id, releaseReady }) => domain !== "listening" && releaseReady && !id.includes("grammar-n5-bridge"))).toHaveLength(12164);
     expect(activities.every(({ releaseReady, reviewStatus, releaseBlockers }) => !releaseReady && reviewStatus === "development-only" && releaseBlockers.includes("curriculum-parent-not-release-ready"))).toBe(true);
     expect(questions.every(({ releaseReady, needsReview }) => !releaseReady && !needsReview)).toBe(true); expect(units.every(({ releaseReady }) => !releaseReady)).toBe(true);
     expect(developmentBundle.learningContent.listeningActivities).toHaveLength(156); expect(developmentBundle.learningContent.listeningSpeakers).toHaveLength(8);

@@ -1,0 +1,40 @@
+{
+  "vocabulary": {
+    "total": 1740,
+    "releaseEligible": 1740,
+    "reviewRequired": 0,
+    "developmentOnly": 0
+  },
+  "kanji": {
+    "n5": {
+      "total": 79,
+      "releaseEligible": 79,
+      "reviewRequired": 0,
+      "developmentOnly": 0
+    },
+    "n4": {
+      "total": 221,
+      "releaseEligible": 189,
+      "reviewRequired": 32,
+      "developmentOnly": 0
+    }
+  },
+  "grammar": {
+    "n5": {
+      "total": 124,
+      "releaseEligible": 0,
+      "reviewRequired": 124,
+      "developmentOnly": 0
+    },
+    "n4": {
+      "total": 113,
+      "releaseEligible": 111,
+      "reviewRequired": 2,
+      "developmentOnly": 0
+    }
+  },
+  "release": {
+    "productionContentReleased": false,
+    "reason": "Phase 9 additions are development-only or review-required."
+  }
+}

@@ -25,10 +25,32 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-借",
+      "id": "kanji-question-inventory-係",
       "questionId": null,
       "targetType": "kanji",
-      "targetId": "kanji-借",
+      "targetId": "kanji-係",
+      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+      "affectedField": "effectiveSupportedCount",
+      "priority": "low",
+      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
+      "releaseImpact": "none-effective-target-applied"
+    },
+    {
+      "id": "kanji-question-inventory-健",
+      "questionId": null,
+      "targetType": "kanji",
+      "targetId": "kanji-健",
+      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+      "affectedField": "effectiveSupportedCount",
+      "priority": "low",
+      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
+      "releaseImpact": "none-effective-target-applied"
+    },
+    {
+      "id": "kanji-question-inventory-側",
+      "questionId": null,
+      "targetType": "kanji",
+      "targetId": "kanji-側",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -62,17 +84,6 @@
       "questionId": null,
       "targetType": "kanji",
       "targetId": "kanji-冬",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-力",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-力",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -124,10 +135,10 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-去",
+      "id": "kanji-question-inventory-単",
       "questionId": null,
       "targetType": "kanji",
-      "targetId": "kanji-去",
+      "targetId": "kanji-単",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -135,10 +146,10 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-友",
+      "id": "kanji-question-inventory-原",
       "questionId": null,
       "targetType": "kanji",
-      "targetId": "kanji-友",
+      "targetId": "kanji-原",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -146,10 +157,21 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-右",
+      "id": "kanji-question-inventory-司",
       "questionId": null,
       "targetType": "kanji",
-      "targetId": "kanji-右",
+      "targetId": "kanji-司",
+      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+      "affectedField": "effectiveSupportedCount",
+      "priority": "low",
+      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
+      "releaseImpact": "none-effective-target-applied"
+    },
+    {
+      "id": "kanji-question-inventory-各",
+      "questionId": null,
+      "targetType": "kanji",
+      "targetId": "kanji-各",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -168,10 +190,65 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-妹",
+      "id": "kanji-question-inventory-君",
       "questionId": null,
       "targetType": "kanji",
-      "targetId": "kanji-妹",
+      "targetId": "kanji-君",
+      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+      "affectedField": "effectiveSupportedCount",
+      "priority": "low",
+      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
+      "releaseImpact": "none-effective-target-applied"
+    },
+    {
+      "id": "kanji-question-inventory-和",
+      "questionId": null,
+      "targetType": "kanji",
+      "targetId": "kanji-和",
+      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+      "affectedField": "effectiveSupportedCount",
+      "priority": "low",
+      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
+      "releaseImpact": "none-effective-target-applied"
+    },
+    {
+      "id": "kanji-question-inventory-団",
+      "questionId": null,
+      "targetType": "kanji",
+      "targetId": "kanji-団",
+      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+      "affectedField": "effectiveSupportedCount",
+      "priority": "low",
+      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
+      "releaseImpact": "none-effective-target-applied"
+    },
+    {
+      "id": "kanji-question-inventory-固",
+      "questionId": null,
+      "targetType": "kanji",
+      "targetId": "kanji-固",
+      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+      "affectedField": "effectiveSupportedCount",
+      "priority": "low",
+      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
+      "releaseImpact": "none-effective-target-applied"
+    },
+    {
+      "id": "kanji-question-inventory-型",
+      "questionId": null,
+      "targetType": "kanji",
+      "targetId": "kanji-型",
+      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
+      "affectedField": "effectiveSupportedCount",
+      "priority": "low",
+      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
+      "releaseImpact": "none-effective-target-applied"
+    },
+    {
+      "id": "kanji-question-inventory-声",
+      "questionId": null,
+      "targetType": "kanji",
+      "targetId": "kanji-声",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -184,17 +261,6 @@
       "targetType": "kanji",
       "targetId": "kanji-川",
       "reason": "no-release-ready-vocabulary; meaning-recognition-only",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-左",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-左",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
       "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
@@ -216,17 +282,6 @@
       "questionId": null,
       "targetType": "kanji",
       "targetId": "kanji-待",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-悪",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-悪",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -260,28 +315,6 @@
       "questionId": null,
       "targetType": "kanji",
       "targetId": "kanji-東",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-歩",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-歩",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-死",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-死",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -344,17 +377,6 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-発",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-発",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
       "id": "kanji-question-inventory-秋",
       "questionId": null,
       "targetType": "kanji",
@@ -366,43 +388,10 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-考",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-考",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
       "id": "kanji-question-inventory-英",
       "questionId": null,
       "targetType": "kanji",
       "targetId": "kanji-英",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-計",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-計",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-語",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-語",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",
@@ -465,17 +454,6 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-重",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-重",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
       "id": "kanji-question-inventory-野",
       "questionId": null,
       "targetType": "kanji",
@@ -487,43 +465,10 @@
       "releaseImpact": "none-effective-target-applied"
     },
     {
-      "id": "kanji-question-inventory-銀",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-銀",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
       "id": "kanji-question-inventory-院",
       "questionId": null,
       "targetType": "kanji",
       "targetId": "kanji-院",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-雨",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-雨",
-      "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
-      "affectedField": "effectiveSupportedCount",
-      "priority": "low",
-      "recommendedAction": "Expand the curriculum only through a separately approved canonical vocabulary phase; do not invent a compound in question content.",
-      "releaseImpact": "none-effective-target-applied"
-    },
-    {
-      "id": "kanji-question-inventory-験",
-      "questionId": null,
-      "targetType": "kanji",
-      "targetId": "kanji-験",
       "reason": "one-release-ready-vocabulary; word-distinction-question-unsupported",
       "affectedField": "effectiveSupportedCount",
       "priority": "low",

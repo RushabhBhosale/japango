@@ -72,6 +72,10 @@
     "content:assessments:author": "tsx scripts/content/author-assessment-content.ts",
     "content:assessments:validate": "tsx scripts/content/validate-assessment-content.ts",
     "content:assessments:sqlite": "tsx scripts/content/verify-sentence-sqlite-import.ts",
+    "content:phase9:n5-grammar:author": "tsx scripts/content/author-n5-grammar-questions.ts",
+    "content:phase9:audit": "tsx scripts/content/generate-phase9-reports.ts",
+    "content:phase9:review": "tsx scripts/content/review-phase9-content.ts",
+    "content:phase9-5:report": "tsx scripts/content/generate-phase95-reports.ts",
     "content:report": "tsx scripts/content/build-content.ts",
     "content:build": "tsx scripts/content/build-content.ts"
   },

@@ -39,8 +39,12 @@ export async function generateManifest(
   bundle: ContentBundle,
   unresolved: Record<string, number>,
 ): Promise<void> {
+  // Reports are derived audit artefacts. Several deliberately include previous
+  // manifest metadata for diagnostics, so hashing them into the manifest makes
+  // the manifest depend on its own prior build. Content outputs remain covered;
+  // reports are finalized and verified by their dedicated deterministic checks.
   const outputFiles = (await listFilesRecursively(OUTPUT_ROOT)).filter(
-    (filePath) => path.basename(filePath) !== "content-manifest.json" && !filePath.endsWith(".tmp"),
+    (filePath) => path.basename(filePath) !== "content-manifest.json" && !filePath.endsWith(".tmp") && !relativePosix(OUTPUT_ROOT, filePath).startsWith("reports/"),
   );
   const outputFileChecksums: Record<string, string> = {};
   for (const filePath of outputFiles) {

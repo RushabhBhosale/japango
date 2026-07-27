@@ -1,0 +1,822 @@
+[
+  {
+    "id": "kanji-害",
+    "character": "害",
+    "unicode": "U+5BB3",
+    "meanings": [
+      "harm",
+      "injury"
+    ],
+    "readings": {
+      "on": [
+        "ガイ"
+      ],
+      "kun": [],
+      "nanori": []
+    },
+    "strokeCount": 10,
+    "radicals": [
+      "classical:40"
+    ],
+    "components": [
+      "宀",
+      "冖",
+      "龶",
+      "口"
+    ],
+    "grade": 4,
+    "frequencyRank": 358,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "害"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-障害-しょうがい"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/05bb3.svg",
+      "elementIds": [
+        "kvg:05bb3",
+        "kvg:05bb3-g1",
+        "kvg:05bb3-g2",
+        "kvg:05bb3-g4",
+        "kvg:05bb3-g5"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "害"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "害"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/05bb3.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-完",
+    "character": "完",
+    "unicode": "U+5B8C",
+    "meanings": [
+      "perfect",
+      "completion",
+      "end"
+    ],
+    "readings": {
+      "on": [
+        "カン"
+      ],
+      "kun": [],
+      "nanori": []
+    },
+    "strokeCount": 7,
+    "radicals": [
+      "classical:40"
+    ],
+    "components": [
+      "宀",
+      "冖",
+      "元",
+      "二",
+      "儿",
+      "丿"
+    ],
+    "grade": 4,
+    "frequencyRank": 595,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "完"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-完成-かんせい"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/05b8c.svg",
+      "elementIds": [
+        "kvg:05b8c",
+        "kvg:05b8c-g1",
+        "kvg:05b8c-g2",
+        "kvg:05b8c-g3",
+        "kvg:05b8c-g4",
+        "kvg:05b8c-g5",
+        "kvg:05b8c-g6"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "完"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "完"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/05b8c.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-官",
+    "character": "官",
+    "unicode": "U+5B98",
+    "meanings": [
+      "bureaucrat",
+      "the government",
+      "organ"
+    ],
+    "readings": {
+      "on": [
+        "カン"
+      ],
+      "kun": [],
+      "nanori": []
+    },
+    "strokeCount": 8,
+    "radicals": [
+      "classical:40"
+    ],
+    "components": [
+      "宀",
+      "冖",
+      "口"
+    ],
+    "grade": 4,
+    "frequencyRank": 230,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "官"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-警官-けいかん",
+      "vocab-警察官-けいさつかん"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/05b98.svg",
+      "elementIds": [
+        "kvg:05b98",
+        "kvg:05b98-g1",
+        "kvg:05b98-g2",
+        "kvg:05b98-g4"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "官"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "官"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/05b98.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-季",
+    "character": "季",
+    "unicode": "U+5B63",
+    "meanings": [
+      "seasons"
+    ],
+    "readings": {
+      "on": [
+        "キ"
+      ],
+      "kun": [],
+      "nanori": [
+        "すえ",
+        "とし"
+      ]
+    },
+    "strokeCount": 8,
+    "radicals": [
+      "classical:39",
+      "nelson_c:115"
+    ],
+    "components": [
+      "禾",
+      "丿",
+      "木",
+      "子"
+    ],
+    "grade": 4,
+    "frequencyRank": 842,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "季"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-四季-しき",
+      "vocab-季節-きせつ"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/05b63.svg",
+      "elementIds": [
+        "kvg:05b63",
+        "kvg:05b63-g1",
+        "kvg:05b63-g2",
+        "kvg:05b63-g3",
+        "kvg:05b63-g4"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "季"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "季"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/05b63.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-客",
+    "character": "客",
+    "unicode": "U+5BA2",
+    "meanings": [
+      "guest",
+      "visitor",
+      "customer",
+      "client"
+    ],
+    "readings": {
+      "on": [
+        "キャク",
+        "カク"
+      ],
+      "kun": [],
+      "nanori": []
+    },
+    "strokeCount": 9,
+    "radicals": [
+      "classical:40"
+    ],
+    "components": [
+      "宀",
+      "冖",
+      "各",
+      "夂",
+      "口"
+    ],
+    "grade": 3,
+    "frequencyRank": 557,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "客"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-乗客-じょうきゃく",
+      "vocab-客-きゃく"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/05ba2.svg",
+      "elementIds": [
+        "kvg:05ba2",
+        "kvg:05ba2-g1",
+        "kvg:05ba2-g2",
+        "kvg:05ba2-g3",
+        "kvg:05ba2-g4",
+        "kvg:05ba2-g5"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "客"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "客"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/05ba2.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-協",
+    "character": "協",
+    "unicode": "U+5354",
+    "meanings": [
+      "co-",
+      "cooperation"
+    ],
+    "readings": {
+      "on": [
+        "キョウ"
+      ],
+      "kun": [],
+      "nanori": []
+    },
+    "strokeCount": 8,
+    "radicals": [
+      "classical:24"
+    ],
+    "components": [
+      "十",
+      "劦",
+      "力"
+    ],
+    "grade": 4,
+    "frequencyRank": 121,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "協"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-協力-きょうりょく"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/05354.svg",
+      "elementIds": [
+        "kvg:05354",
+        "kvg:05354-g1",
+        "kvg:05354-g2",
+        "kvg:05354-g3",
+        "kvg:05354-g5",
+        "kvg:05354-g6"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "協"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "協"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/05354.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-察",
+    "character": "察",
+    "unicode": "U+5BDF",
+    "meanings": [
+      "guess",
+      "presume",
+      "surmise",
+      "judge",
+      "understand"
+    ],
+    "readings": {
+      "on": [
+        "サツ"
+      ],
+      "kun": [],
+      "nanori": []
+    },
+    "strokeCount": 14,
+    "radicals": [
+      "classical:40"
+    ],
+    "components": [
+      "宀",
+      "冖",
+      "祭",
+      "月",
+      "示"
+    ],
+    "grade": 4,
+    "frequencyRank": 477,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "察"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-診察-しんさつ",
+      "vocab-警察-けいさつ",
+      "vocab-警察官-けいさつかん"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/05bdf.svg",
+      "elementIds": [
+        "kvg:05bdf",
+        "kvg:05bdf-g1",
+        "kvg:05bdf-g2",
+        "kvg:05bdf-g3",
+        "kvg:05bdf-g5",
+        "kvg:05bdf-g6"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "察"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "察"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/05bdf.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-信",
+    "character": "信",
+    "unicode": "U+4FE1",
+    "meanings": [
+      "faith",
+      "truth",
+      "fidelity",
+      "trust"
+    ],
+    "readings": {
+      "on": [
+        "シン"
+      ],
+      "kun": [],
+      "nanori": [
+        "し",
+        "しが",
+        "しな",
+        "しの",
+        "しぶ",
+        "とき",
+        "のび",
+        "のぶ",
+        "まこと"
+      ]
+    },
+    "strokeCount": 9,
+    "radicals": [
+      "classical:9"
+    ],
+    "components": [
+      "亻",
+      "言",
+      "口"
+    ],
+    "grade": 4,
+    "frequencyRank": 208,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "信"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-信じる-しんじる",
+      "vocab-信号-しんごう",
+      "vocab-信頼-しんらい"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/04fe1.svg",
+      "elementIds": [
+        "kvg:04fe1",
+        "kvg:04fe1-g1",
+        "kvg:04fe1-g2",
+        "kvg:04fe1-g3"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "信"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "信"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/04fe1.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-倍",
+    "character": "倍",
+    "unicode": "U+500D",
+    "meanings": [
+      "double",
+      "twice",
+      "times",
+      "fold"
+    ],
+    "readings": {
+      "on": [
+        "バイ"
+      ],
+      "kun": [],
+      "nanori": [
+        "べ",
+        "ます"
+      ]
+    },
+    "strokeCount": 10,
+    "radicals": [
+      "classical:9"
+    ],
+    "components": [
+      "亻",
+      "咅",
+      "立",
+      "亠",
+      "口"
+    ],
+    "grade": 3,
+    "frequencyRank": 714,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "倍"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-倍-ばい"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/0500d.svg",
+      "elementIds": [
+        "kvg:0500d",
+        "kvg:0500d-g1",
+        "kvg:0500d-g2",
+        "kvg:0500d-g3",
+        "kvg:0500d-g4",
+        "kvg:0500d-g6"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "倍"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "倍"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/0500d.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  },
+  {
+    "id": "kanji-博",
+    "character": "博",
+    "unicode": "U+535A",
+    "meanings": [
+      "Dr.",
+      "command",
+      "esteem",
+      "win acclaim",
+      "Ph.D.",
+      "exposition",
+      "fair"
+    ],
+    "readings": {
+      "on": [
+        "ハク",
+        "バク"
+      ],
+      "kun": [],
+      "nanori": [
+        "ぐれ",
+        "と",
+        "はか",
+        "ひろ"
+      ]
+    },
+    "strokeCount": 12,
+    "radicals": [
+      "classical:24"
+    ],
+    "components": [
+      "十",
+      "尃",
+      "甫",
+      "専",
+      "用",
+      "丶",
+      "寸"
+    ],
+    "grade": 4,
+    "frequencyRank": 794,
+    "jlpt": {
+      "level": "N4",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "sourceId": "jlpt-kanji",
+          "sourceRecordId": "博"
+        }
+      ],
+      "conflicts": []
+    },
+    "vocabularyIds": [
+      "vocab-博士-はかせ",
+      "vocab-博物館-はくぶつかん"
+    ],
+    "similarKanjiIds": [],
+    "textbookReferences": [],
+    "kanjiVg": {
+      "svgPath": "assets/docs-reference/kanjivg/0535a.svg",
+      "elementIds": [
+        "kvg:0535a",
+        "kvg:0535a-g1",
+        "kvg:0535a-g2",
+        "kvg:0535a-g3",
+        "kvg:0535a-g4",
+        "kvg:0535a-g5",
+        "kvg:0535a-g6",
+        "kvg:0535a-g7",
+        "kvg:0535a-g8"
+      ],
+      "available": true
+    },
+    "sources": [
+      {
+        "sourceId": "kanjidic2",
+        "sourceRecordId": "博"
+      },
+      {
+        "sourceId": "jlpt-kanji",
+        "sourceRecordId": "博"
+      },
+      {
+        "sourceId": "kanjivg",
+        "sourceRecordId": "assets/docs-reference/kanjivg/0535a.svg"
+      }
+    ],
+    "attribution": [
+      "KANJIDIC2 data © Electronic Dictionary Research and Development Group, CC BY-SA 4.0.",
+      "KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."
+    ],
+    "confidence": 0.85,
+    "needsReview": true,
+    "releaseReady": false
+  }
+]

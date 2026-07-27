@@ -1,0 +1,4606 @@
+{
+  "schemaVersion": 1,
+  "fixedTimestamp": "2026-07-27T00:00:00.000Z",
+  "lifecycleRules": {
+    "releaseChildRequiresReleaseParents": true,
+    "grammarQuestionParentBlockers": [
+      "grammar",
+      "sentence"
+    ],
+    "standaloneKanjiQuestionsOptional": true
+  },
+  "grammar": {
+    "approvedQuestions": 903,
+    "repairRequired": 89,
+    "blockedGrammarParents": 124,
+    "blockedSentenceParents": 372,
+    "parents": {
+      "grammar": [
+        {
+          "id": "grammar-adjective-noha",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-adjective-te",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-adjective-te-b",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ageru",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ano",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-are",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-asoko",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-dake",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-darou",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-datta",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-de-action-location-marker",
+          "questions": 4,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-de-means-marker",
+          "questions": 5,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-deshou",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-desu",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-doko",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-dono",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-dore",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ga-contrast-conjunction",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ga-subject-marker",
+          "questions": 4,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-gaaru",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-gaaru-noun",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-gairu",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ha",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-he",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-heiku",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-i-adjective-noun",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-i-adjectivekunakatta",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-i-adjectivepast",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-i-adjectivepredicate",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-i-adjectives",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-i-adjectiveskunai",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ii",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-janai",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-janakatta",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ka-alternative-marker",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ka-question-marker",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kara-reason-conjunction",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kara-starting-point-marker",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kedo",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kekkou",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-keredomo",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kirai",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-koko",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kono",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kore",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kurai1",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kureru",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-kuru",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-mada",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-mada-teimasen",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-maeni",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-masenka",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-mashou",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-mashouka",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-mo",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-morau",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-mou",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-na",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-na-adjective-noun",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-na-adjectiveda",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-na-adjectives",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-naidekudasai",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-naihougaii",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nakucha",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nakutehaikenai",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nakutehanaranai",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nanika",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ndesu",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ne",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ni",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ninaru",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nisuru",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-no-explanatory-nominalizer",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-no-nominalizer",
+          "questions": 4,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-no-possession-marker",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-node",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nogaheta",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nogajouzu",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nogasuki",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-nonakade-gaichiban",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-noun-made",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-o",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ru-verbdictionary",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ru-verbnegative",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ru-verbnegative-past",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ru-verbpast",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-soko",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-sono",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-sore",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-sugiru",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-suru",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-tahougaii",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-tai",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-takotogaaru",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-takusan",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-tari-tarisuru",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-tehaikenai",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-teiru1",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-teiru2",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-teiru3",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-tekara",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-tekudasai",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-temoii",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-to-accompaniment-marker",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-to-and-marker",
+          "questions": 4,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-to-quotation-marker",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-tsumorida",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-tte",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-u-verbdictionary",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-u-verbnegative",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-u-verbnegative-past",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-u-verbpast",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-verb-made",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-verb-niiku",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-verb-ta-teiru-noun",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-verb-te",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-verb-te-b",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-verbsnon-past",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-ya",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-yo",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-yori-nohouga",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-好ki",
+          "questions": 6,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-誰",
+          "questions": 8,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        },
+        {
+          "id": "grammar-誰ka",
+          "questions": 7,
+          "status": "defer",
+          "reasons": [
+            "Missing authored formation and/or short explanation."
+          ]
+        }
+      ],
+      "sentences": [
+        {
+          "id": "sentence-adjective-u2d-noha-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-adjective-u2d-noha-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-adjective-u2d-noha-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-adjective-u2d-te-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-adjective-u2d-te-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-adjective-u2d-te-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-adjective-u2d-te-u2d-b-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-adjective-u2d-te-u2d-b-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-adjective-u2d-te-u2d-b-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ageru-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ageru-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ageru-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ano-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ano-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ano-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-are-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-are-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-are-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-asoko-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-asoko-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-asoko-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dake-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dake-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dake-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-darou-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-darou-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-darou-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-datta-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-datta-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-datta-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-de-u2d-action-u2d-location-u2d-marker-core",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-de-u2d-action-u2d-location-u2d-marker-real-life",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-de-u2d-action-u2d-location-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-de-u2d-means-u2d-marker-core",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-de-u2d-means-u2d-marker-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-de-u2d-means-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-deshou-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-deshou-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-deshou-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-desu-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-desu-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-desu-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-doko-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-doko-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-doko-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dono-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dono-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dono-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dore-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dore-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-dore-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ga-u2d-contrast-u2d-conjunction-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ga-u2d-contrast-u2d-conjunction-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ga-u2d-contrast-u2d-conjunction-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ga-u2d-subject-u2d-marker-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ga-u2d-subject-u2d-marker-real-life",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ga-u2d-subject-u2d-marker-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gaaru-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gaaru-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gaaru-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gaaru-u2d-noun-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gaaru-u2d-noun-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gaaru-u2d-noun-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gairu-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gairu-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-gairu-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ha-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ha-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ha-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-he-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-he-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-he-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-heiku-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-heiku-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-heiku-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjective-u2d-noun-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjective-u2d-noun-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjective-u2d-noun-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivekunakatta-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivekunakatta-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivekunakatta-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivepast-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivepast-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivepast-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivepredicate-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivepredicate-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectivepredicate-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectives-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectives-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectives-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectiveskunai-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectiveskunai-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-i-u2d-adjectiveskunai-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ii-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ii-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ii-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-janai-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-janai-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-janai-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-janakatta-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-janakatta-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-janakatta-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ka-u2d-alternative-u2d-marker-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ka-u2d-alternative-u2d-marker-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ka-u2d-alternative-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ka-u2d-question-u2d-marker-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ka-u2d-question-u2d-marker-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ka-u2d-question-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kara-u2d-reason-u2d-conjunction-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kara-u2d-reason-u2d-conjunction-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kara-u2d-reason-u2d-conjunction-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kara-u2d-starting-u2d-point-u2d-marker-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kara-u2d-starting-u2d-point-u2d-marker-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kara-u2d-starting-u2d-point-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kedo-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kedo-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kedo-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kekkou-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kekkou-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kekkou-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-keredomo-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-keredomo-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-keredomo-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kirai-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kirai-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kirai-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-koko-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-koko-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-koko-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kono-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kono-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kono-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kore-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kore-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kore-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kurai1-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kurai1-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kurai1-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kureru-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kureru-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kureru-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kuru-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kuru-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-kuru-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mada-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mada-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mada-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mada-u2d-teimasen-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mada-u2d-teimasen-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mada-u2d-teimasen-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-maeni-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-maeni-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-maeni-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-masenka-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-masenka-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-masenka-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mashou-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mashou-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mashou-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mashouka-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mashouka-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mashouka-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mo-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mo-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mo-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-morau-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-morau-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-morau-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mou-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mou-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-mou-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjective-u2d-noun-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjective-u2d-noun-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjective-u2d-noun-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjectiveda-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjectiveda-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjectiveda-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjectives-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjectives-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-na-u2d-adjectives-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-naidekudasai-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-naidekudasai-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-naidekudasai-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-naihougaii-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-naihougaii-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-naihougaii-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakucha-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakucha-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakucha-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakutehaikenai-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakutehaikenai-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakutehaikenai-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakutehanaranai-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakutehanaranai-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nakutehanaranai-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nanika-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nanika-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nanika-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ndesu-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ndesu-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ndesu-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ne-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ne-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ne-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ni-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ni-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ni-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ninaru-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ninaru-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ninaru-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nisuru-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nisuru-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nisuru-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-explanatory-u2d-nominalizer-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-explanatory-u2d-nominalizer-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-explanatory-u2d-nominalizer-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-nominalizer-core",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-nominalizer-real-life",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-nominalizer-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-possession-u2d-marker-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-possession-u2d-marker-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-no-u2d-possession-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-node-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-node-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-node-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogaheta-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogaheta-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogaheta-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogajouzu-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogajouzu-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogajouzu-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogasuki-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogasuki-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nogasuki-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nonakade-u2d-gaichiban-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nonakade-u2d-gaichiban-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-nonakade-u2d-gaichiban-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-noun-u2d-made-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-noun-u2d-made-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-noun-u2d-made-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-o-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-o-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-o-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbdictionary-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbdictionary-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbdictionary-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbnegative-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbnegative-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbnegative-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbnegative-u2d-past-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbnegative-u2d-past-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbnegative-u2d-past-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbpast-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbpast-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ru-u2d-verbpast-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-soko-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-soko-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-soko-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sono-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sono-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sono-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sore-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sore-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sore-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sugiru-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sugiru-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-sugiru-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-suru-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-suru-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-suru-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tahougaii-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tahougaii-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tahougaii-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tai-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tai-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tai-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-takotogaaru-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-takotogaaru-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-takotogaaru-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-takusan-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-takusan-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-takusan-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tari-u2d-tarisuru-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tari-u2d-tarisuru-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tari-u2d-tarisuru-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tehaikenai-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tehaikenai-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tehaikenai-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru1-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru1-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru1-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru2-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru2-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru2-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru3-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru3-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-teiru3-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tekara-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tekara-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tekara-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tekudasai-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tekudasai-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tekudasai-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-temoii-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-temoii-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-temoii-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-accompaniment-u2d-marker-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-accompaniment-u2d-marker-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-accompaniment-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-and-u2d-marker-core",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-and-u2d-marker-real-life",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-and-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-quotation-u2d-marker-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-quotation-u2d-marker-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-to-u2d-quotation-u2d-marker-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tsumorida-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tsumorida-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tsumorida-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tte-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tte-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-tte-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbdictionary-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbdictionary-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbdictionary-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbnegative-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbnegative-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbnegative-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbnegative-u2d-past-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbnegative-u2d-past-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbnegative-u2d-past-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbpast-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbpast-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u-u2d-verbpast-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u597d-ki-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u597d-ki-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u597d-ki-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u8ab0-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u8ab0-ka-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u8ab0-ka-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u8ab0-ka-structural-variation",
+          "questions": 1,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u8ab0-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-u8ab0-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-made-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-made-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-made-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-niiku-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-niiku-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-niiku-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-ta-u2d-teiru-u2d-noun-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-te-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-te-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-te-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-te-u2d-b-core",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-te-u2d-b-real-life",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verb-u2d-te-u2d-b-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verbsnon-u2d-past-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verbsnon-u2d-past-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-verbsnon-u2d-past-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ya-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ya-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-ya-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-yo-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-yo-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-yo-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-yori-u2d-nohouga-core",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-yori-u2d-nohouga-real-life",
+          "questions": 3,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        },
+        {
+          "id": "sentence-yori-u2d-nohouga-structural-variation",
+          "questions": 2,
+          "status": "defer",
+          "reviewStatus": "approved",
+          "reasons": [
+            "Approved sentence remains lifecycle-gated pending parent curriculum promotion."
+          ]
+        }
+      ]
+    },
+    "releaseEligibleQuestions": 0,
+    "developmentOnlyQuestions": 903
+  },
+  "kanji": {
+    "processed": 10,
+    "promoted": [
+      {
+        "id": "kanji-営",
+        "character": "営"
+      },
+      {
+        "id": "kanji-化",
+        "character": "化"
+      },
+      {
+        "id": "kanji-加",
+        "character": "加"
+      },
+      {
+        "id": "kanji-各",
+        "character": "各"
+      },
+      {
+        "id": "kanji-共",
+        "character": "共"
+      },
+      {
+        "id": "kanji-勤",
+        "character": "勤"
+      },
+      {
+        "id": "kanji-具",
+        "character": "具"
+      },
+      {
+        "id": "kanji-君",
+        "character": "君"
+      },
+      {
+        "id": "kanji-係",
+        "character": "係"
+      },
+      {
+        "id": "kanji-型",
+        "character": "型"
+      },
+      {
+        "id": "kanji-件",
+        "character": "件"
+      },
+      {
+        "id": "kanji-健",
+        "character": "健"
+      },
+      {
+        "id": "kanji-原",
+        "character": "原"
+      },
+      {
+        "id": "kanji-固",
+        "character": "固"
+      },
+      {
+        "id": "kanji-向",
+        "character": "向"
+      },
+      {
+        "id": "kanji-好",
+        "character": "好"
+      },
+      {
+        "id": "kanji-号",
+        "character": "号"
+      },
+      {
+        "id": "kanji-合",
+        "character": "合"
+      },
+      {
+        "id": "kanji-参",
+        "character": "参"
+      },
+      {
+        "id": "kanji-司",
+        "character": "司"
+      },
+      {
+        "id": "kanji-失",
+        "character": "失"
+      },
+      {
+        "id": "kanji-実",
+        "character": "実"
+      },
+      {
+        "id": "kanji-受",
+        "character": "受"
+      },
+      {
+        "id": "kanji-収",
+        "character": "収"
+      },
+      {
+        "id": "kanji-初",
+        "character": "初"
+      },
+      {
+        "id": "kanji-商",
+        "character": "商"
+      },
+      {
+        "id": "kanji-乗",
+        "character": "乗"
+      },
+      {
+        "id": "kanji-声",
+        "character": "声"
+      },
+      {
+        "id": "kanji-全",
+        "character": "全"
+      },
+      {
+        "id": "kanji-側",
+        "character": "側"
+      },
+      {
+        "id": "kanji-卒",
+        "character": "卒"
+      },
+      {
+        "id": "kanji-他",
+        "character": "他"
+      },
+      {
+        "id": "kanji-対",
+        "character": "対"
+      },
+      {
+        "id": "kanji-単",
+        "character": "単"
+      },
+      {
+        "id": "kanji-団",
+        "character": "団"
+      },
+      {
+        "id": "kanji-定",
+        "character": "定"
+      },
+      {
+        "id": "kanji-働",
+        "character": "働"
+      },
+      {
+        "id": "kanji-反",
+        "character": "反"
+      },
+      {
+        "id": "kanji-夫",
+        "character": "夫"
+      },
+      {
+        "id": "kanji-変",
+        "character": "変"
+      },
+      {
+        "id": "kanji-務",
+        "character": "務"
+      },
+      {
+        "id": "kanji-命",
+        "character": "命"
+      },
+      {
+        "id": "kanji-利",
+        "character": "利"
+      },
+      {
+        "id": "kanji-冷",
+        "character": "冷"
+      },
+      {
+        "id": "kanji-和",
+        "character": "和"
+      }
+    ],
+    "deferred": [
+      {
+        "id": "kanji-害",
+        "character": "害"
+      },
+      {
+        "id": "kanji-完",
+        "character": "完"
+      },
+      {
+        "id": "kanji-官",
+        "character": "官"
+      },
+      {
+        "id": "kanji-季",
+        "character": "季"
+      },
+      {
+        "id": "kanji-客",
+        "character": "客"
+      },
+      {
+        "id": "kanji-協",
+        "character": "協"
+      },
+      {
+        "id": "kanji-察",
+        "character": "察"
+      },
+      {
+        "id": "kanji-信",
+        "character": "信"
+      },
+      {
+        "id": "kanji-倍",
+        "character": "倍"
+      },
+      {
+        "id": "kanji-博",
+        "character": "博"
+      }
+    ],
+    "supportingVocabularyAdded": 0,
+    "sentencesAdded": 0,
+    "questionsAdded": 0
+  },
+  "integrity": {
+    "lifecycleLeakage": 0,
+    "brokenReferences": 0,
+    "phase8FrozenSnapshotsPreserved": true
+  },
+  "determinism": {
+    "unstableInput": "derived report checksums fed back into content manifest",
+    "fix": "reports/ excluded from content manifest output checksum set",
+    "status": "pass: two completed fixed-timestamp builds produced identical manifest bytes"
+  }
+}

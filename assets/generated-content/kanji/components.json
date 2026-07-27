@@ -1,5 +1,12 @@
 [
   {
+    "id": "component-0043",
+    "character": "CDP-8BC4",
+    "kanjiIds": [
+      "kanji-原"
+    ]
+  },
+  {
     "id": "component-20087",
     "character": "𠂇",
     "kanjiIds": [
@@ -10,6 +17,7 @@
     "id": "component-20089",
     "character": "𠂉",
     "kanjiIds": [
+      "kanji-務",
       "kanji-教",
       "kanji-旅",
       "kanji-族",
@@ -38,6 +46,7 @@
     "id": "component-215D7",
     "character": "𡗗",
     "kanjiIds": [
+      "kanji-実",
       "kanji-春"
     ]
   },
@@ -52,6 +61,8 @@
     "id": "component-2E8D",
     "character": "⺍",
     "kanjiIds": [
+      "kanji-単",
+      "kanji-営",
       "kanji-図",
       "kanji-学"
     ]
@@ -61,10 +72,19 @@
     "character": "⺕",
     "kanjiIds": [
       "kanji-事",
+      "kanji-健",
+      "kanji-君",
       "kanji-帰",
       "kanji-建",
       "kanji-急",
       "kanji-書"
+    ]
+  },
+  {
+    "id": "component-2EA4",
+    "character": "⺤",
+    "kanjiIds": [
+      "kanji-受"
     ]
   },
   {
@@ -90,6 +110,8 @@
     "id": "component-30DE",
     "character": "マ",
     "kanjiIds": [
+      "kanji-冷",
+      "kanji-務",
       "kanji-通"
     ]
   },
@@ -123,11 +145,19 @@
       "kanji-何",
       "kanji-使",
       "kanji-写",
+      "kanji-冷",
       "kanji-切",
+      "kanji-勤",
+      "kanji-単",
+      "kanji-号",
+      "kanji-司",
+      "kanji-合",
       "kanji-同",
+      "kanji-命",
       "kanji-場",
       "kanji-夏",
       "kanji-天",
+      "kanji-実",
       "kanji-悪",
       "kanji-春",
       "kanji-昼",
@@ -176,6 +206,8 @@
     "id": "component-4E09",
     "character": "三",
     "kanjiIds": [
+      "kanji-勤",
+      "kanji-実",
       "kanji-春"
     ]
   },
@@ -207,7 +239,11 @@
       "kanji-不",
       "kanji-世",
       "kanji-中",
+      "kanji-健",
       "kanji-出",
+      "kanji-単",
+      "kanji-収",
+      "kanji-向",
       "kanji-建",
       "kanji-弟",
       "kanji-強",
@@ -235,6 +271,8 @@
       "kanji-以",
       "kanji-住",
       "kanji-半",
+      "kanji-単",
+      "kanji-博",
       "kanji-国",
       "kanji-料",
       "kanji-業",
@@ -257,21 +295,36 @@
     "character": "丿",
     "kanjiIds": [
       "kanji-不",
+      "kanji-乗",
       "kanji-九",
       "kanji-作",
       "kanji-使",
+      "kanji-係",
       "kanji-借",
+      "kanji-働",
       "kanji-元",
       "kanji-兄",
       "kanji-先",
       "kanji-別",
+      "kanji-利",
       "kanji-勉",
       "kanji-動",
+      "kanji-務",
       "kanji-千",
       "kanji-午",
+      "kanji-向",
+      "kanji-君",
+      "kanji-和",
+      "kanji-商",
+      "kanji-営",
       "kanji-四",
       "kanji-図",
       "kanji-売",
+      "kanji-変",
+      "kanji-夫",
+      "kanji-失",
+      "kanji-季",
+      "kanji-完",
       "kanji-少",
       "kanji-年",
       "kanji-弟",
@@ -299,7 +352,9 @@
     "character": "乂",
     "kanjiIds": [
       "kanji-使",
+      "kanji-務",
       "kanji-図",
+      "kanji-対",
       "kanji-教",
       "kanji-文",
       "kanji-気"
@@ -318,6 +373,7 @@
     "kanjiIds": [
       "kanji-七",
       "kanji-九",
+      "kanji-他",
       "kanji-地",
       "kanji-究"
     ]
@@ -333,6 +389,7 @@
     "id": "component-4E5F",
     "character": "也",
     "kanjiIds": [
+      "kanji-他",
       "kanji-地"
     ]
   },
@@ -342,6 +399,8 @@
     "kanjiIds": [
       "kanji-事",
       "kanji-何",
+      "kanji-務",
+      "kanji-変",
       "kanji-歌",
       "kanji-町",
       "kanji-野"
@@ -351,6 +410,7 @@
     "id": "component-4E86",
     "character": "了",
     "kanjiIds": [
+      "kanji-務",
       "kanji-野"
     ]
   },
@@ -358,6 +418,7 @@
     "id": "component-4E88",
     "character": "予",
     "kanjiIds": [
+      "kanji-務",
       "kanji-野"
     ]
   },
@@ -369,6 +430,7 @@
       "kanji-会",
       "kanji-元",
       "kanji-半",
+      "kanji-完",
       "kanji-悪",
       "kanji-発",
       "kanji-語",
@@ -404,9 +466,14 @@
     "kanjiIds": [
       "kanji-主",
       "kanji-京",
+      "kanji-倍",
       "kanji-六",
+      "kanji-卒",
+      "kanji-商",
+      "kanji-変",
       "kanji-夜",
       "kanji-姉",
+      "kanji-対",
       "kanji-意",
       "kanji-文",
       "kanji-新",
@@ -428,12 +495,26 @@
     ]
   },
   {
+    "id": "component-4EA6",
+    "character": "亦",
+    "kanjiIds": [
+      "kanji-変"
+    ]
+  },
+  {
     "id": "component-4EBA",
     "character": "人",
     "kanjiIds": [
       "kanji-今",
       "kanji-以",
       "kanji-会",
+      "kanji-全",
+      "kanji-冷",
+      "kanji-卒",
+      "kanji-合",
+      "kanji-命",
+      "kanji-定",
+      "kanji-実",
       "kanji-春",
       "kanji-界",
       "kanji-病",
@@ -448,14 +529,23 @@
     "character": "亻",
     "kanjiIds": [
       "kanji-仕",
+      "kanji-他",
       "kanji-代",
+      "kanji-件",
       "kanji-休",
       "kanji-住",
       "kanji-体",
       "kanji-何",
       "kanji-作",
       "kanji-使",
+      "kanji-係",
+      "kanji-信",
+      "kanji-倍",
       "kanji-借",
+      "kanji-健",
+      "kanji-側",
+      "kanji-働",
+      "kanji-化",
       "kanji-夜",
       "kanji-待",
       "kanji-後",
@@ -475,10 +565,24 @@
     ]
   },
   {
+    "id": "component-4ECE",
+    "character": "从",
+    "kanjiIds": [
+      "kanji-卒"
+    ]
+  },
+  {
     "id": "component-4EE3",
     "character": "代",
     "kanjiIds": [
       "kanji-貸"
+    ]
+  },
+  {
+    "id": "component-4EE4",
+    "character": "令",
+    "kanjiIds": [
+      "kanji-冷"
     ]
   },
   {
@@ -489,8 +593,10 @@
       "kanji-兄",
       "kanji-先",
       "kanji-勉",
+      "kanji-商",
       "kanji-四",
       "kanji-売",
+      "kanji-完",
       "kanji-発",
       "kanji-見",
       "kanji-親",
@@ -502,6 +608,7 @@
     "id": "component-5143",
     "character": "元",
     "kanjiIds": [
+      "kanji-完",
       "kanji-院"
     ]
   },
@@ -516,8 +623,11 @@
     "id": "component-516B",
     "character": "八",
     "kanjiIds": [
+      "kanji-側",
       "kanji-公",
       "kanji-六",
+      "kanji-共",
+      "kanji-具",
       "kanji-前",
       "kanji-員",
       "kanji-弟",
@@ -553,6 +663,8 @@
       "kanji-円",
       "kanji-南",
       "kanji-同",
+      "kanji-向",
+      "kanji-商",
       "kanji-堂",
       "kanji-病",
       "kanji-週",
@@ -574,16 +686,32 @@
     ]
   },
   {
+    "id": "component-518F",
+    "character": "冏",
+    "kanjiIds": [
+      "kanji-商"
+    ]
+  },
+  {
     "id": "component-5196",
     "character": "冖",
     "kanjiIds": [
       "kanji-写",
+      "kanji-受",
+      "kanji-営",
       "kanji-売",
       "kanji-字",
       "kanji-学",
       "kanji-安",
+      "kanji-完",
+      "kanji-官",
+      "kanji-定",
+      "kanji-実",
+      "kanji-客",
       "kanji-室",
+      "kanji-害",
       "kanji-家",
+      "kanji-察",
       "kanji-帰",
       "kanji-究",
       "kanji-空",
@@ -598,6 +726,7 @@
     "character": "冫",
     "kanjiIds": [
       "kanji-冬",
+      "kanji-冷",
       "kanji-楽",
       "kanji-終"
     ]
@@ -628,25 +757,62 @@
     "id": "component-5200",
     "character": "刀",
     "kanjiIds": [
-      "kanji-切"
+      "kanji-切",
+      "kanji-初"
     ]
   },
   {
     "id": "component-5202",
     "character": "刂",
     "kanjiIds": [
+      "kanji-側",
       "kanji-別",
+      "kanji-利",
       "kanji-前",
+      "kanji-型",
       "kanji-帰"
+    ]
+  },
+  {
+    "id": "component-5211",
+    "character": "刑",
+    "kanjiIds": [
+      "kanji-型"
+    ]
+  },
+  {
+    "id": "component-5247",
+    "character": "則",
+    "kanjiIds": [
+      "kanji-側"
     ]
   },
   {
     "id": "component-529B",
     "character": "力",
     "kanjiIds": [
+      "kanji-働",
+      "kanji-加",
       "kanji-勉",
       "kanji-動",
+      "kanji-務",
+      "kanji-勤",
+      "kanji-協",
       "kanji-男"
+    ]
+  },
+  {
+    "id": "component-52A6",
+    "character": "劦",
+    "kanjiIds": [
+      "kanji-協"
+    ]
+  },
+  {
+    "id": "component-52D5",
+    "character": "動",
+    "kanjiIds": [
+      "kanji-働"
     ]
   },
   {
@@ -670,6 +836,7 @@
     "id": "component-5315",
     "character": "匕",
     "kanjiIds": [
+      "kanji-化",
       "kanji-北",
       "kanji-死",
       "kanji-花"
@@ -694,13 +861,21 @@
     "character": "十",
     "kanjiIds": [
       "kanji-世",
+      "kanji-乗",
       "kanji-借",
+      "kanji-働",
       "kanji-動",
       "kanji-千",
       "kanji-午",
       "kanji-半",
+      "kanji-卒",
+      "kanji-協",
       "kanji-南",
+      "kanji-単",
+      "kanji-博",
       "kanji-古",
+      "kanji-固",
+      "kanji-型",
       "kanji-年",
       "kanji-度",
       "kanji-早",
@@ -716,6 +891,8 @@
     "id": "component-5343",
     "character": "千",
     "kanjiIds": [
+      "kanji-乗",
+      "kanji-働",
       "kanji-動",
       "kanji-話",
       "kanji-重"
@@ -728,6 +905,7 @@
       "kanji-上",
       "kanji-下",
       "kanji-外",
+      "kanji-定",
       "kanji-店",
       "kanji-止",
       "kanji-正",
@@ -746,6 +924,7 @@
     "id": "component-5369",
     "character": "卩",
     "kanjiIds": [
+      "kanji-命",
       "kanji-服"
     ]
   },
@@ -753,6 +932,8 @@
     "id": "component-5382",
     "character": "厂",
     "kanjiIds": [
+      "kanji-原",
+      "kanji-反",
       "kanji-広",
       "kanji-店",
       "kanji-度",
@@ -766,6 +947,7 @@
       "kanji-会",
       "kanji-公",
       "kanji-去",
+      "kanji-参",
       "kanji-台",
       "kanji-始",
       "kanji-室",
@@ -781,6 +963,9 @@
     "character": "又",
     "kanjiIds": [
       "kanji-友",
+      "kanji-反",
+      "kanji-収",
+      "kanji-受",
       "kanji-度",
       "kanji-服",
       "kanji-飯"
@@ -802,19 +987,36 @@
       "kanji-京",
       "kanji-何",
       "kanji-使",
+      "kanji-信",
+      "kanji-倍",
       "kanji-兄",
       "kanji-別",
+      "kanji-加",
       "kanji-古",
       "kanji-台",
       "kanji-右",
+      "kanji-号",
+      "kanji-司",
+      "kanji-各",
+      "kanji-合",
       "kanji-同",
       "kanji-名",
+      "kanji-向",
+      "kanji-君",
       "kanji-味",
+      "kanji-命",
+      "kanji-和",
       "kanji-品",
       "kanji-員",
+      "kanji-商",
       "kanji-問",
+      "kanji-営",
+      "kanji-固",
       "kanji-堂",
       "kanji-始",
+      "kanji-官",
+      "kanji-客",
+      "kanji-害",
       "kanji-店",
       "kanji-強",
       "kanji-悪",
@@ -838,6 +1040,13 @@
     ]
   },
   {
+    "id": "component-53E4",
+    "character": "古",
+    "kanjiIds": [
+      "kanji-固"
+    ]
+  },
+  {
     "id": "component-53EF",
     "character": "可",
     "kanjiIds": [
@@ -850,6 +1059,13 @@
     "character": "台",
     "kanjiIds": [
       "kanji-始"
+    ]
+  },
+  {
+    "id": "component-5404",
+    "character": "各",
+    "kanjiIds": [
+      "kanji-客"
     ]
   },
   {
@@ -881,10 +1097,24 @@
     ]
   },
   {
+    "id": "component-5442",
+    "character": "呂",
+    "kanjiIds": [
+      "kanji-営"
+    ]
+  },
+  {
     "id": "component-5468",
     "character": "周",
     "kanjiIds": [
       "kanji-週"
+    ]
+  },
+  {
+    "id": "component-5485",
+    "character": "咅",
+    "kanjiIds": [
+      "kanji-倍"
     ]
   },
   {
@@ -899,7 +1129,9 @@
     "character": "囗",
     "kanjiIds": [
       "kanji-四",
+      "kanji-団",
       "kanji-図",
+      "kanji-固",
       "kanji-国"
     ]
   },
@@ -909,6 +1141,7 @@
     "kanjiIds": [
       "kanji-去",
       "kanji-地",
+      "kanji-型",
       "kanji-堂",
       "kanji-場",
       "kanji-室",
@@ -931,6 +1164,7 @@
     "character": "士",
     "kanjiIds": [
       "kanji-仕",
+      "kanji-声",
       "kanji-売",
       "kanji-読",
       "kanji-週"
@@ -948,7 +1182,10 @@
     "character": "夂",
     "kanjiIds": [
       "kanji-冬",
+      "kanji-各",
+      "kanji-変",
       "kanji-夏",
+      "kanji-客",
       "kanji-後",
       "kanji-終"
     ]
@@ -969,7 +1206,10 @@
     "character": "大",
     "kanjiIds": [
       "kanji-医",
+      "kanji-参",
       "kanji-天",
+      "kanji-夫",
+      "kanji-失",
       "kanji-族",
       "kanji-映",
       "kanji-春",
@@ -994,6 +1234,7 @@
     "id": "component-592B",
     "character": "夫",
     "kanjiIds": [
+      "kanji-失",
       "kanji-漢"
     ]
   },
@@ -1009,6 +1250,7 @@
     "id": "component-5973",
     "character": "女",
     "kanjiIds": [
+      "kanji-好",
       "kanji-妹",
       "kanji-姉",
       "kanji-始",
@@ -1019,7 +1261,9 @@
     "id": "component-5B50",
     "character": "子",
     "kanjiIds": [
+      "kanji-好",
       "kanji-字",
+      "kanji-季",
       "kanji-学",
       "kanji-教"
     ]
@@ -1037,8 +1281,15 @@
     "kanjiIds": [
       "kanji-字",
       "kanji-安",
+      "kanji-完",
+      "kanji-官",
+      "kanji-定",
+      "kanji-実",
+      "kanji-客",
       "kanji-室",
+      "kanji-害",
       "kanji-家",
+      "kanji-察",
       "kanji-究",
       "kanji-空",
       "kanji-院",
@@ -1063,6 +1314,9 @@
     "id": "component-5BF8",
     "character": "寸",
     "kanjiIds": [
+      "kanji-博",
+      "kanji-団",
+      "kanji-対",
       "kanji-待",
       "kanji-持",
       "kanji-時",
@@ -1080,10 +1334,25 @@
     ]
   },
   {
+    "id": "component-5C02",
+    "character": "専",
+    "kanjiIds": [
+      "kanji-博"
+    ]
+  },
+  {
+    "id": "component-5C03",
+    "character": "尃",
+    "kanjiIds": [
+      "kanji-博"
+    ]
+  },
+  {
     "id": "component-5C0F",
     "character": "小",
     "kanjiIds": [
       "kanji-京",
+      "kanji-原",
       "kanji-少",
       "kanji-歩"
     ]
@@ -1106,9 +1375,17 @@
     "id": "component-5C38",
     "character": "尸",
     "kanjiIds": [
+      "kanji-君",
       "kanji-屋",
       "kanji-昼",
       "kanji-駅"
+    ]
+  },
+  {
+    "id": "component-5C39",
+    "character": "尹",
+    "kanjiIds": [
+      "kanji-君"
     ]
   },
   {
@@ -1178,6 +1455,7 @@
     "kanjiIds": [
       "kanji-午",
       "kanji-南",
+      "kanji-型",
       "kanji-年",
       "kanji-研",
       "kanji-開"
@@ -1203,7 +1481,15 @@
     "id": "component-5EF4",
     "character": "廴",
     "kanjiIds": [
+      "kanji-健",
       "kanji-建"
+    ]
+  },
+  {
+    "id": "component-5EFA",
+    "character": "建",
+    "kanjiIds": [
+      "kanji-健"
     ]
   },
   {
@@ -1225,6 +1511,7 @@
     "id": "component-5F00",
     "character": "开",
     "kanjiIds": [
+      "kanji-型",
       "kanji-研",
       "kanji-開"
     ]
@@ -1261,6 +1548,13 @@
     ]
   },
   {
+    "id": "component-5F61",
+    "character": "彡",
+    "kanjiIds": [
+      "kanji-参"
+    ]
+  },
+  {
     "id": "component-5F73",
     "character": "彳",
     "kanjiIds": [
@@ -1290,7 +1584,15 @@
     "id": "component-6535",
     "character": "攵",
     "kanjiIds": [
+      "kanji-務",
       "kanji-教"
+    ]
+  },
+  {
+    "id": "component-6587",
+    "character": "文",
+    "kanjiIds": [
+      "kanji-対"
     ]
   },
   {
@@ -1322,6 +1624,8 @@
     "character": "日",
     "kanjiIds": [
       "kanji-借",
+      "kanji-単",
+      "kanji-原",
       "kanji-場",
       "kanji-意",
       "kanji-早",
@@ -1389,6 +1693,7 @@
     "character": "月",
     "kanjiIds": [
       "kanji-前",
+      "kanji-察",
       "kanji-明",
       "kanji-有",
       "kanji-服",
@@ -1400,10 +1705,14 @@
     "id": "component-6728",
     "character": "木",
     "kanjiIds": [
+      "kanji-乗",
       "kanji-休",
       "kanji-体",
+      "kanji-利",
       "kanji-味",
+      "kanji-和",
       "kanji-妹",
+      "kanji-季",
       "kanji-新",
       "kanji-本",
       "kanji-来",
@@ -1525,6 +1834,7 @@
     "id": "component-725B",
     "character": "牛",
     "kanjiIds": [
+      "kanji-件",
       "kanji-物",
       "kanji-特"
     ]
@@ -1542,6 +1852,7 @@
     "kanjiIds": [
       "kanji-主",
       "kanji-住",
+      "kanji-全",
       "kanji-国",
       "kanji-注",
       "kanji-理"
@@ -1551,7 +1862,15 @@
     "id": "component-7528",
     "character": "用",
     "kanjiIds": [
+      "kanji-博",
       "kanji-通"
+    ]
+  },
+  {
+    "id": "component-752B",
+    "character": "甫",
+    "kanjiIds": [
+      "kanji-博"
     ]
   },
   {
@@ -1581,9 +1900,17 @@
     ]
   },
   {
+    "id": "component-7532",
+    "character": "甲",
+    "kanjiIds": [
+      "kanji-単"
+    ]
+  },
+  {
     "id": "component-758B",
     "character": "疋",
     "kanjiIds": [
+      "kanji-定",
       "kanji-題"
     ]
   },
@@ -1605,6 +1932,7 @@
     "id": "component-767D",
     "character": "白",
     "kanjiIds": [
+      "kanji-原",
       "kanji-楽",
       "kanji-百",
       "kanji-習"
@@ -1614,6 +1942,8 @@
     "id": "component-76EE",
     "character": "目",
     "kanjiIds": [
+      "kanji-側",
+      "kanji-具",
       "kanji-員",
       "kanji-夏",
       "kanji-真",
@@ -1626,6 +1956,13 @@
       "kanji-質",
       "kanji-道",
       "kanji-題"
+    ]
+  },
+  {
+    "id": "component-77DB",
+    "character": "矛",
+    "kanjiIds": [
+      "kanji-務"
     ]
   },
   {
@@ -1645,6 +1982,13 @@
     ]
   },
   {
+    "id": "component-793A",
+    "character": "示",
+    "kanjiIds": [
+      "kanji-察"
+    ]
+  },
+  {
     "id": "component-793B",
     "character": "礻",
     "kanjiIds": [
@@ -1652,9 +1996,19 @@
     ]
   },
   {
+    "id": "component-796D",
+    "character": "祭",
+    "kanjiIds": [
+      "kanji-察"
+    ]
+  },
+  {
     "id": "component-79BE",
     "character": "禾",
     "kanjiIds": [
+      "kanji-利",
+      "kanji-和",
+      "kanji-季",
       "kanji-私",
       "kanji-秋"
     ]
@@ -1671,6 +2025,8 @@
     "id": "component-7ACB",
     "character": "立",
     "kanjiIds": [
+      "kanji-倍",
+      "kanji-商",
       "kanji-意",
       "kanji-新",
       "kanji-親",
@@ -1696,8 +2052,16 @@
     "id": "component-7CF8",
     "character": "糸",
     "kanjiIds": [
+      "kanji-係",
       "kanji-紙",
       "kanji-終"
+    ]
+  },
+  {
+    "id": "component-7CFB",
+    "character": "系",
+    "kanjiIds": [
+      "kanji-係"
     ]
   },
   {
@@ -1751,6 +2115,7 @@
     "id": "component-807F",
     "character": "聿",
     "kanjiIds": [
+      "kanji-健",
       "kanji-建",
       "kanji-書"
     ]
@@ -1789,10 +2154,18 @@
     "id": "component-8279",
     "character": "艹",
     "kanjiIds": [
+      "kanji-勤",
       "kanji-漢",
       "kanji-花",
       "kanji-英",
       "kanji-茶"
+    ]
+  },
+  {
+    "id": "component-83EB",
+    "character": "菫",
+    "kanjiIds": [
+      "kanji-勤"
     ]
   },
   {
@@ -1801,6 +2174,13 @@
     "kanjiIds": [
       "kanji-強",
       "kanji-風"
+    ]
+  },
+  {
+    "id": "component-8864",
+    "character": "衤",
+    "kanjiIds": [
+      "kanji-初"
     ]
   },
   {
@@ -1814,6 +2194,7 @@
     "id": "component-8A00",
     "character": "言",
     "kanjiIds": [
+      "kanji-信",
       "kanji-計",
       "kanji-試",
       "kanji-話",
@@ -1832,6 +2213,7 @@
     "id": "component-8C9D",
     "character": "貝",
     "kanjiIds": [
+      "kanji-側",
       "kanji-員",
       "kanji-買",
       "kanji-貸",
@@ -1865,6 +2247,7 @@
     "id": "component-91CC",
     "character": "里",
     "kanjiIds": [
+      "kanji-働",
       "kanji-動",
       "kanji-理",
       "kanji-重",
@@ -1876,6 +2259,7 @@
     "id": "component-91CD",
     "character": "重",
     "kanjiIds": [
+      "kanji-働",
       "kanji-動"
     ]
   },
@@ -1953,6 +2337,7 @@
     "id": "component-9FB0",
     "character": "龰",
     "kanjiIds": [
+      "kanji-定",
       "kanji-走",
       "kanji-起",
       "kanji-足",
@@ -1963,6 +2348,7 @@
     "id": "component-9FB6",
     "character": "龶",
     "kanjiIds": [
+      "kanji-害",
       "kanji-青"
     ]
   }

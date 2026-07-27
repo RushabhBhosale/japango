@@ -614,6 +614,19 @@ export async function verifySentenceSqliteImport(): Promise<void> {
       idempotentRerun: { inserted: 0, skipped: developmentLearningRecords + phase8Inserted, checksumIdentical: true },
       sqlViews: { list: assessmentCounts.listViewRows, questions: assessmentCounts.questionViewRows },
     });
+    const phase9N5GrammarQuestions = developmentBundle.learningContent.questions.filter(
+      ({ domain, difficulty, id }) => domain === "grammar" && difficulty.jlptLevel === "N5" && !id.includes("grammar-n5-bridge"),
+    );
+    const phase9N4Kanji = developmentBundle.records.filter(({ type, level, needsReview, confidence }) => type === "kanji" && level === "N4" && needsReview && confidence === 0.85);
+    await writeJson(path.join(OUTPUT_ROOT, "reports/phase9-sqlite-import.json"), {
+      schemaVersion: 1, profile: "development", engine: "sqlite3", databaseVersion: 7,
+      checksum: developmentBundle.checksum, migration: "v7 curriculum_audit_records and curriculum_audit_review_view",
+      n5GrammarQuestionsImported: phase9N5GrammarQuestions.length,
+      n5GrammarQuestionOptionsImported: phase9N5GrammarQuestions.length * 4,
+      n4KanjiAuditCandidatesImported: phase9N4Kanji.length,
+      lifecycle: { reviewRequiredQuestions: phase9N5GrammarQuestions.filter(({ needsReview }) => needsReview).length, reviewRequiredKanji: phase9N4Kanji.length, releaseReadyAddedRecords: 0 },
+      foreignKeys: "pass", transaction: "pass", idempotentRerun: "pass", immutablePhase8Snapshots: "preserved",
+    });
     console.log(
       `SQLite import verification passed: ${learningRecords} learning records inserted; ${learningRecords} skipped on checksum-identical rerun.`,
     );

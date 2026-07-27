@@ -52,15 +52,26 @@
       "vocab-一-いち",
       "vocab-一つ-ひとつ",
       "vocab-一人-ひとり",
+      "vocab-一体-いったい",
+      "vocab-一家-いっか",
+      "vocab-一層-いっそう",
       "vocab-一度-いちど",
+      "vocab-一度に-いちどに",
+      "vocab-一方-いっぽう",
       "vocab-一日-いちにち",
       "vocab-一日-ついたち",
       "vocab-一昨日-おととい",
+      "vocab-一時-いちじ",
       "vocab-一月-ひとつき",
       "vocab-一杯-いっぱい",
+      "vocab-一生-いっしょう",
       "vocab-一生懸命-いっしょうけんめい",
       "vocab-一番-いちばん",
-      "vocab-一緒-いっしょ"
+      "vocab-一瞬-いっしゅん",
+      "vocab-一種-いっしゅ",
+      "vocab-一緒-いっしょ",
+      "vocab-一致-いっち",
+      "vocab-一般-いっぱん"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -134,7 +145,8 @@
       "conflicts": []
     },
     "vocabularyIds": [
-      "vocab-右-みぎ"
+      "vocab-右-みぎ",
+      "vocab-左右-さゆう"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -205,6 +217,7 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-梅雨-ばいう",
       "vocab-雨-あめ"
     ],
     "similarKanjiIds": [],
@@ -381,10 +394,12 @@
       "vocab-下さい-ください",
       "vocab-下りる-おりる",
       "vocab-下る-さがる",
+      "vocab-下ろす-おろす",
       "vocab-下宿-げしゅく",
       "vocab-下手-へた",
       "vocab-下着-したぎ",
       "vocab-以下-いか",
+      "vocab-地下-ちか",
       "vocab-地下鉄-ちかてつ",
       "vocab-廊下-ろうか",
       "vocab-靴下-くつした"
@@ -468,7 +483,9 @@
       ],
       "conflicts": []
     },
-    "vocabularyIds": [],
+    "vocabularyIds": [
+      "vocab-何とか-なんとか"
+    ],
     "similarKanjiIds": [],
     "textbookReferences": [],
     "kanjiVg": {
@@ -629,8 +646,12 @@
       "vocab-以外-いがい",
       "vocab-外-そと",
       "vocab-外-ほか",
+      "vocab-外す-はずす",
+      "vocab-外れる-はずれる",
       "vocab-外国-がいこく",
       "vocab-外国人-がいこくじん",
+      "vocab-意外-いがい",
+      "vocab-案外-あんがい",
       "vocab-郊外-こうがい"
     ],
     "similarKanjiIds": [],
@@ -710,17 +731,21 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-中学-ちゅうがく",
       "vocab-中学校-ちゅうがっこう",
+      "vocab-化学-かがく",
       "vocab-医学-いがく",
       "vocab-大学-だいがく",
       "vocab-大学生-だいがくせい",
+      "vocab-奨学金-しょうがくきん",
       "vocab-学校-がっこう",
       "vocab-学生-がくせい",
       "vocab-小学校-しょうがっこう",
       "vocab-数学-すうがく",
       "vocab-文学-ぶんがく",
       "vocab-留学生-りゅうがくせい",
-      "vocab-科学-かがく"
+      "vocab-科学-かがく",
+      "vocab-進学-しんがく"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -804,8 +829,14 @@
     },
     "vocabularyIds": [
       "vocab-この間-このあいだ",
+      "vocab-世間-せけん",
+      "vocab-人間-にんげん",
+      "vocab-仲間-なかま",
+      "vocab-居間-いま",
       "vocab-昼間-ひるま",
       "vocab-時間-じかん",
+      "vocab-時間割-じかんわり",
+      "vocab-瞬間-しゅんかん",
       "vocab-間-あいだ",
       "vocab-間に合う-まにあう",
       "vocab-間違える-まちがえる"
@@ -889,12 +920,15 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-人気-にんき",
       "vocab-元気-げんき",
       "vocab-天気-てんき",
       "vocab-天気予報-てんきよほう",
+      "vocab-景気-けいき",
       "vocab-気-き",
       "vocab-気分-きぶん",
       "vocab-気持ち-きもち",
+      "vocab-湿気-しっけ",
       "vocab-病気-びょうき",
       "vocab-空気-くうき",
       "vocab-電気-でんき"
@@ -979,6 +1013,7 @@
     "vocabularyIds": [
       "vocab-休み-やすみ",
       "vocab-休む-やすむ",
+      "vocab-休憩-きゅうけい",
       "vocab-夏休み-なつやすみ",
       "vocab-昼休み-ひるやすみ"
     ],
@@ -1061,6 +1096,12 @@
     },
     "vocabularyIds": [
       "vocab-お金-おかね",
+      "vocab-借金-しゃっきん",
+      "vocab-奨学金-しょうがくきん",
+      "vocab-現金-げんきん",
+      "vocab-税金-ぜいきん",
+      "vocab-貯金-ちょきん",
+      "vocab-資金-しきん",
       "vocab-金曜日-きんようび"
     ],
     "similarKanjiIds": [],
@@ -1309,6 +1350,7 @@
     "vocabularyIds": [
       "vocab-お見舞い-おみまい",
       "vocab-意見-いけん",
+      "vocab-発見-はっけん",
       "vocab-花見-はなみ",
       "vocab-見える-みえる",
       "vocab-見せる-みせる",
@@ -1480,7 +1522,8 @@
     },
     "vocabularyIds": [
       "vocab-午前-ごぜん",
-      "vocab-午後-ごご"
+      "vocab-午後-ごご",
+      "vocab-正午-しょうご"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -1569,6 +1612,7 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-今後-こんご",
       "vocab-午後-ごご",
       "vocab-後-あと",
       "vocab-後ろ-うしろ",
@@ -1654,7 +1698,8 @@
       "conflicts": []
     },
     "vocabularyIds": [
-      "vocab-英語-えいご"
+      "vocab-英語-えいご",
+      "vocab-言語-げんご"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -1843,8 +1888,11 @@
     "vocabularyIds": [
       "vocab-急行-きゅうこう",
       "vocab-旅行-りょこう",
+      "vocab-流行る-はやる",
       "vocab-行う-おこなう",
+      "vocab-行動-こうどう",
       "vocab-銀行-ぎんこう",
+      "vocab-銀行員-ぎんこういん",
       "vocab-飛行場-ひこうじょう",
       "vocab-飛行機-ひこうき"
     ],
@@ -1934,6 +1982,7 @@
     },
     "vocabularyIds": [
       "vocab-高い-たかい",
+      "vocab-高める-たかめる",
       "vocab-高校生-こうこうせい"
     ],
     "similarKanjiIds": [],
@@ -2015,6 +2064,7 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-各国-かっこく",
       "vocab-国-くに",
       "vocab-国際-こくさい",
       "vocab-外国-がいこく",
@@ -2098,9 +2148,12 @@
     },
     "vocabularyIds": [
       "vocab-今-いま",
+      "vocab-今に-いまに",
+      "vocab-今回-こんかい",
       "vocab-今夜-こんや",
       "vocab-今年-ことし",
       "vocab-今度-こんど",
+      "vocab-今後-こんご",
       "vocab-今日-きょう",
       "vocab-今晩-こんばん",
       "vocab-今月-こんげつ",
@@ -2180,7 +2233,8 @@
       "conflicts": []
     },
     "vocabularyIds": [
-      "vocab-左-ひだり"
+      "vocab-左-ひだり",
+      "vocab-左右-さゆう"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -2429,7 +2483,9 @@
     "vocabularyIds": [
       "vocab-四-し",
       "vocab-四つ-よっつ",
-      "vocab-四日-よっか"
+      "vocab-四季-しき",
+      "vocab-四日-よっか",
+      "vocab-四角-しかく"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -2523,7 +2579,8 @@
       "vocab-帽子-ぼうし",
       "vocab-息子-むすこ",
       "vocab-椅子-いす",
-      "vocab-男の子-おとこのこ"
+      "vocab-男の子-おとこのこ",
+      "vocab-調子-ちょうし"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -2601,10 +2658,14 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-一時-いちじ",
       "vocab-時々-ときどき",
       "vocab-時代-じだい",
+      "vocab-時刻-じこく",
+      "vocab-時期-じき",
       "vocab-時計-とけい",
-      "vocab-時間-じかん"
+      "vocab-時間-じかん",
+      "vocab-時間割-じかんわり"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -2763,6 +2824,7 @@
     },
     "vocabularyIds": [
       "vocab-汽車-きしゃ",
+      "vocab-発車-はっしゃ",
       "vocab-自動車-じどうしゃ",
       "vocab-自転車-じてんしゃ",
       "vocab-車-くるま",
@@ -2952,8 +3014,13 @@
       "vocab-出す-だす",
       "vocab-出る-でる",
       "vocab-出口-でぐち",
+      "vocab-出席-しゅっせき",
+      "vocab-出版-しゅっぱん",
+      "vocab-出発-しゅっぱつ",
+      "vocab-出身-しゅっしん",
       "vocab-引き出し-ひきだし",
-      "vocab-思い出す-おもいだす"
+      "vocab-思い出す-おもいだす",
+      "vocab-支出-ししゅつ"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -3036,6 +3103,9 @@
     "vocabularyIds": [
       "vocab-図書館-としょかん",
       "vocab-書く-かく",
+      "vocab-書店-しょてん",
+      "vocab-書道-しょどう",
+      "vocab-書類-しょるい",
       "vocab-葉書-はがき",
       "vocab-辞書-じしょ"
     ],
@@ -3308,6 +3378,7 @@
       "vocab-上げる-あげる",
       "vocab-上手-じょうず",
       "vocab-上着-うわぎ",
+      "vocab-仕上げる-しあげる",
       "vocab-以上-いじょう",
       "vocab-召し上がる-めしあがる",
       "vocab-屋上-おくじょう",
@@ -3391,8 +3462,13 @@
     "vocabularyIds": [
       "vocab-食べる-たべる",
       "vocab-食べ物-たべもの",
+      "vocab-食事-しょくじ",
+      "vocab-食卓-しょくたく",
+      "vocab-食品-しょくひん",
       "vocab-食堂-しょくどう",
-      "vocab-食料品-しょくりょうひん"
+      "vocab-食料-しょくりょう",
+      "vocab-食料品-しょくりょうひん",
+      "vocab-食欲-しょくよく"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -3475,8 +3551,16 @@
       "vocab-人-ひと",
       "vocab-人口-じんこう",
       "vocab-人形-にんぎょう",
+      "vocab-人気-にんき",
+      "vocab-人生-じんせい",
+      "vocab-人間-にんげん",
+      "vocab-他人-たにん",
+      "vocab-個人-こじん",
+      "vocab-商人-しょうにん",
       "vocab-外国人-がいこくじん",
-      "vocab-大人-おとな"
+      "vocab-大人-おとな",
+      "vocab-恋人-こいびと",
+      "vocab-犯人-はんにん"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -3556,6 +3640,7 @@
     },
     "vocabularyIds": [
       "vocab-水-みず",
+      "vocab-水平-すいへい",
       "vocab-水曜日-すいようび",
       "vocab-水泳-すいえい",
       "vocab-水道-すいどう"
@@ -3672,14 +3757,22 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-一生-いっしょう",
       "vocab-一生懸命-いっしょうけんめい",
+      "vocab-人生-じんせい",
       "vocab-先生-せんせい",
       "vocab-大学生-だいがくせい",
       "vocab-学生-がくせい",
+      "vocab-生-なま",
       "vocab-生きる-いきる",
+      "vocab-生き物-いきもの",
       "vocab-生まれる-うまれる",
+      "vocab-生命-せいめい",
       "vocab-生徒-せいと",
+      "vocab-生活-せいかつ",
+      "vocab-生産-せいさん",
       "vocab-留学生-りゅうがくせい",
+      "vocab-芝生-しばふ",
       "vocab-誕生日-たんじょうび",
       "vocab-高校生-こうこうせい"
     ],
@@ -3836,6 +3929,7 @@
     },
     "vocabularyIds": [
       "vocab-先-さき",
+      "vocab-先ほど-さきほど",
       "vocab-先月-せんげつ",
       "vocab-先生-せんせい",
       "vocab-先輩-せんぱい",
@@ -4069,9 +4163,12 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-事前-じぜん",
+      "vocab-以前-いぜん",
       "vocab-前-まえ",
       "vocab-午前-ごぜん",
-      "vocab-名前-なまえ"
+      "vocab-名前-なまえ",
+      "vocab-当たり前-あたりまえ"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -4160,6 +4257,7 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-大いに-おおいに",
       "vocab-大きい-おおきい",
       "vocab-大きな-おおきな",
       "vocab-大丈夫-だいじょうぶ",
@@ -4170,10 +4268,12 @@
       "vocab-大分-だいぶ",
       "vocab-大切-たいせつ",
       "vocab-大勢-おおぜい",
+      "vocab-大型-おおがた",
       "vocab-大変-たいへん",
       "vocab-大好き-だいすき",
       "vocab-大学-だいがく",
       "vocab-大学生-だいがくせい",
+      "vocab-大家-おおや",
       "vocab-大抵-たいてい"
     ],
     "similarKanjiIds": [],
@@ -4335,9 +4435,14 @@
     "vocabularyIds": [
       "vocab-中-なか",
       "vocab-中々-なかなか",
+      "vocab-中央-ちゅうおう",
+      "vocab-中学-ちゅうがく",
       "vocab-中学校-ちゅうがっこう",
+      "vocab-中止-ちゅうし",
+      "vocab-中身-なかみ",
       "vocab-背中-せなか",
-      "vocab-途中-とちゅう"
+      "vocab-途中-とちゅう",
+      "vocab-集中-しゅうちゅう"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -4419,9 +4524,11 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-成長-せいちょう",
       "vocab-校長-こうちょう",
       "vocab-社長-しゃちょう",
       "vocab-課長-かちょう",
+      "vocab-身長-しんちょう",
       "vocab-部長-ぶちょう",
       "vocab-長い-ながい"
     ],
@@ -4582,6 +4689,7 @@
       "vocab-電気-でんき",
       "vocab-電灯-でんとう",
       "vocab-電話-でんわ",
+      "vocab-電話帳-でんわちょう",
       "vocab-電車-でんしゃ"
     ],
     "similarKanjiIds": [],
@@ -5110,6 +5218,8 @@
       "vocab-四日-よっか",
       "vocab-土曜日-どようび",
       "vocab-日-ひ",
+      "vocab-日光-にっこう",
+      "vocab-日常-にちじょう",
       "vocab-日曜日-にちようび",
       "vocab-日記-にっき",
       "vocab-明後日-あさって",
@@ -5206,6 +5316,8 @@
       "vocab-入る-はいる",
       "vocab-入れる-いれる",
       "vocab-入口-いりぐち",
+      "vocab-入場-にゅうじょう",
+      "vocab-収入-しゅうにゅう",
       "vocab-押し入れ-おしいれ",
       "vocab-輸入-ゆにゅう"
     ],
@@ -5287,7 +5399,9 @@
       "vocab-今年-ことし",
       "vocab-去年-きょねん",
       "vocab-年-とし",
-      "vocab-来年-らいねん"
+      "vocab-年齢-ねんれい",
+      "vocab-来年-らいねん",
+      "vocab-青年-せいねん"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -5849,6 +5963,7 @@
     "vocabularyIds": [
       "vocab-お母さん-おかあさん",
       "vocab-母-はは",
+      "vocab-母親-ははおや",
       "vocab-祖母-そぼ"
     ],
     "similarKanjiIds": [],
@@ -6008,6 +6123,7 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-基本-きほん",
       "vocab-本-ほん",
       "vocab-本当-ほんとう",
       "vocab-本棚-ほんだな"
@@ -6407,7 +6523,9 @@
       "conflicts": []
     },
     "vocabularyIds": [
-      "vocab-友達-ともだち"
+      "vocab-友-とも",
+      "vocab-友達-ともだち",
+      "vocab-親友-しんゆう"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],
@@ -6498,6 +6616,7 @@
       "conflicts": []
     },
     "vocabularyIds": [
+      "vocab-以来-いらい",
       "vocab-再来月-さらいげつ",
       "vocab-再来週-さらいしゅう",
       "vocab-将来-しょうらい",
@@ -6669,8 +6788,10 @@
     "vocabularyIds": [
       "vocab-会話-かいわ",
       "vocab-話-はなし",
+      "vocab-話し合う-はなしあう",
       "vocab-話す-はなす",
-      "vocab-電話-でんわ"
+      "vocab-電話-でんわ",
+      "vocab-電話帳-でんわちょう"
     ],
     "similarKanjiIds": [],
     "textbookReferences": [],

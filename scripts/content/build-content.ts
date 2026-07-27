@@ -11,7 +11,11 @@ import { generateVocabularyKanjiQuestionReports } from "./generate-vocabulary-ka
 import { generateReadingReports } from "./generate-reading-reports";
 import { generateListeningReports } from "./generate-listening-reports";
 import { generateAssessmentReports } from "./generate-assessment-reports";
+import { generatePhase9Reports } from "./generate-phase9-reports";
+import { reviewPhase9Content } from "./review-phase9-content";
+import { generatePhase95Reports } from "./generate-phase95-reports";
 import { loadGrammarQuestionCorpus } from "./grammar-question-corpus";
+import { loadN5GrammarQuestionCorpus } from "./n5-grammar-question-corpus";
 import {
   generateReports,
   unresolvedCounts,
@@ -69,6 +73,7 @@ export async function buildContent(): Promise<ContentBundle> {
   const sentenceContent = await loadSentenceCorpus({
     grammar: grammarRecords,
     curriculumUnits: [...curriculum.n5, ...curriculum.n4],
+    vocabulary: vocabularyRecords,
   });
   console.log("[content 6/12] Loading canonical grammar question corpus");
   const grammarQuestionContent = await loadGrammarQuestionCorpus(
@@ -76,9 +81,11 @@ export async function buildContent(): Promise<ContentBundle> {
     grammarRecords,
     [...curriculum.n5, ...curriculum.n4],
   );
+  console.log("[content 6/12] Loading development-only N5 grammar question corpus");
+  const phase9N5GrammarContent = await loadN5GrammarQuestionCorpus(grammarQuestionContent);
   console.log("[content 6/12] Loading canonical vocabulary and kanji question corpora");
   const phase5LearningContent = await loadVocabularyKanjiQuestionCorpora(
-    grammarQuestionContent,
+    phase9N5GrammarContent,
     vocabularyRecords,
     kanjiRecords,
   );
@@ -155,6 +162,9 @@ export async function buildContent(): Promise<ContentBundle> {
     generateReadingReports(bundle),
     generateListeningReports(bundle),
     generateAssessmentReports(bundle),
+    generatePhase9Reports(),
+    reviewPhase9Content(),
+    generatePhase95Reports(),
   ]);
   console.log("[content 12/12] Writing content manifest");
   await generateManifest(bundle, unresolvedCounts(reportArtifacts));

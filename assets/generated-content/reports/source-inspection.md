@@ -4,7 +4,7 @@ This report describes the files actually detected under `assets/docs-reference/`
 
 ## Inspection scope
 
-- Detected 11,755 files totalling 680,656,684 B (649.12 MiB).
+- Detected 11,762 files totalling 685,077,835 B (653.34 MiB).
 - PDF metadata is cached at `.cache/japango-content/inspection/pdfs.json`; no extracted textbook text or page images are cached by inspection.
 - Structured datasets are treated as canonical. PDFs are private, secondary curriculum references only.
 - Licence notes below report notices found in the supplied files. They are not legal conclusions.
@@ -125,7 +125,7 @@ Detected PDF metadata establishes “Third Edition” for Genki I and II. Render
 - External N4 Kotoba Brew grammar source: not supplied; JapanGo manual curation is canonical.
 - Missing configured textbooks: none.
 - Present but not inspectable as PDFs: none.
-- Unexpected top-level entries: japango-assessments, japango-listening, japango-questions, japango-reading, japango-sentences.
+- Unexpected top-level entries: japango-assessments, japango-listening, japango-phase10, japango-phase9, japango-questions, japango-reading, japango-sentences.
 - JLPT vocabulary CSV: licence, attribution, version, and mapping provenance are missing.
 - Kotoba Brew grammar CSV: licence, attribution, and version are missing; it is used only for provisional N5 mapping.
 - JLPT kanji mapping: upstream credits exist, but a versioned mapping snapshot and complete licence texts are missing.
@@ -158,7 +158,7 @@ Detected PDF metadata establishes “Third Edition” for Genki I and II. Render
 The columns are exact byte size, detected format, encoding, and repository-relative source path. “UTF-8 (declared)” means the XML declaration and representative content were inspected; it is not a claim that every byte in every SVG was independently decoded during this run.
 
 <details>
-<summary>11,755 files</summary>
+<summary>11,762 files</summary>
 
 ```text
 bytes	format	encoding	path
@@ -178,8 +178,15 @@ bytes	format	encoding	path
 2945	JSON	UTF-8	docs-reference/japango-listening/listening-speaker-corpus.json
 48906	JSON	UTF-8	docs-reference/japango-n4-grammar-editorial-decisions.json
 149755	JSON	UTF-8	docs-reference/japango-n4-grammar-reviewed.json
+1424	JSON	UTF-8	docs-reference/japango-phase9/curriculum-reference-manifest.json
+645	JSON	UTF-8	docs-reference/japango-phase9/editorial-decisions.json
+6754	JSON	UTF-8	docs-reference/japango-phase9/n4-kanji-expansion.json
+13164	JSON	UTF-8	docs-reference/japango-phase9/phase96-kanji-support.json
+1399	JSON	UTF-8	docs-reference/japango-phase9/phase96-kanji-vocabulary-support.json
+40803	JSON	UTF-8	docs-reference/japango-phase10/vocabulary-expansion.json
 5450778	JSON	UTF-8	docs-reference/japango-questions/grammar-question-corpus.json
 4771898	JSON	UTF-8	docs-reference/japango-questions/kanji-question-corpus.json
+4356962	JSON	UTF-8	docs-reference/japango-questions/n5-grammar-question-corpus.json
 43364349	JSON	UTF-8	docs-reference/japango-questions/vocabulary-question-corpus.json
 836	JSON	UTF-8	docs-reference/japango-reading/reading-editorial-decisions.json
 315825	JSON	UTF-8	docs-reference/japango-reading/reading-passage-corpus-n4.json

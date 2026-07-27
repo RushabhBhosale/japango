@@ -1,0 +1,5 @@
+{
+  "added": 0,
+  "deferred": true,
+  "reason": "Audit found breadth gap but no safe local evidence ledger for additions."
+}

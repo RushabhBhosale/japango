@@ -13,6 +13,6 @@ JapanGo's original JLPT N5/N4-aligned reading passage and reading-comprehension 
 - Glossary entries: 63
 - Existing sentences reused: 0; new passage-sentence records: 0 (direct passage-text model).
 - Lifecycle exclusions: 146; release passages: 0
-- Inventory limitations retained: 51 kanji (4 without supported release vocabulary); no inventory expansion.
+- Inventory limitations retained: 50 kanji (4 without supported release vocabulary); no inventory expansion.
 - Exact duplicates: 0; punctuation-normalized duplicates: 0; duplicate prompts: 0; equivalent option sets: 0
 - Review queue: 0 unresolved quality items; rejected candidates: 0.

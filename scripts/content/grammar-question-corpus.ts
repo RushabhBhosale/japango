@@ -161,7 +161,10 @@ export function grammarQuestionErrors(
   curriculumUnits: readonly CurriculumUnit[],
 ): string[] {
   const errors: string[] = [];
-  const grammarQuestions = content.questions.filter(({ domain }) => domain === "grammar");
+  // Phase 4 validates only its release-ready N4 corpus. Phase 9 development-only
+  // N5 questions have their own lifecycle-aware audit and must not be treated as
+  // release corpus failures while N5 grammar remains editorially gated.
+  const grammarQuestions = content.questions.filter(({ domain, releaseReady }) => domain === "grammar" && releaseReady);
   const questionById = new Map(grammarQuestions.map((question) => [question.id, question]));
   const optionsByQuestion = new Map<string, typeof content.questionOptions>();
   for (const option of content.questionOptions) {

@@ -1,0 +1,15 @@
+{
+  "status": "manual-evidence-ledger-required",
+  "priorityAreas": [
+    "verbs",
+    "adjectives",
+    "time",
+    "transport",
+    "shopping",
+    "health",
+    "weather",
+    "household",
+    "workplace",
+    "notices"
+  ]
+}

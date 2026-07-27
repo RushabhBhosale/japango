@@ -182,6 +182,42 @@
   },
   {
     "candidate": {
+      "sourceRow": 423,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "こい",
+      "reading": "こい",
+      "englishHint": "love",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1271650,
+        "matchMethod": "kana-only",
+        "form": "こい",
+        "reading": "こい"
+      },
+      {
+        "sequence": 2215520,
+        "matchMethod": "kana-only",
+        "form": "こい",
+        "reading": "こい"
+      },
+      {
+        "sequence": 2680710,
+        "matchMethod": "exact",
+        "form": "こい",
+        "reading": "こい"
+      }
+    ]
+  },
+  {
+    "candidate": {
       "sourceRow": 7151,
       "written": "こう",
       "reading": "こう",
@@ -283,6 +319,36 @@
         "matchMethod": "exact",
         "form": "これ",
         "reading": "これ"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 62,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "ジュース",
+      "reading": "じゅーす",
+      "englishHint": "juice; soft drink",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1065950,
+        "matchMethod": "exact",
+        "form": "ジュース",
+        "reading": "じゅーす"
+      },
+      {
+        "sequence": 2843595,
+        "matchMethod": "exact",
+        "form": "ジュース",
+        "reading": "じゅーす"
       }
     ]
   },
@@ -526,6 +592,36 @@
         "matchMethod": "kana-only",
         "form": "はい",
         "reading": "はい"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 698,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "はさみ",
+      "reading": "はさみ",
+      "englishHint": "scissors",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1573820,
+        "matchMethod": "kana-only",
+        "form": "はさみ",
+        "reading": "はさみ"
+      },
+      {
+        "sequence": 2867133,
+        "matchMethod": "kana-only",
+        "form": "はさみ",
+        "reading": "はさみ"
       }
     ]
   },
@@ -806,6 +902,42 @@
         "matchMethod": "exact",
         "form": "もし",
         "reading": "もし"
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "sourceRow": 619,
+      "sourceId": "japango-phase10-vocabulary-expansion",
+      "supportingSourceIds": [
+        "jisho-vocabulary-reference",
+        "tanos-vocabulary-reference"
+      ],
+      "written": "妻",
+      "reading": "つま",
+      "englishHint": "wife",
+      "level": "N4"
+    },
+    "status": "ambiguous",
+    "reason": "More than one JMdict sequence matched the same form and reading.",
+    "candidateSequences": [
+      {
+        "sequence": 1294330,
+        "matchMethod": "exact",
+        "form": "妻",
+        "reading": "つま"
+      },
+      {
+        "sequence": 2746070,
+        "matchMethod": "exact",
+        "form": "妻",
+        "reading": "つま"
+      },
+      {
+        "sequence": 2852371,
+        "matchMethod": "exact",
+        "form": "妻",
+        "reading": "つま"
       }
     ]
   },

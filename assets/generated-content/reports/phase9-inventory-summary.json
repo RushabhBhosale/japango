@@ -1,0 +1,203 @@
+{
+  "fixedTimestamp": "2026-07-27T00:00:00.000Z",
+  "manifestContentVersion": "2.2.0+9c4b087fb421",
+  "inventory": {
+    "vocabulary": {
+      "n5": 598,
+      "n4New": 1142,
+      "cumulativeThroughN4": 1740,
+      "lifecycle": {
+        "total": 1740,
+        "releaseEligible": 1740,
+        "reviewRequired": 0,
+        "developmentOnly": 0
+      },
+      "sixQuestionCoverage": 1740,
+      "partialQuestionCoverage": 0,
+      "noQuestionCoverage": 0,
+      "representedInSentences": 920,
+      "representedInReading": 0,
+      "representedInListening": 0,
+      "representedInAssessments": 0,
+      "orphaned": [],
+      "inventoryLimited": {
+        "belowN5ReferenceRange": true,
+        "belowCumulativeN4ReferenceRange": false,
+        "rangesAreAuditComparisonsOnly": true
+      }
+    },
+    "kanji": {
+      "n5": {
+        "total": 79,
+        "releaseEligible": 79,
+        "reviewRequired": 0,
+        "developmentOnly": 0
+      },
+      "n4": {
+        "total": 221,
+        "releaseEligible": 189,
+        "reviewRequired": 32,
+        "developmentOnly": 0
+      },
+      "phase9ReviewRequiredCandidates": [
+        {
+          "id": "kanji-害",
+          "character": "害",
+          "vocabularyIds": [
+            "vocab-障害-しょうがい"
+          ]
+        },
+        {
+          "id": "kanji-完",
+          "character": "完",
+          "vocabularyIds": [
+            "vocab-完成-かんせい"
+          ]
+        },
+        {
+          "id": "kanji-官",
+          "character": "官",
+          "vocabularyIds": [
+            "vocab-警官-けいかん",
+            "vocab-警察官-けいさつかん"
+          ]
+        },
+        {
+          "id": "kanji-季",
+          "character": "季",
+          "vocabularyIds": [
+            "vocab-四季-しき",
+            "vocab-季節-きせつ"
+          ]
+        },
+        {
+          "id": "kanji-客",
+          "character": "客",
+          "vocabularyIds": [
+            "vocab-乗客-じょうきゃく",
+            "vocab-客-きゃく"
+          ]
+        },
+        {
+          "id": "kanji-協",
+          "character": "協",
+          "vocabularyIds": [
+            "vocab-協力-きょうりょく"
+          ]
+        },
+        {
+          "id": "kanji-察",
+          "character": "察",
+          "vocabularyIds": [
+            "vocab-診察-しんさつ",
+            "vocab-警察-けいさつ",
+            "vocab-警察官-けいさつかん"
+          ]
+        },
+        {
+          "id": "kanji-信",
+          "character": "信",
+          "vocabularyIds": [
+            "vocab-信じる-しんじる",
+            "vocab-信号-しんごう",
+            "vocab-信頼-しんらい"
+          ]
+        },
+        {
+          "id": "kanji-倍",
+          "character": "倍",
+          "vocabularyIds": [
+            "vocab-倍-ばい"
+          ]
+        },
+        {
+          "id": "kanji-博",
+          "character": "博",
+          "vocabularyIds": [
+            "vocab-博士-はかせ",
+            "vocab-博物館-はくぶつかん"
+          ]
+        }
+      ]
+    },
+    "grammar": {
+      "n5": {
+        "total": 124,
+        "releaseEligible": 0,
+        "reviewRequired": 124,
+        "developmentOnly": 0
+      },
+      "n4": {
+        "total": 113,
+        "releaseEligible": 111,
+        "reviewRequired": 2,
+        "developmentOnly": 0
+      },
+      "n5StandaloneQuestions": 1022,
+      "retainedBridgeQuestions": 30,
+      "questionsPerN5Grammar": 8.241935483870968
+    },
+    "learning": {
+      "sentences": 1368,
+      "readingPassages": 146,
+      "listeningActivities": 156,
+      "questions": 14150,
+      "vocabularyQuestions": 10440
+    },
+    "manualReview": [
+      "Approve or reject each Phase 9 N4 kanji audit candidate before release.",
+      "Vocabulary breadth is below both non-authoritative comparison ranges; candidate selection requires a local evidence ledger before authoring.",
+      "No new audio assets were added; TTS remains transcript-based."
+    ],
+    "release": {
+      "productionContentReleased": false,
+      "reason": "Phase 9 additions are development-only or review-required."
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "fixedTimestamp": "2026-07-27T00:00:00.000Z",
+    "purpose": "Audit-only, minimum factual scope comparison. These references are not authoritative JLPT requirements and are never fetched at runtime.",
+    "references": [
+      {
+        "id": "jt4u-n4-kanji",
+        "url": "https://japanesetest4you.com/jlpt-n4-kanji-list/",
+        "scope": "N4 kanji comparison",
+        "normalization": "Character presence only; no definitions, examples, or annotations copied."
+      },
+      {
+        "id": "jlptglobal-n4-kanji",
+        "url": "https://www.jlptglobal.com/jlpt-n4-kanji-list/",
+        "scope": "N4 kanji comparison",
+        "normalization": "Character presence only; independent comparison reference."
+      },
+      {
+        "id": "tanos-n4",
+        "url": "https://www.tanos.co.uk/jlpt/jlpt4/",
+        "scope": "N4 vocabulary and kanji comparison",
+        "normalization": "Presence and broad practical category only; no word-list text copied."
+      },
+      {
+        "id": "jlpt-scope-note",
+        "url": "https://www.jlpt.jp/e/about/levelsummary.html",
+        "scope": "Official level summary",
+        "normalization": "Modern JLPT does not publish a definitive prescribed vocabulary or kanji list."
+      }
+    ],
+    "comparisonRanges": {
+      "n5Vocabulary": [
+        750,
+        850
+      ],
+      "cumulativeN4Vocabulary": [
+        1400,
+        1600
+      ]
+    },
+    "limitations": [
+      "Reference lists disagree and are not official requirements.",
+      "The manifest records audit evidence only; JapanGo authored content remains original.",
+      "Candidate kanji are review-required until a human curriculum editor approves scope and placement."
+    ]
+  }
+}

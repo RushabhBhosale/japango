@@ -1,0 +1,100 @@
+[
+  {
+    "rank": 1,
+    "id": "kanji-害",
+    "character": "害",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-障害-しょうがい"
+    ]
+  },
+  {
+    "rank": 2,
+    "id": "kanji-完",
+    "character": "完",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-完成-かんせい"
+    ]
+  },
+  {
+    "rank": 3,
+    "id": "kanji-官",
+    "character": "官",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-警官-けいかん",
+      "vocab-警察官-けいさつかん"
+    ]
+  },
+  {
+    "rank": 4,
+    "id": "kanji-季",
+    "character": "季",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-四季-しき",
+      "vocab-季節-きせつ"
+    ]
+  },
+  {
+    "rank": 5,
+    "id": "kanji-客",
+    "character": "客",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-乗客-じょうきゃく",
+      "vocab-客-きゃく"
+    ]
+  },
+  {
+    "rank": 6,
+    "id": "kanji-協",
+    "character": "協",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-協力-きょうりょく"
+    ]
+  },
+  {
+    "rank": 7,
+    "id": "kanji-察",
+    "character": "察",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-診察-しんさつ",
+      "vocab-警察-けいさつ",
+      "vocab-警察官-けいさつかん"
+    ]
+  },
+  {
+    "rank": 8,
+    "id": "kanji-信",
+    "character": "信",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-信じる-しんじる",
+      "vocab-信号-しんごう",
+      "vocab-信頼-しんらい"
+    ]
+  },
+  {
+    "rank": 9,
+    "id": "kanji-倍",
+    "character": "倍",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-倍-ばい"
+    ]
+  },
+  {
+    "rank": 10,
+    "id": "kanji-博",
+    "character": "博",
+    "priority": "review-required",
+    "supportedVocabularyIds": [
+      "vocab-博士-はかせ",
+      "vocab-博物館-はくぶつかん"
+    ]
+  }
+]

@@ -48,13 +48,25 @@ export async function loadAssessmentContent(base: LearningContentCollections, co
   const blueprints = blueprintRaw.map((value) => assessmentBlueprintSchema.parse(value));
   const presets = presetRaw.map((value) => assessmentPresetSchema.parse(value));
   const engine = new AssessmentEngine({ learningContent, contentVersion, pipelineVersion: PIPELINE_VERSION, generationTimestamp: "2026-07-27T00:00:00.000Z", unresolvedTargetIds });
+  // Bundled Phase 8 mock snapshots are immutable fixtures. Phase 9 content is
+  // intentionally review-gated, so it cannot alter their eligible pool; retain
+  // their original identity and generate any new development samples separately.
+  const phase9QuestionIds = new Set(learningContent.questions.filter((question) => question.sourceIds.includes("japango-n5-grammar-question-corpus")).map(({ id }) => id));
+  const phase8SnapshotContent = learningContentCollectionsSchema.parse({
+    ...learningContent,
+    questions: learningContent.questions.map((question) => phase9QuestionIds.has(question.id) ? { ...question, needsReview: true, releaseReady: false } : question),
+    questionOptions: learningContent.questionOptions.map((option) => phase9QuestionIds.has(option.questionId) ? { ...option, needsReview: true, releaseReady: false } : option),
+    learningItemMetadata: learningContent.learningItemMetadata.map((metadata) => metadata.itemType === "question" && phase9QuestionIds.has(metadata.itemId) ? { ...metadata, needsReview: true, releaseReady: false } : metadata),
+    questionTargetRelationships: learningContent.questionTargetRelationships.map((relationship) => phase9QuestionIds.has(relationship.questionId) ? { ...relationship, needsReview: true, releaseReady: false } : relationship),
+  });
+  const phase8SnapshotEngine = new AssessmentEngine({ learningContent: phase8SnapshotContent, contentVersion: "2.2.0+2fee5756b369", pipelineVersion: "6.0.0", generationTimestamp: "2026-07-27T00:00:00.000Z", unresolvedTargetIds });
   const exposure = assessmentExposureInputSchema.parse({});
   const bundledExams: AssessmentSnapshot[] = [];
   for (const level of ["N5", "N4"] as const) {
     const blueprint = blueprints.find((entry) => entry.level === level && entry.assessmentType === "full-mock");
     if (!blueprint) throw new Error(`Missing ${level} full-mock blueprint.`);
     for (const fixed of seeds[level]) {
-      const snapshot = engine.generateFullMockExam({ assessmentType: "full-mock", level, seed: fixed.seed, lifecycleMode: "development", resultMode: "full", remediationMode: false, strictTimeLimit: false }, blueprint, exposure);
+      const snapshot = phase8SnapshotEngine.generateFullMockExam({ assessmentType: "full-mock", level, seed: fixed.seed, lifecycleMode: "development", resultMode: "full", remediationMode: false, strictTimeLimit: false }, blueprint, exposure);
       bundledExams.push(snapshot); incrementExposure(exposure, snapshot);
     }
   }

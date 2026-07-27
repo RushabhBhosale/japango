@@ -7,13 +7,13 @@
       "digests": {
         "canonicalVocabulary": "sha256:e62e10b94a65a1034c6a3f8afbe6a39adece7a7cce872069118622ddd9e24cb7",
         "canonicalKanji": "sha256:65ccbfb99459f7a5f2706a17d6a0313716c45ef44439e4d1dcebc8440e90978a",
-        "vocabularyQuestions": "sha256:bfdce7b93d0fbdf1c768f2d1b406405b4b4b38a53c947970dcfb11556c66aa79",
+        "vocabularyQuestions": "sha256:654bc9d653e52ab45bd3dc818ed8b0d3e355874afaeacdfe85adc2b6ae56c2e9",
         "kanjiQuestions": "sha256:38a18c8a474ee2d63c3c2afc4a1bae081fd4dcf3586534785166bfd4d8476bfd",
-        "phase5Options": "sha256:838418ca6480de40a9b80b96214c06af2d845f3e63827b4a6ecb21a91afa1180",
-        "phase5Targets": "sha256:36585f519dd2f0bcb0dbfceff31a7a57a5694cdfc301c22c0ecf3abf6d3ed03d",
-        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
-        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
-        "sqliteVerificationPayload": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d"
+        "phase5Options": "sha256:77fc04852ab9e47cf10e0bb3fe80c659b9fcb2bf0d9d3f388c6b2477239c3526",
+        "phase5Targets": "sha256:8f4f0e7fa4bcabb2afdedc3cc4b171a91d72a7b0835b86cf6510d3caad0a438d",
+        "compactRelease": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
+        "compactDevelopment": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602",
+        "sqliteVerificationPayload": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608"
       }
     },
     {
@@ -21,13 +21,13 @@
       "digests": {
         "canonicalVocabulary": "sha256:e62e10b94a65a1034c6a3f8afbe6a39adece7a7cce872069118622ddd9e24cb7",
         "canonicalKanji": "sha256:65ccbfb99459f7a5f2706a17d6a0313716c45ef44439e4d1dcebc8440e90978a",
-        "vocabularyQuestions": "sha256:bfdce7b93d0fbdf1c768f2d1b406405b4b4b38a53c947970dcfb11556c66aa79",
+        "vocabularyQuestions": "sha256:654bc9d653e52ab45bd3dc818ed8b0d3e355874afaeacdfe85adc2b6ae56c2e9",
         "kanjiQuestions": "sha256:38a18c8a474ee2d63c3c2afc4a1bae081fd4dcf3586534785166bfd4d8476bfd",
-        "phase5Options": "sha256:838418ca6480de40a9b80b96214c06af2d845f3e63827b4a6ecb21a91afa1180",
-        "phase5Targets": "sha256:36585f519dd2f0bcb0dbfceff31a7a57a5694cdfc301c22c0ecf3abf6d3ed03d",
-        "compactRelease": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d",
-        "compactDevelopment": "sha256:549751c8678cc71e3d30db2a36e4a8f6ca4d85f5a08bcf175755e26483a92434",
-        "sqliteVerificationPayload": "sha256:3c84a6bb6ffc36d1c7676271e0514b39fe0a74b9308f57b26741fc5a670fc32d"
+        "phase5Options": "sha256:77fc04852ab9e47cf10e0bb3fe80c659b9fcb2bf0d9d3f388c6b2477239c3526",
+        "phase5Targets": "sha256:8f4f0e7fa4bcabb2afdedc3cc4b171a91d72a7b0835b86cf6510d3caad0a438d",
+        "compactRelease": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608",
+        "compactDevelopment": "sha256:f15a3e5eb07143c2a114fee8a16faccaff291bba1cfa6a9c9471a64af57a5602",
+        "sqliteVerificationPayload": "sha256:7f9602c90b9d81f788e6419ae9991c27db3d1c50020d6a00c109f6d4b559f608"
       }
     }
   ],

@@ -1,18 +1,24 @@
 # Final content platform summary
 
 - Grammar records: 237
-- Vocabulary records: 1152
-- Kanji records: 245
-- Sentences: 816
-- Reading passages: 146
-- Listening activities: 156
-- Total questions: 9630
-- Total options: 38520
-- Curriculum units: 80
+- Vocabulary records: 1740
+- Kanji records: 300
+- Sentences: 1368
+- Grammar questions: 1910 (888 Phase 4 + 30 audited bridge)
+- Vocabulary questions: 10440
+- Kanji questions: 836
+- Reading passages / questions: 146 / 508
+- Listening activities / questions: 156 / 456
+- Total questions / options: 14150 / 56600
+- Curriculum units: 81
 - Assessment blueprints / presets: 24 / 12
 - Bundled N5 / N4 mocks: 5 / 5
 - Assessment snapshots: 32
 - Development-only / release snapshots: 32 / 0
+- Lifecycle exclusions: all 80 curriculum units and dependent assessment content remain non-release
 - Unresolved N4 grammar excluded: 2
 - Inventory limitation: audited 30-question N5 grammar bridge; no canonical inventory expansion
-- Deterministic digest: sha256:cd4d658059d18ce2aaa28cdf1ddbe6408f95c64d9f9c066521eac1fb7c202d83
+- SQLite total imported/derived records: 119559
+- Tests: 144
+- Deterministic assessment digest: sha256:b7288cdb7297465597cb3672e5cc1488777f8c0d6fc8ad8a5f5d2ef2c6aea1ce
+- Fixed-build compact and manifest digests are recorded in the handoff and Phase 8 determinism checks.

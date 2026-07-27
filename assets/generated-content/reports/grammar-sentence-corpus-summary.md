@@ -2,28 +2,28 @@
 
 JapanGo’s original JLPT N5/N4-aligned grammar example sentence corpus.
 
-- Total unique sentences: 816
+- Total unique sentences: 1368
 - N5 sentences: 372
-- N4 sentences: 444
-- Approved: 816
+- N4 sentences: 996
+- Approved: 1368
 - Development-only: 0
 - Rejected candidates: 0
-- Release-ready sentences: 444
-- Primary grammar relationships: 816
+- Release-ready sentences: 996
+- Primary grammar relationships: 1368
 - Secondary grammar relationships: 0
-- Average approved primary examples per grammar: 3.47
-- Minimum / maximum approved examples: 3 / 4
-- Average Japanese sentence length: 16.93 code points
-- Vocabulary relationships: 1191
+- Average approved primary examples per grammar: 5.82
+- Minimum / maximum approved examples: 3 / 526
+- Average Japanese sentence length: 20.55 code points
+- Vocabulary relationships: 1794
 - Kanji relationships: 2555
-- Curriculum relationships: 816
+- Curriculum relationships: 1368
 
 ## Context distribution
 
 | Value | Count |
 | --- | ---: |
 | appointments | 74 |
-| daily-life | 77 |
+| daily-life | 629 |
 | directions | 73 |
 | family | 78 |
 | food | 36 |
@@ -45,8 +45,9 @@ JapanGo’s original JLPT N5/N4-aligned grammar example sentence corpus.
 | --- | ---: |
 | honorific | 21 |
 | humble | 5 |
+| neutral | 522 |
 | plain | 284 |
-| polite | 506 |
+| polite | 536 |
 
 ## Sentence-type distribution
 
@@ -57,15 +58,15 @@ JapanGo’s original JLPT N5/N4-aligned grammar example sentence corpus.
 | prohibition | 5 |
 | question | 71 |
 | reported-speech | 72 |
-| request | 43 |
-| statement | 594 |
+| request | 46 |
+| statement | 1143 |
 | suggestion | 11 |
 
 ## Difficulty distribution
 
 | Value | Count |
 | --- | ---: |
-| N4-rank-3 | 222 |
+| N4-rank-3 | 774 |
 | N4-rank-4 | 222 |
 | N5-rank-1 | 248 |
 | N5-rank-2 | 124 |

@@ -10,7 +10,7 @@
       "Recognize 24 N5 vocabulary items in short contexts.",
       "Read 5 N5 kanji through vocabulary, not isolated readings.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 13 items kana-first until their required kanji are introduced."
+      "Learn 14 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-soko",
@@ -51,6 +51,7 @@
       "kanji-男"
     ],
     "kanaFirstVocabularyIds": [
+      "vocab-声-こえ",
       "vocab-本棚-ほんだな",
       "vocab-自分-じぶん",
       "vocab-英語-えいご",
@@ -188,7 +189,7 @@
     "learningGoals": [
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 16 items kana-first until their required kanji are introduced."
+      "Learn 17 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-masenka",
@@ -224,6 +225,7 @@
     ],
     "kanjiIds": [],
     "kanaFirstVocabularyIds": [
+      "vocab-番号-ばんごう",
       "vocab-方-かた",
       "vocab-手-て",
       "vocab-学生-がくせい",
@@ -374,7 +376,7 @@
     "learningGoals": [
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 13 items kana-first until their required kanji are introduced."
+      "Learn 14 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-nanika",
@@ -422,7 +424,8 @@
       "vocab-黄色-きいろ",
       "vocab-茶色-ちゃいろ",
       "vocab-名前-なまえ",
-      "vocab-午後-ごご"
+      "vocab-午後-ごご",
+      "vocab-向こう-むこう"
     ],
     "reviewGrammarIds": [
       "grammar-dake",
@@ -847,7 +850,7 @@
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Read 6 N5 kanji through vocabulary, not isolated readings.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 14 items kana-first until their required kanji are introduced."
+      "Learn 16 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-ka-question-marker",
@@ -892,6 +895,8 @@
     "kanaFirstVocabularyIds": [
       "vocab-時々-ときどき",
       "vocab-朝-あさ",
+      "vocab-便利-べんり",
+      "vocab-冷たい-つめたい",
       "vocab-洋服-ようふく",
       "vocab-家族-かぞく",
       "vocab-右-みぎ",
@@ -1139,7 +1144,7 @@
     "learningGoals": [
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 16 items kana-first until their required kanji are introduced."
+      "Learn 18 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-na",
@@ -1179,9 +1184,11 @@
       "vocab-一つ-ひとつ",
       "vocab-飲み物-のみもの",
       "vocab-上手-じょうず",
+      "vocab-全部-ぜんぶ",
       "vocab-外-そと",
       "vocab-外-ほか",
       "vocab-写真-しゃしん",
+      "vocab-冷蔵庫-れいぞうこ",
       "vocab-お父さん-おとうさん",
       "vocab-一月-ひとつき",
       "vocab-花-はな",
@@ -1331,7 +1338,7 @@
     "learningGoals": [
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 16 items kana-first until their required kanji are introduced."
+      "Learn 18 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-kedo",
@@ -1375,9 +1382,11 @@
       "vocab-万-まん",
       "vocab-紙-かみ",
       "vocab-子供-こども",
+      "vocab-初めて-はじめて",
       "vocab-町-まち",
       "vocab-金曜日-きんようび",
       "vocab-時間-じかん",
+      "vocab-丈夫-じょうぶ",
       "vocab-兄-あに",
       "vocab-姉-あね",
       "vocab-今週-こんしゅう",
@@ -1875,7 +1884,7 @@
     "learningGoals": [
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 13 items kana-first until their required kanji are introduced."
+      "Learn 14 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-suru",
@@ -1919,6 +1928,7 @@
       "vocab-書く-かく",
       "vocab-着る-きる",
       "vocab-年-とし",
+      "vocab-乗る-のる",
       "vocab-下手-へた",
       "vocab-果物-くだもの",
       "vocab-楽しい-たのしい",
@@ -2522,7 +2532,7 @@
     "learningGoals": [
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 12 items kana-first until their required kanji are introduced."
+      "Learn 14 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-i-adjectivepredicate",
@@ -2567,8 +2577,10 @@
       "vocab-お母さん-おかあさん",
       "vocab-歌う-うたう",
       "vocab-兄弟-きょうだい",
+      "vocab-好き-すき",
       "vocab-車-くるま",
       "vocab-出かける-でかける",
+      "vocab-働く-はたらく",
       "vocab-妹-いもうと"
     ],
     "reviewGrammarIds": [
@@ -2811,7 +2823,7 @@
     "learningGoals": [
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 11 items kana-first until their required kanji are introduced."
+      "Learn 12 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-na-adjectiveda",
@@ -2849,6 +2861,7 @@
     "kanaFirstVocabularyIds": [
       "vocab-今朝-けさ",
       "vocab-豚肉-ぶたにく",
+      "vocab-大変-たいへん",
       "vocab-誕生日-たんじょうび",
       "vocab-歩く-あるく",
       "vocab-口-くち",
@@ -3331,7 +3344,7 @@
     "learningGoals": [
       "Recognize 25 N5 vocabulary items in short contexts.",
       "Practise 3 N5 grammar patterns across recognition and sentence meaning.",
-      "Learn 5 items kana-first until their required kanji are introduced."
+      "Learn 7 items kana-first until their required kanji are introduced."
     ],
     "grammarIds": [
       "grammar-tehaikenai",
@@ -3367,6 +3380,8 @@
     ],
     "kanjiIds": [],
     "kanaFirstVocabularyIds": [
+      "vocab-勤める-つとめる",
+      "vocab-警官-けいかん",
       "vocab-黒-くろ",
       "vocab-昨夜-ゆうべ",
       "vocab-止まる-とまる",

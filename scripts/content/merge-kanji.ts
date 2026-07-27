@@ -53,6 +53,8 @@ export async function mergeKanji(
       });
       continue;
     }
+    const phase9AuditCandidate = mapping.sourceMetadata.phase9AuditCandidate === true;
+    const phase9EditorialApproved = mapping.sourceMetadata.editorialApproved === true;
     const legacy = legacyJlptLevel(canonical);
     const conflicts = legacy && legacy !== mapping.level
       ? [`Dedicated mapping ${mapping.level}; legacy KANJIDIC2 mapping ${legacy}.`]
@@ -95,7 +97,7 @@ export async function mergeKanji(
       frequencyRank: canonical.frequencyRank,
       jlpt: {
         level: mapping.level,
-        confidence: conflicts.length > 0 ? 0.9 : 0.98,
+        confidence: phase9EditorialApproved ? 0.95 : phase9AuditCandidate ? 0.85 : conflicts.length > 0 ? 0.9 : 0.98,
         sources: [{ sourceId: "jlpt-kanji", sourceRecordId: mapping.character }],
         conflicts,
       },
@@ -118,9 +120,9 @@ export async function mergeKanji(
           ? ["KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0."]
           : []),
       ],
-      confidence: conflicts.length > 0 ? 0.9 : 0.98,
-      needsReview: conflicts.length > 0,
-      releaseReady: conflicts.length === 0,
+      confidence: phase9EditorialApproved ? 0.95 : phase9AuditCandidate ? 0.85 : conflicts.length > 0 ? 0.9 : 0.98,
+      needsReview: (!phase9EditorialApproved && phase9AuditCandidate) || conflicts.length > 0,
+      releaseReady: phase9EditorialApproved && conflicts.length === 0 || !phase9AuditCandidate && conflicts.length === 0,
     };
     for (const component of record.components) {
       componentMembers.set(component, [...(componentMembers.get(component) ?? []), id]);

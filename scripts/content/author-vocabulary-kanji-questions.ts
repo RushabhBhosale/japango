@@ -576,6 +576,32 @@ function sortCorpus(corpus: CanonicalQuestionCorpus): void {
   corpus.questionTargetRelationships.sort((left, right) => compareStable(left.id, right.id));
 }
 
+export function buildVocabularyQuestionCorpus(
+  content: LearningContentCollections,
+  vocabulary: readonly VocabularyRecord[],
+  kanji: readonly KanjiRecord[],
+): CanonicalQuestionCorpus {
+  const kanjiById = new Map(kanji.map((record) => [record.id, record]));
+  const sentenceById = new Map(content.sentences.map((sentence) => [sentence.id, sentence]));
+  const releaseVocabularySentence = new Map<string, Sentence>();
+  for (const view of content.vocabularyExampleViews) {
+    const sentence = sentenceById.get(view.sentenceId);
+    if (sentence?.releaseReady && sentence.reviewStatus === "approved" && !releaseVocabularySentence.has(view.vocabularyId)) {
+      releaseVocabularySentence.set(view.vocabularyId, sentence);
+    }
+  }
+  const corpus = emptyCorpus();
+  const types = ["meaning-recognition", "meaning-production", "usage-context", "usage-choice", "reading", "written-form"] as const;
+  const releaseVocabulary = vocabulary.filter(({ releaseReady }) => releaseReady);
+  for (const [targetIndex, target] of releaseVocabulary.entries()) {
+    for (const [index, type] of types.entries()) {
+      addBuilt(corpus, vocabularyQuestion(target, releaseVocabulary, kanjiById, releaseVocabularySentence.get(target.id), type, index + 1, targetIndex));
+    }
+  }
+  sortCorpus(corpus);
+  return corpus;
+}
+
 export async function authorVocabularyKanjiQuestions(): Promise<void> {
   const [content, n5Vocabulary, n4Vocabulary, supplemental, n5Kanji, n4Kanji] = await Promise.all([
     readJson<LearningContentCollections>(`${OUTPUT_ROOT}/learning-content/index.json`),
@@ -589,13 +615,6 @@ export async function authorVocabularyKanjiQuestions(): Promise<void> {
   const kanji = [...n5Kanji, ...n4Kanji].sort((left, right) => compareStable(left.id, right.id));
   const kanjiById = new Map(kanji.map((record) => [record.id, record]));
   const sentenceById = new Map(content.sentences.map((sentence) => [sentence.id, sentence]));
-  const releaseVocabularySentence = new Map<string, Sentence>();
-  for (const view of content.vocabularyExampleViews) {
-    const sentence = sentenceById.get(view.sentenceId);
-    if (sentence?.releaseReady && sentence.reviewStatus === "approved" && !releaseVocabularySentence.has(view.vocabularyId)) {
-      releaseVocabularySentence.set(view.vocabularyId, sentence);
-    }
-  }
   const releaseKanjiSentence = new Map<string, Sentence>();
   for (const view of content.kanjiExampleViews) {
     const sentence = sentenceById.get(view.sentenceId);
@@ -603,32 +622,8 @@ export async function authorVocabularyKanjiQuestions(): Promise<void> {
       releaseKanjiSentence.set(view.kanjiId, sentence);
     }
   }
-  const vocabularyCorpus = emptyCorpus();
-  const vocabularyTypes = [
-    "meaning-recognition",
-    "meaning-production",
-    "usage-context",
-    "usage-choice",
-    "reading",
-    "written-form",
-  ] as const;
+  const vocabularyCorpus = buildVocabularyQuestionCorpus(content, vocabulary, kanji);
   const releaseVocabulary = vocabulary.filter(({ releaseReady }) => releaseReady);
-  for (const [targetIndex, target] of releaseVocabulary.entries()) {
-    for (const [index, type] of vocabularyTypes.entries()) {
-      addBuilt(
-        vocabularyCorpus,
-        vocabularyQuestion(
-          target,
-          releaseVocabulary,
-          kanjiById,
-          releaseVocabularySentence.get(target.id),
-          type,
-          index + 1,
-          targetIndex,
-        ),
-      );
-    }
-  }
   const kanjiCorpus = emptyCorpus();
   const releaseKanji = kanji.filter(({ releaseReady }) => releaseReady);
   for (const [targetIndex, target] of releaseKanji.entries()) {
@@ -657,7 +652,6 @@ export async function authorVocabularyKanjiQuestions(): Promise<void> {
       );
     }
   }
-  sortCorpus(vocabularyCorpus);
   sortCorpus(kanjiCorpus);
   await Promise.all([
     writeJson(SOURCE_PATHS.vocabularyQuestionCorpus, vocabularyCorpus),

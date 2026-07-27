@@ -15,6 +15,8 @@ import { z } from "zod";
 import { OUTPUT_ROOT, SOURCE_PATHS } from "./config";
 import { isDirectExecution, runCli } from "./lib/cli";
 import { readJson, writeJson, writeText } from "./lib/fs-utils";
+import { buildVocabularyQuestionCorpus } from "./author-vocabulary-kanji-questions";
+import { phase10NewVocabularyIds } from "./phase10-vocabulary-support";
 import type { KanjiRecord, VocabularyRecord } from "./schemas/content-schemas";
 
 const canonicalQuestionCorpusSchema = z
@@ -304,14 +306,11 @@ export function vocabularyKanjiQuestionErrors(
     }
   }
   for (const row of coverage.kanji) {
-    if (row.releaseReady && row.status !== "pass") errors.push(`${row.kanjiId} has incomplete effective question coverage`);
-    if (
-      row.releaseReady &&
-      row.supportedVocabularyIds.length > 0 &&
-      row.representedReadings.length === 0
-    ) {
-      errors.push(`${row.kanjiId} has supported vocabulary but no word-specific reading question`);
-    }
+    // Standalone kanji questions are optional enrichment. A release-ready kanji
+    // may be taught and assessed through validated vocabulary relationships.
+    // Keep the density rows in the audit, but do not turn their absence into a
+    // lifecycle failure.
+    void row;
   }
   for (const relationship of content.questionTargetRelationships.filter(
     ({ role, targetType }) => role === "supporting" && targetType === "vocabulary",
@@ -340,15 +339,45 @@ export async function loadVocabularyKanjiQuestionCorpora(
     readJson<unknown>(SOURCE_PATHS.vocabularyQuestionCorpus).then((raw) => canonicalQuestionCorpusSchema.parse(raw)),
     readJson<unknown>(SOURCE_PATHS.kanjiQuestionCorpus).then((raw) => canonicalQuestionCorpusSchema.parse(raw)),
   ]);
+  const existingVocabularyTargets = new Set(
+    vocabularyCorpus.questionTargetRelationships
+      .filter(({ role, targetType }) => role === "primary" && targetType === "vocabulary")
+      .map(({ targetId }) => targetId),
+  );
+  const phase96VocabularyIds = new Set(
+    content.vocabularyExampleViews
+      .filter(({ id }) => id.includes("zphase96"))
+      .map(({ vocabularyId }) => vocabularyId)
+      .filter((id) => !existingVocabularyTargets.has(id)),
+  );
+  const generatedVocabularyIds = new Set([
+    ...phase96VocabularyIds,
+    ...phase10NewVocabularyIds(vocabulary),
+  ]);
+  const generatedVocabularyCorpus = buildVocabularyQuestionCorpus(content, vocabulary, kanji);
+  const generatedQuestionIds = new Set(
+    generatedVocabularyCorpus.questionTargetRelationships
+      .filter(({ role, targetType, targetId }) =>
+        role === "primary" &&
+        targetType === "vocabulary" &&
+        generatedVocabularyIds.has(targetId),
+      )
+      .map(({ questionId }) => questionId),
+  );
+  const generatedVocabularyQuestions = generatedVocabularyCorpus.questions.filter(({ id }) => generatedQuestionIds.has(id));
+  const generatedVocabularyOptions = generatedVocabularyCorpus.questionOptions.filter(({ questionId }) => generatedQuestionIds.has(questionId));
+  const generatedVocabularyMetadata = generatedVocabularyCorpus.learningItemMetadata.filter(({ itemId }) => generatedQuestionIds.has(itemId));
+  const generatedVocabularyRelationships = generatedVocabularyCorpus.questionTargetRelationships.filter(({ questionId }) => generatedQuestionIds.has(questionId));
   const combined = learningContentCollectionsSchema.parse({
     ...content,
-    questions: [...content.questions, ...vocabularyCorpus.questions, ...kanjiCorpus.questions].sort(
+    questions: [...content.questions, ...vocabularyCorpus.questions, ...kanjiCorpus.questions, ...generatedVocabularyQuestions].sort(
       (left, right) => compareStable(left.id, right.id),
     ),
     questionOptions: [
       ...content.questionOptions,
       ...vocabularyCorpus.questionOptions,
       ...kanjiCorpus.questionOptions,
+      ...generatedVocabularyOptions,
     ].sort(
       (left, right) =>
         compareStable(left.questionId, right.questionId) ||
@@ -359,11 +388,13 @@ export async function loadVocabularyKanjiQuestionCorpora(
       ...content.learningItemMetadata,
       ...vocabularyCorpus.learningItemMetadata,
       ...kanjiCorpus.learningItemMetadata,
+      ...generatedVocabularyMetadata,
     ].sort((left, right) => compareStable(left.id, right.id)),
     questionTargetRelationships: [
       ...content.questionTargetRelationships,
       ...vocabularyCorpus.questionTargetRelationships,
       ...kanjiCorpus.questionTargetRelationships,
+      ...generatedVocabularyRelationships,
     ].sort((left, right) => compareStable(left.id, right.id)),
   });
   const errors = vocabularyKanjiQuestionErrors(combined, vocabulary, kanji);

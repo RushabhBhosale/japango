@@ -6,10 +6,10 @@ JapanGo's original JLPT N5/N4 grammar learning question corpus.
 - Release-target grammar records: 111
 - Lifecycle exclusions: 126
 - Approved grammar questions: 888
-- Question options: 3672
-- Primary grammar relationships: 918
-- Reused sentence relationships: 888
-- Distinct existing sentences reused: 444
+- Question options: 7640
+- Primary grammar relationships: 1910
+- Reused sentence relationships: 1880
+- Distinct existing sentences reused: 816
 - New sentences created: 0
 - Release-target coverage: 111/111
 
@@ -17,15 +17,15 @@ JapanGo's original JLPT N5/N4 grammar learning question corpus.
 
 | Value | Count |
 | --- | ---: |
-| context-application | 222 |
-| meaning | 222 |
-| recognition | 222 |
+| context-application | 470 |
+| meaning | 470 |
+| recognition | 470 |
 | unclassified | 30 |
-| usage | 222 |
+| usage | 470 |
 
 ## Presentation distribution
 
 | Value | Count |
 | --- | ---: |
-| fill-blank | 222 |
-| multiple-choice | 696 |
+| fill-blank | 470 |
+| multiple-choice | 1440 |
