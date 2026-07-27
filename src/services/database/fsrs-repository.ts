@@ -6,9 +6,9 @@ import type { FsrsCard, FsrsQueue, FsrsQueueItem, FsrsQueueLimits, FsrsRating } 
 import { createLocalId } from '@/utils/id';
 
 import { getDatabase } from './database';
+import { ensureFsrsCards, FSRS_SCHEDULER_VERSION } from './fsrs-bootstrap';
 import { getSetting, setSetting } from './settings-repository';
 
-export const FSRS_SCHEDULER_VERSION = 'japango-fsrs-1';
 const limitsSchema = z.object({ newCardsPerDay: z.number().int().min(0).max(100), reviewsPerDay: z.number().int().min(1).max(500) }).strict();
 export const defaultFsrsQueueLimits: FsrsQueueLimits = { newCardsPerDay: 10, reviewsPerDay: 120 };
 
@@ -22,33 +22,19 @@ function mapCard(row: FsrsCardRow): FsrsCard {
   return { userId: row.user_id, itemId: row.item_id, state: row.state, stability: row.stability, difficulty: row.difficulty, retrievability: row.retrievability, dueAt: row.due_at, lastReviewedAt: row.last_reviewed_at ?? undefined, repetitions: row.repetitions, lapses: row.lapses, lastRating: row.last_rating ?? undefined, scheduledDays: row.scheduled_days, elapsedDays: row.elapsed_days, buriedUntil: row.buried_until ?? undefined, suspendedAt: row.suspended_at ?? undefined };
 }
 
-export async function ensureFsrsCards(database: SQLite.SQLiteDatabase): Promise<void> {
-  const now = new Date().toISOString();
-  await database.runAsync(
-    `INSERT OR IGNORE INTO fsrs_cards
-      (user_id, item_id, state, stability, difficulty, retrievability, due_at, last_reviewed_at,
-       repetitions, lapses, last_rating, scheduled_days, elapsed_days, scheduler_version, updated_at)
-     SELECT m.user_id, m.item_id,
-       CASE WHEN m.correct_count + m.incorrect_count = 0 THEN 'new' ELSE 'review' END,
-       CASE WHEN m.review_interval_days > 0 THEN m.review_interval_days ELSE 1 END,
-       5, 1, COALESCE(m.next_review_at, ?), m.last_reviewed_at,
-       m.correct_count + m.incorrect_count, m.incorrect_count, NULL,
-       m.review_interval_days, 0, ?, ?
-     FROM user_mastery AS m
-     INNER JOIN curriculum_items AS items ON items.id = m.item_id
-     WHERE items.curriculum_source = 'bundled' AND items.release_ready = 1`,
-    now,
-    FSRS_SCHEDULER_VERSION,
-    now,
-  );
-}
-
 export async function getFsrsCard(database: SQLite.SQLiteDatabase, userId: string, itemId: string): Promise<FsrsCard> {
   const row = await database.getFirstAsync<FsrsCardRow>('SELECT user_id, item_id, state, stability, difficulty, retrievability, due_at, last_reviewed_at, repetitions, lapses, last_rating, scheduled_days, elapsed_days, buried_until, suspended_at FROM fsrs_cards WHERE user_id = ? AND item_id = ?', userId, itemId);
   if (row) return mapCard(row);
   const card = createFsrsCard(userId, itemId);
   await saveFsrsCard(database, card);
   return card;
+}
+
+export async function getCurrentUserFsrsCard(itemId: string): Promise<FsrsCard> {
+  const database = await getDatabase();
+  const profile = await database.getFirstAsync<{ id: string }>('SELECT id FROM learner_profile LIMIT 1');
+  if (!profile) throw new Error('A learner profile is required before reading a review card.');
+  return getFsrsCard(database, profile.id, itemId);
 }
 
 export async function saveFsrsCard(database: SQLite.SQLiteDatabase, card: FsrsCard): Promise<void> {
@@ -99,6 +85,26 @@ export async function setFsrsCardState(itemId: string, action: 'bury' | 'suspend
   if (!profile) throw new Error('A learner profile is required before updating a review card.');
   const current = await getFsrsCard(database, profile.id, itemId);
   const next = action === 'bury' ? buryFsrsCard(current) : action === 'suspend' ? suspendFsrsCard(current) : restoreSuspendedFsrsCard(restoreBuriedFsrsCard(current));
+  await saveFsrsCard(database, next);
+  return next;
+}
+
+/** Makes an existing review card immediately eligible without recording a fabricated rating. */
+export async function makeFsrsCardDueNow(itemId: string): Promise<FsrsCard> {
+  const database = await getDatabase();
+  const profile = await database.getFirstAsync<{ id: string }>('SELECT id FROM learner_profile LIMIT 1');
+  if (!profile) throw new Error('A learner profile is required before updating a review card.');
+  const current = await getFsrsCard(database, profile.id, itemId);
+  const now = new Date().toISOString();
+  const next: FsrsCard = {
+    ...current,
+    state: current.state === 'suspended' || current.state === 'buried'
+      ? current.repetitions ? 'review' : 'new'
+      : current.state,
+    dueAt: now,
+    buriedUntil: undefined,
+    suspendedAt: undefined,
+  };
   await saveFsrsCard(database, next);
   return next;
 }

@@ -15,9 +15,11 @@ import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { getProgressSummary } from '@/services/database/progress-repository';
 import { getExamAnalytics } from '@/services/database/exam-repository';
+import { getCourseLearningAnalytics } from '@/services/database/course-repository';
 import { useAppStore } from '@/store/app-store';
 import type { MasteryStatus, ProgressSummary } from '@/types/learning';
 import type { ExamAnalytics } from '@/types/exam';
+import type { CourseLessonAnalytics } from '@/types/course';
 
 const statusLabels: Record<MasteryStatus, string> = {
   new: 'New',
@@ -32,15 +34,17 @@ export default function ProgressScreen() {
   const profile = useAppStore((state) => state.profile);
   const [summary, setSummary] = useState<ProgressSummary>();
   const [examAnalytics, setExamAnalytics] = useState<ExamAnalytics>();
+  const [courseAnalytics, setCourseAnalytics] = useState<CourseLessonAnalytics>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   const load = useCallback(async () => {
     setError(false);
     try {
-      const [progress, exams] = await Promise.all([getProgressSummary(), getExamAnalytics()]);
+      const [progress, exams, course] = await Promise.all([getProgressSummary(), getExamAnalytics(), getCourseLearningAnalytics()]);
       setSummary(progress);
       setExamAnalytics(exams);
+      setCourseAnalytics(course);
     } catch {
       setError(true);
     } finally {
@@ -120,6 +124,12 @@ export default function ProgressScreen() {
       <Card>
         <ThemedText type="heading">{examAnalytics?.completedMocks ? `${examAnalytics.averageMockScore ?? 0}% average mock score` : 'No mock exams yet'}</ThemedText>
         <ThemedText themeColor="textSecondary">{examAnalytics?.completedMocks ? `Best ${examAnalytics.highestMockScore ?? 0}% · ${examAnalytics.improvement === undefined ? 'first baseline' : `${examAnalytics.improvement >= 0 ? '+' : ''}${examAnalytics.improvement}% over time`} · strongest ${examAnalytics.strongestSection ?? '—'} · weakest ${examAnalytics.weakestSection ?? '—'}` : 'Mock-exam analytics will appear after your first completed exam.'}</ThemedText>
+      </Card>
+
+      <SectionHeading title="Course workbook skills" />
+      <Card>
+        <ThemedText type="heading">{courseAnalytics?.firstAttemptAccuracy === undefined ? 'No guided-course answers yet' : `${courseAnalytics.firstAttemptAccuracy}% first attempt · ${courseAnalytics.correctedAccuracy ?? 0}% after correction`}</ThemedText>
+        <ThemedText themeColor="textSecondary">Transformations {courseAnalytics?.transformationAccuracy ?? '—'}% · conjugation {courseAnalytics?.conjugationAccuracy ?? '—'}% · reading {courseAnalytics?.readingAccuracy ?? '—'}% · listening {courseAnalytics?.listeningAccuracy ?? '—'}% · {courseAnalytics?.productionAttempts ?? 0} production attempts</ThemedText>
       </Card>
 
       <SectionHeading title="Weak areas" />

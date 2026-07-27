@@ -6,6 +6,8 @@ import {
   type BundledCurriculum,
 } from '@/features/curriculum/bundled-curriculum';
 
+import { insertSqlRows } from './sql-batch';
+
 const bundleKey = 'mobile-release-curriculum';
 
 interface BundleStateRow {
@@ -53,121 +55,94 @@ async function importBundle(
        WHERE curriculum_source = 'bundled'`,
     );
 
-    for (const item of bundle.items) {
-      await database.runAsync(
-        `INSERT INTO curriculum_items
-          (id, type, level, title, meaning, reading, explanation, tags_json,
-           curriculum_source, release_ready, bundled_content_version)
-         VALUES (?, ?, ?, ?, ?, ?, NULL, ?, 'bundled', 1, ?)
-         ON CONFLICT(id) DO UPDATE SET
-           type = excluded.type,
-           level = excluded.level,
-           title = excluded.title,
-           meaning = excluded.meaning,
-           reading = excluded.reading,
-           explanation = NULL,
-           tags_json = excluded.tags_json,
-           curriculum_source = 'bundled',
-           release_ready = 1,
-           bundled_content_version = excluded.bundled_content_version`,
-        item.id,
-        item.type,
-        item.level,
-        item.title,
-        item.meaning,
-        item.reading ?? null,
-        JSON.stringify(item.tags),
-        bundle.contentVersion,
-      );
-    }
+    await insertSqlRows(
+      database,
+      `INSERT INTO curriculum_items
+        (id, type, level, title, meaning, reading, explanation, tags_json,
+         curriculum_source, release_ready, bundled_content_version)
+       VALUES`,
+      bundle.items.map((item) => [
+        item.id, item.type, item.level, item.title, item.meaning, item.reading ?? null, null,
+        JSON.stringify(item.tags), 'bundled', 1, bundle.contentVersion,
+      ]),
+      `ON CONFLICT(id) DO UPDATE SET
+         type = excluded.type,
+         level = excluded.level,
+         title = excluded.title,
+         meaning = excluded.meaning,
+         reading = excluded.reading,
+         explanation = NULL,
+         tags_json = excluded.tags_json,
+         curriculum_source = 'bundled',
+         release_ready = 1,
+         bundled_content_version = excluded.bundled_content_version`,
+    );
 
     await database.runAsync('DELETE FROM vocabulary_content_details');
-    for (const detail of bundle.vocabularyDetails) {
-      await database.runAsync(
-        `INSERT INTO vocabulary_content_details
-          (vocabulary_id, part_of_speech_json, kanji_ids_json, bundled_content_version)
-         VALUES (?, ?, ?, ?)`,
-        detail.id,
-        JSON.stringify(detail.partOfSpeech),
-        JSON.stringify(detail.kanjiIds),
-        bundle.contentVersion,
-      );
-    }
+    await insertSqlRows(
+      database,
+      `INSERT INTO vocabulary_content_details
+        (vocabulary_id, part_of_speech_json, kanji_ids_json, bundled_content_version)
+       VALUES`,
+      bundle.vocabularyDetails.map((detail) => [
+        detail.id, JSON.stringify(detail.partOfSpeech), JSON.stringify(detail.kanjiIds), bundle.contentVersion,
+      ]),
+    );
 
     await database.runAsync('DELETE FROM vocabulary_sentence_links');
     await database.runAsync('DELETE FROM mobile_sentences');
-    for (const sentence of bundle.sentences) {
-      await database.runAsync(
-        `INSERT INTO mobile_sentences
-          (id, japanese, reading, english, level, difficulty_rank, bundled_content_version)
-         VALUES (?, ?, ?, ?, ?, ?, ?)`,
-        sentence.id,
-        sentence.japanese,
-        sentence.reading,
-        sentence.english,
-        sentence.difficulty.jlptLevel,
-        sentence.difficulty.rank,
-        bundle.contentVersion,
-      );
-    }
-    for (const example of bundle.vocabularyExamples) {
-      await database.runAsync(
-        `INSERT INTO vocabulary_sentence_links
-          (id, vocabulary_id, sentence_id, relationship_role, bundled_content_version)
-         VALUES (?, ?, ?, ?, ?)`,
-        example.id,
-        example.vocabularyId,
-        example.sentenceId,
-        example.role,
-        bundle.contentVersion,
-      );
-    }
+    await insertSqlRows(
+      database,
+      `INSERT INTO mobile_sentences
+        (id, japanese, reading, english, level, difficulty_rank, bundled_content_version)
+       VALUES`,
+      bundle.sentences.map((sentence) => [
+        sentence.id, sentence.japanese, sentence.reading, sentence.english,
+        sentence.difficulty.jlptLevel, sentence.difficulty.rank, bundle.contentVersion,
+      ]),
+    );
+    await insertSqlRows(
+      database,
+      `INSERT INTO vocabulary_sentence_links
+        (id, vocabulary_id, sentence_id, relationship_role, bundled_content_version)
+       VALUES`,
+      bundle.vocabularyExamples.map((example) => [
+        example.id, example.vocabularyId, example.sentenceId, example.role, bundle.contentVersion,
+      ]),
+    );
     await database.runAsync('DELETE FROM mobile_sentence_grammar_links');
-    for (const example of bundle.grammarExamples) {
-      await database.runAsync(
-        `INSERT INTO mobile_sentence_grammar_links
-          (id, grammar_id, sentence_id, relationship_role, bundled_content_version)
-         VALUES (?, ?, ?, ?, ?)`,
-        example.id,
-        example.grammarId,
-        example.sentenceId,
-        example.role,
-        bundle.contentVersion,
-      );
-    }
+    await insertSqlRows(
+      database,
+      `INSERT INTO mobile_sentence_grammar_links
+        (id, grammar_id, sentence_id, relationship_role, bundled_content_version)
+       VALUES`,
+      bundle.grammarExamples.map((example) => [
+        example.id, example.grammarId, example.sentenceId, example.role, bundle.contentVersion,
+      ]),
+    );
     await database.runAsync('DELETE FROM kanji_sentence_links');
-    for (const example of bundle.kanjiExamples) {
-      await database.runAsync(
-        `INSERT INTO kanji_sentence_links
-          (id, kanji_id, sentence_id, relationship_role, bundled_content_version)
-         VALUES (?, ?, ?, ?, ?)`,
-        example.id,
-        example.kanjiId,
-        example.sentenceId,
-        example.role,
-        bundle.contentVersion,
-      );
-    }
+    await insertSqlRows(
+      database,
+      `INSERT INTO kanji_sentence_links
+        (id, kanji_id, sentence_id, relationship_role, bundled_content_version)
+       VALUES`,
+      bundle.kanjiExamples.map((example) => [
+        example.id, example.kanjiId, example.sentenceId, example.role, bundle.contentVersion,
+      ]),
+    );
 
     await database.runAsync('DELETE FROM vocabulary_question_bank');
-    for (const question of bundle.vocabularyQuestions) {
-      await database.runAsync(
-        `INSERT INTO vocabulary_question_bank
-          (id, vocabulary_id, level, presentation, response_type, prompt, explanation,
-           correct_option_id, options_json, bundled_content_version)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        question.id,
-        question.vocabularyId,
-        question.level,
-        question.presentation,
-        question.responseType,
-        question.prompt,
-        question.explanation,
-        question.correctOptionId,
-        JSON.stringify(question.options),
-        bundle.contentVersion,
-      );
-    }
+    await insertSqlRows(
+      database,
+      `INSERT INTO vocabulary_question_bank
+        (id, vocabulary_id, level, presentation, response_type, prompt, explanation,
+         correct_option_id, options_json, bundled_content_version)
+       VALUES`,
+      bundle.vocabularyQuestions.map((question) => [
+        question.id, question.vocabularyId, question.level, question.presentation, question.responseType,
+        question.prompt, question.explanation, question.correctOptionId, JSON.stringify(question.options), bundle.contentVersion,
+      ]),
+    );
 
     await database.runAsync('DELETE FROM curriculum_content_details');
     const contentDetails = [
@@ -176,38 +151,27 @@ async function importBundle(
       ...bundle.readingPassages.map((detail) => ({ itemId: detail.id, contentType: 'reading', value: detail })),
       ...bundle.listeningActivities.map((detail) => ({ itemId: detail.id, contentType: 'listening', value: detail })),
     ];
-    for (const detail of contentDetails) {
-      await database.runAsync(
-        `INSERT INTO curriculum_content_details
-          (item_id, content_type, detail_json, bundled_content_version)
-         VALUES (?, ?, ?, ?)`,
-        detail.itemId,
-        detail.contentType,
-        JSON.stringify(detail.value),
-        bundle.contentVersion,
-      );
-    }
+    await insertSqlRows(
+      database,
+      `INSERT INTO curriculum_content_details
+        (item_id, content_type, detail_json, bundled_content_version)
+       VALUES`,
+      contentDetails.map((detail) => [detail.itemId, detail.contentType, JSON.stringify(detail.value), bundle.contentVersion]),
+    );
 
     await database.runAsync('DELETE FROM canonical_practice_question_bank');
-    for (const question of bundle.practiceQuestions) {
-      await database.runAsync(
-        `INSERT INTO canonical_practice_question_bank
-          (id, item_id, domain, level, presentation, response_type, prompt, explanation,
-           correct_option_id, options_json, bundled_content_version)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        question.id,
-        question.itemId,
-        question.domain,
-        question.level,
-        question.presentation,
-        question.responseType,
-        question.prompt,
-        question.explanation,
-        question.correctOptionId,
-        JSON.stringify(question.options),
-        bundle.contentVersion,
-      );
-    }
+    await insertSqlRows(
+      database,
+      `INSERT INTO canonical_practice_question_bank
+        (id, item_id, domain, level, presentation, response_type, prompt, explanation,
+         correct_option_id, options_json, bundled_content_version)
+       VALUES`,
+      bundle.practiceQuestions.map((question) => [
+        question.id, question.itemId, question.domain, question.level, question.presentation,
+        question.responseType, question.prompt, question.explanation, question.correctOptionId,
+        JSON.stringify(question.options), bundle.contentVersion,
+      ]),
+    );
 
     await database.runAsync(
       `INSERT OR IGNORE INTO user_mastery (user_id, item_id)

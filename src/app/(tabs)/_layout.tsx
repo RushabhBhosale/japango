@@ -1,7 +1,9 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
 import type { ColorValue } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 type IconName = React.ComponentProps<typeof Ionicons>['name'];
@@ -17,8 +19,10 @@ function tabIcon(name: IconName) {
 
 export default function TabLayout() {
   const theme = useTheme();
+  const insets = useSafeAreaInsets();
   return (
     <Tabs
+      safeAreaInsets={{ bottom: Math.max(insets.bottom, Spacing.two) }}
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: theme.primary,
@@ -34,6 +38,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="learn"
         options={{ title: 'Learn', tabBarAccessibilityLabel: 'Learn tab', tabBarIcon: tabIcon('book-outline') }}
+      />
+      <Tabs.Screen
+        name="library"
+        options={{ title: 'Study', tabBarAccessibilityLabel: 'Study Library tab', tabBarIcon: tabIcon('library-outline') }}
       />
       <Tabs.Screen
         name="review"

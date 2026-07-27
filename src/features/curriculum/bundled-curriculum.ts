@@ -21,16 +21,39 @@ const bundleMetadataSchema = z.object({
   }),
 }).strict();
 
-const curriculumItemSchema = z.object({
+const curriculumItemBaseSchema = z.object({
   id: z.string().min(1),
-  type: z.enum(['vocabulary', 'grammar', 'kanji', 'reading', 'listening']),
   level: levelSchema,
   title: z.string().min(1),
   meaning: z.string().min(1),
   reading: z.string().min(1).optional(),
   tags: z.array(z.string()),
   releaseReady: z.literal(true),
-}).strict();
+});
+
+const curriculumItemSchema = z.discriminatedUnion('type', [
+  curriculumItemBaseSchema.extend({
+    type: z.literal('vocabulary'),
+    confidence: z.number().min(0).max(1),
+    needsReview: z.boolean(),
+  }).strict(),
+  curriculumItemBaseSchema.extend({
+    type: z.literal('grammar'),
+    confidence: z.number().min(0).max(1),
+    needsReview: z.boolean(),
+  }).strict(),
+  curriculumItemBaseSchema.extend({
+    type: z.literal('kanji'),
+    confidence: z.number().min(0).max(1),
+    needsReview: z.boolean(),
+  }).strict(),
+  curriculumItemBaseSchema.extend({
+    type: z.literal('reading'),
+  }).strict(),
+  curriculumItemBaseSchema.extend({
+    type: z.literal('listening'),
+  }).strict(),
+]);
 
 const sentenceSchema = z.object({
   id: z.string().min(1),
@@ -161,22 +184,47 @@ export type BundledPracticeQuestion = z.infer<typeof practiceQuestionSchema>;
 const rawMetadata: unknown = require('../../../assets/mobile-curriculum/version.json');
 
 export const bundledCurriculumMetadata = bundleMetadataSchema.parse(rawMetadata);
+let cachedBundledCurriculum: BundledCurriculum | undefined;
+
+function hasRequiredCollections(value: unknown): value is Record<string, unknown> {
+  if (!value || typeof value !== 'object') return false;
+  const record = value as Record<string, unknown>;
+  return [
+    'items', 'vocabularyDetails', 'sentences', 'grammarExamples', 'vocabularyExamples',
+    'kanjiExamples', 'vocabularyQuestions', 'grammarDetails', 'kanjiDetails',
+    'practiceQuestions', 'readingPassages', 'listeningActivities',
+  ].every((key) => Array.isArray(record[key]));
+}
+
+/** Full recursive validation for content tooling and tests, never for an interactive launch. */
+export function validateBundledCurriculumPayload(value: unknown): BundledCurriculum {
+  return bundledCurriculumSchema.parse(value);
+}
 
 /**
- * The 18 MB release bundle is intentionally loaded only while installing or
- * upgrading local curriculum rows. Everyday repository reads stay in SQLite.
+ * The packaged release is an application-owned asset that is fully checked in
+ * the content pipeline. At runtime we validate its envelope and inventory, but
+ * avoid deep-cloning its 18 MB payload with Zod on the JS thread.
  */
 export function loadBundledCurriculum(): BundledCurriculum {
+  if (cachedBundledCurriculum) return cachedBundledCurriculum;
   const rawBundle: unknown = require('../../../assets/mobile-curriculum/release.json');
-  const bundle = bundledCurriculumSchema.parse(rawBundle);
+  if (!hasRequiredCollections(rawBundle)) throw new Error('Bundled curriculum has an invalid release shape.');
+  const envelope = bundleMetadataSchema.parse({
+    schemaVersion: rawBundle.schemaVersion,
+    contentVersion: rawBundle.contentVersion,
+    checksum: rawBundle.checksum,
+    counts: rawBundle.counts,
+  });
+  const bundle = rawBundle as BundledCurriculum;
   if (
-    bundle.contentVersion !== bundledCurriculumMetadata.contentVersion
-    || bundle.checksum !== bundledCurriculumMetadata.checksum
-    || bundle.counts.vocabulary !== bundledCurriculumMetadata.counts.vocabulary
-    || bundle.counts.questions !== bundledCurriculumMetadata.counts.questions
-    || bundle.counts.sentences !== bundledCurriculumMetadata.counts.sentences
-    || bundle.counts.readingPassages !== bundledCurriculumMetadata.counts.readingPassages
-    || bundle.counts.listeningActivities !== bundledCurriculumMetadata.counts.listeningActivities
+    envelope.contentVersion !== bundledCurriculumMetadata.contentVersion
+    || envelope.checksum !== bundledCurriculumMetadata.checksum
+    || envelope.counts.vocabulary !== bundledCurriculumMetadata.counts.vocabulary
+    || envelope.counts.questions !== bundledCurriculumMetadata.counts.questions
+    || envelope.counts.sentences !== bundledCurriculumMetadata.counts.sentences
+    || envelope.counts.readingPassages !== bundledCurriculumMetadata.counts.readingPassages
+    || envelope.counts.listeningActivities !== bundledCurriculumMetadata.counts.listeningActivities
   ) {
     throw new Error('Bundled curriculum metadata does not match the content package.');
   }
@@ -190,5 +238,6 @@ export function loadBundledCurriculum(): BundledCurriculum {
   if (bundle.listeningActivities.length !== bundle.counts.listeningActivities || bundle.listeningActivities.length !== 30) {
     throw new Error('Bundled curriculum does not contain the expected initial listening release.');
   }
-  return bundle;
+  cachedBundledCurriculum = bundle;
+  return cachedBundledCurriculum;
 }

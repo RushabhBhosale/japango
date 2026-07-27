@@ -74,7 +74,11 @@ export const useAppStore = create<AppState>((set, get) => ({
         profile,
         settings: { themePreference: themePreference ?? 'system' },
       });
-    } catch {
+    } catch (error: unknown) {
+      console.error(
+        '[JapanGo database] Initialization failed',
+        error instanceof Error ? { name: error.name, message: error.message, stack: error.stack } : String(error),
+      );
       set({
         initializationStatus: 'error',
         errorMessage: "JapanGo couldn't open its local learning data. Restart the app and try again.",

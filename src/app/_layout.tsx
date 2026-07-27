@@ -11,17 +11,17 @@ export default function RootLayout() {
   const colorScheme = useResolvedColorScheme();
   const colors = useTheme();
   const bootstrap = useAppStore((state) => state.bootstrap);
-  const initializationStatus = useAppStore((state) => state.initializationStatus);
 
   useEffect(() => {
     void bootstrap();
   }, [bootstrap]);
 
   useEffect(() => {
-    if (initializationStatus === 'ready' || initializationStatus === 'error') {
-      void SplashScreen.hideAsync();
-    }
-  }, [initializationStatus]);
+    // Native splash screens are intentionally short-lived. Long-running local
+    // content upgrades use the app's own loading and error UI instead of
+    // leaving a learner with an indistinguishable frozen launch screen.
+    void SplashScreen.hideAsync();
+  }, []);
 
   const baseTheme = colorScheme === 'dark' ? DarkTheme : DefaultTheme;
   const navigationTheme = {

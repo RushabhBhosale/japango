@@ -10,18 +10,24 @@ import { PageHeader } from '@/components/common/page-header';
 import { ScreenContainer } from '@/components/common/screen-container';
 import { SectionHeading } from '@/components/common/section-heading';
 import { StatusBadge } from '@/components/common/status-badge';
-import { JapaneseSpeechButton } from '@/components/lesson/japanese-speech-button';
 import { AiTeacherCard } from '@/components/lesson/ai-teacher-card';
+import { JapaneseSpeechButton } from '@/components/lesson/japanese-speech-button';
 import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
+import type { TopicQuizMode } from '@/features/topic-quiz/topic-quiz';
+import { makeFsrsCardDueNow } from '@/services/database/fsrs-repository';
+import { getCourseItemUsage } from '@/services/database/course-repository';
+import { markCurriculumItemStudied } from '@/services/database/progress-repository';
 import {
   getVocabularyLessonById,
+  getVocabularyNotebookItems,
   recordVocabularyRating,
-  startVocabularySession,
+  startVocabularyTopicQuiz,
   toggleVocabularyBookmark,
 } from '@/services/database/vocabulary-repository';
-import { setFsrsCardState } from '@/services/database/fsrs-repository';
+import { recordStudyContentView } from '@/services/database/study-history-repository';
 import type { VocabularyLesson } from '@/types/study';
+import type { CourseItemUsage } from '@/types/course';
 
 function routeId(value: string | string[] | undefined): string | undefined {
   return typeof value === 'string' && value.length ? value : undefined;
@@ -31,9 +37,11 @@ export default function VocabularyLessonScreen() {
   const { id: rawId } = useLocalSearchParams<{ id?: string | string[] }>();
   const id = routeId(rawId);
   const [lesson, setLesson] = useState<VocabularyLesson>();
+  const [neighbors, setNeighbors] = useState<{ previousId?: string; nextId?: string }>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [courseUsage, setCourseUsage] = useState<CourseItemUsage>();
 
   const load = useCallback(async () => {
     if (!id) {
@@ -41,9 +49,19 @@ export default function VocabularyLessonScreen() {
       setError(true);
       return;
     }
+    setLoading(true);
     setError(false);
     try {
-      setLesson(await getVocabularyLessonById(id));
+      const [nextLesson, allItems, usage] = await Promise.all([
+        getVocabularyLessonById(id),
+        getVocabularyNotebookItems({ level: 'all', limit: 120, offset: 0 }),
+        getCourseItemUsage(id),
+      ]);
+      setLesson(nextLesson);
+      setCourseUsage(usage);
+      if (nextLesson) void recordStudyContentView(nextLesson.id, 'vocabulary').catch(() => undefined);
+      const index = allItems.findIndex((item) => item.id === id);
+      setNeighbors({ previousId: index > 0 ? allItems[index - 1]?.id : undefined, nextId: index >= 0 ? allItems[index + 1]?.id : undefined });
     } catch {
       setError(true);
     } finally {
@@ -58,7 +76,7 @@ export default function VocabularyLessonScreen() {
     setSaving(true);
     try {
       await recordVocabularyRating(lesson.id, rating);
-      router.back();
+      await load();
     } catch {
       setError(true);
     } finally {
@@ -79,12 +97,12 @@ export default function VocabularyLessonScreen() {
     }
   };
 
-  const startPractice = async () => {
+  const markStudied = async () => {
     if (!lesson) return;
     setSaving(true);
     try {
-      const session = await startVocabularySession([lesson.id]);
-      router.push(`/vocabulary/session?sessionId=${encodeURIComponent(session.id)}` as Href);
+      const mastery = await markCurriculumItemStudied(lesson.id);
+      setLesson((current) => current ? { ...current, mastery } : current);
     } catch {
       setError(true);
     } finally {
@@ -92,12 +110,25 @@ export default function VocabularyLessonScreen() {
     }
   };
 
-  const changeReviewAvailability = async (action: 'bury' | 'suspend') => {
+  const addToReview = async () => {
     if (!lesson) return;
     setSaving(true);
     try {
-      await setFsrsCardState(lesson.id, action);
-      router.back();
+      await makeFsrsCardDueNow(lesson.id);
+      await load();
+    } catch {
+      setError(true);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const startQuiz = async (mode: TopicQuizMode) => {
+    if (!lesson) return;
+    setSaving(true);
+    try {
+      const session = await startVocabularyTopicQuiz([lesson.id], mode);
+      router.push(`/vocabulary/session?sessionId=${encodeURIComponent(session.id)}` as Href);
     } catch {
       setError(true);
     } finally {
@@ -110,11 +141,13 @@ export default function VocabularyLessonScreen() {
     return (
       <ScreenContainer contentStyle={styles.centered}>
         <EmptyState title="Vocabulary is unavailable" message="This item is not in the installed release curriculum." symbol="!" />
-        <AppButton label="Back to Learn" onPress={() => router.replace('/(tabs)/learn')} />
+        <AppButton label="Back to Vocabulary Notebook" onPress={() => router.replace('/library/vocabulary' as Href)} />
       </ScreenContainer>
     );
   }
 
+  const isTransitive = lesson.partOfSpeech.includes('transitive-verb');
+  const isIntransitive = lesson.partOfSpeech.includes('intransitive-verb');
   return (
     <ScreenContainer>
       <PageHeader eyebrow={`${lesson.level} vocabulary`} title={lesson.title} subtitle={lesson.meaning ?? ''} />
@@ -125,13 +158,18 @@ export default function VocabularyLessonScreen() {
         </View>
         {lesson.reading && lesson.reading !== lesson.title ? <ThemedText type="japanese">{lesson.reading}</ThemedText> : null}
         <ThemedText type="heading">{lesson.meaning}</ThemedText>
-        <JapaneseSpeechButton text={lesson.title} />
-        <AppButton
-          label={lesson.bookmarked ? 'Remove bookmark' : 'Bookmark word'}
-          variant="quiet"
-          loading={saving}
-          onPress={() => void toggleBookmark()}
-        />
+        {isTransitive || isIntransitive ? <ThemedText themeColor="textSecondary">{isTransitive ? 'Transitive verb' : 'Intransitive verb'}</ThemedText> : null}
+        <JapaneseSpeechButton text={lesson.title} label="Hear pronunciation" />
+        <AppButton label={lesson.bookmarked ? 'Remove bookmark' : 'Bookmark word'} variant="quiet" loading={saving} onPress={() => void toggleBookmark()} />
+        <AppButton label="Mark as studied" variant="quiet" loading={saving} onPress={() => void markStudied()} />
+        <AppButton label="Add to review" variant="quiet" loading={saving} onPress={() => void addToReview()} />
+      </Card>
+
+      <SectionHeading title="Your review progress" />
+      <Card>
+        <ThemedText>FSRS state: {lesson.fsrsCard.state.replaceAll('-', ' ')}</ThemedText>
+        <ThemedText>Next review: {new Date(lesson.fsrsCard.dueAt).toLocaleDateString()}</ThemedText>
+        <ThemedText themeColor="textSecondary">Recent accuracy: {lesson.recentAccuracy === undefined ? 'Not enough answers yet' : `${lesson.recentAccuracy}%`}</ThemedText>
       </Card>
 
       {lesson.example ? (
@@ -161,19 +199,28 @@ export default function VocabularyLessonScreen() {
         </>
       ) : null}
 
-      <AiTeacherCard feature="explain_vocabulary" label="Explain simply" moreExamples context={{ learnerLevel: lesson.level, item: { id: lesson.id, type: 'vocabulary', title: lesson.title, meaning: lesson.meaning, reading: lesson.reading, details: [...lesson.partOfSpeech, lesson.example?.japanese ?? ''].filter(Boolean) } }} />
+      {courseUsage?.usedIn.length ? <><SectionHeading title="Course connections" /><Card><ThemedText>Introduced in: {courseUsage.introducedIn ? `Lesson ${courseUsage.introducedIn.lessonNumber} — ${courseUsage.introducedIn.title}` : 'Study Library'}</ThemedText><ThemedText themeColor="textSecondary">Used in: {courseUsage.usedIn.map((entry) => `Lesson ${entry.lessonNumber}`).join(', ')}</ThemedText></Card></> : null}
 
-      <SectionHeading title="Practise" />
-      <AppButton label="Start a question" loading={saving} onPress={() => void startPractice()} />
-      <ThemedText type="small" themeColor="textSecondary">Rate this word to update its local review schedule.</ThemedText>
+      <SectionHeading title="Topic quiz" />
+      <ThemedText type="small" themeColor="textSecondary">Quick has 5 questions, Standard has 10 deterministic variants when needed, and Full uses every canonical question.</ThemedText>
+      <AppButton label="Quick quiz · 5 questions" loading={saving} onPress={() => void startQuiz('quick')} />
+      <AppButton label="Standard quiz · 10 questions" variant="secondary" loading={saving} onPress={() => void startQuiz('standard')} />
+      <AppButton label="Full practice" variant="secondary" loading={saving} onPress={() => void startQuiz('full')} />
+
+      <SectionHeading title="Rate your recall" />
+      <ThemedText type="small" themeColor="textSecondary">Use these only after recalling the word; they update the same FSRS schedule used by Review.</ThemedText>
       <View style={styles.ratingButtons}>
         <AppButton label="Again" variant="secondary" loading={saving} onPress={() => void rate('again')} />
         <AppButton label="Hard" variant="secondary" loading={saving} onPress={() => void rate('hard')} />
         <AppButton label="Good" variant="secondary" loading={saving} onPress={() => void rate('good')} />
         <AppButton label="Easy" variant="secondary" loading={saving} onPress={() => void rate('easy')} />
       </View>
-      <AppButton label="Bury until tomorrow" variant="quiet" loading={saving} onPress={() => void changeReviewAvailability('bury')} />
-      <AppButton label="Suspend this card" variant="quiet" loading={saving} onPress={() => void changeReviewAvailability('suspend')} />
+
+      <AiTeacherCard feature="explain_vocabulary" label="Explain simply" moreExamples context={{ learnerLevel: lesson.level, item: { id: lesson.id, type: 'vocabulary', title: lesson.title, meaning: lesson.meaning, reading: lesson.reading, details: [...lesson.partOfSpeech, lesson.example?.japanese ?? ''].filter(Boolean) } }} />
+
+      <SectionHeading title="Navigate vocabulary" />
+      {neighbors.previousId ? <AppButton label="Previous word" variant="quiet" onPress={() => router.replace(`/vocabulary/${encodeURIComponent(neighbors.previousId!)}` as Href)} /> : null}
+      {neighbors.nextId ? <AppButton label="Next word" variant="quiet" onPress={() => router.replace(`/vocabulary/${encodeURIComponent(neighbors.nextId!)}` as Href)} /> : null}
     </ScreenContainer>
   );
 }

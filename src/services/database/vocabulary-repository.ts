@@ -1,6 +1,8 @@
 import { z } from 'zod';
 
 import { getVocabularyRatingAttemptPolicy } from '@/features/progress/vocabulary-rating-policy';
+import { calculateContentMastery } from '@/features/progress/content-mastery';
+import { parseTopicQuizVariantId, selectTopicQuizQuestionIds, type TopicQuizMode } from '@/features/topic-quiz/topic-quiz';
 import type {
   CurriculumWithMastery,
   LearningAttempt,
@@ -10,6 +12,10 @@ import type {
   StudySession,
   StudySessionResult,
   VocabularyLesson,
+  VocabularyNotebookItem,
+  VocabularyNotebookQuery,
+  VocabularyNotebookProgressFilter,
+  VocabularyNotebookView,
   VocabularyPracticeQuestion,
   VocabularyRating,
 } from '@/types/study';
@@ -26,7 +32,8 @@ import {
   type MasteryRow,
 } from './row-mappers';
 import { getDatabase } from './database';
-import { getFsrsDailyQueue } from './fsrs-repository';
+import { getCurrentUserFsrsCard, getFsrsDailyQueue } from './fsrs-repository';
+import { getSetting, setSetting } from './settings-repository';
 
 interface CurriculumMasteryRow extends CurriculumRow, MasteryRow {}
 
@@ -67,6 +74,13 @@ interface StudySessionRow {
   completed_at: string | null;
 }
 
+interface VocabularyNotebookRow extends CurriculumMasteryRow {
+  part_of_speech_json: string;
+  bookmarked: number;
+  due_for_review: number;
+  quiz_score: number | null;
+}
+
 const vocabularyOptionsSchema = z.array(z.object({
   id: z.string().min(1),
   label: z.string().min(1),
@@ -74,6 +88,7 @@ const vocabularyOptionsSchema = z.array(z.object({
 }).strict()).min(2);
 
 const stringArraySchema = z.array(z.string().min(1));
+const vocabularyNotebookViewSchema = z.enum(['compact', 'cards']);
 
 const curriculumMasterySelect = `
   SELECT
@@ -93,6 +108,117 @@ function mapCurriculumWithMastery(row: CurriculumMasteryRow): CurriculumWithMast
     ...mapCurriculumRow(row),
     mastery,
   };
+}
+
+const vocabularyNotebookSelect = `
+  SELECT
+    c.id, c.type, c.level, c.title, c.meaning, c.reading, c.explanation, c.tags_json,
+    m.user_id, m.item_id, m.mastery_score, m.confidence_score, m.correct_count,
+    m.incorrect_count, m.average_response_time_ms, m.last_reviewed_at,
+    m.next_review_at, m.review_interval_days, m.status,
+    details.part_of_speech_json,
+    CASE WHEN bookmarks.vocabulary_id IS NULL THEN 0 ELSE 1 END AS bookmarked,
+    CASE WHEN cards.state NOT IN ('new', 'suspended', 'buried') AND cards.due_at <= ? THEN 1 ELSE 0 END AS due_for_review,
+    (
+      SELECT ROUND(100.0 * SUM(CASE WHEN attempts.correct = 1 THEN 1 ELSE 0 END) / COUNT(*))
+      FROM learning_attempts AS attempts
+      WHERE attempts.item_id = c.id AND attempts.mode = 'quiz'
+    ) AS quiz_score
+  FROM curriculum_items AS c
+  INNER JOIN learner_profile AS p ON 1 = 1
+  INNER JOIN user_mastery AS m ON m.item_id = c.id AND m.user_id = p.id
+  INNER JOIN vocabulary_content_details AS details ON details.vocabulary_id = c.id
+  LEFT JOIN vocabulary_bookmarks AS bookmarks ON bookmarks.user_id = p.id AND bookmarks.vocabulary_id = c.id
+  LEFT JOIN fsrs_cards AS cards ON cards.user_id = p.id AND cards.item_id = c.id
+  WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1 AND c.type = 'vocabulary'
+`;
+
+function mapVocabularyNotebookItem(row: VocabularyNotebookRow): VocabularyNotebookItem {
+  const item = mapCurriculumWithMastery(row);
+  return {
+    ...item,
+    partOfSpeech: stringArraySchema.parse(JSON.parse(row.part_of_speech_json) as unknown),
+    bookmarked: row.bookmarked === 1,
+    dueForReview: row.due_for_review === 1,
+    quizScore: row.quiz_score ?? undefined,
+    contentMastery: calculateContentMastery({ mastery: item.mastery, latestQuizScore: row.quiz_score ?? undefined }),
+  };
+}
+
+function vocabularyProgressClause(progress: VocabularyNotebookProgressFilter): string {
+  switch (progress) {
+    case 'studied': return "AND (m.correct_count + m.incorrect_count > 0 OR m.status != 'new')";
+    case 'not-studied': return "AND m.correct_count + m.incorrect_count = 0 AND m.status = 'new'";
+    case 'weak': return "AND m.status = 'weak'";
+    case 'mastered': return "AND m.status = 'mastered'";
+    case 'bookmarked': return 'AND bookmarks.vocabulary_id IS NOT NULL';
+    case 'due': return "AND cards.state NOT IN ('new', 'suspended', 'buried') AND cards.due_at <= ?";
+    case 'recently': return `AND EXISTS (
+      SELECT 1 FROM study_content_views AS views
+      WHERE views.user_id = m.user_id AND views.item_id = c.id
+    )`;
+    case 'all': return '';
+  }
+}
+
+export async function getVocabularyNotebookItems(
+  query: VocabularyNotebookQuery = {},
+): Promise<VocabularyNotebookItem[]> {
+  const database = await getDatabase();
+  const normalizedQuery = query.query?.trim() ?? '';
+  const level = query.level ?? 'all';
+  const progress = query.progress ?? 'all';
+  const partOfSpeech = query.partOfSpeech?.trim();
+  const limit = Math.max(1, Math.min(query.limit ?? 80, 120));
+  const offset = Math.max(0, Math.floor(query.offset ?? 0));
+  const values: (string | number)[] = [new Date().toISOString()];
+  const clauses = [vocabularyProgressClause(progress)];
+  if (progress === 'due') values.push(new Date().toISOString());
+  if (level !== 'all') {
+    clauses.push('AND c.level = ?');
+    values.push(level);
+  }
+  if (normalizedQuery) {
+    const pattern = `%${normalizedQuery.replaceAll('%', '\\%').replaceAll('_', '\\_')}%`;
+    clauses.push(`AND (c.title LIKE ? ESCAPE '\\' COLLATE NOCASE
+      OR c.reading LIKE ? ESCAPE '\\' COLLATE NOCASE
+      OR c.meaning LIKE ? ESCAPE '\\' COLLATE NOCASE)`);
+    values.push(pattern, pattern, pattern);
+  }
+  if (partOfSpeech) {
+    clauses.push(`AND EXISTS (
+      SELECT 1 FROM json_each(details.part_of_speech_json) AS part_of_speech
+      WHERE part_of_speech.value = ?
+    )`);
+    values.push(partOfSpeech);
+  }
+  values.push(limit, offset);
+  const rows = await database.getAllAsync<VocabularyNotebookRow>(
+    `${vocabularyNotebookSelect}
+     ${clauses.join('\n')}
+     ORDER BY CASE c.level WHEN 'N5' THEN 0 ELSE 1 END, c.id
+     LIMIT ? OFFSET ?`,
+    ...values,
+  );
+  return rows.map(mapVocabularyNotebookItem);
+}
+
+export async function getVocabularyPartOfSpeechOptions(): Promise<string[]> {
+  const database = await getDatabase();
+  const rows = await database.getAllAsync<{ part_of_speech: string }>(`
+    SELECT DISTINCT json_each.value AS part_of_speech
+    FROM vocabulary_content_details, json_each(vocabulary_content_details.part_of_speech_json)
+    ORDER BY part_of_speech
+  `);
+  return rows.map((row) => row.part_of_speech);
+}
+
+export async function getVocabularyNotebookView(): Promise<VocabularyNotebookView> {
+  return (await getSetting('vocabulary_notebook_view', vocabularyNotebookViewSchema)) ?? 'cards';
+}
+
+export async function setVocabularyNotebookView(view: VocabularyNotebookView): Promise<void> {
+  await setSetting('vocabulary_notebook_view', view, vocabularyNotebookViewSchema);
 }
 
 function mapQuestion(row: QuestionRow): VocabularyPracticeQuestion {
@@ -116,6 +242,17 @@ function mapQuestion(row: QuestionRow): VocabularyPracticeQuestion {
   };
 }
 
+function mapTopicQuizVariant(question: VocabularyPracticeQuestion, questionId: string, variantIndex: number): VocabularyPracticeQuestion {
+  const optionOffset = variantIndex % question.options.length;
+  return {
+    ...question,
+    id: questionId,
+    sourceQuestionId: question.id,
+    presentation: `${question.presentation}-review`,
+    options: question.options.slice(optionOffset).concat(question.options.slice(0, optionOffset)),
+  };
+}
+
 async function getLinkedKanji(kanjiIds: string[]): Promise<VocabularyLesson['linkedKanji']> {
   if (!kanjiIds.length) return [];
   const database = await getDatabase();
@@ -134,7 +271,16 @@ async function getLinkedKanji(kanjiIds: string[]): Promise<VocabularyLesson['lin
 
 export async function getCanonicalCurriculumItemById(id: string): Promise<CurriculumWithMastery | undefined> {
   const database = await getDatabase();
-  const row = await database.getFirstAsync<CurriculumMasteryRow>(`${curriculumMasterySelect} AND c.id = ?`, id);
+  const row = await database.getFirstAsync<CurriculumMasteryRow>(
+    `SELECT c.id, c.type, c.level, c.title, c.meaning, c.reading, c.explanation, c.tags_json,
+      m.user_id, m.item_id, m.mastery_score, m.confidence_score, m.correct_count, m.incorrect_count,
+      m.average_response_time_ms, m.last_reviewed_at, m.next_review_at, m.review_interval_days, m.status
+     FROM curriculum_items AS c
+     INNER JOIN learner_profile AS p ON 1 = 1
+     INNER JOIN user_mastery AS m ON m.item_id = c.id AND m.user_id = p.id
+     WHERE c.id = ?`,
+    id,
+  );
   return row ? mapCurriculumWithMastery(row) : undefined;
 }
 
@@ -145,7 +291,7 @@ export async function getVocabularyLessonById(id: string): Promise<VocabularyLes
     id,
   );
   if (!row) return undefined;
-  const [detail, example, bookmark] = await Promise.all([
+  const [detail, example, bookmark, fsrsCard, accuracy] = await Promise.all([
     database.getFirstAsync<DetailRow>(
       'SELECT part_of_speech_json, kanji_ids_json FROM vocabulary_content_details WHERE vocabulary_id = ?',
       id,
@@ -166,6 +312,12 @@ export async function getVocabularyLessonById(id: string): Promise<VocabularyLes
        WHERE bookmarks.vocabulary_id = ?`,
       id,
     ),
+    getCurrentUserFsrsCard(id),
+    database.getFirstAsync<{ correct: number; total: number }>(
+      `SELECT SUM(CASE WHEN correct = 1 THEN 1 ELSE 0 END) AS correct, COUNT(*) AS total
+       FROM (SELECT correct FROM learning_attempts WHERE item_id = ? ORDER BY created_at DESC LIMIT 12)`,
+      id,
+    ),
   ]);
   if (!detail) throw new Error(`Vocabulary ${id} has no bundled detail record.`);
   const kanjiIds = stringArraySchema.parse(JSON.parse(detail.kanji_ids_json) as unknown);
@@ -184,6 +336,8 @@ export async function getVocabularyLessonById(id: string): Promise<VocabularyLes
         }
       : undefined,
     bookmarked: Boolean(bookmark),
+    fsrsCard,
+    recentAccuracy: accuracy?.total ? Math.round((accuracy.correct / accuracy.total) * 100) : undefined,
   };
 }
 
@@ -260,18 +414,34 @@ export async function recordVocabularyRating(
 async function getQuestionRows(questionIds: string[]): Promise<VocabularyPracticeQuestion[]> {
   if (!questionIds.length) return [];
   const database = await getDatabase();
-  const placeholders = questionIds.map(() => '?').join(', ');
+  const sourceQuestionIds = [...new Set(questionIds.map((questionId) => parseTopicQuizVariantId(questionId)?.sourceQuestionId ?? questionId))];
+  const placeholders = sourceQuestionIds.map(() => '?').join(', ');
   const rows = await database.getAllAsync<QuestionRow>(
     `SELECT id, vocabulary_id, level, presentation, prompt, explanation, correct_option_id, options_json
      FROM vocabulary_question_bank WHERE id IN (${placeholders})`,
-    ...questionIds,
+    ...sourceQuestionIds,
   );
   const byId = new Map(rows.map((row) => [row.id, mapQuestion(row)]));
-  return questionIds.map((id) => {
-    const question = byId.get(id);
-    if (!question) throw new Error(`Vocabulary question ${id} is unavailable in the local bundle.`);
-    return question;
+  return questionIds.map((questionId) => {
+    const variant = parseTopicQuizVariantId(questionId);
+    const sourceQuestionId = variant?.sourceQuestionId ?? questionId;
+    const question = byId.get(sourceQuestionId);
+    if (!question) throw new Error(`Vocabulary question ${questionId} is unavailable in the local bundle.`);
+    return variant ? mapTopicQuizVariant(question, questionId, variant.variantIndex) : question;
   });
+}
+
+async function getVocabularyQuestions(vocabularyIds: string[]): Promise<VocabularyPracticeQuestion[]> {
+  if (!vocabularyIds.length) return [];
+  const database = await getDatabase();
+  const rows = await database.getAllAsync<QuestionRow>(
+    `SELECT id, vocabulary_id, level, presentation, prompt, explanation, correct_option_id, options_json
+     FROM vocabulary_question_bank
+     WHERE vocabulary_id IN (${vocabularyIds.map(() => '?').join(', ')})
+     ORDER BY vocabulary_id, id`,
+    ...vocabularyIds,
+  );
+  return rows.map(mapQuestion);
 }
 
 async function getFirstQuestionForVocabulary(vocabularyId: string): Promise<VocabularyPracticeQuestion | undefined> {
@@ -340,14 +510,20 @@ async function findResumableSession(type: StudySession['type']): Promise<StudySe
 export async function startVocabularySession(
   itemIds: string[],
   type: StudySession['type'] = 'vocabulary-practice',
+  options?: { questionIds?: string[] },
 ): Promise<StudySession> {
   const uniqueItemIds = [...new Set(itemIds)];
   if (!uniqueItemIds.length) throw new Error('Choose at least one vocabulary item to practise.');
   const existing = await findResumableSession(type);
   if (existing) return existing;
 
-  const questions = (await Promise.all(uniqueItemIds.map(getFirstQuestionForVocabulary))).flatMap((question) => question ? [question] : []);
+  const questions = options?.questionIds?.length
+    ? await getQuestionRows(options.questionIds)
+    : (await Promise.all(uniqueItemIds.map(getFirstQuestionForVocabulary))).flatMap((question) => question ? [question] : []);
   if (!questions.length) throw new Error('No release-ready vocabulary questions are available for this session.');
+  if (questions.some((question) => !uniqueItemIds.includes(question.vocabularyId))) {
+    throw new Error('The selected vocabulary question bank is invalid.');
+  }
   const profile = await getLearnerProfile();
   const now = new Date().toISOString();
   const id = createLocalId('study-session');
@@ -367,6 +543,17 @@ export async function startVocabularySession(
   const session = await getStudySession(id);
   if (!session) throw new Error('The vocabulary session could not be opened.');
   return session;
+}
+
+export async function startVocabularyTopicQuiz(
+  itemIds: string[],
+  mode: TopicQuizMode,
+): Promise<StudySession> {
+  const uniqueItemIds = [...new Set(itemIds)];
+  if (!uniqueItemIds.length) throw new Error('Choose at least one vocabulary item to practise.');
+  const questions = await getVocabularyQuestions(uniqueItemIds);
+  const questionIds = selectTopicQuizQuestionIds(questions.map((question) => question.id), mode);
+  return startVocabularySession(uniqueItemIds, 'vocabulary-practice', { questionIds });
 }
 
 export async function startReviewSession(mode: 'all' | 'weak'): Promise<StudySession> {
@@ -401,6 +588,8 @@ export async function answerStudySessionQuestion(
   }
   if (!session.attempts.some((attempt) => attempt.questionId === question.id)) {
     const profile = await getLearnerProfile();
+    const correct = selectedOptionId === question.correctOptionId;
+    const answeredAt = new Date().toISOString();
     await recordLearningAttempt({
       id: createLocalId('vocabulary-attempt'),
       userId: profile.id,
@@ -408,12 +597,25 @@ export async function answerStudySessionQuestion(
       questionId: question.id,
       lessonId: session.id,
       mode: 'quiz',
-      correct: selectedOptionId === question.correctOptionId,
+      correct,
       responseTimeMs: Math.max(0, Math.round(responseTimeMs)),
       selectedAnswer: selectedOptionId,
       expectedAnswer: question.correctOptionId,
-      createdAt: new Date().toISOString(),
+      createdAt: answeredAt,
     });
+    if (!correct) {
+      const database = await getDatabase();
+      await database.runAsync(
+        `INSERT INTO mistake_notebook (user_id, question_id, item_id, domain, added_at, last_seen_at)
+         VALUES (?, ?, ?, 'vocabulary', ?, ?)
+         ON CONFLICT(user_id, question_id) DO UPDATE SET last_seen_at = excluded.last_seen_at`,
+        profile.id,
+        question.sourceQuestionId ?? question.id,
+        question.vocabularyId,
+        answeredAt,
+        answeredAt,
+      );
+    }
   }
   const updated = await getStudySession(sessionId);
   if (!updated) throw new Error('The saved practice session could not be reloaded.');
@@ -449,11 +651,21 @@ export async function getStudySessionResult(sessionId: string): Promise<StudySes
   const session = await getStudySession(sessionId);
   if (!session) return undefined;
   const correctCount = session.attempts.filter((attempt) => attempt.correct).length;
+  const incorrectCount = session.attempts.filter((attempt) => !attempt.correct).length;
+  const percentage = session.questions.length ? Math.round((correctCount / session.questions.length) * 100) : 0;
+  const startedAt = Date.parse(session.createdAt);
+  const completedAt = session.completedAt ? Date.parse(session.completedAt) : Number.NaN;
+  const timeTakenSeconds = Number.isFinite(startedAt) && Number.isFinite(completedAt)
+    ? Math.max(0, Math.round((completedAt - startedAt) / 1000))
+    : 0;
   return {
     session,
     correctCount,
+    incorrectCount,
     totalQuestions: session.questions.length,
-    percentage: session.questions.length ? Math.round((correctCount / session.questions.length) * 100) : 0,
+    percentage,
+    timeTakenSeconds,
+    recommendation: percentage < 60 ? 'needs-review' : percentage < 85 ? 'developing' : 'good',
   };
 }
 

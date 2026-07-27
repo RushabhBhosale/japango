@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 12;
+export const CURRENT_DATABASE_VERSION = 16;
 
 export interface DatabaseMigration {
   version: number;
@@ -1092,6 +1092,315 @@ const versionTwelveSql = `
   );
 `;
 
+// Study Library records learner-owned viewing and flashcard session state only.
+// Canonical curriculum, question banks, FSRS cards, and existing practice
+// sessions remain in their original tables and continue to use stable IDs.
+const versionThirteenSql = `
+  CREATE TABLE IF NOT EXISTS study_content_views (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    item_id TEXT NOT NULL,
+    content_type TEXT NOT NULL CHECK (content_type IN ('grammar', 'vocabulary', 'kanji')),
+    viewed_at TEXT NOT NULL,
+    scroll_position REAL,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS study_content_views_recent_idx
+    ON study_content_views(user_id, viewed_at DESC);
+  CREATE INDEX IF NOT EXISTS study_content_views_item_idx
+    ON study_content_views(user_id, item_id, viewed_at DESC);
+
+  CREATE TABLE IF NOT EXISTS kanji_flashcard_sessions (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    set_name TEXT NOT NULL,
+    directions_json TEXT NOT NULL,
+    item_ids_json TEXT NOT NULL,
+    current_index INTEGER NOT NULL DEFAULT 0 CHECK (current_index >= 0),
+    status TEXT NOT NULL CHECK (status IN ('in-progress', 'completed', 'ended')),
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    completed_at TEXT,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS kanji_flashcard_sessions_recent_idx
+    ON kanji_flashcard_sessions(user_id, status, updated_at DESC);
+
+  CREATE INDEX IF NOT EXISTS learning_attempts_item_mode_recent_idx
+    ON learning_attempts(item_id, mode, created_at DESC);
+  CREATE INDEX IF NOT EXISTS content_study_sessions_item_recent_idx
+    ON content_study_sessions(user_id, item_id, status, updated_at DESC);
+  CREATE INDEX IF NOT EXISTS vocabulary_bookmarks_user_recent_idx
+    ON vocabulary_bookmarks(user_id, created_at DESC);
+  CREATE INDEX IF NOT EXISTS curriculum_bookmarks_user_recent_idx
+    ON curriculum_bookmarks(user_id, created_at DESC);
+`;
+
+// Course records contain authored structure and learner-owned progression only.
+// Canonical learning content remains in the existing curriculum and question tables.
+const versionFourteenSql = `
+  CREATE TABLE IF NOT EXISTS courses (
+    id TEXT PRIMARY KEY NOT NULL,
+    level TEXT NOT NULL CHECK (level IN ('foundations', 'N5', 'N4')),
+    title TEXT NOT NULL,
+    description TEXT NOT NULL,
+    manifest_version INTEGER NOT NULL,
+    manifest_hash TEXT NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS course_units (
+    id TEXT PRIMARY KEY NOT NULL,
+    course_id TEXT NOT NULL,
+    unit_order INTEGER NOT NULL CHECK (unit_order > 0),
+    title TEXT NOT NULL,
+    goal TEXT NOT NULL,
+    UNIQUE (course_id, unit_order),
+    FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE IF NOT EXISTS course_lessons (
+    id TEXT PRIMARY KEY NOT NULL,
+    course_id TEXT NOT NULL,
+    unit_id TEXT NOT NULL,
+    lesson_order INTEGER NOT NULL CHECK (lesson_order > 0),
+    lesson_number INTEGER NOT NULL CHECK (lesson_number > 0),
+    title TEXT NOT NULL,
+    theme TEXT NOT NULL,
+    communication_goal TEXT NOT NULL,
+    objectives_json TEXT NOT NULL,
+    estimated_minutes INTEGER NOT NULL CHECK (estimated_minutes > 0),
+    prerequisites_json TEXT NOT NULL,
+    UNIQUE (course_id, lesson_order),
+    UNIQUE (course_id, lesson_number),
+    FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE,
+    FOREIGN KEY (unit_id) REFERENCES course_units(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_lessons_unit_order_idx ON course_lessons(unit_id, lesson_order);
+
+  CREATE TABLE IF NOT EXISTS course_lesson_content_refs (
+    lesson_id TEXT NOT NULL,
+    reference_type TEXT NOT NULL CHECK (reference_type IN ('vocabulary', 'grammar', 'kanji', 'reading', 'listening', 'vocabulary-question', 'practice-question', 'assessment-question')),
+    reference_id TEXT NOT NULL,
+    reference_role TEXT NOT NULL CHECK (reference_role IN ('introduced', 'practice', 'checkpoint', 'context')),
+    PRIMARY KEY (lesson_id, reference_type, reference_id, reference_role),
+    FOREIGN KEY (lesson_id) REFERENCES course_lessons(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_lesson_content_refs_lookup_idx ON course_lesson_content_refs(reference_type, reference_id, lesson_id);
+
+  CREATE TABLE IF NOT EXISTS course_lesson_sections (
+    id TEXT PRIMARY KEY NOT NULL,
+    lesson_id TEXT NOT NULL,
+    section_order INTEGER NOT NULL CHECK (section_order > 0),
+    kind TEXT NOT NULL CHECK (kind IN ('introduction', 'vocabulary', 'grammar', 'kanji', 'dialogue', 'listening', 'reading', 'practice', 'checkpoint', 'summary')),
+    title TEXT NOT NULL,
+    instruction TEXT NOT NULL,
+    estimated_minutes INTEGER NOT NULL CHECK (estimated_minutes > 0),
+    UNIQUE (lesson_id, section_order),
+    FOREIGN KEY (lesson_id) REFERENCES course_lessons(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE IF NOT EXISTS course_enrollments (
+    user_id TEXT NOT NULL,
+    course_id TEXT NOT NULL,
+    started_at TEXT NOT NULL,
+    completed_at TEXT,
+    selected_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, course_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE IF NOT EXISTS course_lesson_progress (
+    user_id TEXT NOT NULL,
+    lesson_id TEXT NOT NULL,
+    current_section_id TEXT,
+    completed_sections_json TEXT NOT NULL DEFAULT '[]',
+    best_checkpoint_score INTEGER,
+    latest_checkpoint_score INTEGER,
+    started_at TEXT,
+    completed_at TEXT,
+    time_spent_seconds INTEGER NOT NULL DEFAULT 0 CHECK (time_spent_seconds >= 0),
+    placed_by_assessment INTEGER NOT NULL DEFAULT 0 CHECK (placed_by_assessment IN (0, 1)),
+    PRIMARY KEY (user_id, lesson_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (lesson_id) REFERENCES course_lessons(id) ON DELETE CASCADE,
+    FOREIGN KEY (current_section_id) REFERENCES course_lesson_sections(id) ON DELETE SET NULL
+  );
+  CREATE INDEX IF NOT EXISTS course_lesson_progress_resume_idx ON course_lesson_progress(user_id, completed_at, started_at DESC);
+
+  CREATE TABLE IF NOT EXISTS course_section_progress (
+    user_id TEXT NOT NULL,
+    section_id TEXT NOT NULL,
+    completed_at TEXT NOT NULL,
+    time_spent_seconds INTEGER NOT NULL DEFAULT 0 CHECK (time_spent_seconds >= 0),
+    PRIMARY KEY (user_id, section_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (section_id) REFERENCES course_lesson_sections(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE IF NOT EXISTS course_checkpoint_attempts (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    lesson_id TEXT NOT NULL,
+    score INTEGER NOT NULL CHECK (score BETWEEN 0 AND 100),
+    result_json TEXT NOT NULL,
+    answers_json TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (lesson_id) REFERENCES course_lessons(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_checkpoint_attempts_history_idx ON course_checkpoint_attempts(user_id, lesson_id, created_at DESC);
+
+  CREATE TABLE IF NOT EXISTS course_unit_review_attempts (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    unit_id TEXT NOT NULL,
+    score INTEGER NOT NULL CHECK (score BETWEEN 0 AND 100),
+    result_json TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (unit_id) REFERENCES course_units(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_unit_review_attempts_history_idx ON course_unit_review_attempts(user_id, unit_id, created_at DESC);
+
+  CREATE TABLE IF NOT EXISTS course_placement_decisions (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    course_id TEXT NOT NULL,
+    unit_id TEXT NOT NULL,
+    lesson_id TEXT NOT NULL,
+    assessment_score INTEGER,
+    accepted INTEGER NOT NULL CHECK (accepted IN (0, 1)),
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE,
+    FOREIGN KEY (unit_id) REFERENCES course_units(id) ON DELETE CASCADE,
+    FOREIGN KEY (lesson_id) REFERENCES course_lessons(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_placement_decisions_recent_idx ON course_placement_decisions(user_id, created_at DESC);
+
+  CREATE TABLE IF NOT EXISTS course_manifest_state (
+    manifest_key TEXT PRIMARY KEY NOT NULL,
+    manifest_version INTEGER NOT NULL,
+    manifest_hash TEXT NOT NULL,
+    installed_at TEXT NOT NULL
+  );
+`;
+
+// Activity-level textbook progression. These rows store authored lesson flow
+// and learner-owned responses; canonical curriculum and FSRS remain unchanged.
+const versionFifteenSql = `
+  ALTER TABLE course_lessons ADD COLUMN lesson_kind TEXT NOT NULL DEFAULT 'lesson' CHECK (lesson_kind IN ('lesson', 'workshop'));
+  ALTER TABLE course_lessons ADD COLUMN depth_exception TEXT;
+  ALTER TABLE course_lessons ADD COLUMN verb_forms_json TEXT NOT NULL DEFAULT '[]';
+  ALTER TABLE course_lessons ADD COLUMN adjective_forms_json TEXT NOT NULL DEFAULT '[]';
+
+  CREATE TABLE IF NOT EXISTS course_lesson_activities (
+    id TEXT PRIMARY KEY NOT NULL,
+    lesson_id TEXT NOT NULL,
+    activity_order INTEGER NOT NULL CHECK (activity_order > 0),
+    activity_type TEXT NOT NULL CHECK (activity_type IN ('introduction', 'warm_up', 'story', 'vocabulary_intro', 'vocabulary_practice', 'grammar_explanation', 'substitution_drill', 'conjugation_drill', 'sentence_transformation', 'sentence_ordering', 'sentence_production', 'error_correction', 'kanji_intro', 'kanji_practice', 'dialogue', 'reading', 'timed_reading', 'listening', 'dictation', 'shadowing', 'mixed_practice', 'checkpoint', 'reflection')),
+    title TEXT NOT NULL,
+    instruction TEXT NOT NULL,
+    estimated_minutes INTEGER NOT NULL CHECK (estimated_minutes > 0),
+    required INTEGER NOT NULL CHECK (required IN (0, 1)),
+    interaction_count INTEGER NOT NULL CHECK (interaction_count > 0),
+    content_refs_json TEXT NOT NULL,
+    config_json TEXT NOT NULL,
+    UNIQUE (lesson_id, activity_order),
+    FOREIGN KEY (lesson_id) REFERENCES course_lessons(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_lesson_activities_lesson_order_idx ON course_lesson_activities(lesson_id, activity_order);
+
+  CREATE TABLE IF NOT EXISTS course_activity_progress (
+    user_id TEXT NOT NULL,
+    activity_id TEXT NOT NULL,
+    current_interaction_index INTEGER NOT NULL DEFAULT 0 CHECK (current_interaction_index >= 0),
+    completed_at TEXT,
+    time_spent_seconds INTEGER NOT NULL DEFAULT 0 CHECK (time_spent_seconds >= 0),
+    PRIMARY KEY (user_id, activity_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (activity_id) REFERENCES course_lesson_activities(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_activity_progress_resume_idx ON course_activity_progress(user_id, completed_at, activity_id);
+
+  CREATE TABLE IF NOT EXISTS course_activity_attempts (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    activity_id TEXT NOT NULL,
+    exercise_id TEXT NOT NULL,
+    interaction_index INTEGER NOT NULL CHECK (interaction_index >= 0),
+    item_id TEXT,
+    category TEXT NOT NULL CHECK (category IN ('vocabulary', 'grammar', 'conjugation', 'kanji', 'reading', 'listening', 'production')),
+    response_text TEXT,
+    accepted_answers_json TEXT NOT NULL,
+    correct INTEGER NOT NULL CHECK (correct IN (0, 1)),
+    response_time_ms INTEGER NOT NULL DEFAULT 0 CHECK (response_time_ms >= 0),
+    created_at TEXT NOT NULL,
+    UNIQUE (user_id, activity_id, exercise_id, interaction_index),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (activity_id) REFERENCES course_lesson_activities(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE SET NULL
+  );
+  CREATE INDEX IF NOT EXISTS course_activity_attempts_activity_idx ON course_activity_attempts(user_id, activity_id, interaction_index);
+  CREATE INDEX IF NOT EXISTS course_activity_attempts_item_idx ON course_activity_attempts(user_id, item_id, created_at DESC);
+
+  CREATE TABLE IF NOT EXISTS course_reading_progress (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    activity_id TEXT NOT NULL,
+    character_count INTEGER NOT NULL CHECK (character_count >= 0),
+    elapsed_ms INTEGER NOT NULL CHECK (elapsed_ms >= 0),
+    comprehension_score INTEGER,
+    reread_count INTEGER NOT NULL DEFAULT 0 CHECK (reread_count >= 0),
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (activity_id) REFERENCES course_lesson_activities(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_reading_progress_recent_idx ON course_reading_progress(user_id, activity_id, created_at DESC);
+
+  CREATE TABLE IF NOT EXISTS course_production_answers (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    activity_id TEXT NOT NULL,
+    exercise_id TEXT NOT NULL,
+    answer_text TEXT NOT NULL,
+    required_pattern TEXT,
+    self_confirmed INTEGER NOT NULL DEFAULT 0 CHECK (self_confirmed IN (0, 1)),
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (activity_id) REFERENCES course_lesson_activities(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_production_answers_activity_idx ON course_production_answers(user_id, activity_id, created_at DESC);
+`;
+
+// Preserve both the first response and later correction for course analytics.
+// The existing activity-attempt row remains the current-resume projection.
+const versionSixteenSql = `
+  ALTER TABLE course_lessons ADD COLUMN depth_exception_reason TEXT;
+
+  CREATE TABLE IF NOT EXISTS course_activity_attempt_history (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    activity_id TEXT NOT NULL,
+    exercise_id TEXT NOT NULL,
+    interaction_index INTEGER NOT NULL CHECK (interaction_index >= 0),
+    attempt_number INTEGER NOT NULL CHECK (attempt_number > 0),
+    item_id TEXT,
+    category TEXT NOT NULL CHECK (category IN ('vocabulary', 'grammar', 'conjugation', 'kanji', 'reading', 'listening', 'production')),
+    correct INTEGER NOT NULL CHECK (correct IN (0, 1)),
+    response_time_ms INTEGER NOT NULL DEFAULT 0 CHECK (response_time_ms >= 0),
+    created_at TEXT NOT NULL,
+    UNIQUE (user_id, activity_id, exercise_id, interaction_index, attempt_number),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (activity_id) REFERENCES course_lesson_activities(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE SET NULL
+  );
+  CREATE INDEX IF NOT EXISTS course_activity_attempt_history_lookup_idx
+    ON course_activity_attempt_history(user_id, activity_id, exercise_id, interaction_index, attempt_number);
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1105,6 +1414,10 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 10, sql: versionTenSql },
   { version: 11, sql: versionElevenSql },
   { version: 12, sql: versionTwelveSql },
+  { version: 13, sql: versionThirteenSql },
+  { version: 14, sql: versionFourteenSql },
+  { version: 15, sql: versionFifteenSql },
+  { version: 16, sql: versionSixteenSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

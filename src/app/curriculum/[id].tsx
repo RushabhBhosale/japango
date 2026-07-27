@@ -35,15 +35,19 @@ export default function CurriculumDetailScreen() {
       </ScreenContainer>
     );
   }
-  if (item.type === 'grammar') {
+  // Legacy Foundation records deliberately remain in the generic canonical view:
+  // their original short explanations are useful even though they predate the
+  // richer bundled notebook-detail tables.
+  const isLegacyFoundationItem = item.id.startsWith('n5-');
+  if (item.type === 'grammar' && !isLegacyFoundationItem) {
     router.replace(`/grammar/${encodeURIComponent(item.id)}` as Href);
     return null;
   }
-  if (item.type === 'kanji') {
+  if (item.type === 'kanji' && !isLegacyFoundationItem) {
     router.replace(`/kanji/${encodeURIComponent(item.id)}` as Href);
     return null;
   }
-  if (item.type === 'reading') {
+  if (item.type === 'reading' && !isLegacyFoundationItem) {
     router.replace(`/reading/${encodeURIComponent(item.id)}` as Href);
     return null;
   }

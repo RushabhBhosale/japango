@@ -1,13 +1,17 @@
 import { z } from 'zod';
 
+import { parseTopicQuizVariantId, selectTopicQuizQuestionIds, type TopicQuizMode } from '@/features/topic-quiz/topic-quiz';
+import { calculateContentMastery } from '@/features/progress/content-mastery';
+
 import type { CurriculumWithMastery } from '@/types/learning';
 import type {
   ContentLessonType, ContentPracticeQuestion, ContentSentence, ContentStudyResult, ContentStudySession,
-  CurriculumSearchResult, GrammarLesson, KanjiLesson, LinkedCurriculumItem, ListeningLesson, ReadingLesson,
+  CurriculumSearchResult, GrammarLesson, KanjiLesson, KanjiNotebookFilter, KanjiNotebookItem, LinkedCurriculumItem, ListeningLesson, ReadingLesson,
 } from '@/types/content-learning';
 import { createLocalId } from '@/utils/id';
 
 import { getDatabase } from './database';
+import { getCurrentUserFsrsCard } from './fsrs-repository';
 import { getLearnerProfile } from './profile-repository';
 import { recordLearningAttempt } from './progress-repository';
 import { mapAttemptRow, mapCurriculumRow, mapMasteryRow, type AttemptRow, type CurriculumRow, type MasteryRow } from './row-mappers';
@@ -16,10 +20,12 @@ const contentTypeSchema = z.enum(['grammar', 'kanji', 'reading', 'listening']);
 const stringArraySchema = z.array(z.string().min(1));
 const optionsSchema = z.array(z.object({ id: z.string().min(1), label: z.string().min(1), feedback: z.string().nullable() }).strict()).min(2);
 const grammarDetailSchema = z.object({
+  id: z.string().min(1),
   meanings: z.array(z.string().min(1)), formation: z.array(z.object({ base: z.string(), structure: z.string() }).strict()),
   relatedGrammarIds: stringArraySchema, notes: z.string().nullable(),
 }).strict();
 const kanjiDetailSchema = z.object({
+  id: z.string().min(1),
   meanings: z.array(z.string().min(1)), onReadings: z.array(z.string()), kunReadings: z.array(z.string()), strokeCount: z.number().int().positive().nullable(),
   vocabularyIds: stringArraySchema, relatedKanjiIds: stringArraySchema, components: z.array(z.string()),
 }).strict();
@@ -57,6 +63,18 @@ function mapQuestion(row: ContentQuestionRow): ContentPracticeQuestion {
   const options = optionsSchema.parse(JSON.parse(row.options_json) as unknown);
   if (!options.some((option) => option.id === row.correct_option_id)) throw new Error(`Question ${row.id} has no correct option.`);
   return { id: row.id, itemId: row.item_id, domain: contentTypeSchema.parse(row.domain), level: row.level, presentation: row.presentation, prompt: row.prompt, explanation: row.explanation ?? undefined, correctOptionId: row.correct_option_id, options: options.map((option) => ({ id: option.id, label: option.label, feedback: option.feedback ?? undefined })) };
+}
+
+function mapTopicQuizVariant(question: ContentPracticeQuestion, questionId: string, variantIndex: number): ContentPracticeQuestion {
+  const optionOffset = variantIndex % question.options.length;
+  const options = question.options.slice(optionOffset).concat(question.options.slice(0, optionOffset));
+  return {
+    ...question,
+    id: questionId,
+    sourceQuestionId: question.id,
+    presentation: `${question.presentation}-review`,
+    options,
+  };
 }
 
 async function linkedItems(ids: string[]): Promise<LinkedCurriculumItem[]> {
@@ -112,8 +130,26 @@ export async function getKanjiById(id: string): Promise<KanjiLesson | undefined>
   const row = await getLessonRow(id, 'kanji');
   if (!row) return undefined;
   const detail = kanjiDetailSchema.parse(JSON.parse(row.detail_json) as unknown);
-  const [linkedVocabulary, relatedKanji, examples, bookmarked, questions] = await Promise.all([linkedItems(detail.vocabularyIds), linkedItems(detail.relatedKanjiIds), linkedSentences(id, 'kanji_sentence_links', 'kanji_id'), isBookmarked(id), questionCount(id)]);
-  return { ...mapMastered(row), ...detail, strokeCount: detail.strokeCount ?? undefined, linkedVocabulary, relatedKanji, examples, bookmarked, questionCount: questions };
+  const [linkedVocabulary, relatedKanji, examples, bookmarked, questions, fsrsCard, recentAccuracy] = await Promise.all([
+    linkedItems(detail.vocabularyIds),
+    linkedItems(detail.relatedKanjiIds),
+    linkedSentences(id, 'kanji_sentence_links', 'kanji_id'),
+    isBookmarked(id),
+    questionCount(id),
+    getCurrentUserFsrsCard(id),
+    getRecentAccuracy(id),
+  ]);
+  return { ...mapMastered(row), ...detail, strokeCount: detail.strokeCount ?? undefined, linkedVocabulary, relatedKanji, examples, bookmarked, questionCount: questions, fsrsCard, recentAccuracy };
+}
+
+async function getRecentAccuracy(itemId: string): Promise<number | undefined> {
+  const database = await getDatabase();
+  const row = await database.getFirstAsync<{ correct: number; total: number }>(
+    `SELECT SUM(CASE WHEN correct = 1 THEN 1 ELSE 0 END) AS correct, COUNT(*) AS total
+     FROM (SELECT correct FROM learning_attempts WHERE item_id = ? ORDER BY created_at DESC LIMIT 12)`,
+    itemId,
+  );
+  return row?.total ? Math.round((row.correct / row.total) * 100) : undefined;
 }
 
 export async function getReadingById(id: string): Promise<ReadingLesson | undefined> {
@@ -141,12 +177,15 @@ export async function getContentQuestions(itemId: string): Promise<ContentPracti
 async function getQuestionSet(questionIds: string[]): Promise<ContentPracticeQuestion[]> {
   if (!questionIds.length) return [];
   const database = await getDatabase();
-  const rows = await database.getAllAsync<ContentQuestionRow>(`SELECT id, item_id, domain, level, presentation, prompt, explanation, correct_option_id, options_json FROM canonical_practice_question_bank WHERE id IN (${questionIds.map(() => '?').join(', ')})`, ...questionIds);
+  const sourceQuestionIds = [...new Set(questionIds.map((questionId) => parseTopicQuizVariantId(questionId)?.sourceQuestionId ?? questionId))];
+  const rows = await database.getAllAsync<ContentQuestionRow>(`SELECT id, item_id, domain, level, presentation, prompt, explanation, correct_option_id, options_json FROM canonical_practice_question_bank WHERE id IN (${sourceQuestionIds.map(() => '?').join(', ')})`, ...sourceQuestionIds);
   const byId = new Map(rows.map((row) => [row.id, mapQuestion(row)]));
-  return questionIds.map((id) => {
-    const question = byId.get(id);
-    if (!question) throw new Error(`Question ${id} is unavailable in the installed curriculum.`);
-    return question;
+  return questionIds.map((questionId) => {
+    const variant = parseTopicQuizVariantId(questionId);
+    const sourceQuestionId = variant?.sourceQuestionId ?? questionId;
+    const question = byId.get(sourceQuestionId);
+    if (!question) throw new Error(`Question ${questionId} is unavailable in the installed curriculum.`);
+    return variant ? mapTopicQuizVariant(question, questionId, variant.variantIndex) : question;
   });
 }
 
@@ -163,19 +202,38 @@ export async function getContentSession(id: string): Promise<ContentStudySession
   return row ? mapSession(row) : undefined;
 }
 
-export async function startContentSession(itemId: string, type: ContentLessonType): Promise<ContentStudySession> {
+export async function startContentSession(
+  itemId: string,
+  type: ContentLessonType,
+  options?: { questionIds?: string[] },
+): Promise<ContentStudySession> {
   const database = await getDatabase();
   const profile = await getLearnerProfile();
   const existing = await database.getFirstAsync<ContentSessionRow>(`SELECT id, content_type, status, item_id, question_ids_json, current_index, created_at, updated_at, completed_at FROM content_study_sessions WHERE user_id = ? AND content_type = ? AND item_id = ? AND status = 'in-progress' ORDER BY updated_at DESC LIMIT 1`, profile.id, type, itemId);
   if (existing) return mapSession(existing);
-  const questions = await getContentQuestions(itemId);
+  const questions = options?.questionIds?.length
+    ? await getQuestionSet(options.questionIds)
+    : await getContentQuestions(itemId);
   if (!questions.length) throw new Error('No release-ready questions are available for this lesson.');
-  if (questions.some((question) => question.domain !== type)) throw new Error('The lesson question bank has an invalid content type.');
+  if (questions.some((question) => question.domain !== type || question.itemId !== itemId)) throw new Error('The lesson question bank has an invalid content type.');
   const id = createLocalId('content-session'); const now = new Date().toISOString();
   await database.runAsync(`INSERT INTO content_study_sessions (id, user_id, content_type, status, item_id, question_ids_json, current_index, created_at, updated_at) VALUES (?, ?, ?, 'in-progress', ?, ?, 0, ?, ?)`, id, profile.id, type, itemId, JSON.stringify(questions.map((question) => question.id)), now, now);
   const session = await getContentSession(id);
   if (!session) throw new Error('The learning session could not be opened.');
   return session;
+}
+
+export async function startContentTopicQuiz(
+  itemId: string,
+  type: Extract<ContentLessonType, 'grammar' | 'kanji'>,
+  mode: TopicQuizMode,
+): Promise<ContentStudySession> {
+  const questions = await getContentQuestions(itemId);
+  if (questions.some((question) => question.domain !== type)) {
+    throw new Error('The lesson question bank has an invalid content type.');
+  }
+  const questionIds = selectTopicQuizQuestionIds(questions.map((question) => question.id), mode);
+  return startContentSession(itemId, type, { questionIds });
 }
 
 export async function answerContentSessionQuestion(sessionId: string, selectedOptionId: string, responseTimeMs: number): Promise<ContentStudySession> {
@@ -185,7 +243,23 @@ export async function answerContentSessionQuestion(sessionId: string, selectedOp
   if (!question || !question.options.some((option) => option.id === selectedOptionId)) throw new Error('Select one of the available answers.');
   if (!session.attempts.some((attempt) => attempt.questionId === question.id)) {
     const profile = await getLearnerProfile();
-    await recordLearningAttempt({ id: createLocalId('content-attempt'), userId: profile.id, itemId: question.itemId, questionId: question.id, lessonId: session.id, mode: session.type === 'reading' ? 'reading' : session.type === 'listening' ? 'listening' : 'quiz', correct: selectedOptionId === question.correctOptionId, responseTimeMs: Math.max(0, Math.round(responseTimeMs)), selectedAnswer: selectedOptionId, expectedAnswer: question.correctOptionId, createdAt: new Date().toISOString() });
+    const correct = selectedOptionId === question.correctOptionId;
+    const answeredAt = new Date().toISOString();
+    await recordLearningAttempt({ id: createLocalId('content-attempt'), userId: profile.id, itemId: question.itemId, questionId: question.id, lessonId: session.id, mode: session.type === 'reading' ? 'reading' : session.type === 'listening' ? 'listening' : 'quiz', correct, responseTimeMs: Math.max(0, Math.round(responseTimeMs)), selectedAnswer: selectedOptionId, expectedAnswer: question.correctOptionId, createdAt: answeredAt });
+    if (!correct) {
+      const database = await getDatabase();
+      await database.runAsync(
+        `INSERT INTO mistake_notebook (user_id, question_id, item_id, domain, added_at, last_seen_at)
+         VALUES (?, ?, ?, ?, ?, ?)
+         ON CONFLICT(user_id, question_id) DO UPDATE SET last_seen_at = excluded.last_seen_at`,
+        profile.id,
+        question.sourceQuestionId ?? question.id,
+        question.itemId,
+        question.domain,
+        answeredAt,
+        answeredAt,
+      );
+    }
   }
   const updated = await getContentSession(sessionId);
   if (!updated) throw new Error('The saved answer could not be reloaded.');
@@ -208,7 +282,15 @@ export async function getContentStudyResult(sessionId: string): Promise<ContentS
   const session = await getContentSession(sessionId);
   if (!session) return undefined;
   const correctCount = session.attempts.filter((attempt) => attempt.correct).length;
-  return { session, correctCount, totalQuestions: session.questions.length, percentage: session.questions.length ? Math.round((correctCount / session.questions.length) * 100) : 0 };
+  const incorrectCount = session.attempts.filter((attempt) => !attempt.correct).length;
+  const percentage = session.questions.length ? Math.round((correctCount / session.questions.length) * 100) : 0;
+  const startedAt = Date.parse(session.createdAt);
+  const completedAt = session.completedAt ? Date.parse(session.completedAt) : Number.NaN;
+  const timeTakenSeconds = Number.isFinite(startedAt) && Number.isFinite(completedAt)
+    ? Math.max(0, Math.round((completedAt - startedAt) / 1000))
+    : 0;
+  const recommendation = percentage < 60 ? 'needs-review' : percentage < 85 ? 'developing' : 'good';
+  return { session, correctCount, incorrectCount, totalQuestions: session.questions.length, percentage, timeTakenSeconds, recommendation };
 }
 
 export async function toggleContentBookmark(itemId: string): Promise<boolean> {
@@ -223,6 +305,113 @@ export async function getContentList(type: ContentLessonType, level?: 'N5' | 'N4
   const database = await getDatabase();
   const rows = await database.getAllAsync<CurriculumMasteryRow>(`${masterySelect} AND c.type = ? ${level ? 'AND c.level = ?' : ''} ORDER BY c.level, c.id LIMIT 60`, ...(level ? [type, level] : [type]));
   return rows.map(mapMastered);
+}
+
+function kanjiNotebookFilterClause(filter: KanjiNotebookFilter): { sql: string; values: string[] } {
+  switch (filter) {
+    case 'N5':
+    case 'N4': return { sql: 'AND c.level = ?', values: [filter] };
+    case 'studied': return { sql: "AND (m.correct_count + m.incorrect_count > 0 OR m.status != 'new')", values: [] };
+    case 'not-studied': return { sql: "AND m.correct_count + m.incorrect_count = 0 AND m.status = 'new'", values: [] };
+    case 'weak': return { sql: "AND m.status = 'weak'", values: [] };
+    case 'mastered': return { sql: "AND m.status = 'mastered'", values: [] };
+    case 'bookmarked': return { sql: 'AND bookmarks.item_id IS NOT NULL', values: [] };
+    case 'due': return { sql: "AND cards.state NOT IN ('new', 'suspended', 'buried') AND cards.due_at <= ?", values: [new Date().toISOString()] };
+    case 'recently': return { sql: `AND EXISTS (
+      SELECT 1 FROM study_content_views AS views
+      WHERE views.user_id = m.user_id AND views.item_id = c.id
+    )`, values: [] };
+    case 'all': return { sql: '', values: [] };
+  }
+}
+
+export async function getKanjiNotebookItems(
+  filter: KanjiNotebookFilter = 'all',
+  limit = 320,
+): Promise<KanjiNotebookItem[]> {
+  const database = await getDatabase();
+  const clause = kanjiNotebookFilterClause(filter);
+  const rows = await database.getAllAsync<CurriculumMasteryRow & { bookmarked: number; due_for_review: number; quiz_score: number | null }>(
+    `SELECT c.id, c.type, c.level, c.title, c.meaning, c.reading, c.explanation, c.tags_json,
+      m.user_id, m.item_id, m.mastery_score, m.confidence_score, m.correct_count, m.incorrect_count,
+      m.average_response_time_ms, m.last_reviewed_at, m.next_review_at, m.review_interval_days, m.status,
+      d.detail_json,
+      CASE WHEN bookmarks.item_id IS NULL THEN 0 ELSE 1 END AS bookmarked,
+      CASE WHEN cards.state NOT IN ('new', 'suspended', 'buried') AND cards.due_at <= ? THEN 1 ELSE 0 END AS due_for_review,
+      (SELECT ROUND(100.0 * SUM(CASE WHEN attempts.correct = 1 THEN 1 ELSE 0 END) / COUNT(*))
+       FROM learning_attempts AS attempts WHERE attempts.item_id = c.id AND attempts.mode = 'quiz') AS quiz_score
+     FROM curriculum_items AS c
+     INNER JOIN learner_profile AS p ON 1 = 1
+     INNER JOIN user_mastery AS m ON m.item_id = c.id AND m.user_id = p.id
+     INNER JOIN curriculum_content_details AS d ON d.item_id = c.id AND d.content_type = 'kanji'
+     LEFT JOIN curriculum_bookmarks AS bookmarks ON bookmarks.user_id = p.id AND bookmarks.item_id = c.id
+     LEFT JOIN fsrs_cards AS cards ON cards.user_id = p.id AND cards.item_id = c.id
+     WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1 AND c.type = 'kanji'
+     ${clause.sql}
+     ORDER BY CASE c.level WHEN 'N5' THEN 0 ELSE 1 END, c.id
+     LIMIT ?`,
+    new Date().toISOString(),
+    ...clause.values,
+    Math.max(1, Math.min(limit, 400)),
+  );
+  return rows.map((row) => {
+    const detail = kanjiDetailSchema.parse(JSON.parse(row.detail_json) as unknown);
+    const item = mapMastered(row);
+    return {
+      ...item,
+      meanings: detail.meanings,
+      onReadings: detail.onReadings,
+      kunReadings: detail.kunReadings,
+      strokeCount: detail.strokeCount ?? undefined,
+      vocabularyIds: detail.vocabularyIds,
+      bookmarked: row.bookmarked === 1,
+      dueForReview: row.due_for_review === 1,
+      quizScore: row.quiz_score ?? undefined,
+      contentMastery: calculateContentMastery({ mastery: item.mastery, latestQuizScore: row.quiz_score ?? undefined }),
+    };
+  });
+}
+
+export async function getContentNeighbors(
+  itemId: string,
+  type: ContentLessonType,
+): Promise<{ previousId?: string; nextId?: string }> {
+  const database = await getDatabase();
+  const current = await database.getFirstAsync<{ level: 'N5' | 'N4' }>(
+    `SELECT level FROM curriculum_items
+     WHERE id = ? AND type = ? AND curriculum_source = 'bundled' AND release_ready = 1`,
+    itemId,
+    type,
+  );
+  if (!current) return {};
+  const levelOrder = `CASE level WHEN 'N5' THEN 0 ELSE 1 END`;
+  const [previous, next] = await Promise.all([
+    database.getFirstAsync<{ id: string }>(
+      `SELECT id FROM curriculum_items
+       WHERE type = ? AND curriculum_source = 'bundled' AND release_ready = 1
+         AND (${levelOrder} < CASE ? WHEN 'N5' THEN 0 ELSE 1 END
+           OR (${levelOrder} = CASE ? WHEN 'N5' THEN 0 ELSE 1 END AND id < ?))
+       ORDER BY ${levelOrder} DESC, id DESC
+       LIMIT 1`,
+      type,
+      current.level,
+      current.level,
+      itemId,
+    ),
+    database.getFirstAsync<{ id: string }>(
+      `SELECT id FROM curriculum_items
+       WHERE type = ? AND curriculum_source = 'bundled' AND release_ready = 1
+         AND (${levelOrder} > CASE ? WHEN 'N5' THEN 0 ELSE 1 END
+           OR (${levelOrder} = CASE ? WHEN 'N5' THEN 0 ELSE 1 END AND id > ?))
+       ORDER BY ${levelOrder}, id
+       LIMIT 1`,
+      type,
+      current.level,
+      current.level,
+      itemId,
+    ),
+  ]);
+  return { previousId: previous?.id, nextId: next?.id };
 }
 
 export async function searchAllCurriculum(query: string, limit = 32): Promise<CurriculumSearchResult[]> {

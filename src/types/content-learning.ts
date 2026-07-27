@@ -1,4 +1,6 @@
 import type { CurriculumWithMastery, LearningAttempt } from './learning';
+import type { FsrsCard } from './fsrs';
+import type { ContentMasteryAssessment } from './content-mastery';
 
 export type ContentLessonType = 'grammar' | 'kanji' | 'reading' | 'listening';
 
@@ -18,6 +20,7 @@ export interface ContentSentence {
 
 export interface ContentPracticeQuestion {
   id: string;
+  sourceQuestionId?: string;
   itemId: string;
   domain: ContentLessonType;
   level: 'N5' | 'N4';
@@ -49,6 +52,32 @@ export interface KanjiLesson extends CurriculumWithMastery {
   examples: ContentSentence[];
   bookmarked: boolean;
   questionCount: number;
+  fsrsCard: FsrsCard;
+  recentAccuracy?: number;
+}
+
+export type KanjiNotebookFilter =
+  | 'all'
+  | 'N5'
+  | 'N4'
+  | 'studied'
+  | 'not-studied'
+  | 'weak'
+  | 'mastered'
+  | 'bookmarked'
+  | 'due'
+  | 'recently';
+
+export interface KanjiNotebookItem extends CurriculumWithMastery {
+  meanings: string[];
+  onReadings: string[];
+  kunReadings: string[];
+  strokeCount?: number;
+  vocabularyIds: string[];
+  bookmarked: boolean;
+  dueForReview: boolean;
+  quizScore?: number;
+  contentMastery: ContentMasteryAssessment;
 }
 
 export interface ReadingLesson extends CurriculumWithMastery {
@@ -96,8 +125,11 @@ export interface ContentStudySession {
 export interface ContentStudyResult {
   session: ContentStudySession;
   correctCount: number;
+  incorrectCount: number;
   totalQuestions: number;
   percentage: number;
+  timeTakenSeconds: number;
+  recommendation: 'needs-review' | 'developing' | 'good';
 }
 
 export interface CurriculumSearchResult {

@@ -36,6 +36,7 @@ export default function SessionResultsScreen() {
       </ScreenContainer>
     );
   }
+  const recommendation = result.recommendation === 'needs-review' ? 'Needs review' : result.recommendation === 'developing' ? 'Developing' : 'Good';
   return (
     <ScreenContainer contentStyle={styles.content}>
       <ThemedText type="smallBold" themeColor="primary">SESSION COMPLETE</ThemedText>
@@ -46,7 +47,9 @@ export default function SessionResultsScreen() {
           <ThemedText type="heading">{result.correctCount} / {result.totalQuestions}</ThemedText>
         </View>
         <ProgressBar value={result.percentage} accessibilityLabel="Vocabulary session score" />
-        <ThemedText themeColor="textSecondary">Your answers updated the local review schedule immediately.</ThemedText>
+        <ThemedText themeColor="textSecondary">{result.incorrectCount} incorrect · {Math.floor(result.timeTakenSeconds / 60)} min {result.timeTakenSeconds % 60}s</ThemedText>
+        <ThemedText type="smallBold">Recommended next action: {recommendation}</ThemedText>
+        <ThemedText themeColor="textSecondary">Mastery is based on repeated quiz and review performance, not this result alone.</ThemedText>
       </Card>
       <AppButton label="Continue learning" onPress={() => router.replace('/(tabs)/learn')} />
       <AppButton label="View progress" variant="secondary" onPress={() => router.replace('/(tabs)/progress')} />

@@ -134,6 +134,24 @@ export async function recordLearningAttempt(input: LearningAttempt, rating: Fsrs
   return result;
 }
 
+/** Records an explicit learner action without fabricating a correct answer or FSRS review. */
+export async function markCurriculumItemStudied(itemId: string): Promise<UserMastery> {
+  const database = await getDatabase();
+  await database.runAsync(
+    `UPDATE user_mastery
+     SET status = CASE WHEN status = 'new' THEN 'learning' ELSE status END,
+       mastery_score = CASE WHEN mastery_score < 5 THEN 5 ELSE mastery_score END
+     WHERE user_id = (SELECT id FROM learner_profile LIMIT 1) AND item_id = ?`,
+    itemId,
+  );
+  const row = await database.getFirstAsync<MasteryRow>(
+    'SELECT * FROM user_mastery WHERE user_id = (SELECT id FROM learner_profile LIMIT 1) AND item_id = ?',
+    itemId,
+  );
+  if (!row) throw new Error('The selected curriculum item could not be marked as studied.');
+  return mapMasteryRow(row);
+}
+
 const curriculumMasterySelect = `
   SELECT
     c.id, c.type, c.level, c.title, c.meaning, c.reading, c.explanation, c.tags_json,

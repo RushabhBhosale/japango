@@ -5,11 +5,38 @@ import { n5CurriculumSeed } from '@/features/curriculum/seed';
 import { createLocalId } from '@/utils/id';
 
 import { installBundledCurriculumIfNeeded } from './bundled-curriculum-repository';
-import { ensureFsrsCards } from './fsrs-repository';
+import { ensureFsrsCards } from './fsrs-bootstrap';
 import { runMigrations } from './migrations';
 
 const DATABASE_NAME = 'japango.db';
+const initialContentInstallationDelayMs = 3_000;
 let databasePromise: Promise<SQLite.SQLiteDatabase> | undefined;
+
+async function runStartupStage<T>(name: string, work: () => Promise<T>): Promise<T> {
+  const startedAt = Date.now();
+  try {
+    return await work();
+  } finally {
+    if (__DEV__) console.info(`[JapanGo startup] ${name} completed in ${Date.now() - startedAt}ms`);
+  }
+}
+
+function scheduleLearningContentInstallation(database: SQLite.SQLiteDatabase): void {
+  // Content imports can involve thousands of authored rows. Keep them off the
+  // startup path: the app already has its schema, learner profile, and core N5
+  // data by this point, while feature screens retain their normal loading UI.
+  setTimeout(() => {
+    void (async () => {
+      await runStartupStage('install bundled curriculum', () => installBundledCurriculumIfNeeded(database));
+      await runStartupStage('prepare FSRS cards', () => ensureFsrsCards(database));
+    })().catch((error: unknown) => {
+      console.error(
+        '[JapanGo database] Background learning content installation failed',
+        error instanceof Error ? { name: error.name, message: error.message } : String(error),
+      );
+    });
+  }, initialContentInstallationDelayMs);
+}
 
 async function seedDatabase(database: SQLite.SQLiteDatabase): Promise<void> {
   await database.withTransactionAsync(async () => {
@@ -81,17 +108,21 @@ async function seedDatabase(database: SQLite.SQLiteDatabase): Promise<void> {
 }
 
 async function openAndPrepareDatabase(): Promise<SQLite.SQLiteDatabase> {
-  const database = await SQLite.openDatabaseAsync(DATABASE_NAME);
-  await database.execAsync('PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON;');
-  await runMigrations(database);
-  await seedDatabase(database);
-  await installBundledCurriculumIfNeeded(database);
-  await ensureFsrsCards(database);
+  const database = await runStartupStage('open local database', () => SQLite.openDatabaseAsync(DATABASE_NAME));
+  await runStartupStage('configure local database', () => database.execAsync('PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON;'));
+  await runStartupStage('apply database migrations', () => runMigrations(database));
+  await runStartupStage('seed core learning data', () => seedDatabase(database));
+  scheduleLearningContentInstallation(database);
   return database;
 }
 
 export function getDatabase(): Promise<SQLite.SQLiteDatabase> {
-  databasePromise ??= openAndPrepareDatabase();
+  if (!databasePromise) {
+    databasePromise = openAndPrepareDatabase().catch((error: unknown) => {
+      databasePromise = undefined;
+      throw error;
+    });
+  }
   return databasePromise;
 }
 
