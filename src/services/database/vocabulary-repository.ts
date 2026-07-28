@@ -99,7 +99,7 @@ const curriculumMasterySelect = `
   FROM curriculum_items AS c
   INNER JOIN learner_profile AS p ON 1 = 1
   INNER JOIN user_mastery AS m ON m.item_id = c.id AND m.user_id = p.id
-  WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1
+  WHERE c.curriculum_source IN ('bundled', 'course-support') AND c.release_ready = 1
 `;
 
 function mapCurriculumWithMastery(row: CurriculumMasteryRow): CurriculumWithMastery {
@@ -130,7 +130,7 @@ const vocabularyNotebookSelect = `
   INNER JOIN vocabulary_content_details AS details ON details.vocabulary_id = c.id
   LEFT JOIN vocabulary_bookmarks AS bookmarks ON bookmarks.user_id = p.id AND bookmarks.vocabulary_id = c.id
   LEFT JOIN fsrs_cards AS cards ON cards.user_id = p.id AND cards.item_id = c.id
-  WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1 AND c.type = 'vocabulary'
+  WHERE c.curriculum_source IN ('bundled', 'course-support') AND c.release_ready = 1 AND c.type = 'vocabulary'
 `;
 
 function mapVocabularyNotebookItem(row: VocabularyNotebookRow): VocabularyNotebookItem {
@@ -259,7 +259,7 @@ async function getLinkedKanji(kanjiIds: string[]): Promise<VocabularyLesson['lin
   const placeholders = kanjiIds.map(() => '?').join(', ');
   const rows = await database.getAllAsync<Pick<CurriculumRow, 'id' | 'title' | 'meaning' | 'reading'>>(
     `SELECT id, title, meaning, reading FROM curriculum_items
-     WHERE id IN (${placeholders}) AND curriculum_source = 'bundled' AND release_ready = 1`,
+     WHERE id IN (${placeholders}) AND curriculum_source IN ('bundled', 'course-support') AND release_ready = 1`,
     ...kanjiIds,
   );
   const byId = new Map(rows.map((row) => [row.id, row]));
@@ -565,7 +565,7 @@ export async function startReviewSession(mode: 'all' | 'weak'): Promise<StudySes
   if (!queuedIds.length) throw new Error(mode === 'weak' ? 'No relearning vocabulary is ready right now.' : 'No vocabulary is due for review.');
   const rows = await database.getAllAsync<{ id: string }>(
     `SELECT id FROM curriculum_items
-     WHERE type = 'vocabulary' AND curriculum_source = 'bundled' AND release_ready = 1
+     WHERE type = 'vocabulary' AND curriculum_source IN ('bundled', 'course-support') AND release_ready = 1
        AND id IN (${queuedIds.map(() => '?').join(', ')})`,
     ...queuedIds,
   );

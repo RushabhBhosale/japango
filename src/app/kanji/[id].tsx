@@ -10,6 +10,7 @@ import { ScreenContainer } from '@/components/common/screen-container';
 import { SectionHeading } from '@/components/common/section-heading';
 import { StatusBadge } from '@/components/common/status-badge';
 import { AiTeacherCard } from '@/components/lesson/ai-teacher-card';
+import { JapaneseText } from '@/components/lesson/japanese-text';
 import { JapaneseSpeechButton } from '@/components/lesson/japanese-speech-button';
 import { ThemedText } from '@/components/themed-text';
 import type { TopicQuizMode } from '@/features/topic-quiz/topic-quiz';
@@ -115,6 +116,7 @@ export default function KanjiLessonScreen() {
     <ScreenContainer>
       <PageHeader eyebrow={`${lesson.level} kanji`} title={lesson.title} subtitle={lesson.meanings.join('; ')} />
       <Card>
+        <JapaneseText type="japanese">{lesson.title}</JapaneseText>
         <StatusBadge status={lesson.mastery.status} />
         <ThemedText>On: {lesson.onReadings.join(' · ') || '—'}</ThemedText>
         <ThemedText>Kun: {lesson.kunReadings.join(' · ') || '—'}</ThemedText>
@@ -129,8 +131,8 @@ export default function KanjiLessonScreen() {
       <SectionHeading title="Your review progress" />
       <Card><ThemedText>FSRS state: {lesson.fsrsCard.state.replaceAll('-', ' ')}</ThemedText><ThemedText>Next review: {new Date(lesson.fsrsCard.dueAt).toLocaleDateString()}</ThemedText><ThemedText themeColor="textSecondary">Recent accuracy: {lesson.recentAccuracy === undefined ? 'Not enough answers yet' : `${lesson.recentAccuracy}%`}</ThemedText></Card>
 
-      {lesson.linkedVocabulary.length ? <><SectionHeading title="Vocabulary using this kanji" />{lesson.linkedVocabulary.map((item) => <Card key={item.id}><ThemedText type="japanese">{item.title}</ThemedText><ThemedText>{item.meaning}</ThemedText><JapaneseSpeechButton text={item.title} label="Play word" /><AppButton label="Open vocabulary" variant="quiet" onPress={() => router.push(`/vocabulary/${encodeURIComponent(item.id)}` as Href)} /></Card>)}</> : null}
-      {lesson.examples.length ? <><SectionHeading title="Examples" />{lesson.examples.map((example) => <Card key={example.id}><ThemedText type="japanese">{example.japanese}</ThemedText><ThemedText themeColor="textSecondary">{example.reading}</ThemedText><ThemedText>{example.meaning}</ThemedText></Card>)}</> : null}
+      {lesson.linkedVocabulary.length ? <><SectionHeading title="Vocabulary using this kanji" />{lesson.linkedVocabulary.map((item) => <Card key={item.id}><JapaneseText type="japanese">{item.title}</JapaneseText><ThemedText>{item.meaning}</ThemedText><JapaneseSpeechButton text={item.title} label="Play word" /><AppButton label="Open vocabulary" variant="quiet" onPress={() => router.push(`/vocabulary/${encodeURIComponent(item.id)}` as Href)} /></Card>)}</> : null}
+      {lesson.examples.length ? <><SectionHeading title="Examples" />{lesson.examples.map((example) => <Card key={example.id}><JapaneseText type="japanese">{example.japanese}</JapaneseText><ThemedText themeColor="textSecondary">{example.reading}</ThemedText><ThemedText>{example.meaning}</ThemedText></Card>)}</> : null}
       {lesson.relatedKanji.length ? <><SectionHeading title="Related kanji" />{lesson.relatedKanji.map((item) => <AppButton key={item.id} label={`${item.title} · ${item.meaning ?? ''}`} variant="secondary" onPress={() => router.push(`/kanji/${encodeURIComponent(item.id)}` as Href)} />)}</> : null}
 
       {courseUsage?.usedIn.length ? <><SectionHeading title="Course connections" /><Card><ThemedText>Introduced in: {courseUsage.introducedIn ? `Lesson ${courseUsage.introducedIn.lessonNumber} — ${courseUsage.introducedIn.title}` : 'Study Library'}</ThemedText><ThemedText themeColor="textSecondary">Used in: {courseUsage.usedIn.map((entry) => `Lesson ${entry.lessonNumber}`).join(', ')}</ThemedText></Card></> : null}

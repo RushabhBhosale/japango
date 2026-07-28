@@ -160,7 +160,7 @@ const curriculumMasterySelect = `
     m.next_review_at, m.review_interval_days, m.status
   FROM curriculum_items c
   INNER JOIN user_mastery m ON m.item_id = c.id
-  WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1
+  WHERE c.curriculum_source IN ('bundled', 'course-support') AND c.release_ready = 1
 `;
 
 export async function getSuggestedCurriculum(limit = 8): Promise<CurriculumWithMastery[]> {
@@ -216,7 +216,7 @@ export async function getProgressSummary(): Promise<ProgressSummary> {
   const masteryRows = await database.getAllAsync<MasteryRow>(
     `SELECT m.* FROM user_mastery AS m
      INNER JOIN curriculum_items AS c ON c.id = m.item_id
-     WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1`,
+     WHERE c.curriculum_source IN ('bundled', 'course-support') AND c.release_ready = 1`,
   );
   const masteries = masteryRows.map(mapMasteryRow);
   const statusCounts: Record<MasteryStatus, number> = {
@@ -233,7 +233,7 @@ export async function getProgressSummary(): Promise<ProgressSummary> {
      FROM user_mastery m
      INNER JOIN curriculum_items c ON c.id = m.item_id
      WHERE m.status = 'mastered' AND c.type IN ('vocabulary', 'kanji', 'grammar')
-       AND c.curriculum_source = 'bundled' AND c.release_ready = 1
+       AND c.curriculum_source IN ('bundled', 'course-support') AND c.release_ready = 1
      GROUP BY c.type`,
   );
   const masteredByType = { vocabulary: 0, kanji: 0, grammar: 0 };
@@ -247,7 +247,7 @@ export async function getProgressSummary(): Promise<ProgressSummary> {
     `SELECT a.*, c.title AS item_title
      FROM learning_attempts a
      INNER JOIN curriculum_items c ON c.id = a.item_id
-     WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1
+     WHERE c.curriculum_source IN ('bundled', 'course-support') AND c.release_ready = 1
      ORDER BY a.created_at DESC LIMIT 8`,
   );
   const startOfDay = new Date(now); startOfDay.setHours(0, 0, 0, 0);

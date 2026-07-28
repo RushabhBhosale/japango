@@ -8,6 +8,7 @@ import { EmptyState } from '@/components/common/empty-state';
 import { LoadingState } from '@/components/common/loading-state';
 import { ProgressBar } from '@/components/common/progress-bar';
 import { ScreenContainer } from '@/components/common/screen-container';
+import { JapaneseText } from '@/components/lesson/japanese-text';
 import { QuestionOption } from '@/components/quiz/question-option';
 import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
@@ -118,7 +119,7 @@ export default function VocabularySessionScreen() {
       <ProgressBar value={progress} accessibilityLabel="Vocabulary practice progress" />
       <Card>
         <ThemedText type="smallBold" themeColor="primary">{question.presentation.replaceAll('-', ' ').toUpperCase()}</ThemedText>
-        <ThemedText type="heading">{question.prompt}</ThemedText>
+        <JapaneseText type="heading">{question.prompt}</JapaneseText>
       </Card>
       <View accessibilityRole="radiogroup" style={styles.options}>
         {question.options.map((option) => {
@@ -147,7 +148,7 @@ export default function VocabularySessionScreen() {
       {attempt ? (
         <Card style={{ backgroundColor: correct ? theme.successSoft : theme.errorSoft }}>
           <ThemedText type="heading">{correct ? 'Correct' : 'Not quite'}</ThemedText>
-          <ThemedText>{question.explanation ?? 'The correct answer is highlighted above.'}</ThemedText>
+          <JapaneseText>{question.explanation ?? 'The correct answer is highlighted above.'}</JapaneseText>
         </Card>
       ) : null}
       {attempt ? (

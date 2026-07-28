@@ -10,6 +10,7 @@ import { ScreenContainer } from '@/components/common/screen-container';
 import { SectionHeading } from '@/components/common/section-heading';
 import { StatusBadge } from '@/components/common/status-badge';
 import { AiTeacherCard } from '@/components/lesson/ai-teacher-card';
+import { JapaneseText } from '@/components/lesson/japanese-text';
 import { JapaneseSpeechButton } from '@/components/lesson/japanese-speech-button';
 import { ThemedText } from '@/components/themed-text';
 import type { TopicQuizMode } from '@/features/topic-quiz/topic-quiz';
@@ -130,6 +131,7 @@ export default function GrammarLessonScreen() {
     <ScreenContainer>
       <PageHeader eyebrow={`${lesson.level} grammar`} title={lesson.title} subtitle={lesson.meanings.join('; ')} />
       <Card>
+        <JapaneseText type="japanese">{lesson.title}</JapaneseText>
         <StatusBadge status={lesson.mastery.status} />
         <JapaneseSpeechButton text={lesson.title} label="Play grammar pattern" />
         <AppButton label={lesson.bookmarked ? 'Remove bookmark' : 'Bookmark grammar'} variant="quiet" loading={saving} onPress={() => void toggleBookmark()} />
@@ -146,7 +148,7 @@ export default function GrammarLessonScreen() {
       <SectionHeading title="Formation" />
       <Card>
         {lesson.formation.length ? lesson.formation.map((part) => (
-          <ThemedText key={`${part.base}-${part.structure}`}>{part.base}: {part.structure}</ThemedText>
+          <JapaneseText key={`${part.base}-${part.structure}`}>{part.base}: {part.structure}</JapaneseText>
         )) : <ThemedText themeColor="textSecondary">Canonical formation guidance is not available for this pattern yet.</ThemedText>}
       </Card>
 
@@ -155,7 +157,7 @@ export default function GrammarLessonScreen() {
           <SectionHeading title="Examples" />
           {lesson.examples.map((example) => (
             <Card key={example.id}>
-              <ThemedText type="japanese">{example.japanese}</ThemedText>
+              <JapaneseText type="japanese">{example.japanese}</JapaneseText>
               <ThemedText themeColor="textSecondary">{example.reading}</ThemedText>
               <ThemedText>{example.meaning}</ThemedText>
               <JapaneseSpeechButton text={example.japanese} label="Play example" rate={0.76} />

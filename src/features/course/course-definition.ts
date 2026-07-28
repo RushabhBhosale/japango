@@ -26,8 +26,24 @@ function activity(
   return { id: `${lessonId}-activity-${String(order).padStart(2, '0')}`, order, type, title, instruction, estimatedMinutes, required, interactionCount: exercises.length, contentRefs, exercises };
 }
 
-function informationExercise(id: string, category: LessonActivityExercise['category'], prompt: string, itemId?: string, readingText?: string): LessonActivityExercise {
-  return { id, responseKind: 'continue', category, prompt, itemId, readingText, expectedResponse: { script: 'none' } };
+function informationExercise(id: string, category: LessonActivityExercise['category'], prompt: string, itemId?: string, readingText?: string, listeningText?: string): LessonActivityExercise {
+  return { id, responseKind: 'continue', category, prompt, itemId, readingText, listeningText, expectedResponse: { script: 'none' } };
+}
+
+/** A self-confirmed listening step keeps the context non-evaluative while remaining tactile. */
+function acknowledgementExercise(id: string, category: LessonActivityExercise['category'], prompt: string, itemId?: string, listeningText?: string): LessonActivityExercise {
+  const acknowledgement = 'I heard the situation';
+  return {
+    id,
+    responseKind: 'typed',
+    category,
+    prompt,
+    itemId,
+    listeningText,
+    acceptedAnswers: [acknowledgement],
+    options: [{ id: 'acknowledged', label: acknowledgement }],
+    expectedResponse: { script: 'choice', format: 'Continue when you have listened once.' },
+  };
 }
 
 function selectExercise(id: string, category: LessonActivityExercise['category'], prompt: string, correct: string, distractors: string[], itemId?: string, explanation?: string, listeningText?: string): LessonActivityExercise {
@@ -35,12 +51,90 @@ function selectExercise(id: string, category: LessonActivityExercise['category']
   return { id, responseKind: 'select', category, prompt, itemId, options: answers.map((label, index) => ({ id: index === 0 ? 'correct' : `option-${index}`, label })), acceptedAnswers: ['correct'], explanation, listeningText, expectedResponse: { script: 'choice', format: 'Choose one answer.' }, correctReinforcement: explanation };
 }
 
-function typedExercise(id: string, category: LessonActivityExercise['category'], prompt: string, acceptedAnswers: string[], itemId?: string, explanation?: string, readingText?: string, listeningText?: string): LessonActivityExercise {
-  const production = category === 'production';
+function relatedFormDistractors(correct: string): string[] {
+  const candidates = new Set<string>();
+  if (correct.includes('てから')) {
+    candidates.add(correct.replace('てから', 'て'));
+    candidates.add(correct.replace('てから', 'ますから'));
+    if (correct === 'ご飯を食べてから、学校へ行きます') candidates.add('学校へ行ってから、ご飯を食べます');
+  }
+  if (correct.includes('ています')) {
+    candidates.add(correct.replace('ています', 'ていません'));
+    candidates.add(correct.replace('ています', 'ます'));
+  }
+  if (correct.includes('です')) {
+    candidates.add(correct.replace('です', 'ではありません'));
+    candidates.add(correct.replace('です', 'ですか'));
+    candidates.add(correct.replace('は', 'が'));
+  }
+  const endings: Record<string, string[]> = {
+    'ませんでした': ['ました', 'ません', 'ます'],
+    'ました': ['ます', 'ません', 'ませんでした'],
+    'ません': ['ます', 'ました', 'ませんでした'],
+    'ます': ['ません', 'ました', 'て'],
+    'なかった': ['ない', 'ます', 'ました'],
+    'ない': ['ます', 'て', 'ました'],
+    'て': ['ます', 'た', 'ない'],
+    'た': ['て', 'ます', 'ない'],
+    'る': ['ます', 'て', 'ない'],
+  };
+  const ending = Object.keys(endings).find((candidate) => correct.endsWith(candidate));
+  if (ending) {
+    const stem = correct.slice(0, -ending.length);
+    for (const replacement of endings[ending] ?? []) candidates.add(`${stem}${replacement}`);
+  }
+  if (correct.includes('を')) candidates.add(correct.replace('を', 'に'));
+  if (correct.includes('に')) candidates.add(correct.replace('に', 'で'));
+  return [...candidates].filter((candidate) => candidate !== correct && candidate.length > 0);
+}
+
+const fallbackDistractors: Record<Exclude<LessonActivityExercise['category'], 'production'>, string[]> = {
+  vocabulary: ['学生', '先生', '友だち'],
+  grammar: ['これは本です', 'わたしは学生です', '食べません'],
+  conjugation: ['食べません', '食べました', '食べて'],
+  kanji: ['にち', 'ひ', 'がく'],
+  reading: ['A practical plan', 'A short conversation', 'An everyday message'],
+  listening: ['もう一度聞いてください', '確認します', 'ありがとうございます'],
+};
+
+function guidedChoiceDistractors(
+  category: Exclude<LessonActivityExercise['category'], 'production'>,
+  correct: string,
+  preferred: string[] = [],
+): string[] {
+  const related = category === 'grammar' || category === 'conjugation'
+    ? relatedFormDistractors(correct)
+    : [];
+  return [...preferred, ...related, ...fallbackDistractors[category]]
+    .filter((value, index, values) => value !== correct && values.indexOf(value) === index)
+    .slice(0, 3);
+}
+
+function typedExercise(id: string, category: LessonActivityExercise['category'], prompt: string, acceptedAnswers: string[], itemId?: string, explanation?: string, readingText?: string, listeningText?: string, distractors?: string[]): LessonActivityExercise {
   const polite = /polite|ます|です/u.test(prompt);
+  if (category !== 'production') {
+    const answer = acceptedAnswers[0] ?? '';
+    return {
+      id,
+      responseKind: 'typed',
+      category,
+      prompt: prompt.replace(/\bType\b/gu, 'Choose').replace(/\btype\b/gu, 'choose'),
+      itemId,
+      acceptedAnswers,
+      explanation,
+      readingText,
+      listeningText,
+      options: [answer, ...guidedChoiceDistractors(category, answer, distractors)].map((label, index) => ({ id: `guided-${index}`, label })),
+      expectedResponse: { script: 'choice', format: 'Choose the response that fits the situation.' },
+      hints: category === 'conjugation'
+        ? ['Look at the final kana of the verb.', answer ? `It begins: ${answer.slice(0, Math.max(1, Math.ceil(answer.length / 2)))}…` : 'Use the model.', answer ? `Answer: ${answer}` : undefined]
+        : undefined,
+      correctReinforcement: explanation,
+    };
+  }
   return {
     id,
-    responseKind: production ? 'production' : 'typed',
+    responseKind: 'production',
     category,
     prompt,
     itemId,
@@ -48,14 +142,12 @@ function typedExercise(id: string, category: LessonActivityExercise['category'],
     explanation,
     readingText,
     listeningText,
+    optional: true,
     expectedResponse: {
-      script: production ? 'japanese_sentence' : category === 'vocabulary' || category === 'kanji' ? 'kanji_or_kana' : 'japanese_sentence',
+      script: 'japanese_sentence',
       politeness: polite ? 'polite' : 'either',
-      format: production ? 'Write one short Japanese sentence.' : 'Type only the Japanese answer. Japanese punctuation is optional.',
+      format: 'Optional challenge: write one short Japanese sentence.',
     },
-    hints: category === 'conjugation'
-      ? ['Look at the final kana of the verb.', acceptedAnswers[0] ? `It begins: ${acceptedAnswers[0].slice(0, Math.max(1, Math.ceil(acceptedAnswers[0].length / 2)))}…` : 'Use the model.', acceptedAnswers[0] ? `Answer: ${acceptedAnswers[0]}` : undefined]
-      : undefined,
     correctReinforcement: explanation,
   };
 }
@@ -91,7 +183,11 @@ function originalReading(lesson: Pick<CourseLessonDefinition, 'number' | 'conten
     `次の場面でも、あきは相手の話を聞き、必要なら質問し、自分の考えを分かりやすく伝えるつもりです。`,
     `小さな会話を何度も練習することで、二人は新しい${topic}を実際の生活で使えるようになりました。`,
   ];
-  const target = lesson.contentLevel === 'N4' ? (lesson.number > 24 ? 720 : lesson.number > 12 ? 475 : 300) : (lesson.number > 18 ? 150 : 90);
+  // Keep in-lesson reading approachable; longer readings remain in the
+  // dedicated Reading Notebook rather than turning every lesson into a wall of text.
+  const target = lesson.contentLevel === 'N4'
+    ? lesson.number >= 28 ? 600 : lesson.number >= 16 ? 400 : 250
+    : 130;
   let text = '';
   for (const line of lines) { text += line; if (text.length >= target) break; }
   return text;
@@ -152,6 +248,7 @@ function moveActivityAfter(activities: LessonActivityDefinition[], title: string
 /** Changes lesson rhythm without changing the authoritative learning items. */
 function arrangeActivitiesForExperience(lesson: CourseLessonDefinition, source: LessonActivityDefinition[]): LessonActivityDefinition[] {
   const activities = [...source];
+  // The first greeting is introduced before its recognition check. Keep the
   switch (lesson.experience.template) {
     case 'pattern_workshop':
       moveActivityAfter(activities, 'Vocabulary batch two', 'Verb and form drill');
@@ -177,6 +274,23 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
   const vocabulary = lookupItems(lesson.vocabularyIds, lookup).slice(0, 16);
   const grammar = patternObjectivesFor(lesson, lookup);
   const kanji = lookupItems(lesson.kanjiIds, lookup).slice(0, 4);
+  const wordForKanji = (kanjiItem: CurriculumItem) => vocabulary.find((word) => word.title.includes(kanjiItem.title));
+  const vocabularyDistractors = (targetId: string | undefined) => vocabulary.filter((item) => item.id !== targetId).map((item) => item.title);
+  const kanjiReadingDistractors = (targetId: string | undefined) => kanji
+    .filter((item) => item.id !== targetId)
+    .flatMap((item) => [wordForKanji(item)?.reading, item.reading].filter((reading): reading is string => Boolean(reading)));
+  const vocabularyPreviewExercises = (prefix: string, words: CurriculumItem[]) => Array.from(
+    { length: Math.ceil(words.length / 4) },
+    (_, groupIndex) => {
+      const group = words.slice(groupIndex * 4, groupIndex * 4 + 4);
+      return informationExercise(
+        `${prefix}-${groupIndex + 1}`,
+        'vocabulary',
+        group.map((item) => `${item.title} · ${item.meaning ?? 'See the meaning in context.'}`).join('\n'),
+        group[0]?.id,
+      );
+    },
+  );
   const verb = '食べる';
   const forms = lesson.verbForms.length ? lesson.verbForms : ['dictionary' as const];
   const reading = originalReading(lesson, lookup);
@@ -190,17 +304,17 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
   } else {
     add('introduction', 'Today’s goal', `By the end, you will be able to ${lesson.communicationGoal.charAt(0).toLowerCase()}${lesson.communicationGoal.slice(1)}`, 1, [informationExercise('opening', 'production', `Practical outcome: ${lesson.objectives.join(' · ')}`)]);
     add('story', 'Situation', 'Meet Aki and Ren in today’s practical situation before you practise the language.', 2, [informationExercise('story', 'reading', 'Read the situation. Look for the reason the characters need to communicate.', undefined, reading)]);
-    add('dialogue', 'First dialogue exposure', 'Listen once for the situation. Then choose the main purpose of the exchange.', 3, [selectExercise('dialogue-global', 'listening', 'What are Aki and Ren doing?', 'They are confirming a practical plan.', ['They are taking an exam.', 'They are saying goodbye forever.', 'They are cooking dinner.'], lesson.listeningIds[0], 'Listen again for the opening and closing lines.', listening)], lesson.listeningIds);
+    add('dialogue', 'First dialogue exposure', 'Listen once for the situation. Notice what the speakers need to confirm; you will use this context after the key words are introduced.', 3, [acknowledgementExercise('dialogue-global', 'listening', 'Listen for the overall situation. You do not need to answer yet.', lesson.listeningIds[0], listening)], lesson.listeningIds);
   }
   const batchOne = vocabulary.slice(0, Math.ceil(vocabulary.length / 2));
   const batchTwo = vocabulary.slice(batchOne.length);
-  add('vocabulary_intro', 'Vocabulary batch one', 'Hear each word, notice its reading, then connect it to the situation.', 4, [informationExercise('vocab-one', 'vocabulary', batchOne.map((item) => `${item.title}（${item.reading ?? item.title}） — ${item.meaning ?? ''}`).join('\n'), batchOne[0]?.id)], batchOne.map((item) => item.id));
+  add('vocabulary_intro', 'Vocabulary batch one', 'Preview four new words at a time before using them in the conversation.', 4, vocabularyPreviewExercises('vocab-one', batchOne), batchOne.map((item) => item.id));
   add('dialogue', 'Words in a real line', 'Listen to one short line. Notice how a word from today’s list sounds in a real situation.', 2, [informationExercise('vocab-model', 'vocabulary', `${batchOne[0]?.title ?? '日本語'} is used naturally in a short exchange.`, batchOne[0]?.id, `あき：${batchOne[0]?.title ?? '日本語'}について話しましょう。\n蓮：はい、いいですね。`)], batchOne.slice(0, 1).map((item) => item.id));
   add('vocabulary_intro', 'Notice the word again', 'Hear the key word once more, then keep it in mind for the recognition practice.', 1, [informationExercise('vocab-hear', 'vocabulary', `Listen for: ${batchOne[0]?.title ?? '日本語'} — ${batchOne[0]?.meaning ?? 'a word from today’s lesson'}.`, batchOne[0]?.id, batchOne[0]?.title)], batchOne.slice(0, 1).map((item) => item.id));
   add('vocabulary_practice', 'Vocabulary recognition', 'Choose the meaning that fits the Japanese word.', 4, batchOne.slice(0, 6).map((item, index) => selectExercise(`vocab-recognition-${index + 1}`, 'vocabulary', `What does ${item.title} mean?`, item.meaning ?? item.title, vocabulary.filter((other) => other.id !== item.id).slice(0, 3).map((other) => other.meaning ?? other.title), item.id)), batchOne.map((item) => item.id));
-  add('vocabulary_practice', 'Vocabulary recall', 'Type the Japanese word. Kana or the canonical written form is accepted.', 4, batchOne.slice(0, 6).map((item, index) => typedExercise(`vocab-recall-${index + 1}`, 'vocabulary', `Write Japanese for: ${item.meaning ?? item.title}`, [item.title, item.reading ?? item.title], item.id)), batchOne.map((item) => item.id));
-  add('vocabulary_intro', 'Vocabulary batch two', 'Add a second small group, then reuse both groups in context.', 4, [informationExercise('vocab-two', 'vocabulary', batchTwo.map((item) => `${item.title}（${item.reading ?? item.title}） — ${item.meaning ?? ''}`).join('\n'), batchTwo[0]?.id)], batchTwo.map((item) => item.id));
-  add('vocabulary_practice', 'Vocabulary in context', 'Choose or type the word that completes a practical situation.', 3, vocabulary.slice(0, 3).map((item, index) => typedExercise(`vocab-context-${index + 1}`, 'vocabulary', `Complete the situation with: ${item.meaning ?? item.title}`, [item.title, item.reading ?? item.title], item.id)), lesson.vocabularyIds.slice(0, 6));
+  add('vocabulary_practice', 'Vocabulary recall', 'Type the Japanese word. Kana or the canonical written form is accepted.', 4, batchOne.slice(0, 6).map((item, index) => typedExercise(`vocab-recall-${index + 1}`, 'vocabulary', `Write Japanese for: ${item.meaning ?? item.title}`, [item.title, item.reading ?? item.title], item.id, undefined, undefined, undefined, vocabularyDistractors(item.id))), batchOne.map((item) => item.id));
+  add('vocabulary_intro', 'Vocabulary batch two', 'Preview the next four words, then reuse both groups in context.', 4, vocabularyPreviewExercises('vocab-two', batchTwo), batchTwo.map((item) => item.id));
+  add('vocabulary_practice', 'Vocabulary in context', 'Choose or type the word that completes a practical situation.', 3, vocabulary.slice(0, 3).map((item, index) => typedExercise(`vocab-context-${index + 1}`, 'vocabulary', `Complete the situation with: ${item.meaning ?? item.title}`, [item.title, item.reading ?? item.title], item.id, undefined, undefined, undefined, vocabularyDistractors(item.id))), lesson.vocabularyIds.slice(0, 6));
   add('grammar_explanation', `Pattern one: ${grammar[0] ?? 'Core pattern'}`, 'Start with meaning, then notice the changing form. The technical label can wait until the pattern feels familiar.', 3, [informationExercise('grammar-one', 'grammar', `Situation: Aya is introducing herself.\n\nModel: わたしはアヤです。\n\nUse ${grammar[0] ?? 'this pattern'} when the situation calls for it.`, lesson.grammarIds[0], 'わたしはアヤです。')], lesson.grammarIds.slice(0, 1));
   add('substitution_drill', 'Pattern substitution drill', 'Follow the model, replace the cue, and type the complete sentence. Keep the particle and verb form that carry the meaning.', 4, [
     typedExercise('substitution-1', 'grammar', 'Model: 田中さんは本を読んでいます。\nCue: 先生 / 新聞\n\nType the complete new sentence.', ['先生は新聞を読んでいます'], lesson.grammarIds[0], 'The topic is 先生 and the object is 新聞. Keep 読んでいます.'),
@@ -227,8 +341,14 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
     const source = nounForm ? '学生です' : form.startsWith('i_') ? '高いです' : '静かです';
     return typedExercise(`adjective-${index + 1}`, 'conjugation', `Rewrite ${source} as ${form.replaceAll('_', ' ')}.`, [answer], lesson.grammarIds[0]);
   }), lesson.grammarIds.slice(0, 1));
-  add('kanji_intro', 'Kanji in context', 'Focus on the reading used in today’s words, not every possible reading.', 3, kanji.map((item, index) => informationExercise(`kanji-intro-${index + 1}`, 'kanji', `${item.title} — ${item.meaning ?? ''} · reading: ${item.reading ?? 'see notebook'}`, item.id)), kanji.map((item) => item.id));
-  add('kanji_practice', 'Kanji reading in words', 'Read the kanji in a familiar lesson word.', 3, kanji.slice(0, 2).map((item, index) => typedExercise(`kanji-practice-${index + 1}`, 'kanji', `Write a reading for ${item.title}.`, [item.reading ?? item.title], item.id)), kanji.slice(0, 2).map((item) => item.id));
+  add('kanji_intro', 'Kanji in context', 'Read each character in a word from today’s lesson. The reading shown is the one used in that word, not a list of every possible reading.', 3, kanji.map((item, index) => {
+    const word = wordForKanji(item);
+    return informationExercise(`kanji-intro-${index + 1}`, 'kanji', `Word meaning: ${word?.meaning ?? item.meaning ?? 'See the linked word.'}`, item.id, word?.title ?? item.title);
+  }), kanji.map((item) => item.id));
+  add('kanji_practice', 'Kanji reading in words', 'Choose the reading used in the familiar lesson word.', 3, kanji.slice(0, 2).map((item, index) => {
+    const word = wordForKanji(item);
+    return typedExercise(`kanji-practice-${index + 1}`, 'kanji', `Read ${word?.title ?? item.title} in this word.`, [word?.reading ?? item.reading ?? item.title], item.id, 'Use the reading of the whole word.', word?.title ?? item.title, undefined, kanjiReadingDistractors(item.id));
+  }), kanji.slice(0, 2).map((item) => item.id));
   add('dialogue', 'Dialogue replay and breakdown', 'Replay one line at a time. Notice how the target patterns make the exchange work.', 3, [informationExercise('dialogue-replay', 'listening', 'Shadow the line after listening.', lesson.listeningIds[0], undefined)], lesson.listeningIds);
   add('reading', 'Reading passage', 'Read once without translation. Open the help only after making a first attempt.', 4, [informationExercise('reading-passage', 'reading', 'Read the passage and identify the main situation.', lesson.readingIds[0], reading)], lesson.readingIds);
   add('reading', 'Reading comprehension', 'Answer a main-idea and a detail question.', 3, [selectExercise('reading-main', 'reading', 'What is the main purpose of the passage?', 'Aki and Ren are discussing a practical plan.', ['They are describing a past vacation.', 'They are buying a train ticket.', 'They are taking a test.'], lesson.readingIds[0]), selectExercise('reading-detail', 'reading', 'What do they do after the conversation?', 'They write important words in a notebook.', ['They go shopping.', 'They call a teacher.', 'They cancel their plan.'], lesson.readingIds[0])], lesson.readingIds);
@@ -237,23 +357,23 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
   add('listening', 'Listening comprehension', 'Replay and listen for a specific detail.', 3, [selectExercise('listening-detail', 'listening', 'What do the characters plan to do?', 'Confirm important information.', ['Cook together.', 'Travel tomorrow.', 'Take a photo.'], lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
   add('dictation', 'Dictation and sound discrimination', 'Listen without a transcript, then type the key phrase you hear.', 3, [typedExercise('dictation', 'listening', 'Type the key phrase: もう一度聞いてください。', ['もう一度聞いてください', 'もういちど聞いてください'], lesson.listeningIds[0], undefined, undefined, listening)], lesson.listeningIds);
   add('shadowing', 'Transcript review and shadowing', 'Reveal the transcript, replay a line, and repeat at a comfortable pace.', 2, [informationExercise('shadowing', 'listening', 'Optional speaking practice: shadow one line before continuing.', lesson.listeningIds[0], listening)], lesson.listeningIds, false);
-  add('sentence_production', 'Your own sentence', 'Write one short sentence about your own life using today’s pattern. Many answers can be valid.', 3, [typedExercise('production', 'production', `Write an original sentence using ${grammar[0] ?? 'today’s pattern'}.`, grammar[0] ? [grammar[0]] : ['です'], lesson.grammarIds[0], 'Use the pattern; offline you may self-confirm a different valid sentence.')], lesson.grammarIds.slice(0, 1));
+  add('sentence_production', 'Your own sentence', 'Optional: write one short sentence about your own life using today’s pattern. Many answers can be valid.', 3, [typedExercise('production', 'production', `Optional challenge: write an original sentence using ${grammar[0] ?? 'today’s pattern'}.`, grammar[0] ? [grammar[0]] : ['です'], lesson.grammarIds[0], 'Use the pattern; offline you may self-confirm a different valid sentence.')], lesson.grammarIds.slice(0, 1));
   add('error_correction', 'Find and correct the mistake', 'Correct the form, then read the explanation.', 3, [typedExercise('error-one', 'grammar', 'Correct: わたしは学生だです。', ['わたしは学生です'], lesson.grammarIds[0], 'Use either だ or です, not both.'), typedExercise('error-two', 'conjugation', 'Correct: 食べるます。', ['食べます'], lesson.grammarIds[0], 'Attach ます to the verb stem.')], lesson.grammarIds.slice(0, 1));
   add('mixed_practice', 'Mixed lesson practice', 'Switch between recognition, recall, and a complete sentence. This prepares you for the checkpoint without repeating one exercise shape.', 4, [
-    typedExercise('mixed-1', 'vocabulary', `Translate into Japanese: ${vocabulary[0]?.meaning ?? 'today’s first word'}.`, [vocabulary[0]?.title ?? '日本語', vocabulary[0]?.reading ?? '日本語'], vocabulary[0]?.id),
+    typedExercise('mixed-1', 'vocabulary', `Translate into Japanese: ${vocabulary[0]?.meaning ?? 'today’s first word'}.`, [vocabulary[0]?.title ?? '日本語', vocabulary[0]?.reading ?? '日本語'], vocabulary[0]?.id, undefined, undefined, undefined, vocabularyDistractors(vocabulary[0]?.id)),
     typedExercise('mixed-2', 'grammar', 'A classmate asks: 「これは何ですか。」\n\nReply in a complete polite sentence.', ['これは本です'], lesson.grammarIds[0], 'A complete answer uses the topic and です.'),
-    typedExercise('mixed-3', 'vocabulary', `Translate into Japanese: ${vocabulary[1]?.meaning ?? 'today’s second word'}.`, [vocabulary[1]?.title ?? '日本語', vocabulary[1]?.reading ?? '日本語'], vocabulary[1]?.id),
+    typedExercise('mixed-3', 'vocabulary', `Translate into Japanese: ${vocabulary[1]?.meaning ?? 'today’s second word'}.`, [vocabulary[1]?.title ?? '日本語', vocabulary[1]?.reading ?? '日本語'], vocabulary[1]?.id, undefined, undefined, undefined, vocabularyDistractors(vocabulary[1]?.id)),
     typedExercise('mixed-4', 'grammar', 'Look at a book near you.\n\nSay “This is a book” in Japanese.', ['これは本です'], lesson.grammarIds[0], 'Use the complete sentence you have practised.'),
   ], [...lesson.vocabularyIds.slice(0, 2), ...lesson.grammarIds.slice(0, 1)]);
   const checkpointExercises: LessonActivityExercise[] = Array.from({ length: 20 }, (_, index) => {
-    if (index < 6) { const item = vocabulary[index % Math.max(vocabulary.length, 1)]; return typedExercise(`checkpoint-vocab-${index + 1}`, 'vocabulary', `Write Japanese for: ${item?.meaning ?? 'today’s word'}`, [item?.title ?? '日本語', item?.reading ?? '日本語'], item?.id); }
+    if (index < 6) { const item = vocabulary[index % Math.max(vocabulary.length, 1)]; return typedExercise(`checkpoint-vocab-${index + 1}`, 'vocabulary', `Write Japanese for: ${item?.meaning ?? 'today’s word'}`, [item?.title ?? '日本語', item?.reading ?? '日本語'], item?.id, undefined, undefined, undefined, vocabularyDistractors(item?.id)); }
     if (index < 11) { const transformation = createTransformation((['dictionary-to-masu', 'dictionary-to-te', 'affirmative-to-negative', 'present-to-past', 'combine-te-kara'] as const)[index - 6] ?? 'dictionary-to-masu', index === 10 ? '' : '食べる', verb); return typedExercise(`checkpoint-form-${index + 1}`, 'conjugation', `${transformation.instruction} ${transformation.source}`, transformation.expectedAnswers, lesson.grammarIds[0]); }
-    if (index < 14) { const item = kanji[(index - 11) % Math.max(kanji.length, 1)]; return typedExercise(`checkpoint-kanji-${index + 1}`, 'kanji', `Write a reading for ${item?.title ?? '日'}.`, [item?.reading ?? 'にち'], item?.id); }
+    if (index < 14) { const item = kanji[(index - 11) % Math.max(kanji.length, 1)]; const word = item ? wordForKanji(item) : undefined; return typedExercise(`checkpoint-kanji-${index + 1}`, 'kanji', `Read ${word?.title ?? item?.title ?? '日'} in this word.`, [word?.reading ?? item?.reading ?? 'にち'], item?.id, undefined, word?.title, undefined, kanjiReadingDistractors(item?.id)); }
     if (index < 17) return selectExercise(`checkpoint-reading-${index + 1}`, 'reading', 'Choose the best summary of the passage.', 'Two students confirm a plan and review Japanese.', ['A family cooks dinner.', 'A worker changes jobs.', 'A traveler misses a train.'], lesson.readingIds[0]);
     return selectExercise(`checkpoint-listening-${index + 1}`, 'listening', 'Choose the detail heard in the dialogue.', 'Ask again when something is unclear.', ['Read silently first.', 'Do not ask questions.', 'Change the plan immediately.'], lesson.listeningIds[0]);
   });
   add('checkpoint', 'Lesson checkpoint', 'Complete the mixed chapter check. Your weak items will enter the existing review systems.', 12, checkpointExercises, [...lesson.vocabularyIds, ...lesson.grammarIds, ...lesson.kanjiIds, ...lesson.readingIds, ...lesson.listeningIds]);
-  add('reflection', 'Lesson reflection', 'Review what you can now do, identify a weak area, and choose the next study action.', 2, [typedExercise('reflection', 'production', `You can now: ${lesson.objectives.join(' · ')}. Write one skill you will revisit in Review or the Study Library.`, [])]);
+  add('reflection', 'Lesson reflection', 'Optional: name one skill you will revisit in Review or the Study Library.', 2, [typedExercise('reflection', 'production', `Optional challenge: you can now ${lesson.objectives.join(' · ')}. Write one skill you will revisit in Review or the Study Library.`, [])], [], false);
   return arrangeActivitiesForExperience(lesson, activities);
 }
 

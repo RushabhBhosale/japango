@@ -61,7 +61,7 @@ const libraryItemSelect = `
     ON vocabulary_bookmarks.user_id = p.id AND vocabulary_bookmarks.vocabulary_id = c.id
   LEFT JOIN curriculum_bookmarks
     ON curriculum_bookmarks.user_id = p.id AND curriculum_bookmarks.item_id = c.id
-  WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1
+  WHERE c.curriculum_source IN ('bundled', 'course-support') AND c.release_ready = 1
     AND c.type IN ('grammar', 'vocabulary', 'kanji')
 `;
 
@@ -108,7 +108,7 @@ export async function getStudyLibrarySummaries(): Promise<StudyLibrarySummary[]>
       ON vocabulary_bookmarks.user_id = p.id AND vocabulary_bookmarks.vocabulary_id = c.id
     LEFT JOIN curriculum_bookmarks
       ON curriculum_bookmarks.user_id = p.id AND curriculum_bookmarks.item_id = c.id
-    WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1
+    WHERE c.curriculum_source IN ('bundled', 'course-support') AND c.release_ready = 1
       AND c.type IN ('grammar', 'vocabulary', 'kanji')
     GROUP BY c.type
   `);

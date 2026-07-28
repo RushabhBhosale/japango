@@ -8,7 +8,7 @@ import type { CourseActivitySubmission, CourseActivitySubmissionResult, CourseCh
 import type { CurriculumItemType } from '@/types/learning';
 import { createLocalId } from '@/utils/id';
 
-import { getDatabase } from './database';
+import { getDatabase, waitForLearningContentInstallation } from './database';
 import { getFsrsCard, getFsrsDailyQueue } from './fsrs-repository';
 import { getLearnerProfile } from './profile-repository';
 import { recordLearningAttempt } from './progress-repository';
@@ -42,6 +42,11 @@ export interface CourseExperienceDebugReport {
   revealedAnswers: number;
   completedSections: number;
   activityTypeDistribution: Record<string, number>;
+}
+
+export interface OpenedGuidedCourseLesson {
+  lesson: GuidedCourseLesson;
+  resumed: boolean;
 }
 
 function allLessons(course: CourseDefinition): (CourseLessonDefinition & { courseId: string; unitId: string; unitOrder: number })[] {
@@ -290,27 +295,60 @@ export async function getGuidedCourseLesson(lessonId: string): Promise<GuidedCou
   return guidedLessonFor(lesson, database, profile.id);
 }
 
-export async function startCourseLesson(lessonId: string): Promise<CourseLessonSummary> {
-  const lesson = await getCourseLesson(lessonId);
-  if (!lesson) throw new Error('This lesson is unavailable in the installed course.');
-  if (lesson.progress.state === 'locked') throw new Error('Complete the prerequisite lesson first, or enable lesson browsing.');
-  const database = await getDatabase();
+async function startKnownCourseLesson(
+  lesson: CourseLessonSummary,
+  database: SQLite.SQLiteDatabase,
+  userId: string,
+): Promise<CourseLessonSummary> {
   await installCourseManifestIfNeeded(database);
-  const profile = await getLearnerProfile();
   const now = new Date().toISOString();
   const firstSectionId = lesson.sections[0]?.id;
   await database.runAsync(
     `INSERT INTO course_enrollments (user_id, course_id, started_at, selected_at) VALUES (?, ?, ?, ?)
-     ON CONFLICT(user_id, course_id) DO NOTHING`, profile.id, lesson.courseId, now, now,
+     ON CONFLICT(user_id, course_id) DO NOTHING`, userId, lesson.courseId, now, now,
   );
   await database.runAsync(
     `INSERT INTO course_lesson_progress (user_id, lesson_id, current_section_id, completed_sections_json, started_at)
      VALUES (?, ?, ?, '[]', ?)
      ON CONFLICT(user_id, lesson_id) DO UPDATE SET current_section_id = COALESCE(course_lesson_progress.current_section_id, excluded.current_section_id), started_at = COALESCE(course_lesson_progress.started_at, excluded.started_at)`,
-    profile.id, lesson.id, firstSectionId ?? null, now,
+    userId, lesson.id, firstSectionId ?? null, now,
   );
-  for (const itemId of [...lesson.vocabularyIds, ...lesson.grammarIds, ...lesson.kanjiIds]) await getFsrsCard(database, profile.id, itemId);
-  return (await getCourseLesson(lessonId)) ?? lesson;
+  for (const itemId of [...lesson.vocabularyIds, ...lesson.grammarIds, ...lesson.kanjiIds]) await getFsrsCard(database, userId, itemId);
+  const state = lesson.progress.state === 'needs_review' || ['completed', 'strong', 'skipped_by_placement'].includes(lesson.progress.state)
+    ? lesson.progress.state
+    : 'in_progress';
+  return {
+    ...lesson,
+    progress: {
+      ...lesson.progress,
+      state,
+      currentSectionId: lesson.progress.currentSectionId ?? firstSectionId,
+      startedAt: lesson.progress.startedAt ?? now,
+    },
+  };
+}
+
+export async function startCourseLesson(lessonId: string): Promise<CourseLessonSummary> {
+  await waitForLearningContentInstallation();
+  const lesson = await getCourseLesson(lessonId);
+  if (!lesson) throw new Error('This lesson is unavailable in the installed course.');
+  if (lesson.progress.state === 'locked') throw new Error('Complete the prerequisite lesson first, or enable lesson browsing.');
+  const [database, profile] = await Promise.all([getDatabase(), getLearnerProfile()]);
+  return startKnownCourseLesson(lesson, database, profile.id);
+}
+
+/** Opens the resumable lesson in one pass, avoiding repeated progress reads on Continue. */
+export async function openGuidedCourseLesson(lessonId: string): Promise<OpenedGuidedCourseLesson | undefined> {
+  await waitForLearningContentInstallation();
+  const lesson = await getCourseLesson(lessonId);
+  if (!lesson) return undefined;
+  const [database, profile] = await Promise.all([getDatabase(), getLearnerProfile()]);
+  if (lesson.progress.state === 'locked') {
+    return { lesson: await guidedLessonFor(lesson, database, profile.id), resumed: false };
+  }
+  const resumed = Boolean(lesson.progress.startedAt);
+  const startedLesson = await startKnownCourseLesson(lesson, database, profile.id);
+  return { lesson: await guidedLessonFor(startedLesson, database, profile.id), resumed };
 }
 
 function learningModeFor(category: LessonActivityExercise['category']): 'reading' | 'listening' | 'quiz' {

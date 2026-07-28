@@ -12,8 +12,9 @@ import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { defaultFsrsQueueLimits, getFsrsQueueLimits, restoreAllSuspendedFsrsCards, setFsrsQueueLimits } from '@/services/database/fsrs-repository';
 import { clearAiHistoryAndCache } from '@/services/database/ai-repository';
+import { getFuriganaPreference, setFuriganaPreference } from '@/services/database/japanese-text-repository';
 import { useAppStore } from '@/store/app-store';
-import type { ThemePreference } from '@/types/learning';
+import type { FuriganaPreference, ThemePreference } from '@/types/learning';
 
 const studyGoals = [5, 10, 15, 20, 30];
 const newCardLimits = [0, 5, 10, 15, 20];
@@ -21,6 +22,11 @@ const themeOptions: { value: ThemePreference; label: string }[] = [
   { value: 'system', label: 'System' },
   { value: 'light', label: 'Light' },
   { value: 'dark', label: 'Dark' },
+];
+const furiganaOptions: { value: FuriganaPreference; label: string; detail: string }[] = [
+  { value: 'always', label: 'Always', detail: 'Show readings with Japanese text.' },
+  { value: 'learning', label: 'Tap to reveal', detail: 'Hide readings until you tap a word.' },
+  { value: 'off', label: 'Hide readings', detail: 'Keep text clean; you can still tap a word for help.' },
 ];
 
 export default function SettingsScreen() {
@@ -31,9 +37,11 @@ export default function SettingsScreen() {
   const updateThemePreference = useAppStore((state) => state.updateThemePreference);
   const [message, setMessage] = useState<string>();
   const [newCardsPerDay, setNewCardsPerDay] = useState(defaultFsrsQueueLimits.newCardsPerDay);
+  const [furiganaPreference, setFuriganaPreferenceState] = useState<FuriganaPreference>('off');
 
   useEffect(() => {
     void getFsrsQueueLimits().then((limits) => setNewCardsPerDay(limits.newCardsPerDay)).catch(() => undefined);
+    void getFuriganaPreference().then(setFuriganaPreferenceState).catch(() => undefined);
   }, []);
 
   const changeGoal = async (minutes: number) => {
@@ -64,6 +72,16 @@ export default function SettingsScreen() {
       setMessage('Daily new-card limit updated.');
     } catch {
       setMessage('The review limit could not be updated.');
+    }
+  };
+
+  const changeFurigana = async (preference: FuriganaPreference) => {
+    setMessage(undefined);
+    try {
+      await setFuriganaPreference(preference);
+      setFuriganaPreferenceState(preference);
+    } catch {
+      setMessage('The furigana setting could not be updated.');
     }
   };
 
@@ -158,6 +176,29 @@ export default function SettingsScreen() {
         </View>
       </Card>
 
+      <SectionHeading title="Japanese reading support" />
+      <Card>
+        <ThemedText themeColor="textSecondary">Japanese stays uncluttered by default. Tap a word or kanji whenever you want its reading and meaning.</ThemedText>
+        <View style={styles.readingOptions} accessibilityRole="radiogroup">
+          {furiganaOptions.map((option) => {
+            const selected = furiganaPreference === option.value;
+            return (
+              <Pressable
+                key={option.value}
+                accessibilityRole="radio"
+                accessibilityState={{ checked: selected }}
+                accessibilityLabel={`${option.label}. ${option.detail}`}
+                onPress={() => void changeFurigana(option.value)}
+                style={[styles.readingOption, { borderColor: selected ? theme.primary : theme.border, backgroundColor: selected ? theme.primarySoft : theme.surface }]}
+              >
+                <ThemedText type="smallBold" style={selected ? { color: theme.primary } : undefined}>{option.label}</ThemedText>
+                <ThemedText type="small" themeColor="textSecondary">{option.detail}</ThemedText>
+              </Pressable>
+            );
+          })}
+        </View>
+      </Card>
+
       {message ? <ThemedText type="small" themeColor="textSecondary" accessibilityLiveRegion="polite">{message}</ThemedText> : null}
 
       <SectionHeading title="Data & privacy" />
@@ -189,6 +230,8 @@ const styles = StyleSheet.create({
   options: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
   option: { minHeight: 46, minWidth: 72, borderRadius: Radius.medium, borderWidth: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 12 },
   themeOption: { flex: 1 },
+  readingOptions: { gap: Spacing.two },
+  readingOption: { borderRadius: Radius.medium, borderWidth: 1, gap: 2, minHeight: 58, paddingHorizontal: Spacing.two, paddingVertical: Spacing.one },
   divider: { height: 1, marginVertical: Spacing.one },
   version: { textAlign: 'center', marginTop: Spacing.two },
 });

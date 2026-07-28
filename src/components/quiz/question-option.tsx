@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { ThemedText } from '@/components/themed-text';
+import { JapaneseText } from '@/components/lesson/japanese-text';
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
@@ -37,13 +37,16 @@ export function QuestionOption({
         pressed && !disabled && { backgroundColor: theme.backgroundSelected },
       ]}>
       <View style={[styles.indicator, { borderColor }, selected && { backgroundColor: borderColor }]} />
-      <ThemedText style={styles.label}>{label}</ThemedText>
+      <View style={styles.label}>
+        <JapaneseText style={styles.optionLabel}>{label}</JapaneseText>
+      </View>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  option: { minHeight: 52, borderWidth: 1.5, borderRadius: Radius.medium, padding: 14, flexDirection: 'row', alignItems: 'center', gap: Spacing.three },
+  option: { minHeight: 52, minWidth: 0, borderWidth: 1.5, borderRadius: Radius.medium, padding: 14, flexDirection: 'row', alignItems: 'center', gap: Spacing.three },
   indicator: { width: 20, height: 20, borderRadius: 10, borderWidth: 2 },
-  label: { flex: 1, fontWeight: '600' },
+  label: { flex: 1, minWidth: 0 },
+  optionLabel: { flexShrink: 1, fontWeight: '600' },
 });

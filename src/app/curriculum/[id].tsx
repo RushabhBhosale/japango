@@ -8,6 +8,7 @@ import { LoadingState } from '@/components/common/loading-state';
 import { PageHeader } from '@/components/common/page-header';
 import { ScreenContainer } from '@/components/common/screen-container';
 import { StatusBadge } from '@/components/common/status-badge';
+import { JapaneseText } from '@/components/lesson/japanese-text';
 import { ThemedText } from '@/components/themed-text';
 import { getCanonicalCurriculumItemById } from '@/services/database/vocabulary-repository';
 import type { CurriculumWithMastery } from '@/types/learning';
@@ -59,9 +60,10 @@ export default function CurriculumDetailScreen() {
     <ScreenContainer>
       <PageHeader eyebrow={`${item.level} ${item.type}`} title={item.title} subtitle={item.meaning ?? ''} />
       <Card>
+        <JapaneseText type="japanese">{item.title}</JapaneseText>
         <StatusBadge status={item.mastery.status} />
         {item.reading && item.reading !== item.title ? <ThemedText type="japanese">{item.reading}</ThemedText> : null}
-        {item.explanation ? <ThemedText themeColor="textSecondary">{item.explanation}</ThemedText> : null}
+        {item.explanation ? <JapaneseText themeColor="textSecondary">{item.explanation}</JapaneseText> : null}
         <ThemedText type="small" themeColor="textSecondary">A dedicated practice session for this content type is not available yet. Its current local learning status is shown here.</ThemedText>
       </Card>
     </ScreenContainer>

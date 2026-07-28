@@ -6,6 +6,7 @@ import {
   type BundledCurriculum,
 } from '@/features/curriculum/bundled-curriculum';
 
+import { installCourseReadingVocabulary } from './course-reading-vocabulary-repository';
 import { insertSqlRows } from './sql-batch';
 
 const bundleKey = 'mobile-release-curriculum';
@@ -39,6 +40,11 @@ async function getBundleState(database: SQLite.SQLiteDatabase): Promise<BundleSt
      FROM curriculum_bundle_state WHERE bundle_key = ?`,
     bundleKey,
   );
+}
+
+/** Lightweight readiness check used before routing learners into the course. */
+export async function isBundledCurriculumInstalled(database: SQLite.SQLiteDatabase): Promise<boolean> {
+  return hasExpectedBundleState(await getBundleState(database));
 }
 
 async function importBundle(
@@ -158,6 +164,10 @@ async function importBundle(
        VALUES`,
       contentDetails.map((detail) => [detail.itemId, detail.contentType, JSON.stringify(detail.value), bundle.contentVersion]),
     );
+
+    // The release importer rebuilds vocabulary details, so restore the small
+    // authored passage vocabulary immediately afterward.
+    await installCourseReadingVocabulary(database);
 
     await database.runAsync('DELETE FROM canonical_practice_question_bank');
     await insertSqlRows(

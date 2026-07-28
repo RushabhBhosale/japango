@@ -152,6 +152,7 @@ export interface ProgressSummary {
 }
 
 export type ThemePreference = 'system' | 'light' | 'dark';
+export type FuriganaPreference = 'always' | 'learning' | 'off';
 
 export interface AppSettings {
   themePreference: ThemePreference;

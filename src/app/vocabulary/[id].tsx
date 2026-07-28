@@ -11,6 +11,7 @@ import { ScreenContainer } from '@/components/common/screen-container';
 import { SectionHeading } from '@/components/common/section-heading';
 import { StatusBadge } from '@/components/common/status-badge';
 import { AiTeacherCard } from '@/components/lesson/ai-teacher-card';
+import { JapaneseText } from '@/components/lesson/japanese-text';
 import { JapaneseSpeechButton } from '@/components/lesson/japanese-speech-button';
 import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
@@ -156,6 +157,7 @@ export default function VocabularyLessonScreen() {
           <ThemedText type="smallBold" themeColor="primary">{lesson.level} · {lesson.partOfSpeech.join(' · ')}</ThemedText>
           <StatusBadge status={lesson.mastery.status} />
         </View>
+        <JapaneseText type="japanese">{lesson.title}</JapaneseText>
         {lesson.reading && lesson.reading !== lesson.title ? <ThemedText type="japanese">{lesson.reading}</ThemedText> : null}
         <ThemedText type="heading">{lesson.meaning}</ThemedText>
         {isTransitive || isIntransitive ? <ThemedText themeColor="textSecondary">{isTransitive ? 'Transitive verb' : 'Intransitive verb'}</ThemedText> : null}
@@ -176,7 +178,7 @@ export default function VocabularyLessonScreen() {
         <>
           <SectionHeading title="In context" />
           <Card>
-            <ThemedText type="japanese">{lesson.example.japanese}</ThemedText>
+            <JapaneseText type="japanese">{lesson.example.japanese}</JapaneseText>
             <ThemedText themeColor="textSecondary">{lesson.example.reading}</ThemedText>
             <ThemedText>{lesson.example.meaning}</ThemedText>
             <JapaneseSpeechButton text={lesson.example.japanese} label="Play sentence" rate={0.76} />
@@ -190,7 +192,7 @@ export default function VocabularyLessonScreen() {
           <Card>
             {lesson.linkedKanji.map((kanji) => (
               <View key={kanji.id} style={styles.kanjiRow}>
-                <ThemedText type="japanese">{kanji.written}</ThemedText>
+                <JapaneseText type="japanese">{kanji.written}</JapaneseText>
                 <ThemedText style={styles.kanjiMeaning}>{kanji.meaning}</ThemedText>
                 {kanji.reading ? <ThemedText type="small" themeColor="textSecondary">{kanji.reading}</ThemedText> : null}
               </View>

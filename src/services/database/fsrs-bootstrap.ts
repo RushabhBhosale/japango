@@ -2,7 +2,11 @@ import type * as SQLite from 'expo-sqlite';
 
 export const FSRS_SCHEDULER_VERSION = 'japango-fsrs-1';
 
-export async function ensureFsrsCards(database: SQLite.SQLiteDatabase): Promise<void> {
+export async function ensureFsrsCards(
+  database: SQLite.SQLiteDatabase,
+  curriculumSources: readonly string[] = ['bundled', 'course-support'],
+): Promise<void> {
+  if (!curriculumSources.length) return;
   const now = new Date().toISOString();
   await database.runAsync(
     `INSERT OR IGNORE INTO fsrs_cards
@@ -16,9 +20,11 @@ export async function ensureFsrsCards(database: SQLite.SQLiteDatabase): Promise<
        m.review_interval_days, 0, ?, ?
      FROM user_mastery AS m
      INNER JOIN curriculum_items AS items ON items.id = m.item_id
-     WHERE items.curriculum_source = 'bundled' AND items.release_ready = 1`,
+     WHERE items.curriculum_source IN (${curriculumSources.map(() => '?').join(', ')})
+       AND items.release_ready = 1`,
     now,
     FSRS_SCHEDULER_VERSION,
     now,
+    ...curriculumSources,
   );
 }
