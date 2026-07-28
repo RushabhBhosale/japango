@@ -126,6 +126,16 @@ async function upsertManifest(database: SQLite.SQLiteDatabase): Promise<void> {
       authoredLessons.flatMap(({ lesson }) => lesson.sections.map((section) => [section.id, lesson.id, section.order, section.kind, section.title, section.instruction, section.estimatedMinutes])),
       'ON CONFLICT(id) DO UPDATE SET lesson_id = excluded.lesson_id, section_order = excluded.section_order, kind = excluded.kind, title = excluded.title, instruction = excluded.instruction, estimated_minutes = excluded.estimated_minutes',
     );
+    // Activity IDs are stable so learner progress survives a content update.
+    // Move existing sequence numbers out of the way before applying a revised
+    // template order; SQLite otherwise rejects an in-place order swap because
+    // of UNIQUE(lesson_id, activity_order).
+    await database.runAsync(
+      `UPDATE course_lesson_activities
+       SET activity_order = activity_order + 1000
+       WHERE lesson_id IN (${authoredLessons.map(() => '?').join(', ')})`,
+      ...authoredLessons.map(({ lesson }) => lesson.id),
+    );
     await insertSqlRows(
       database,
       'INSERT INTO course_lesson_activities (id, lesson_id, activity_order, activity_type, title, instruction, estimated_minutes, required, interaction_count, content_refs_json, config_json) VALUES',

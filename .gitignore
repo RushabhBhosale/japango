@@ -42,6 +42,7 @@ assets/generated-content/reports/raw-ocr/
 *.tsbuildinfo
 
 example
+.env
 
 # generated native folders
 /ios
