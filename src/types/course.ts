@@ -38,6 +38,15 @@ export type LessonActivityType =
   | 'checkpoint'
   | 'reflection';
 export type LessonActivityResponseKind = 'continue' | 'select' | 'typed' | 'production';
+export type LessonExperienceTemplate =
+  | 'conversation_first'
+  | 'pattern_workshop'
+  | 'reading_first'
+  | 'situation_challenge'
+  | 'story_chapter'
+  | 'review_workshop';
+export type ExpectedJapaneseScript = 'hiragana' | 'katakana' | 'kanji_or_kana' | 'japanese_sentence' | 'choice' | 'none';
+export type ExpectedPoliteness = 'polite' | 'casual' | 'either';
 export type VerbFormId = 'masu' | 'dictionary' | 'nai' | 'past' | 'te' | 'potential' | 'volitional' | 'tara' | 'nara' | 'ba' | 'passive' | 'causative' | 'causative_passive';
 export type AdjectiveFormId = 'i_present_negative' | 'i_past' | 'i_past_negative' | 'na_present_negative' | 'na_past' | 'na_past_negative' | 'noun_past' | 'noun_past_negative';
 export type CourseLessonState =
@@ -92,8 +101,19 @@ export interface CourseLessonDefinition {
   assessmentQuestionIds: string[];
   verbForms: VerbFormId[];
   adjectiveForms: AdjectiveFormId[];
+  experience: LessonExperienceConfig;
   activities: LessonActivityDefinition[];
   sections: CourseSectionDefinition[];
+}
+
+export interface LessonExperienceConfig {
+  template: LessonExperienceTemplate;
+  primarySkill: string;
+  sectionOrder: string[];
+  feedbackStyle: 'concise' | 'instructional';
+  allowOptionalSpeaking: boolean;
+  showFullOverviewAtStart: boolean;
+  transitionStyle: 'minimal' | 'story' | 'workbook';
 }
 
 export interface LessonActivityExercise {
@@ -109,6 +129,15 @@ export interface LessonActivityExercise {
   listeningText?: string;
   secondsTarget?: number;
   optional?: boolean;
+  /** A learner-facing format promise shown directly above the response control. */
+  expectedResponse?: {
+    script: ExpectedJapaneseScript;
+    politeness?: ExpectedPoliteness;
+    format?: string;
+  };
+  /** Hints are intentionally authored as a small progression, not generated at runtime. */
+  hints?: [string, string, string?];
+  correctReinforcement?: string;
 }
 
 export interface LessonActivityDefinition {
@@ -174,11 +203,29 @@ export interface CourseActivitySubmission {
   activityId: string;
   response?: string;
   responseTimeMs?: number;
+  hintLevel?: number;
+  continueAfterTeaching?: boolean;
+}
+
+export type CourseAnswerFeedbackKind = 'correct' | 'partial' | 'incorrect' | 'teaching';
+
+export interface CourseAnswerFeedback {
+  kind: CourseAnswerFeedbackKind;
+  title: string;
+  learnerAnswer?: string;
+  acceptedAnswer?: string;
+  explanation: string;
+  hint?: string;
+  hintLevel: number;
+  canRetry: boolean;
+  canContinue: boolean;
+  scheduleForReview: boolean;
 }
 
 export interface CourseActivitySubmissionResult {
   correct: boolean;
   explanation?: string;
+  feedback?: CourseAnswerFeedback;
   lesson: GuidedCourseLesson;
 }
 

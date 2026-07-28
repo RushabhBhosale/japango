@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 import { buildCourseManifest, buildCourseOutline, validateCourseManifest } from '@/features/course/course-definition';
 import { getPlacementRecommendation, isUnitReviewAvailable, nextLessonState, scoreCourseCheckpoint } from '@/features/course/course-engine';
-import { answerMatchesAcceptedVariants } from '@/features/course/answer-normalization';
+import { evaluateCourseAnswer } from '@/features/course/course-feedback';
 import type { CourseActivitySubmission, CourseActivitySubmissionResult, CourseCheckpointResult, CourseDefinition, CourseHomeData, CourseItemUsage, CourseLessonActivityProgress, CourseLessonActivitySummary, CourseLessonAnalytics, CourseLessonDefinition, CourseLessonProgress, CourseLessonSummary, CoursePlacementRecommendation, CourseQuestion, GuidedCourseLesson, LessonActivityExercise } from '@/types/course';
 import type { CurriculumItemType } from '@/types/learning';
 import { createLocalId } from '@/utils/id';
@@ -33,6 +33,16 @@ interface ActivityAttemptHistoryRow { activity_id: string; exercise_id: string; 
 let courseManifestInstallationPromise: Promise<void> | undefined;
 
 export interface CourseContentCard { id: string; type: CurriculumItemType; title: string; reading?: string; meaning?: string; }
+export interface CourseExperienceDebugReport {
+  lessonId: string;
+  attempts: number;
+  retries: number;
+  repeatedFailureLoops: number;
+  hintedInteractions: number;
+  revealedAnswers: number;
+  completedSections: number;
+  activityTypeDistribution: Record<string, number>;
+}
 
 function allLessons(course: CourseDefinition): (CourseLessonDefinition & { courseId: string; unitId: string; unitOrder: number })[] {
   return course.units.flatMap((unit) => unit.lessons.map((lesson) => ({ ...lesson, courseId: course.id, unitId: unit.id, unitOrder: unit.order })));
@@ -293,21 +303,67 @@ export async function startCourseLesson(lessonId: string): Promise<CourseLessonS
   return (await getCourseLesson(lessonId)) ?? lesson;
 }
 
-function exerciseIsCorrect(exercise: LessonActivityExercise, response: string | undefined): boolean {
-  if (exercise.responseKind === 'continue') return true;
-  if (exercise.responseKind === 'production') return Boolean(response?.trim());
-  if (!response || !exercise.acceptedAnswers?.length) return false;
-  return exercise.responseKind === 'select'
-    ? exercise.acceptedAnswers.includes(response)
-    : answerMatchesAcceptedVariants(response, exercise.acceptedAnswers);
-}
-
 function learningModeFor(category: LessonActivityExercise['category']): 'reading' | 'listening' | 'quiz' {
   return category === 'reading' ? 'reading' : category === 'listening' ? 'listening' : 'quiz';
 }
 
 function mistakeDomainFor(category: LessonActivityExercise['category']): CurriculumItemType {
   return category === 'conjugation' || category === 'production' ? 'grammar' : category;
+}
+
+function sectionKindForActivity(activity: CourseLessonDefinition['activities'][number]): CourseLessonDefinition['sections'][number]['kind'] {
+  if (activity.type === 'vocabulary_intro' || activity.type === 'vocabulary_practice') return 'vocabulary';
+  if (['grammar_explanation', 'substitution_drill', 'conjugation_drill', 'sentence_transformation', 'sentence_ordering', 'error_correction'].includes(activity.type)) return 'grammar';
+  if (activity.type === 'kanji_intro' || activity.type === 'kanji_practice') return 'kanji';
+  if (activity.type === 'dialogue' || activity.type === 'story') return 'dialogue';
+  if (activity.type === 'listening' || activity.type === 'dictation' || activity.type === 'shadowing') return 'listening';
+  if (activity.type === 'reading' || activity.type === 'timed_reading') return 'reading';
+  if (activity.type === 'checkpoint') return 'checkpoint';
+  if (activity.type === 'reflection') return 'summary';
+  return activity.type === 'introduction' || activity.type === 'warm_up' ? 'introduction' : 'practice';
+}
+
+function sectionForActivity(lesson: CourseLessonSummary, activity: CourseLessonDefinition['activities'][number]) {
+  const kind = sectionKindForActivity(activity);
+  return lesson.sections.find((section) => section.kind === kind) ?? lesson.sections[0];
+}
+
+async function saveHintUsage(
+  database: SQLite.SQLiteDatabase,
+  userId: string,
+  activityId: string,
+  exerciseId: string,
+  interactionIndex: number,
+  hintLevel: number,
+  answerRevealed: boolean,
+): Promise<void> {
+  if (hintLevel <= 0 && !answerRevealed) return;
+  await database.runAsync(
+    `INSERT INTO course_activity_hint_usage
+       (user_id, activity_id, exercise_id, interaction_index, highest_hint_level, answer_revealed, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?)
+     ON CONFLICT(user_id, activity_id, exercise_id, interaction_index)
+     DO UPDATE SET highest_hint_level = MAX(course_activity_hint_usage.highest_hint_level, excluded.highest_hint_level),
+                   answer_revealed = MAX(course_activity_hint_usage.answer_revealed, excluded.answer_revealed),
+                   updated_at = excluded.updated_at`,
+    userId, activityId, exerciseId, interactionIndex, Math.min(3, Math.max(0, Math.round(hintLevel))), answerRevealed ? 1 : 0, new Date().toISOString(),
+  );
+}
+
+/** Persists a learner-requested hint without marking an answer wrong. */
+export async function recordCourseActivityHint(lessonId: string, activityId: string, hintLevel: number): Promise<void> {
+  await startCourseLesson(lessonId);
+  const [lesson, database, profile] = await Promise.all([getCourseLesson(lessonId), getDatabase(), getLearnerProfile()]);
+  const activity = lesson?.activities.find((candidate) => candidate.id === activityId);
+  if (!activity) return;
+  const current = await database.getFirstAsync<ActivityProgressRow>(
+    'SELECT activity_id, current_interaction_index, completed_at, time_spent_seconds FROM course_activity_progress WHERE user_id = ? AND activity_id = ?',
+    profile.id, activityId,
+  );
+  const index = current?.current_interaction_index ?? 0;
+  const exercise = activity.exercises[index];
+  if (!exercise) return;
+  await saveHintUsage(database, profile.id, activityId, exercise.id, index, hintLevel, hintLevel >= 3);
 }
 
 async function saveActivityCheckpointResult(
@@ -385,53 +441,67 @@ export async function submitCourseActivity(
   const exercise = activity.exercises[interactionIndex];
   if (!exercise) throw new Error('This activity has already been completed.');
   const response = submission.response?.trim();
-  const correct = exerciseIsCorrect(exercise, response);
+  const previousAttempt = await database.getFirstAsync<{ attempt_number: number | null; incorrect_attempts: number }>(
+    `SELECT MAX(attempt_number) AS attempt_number,
+            COALESCE(SUM(CASE WHEN correct = 0 THEN 1 ELSE 0 END), 0) AS incorrect_attempts
+     FROM course_activity_attempt_history
+     WHERE user_id = ? AND activity_id = ? AND exercise_id = ? AND interaction_index = ?`,
+    profile.id, activity.id, exercise.id, interactionIndex,
+  );
+  const previousIncorrectAttempts = previousAttempt?.incorrect_attempts ?? 0;
+  const evaluation = evaluateCourseAnswer(exercise, response, previousIncorrectAttempts);
+  const correct = evaluation.correct;
+  const continueAfterTeaching = Boolean(submission.continueAfterTeaching && previousIncorrectAttempts >= 3 && !correct);
   const now = new Date().toISOString();
   const responseTimeMs = Math.max(0, Math.round(submission.responseTimeMs ?? 0));
   const secondsSpent = Math.round(responseTimeMs / 1000);
 
-  await database.runAsync(
-    `INSERT INTO course_activity_attempts (id, user_id, activity_id, exercise_id, interaction_index, item_id, category, response_text, accepted_answers_json, correct, response_time_ms, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-     ON CONFLICT(user_id, activity_id, exercise_id, interaction_index) DO UPDATE SET response_text = excluded.response_text, correct = excluded.correct, response_time_ms = excluded.response_time_ms, created_at = excluded.created_at`,
-    createLocalId('course-activity-attempt'), profile.id, activity.id, exercise.id, interactionIndex, exercise.itemId ?? null, exercise.category, response ?? null,
-    JSON.stringify(exercise.acceptedAnswers ?? []), correct ? 1 : 0, responseTimeMs, now,
-  );
-  const previousAttempt = await database.getFirstAsync<{ attempt_number: number | null }>(
-    `SELECT MAX(attempt_number) AS attempt_number FROM course_activity_attempt_history
-     WHERE user_id = ? AND activity_id = ? AND exercise_id = ? AND interaction_index = ?`,
-    profile.id, activity.id, exercise.id, interactionIndex,
-  );
-  await database.runAsync(
-    `INSERT INTO course_activity_attempt_history (id, user_id, activity_id, exercise_id, interaction_index, attempt_number, item_id, category, correct, response_time_ms, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-    createLocalId('course-activity-history'), profile.id, activity.id, exercise.id, interactionIndex, (previousAttempt?.attempt_number ?? 0) + 1,
-    exercise.itemId ?? null, exercise.category, correct ? 1 : 0, responseTimeMs, now,
-  );
-  if (exercise.itemId) await recordLearningAttempt({
-    id: createLocalId('course-learning-attempt'), userId: profile.id, itemId: exercise.itemId, questionId: `${activity.id}-${exercise.id}-${now}`,
-    lessonId: `course-activity-${activity.id}`, mode: learningModeFor(exercise.category), correct, responseTimeMs,
-    selectedAnswer: response, expectedAnswer: exercise.acceptedAnswers?.join(' | '), createdAt: now,
-  });
-  if (!correct && exercise.itemId) await database.runAsync(
-    `INSERT INTO mistake_notebook (user_id, question_id, item_id, domain, added_at, last_seen_at) VALUES (?, ?, ?, ?, ?, ?)
-     ON CONFLICT(user_id, question_id) DO UPDATE SET last_seen_at = excluded.last_seen_at`,
-    profile.id, `${activity.id}-${exercise.id}`, exercise.itemId, mistakeDomainFor(exercise.category), now, now,
-  );
-  if (exercise.responseKind === 'production' && response) await database.runAsync(
-    'INSERT INTO course_production_answers (id, user_id, activity_id, exercise_id, answer_text, required_pattern, self_confirmed, created_at) VALUES (?, ?, ?, ?, ?, ?, 1, ?)',
-    createLocalId('course-production'), profile.id, activity.id, exercise.id, response, exercise.acceptedAnswers?.[0] ?? null, now,
-  );
-  if (activity.type === 'timed_reading' && exercise.readingText) await database.runAsync(
-    'INSERT INTO course_reading_progress (id, user_id, activity_id, character_count, elapsed_ms, comprehension_score, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)',
-    createLocalId('course-reading'), profile.id, activity.id, exercise.readingText.length, responseTimeMs, correct ? 100 : 0, now,
-  );
-  if (!correct) return { correct: false, explanation: exercise.explanation, lesson: await guidedLessonFor(lesson, database, profile.id) };
+  if (!continueAfterTeaching) {
+    await database.runAsync(
+      `INSERT INTO course_activity_attempts (id, user_id, activity_id, exercise_id, interaction_index, item_id, category, response_text, accepted_answers_json, correct, response_time_ms, created_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(user_id, activity_id, exercise_id, interaction_index) DO UPDATE SET response_text = excluded.response_text, correct = excluded.correct, response_time_ms = excluded.response_time_ms, created_at = excluded.created_at`,
+      createLocalId('course-activity-attempt'), profile.id, activity.id, exercise.id, interactionIndex, exercise.itemId ?? null, exercise.category, response ?? null,
+      JSON.stringify(exercise.acceptedAnswers ?? []), correct ? 1 : 0, responseTimeMs, now,
+    );
+    await database.runAsync(
+      `INSERT INTO course_activity_attempt_history (id, user_id, activity_id, exercise_id, interaction_index, attempt_number, item_id, category, correct, response_time_ms, created_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      createLocalId('course-activity-history'), profile.id, activity.id, exercise.id, interactionIndex, (previousAttempt?.attempt_number ?? 0) + 1,
+      exercise.itemId ?? null, exercise.category, correct ? 1 : 0, responseTimeMs, now,
+    );
+    if (exercise.itemId) await recordLearningAttempt({
+      id: createLocalId('course-learning-attempt'), userId: profile.id, itemId: exercise.itemId, questionId: `${activity.id}-${exercise.id}-${now}`,
+      lessonId: `course-activity-${activity.id}`, mode: learningModeFor(exercise.category), correct, responseTimeMs,
+      selectedAnswer: response, expectedAnswer: exercise.acceptedAnswers?.join(' | '), createdAt: now,
+    });
+    if (!correct && exercise.itemId) await database.runAsync(
+      `INSERT INTO mistake_notebook (user_id, question_id, item_id, domain, added_at, last_seen_at) VALUES (?, ?, ?, ?, ?, ?)
+       ON CONFLICT(user_id, question_id) DO UPDATE SET last_seen_at = excluded.last_seen_at`,
+      profile.id, `${activity.id}-${exercise.id}`, exercise.itemId, mistakeDomainFor(exercise.category), now, now,
+    );
+    if (exercise.responseKind === 'production' && response) await database.runAsync(
+      'INSERT INTO course_production_answers (id, user_id, activity_id, exercise_id, answer_text, required_pattern, self_confirmed, created_at) VALUES (?, ?, ?, ?, ?, ?, 1, ?)',
+      createLocalId('course-production'), profile.id, activity.id, exercise.id, response, exercise.acceptedAnswers?.[0] ?? null, now,
+    );
+    if (activity.type === 'timed_reading' && exercise.readingText) await database.runAsync(
+      'INSERT INTO course_reading_progress (id, user_id, activity_id, character_count, elapsed_ms, comprehension_score, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)',
+      createLocalId('course-reading'), profile.id, activity.id, exercise.readingText.length, responseTimeMs, correct ? 100 : 0, now,
+    );
+  }
+  await saveHintUsage(database, profile.id, activity.id, exercise.id, interactionIndex, Math.max(submission.hintLevel ?? 0, evaluation.feedback.hintLevel), continueAfterTeaching || evaluation.feedback.kind === 'teaching');
+  if (!correct && !continueAfterTeaching) return { correct: false, explanation: evaluation.feedback.explanation, feedback: evaluation.feedback, lesson: await guidedLessonFor(lesson, database, profile.id) };
 
   const nextInteractionIndex = interactionIndex + 1;
   const activityComplete = nextInteractionIndex >= activity.exercises.length;
   const finalActivity = activity.order === lesson.activities.length;
-  const legacySection = lesson.sections[Math.min(activity.order - 1, lesson.sections.length - 1)];
+  const nextActivity = lesson.activities.find((candidate) => candidate.order === activity.order + 1);
+  const currentSection = sectionForActivity(lesson, activity);
+  const nextSection = nextActivity ? sectionForActivity(lesson, nextActivity) : currentSection;
+  const sectionComplete = Boolean(activityComplete && currentSection && (!nextActivity || nextSection?.id !== currentSection.id));
+  const completedSectionIds = sectionComplete && currentSection
+    ? [...new Set([...lesson.progress.completedSectionIds, currentSection.id])]
+    : lesson.progress.completedSectionIds;
   await database.withTransactionAsync(async () => {
     await database.runAsync(
       `INSERT INTO course_activity_progress (user_id, activity_id, current_interaction_index, completed_at, time_spent_seconds)
@@ -441,14 +511,14 @@ export async function submitCourseActivity(
     );
     await database.runAsync(
       `UPDATE course_lesson_progress
-       SET current_section_id = ?, time_spent_seconds = time_spent_seconds + ?, completed_at = CASE WHEN ? THEN ? ELSE completed_at END
+       SET current_section_id = ?, completed_sections_json = ?, time_spent_seconds = time_spent_seconds + ?, completed_at = CASE WHEN ? THEN ? ELSE completed_at END
        WHERE user_id = ? AND lesson_id = ?`,
-      legacySection?.id ?? null, secondsSpent, activityComplete && finalActivity ? 1 : 0, now, profile.id, lesson.id,
+      nextSection?.id ?? null, JSON.stringify(completedSectionIds), secondsSpent, activityComplete && finalActivity ? 1 : 0, now, profile.id, lesson.id,
     );
     if (activityComplete && activity.type === 'checkpoint') await saveActivityCheckpointResult(database, profile.id, lesson, activity.id, now);
     if (activityComplete && finalActivity) await completeCourseWhenEligible(database, profile.id, lesson.courseId, now);
   });
-  return { correct: true, explanation: exercise.explanation, lesson: await guidedLessonFor(lesson, database, profile.id) };
+  return { correct: true, explanation: evaluation.feedback.explanation, feedback: evaluation.feedback, lesson: await guidedLessonFor(lesson, database, profile.id) };
 }
 
 function accuracy(rows: readonly ActivityAttemptHistoryRow[]): number | undefined {
@@ -502,6 +572,44 @@ export async function getCourseLessonAnalytics(lessonId: string): Promise<Course
   const [database, profile] = await Promise.all([getDatabase(), getLearnerProfile()]);
   const rows = await activityAttemptHistory(database, profile.id, lesson.activities.map((activity) => activity.id));
   return summarizeCourseActivityAttempts(rows, new Map(lesson.activities.map((activity) => [activity.id, activity.type])));
+}
+
+/** Local-only diagnostic report for finding frustrating authored activities. */
+export async function getCourseExperienceDebugReport(lessonId: string): Promise<CourseExperienceDebugReport | undefined> {
+  const [lesson, database, profile] = await Promise.all([getCourseLesson(lessonId), getDatabase(), getLearnerProfile()]);
+  if (!lesson) return undefined;
+  const ids = lesson.activities.map((activity) => activity.id);
+  if (!ids.length) return { lessonId, attempts: 0, retries: 0, repeatedFailureLoops: 0, hintedInteractions: 0, revealedAnswers: 0, completedSections: lesson.progress.completedSectionIds.length, activityTypeDistribution: {} };
+  const placeholders = ids.map(() => '?').join(', ');
+  const [attempts, hints] = await Promise.all([
+    database.getAllAsync<{ activity_id: string; exercise_id: string; interaction_index: number; attempt_number: number; correct: number }>(
+      `SELECT activity_id, exercise_id, interaction_index, attempt_number, correct FROM course_activity_attempt_history
+       WHERE user_id = ? AND activity_id IN (${placeholders})`, profile.id, ...ids,
+    ),
+    database.getAllAsync<{ answer_revealed: number }>(
+      `SELECT answer_revealed FROM course_activity_hint_usage WHERE user_id = ? AND activity_id IN (${placeholders})`, profile.id, ...ids,
+    ),
+  ]);
+  const interactions = new Map<string, { attempts: number; incorrect: number }>();
+  for (const attempt of attempts) {
+    const key = `${attempt.activity_id}:${attempt.exercise_id}:${attempt.interaction_index}`;
+    const current = interactions.get(key) ?? { attempts: 0, incorrect: 0 };
+    current.attempts += 1;
+    current.incorrect += attempt.correct ? 0 : 1;
+    interactions.set(key, current);
+  }
+  const activityTypeDistribution: Record<string, number> = {};
+  for (const activity of lesson.activities) activityTypeDistribution[activity.type] = (activityTypeDistribution[activity.type] ?? 0) + activity.interactionCount;
+  return {
+    lessonId,
+    attempts: attempts.length,
+    retries: [...interactions.values()].reduce((total, value) => total + Math.max(0, value.attempts - 1), 0),
+    repeatedFailureLoops: [...interactions.values()].filter((value) => value.incorrect >= 2).length,
+    hintedInteractions: hints.length,
+    revealedAnswers: hints.filter((hint) => Boolean(hint.answer_revealed)).length,
+    completedSections: lesson.progress.completedSectionIds.length,
+    activityTypeDistribution,
+  };
 }
 
 /** Aggregate course-workbook accuracy for the existing Progress screen. */

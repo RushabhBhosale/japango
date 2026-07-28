@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 16;
+export const CURRENT_DATABASE_VERSION = 17;
 
 export interface DatabaseMigration {
   version: number;
@@ -1401,6 +1401,26 @@ const versionSixteenSql = `
     ON course_activity_attempt_history(user_id, activity_id, exercise_id, interaction_index, attempt_number);
 `;
 
+// Hint use is learning context, not correctness. Keeping it separately lets
+// the review engine and local diagnostics distinguish an independent answer
+// from one completed after support.
+const versionSeventeenSql = `
+  CREATE TABLE IF NOT EXISTS course_activity_hint_usage (
+    user_id TEXT NOT NULL,
+    activity_id TEXT NOT NULL,
+    exercise_id TEXT NOT NULL,
+    interaction_index INTEGER NOT NULL CHECK (interaction_index >= 0),
+    highest_hint_level INTEGER NOT NULL DEFAULT 0 CHECK (highest_hint_level BETWEEN 0 AND 3),
+    answer_revealed INTEGER NOT NULL DEFAULT 0 CHECK (answer_revealed IN (0, 1)),
+    updated_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, activity_id, exercise_id, interaction_index),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (activity_id) REFERENCES course_lesson_activities(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS course_activity_hint_usage_lookup_idx
+    ON course_activity_hint_usage(user_id, activity_id, exercise_id, interaction_index);
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1418,6 +1438,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 14, sql: versionFourteenSql },
   { version: 15, sql: versionFifteenSql },
   { version: 16, sql: versionSixteenSql },
+  { version: 17, sql: versionSeventeenSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

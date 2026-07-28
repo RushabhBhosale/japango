@@ -50,7 +50,7 @@ describe('SQLite migrations', () => {
     await runMigrations(database);
 
     expect(database.userVersion).toBe(CURRENT_DATABASE_VERSION);
-    expect(database.transactionCount).toBe(16);
+    expect(database.transactionCount).toBe(17);
     expect(
       database.executedSql.filter((sql) => sql.startsWith('PRAGMA user_version =')),
     ).toEqual([
@@ -70,16 +70,17 @@ describe('SQLite migrations', () => {
       'PRAGMA user_version = 14',
       'PRAGMA user_version = 15',
       'PRAGMA user_version = 16',
+      'PRAGMA user_version = 17',
     ]);
   });
 
-  it('applies v2 through v16 to an existing v1 database and creates no content rows', async () => {
+  it('applies v2 through v17 to an existing v1 database and creates no content rows', async () => {
     const database = new FakeMigrationDatabase(1);
 
     await runMigrations(database);
 
-    expect(database.transactionCount).toBe(15);
-    expect(database.userVersion).toBe(16);
+    expect(database.transactionCount).toBe(16);
+    expect(database.userVersion).toBe(17);
     const schemaSql = database.executedSql[0] ?? '';
     expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS content_import_batches');
     expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS sentences');
@@ -138,6 +139,7 @@ describe('SQLite migrations', () => {
     expect(database.executedSql[24]).toContain('CREATE TABLE IF NOT EXISTS course_lesson_progress');
     expect(database.executedSql[24]).toContain('CREATE TABLE IF NOT EXISTS course_checkpoint_attempts');
     expect(database.executedSql[24]).toContain('CREATE TABLE IF NOT EXISTS course_placement_decisions');
+    expect(database.executedSql.at(-2)).toContain('CREATE TABLE IF NOT EXISTS course_activity_hint_usage');
   });
 
   it('does nothing when the database is current', async () => {
@@ -171,8 +173,8 @@ describe('SQLite migrations', () => {
     expect(database.transactionCount).toBe(1);
   });
 
-  it('keeps migration definitions contiguous and schema-only through v16', () => {
-    expect(databaseMigrations.map(({ version }) => version)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
+  it('keeps migration definitions contiguous and schema-only through v17', () => {
+    expect(databaseMigrations.map(({ version }) => version)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]);
     expect(databaseMigrations.at(-1)?.version).toBe(CURRENT_DATABASE_VERSION);
     expect(databaseMigrations.every(({ sql }) => !/\bINSERT\s+INTO\b/iu.test(sql))).toBe(true);
   });

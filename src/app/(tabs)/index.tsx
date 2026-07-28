@@ -15,24 +15,30 @@ import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { getProgressSummary } from '@/services/database/progress-repository';
 import { getExamAnalytics } from '@/services/database/exam-repository';
+import { getContinueLearningLesson, getCourseHome } from '@/services/database/course-repository';
 import { useAppStore } from '@/store/app-store';
 import type { ProgressSummary } from '@/types/learning';
 import type { ExamAnalytics } from '@/types/exam';
+import type { CourseHomeData, CourseLessonSummary } from '@/types/course';
 
 export default function HomeScreen() {
   const theme = useTheme();
   const profile = useAppStore((state) => state.profile);
   const [summary, setSummary] = useState<ProgressSummary>();
   const [examAnalytics, setExamAnalytics] = useState<ExamAnalytics>();
+  const [courseHome, setCourseHome] = useState<CourseHomeData>();
+  const [continuingLesson, setContinuingLesson] = useState<CourseLessonSummary>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   const load = useCallback(async () => {
     setError(false);
     try {
-      const [progress, exams] = await Promise.all([getProgressSummary(), getExamAnalytics()]);
+      const [progress, exams, continuing] = await Promise.all([getProgressSummary(), getExamAnalytics(), getContinueLearningLesson()]);
       setSummary(progress);
       setExamAnalytics(exams);
+      setContinuingLesson(continuing);
+      setCourseHome(await getCourseHome(continuing?.courseId));
     } catch {
       setError(true);
     } finally {
@@ -60,6 +66,10 @@ export default function HomeScreen() {
     ? profile.assessmentResult.weakAreas.map((area) => area.charAt(0).toUpperCase() + area.slice(1)).join(' · ')
     : 'Balanced N5 foundations';
   const actionLabel = assessed ? 'Continue studying' : 'Start the skill check';
+  const courseLesson = continuingLesson ?? courseHome?.currentLesson;
+  const courseMinutesRemaining = courseLesson
+    ? Math.max(1, courseLesson.estimatedMinutes - Math.floor(courseLesson.progress.timeSpentSeconds / 60))
+    : undefined;
 
   return (
     <ScreenContainer>
@@ -73,9 +83,7 @@ export default function HomeScreen() {
         <View style={styles.planTop}>
           <View style={styles.planCopy}>
             <ThemedText type="smallBold" style={{ color: theme.primary }}>TODAY’S RECOMMENDATION</ThemedText>
-            <ThemedText type="subtitle">
-              {assessed ? (summary.dueCount ? 'Complete today’s reviews' : 'Build your N5 rhythm') : 'Find your starting point'}
-            </ThemedText>
+            <ThemedText type="subtitle">{courseLesson ? `Continue Lesson ${courseLesson.number}` : assessed ? (summary.dueCount ? 'Complete today’s reviews' : 'Build your N5 rhythm') : 'Find your starting point'}</ThemedText>
           </View>
           <View style={[styles.minutes, { backgroundColor: theme.surface }]}>
             <ThemedText type="heading" style={{ color: theme.primary }}>{assessed ? profile.dailyGoalMinutes : 10}</ThemedText>
@@ -83,14 +91,17 @@ export default function HomeScreen() {
           </View>
         </View>
         <ThemedText themeColor="textSecondary">
-          {assessed
-            ? `${summary.dueCount} reviews and ${summary.scheduler.newCards} new cards are ready. About ${summary.scheduler.estimatedStudyMinutes} minutes.`
-            : 'A short 20-question check will create your first local learning plan.'}
+          {courseLesson
+            ? `You are at: ${courseLesson.progress.currentSectionId ? 'a saved lesson section' : courseLesson.communicationGoal} · about ${courseMinutesRemaining} minutes remain.`
+            : assessed
+              ? `${summary.dueCount} reviews and ${summary.scheduler.newCards} new cards are ready. About ${summary.scheduler.estimatedStudyMinutes} minutes.`
+              : 'A short 20-question check will create your first local learning plan.'}
         </ThemedText>
         <AppButton
-          label={actionLabel}
-          onPress={() => router.push(assessed ? '/(tabs)/learn' : '/assessment')}
+          label={courseLesson ? continuingLesson ? 'Continue' : 'Start lesson' : actionLabel}
+          onPress={() => router.push(courseLesson ? `/course/lesson/${encodeURIComponent(courseLesson.id)}` as Href : assessed ? '/(tabs)/learn' : '/assessment')}
         />
+        {assessed ? <View style={styles.quickActions}><AppButton label="10-minute review" variant="secondary" onPress={() => router.push('/(tabs)/review' as Href)} /><AppButton label="Practise weak kanji" variant="secondary" onPress={() => router.push('/library/kanji' as Href)} /></View> : null}
       </Card>
 
       <View style={styles.stats}>
@@ -145,6 +156,7 @@ const styles = StyleSheet.create({
   planCopy: { flex: 1, gap: Spacing.one },
   minutes: { width: 66, height: 66, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
   stats: { flexDirection: 'row', gap: Spacing.two },
+  quickActions: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
   statCard: { flex: 1, minWidth: 0, padding: 12 },
   statValue: { fontSize: 28, lineHeight: 34, fontWeight: '800' },
   progressLabel: { flexDirection: 'row', justifyContent: 'space-between', gap: Spacing.two },

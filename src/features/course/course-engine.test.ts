@@ -6,7 +6,7 @@ import type { CourseLessonDefinition, CourseQuestion } from '@/types/course';
 const lesson: CourseLessonDefinition = {
   id: 'lesson-2', order: 2, number: 2, contentLevel: 'N5', title: 'Second', theme: 'Test', communicationGoal: 'Test the progression.', objectives: ['test'], patternObjectives: ['pattern one', 'pattern two'], estimatedMinutes: 20,
   prerequisiteLessonIds: ['lesson-1'], vocabularyIds: [], grammarIds: [], kanjiIds: [], readingIds: [], listeningIds: [], vocabularyQuestionIds: [], practiceQuestionIds: [], assessmentQuestionIds: [],
-  verbForms: [], adjectiveForms: [], activities: [],
+  verbForms: [], adjectiveForms: [], experience: { template: 'conversation_first', primarySkill: 'Test', sectionOrder: ['introduction'], feedbackStyle: 'concise', allowOptionalSpeaking: true, showFullOverviewAtStart: false, transitionStyle: 'minimal' }, activities: [],
   sections: [{ id: 'section-1', order: 1, kind: 'introduction', title: 'Start', instruction: 'Start.', estimatedMinutes: 1 }],
 };
 const questions: CourseQuestion[] = [
