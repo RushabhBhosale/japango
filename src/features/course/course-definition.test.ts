@@ -86,10 +86,13 @@ describe('structured course manifest', () => {
     expect(passageLength(n4[15]!)).toBeGreaterThanOrEqual(400);
     expect(passageLength(n4[27]!)).toBeGreaterThanOrEqual(600);
     for (const lesson of [...n5, ...n4]) {
+      const readingPassage = lesson.activities.find((activity) => activity.title === 'Reading passage')?.exercises[0]?.readingText;
+      const readingQuestions = lesson.activities.find((activity) => activity.title === 'Reading comprehension')?.exercises;
       expect(lesson.activities.some((activity) => activity.type === 'timed_reading')).toBe(true);
       expect(lesson.activities.some((activity) => activity.type === 'dictation')).toBe(true);
       expect(lesson.activities.some((activity) => activity.type === 'shadowing')).toBe(true);
       expect(lesson.activities.some((activity) => activity.type === 'listening' && activity.exercises.some((exercise) => exercise.listeningText))).toBe(true);
+      expect(readingQuestions?.every((exercise) => exercise.readingText === readingPassage)).toBe(true);
     }
   });
 

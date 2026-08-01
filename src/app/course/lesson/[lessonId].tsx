@@ -14,6 +14,7 @@ import { LessonPhaseRail, phaseForActivity } from '@/components/lesson/lesson-ph
 import { QuestionOption } from '@/components/quiz/question-option';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
+import { courseSpeechText } from '@/features/course/course-speech';
 import { useTheme } from '@/hooks/use-theme';
 import { openGuidedCourseLesson, recordCourseActivityHint, submitCourseActivity } from '@/services/database/course-repository';
 import type { CourseAnswerFeedback, CourseLessonActivitySummary, GuidedCourseLesson, LessonActivityExercise } from '@/types/course';
@@ -201,6 +202,13 @@ export default function CourseLessonScreen() {
 
   const notebook = notebookHref(activeExercise);
   const usesTapChoices = activeExercise.responseKind === 'select' || Boolean(activeExercise.options?.length);
+  const readingBlock = activeExercise.readingText ? (
+    <View style={styles.readingBlock}>
+      <JapaneseText type="japanese">{activeExercise.readingText}</JapaneseText>
+      <JapaneseSpeechButton text={courseSpeechText(activeExercise.readingText)} label="Play passage" rate={0.72} />
+    </View>
+  ) : null;
+  const readingQuestion = activeExercise.category === 'reading' && activeExercise.responseKind !== 'continue';
   return (
     <ScreenContainer keyboardAware>
       <View style={styles.compactHeader}>
@@ -212,9 +220,10 @@ export default function CourseLessonScreen() {
 
       <View style={[styles.activitySurface, activityStyle(activeActivity.type), { borderColor: theme.border, backgroundColor: theme.surface }]}>
         <View style={styles.promptBlock}>
+          {readingQuestion ? readingBlock : null}
           <JapaneseText type="smallBold">{activeExercise.prompt}</JapaneseText>
-          {activeExercise.readingText ? <View style={styles.readingBlock}><JapaneseText type="japanese">{activeExercise.readingText}</JapaneseText><JapaneseSpeechButton text={activeExercise.readingText} label="Play passage" rate={0.72} /></View> : null}
-          {activeExercise.listeningText ? <View style={styles.audioBlock}><ThemedText type="small" themeColor="textSecondary">Listen before revealing a transcript.</ThemedText><JapaneseSpeechButton text={activeExercise.listeningText} label="Play audio" rate={0.76} /><JapaneseSpeechButton text={activeExercise.listeningText} label="Play slowly" rate={0.64} /></View> : null}
+          {!readingQuestion ? readingBlock : null}
+          {activeExercise.listeningText ? <View style={styles.audioBlock}><ThemedText type="small" themeColor="textSecondary">Listen before revealing a transcript.</ThemedText><JapaneseSpeechButton text={courseSpeechText(activeExercise.listeningText)} label="Play audio" rate={0.76} /><JapaneseSpeechButton text={courseSpeechText(activeExercise.listeningText)} label="Play slowly" rate={0.64} /></View> : null}
         </View>
         {usesTapChoices ? <View style={styles.options}>{activeExercise.options?.map((option) => <QuestionOption key={option.id} label={option.label} selected={false} disabled={saving} onPress={() => void submit(activeExercise.responseKind === 'select' ? option.id : option.label)} />)}</View> : activeExercise.responseKind === 'continue' ? <AppButton label={exerciseLabel(activeExercise)} loading={saving} onPress={() => void submit()} /> : <><TextInput value={response} onChangeText={setResponse} autoCapitalize="none" autoCorrect={false} multiline={activeExercise.responseKind === 'production'} accessibilityLabel="Your Japanese answer" placeholder={activeExercise.responseKind === 'production' ? 'Optional: write a short Japanese sentence' : 'Type your Japanese answer'} placeholderTextColor={theme.textSecondary} style={[styles.input, activeExercise.responseKind === 'production' && styles.productionInput, { color: theme.text, borderColor: theme.border }]} /><AppButton label={exerciseLabel(activeExercise)} loading={saving} onPress={() => void submit()} /></>}
         {activeExercise.responseKind !== 'continue' && !feedback?.canContinue ? <AppButton label={hintLevel ? 'Show a stronger hint' : 'Need a hint'} variant="quiet" loading={saving} onPress={() => void requestHint()} /> : null}

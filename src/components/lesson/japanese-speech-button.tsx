@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { AppButton } from '@/components/common/app-button';
 import {
@@ -16,30 +16,52 @@ interface JapaneseSpeechButtonProps {
 }
 
 export function JapaneseSpeechButton({ text, label = 'Play pronunciation', rate }: JapaneseSpeechButtonProps) {
-  const [speaking, setSpeaking] = useState(false);
+  const [playbackState, setPlaybackState] = useState<'idle' | 'playing' | 'paused'>('idle');
   const [message, setMessage] = useState<string>();
+  const playbackId = useRef(0);
+  const resumeAt = useRef(0);
+  const previousText = useRef(text);
 
-  useEffect(() => () => { void stopJapaneseSpeech(); }, []);
+  useEffect(() => () => {
+    playbackId.current += 1;
+    void stopJapaneseSpeech();
+  }, []);
 
-  const toggleSpeech = async () => {
-    if (speaking) {
-      await stopJapaneseSpeech();
-      setSpeaking(false);
-      return;
-    }
+  useEffect(() => {
+    if (previousText.current === text) return;
+    previousText.current = text;
+    playbackId.current += 1;
+    resumeAt.current = 0;
+    setPlaybackState('idle');
+    void stopJapaneseSpeech();
+  }, [text]);
+
+  const playFrom = async (startAt: number) => {
+    const currentPlayback = playbackId.current + 1;
+    playbackId.current = currentPlayback;
+    resumeAt.current = startAt;
     setMessage(undefined);
+    setPlaybackState('playing');
     try {
-      setSpeaking(true);
-      await speakJapanese(text, {
+      await speakJapanese(text.slice(startAt), {
         rate,
-        onDone: () => setSpeaking(false),
+        onBoundary: (relativeIndex) => {
+          if (playbackId.current === currentPlayback) resumeAt.current = startAt + relativeIndex;
+        },
+        onDone: () => {
+          if (playbackId.current !== currentPlayback) return;
+          resumeAt.current = 0;
+          setPlaybackState('idle');
+        },
         onError: () => {
-          setSpeaking(false);
+          if (playbackId.current !== currentPlayback) return;
+          setPlaybackState('idle');
           setMessage('Pronunciation could not be played on this device.');
         },
       });
     } catch (error) {
-      setSpeaking(false);
+      if (playbackId.current !== currentPlayback) return;
+      setPlaybackState('idle');
       setMessage(
         error instanceof JapaneseVoiceUnavailableError
           ? 'A Japanese system voice is unavailable. Install one in your device language settings to use pronunciation.'
@@ -48,13 +70,38 @@ export function JapaneseSpeechButton({ text, label = 'Play pronunciation', rate 
     }
   };
 
+  const pause = async () => {
+    // Expo Speech cannot natively pause on Android. Stop at the most recent
+    // word boundary and resume from that boundary so playback is reliable on
+    // every supported device.
+    playbackId.current += 1;
+    await stopJapaneseSpeech();
+    setPlaybackState('paused');
+  };
+
+  const toggleSpeech = async () => {
+    if (playbackState === 'playing') {
+      await pause();
+      return;
+    }
+    await playFrom(playbackState === 'paused' ? resumeAt.current : 0);
+  };
+
+  const buttonLabel = playbackState === 'playing'
+    ? 'Pause playback'
+    : playbackState === 'paused'
+      ? 'Resume playback'
+      : label;
+
   return (
     <>
       <AppButton
-        label={speaking ? 'Stop pronunciation' : label}
+        label={buttonLabel}
         variant="secondary"
+        accessibilityLabel={playbackState === 'paused' ? 'Resume from the last spoken word' : buttonLabel}
         onPress={() => void toggleSpeech()}
       />
+      {playbackState === 'paused' ? <ThemedText type="small" themeColor="textSecondary" accessibilityLiveRegion="polite">Paused. Resume from the last spoken word.</ThemedText> : null}
       {message ? <ThemedText type="small" themeColor="textSecondary" accessibilityLiveRegion="polite">{message}</ThemedText> : null}
     </>
   );

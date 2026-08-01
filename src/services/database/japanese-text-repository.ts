@@ -6,6 +6,7 @@ import { getSetting, setSetting } from './settings-repository';
 
 const furiganaPreferenceKey = 'japanese_text.furigana_preference';
 const defaultFuriganaPreference: FuriganaPreference = 'off';
+const contextualReadingCacheVersion = '2';
 const textItemCache = new Map<string, JapaneseTextItem[]>();
 const furiganaPreferenceListeners = new Set<(preference: FuriganaPreference) => void>();
 
@@ -59,7 +60,8 @@ export function subscribeToFuriganaPreference(listener: (preference: FuriganaPre
  */
 export async function findJapaneseTextItems(text: string): Promise<JapaneseTextItem[]> {
   if (!hasKanji(text)) return [];
-  const cached = textItemCache.get(text);
+  const cacheKey = `${contextualReadingCacheVersion}\u0000${text}`;
+  const cached = textItemCache.get(cacheKey);
   if (cached) return cached;
   const database = await getDatabase();
   const characters = kanjiCharacters(text);
@@ -92,6 +94,6 @@ export async function findJapaneseTextItems(text: string): Promise<JapaneseTextI
       if (left.type !== right.type) return left.type === 'vocabulary' ? -1 : 1;
       return left.title.localeCompare(right.title);
     });
-  textItemCache.set(text, items);
+  textItemCache.set(cacheKey, items);
   return items;
 }

@@ -10,6 +10,7 @@ export interface JapaneseSpeechOptions {
   rate?: number;
   onDone?: () => void;
   onError?: () => void;
+  onBoundary?: (characterIndex: number) => void;
 }
 
 function isJapaneseVoice(language: string): boolean {
@@ -18,7 +19,7 @@ function isJapaneseVoice(language: string): boolean {
 
 export async function speakJapanese(
   text: string,
-  { rate = 0.82, onDone, onError }: JapaneseSpeechOptions = {},
+  { rate = 0.82, onDone, onError, onBoundary }: JapaneseSpeechOptions = {},
 ): Promise<void> {
   if (!text.trim()) return;
   const voices = await Speech.getAvailableVoicesAsync();
@@ -32,6 +33,7 @@ export async function speakJapanese(
     onDone,
     onStopped: onDone,
     onError,
+    onBoundary: (event: { charIndex: number }) => onBoundary?.(event.charIndex),
   });
 }
 
