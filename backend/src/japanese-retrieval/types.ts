@@ -27,6 +27,7 @@ export interface EmbeddedJapaneseOcrChunk extends JapaneseOcrChunk {
 }
 
 export interface JapaneseSearchResult {
+  chunkId: string;
   content: string;
   score: number;
   book: string;

@@ -1,4 +1,5 @@
 import { furiganaPreferenceSchema } from '@/features/settings/schemas';
+import { lessonSupplementaryReadings } from '@/constants/lesson-supplementary-readings';
 import type { FuriganaPreference, MasteryStatus } from '@/types/learning';
 
 import { getDatabase } from './database';
@@ -6,17 +7,29 @@ import { getSetting, setSetting } from './settings-repository';
 
 const furiganaPreferenceKey = 'japanese_text.furigana_preference';
 const defaultFuriganaPreference: FuriganaPreference = 'off';
-const contextualReadingCacheVersion = '2';
+const contextualReadingCacheVersion = '3';
 const textItemCache = new Map<string, JapaneseTextItem[]>();
 const furiganaPreferenceListeners = new Set<(preference: FuriganaPreference) => void>();
 
 export interface JapaneseTextItem {
   id: string;
-  type: 'vocabulary' | 'kanji';
+  type: 'vocabulary' | 'kanji' | 'supplementary';
   title: string;
   reading?: string;
   meaning?: string;
   masteryStatus?: MasteryStatus;
+}
+
+function supplementaryItemsFor(text: string): JapaneseTextItem[] {
+  return lessonSupplementaryReadings
+    .filter((item) => text.includes(item.title))
+    .map((item) => ({
+      id: `lesson-reading-${[...item.title].map((character) => character.codePointAt(0)?.toString(16)).join('-')}`,
+      type: 'supplementary' as const,
+      title: item.title,
+      reading: item.reading,
+      meaning: item.meaning,
+    }));
 }
 
 interface JapaneseTextRow {
@@ -63,6 +76,7 @@ export async function findJapaneseTextItems(text: string): Promise<JapaneseTextI
   const cacheKey = `${contextualReadingCacheVersion}\u0000${text}`;
   const cached = textItemCache.get(cacheKey);
   if (cached) return cached;
+  const supplementary = supplementaryItemsFor(text);
   const database = await getDatabase();
   const characters = kanjiCharacters(text);
   const characterClauses = characters.map(() => 'instr(c.title, ?) > 0').join(' OR ');
@@ -76,7 +90,7 @@ export async function findJapaneseTextItems(text: string): Promise<JapaneseTextI
     text,
     ...characters,
   );
-  const items = rows
+  const curriculumItems: JapaneseTextItem[] = rows
     .filter((row) => row.reading && row.title && hasKanji(row.title))
     .map((row) => ({
       id: row.id,
@@ -92,6 +106,14 @@ export async function findJapaneseTextItems(text: string): Promise<JapaneseTextI
       const byCourseSupport = Number(right.id.startsWith('course-vocab-')) - Number(left.id.startsWith('course-vocab-'));
       if (byCourseSupport) return byCourseSupport;
       if (left.type !== right.type) return left.type === 'vocabulary' ? -1 : 1;
+      return left.title.localeCompare(right.title);
+    });
+  const curriculumTitles = new Set(curriculumItems.map((item) => item.title));
+  const items = [...curriculumItems, ...supplementary.filter((item) => !curriculumTitles.has(item.title))]
+    .sort((left, right) => {
+      const byLength = right.title.length - left.title.length;
+      if (byLength) return byLength;
+      if (left.type !== right.type) return left.type === 'supplementary' ? 1 : -1;
       return left.title.localeCompare(right.title);
     });
   textItemCache.set(cacheKey, items);

@@ -18,6 +18,7 @@ export const japaneseSearchRequestSchema = z.object({
 export type JapaneseSearchRequest = z.infer<typeof japaneseSearchRequestSchema>;
 
 const searchResultSchema = z.object({
+  chunk_id: z.string().uuid(),
   content: z.string().min(1),
   score: z.number().finite(),
   book: z.string().min(1),
@@ -29,6 +30,7 @@ const searchResultSchema = z.object({
 function parseSearchResults(value: unknown): JapaneseSearchResult[] {
   const rows = z.array(searchResultSchema).parse(value);
   return rows.map((row) => ({
+    chunkId: row.chunk_id,
     content: row.content,
     score: row.score,
     book: row.book,

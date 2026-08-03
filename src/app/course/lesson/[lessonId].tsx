@@ -10,7 +10,7 @@ import { ScreenContainer } from '@/components/common/screen-container';
 import { AiTeacherCard } from '@/components/lesson/ai-teacher-card';
 import { JapaneseText } from '@/components/lesson/japanese-text';
 import { JapaneseSpeechButton } from '@/components/lesson/japanese-speech-button';
-import { LessonPhaseRail, phaseForActivity } from '@/components/lesson/lesson-phase-rail';
+import { LessonPhaseRail } from '@/components/lesson/lesson-phase-rail';
 import { QuestionOption } from '@/components/quiz/question-option';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
@@ -44,20 +44,6 @@ function notebookHref(exercise: LessonActivityExercise): Href | undefined {
 }
 
 function interactionTimestamp(): number { return Date.now(); }
-
-function sectionFor(activity: CourseLessonActivitySummary): string {
-  if (['vocabulary_intro', 'vocabulary_practice'].includes(activity.type)) return 'Vocabulary';
-  if (['grammar_explanation', 'substitution_drill', 'conjugation_drill', 'sentence_transformation', 'sentence_ordering', 'error_correction'].includes(activity.type)) return 'Grammar practice';
-  if (['kanji_intro', 'kanji_practice'].includes(activity.type)) return 'Kanji';
-  if (['reading', 'timed_reading'].includes(activity.type)) return 'Reading';
-  if (['listening', 'dictation', 'shadowing'].includes(activity.type)) return 'Listening';
-  if (activity.type === 'checkpoint') return 'Checkpoint';
-  return activity.type === 'dialogue' || activity.type === 'story' ? 'Conversation' : 'Lesson';
-}
-
-function shouldTransition(from: CourseLessonActivitySummary, next: CourseLessonActivitySummary | undefined): boolean {
-  return Boolean(next && next.progress.currentInteractionIndex === 0 && phaseForActivity(from.type) !== phaseForActivity(next.type));
-}
 
 function activityStyle(type: CourseLessonActivitySummary['type']) {
   if (type === 'dialogue' || type === 'story') return styles.dialogueSurface;
@@ -100,9 +86,7 @@ export default function CourseLessonScreen() {
   const [error, setError] = useState(false);
   const [response, setResponse] = useState('');
   const [feedback, setFeedback] = useState<CourseAnswerFeedback>();
-  const [transition, setTransition] = useState<CourseLessonActivitySummary>();
   const [hintLevel, setHintLevel] = useState(0);
-  const [introVisible, setIntroVisible] = useState(false);
   const interactionStartedAt = useRef(0);
 
   const load = useCallback(async () => {
@@ -114,7 +98,6 @@ export default function CourseLessonScreen() {
       if (!opened) throw new Error('Guided lesson unavailable');
       const next = opened.lesson;
       setGuided(next);
-      setIntroVisible(!opened.resumed && next.currentActivity?.order === 1);
       setResponse('');
       setFeedback(undefined);
       setHintLevel(0);
@@ -140,7 +123,6 @@ export default function CourseLessonScreen() {
     setResponse(value);
     setSaving(true);
     try {
-      const before = activeActivity;
       const result = await submitCourseActivity(lessonId, {
         activityId: activeActivity.id,
         response: value,
@@ -149,16 +131,13 @@ export default function CourseLessonScreen() {
         continueAfterTeaching,
       });
       setGuided(result.lesson);
-      setIntroVisible(false);
       if (!result.correct) {
         setFeedback(result.feedback);
         setHintLevel(result.feedback?.hintLevel ?? hintLevel);
       } else {
-        const next = result.lesson.currentActivity;
         setResponse('');
         setHintLevel(0);
         setFeedback(undefined);
-        if (shouldTransition(before, next)) setTransition(next);
         interactionStartedAt.current = interactionTimestamp();
       }
     } catch {
@@ -184,24 +163,10 @@ export default function CourseLessonScreen() {
   if (lesson.progress.state === 'locked') return <ScreenContainer><EmptyState title={lesson.title} message="Complete the earlier lesson first, or enable lesson browsing when you want to look ahead." symbol="!" /><AppButton label="Back to Learn" onPress={() => router.replace('/(tabs)/learn' as Href)} /></ScreenContainer>;
   if (!activeActivity || !activeExercise) return <ScreenContainer><View style={styles.compactHeader}><ThemedText type="smallBold" themeColor="primary">LESSON {lesson.number}</ThemedText><ThemedText type="heading">{lesson.title}</ThemedText></View><Card><ThemedText type="heading">Lesson complete</ThemedText><ThemedText themeColor="textSecondary">You can now {lesson.objectives.join(', ')}. Your checkpoint, reading, listening, and review schedule are saved.</ThemedText><ThemedText type="smallBold">Next: return to Learn to open the next lesson or review a weak item.</ThemedText><AppButton label="Continue to Learn" onPress={() => router.replace('/(tabs)/learn' as Href)} /></Card></ScreenContainer>;
 
-  if (introVisible) return (
-    <ScreenContainer scroll={false} contentStyle={styles.transitionPage}>
-      <View style={styles.transition}>
-        <ThemedText type="smallBold" themeColor="primary">LESSON {lesson.number}</ThemedText>
-        <ThemedText type="title">{lesson.title}</ThemedText>
-        <ThemedText>{lesson.communicationGoal}</ThemedText>
-        <LessonPhaseRail activities={guided.activities} activeActivityId={activeActivity.id} />
-        <ThemedText themeColor="textSecondary">You will notice the pattern, use it with support, then apply it in a short checkpoint. Your place is saved after every step.</ThemedText>
-        <AppButton label="Begin lesson" onPress={() => setIntroVisible(false)} />
-        <AppButton label="Back to Learn" variant="quiet" onPress={() => router.replace('/(tabs)/learn' as Href)} />
-      </View>
-    </ScreenContainer>
-  );
-
-  if (transition) return <ScreenContainer scroll={false} contentStyle={styles.transitionPage}><View style={styles.transition}><ThemedText type="smallBold" themeColor="primary">SECTION COMPLETE</ThemedText><ThemedText type="title">{sectionFor(transition)}</ThemedText><ThemedText>{transition.title}</ThemedText><ThemedText themeColor="textSecondary">{transition.instruction}</ThemedText><AppButton label={sectionFor(transition) === 'Grammar practice' ? 'Start practice' : 'Continue'} onPress={() => setTransition(undefined)} /><AppButton label="Back to Learn" variant="quiet" onPress={() => router.replace('/(tabs)/learn' as Href)} /></View></ScreenContainer>;
-
   const notebook = notebookHref(activeExercise);
   const usesTapChoices = activeExercise.responseKind === 'select' || Boolean(activeExercise.options?.length);
+  const taskDirection = activeExercise.expectedResponse?.format
+    ?? (usesTapChoices ? 'Choose one answer below.' : activeExercise.responseKind === 'continue' ? undefined : 'Enter your answer below.');
   const readingBlock = activeExercise.readingText ? (
     <View style={styles.readingBlock}>
       <JapaneseText type="japanese">{activeExercise.readingText}</JapaneseText>
@@ -225,6 +190,7 @@ export default function CourseLessonScreen() {
           {!readingQuestion ? readingBlock : null}
           {activeExercise.listeningText ? <View style={styles.audioBlock}><ThemedText type="small" themeColor="textSecondary">Listen before revealing a transcript.</ThemedText><JapaneseSpeechButton text={courseSpeechText(activeExercise.listeningText)} label="Play audio" rate={0.76} /><JapaneseSpeechButton text={courseSpeechText(activeExercise.listeningText)} label="Play slowly" rate={0.64} /></View> : null}
         </View>
+        {taskDirection ? <View style={[styles.taskDirection, { borderColor: theme.border, backgroundColor: theme.backgroundSelected }]}><ThemedText type="smallBold">Your task</ThemedText><ThemedText type="small">{taskDirection}{usesTapChoices ? ' Tap one answer below.' : ''}</ThemedText></View> : null}
         {usesTapChoices ? <View style={styles.options}>{activeExercise.options?.map((option) => <QuestionOption key={option.id} label={option.label} selected={false} disabled={saving} onPress={() => void submit(activeExercise.responseKind === 'select' ? option.id : option.label)} />)}</View> : activeExercise.responseKind === 'continue' ? <AppButton label={exerciseLabel(activeExercise)} loading={saving} onPress={() => void submit()} /> : <><TextInput value={response} onChangeText={setResponse} autoCapitalize="none" autoCorrect={false} multiline={activeExercise.responseKind === 'production'} accessibilityLabel="Your Japanese answer" placeholder={activeExercise.responseKind === 'production' ? 'Optional: write a short Japanese sentence' : 'Type your Japanese answer'} placeholderTextColor={theme.textSecondary} style={[styles.input, activeExercise.responseKind === 'production' && styles.productionInput, { color: theme.text, borderColor: theme.border }]} /><AppButton label={exerciseLabel(activeExercise)} loading={saving} onPress={() => void submit()} /></>}
         {activeExercise.responseKind !== 'continue' && !feedback?.canContinue ? <AppButton label={hintLevel ? 'Show a stronger hint' : 'Need a hint'} variant="quiet" loading={saving} onPress={() => void requestHint()} /> : null}
         {(activeExercise.optional || !activeActivity.required) ? <AppButton label={activeExercise.responseKind === 'production' ? 'Skip optional challenge' : 'Skip optional practice'} variant="quiet" loading={saving} onPress={() => void submit()} /> : null}
@@ -254,6 +220,5 @@ const styles = StyleSheet.create({
   input: { minHeight: 50, borderWidth: 1, borderRadius: Radius.medium, paddingHorizontal: Spacing.three, paddingVertical: Spacing.two },
   productionInput: { minHeight: 108, textAlignVertical: 'top' },
   feedback: { borderWidth: 1, borderRadius: Radius.medium, gap: Spacing.one, marginTop: Spacing.one, padding: Spacing.two },
-  transitionPage: { justifyContent: 'center', paddingBottom: Spacing.five, paddingTop: Spacing.five },
-  transition: { alignSelf: 'stretch', gap: Spacing.three, justifyContent: 'center', minHeight: 360 },
+  taskDirection: { borderWidth: 1, borderRadius: Radius.medium, gap: 2, padding: Spacing.two },
 });

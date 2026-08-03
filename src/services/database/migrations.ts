@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 17;
+export const CURRENT_DATABASE_VERSION = 19;
 
 export interface DatabaseMigration {
   version: number;
@@ -1421,6 +1421,108 @@ const versionSeventeenSql = `
     ON course_activity_hint_usage(user_id, activity_id, exercise_id, interaction_index);
 `;
 
+// Lessons V2 deliberately has independent cached content, progress, attempts,
+// favourites, and review state. It never reads or mutates V1 course rows.
+const versionEighteenSql = `
+  CREATE TABLE IF NOT EXISTS lesson_v2_cached_lessons (
+    lesson_version_id TEXT PRIMARY KEY NOT NULL,
+    lesson_id TEXT NOT NULL,
+    snapshot_json TEXT NOT NULL,
+    cached_at TEXT NOT NULL
+  );
+  CREATE INDEX IF NOT EXISTS lesson_v2_cached_lessons_lesson_idx ON lesson_v2_cached_lessons(lesson_id, cached_at DESC);
+
+  CREATE TABLE IF NOT EXISTS lesson_v2_progress (
+    user_id TEXT NOT NULL,
+    lesson_version_id TEXT NOT NULL,
+    current_section_id TEXT,
+    completed_section_ids_json TEXT NOT NULL DEFAULT '[]',
+    completed_question_ids_json TEXT NOT NULL DEFAULT '[]',
+    started_at TEXT,
+    completed_at TEXT,
+    updated_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, lesson_version_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS lesson_v2_progress_resume_idx ON lesson_v2_progress(user_id, completed_at, updated_at DESC);
+
+  CREATE TABLE IF NOT EXISTS lesson_v2_attempts (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    lesson_version_id TEXT NOT NULL,
+    question_id TEXT NOT NULL,
+    selected_choice_id TEXT,
+    correct INTEGER NOT NULL CHECK (correct IN (0, 1)),
+    response_time_ms INTEGER NOT NULL DEFAULT 0 CHECK (response_time_ms >= 0),
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS lesson_v2_attempts_lookup_idx ON lesson_v2_attempts(user_id, lesson_version_id, created_at DESC);
+
+  CREATE TABLE IF NOT EXISTS lesson_v2_word_actions (
+    user_id TEXT NOT NULL,
+    dependency_type TEXT NOT NULL CHECK (dependency_type IN ('vocabulary', 'kanji')),
+    dependency_id TEXT NOT NULL,
+    is_favorite INTEGER NOT NULL DEFAULT 0 CHECK (is_favorite IN (0, 1)),
+    marked_for_review INTEGER NOT NULL DEFAULT 0 CHECK (marked_for_review IN (0, 1)),
+    updated_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, dependency_type, dependency_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+`;
+
+// A requested one-time fresh start: preserve installed curriculum and authored
+// lesson content, but erase every learner-owned record and return to onboarding.
+// The stable local profile ID remains so the single-device database can be
+// reseeded safely after this migration.
+const versionNineteenSql = `
+  DELETE FROM fsrs_review_history;
+  DELETE FROM learning_attempts;
+  DELETE FROM user_mastery;
+  DELETE FROM review_queue;
+  DELETE FROM vocabulary_bookmarks;
+  DELETE FROM study_sessions;
+  DELETE FROM curriculum_bookmarks;
+  DELETE FROM content_study_sessions;
+  DELETE FROM fsrs_cards;
+  DELETE FROM practice_session_answers;
+  DELETE FROM practice_sessions;
+  DELETE FROM mistake_notebook;
+  DELETE FROM ai_response_cache;
+  DELETE FROM ai_interaction_history;
+  DELETE FROM ai_failed_request_drafts;
+  DELETE FROM ai_generated_examples;
+  DELETE FROM study_content_views;
+  DELETE FROM kanji_flashcard_sessions;
+  DELETE FROM course_activity_attempt_history;
+  DELETE FROM course_activity_attempts;
+  DELETE FROM course_activity_hint_usage;
+  DELETE FROM course_reading_progress;
+  DELETE FROM course_production_answers;
+  DELETE FROM course_activity_progress;
+  DELETE FROM course_checkpoint_attempts;
+  DELETE FROM course_unit_review_attempts;
+  DELETE FROM course_placement_decisions;
+  DELETE FROM course_section_progress;
+  DELETE FROM course_lesson_progress;
+  DELETE FROM course_enrollments;
+  DELETE FROM lesson_v2_attempts;
+  DELETE FROM lesson_v2_progress;
+  DELETE FROM lesson_v2_word_actions;
+  DELETE FROM app_settings;
+
+  UPDATE learner_profile
+  SET display_name = '',
+      daily_goal_minutes = 10,
+      onboarding_completed = 0,
+      assessment_completed = 0,
+      assessment_score = NULL,
+      learner_level = NULL,
+      assessment_result_json = NULL,
+      created_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now'),
+      updated_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now');
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1439,6 +1541,8 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 15, sql: versionFifteenSql },
   { version: 16, sql: versionSixteenSql },
   { version: 17, sql: versionSeventeenSql },
+  { version: 18, sql: versionEighteenSql },
+  { version: 19, sql: versionNineteenSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

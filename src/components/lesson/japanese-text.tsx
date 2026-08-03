@@ -14,7 +14,7 @@ function showsFurigana(item: JapaneseTextItem, preference: FuriganaPreference): 
   return preference === 'always' && Boolean(item.reading);
 }
 
-function notebookHref(item: JapaneseTextItem): Href {
+function notebookHref(item: Exclude<JapaneseTextItem, { type: 'supplementary' }>): Href {
   if (item.id.startsWith('n5-')) return `/curriculum/${encodeURIComponent(item.id)}` as Href;
   return `/${item.type}/${encodeURIComponent(item.id)}` as Href;
 }
@@ -81,8 +81,8 @@ export function JapaneseText({ children, type = 'default', style, themeColor, ac
             {selected ? <>
               <ThemedText type="japanese">{selected.title}</ThemedText>
               {selected.reading ? <ThemedText type="heading">{selected.reading}</ThemedText> : null}
-              <ThemedText themeColor="textSecondary">{selected.meaning ?? 'Meaning is available in the notebook.'}</ThemedText>
-              <AppButton label={`View ${selected.type === 'kanji' ? 'Kanji' : 'Vocabulary'} Details`} variant="secondary" onPress={() => { const target = selected; setSelected(undefined); router.push(notebookHref(target)); }} />
+              <ThemedText themeColor="textSecondary">{selected.meaning ?? (selected.type === 'supplementary' ? 'This reading is supplied for the lesson example.' : 'Meaning is available in the notebook.')}</ThemedText>
+              {selected.type !== 'supplementary' ? <AppButton label={`View ${selected.type === 'kanji' ? 'Kanji' : 'Vocabulary'} Details`} variant="secondary" onPress={() => { const target = selected; setSelected(undefined); router.push(notebookHref(target)); }} /> : null}
               <AppButton label="Close" variant="quiet" onPress={() => setSelected(undefined)} />
             </> : null}
           </Pressable>

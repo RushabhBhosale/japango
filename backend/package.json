@@ -11,7 +11,9 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "ocr:ingest": "node --env-file=.env --import tsx ./scripts/ingest-japanese-ocr.ts",
-    "japanese:search": "node --env-file=.env --import tsx ./scripts/test-japanese-search.ts"
+    "japanese:search": "node --env-file=.env --import tsx ./scripts/test-japanese-search.ts",
+    "lessons-v2:audit": "node --import tsx ./scripts/audit-jlpt-question-papers.ts",
+    "lessons-v2:pilot": "node --import tsx ./scripts/seed-lessons-v2-pilot.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.111.0",

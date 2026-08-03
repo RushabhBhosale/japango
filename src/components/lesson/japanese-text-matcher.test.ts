@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
+import { lessonSupplementaryReadings } from '../../constants/lesson-supplementary-readings';
+
 import { splitJapaneseText } from './japanese-text-matcher';
 
 const items = [
@@ -28,6 +30,22 @@ describe('Japanese text matcher', () => {
     expect(matched.map((segment) => [segment.text, segment.reading])).toEqual([
       ['駅', 'えき'],
       ['何', 'なに'],
+    ]);
+  });
+
+  it('keeps an authored example name tappable even when it is not curriculum vocabulary', () => {
+    const tanaka = lessonSupplementaryReadings.find((item) => item.title === '田中');
+    const newspaper = lessonSupplementaryReadings.find((item) => item.title === '新聞');
+    if (!tanaka || !newspaper) throw new Error('Lesson support readings are missing.');
+
+    const matched = splitJapaneseText('田中さんは新聞を読んでいます。', [
+      { id: 'lesson-reading-tanaka', type: 'supplementary', ...tanaka },
+      { id: 'lesson-reading-newspaper', type: 'supplementary', ...newspaper },
+    ]).filter((segment) => segment.kind === 'item');
+
+    expect(matched.map((segment) => [segment.text, segment.reading])).toEqual([
+      ['田中', 'たなか'],
+      ['新聞', 'しんぶん'],
     ]);
   });
 });

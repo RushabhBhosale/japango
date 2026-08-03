@@ -101,4 +101,19 @@ The optional Next.js backend can index the private Markdown OCR references in Su
      -d '{"query":"〜てしまう","limit":5}'
    ```
 
-`POST /api/japanese/search` accepts `query`, optional `limit` (1–20), `book`, and `sourceType`. Successful results contain the excerpt `content`, hybrid `score`, `book`, `page`, `sourceType`, and `filename`. Vector cosine similarity, PostgreSQL full-text ranking, and trigram similarity are combined server-side. The endpoint is rate limited and returns only safe error messages.
+`POST /api/japanese/search` accepts `query`, optional `limit` (1–20), `book`, and `sourceType`. Successful results contain the stable `chunkId`, excerpt `content`, hybrid `score`, `book`, `page`, `sourceType`, and `filename`. Vector cosine similarity, PostgreSQL full-text ranking, and trigram similarity are combined server-side. The endpoint is rate limited and returns only safe error messages.
+
+## Lessons V2 (local-development foundation)
+
+Lessons V2 is separate from the existing local course: published V2 snapshots, learner progress, attempts, favorites, and review actions use their own tables. Versioned lesson content and private OCR-derived question-pattern records live in Supabase; mobile devices access published lessons only through backend APIs and cache them locally for offline use.
+
+Apply [the V2 migration](backend/supabase/migrations/20260803000000_lessons_v2.sql) after the OCR migration, then inspect the actual question-paper corpus with:
+
+```bash
+cd backend
+npm run lessons-v2:audit
+```
+
+Set `LESSONS_V2_AUTH_MODE=disabled` only for this single-user, local-development phase. The management dashboard at `/admin` and all `/api/admin/*` V2 routes are intentionally unauthenticated in this mode. It is unsafe for any public deployment. Do not expose the backend publicly until a real authorization adapter is implemented and `LESSONS_V2_AUTH_MODE=supabase` is supported. The mobile app never receives the Supabase service-role key; Supabase writes happen only in backend services/routes.
+
+Question-paper OCR is private analysis material. The pipeline preserves exact source transcription separately, requires approval for uncertain OCR and templates, creates only original draft questions, and blocks publication for unresolved tokens, source corruption, or high source-text similarity. See [Lessons V2](docs/lessons-v2.md) and [the question-paper corpus audit](docs/jlpt-question-corpus-audit.md).

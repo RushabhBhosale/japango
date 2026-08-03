@@ -46,9 +46,30 @@ function acknowledgementExercise(id: string, category: LessonActivityExercise['c
   };
 }
 
+function stableOptionHash(value: string): number {
+  let hash = 2_166_136_261;
+  for (const character of value) hash = Math.imul(hash ^ (character.codePointAt(0) ?? 0), 16_777_619);
+  return hash >>> 0;
+}
+
+function distributedChoices(id: string, correct: string, distractors: readonly string[]): { id: string; label: string; correct: boolean }[] {
+  const incorrect = distractors
+    .filter((value, index, values) => value.length > 0 && value !== correct && values.indexOf(value) === index)
+    .sort((left, right) => stableOptionHash(`${id}:${left}`) - stableOptionHash(`${id}:${right}`));
+  const count = Math.min(4, incorrect.length + 1);
+  const correctIndex = stableOptionHash(id) % count;
+  const choices: { id: string; label: string; correct: boolean }[] = [];
+  let distractorIndex = 0;
+  for (let index = 0; index < count; index += 1) {
+    const isCorrect = index === correctIndex;
+    choices.push({ id: isCorrect ? 'correct' : `option-${index + 1}`, label: isCorrect ? correct : incorrect[distractorIndex++]!, correct: isCorrect });
+  }
+  return choices;
+}
+
 function selectExercise(id: string, category: LessonActivityExercise['category'], prompt: string, correct: string, distractors: string[], itemId?: string, explanation?: string, listeningText?: string): LessonActivityExercise {
-  const answers = [correct, ...distractors.filter((value) => value !== correct)].slice(0, 4);
-  return { id, responseKind: 'select', category, prompt, itemId, options: answers.map((label, index) => ({ id: index === 0 ? 'correct' : `option-${index}`, label })), acceptedAnswers: ['correct'], explanation, listeningText, expectedResponse: { script: 'choice', format: 'Choose one answer.' }, correctReinforcement: explanation };
+  const answers = distributedChoices(id, correct, distractors);
+  return { id, responseKind: 'select', category, prompt, itemId, options: answers.map(({ id: optionId, label }) => ({ id: optionId, label })), acceptedAnswers: ['correct'], explanation, listeningText, expectedResponse: { script: 'choice', format: 'Choose one answer.' }, correctReinforcement: explanation };
 }
 
 function relatedFormDistractors(correct: string): string[] {
@@ -110,6 +131,18 @@ function guidedChoiceDistractors(
     .slice(0, 3);
 }
 
+function choiceTask(category: Exclude<LessonActivityExercise['category'], 'production'>, prompt: string): string {
+  if (prompt.includes('Model:') || prompt.includes('Which complete sentence')) return 'Use the model as a pattern. Apply every change named in the question, then choose the complete sentence.';
+  if (prompt.startsWith('Correct:')) return 'Find the mistake, then choose the corrected Japanese sentence.';
+  if (prompt.startsWith('Read ')) return 'Choose the reading used in the word shown.';
+  if (prompt.startsWith('Rewrite ') || prompt.startsWith('Combine ') || prompt.startsWith('Put in order:')) return 'Make only the requested form or word-order change, then choose the correct result.';
+  if (prompt.startsWith('Write Japanese for:') || prompt.startsWith('Translate into Japanese:') || prompt.startsWith('Complete the situation with:')) return 'Choose the Japanese word or sentence that matches the English meaning.';
+  if (category === 'listening') return 'Listen first, then choose the answer that matches the audio.';
+  if (category === 'vocabulary') return 'Choose the Japanese word that matches the meaning.';
+  if (category === 'kanji') return 'Choose the reading of the complete word, not an isolated kanji reading.';
+  return 'Choose the one answer that completes the task above.';
+}
+
 function typedExercise(id: string, category: LessonActivityExercise['category'], prompt: string, acceptedAnswers: string[], itemId?: string, explanation?: string, readingText?: string, listeningText?: string, distractors?: string[]): LessonActivityExercise {
   const polite = /polite|ます|です/u.test(prompt);
   if (category !== 'production') {
@@ -124,8 +157,8 @@ function typedExercise(id: string, category: LessonActivityExercise['category'],
       explanation,
       readingText,
       listeningText,
-      options: [answer, ...guidedChoiceDistractors(category, answer, distractors)].map((label, index) => ({ id: `guided-${index}`, label })),
-      expectedResponse: { script: 'choice', format: 'Choose the response that fits the situation.' },
+      options: distributedChoices(id, answer, guidedChoiceDistractors(category, answer, distractors)).map(({ id: optionId, label }) => ({ id: optionId, label })),
+      expectedResponse: { script: 'choice', format: choiceTask(category, prompt) },
       hints: category === 'conjugation'
         ? ['Look at the final kana of the verb.', answer ? `It begins: ${answer.slice(0, Math.max(1, Math.ceil(answer.length / 2)))}…` : 'Use the model.', answer ? `Answer: ${answer}` : undefined]
         : undefined,
@@ -275,7 +308,20 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
   const grammar = patternObjectivesFor(lesson, lookup);
   const kanji = lookupItems(lesson.kanjiIds, lookup).slice(0, 4);
   const wordForKanji = (kanjiItem: CurriculumItem) => vocabulary.find((word) => word.title.includes(kanjiItem.title));
-  const vocabularyDistractors = (targetId: string | undefined) => vocabulary.filter((item) => item.id !== targetId).map((item) => item.title);
+  const vocabularyDistractors = (targetId: string | undefined) => {
+    const target = vocabulary.find((item) => item.id === targetId);
+    return vocabulary
+      .filter((item) => item.id !== targetId)
+      .sort((left, right) => {
+        const leftOverlap = target ? left.tags.filter((tag) => target.tags.includes(tag)).length : 0;
+        const rightOverlap = target ? right.tags.filter((tag) => target.tags.includes(tag)).length : 0;
+        if (rightOverlap !== leftOverlap) return rightOverlap - leftOverlap;
+        return left.title.localeCompare(right.title);
+      })
+      .map((item) => item.title);
+  };
+  const vocabularyMeaningDistractors = (target: CurriculumItem) => vocabularyDistractors(target.id)
+    .map((title) => vocabulary.find((item) => item.title === title)?.meaning ?? title);
   const kanjiReadingDistractors = (targetId: string | undefined) => kanji
     .filter((item) => item.id !== targetId)
     .flatMap((item) => [wordForKanji(item)?.reading, item.reading].filter((reading): reading is string => Boolean(reading)));
@@ -311,18 +357,18 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
   add('vocabulary_intro', 'Vocabulary batch one', 'Preview four new words at a time before using them in the conversation.', 4, vocabularyPreviewExercises('vocab-one', batchOne), batchOne.map((item) => item.id));
   add('dialogue', 'Words in a real line', 'Listen to one short line. Notice how a word from today’s list sounds in a real situation.', 2, [informationExercise('vocab-model', 'vocabulary', `${batchOne[0]?.title ?? '日本語'} is used naturally in a short exchange.`, batchOne[0]?.id, `あき：${batchOne[0]?.title ?? '日本語'}について話しましょう。\n蓮：はい、いいですね。`)], batchOne.slice(0, 1).map((item) => item.id));
   add('vocabulary_intro', 'Notice the word again', 'Hear the key word once more, then keep it in mind for the recognition practice.', 1, [informationExercise('vocab-hear', 'vocabulary', `Listen for: ${batchOne[0]?.title ?? '日本語'} — ${batchOne[0]?.meaning ?? 'a word from today’s lesson'}.`, batchOne[0]?.id, batchOne[0]?.title)], batchOne.slice(0, 1).map((item) => item.id));
-  add('vocabulary_practice', 'Vocabulary recognition', 'Choose the meaning that fits the Japanese word.', 4, batchOne.slice(0, 6).map((item, index) => selectExercise(`vocab-recognition-${index + 1}`, 'vocabulary', `What does ${item.title} mean?`, item.meaning ?? item.title, vocabulary.filter((other) => other.id !== item.id).slice(0, 3).map((other) => other.meaning ?? other.title), item.id)), batchOne.map((item) => item.id));
+  add('vocabulary_practice', 'Vocabulary recognition', 'Choose between close words from the same lesson topic.', 4, batchOne.slice(0, 6).map((item, index) => selectExercise(`vocab-recognition-${index + 1}`, 'vocabulary', `What does ${item.title} mean?`, item.meaning ?? item.title, vocabularyMeaningDistractors(item), item.id)), batchOne.map((item) => item.id));
   add('vocabulary_practice', 'Vocabulary recall', 'Type the Japanese word. Kana or the canonical written form is accepted.', 4, batchOne.slice(0, 6).map((item, index) => typedExercise(`vocab-recall-${index + 1}`, 'vocabulary', `Write Japanese for: ${item.meaning ?? item.title}`, [item.title, item.reading ?? item.title], item.id, undefined, undefined, undefined, vocabularyDistractors(item.id))), batchOne.map((item) => item.id));
   add('vocabulary_intro', 'Vocabulary batch two', 'Preview the next four words, then reuse both groups in context.', 4, vocabularyPreviewExercises('vocab-two', batchTwo), batchTwo.map((item) => item.id));
   add('vocabulary_practice', 'Vocabulary in context', 'Choose or type the word that completes a practical situation.', 3, vocabulary.slice(0, 3).map((item, index) => typedExercise(`vocab-context-${index + 1}`, 'vocabulary', `Complete the situation with: ${item.meaning ?? item.title}`, [item.title, item.reading ?? item.title], item.id, undefined, undefined, undefined, vocabularyDistractors(item.id))), lesson.vocabularyIds.slice(0, 6));
   add('grammar_explanation', `Pattern one: ${grammar[0] ?? 'Core pattern'}`, 'Start with meaning, then notice the changing form. The technical label can wait until the pattern feels familiar.', 3, [informationExercise('grammar-one', 'grammar', `Situation: Aya is introducing herself.\n\nModel: わたしはアヤです。\n\nUse ${grammar[0] ?? 'this pattern'} when the situation calls for it.`, lesson.grammarIds[0], 'わたしはアヤです。')], lesson.grammarIds.slice(0, 1));
-  add('substitution_drill', 'Pattern substitution drill', 'Follow the model, replace the cue, and type the complete sentence. Keep the particle and verb form that carry the meaning.', 4, [
-    typedExercise('substitution-1', 'grammar', 'Model: 田中さんは本を読んでいます。\nCue: 先生 / 新聞\n\nType the complete new sentence.', ['先生は新聞を読んでいます'], lesson.grammarIds[0], 'The topic is 先生 and the object is 新聞. Keep 読んでいます.'),
-    typedExercise('substitution-2', 'grammar', 'Now change the subject and action.\nCue: 母 / テレビを見る\n\nType the complete sentence.', ['母はテレビを見ています'], lesson.grammarIds[0], 'Keep は after the topic and use the ongoing-action form.'),
-    typedExercise('substitution-3', 'grammar', 'One without a model.\nCue: 友だち / コーヒーを飲む\n\nType the complete sentence.', ['友だちはコーヒーを飲んでいます'], lesson.grammarIds[0], 'Use the same sentence frame with the new cue.'),
+  add('substitution_drill', 'Build a sentence from a model', 'Use the model to see the sentence pattern. Then make only the changes listed in the cue.', 4, [
+    typedExercise('substitution-1', 'grammar', 'Model: 田中さんは本を読んでいます。\n\nChange the topic to 先生 and the object to 新聞. Keep 読んでいます.\n\nWhich complete sentence is correct?', ['先生は新聞を読んでいます'], lesson.grammarIds[0], 'The topic is 先生, the object is 新聞, and the verb stays 読んでいます.'),
+    typedExercise('substitution-2', 'grammar', 'Use the same pattern.\n\nTopic: 母\nAction: テレビを見る\n\nWhich complete sentence says that Mother is watching television?', ['母はテレビを見ています'], lesson.grammarIds[0], 'Use 母 as the topic, then change 見る to 見ています.'),
+    typedExercise('substitution-3', 'grammar', 'Use the same pattern.\n\nTopic: 友だち\nAction: コーヒーを飲む\n\nWhich complete sentence says that a friend is drinking coffee?', ['友だちはコーヒーを飲んでいます'], lesson.grammarIds[0], 'Use 友だち as the topic, then change 飲む to 飲んでいます.'),
   ], lesson.grammarIds.slice(0, 1));
   const transformations = ['dictionary-to-masu', 'dictionary-to-te', 'affirmative-to-negative'] as const;
-  add('sentence_transformation', 'Sentence transformation', 'Rewrite the sentence. Japanese punctuation is optional.', 4, transformations.map((kind, index) => { const transformation = createTransformation(kind, kind === 'affirmative-to-negative' ? '食べます' : '食べる', verb); return typedExercise(`transform-one-${index + 1}`, 'conjugation', `${transformation.instruction} ${transformation.source}`, transformation.expectedAnswers, lesson.grammarIds[0], transformation.instruction); }), lesson.grammarIds.slice(0, 1));
+  add('sentence_transformation', 'Change one form at a time', 'Read the requested form first. Only the verb form changes; the meaning stays the same.', 4, transformations.map((kind, index) => { const transformation = createTransformation(kind, kind === 'affirmative-to-negative' ? '食べます' : '食べる', verb); return typedExercise(`transform-one-${index + 1}`, 'conjugation', `${transformation.instruction}\n\nWord to change: ${transformation.source}`, transformation.expectedAnswers, lesson.grammarIds[0], transformation.instruction); }), lesson.grammarIds.slice(0, 1));
   add('grammar_explanation', `Pattern two: ${grammar[1] ?? grammar[0] ?? 'Second pattern'}`, 'Compare the new meaning with the first model, then use the form in a controlled sentence.', 3, [informationExercise('grammar-two', 'grammar', `Situation: Aya answers politely.\n\nModel: はい、学生です。\n\nNotice how ${grammar[1] ?? grammar[0] ?? 'this pattern'} makes the response fit the situation.`, lesson.grammarIds[1] ?? lesson.grammarIds[0], 'はい、学生です。')], lesson.grammarIds.slice(1, 2));
   add('substitution_drill', 'Controlled grammar drill', 'Use the pattern in a complete response. Read the situation first; do not just name the grammar point.', 4, [
     typedExercise('controlled-1', 'grammar', 'A classmate asks: 「これは何ですか。」\nAnswer: “It is a book.”\n\nType the complete polite sentence.', ['これは本です'], lesson.grammarIds[1] ?? lesson.grammarIds[0], 'Use です to make a polite identity sentence.'),
@@ -352,13 +398,13 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
   add('dialogue', 'Dialogue replay and breakdown', 'Replay one line at a time. Notice how the target patterns make the exchange work.', 3, [informationExercise('dialogue-replay', 'listening', 'Shadow the line after listening.', lesson.listeningIds[0], undefined)], lesson.listeningIds);
   add('reading', 'Reading passage', 'Read once without translation. Open the help only after making a first attempt.', 4, [informationExercise('reading-passage', 'reading', 'Read the passage and identify the main situation.', lesson.readingIds[0], reading)], lesson.readingIds);
   add('reading', 'Reading comprehension', 'Answer a main-idea and a detail question. The passage stays directly above each question so you can check it while you answer.', 3, [
-    { ...selectExercise('reading-main', 'reading', 'What is the main purpose of the passage?', 'Aki and Ren are discussing a practical plan.', ['They are describing a past vacation.', 'They are buying a train ticket.', 'They are taking a test.'], lesson.readingIds[0]), readingText: reading },
-    { ...selectExercise('reading-detail', 'reading', 'What do they do after the conversation?', 'They write important words in a notebook.', ['They go shopping.', 'They call a teacher.', 'They cancel their plan.'], lesson.readingIds[0]), readingText: reading },
+    { ...selectExercise('reading-main', 'reading', 'What are Aki and Ren trying to do throughout the passage?', 'Discuss a plan and confirm the important details.', ['Finish a homework assignment before class.', 'Choose a restaurant for dinner.', 'Buy tickets for a trip.'], lesson.readingIds[0]), readingText: reading },
+    { ...selectExercise('reading-detail', 'reading', 'After they talk, what do they write down?', 'New words and example sentences in a notebook.', ['Only the time of their next meeting.', 'A message to their teacher.', 'A list of food to buy.'], lesson.readingIds[0]), readingText: reading },
   ], lesson.readingIds);
   add('timed_reading', 'Timed reading', 'Read for meaning at a steady pace. Speed matters only when comprehension remains sound.', 2, [informationExercise('timed-reading', 'reading', 'Start the timer, read the passage, and continue when you understand the main idea.', lesson.readingIds[0], reading)], lesson.readingIds);
-  add('listening', 'Listen without the transcript', 'Listen for the overall situation first.', 3, [selectExercise('listening-global', 'listening', 'What should the listener do if something is unclear?', 'Ask to hear it again.', ['Stop studying.', 'Change the topic.', 'Read the translation first.'], lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
-  add('listening', 'Listening comprehension', 'Replay and listen for a specific detail.', 3, [selectExercise('listening-detail', 'listening', 'What do the characters plan to do?', 'Confirm important information.', ['Cook together.', 'Travel tomorrow.', 'Take a photo.'], lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
-  add('dictation', 'Dictation and sound discrimination', 'Listen without a transcript, then type the key phrase you hear.', 3, [typedExercise('dictation', 'listening', 'Type the key phrase: もう一度聞いてください。', ['もう一度聞いてください', 'もういちど聞いてください'], lesson.listeningIds[0], undefined, undefined, listening)], lesson.listeningIds);
+  add('listening', 'Listen for the clarification phrase', 'Listen once without reading the transcript. Then identify the phrase the speakers use when something is unclear.', 3, [selectExercise('listening-global', 'listening', 'After you listen, which action does the dialogue recommend when you do not understand?', 'Ask to hear it again.', ['Guess from the next word.', 'Read an English translation first.', 'Continue without asking.'], lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
+  add('listening', 'Listen for the first action', 'Replay the dialogue and listen for what Aki and Ren decide to do first.', 3, [selectExercise('listening-detail', 'listening', 'What do Aki and Ren say they will do before continuing their conversation?', 'Confirm the important point first.', ['Repeat the greeting once more.', 'Write the new vocabulary in a notebook.', 'Choose a new topic to discuss.'], lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
+  add('dictation', 'Recognise a phrase you heard', 'Listen to the phrase, then choose its Japanese wording.', 3, [typedExercise('dictation', 'listening', 'The speaker asks you to listen again. Which Japanese phrase do you hear?', ['もう一度聞いてください', 'もういちど聞いてください'], lesson.listeningIds[0], undefined, undefined, listening)], lesson.listeningIds);
   add('shadowing', 'Transcript review and shadowing', 'Reveal the transcript, replay a line, and repeat at a comfortable pace.', 2, [informationExercise('shadowing', 'listening', 'Optional speaking practice: shadow one line before continuing.', lesson.listeningIds[0], listening)], lesson.listeningIds, false);
   add('sentence_production', 'Your own sentence', 'Optional: write one short sentence about your own life using today’s pattern. Many answers can be valid.', 3, [typedExercise('production', 'production', `Optional challenge: write an original sentence using ${grammar[0] ?? 'today’s pattern'}.`, grammar[0] ? [grammar[0]] : ['です'], lesson.grammarIds[0], 'Use the pattern; offline you may self-confirm a different valid sentence.')], lesson.grammarIds.slice(0, 1));
   add('error_correction', 'Find and correct the mistake', 'Correct the form, then read the explanation.', 3, [typedExercise('error-one', 'grammar', 'Correct: わたしは学生だです。', ['わたしは学生です'], lesson.grammarIds[0], 'Use either だ or です, not both.'), typedExercise('error-two', 'conjugation', 'Correct: 食べるます。', ['食べます'], lesson.grammarIds[0], 'Attach ます to the verb stem.')], lesson.grammarIds.slice(0, 1));

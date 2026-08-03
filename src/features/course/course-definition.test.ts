@@ -38,6 +38,30 @@ describe('structured course manifest', () => {
     }
   });
 
+  it('uses specific, visible task directions for model-based questions', () => {
+    const manifest = buildCourseManifest();
+    const lesson = manifest.courses.find((course) => course.id === 'jlpt-n5')?.units[0]?.lessons[0];
+    const substitution = lesson?.activities.find((activity) => activity.type === 'substitution_drill')?.exercises[0];
+    expect(substitution?.prompt).toContain('Change the topic to 先生 and the object to 新聞.');
+    expect(substitution?.expectedResponse?.format).toContain('complete sentence');
+    expect(substitution?.expectedResponse?.format).not.toContain('fits the situation');
+  });
+
+  it('distributes correct answers and uses nearby vocabulary as distractors', () => {
+    const manifest = buildCourseManifest();
+    const lesson = manifest.courses.find((course) => course.id === 'jlpt-n5')?.units[0]?.lessons[0];
+    const choices = lesson?.activities
+      .flatMap((activity) => activity.exercises)
+      .filter((exercise) => (exercise.options?.length ?? 0) > 1) ?? [];
+    const correctPositions = choices.map((exercise) => exercise.responseKind === 'select'
+      ? exercise.options?.findIndex((option) => option.id === 'correct')
+      : exercise.options?.findIndex((option) => Boolean(exercise.acceptedAnswers?.includes(option.label))));
+
+    expect(new Set(correctPositions).size).toBeGreaterThan(1);
+    expect(correctPositions.filter((position) => position === 0).length).toBeLessThan(choices.length);
+    expect(choices.find((exercise) => exercise.id === 'first-greeting')?.options?.findIndex((option) => option.id === 'correct')).not.toBe(0);
+  });
+
   it('rejects shallow and duplicate exercises in a normal lesson', () => {
     const copy = structuredClone(buildCourseManifest());
     const lesson = copy.courses.find((course) => course.id === 'jlpt-n5')?.units[0]?.lessons[0];
