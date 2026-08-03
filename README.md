@@ -57,3 +57,48 @@ npm run content:ocr -- --book genki-1 --start 1 --end 20
 ```
 
 OCR cache data is only used to propose book/lesson/page-to-canonical-ID metadata. It is never used for canonical readings, meanings, explanations, examples, or answers, and it must not be committed or redistributed.
+
+## Japanese OCR retrieval backend
+
+The optional Next.js backend can index the private Markdown OCR references in Supabase for staff-only Japanese-content lookup. It reads files from `assets/docs-reference/japango-ocr` but never changes them. The database contains chunked excerpts, metadata, and embeddings; it does not participate in the deterministic mobile curriculum or mastery calculation.
+
+1. Install the backend dependencies and create its local environment file:
+
+   ```bash
+   cd backend
+   npm install
+   cp .env.example .env
+   ```
+
+2. Set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` in `backend/.env`, then configure the local embedding provider:
+
+   ```dotenv
+   EMBEDDING_PROVIDER=ollama
+   OLLAMA_BASE_URL=http://localhost:11434
+   OLLAMA_EMBEDDING_MODEL=qwen3-embedding:4b
+   JAPANESE_EMBEDDING_DIMENSIONS=2560
+   ```
+
+   Pull the model with `ollama pull qwen3-embedding:4b`. The backend alone calls Ollama; no Ollama URL or Supabase service key belongs in an `EXPO_PUBLIC_` variable.
+
+3. Apply [the retrieval migration](backend/supabase/migrations/20260802000000_japanese_ocr_retrieval.sql) through the Supabase SQL editor or your normal Supabase migration workflow. It enables `vector` and `pg_trgm`, stores Qwen’s 2,560-dimensional embeddings as `halfvec` so they can use an HNSW index, creates private tables, and exposes service-role-only RPCs for atomic ingestion and hybrid search.
+
+4. Inspect the full OCR corpus without writing to Supabase, then ingest it:
+
+   ```bash
+   npm run ocr:ingest -- --dry-run
+   npm run ocr:ingest
+   ```
+
+   The ingestion command hashes every source file, skips unchanged files, writes empty or unreadable-file events to `.cache/japango-content/japanese-ocr-rejected.jsonl`, retries transient embedding/database failures, and supports `--force` to rebuild all OCR files. It is safe to rerun after an interruption.
+
+5. Verify retrieval directly from the terminal or through the API:
+
+   ```bash
+   npm run japanese:search -- "〜てしまう"
+   curl -X POST http://localhost:3000/api/japanese/search \
+     -H 'content-type: application/json' \
+     -d '{"query":"〜てしまう","limit":5}'
+   ```
+
+`POST /api/japanese/search` accepts `query`, optional `limit` (1–20), `book`, and `sourceType`. Successful results contain the excerpt `content`, hybrid `score`, `book`, `page`, `sourceType`, and `filename`. Vector cosine similarity, PostgreSQL full-text ranking, and trigram similarity are combined server-side. The endpoint is rate limited and returns only safe error messages.
