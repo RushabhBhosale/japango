@@ -120,6 +120,28 @@ describe('structured course manifest', () => {
     }
   });
 
+  it('uses lesson-specific dialogue, listening checks, and reading contexts', () => {
+    const manifest = buildCourseManifest();
+    const lessons = ['jlpt-n5', 'jlpt-n4']
+      .flatMap((courseId) => manifest.courses.find((course) => course.id === courseId)?.units.flatMap((unit) => unit.lessons) ?? [])
+      .filter((lesson) => !(lesson.contentLevel === 'N5' && lesson.number === 1));
+    const dialogueTranscripts = lessons.flatMap((lesson) => lesson.activities
+      .find((activity) => activity.title === 'First dialogue exposure')?.exercises
+      .flatMap((exercise) => exercise.listeningText ? [exercise.listeningText] : []) ?? []);
+    const readingPassages = lessons.flatMap((lesson) => lesson.activities
+      .find((activity) => activity.title === 'Reading passage')?.exercises
+      .flatMap((exercise) => exercise.readingText ? [exercise.readingText] : []) ?? []);
+    const listeningPrompts = lessons.flatMap((lesson) => lesson.activities
+      .find((activity) => activity.title === 'Listen for the first action')?.exercises
+      .map((exercise) => exercise.prompt) ?? []);
+
+    expect(dialogueTranscripts).toHaveLength(lessons.length);
+    expect(new Set(dialogueTranscripts).size).toBe(dialogueTranscripts.length);
+    expect(new Set(readingPassages).size).toBe(readingPassages.length);
+    expect(new Set(listeningPrompts).size).toBe(listeningPrompts.length);
+    expect(dialogueTranscripts.some((text) => text.includes('あき：') || text.includes('蓮：'))).toBe(false);
+  });
+
   it('populates every N5 and N4 unit with substantial lessons and a workshop', () => {
     const manifest = buildCourseManifest();
     for (const courseId of ['jlpt-n5', 'jlpt-n4']) {

@@ -96,6 +96,7 @@ export default function LearnScreen() {
 
       <View style={styles.row}>
         <AppButton label="View course map" variant="secondary" onPress={() => router.push(`/course/${data.course.id}` as Href)} />
+        <AppButton label="Audio Lessons" variant="secondary" onPress={() => router.push('/audio-lessons' as Href)} />
         <AppButton label="Study Library" variant="secondary" onPress={() => router.push('/library' as Href)} />
       </View>
 

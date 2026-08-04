@@ -7,6 +7,8 @@ import { extractOfficialAnswerKey } from './question-papers/answer-key-mapper';
 import { extractSourceQuestion, type ExtractedSourceQuestion } from './question-papers/source-extractor';
 import { classifyJlptQuestionPattern } from './question-taxonomy';
 import { validateJlptQuestion } from './question-validator';
+import { auditIssuesForGeneratedQuestion } from './content-audit';
+import { LessonsV2Service } from './service';
 import { highestSourceSimilarity } from './similarity';
 import { createLessonsV2SupabaseClient, throwLessonsV2DatabaseError } from './supabase';
 
@@ -224,8 +226,15 @@ export class LessonsV2QuestionService {
     if (findError) throwLessonsV2DatabaseError(findError);
     if (!row) throw new LessonsV2Error('NOT_FOUND', 'Generated question was not found.', 404);
     const question = lessonV2QuestionSchema.parse(row.content);
-    if (status === 'published' && (question.validationStatus !== 'valid' || Number(row.similarity_score ?? 1) >= 0.82)) {
-      throw new LessonsV2Error('VALIDATION_FAILED', 'Only valid, original generated questions can publish.', 422);
+    const learnerVisible = status === 'approved' || status === 'published';
+    if (learnerVisible && (question.validationStatus !== 'valid' || Number(row.similarity_score ?? 1) >= 0.82)) {
+      throw new LessonsV2Error('VALIDATION_FAILED', 'Only valid, original generated questions can become available to learners.', 422);
+    }
+    if (learnerVisible) {
+      const auditIssues = auditIssuesForGeneratedQuestion(await new LessonsV2Service().auditContent(), questionId);
+      if (auditIssues.some((issue) => issue.severity === 'critical')) {
+        throw new LessonsV2Error('VALIDATION_FAILED', 'Resolve repeated or near-identical generated-question content before making it available to learners.', 422);
+      }
     }
     const { data, error } = await this.supabase.from('lesson_v2_generated_questions')
       .update({ status, published_at: status === 'published' ? new Date().toISOString() : null })

@@ -112,8 +112,19 @@ Apply [the V2 migration](backend/supabase/migrations/20260803000000_lessons_v2.s
 ```bash
 cd backend
 npm run lessons-v2:audit
+npm run lessons-v2:content-audit
 ```
+
+`lessons-v2:content-audit` reads the current editable and published V2 snapshots without changing them. It scans dialogue, examples, passages, exercises, choices, explanations, speaking/review text, and listening text for exact duplicates and near-identical wording across lessons. Exact and high-similarity findings block publication; lower-confidence repeated patterns are reported for editorial review. The same check runs whenever a draft is validated or published.
 
 Set `LESSONS_V2_AUTH_MODE=disabled` only for this single-user, local-development phase. The management dashboard at `/admin` and all `/api/admin/*` V2 routes are intentionally unauthenticated in this mode. It is unsafe for any public deployment. Do not expose the backend publicly until a real authorization adapter is implemented and `LESSONS_V2_AUTH_MODE=supabase` is supported. The mobile app never receives the Supabase service-role key; Supabase writes happen only in backend services/routes.
 
-Question-paper OCR is private analysis material. The pipeline preserves exact source transcription separately, requires approval for uncertain OCR and templates, creates only original draft questions, and blocks publication for unresolved tokens, source corruption, or high source-text similarity. See [Lessons V2](docs/lessons-v2.md) and [the question-paper corpus audit](docs/jlpt-question-corpus-audit.md).
+Question-paper OCR is private analysis material. The pipeline preserves exact source transcription separately, requires approval for uncertain OCR and templates, creates only original draft questions, and blocks publication for unresolved tokens, source corruption, repeated lesson content, or high source-text similarity. See [Lessons V2](docs/lessons-v2.md) and [the question-paper corpus audit](docs/jlpt-question-corpus-audit.md).
+
+## Audio Lessons
+
+Audio Lessons is a separate versioned N5/N4 audio-first library. It has its own Supabase migration (`20260804000000_audio_lessons.sql`) and local SQLite cache/progress/download/favorite tables (migration v20), so it does not alter course or Lessons V2 learning data.
+
+The mobile player uses `expo-audio` for seek, background/screen-off playback, lock-screen controls, speeds, repeat/autoplay, and per-section playback, while `expo-file-system` stores optional downloads. Rebuild the native app after pulling this change so the `expo-audio` background-playback config plugin takes effect. Published lessons are still delivered only by backend routes and cached locally.
+
+Audio scripts, dependency links, Japanese token states, timing, transcripts, questions, explanations, source references, and TTS records are versioned. Draft validation audits exact and near-duplicate heard content across all audio lessons and blocks publishing until links are verified and every section has a ready hosted audio file. System speech is only a draft-review fallback. See [Audio Lessons](docs/audio-lessons.md) for setup, pilot seeding, management routes, TTS environment variables, limitations, and the next milestone.

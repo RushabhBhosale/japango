@@ -192,45 +192,156 @@ function lookupItems(ids: readonly string[], lookup: ItemLookup): CurriculumItem
   });
 }
 
-function originalReading(lesson: Pick<CourseLessonDefinition, 'number' | 'contentLevel' | 'theme' | 'vocabularyIds'>, lookup: ItemLookup): string {
+interface LessonScenario {
+  speakers: readonly [string, string];
+  place: string;
+  firstAction: string;
+  firstActionEnglish: string;
+  clarification: string;
+  clarificationEnglish: string;
+  note: string;
+  noteEnglish: string;
+}
+
+interface LessonNarrative {
+  reading: string;
+  listening: string;
+  situation: string;
+  vocabularyModel: string;
+  readingMainPrompt: string;
+  readingMainAnswer: string;
+  readingMainDistractors: string[];
+  readingDetailPrompt: string;
+  readingDetailAnswer: string;
+  readingDetailDistractors: string[];
+  listeningGlobalPrompt: string;
+  listeningGlobalAnswer: string;
+  listeningGlobalDistractors: string[];
+  listeningDetailPrompt: string;
+  listeningDetailAnswer: string;
+  listeningDetailDistractors: string[];
+  dictationPrompt: string;
+  heardPhrase: string;
+}
+
+const lessonScenarios: readonly LessonScenario[] = [
+  { speakers: ['さき', 'けん'], place: '図書館', firstAction: '開く時間を先に見ます', firstActionEnglish: 'Check the library opening time first.', clarification: '読めないところは、ゆっくり言ってください。', clarificationEnglish: 'Ask the speaker to say it slowly.', note: '借りる本の名前', noteEnglish: 'the title of the book to borrow' },
+  { speakers: ['みお', 'たく'], place: '駅', firstAction: '出る時間を確認します', firstActionEnglish: 'Confirm the departure time.', clarification: '聞こえなかったので、もう一度言ってください。', clarificationEnglish: 'Ask for the information again.', note: '電車の番線', noteEnglish: 'the train platform number' },
+  { speakers: ['りな', 'そうた'], place: '教室', firstAction: '先生に聞いてから始めます', firstActionEnglish: 'Ask the teacher before starting.', clarification: '字が小さいです。見せてください。', clarificationEnglish: 'Ask to see the small writing.', note: '宿題を出す日', noteEnglish: 'the homework due date' },
+  { speakers: ['ゆい', 'はる'], place: '店', firstAction: '値段を比べます', firstActionEnglish: 'Compare the prices.', clarification: 'すみません、もう少しゆっくり話してください。', clarificationEnglish: 'Ask the clerk to speak more slowly.', note: '買う物の数', noteEnglish: 'the number of items to buy' },
+  { speakers: ['のぞみ', 'こう'], place: '公園', firstAction: '会う場所を決めます', firstActionEnglish: 'Decide where to meet.', clarification: 'よく聞こえませんでした。もう一度お願いします。', clarificationEnglish: 'Ask to hear the plan once more.', note: '入口の近く', noteEnglish: 'the place near the entrance' },
+  { speakers: ['えま', 'りく'], place: '病院', firstAction: '予約の時間を電話で聞きます', firstActionEnglish: 'Call to ask the appointment time.', clarification: '早いので、ゆっくりお願いします。', clarificationEnglish: 'Ask the caller to speak slowly.', note: '持って行く物', noteEnglish: 'what to bring' },
+  { speakers: ['なな', 'だいき'], place: '市役所', firstAction: '書く場所をたしかめます', firstActionEnglish: 'Check where to write on the form.', clarification: 'ここをもう一度言ってください。', clarificationEnglish: 'Ask about that part again.', note: '必要な書類', noteEnglish: 'the required documents' },
+  { speakers: ['ひな', 'ゆうと'], place: '会社', firstAction: '会議の部屋を見に行きます', firstActionEnglish: 'Go and check the meeting room.', clarification: '大事な所をもう一度聞かせてください。', clarificationEnglish: 'Ask to hear the important part again.', note: '会議の始まる時刻', noteEnglish: 'the meeting start time' },
+  { speakers: ['まい', 'しゅん'], place: '家', firstAction: '買い物の紙を見直します', firstActionEnglish: 'Check the shopping list again.', clarification: 'その言葉の意味を教えてください。', clarificationEnglish: 'Ask what the word means.', note: '今夜の食事', noteEnglish: 'tonight’s meal' },
+  { speakers: ['あおい', 'れお'], place: '案内所', firstAction: '地図で道を調べます', firstActionEnglish: 'Look up the route on a map.', clarification: '駅までの道を、もう一度お願いします。', clarificationEnglish: 'Ask for the directions again.', note: 'バスの出る場所', noteEnglish: 'where the bus leaves' },
+  { speakers: ['かほ', 'じん'], place: '体育館', firstAction: '始まる前に入口を見ます', firstActionEnglish: 'Check the entrance before it begins.', clarification: '時間をもう一度言ってください。', clarificationEnglish: 'Ask for the time again.', note: '必要な運動ぐつ', noteEnglish: 'the needed sports shoes' },
+  { speakers: ['ふうか', 'なお'], place: '郵便局', firstAction: '出す前に住所を確認します', firstActionEnglish: 'Check the address before sending it.', clarification: '数字をゆっくり読んでください。', clarificationEnglish: 'Ask the clerk to read the numbers slowly.', note: '切手の値段', noteEnglish: 'the stamp price' },
+];
+
+function lessonNarrative(lesson: Pick<CourseLessonDefinition, 'number' | 'contentLevel' | 'vocabularyIds'>, lookup: ItemLookup): LessonNarrative {
   const words = lookupItems(lesson.vocabularyIds, lookup).slice(0, 4).map((item) => item.title);
-  const topic = words[0] ?? '日本語';
-  const detail = words[1] ?? '予定';
+  const topic = words[0] ?? '予定';
+  const detail = words[1] ?? '時間';
   const support = words[2] ?? '友だち';
   const outcome = words[3] ?? '大事なこと';
-  const lines = [
-    `あきは日本語を勉強している学生です。今日は「${lesson.theme}」という場面で、${topic}について友だちの蓮と話します。`,
-    `朝、あきは${detail}を確認してから駅の近くで蓮を待ちました。二人には${support}について相談したいことがありました。`,
-    `蓮は「今、何が一番大切ですか」と聞きました。あきは急がずに、理由と自分の考えを短く説明しました。`,
-    `二人は相手の話をよく聞き、分からない言葉がある時は「もう一度お願いします」と言って確認しました。`,
-    `会話の途中で予定が少し変わりました。しかし、${outcome}を先に決めれば大丈夫だと二人は考えました。`,
-    `あきはノートを開き、新しく覚えた言葉と文の形を例文と一緒に書きました。蓮はその例を声に出して読みました。`,
-    `昼ごろ、二人は次の行動を比べました。一つは早く終わりますが、もう一つは相手に分かりやすく説明できます。`,
-    `そのため、二人は相手の都合を聞いてから、無理のない方法を選ぶことにしました。`,
-    `帰る前に、二人は明日の予定、必要な物、連絡する時間をもう一度確認しました。`,
-    `あきは今日の会話で、正しい言葉だけでなく、場面に合う言い方も大切だと感じました。`,
-    `家に着いたあと、あきは短いメッセージを書きました。「今日はありがとうございました。次も${topic}について話しましょう。」`,
-    `翌日、蓮から返事が来ました。二人は前の日の内容を使って、もっと自然な会話ができるようになっていました。`,
-    `この経験を通して、あきは新しい文の形を知るだけでなく、読む、聞く、書く、話す練習を続けようと決めました。`,
-    `読んだ人は、二人が何を相談し、どのように予定を決め、最後に何を学んだかを確認できます。`,
-    `次の場面でも、あきは相手の話を聞き、必要なら質問し、自分の考えを分かりやすく伝えるつもりです。`,
-    `小さな会話を何度も練習することで、二人は新しい${topic}を実際の生活で使えるようになりました。`,
+  const scenario = lessonScenarios[(lesson.number - 1) % lessonScenarios.length] ?? lessonScenarios[0]!;
+  const [firstSpeaker, secondSpeaker] = scenario.speakers;
+  const listening = `${firstSpeaker}：${scenario.place}で「${topic}」を見つけました。\n${secondSpeaker}：「${detail}」もいっしょに見ましょう。\n${firstSpeaker}：では、${scenario.firstAction}。\n${secondSpeaker}：${scenario.clarification}`;
+  const flows = [
+    [
+      `${firstSpeaker}は朝、${scenario.place}で小さな案内を見つけました。`,
+      `案内には「${topic}」と「${detail}」という言葉がありました。`,
+      `${firstSpeaker}は意味を急いで決めず、${secondSpeaker}と一つずつ読みました。`,
+      `${secondSpeaker}は、${scenario.firstAction}と言いました。`,
+      `二人は${support}にも分かるように、短い言葉で話すことにしました。`,
+      `分からない所では、${secondSpeaker}は「${scenario.clarification}」と言いました。`,
+      `話したあと、${firstSpeaker}はノートに${scenario.note}と「${topic}」を書きました。`,
+      `最後に、二人は${outcome}を確認してから次の行動を決めました。`,
+      `${firstSpeaker}は、場面によって聞き方を変えると話しやすいと感じました。`,
+      `${secondSpeaker}も、短く確認すると間違いが少ないと言いました。`,
+      `帰る前に、二人は明日もう一度この案内を見る約束をしました。`,
+      `次の日、${firstSpeaker}は自分で「${detail}」を見つけられました。`,
+    ],
+    [
+      `午後、${secondSpeaker}は${scenario.place}で${firstSpeaker}を待っていました。`,
+      `${firstSpeaker}は「${topic}」について聞きたいことがあると言いました。`,
+      `二人は案内を見ながら、「${detail}」がどこに書いてあるか探しました。`,
+      `すぐに決めないで、${scenario.firstAction}ことにしました。`,
+      `${secondSpeaker}は早口にならないように気をつけました。`,
+      `${firstSpeaker}は分からない時に「${scenario.clarification}」と伝えました。`,
+      `その後、${scenario.note}を紙に書いて、必要な物を数えました。`,
+      `${support}に知らせるため、二人は短いメッセージも作りました。`,
+      `話し合うと、「${topic}」の使い方が前よりよく分かりました。`,
+      `二人は急がず確認したので、${outcome}を忘れませんでした。`,
+      `帰り道に、${firstSpeaker}は次に同じ場面になった時の言い方を練習しました。`,
+      `${secondSpeaker}は、相手の返事を待つことも大切だと教えました。`,
+    ],
+    [
+      `${firstSpeaker}と${secondSpeaker}には、${scenario.place}で確認したい用事がありました。`,
+      `まず、二人は「${topic}」という言葉を見て、知っている意味を出し合いました。`,
+      `次に「${detail}」について、案内の数字と時間を見直しました。`,
+      `二人が選んだ最初の行動は、${scenario.firstAction}ことでした。`,
+      `説明が長くなった時、${secondSpeaker}は「${scenario.clarification}」と頼みました。`,
+      `${firstSpeaker}は言い直してから、${support}にも同じ説明をしました。`,
+      `メモには「${topic}」と${scenario.note}が並んでいました。`,
+      `二人はメモを見ながら、${outcome}を先に終える方法を考えました。`,
+      `答えが一つに見えても、案内全体を読む必要があると分かりました。`,
+      `だから、二人は次の文に進む前に内容を短く確認しました。`,
+      `用事が終わると、${firstSpeaker}は自分の言葉で今日の予定を言えました。`,
+      `${secondSpeaker}は、その話し方なら相手にも伝わると言いました。`,
+    ],
+    [
+      `休日に、${firstSpeaker}は${scenario.place}で${secondSpeaker}と会いました。`,
+      `${firstSpeaker}が持ってきた紙には「${topic}」と書いてありました。`,
+      `${secondSpeaker}は「${detail}」も調べると役に立つと言いました。`,
+      `二人は相談して、${scenario.firstAction}ことから始めました。`,
+      `聞き取れない言葉が出た時は、${scenario.clarification}と落ち着いて言いました。`,
+      `二人は相手が話し終わってから、自分の考えを一文で伝えました。`,
+      `その紙の下には、${scenario.note}と連絡する時間が書かれていました。`,
+      `${support}にも見せるため、二人は字を大きく書き直しました。`,
+      `確認した後なら、${outcome}について安心して決められます。`,
+      `${firstSpeaker}は、知らない言葉でもすぐにあきらめないことにしました。`,
+      `${secondSpeaker}は、相手に聞き返す時の言い方をもう一度練習しました。`,
+      `二人は次の予定でも、同じように案内を最後まで読むつもりです。`,
+    ],
+  ] as const;
+  const lines = flows[(lesson.number - 1) % flows.length] ?? flows[0];
+  const extensionLines = [
+    `${firstSpeaker}は${scenario.place}で聞いた言葉を、家でもう一度声に出して読みました。`,
+    `${secondSpeaker}は${scenario.note}が分かれば、次の用事も安心して進められると考えました。`,
+    `二人は「${topic}」を使った短い文を作り、${detail}との違いを比べました。`,
+    `もし案内が変わったら、すぐに決めず、もう一度全体を読むことにしました。`,
+    `${support}から質問が来た時も、二人は最初に確認した内容から順番に答えました。`,
+    `急ぐ時ほど、${scenario.firstAction}ことが役に立つと二人は気づきました。`,
+    `${firstSpeaker}は相手の言葉を最後まで聞いてから、必要な時だけ聞き返しました。`,
+    `${secondSpeaker}は、今日のような短い会話を何度も練習したいと言いました。`,
   ];
-  // Keep in-lesson reading approachable; longer readings remain in the
-  // dedicated Reading Notebook rather than turning every lesson into a wall of text.
   const target = lesson.contentLevel === 'N4'
     ? lesson.number >= 28 ? 600 : lesson.number >= 16 ? 400 : 250
     : 130;
-  let text = '';
-  for (const line of lines) { text += line; if (text.length >= target) break; }
-  return text;
-}
-
-function originalListening(lesson: Pick<CourseLessonDefinition, 'theme' | 'vocabularyIds'>, lookup: ItemLookup): string {
-  const words = lookupItems(lesson.vocabularyIds, lookup).slice(0, 2).map((item) => item.title);
-  const topic = words[0] ?? '予定';
-  const reply = words[1] ?? '日本語';
-  return `あき：こんにちは。${topic}について少し話してもいいですか。\n蓮：もちろんです。${reply}も使って説明しましょう。\nあき：ありがとうございます。では、先に大事なことを確認します。\n蓮：いいですね。分からないところは、もう一度聞いてください。`;
+  let reading = '';
+  for (const line of [...lines, ...extensionLines]) { reading += line; if (reading.length >= target) break; }
+  return {
+    reading,
+    listening,
+    situation: `${firstSpeaker} and ${secondSpeaker} are at the ${scenario.place}. They need to understand an everyday detail before acting.`,
+    vocabularyModel: `${firstSpeaker}：「${topic}」を見つけました。\n${secondSpeaker}：では、「${detail}」も見ましょう。`,
+    readingMainPrompt: `What do ${firstSpeaker} and ${secondSpeaker} do first after they find “${topic}”?`,
+    readingMainAnswer: `${scenario.firstActionEnglish} This helps them check “${topic}” carefully.`,
+    readingMainDistractors: [`Buy something related to “${topic}” without checking it.`, `Leave before they find the detail about “${detail}”.`, `Ask someone else to make the decision for them.`],
+    readingDetailPrompt: `What does ${firstSpeaker} write in the notes after the conversation?`,
+    readingDetailAnswer: `“${topic}” and ${scenario.noteEnglish}.`,
+    readingDetailDistractors: [`Only a plan for “${detail}”.`, `A message about a different place.`, `A list that does not mention “${topic}”.`],
+    listeningGlobalPrompt: `After listening at ${scenario.place}, what should the speaker do when “${topic}” or another detail is unclear?`,
+    listeningGlobalAnswer: `${scenario.clarificationEnglish} while checking “${topic}”.`,
+    listeningGlobalDistractors: [`Guess what “${detail}” means from the next word.`, `Change the plan before checking “${topic}”.`, `Continue without asking about the unclear detail.`],
+    listeningDetailPrompt: `What do ${firstSpeaker} and ${secondSpeaker} agree to do first about “${topic}”?`,
+    listeningDetailAnswer: `${scenario.firstActionEnglish} Then they can use “${topic}” in the right context.`,
+    listeningDetailDistractors: [`Repeat a greeting instead of checking “${topic}”.`, `Write a notebook page before looking at “${detail}”.`, `Leave ${scenario.place} without a plan.`],
+    dictationPrompt: `Which Japanese phrase do you hear when ${secondSpeaker} asks for clarification at ${scenario.place}?`,
+    heardPhrase: scenario.clarification,
+  };
 }
 
 function verbFormsFor(lesson: Pick<CourseLessonDefinition, 'contentLevel' | 'number'>): VerbFormId[] {
@@ -339,8 +450,8 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
   );
   const verb = '食べる';
   const forms = lesson.verbForms.length ? lesson.verbForms : ['dictionary' as const];
-  const reading = originalReading(lesson, lookup);
-  const listening = originalListening(lesson, lookup);
+  const narrative = lessonNarrative(lesson, lookup);
+  const { reading, listening } = narrative;
   const activities: LessonActivityDefinition[] = [];
   const add = (type: LessonActivityDefinition['type'], title: string, instruction: string, minutes: number, exercises: LessonActivityExercise[], refs: string[] = [], required = true) => activities.push(activity(lesson.id, activities.length + 1, type, title, instruction, minutes, exercises, refs, required));
   if (lesson.contentLevel === 'N5' && lesson.number === 1) {
@@ -349,13 +460,13 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
     add('introduction', 'What happens next', 'You will hear words in context, notice a sentence pattern, practise with support, then use it yourself.', 1, [informationExercise('lesson-map', 'production', `By the end, you can: ${lesson.objectives.join(' · ')}.`)]);
   } else {
     add('introduction', 'Today’s goal', `By the end, you will be able to ${lesson.communicationGoal.charAt(0).toLowerCase()}${lesson.communicationGoal.slice(1)}`, 1, [informationExercise('opening', 'production', `Practical outcome: ${lesson.objectives.join(' · ')}`)]);
-    add('story', 'Situation', 'Meet Aki and Ren in today’s practical situation before you practise the language.', 2, [informationExercise('story', 'reading', 'Read the situation. Look for the reason the characters need to communicate.', undefined, reading)]);
+    add('story', 'Situation', 'Read today’s specific everyday situation before you practise the language.', 2, [informationExercise('story', 'reading', narrative.situation, undefined, reading)]);
     add('dialogue', 'First dialogue exposure', 'Listen once for the situation. Notice what the speakers need to confirm; you will use this context after the key words are introduced.', 3, [acknowledgementExercise('dialogue-global', 'listening', 'Listen for the overall situation. You do not need to answer yet.', lesson.listeningIds[0], listening)], lesson.listeningIds);
   }
   const batchOne = vocabulary.slice(0, Math.ceil(vocabulary.length / 2));
   const batchTwo = vocabulary.slice(batchOne.length);
   add('vocabulary_intro', 'Vocabulary batch one', 'Preview four new words at a time before using them in the conversation.', 4, vocabularyPreviewExercises('vocab-one', batchOne), batchOne.map((item) => item.id));
-  add('dialogue', 'Words in a real line', 'Listen to one short line. Notice how a word from today’s list sounds in a real situation.', 2, [informationExercise('vocab-model', 'vocabulary', `${batchOne[0]?.title ?? '日本語'} is used naturally in a short exchange.`, batchOne[0]?.id, `あき：${batchOne[0]?.title ?? '日本語'}について話しましょう。\n蓮：はい、いいですね。`)], batchOne.slice(0, 1).map((item) => item.id));
+  add('dialogue', 'Words in a real line', 'Listen to a line from today’s situation. Notice how two words work together in a real exchange.', 2, [informationExercise('vocab-model', 'vocabulary', `${batchOne[0]?.title ?? '日本語'} is used naturally in today’s situation.`, batchOne[0]?.id, narrative.vocabularyModel)], batchOne.slice(0, 1).map((item) => item.id));
   add('vocabulary_intro', 'Notice the word again', 'Hear the key word once more, then keep it in mind for the recognition practice.', 1, [informationExercise('vocab-hear', 'vocabulary', `Listen for: ${batchOne[0]?.title ?? '日本語'} — ${batchOne[0]?.meaning ?? 'a word from today’s lesson'}.`, batchOne[0]?.id, batchOne[0]?.title)], batchOne.slice(0, 1).map((item) => item.id));
   add('vocabulary_practice', 'Vocabulary recognition', 'Choose between close words from the same lesson topic.', 4, batchOne.slice(0, 6).map((item, index) => selectExercise(`vocab-recognition-${index + 1}`, 'vocabulary', `What does ${item.title} mean?`, item.meaning ?? item.title, vocabularyMeaningDistractors(item), item.id)), batchOne.map((item) => item.id));
   add('vocabulary_practice', 'Vocabulary recall', 'Type the Japanese word. Kana or the canonical written form is accepted.', 4, batchOne.slice(0, 6).map((item, index) => typedExercise(`vocab-recall-${index + 1}`, 'vocabulary', `Write Japanese for: ${item.meaning ?? item.title}`, [item.title, item.reading ?? item.title], item.id, undefined, undefined, undefined, vocabularyDistractors(item.id))), batchOne.map((item) => item.id));
@@ -398,13 +509,13 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
   add('dialogue', 'Dialogue replay and breakdown', 'Replay one line at a time. Notice how the target patterns make the exchange work.', 3, [informationExercise('dialogue-replay', 'listening', 'Shadow the line after listening.', lesson.listeningIds[0], undefined)], lesson.listeningIds);
   add('reading', 'Reading passage', 'Read once without translation. Open the help only after making a first attempt.', 4, [informationExercise('reading-passage', 'reading', 'Read the passage and identify the main situation.', lesson.readingIds[0], reading)], lesson.readingIds);
   add('reading', 'Reading comprehension', 'Answer a main-idea and a detail question. The passage stays directly above each question so you can check it while you answer.', 3, [
-    { ...selectExercise('reading-main', 'reading', 'What are Aki and Ren trying to do throughout the passage?', 'Discuss a plan and confirm the important details.', ['Finish a homework assignment before class.', 'Choose a restaurant for dinner.', 'Buy tickets for a trip.'], lesson.readingIds[0]), readingText: reading },
-    { ...selectExercise('reading-detail', 'reading', 'After they talk, what do they write down?', 'New words and example sentences in a notebook.', ['Only the time of their next meeting.', 'A message to their teacher.', 'A list of food to buy.'], lesson.readingIds[0]), readingText: reading },
+    { ...selectExercise('reading-main', 'reading', narrative.readingMainPrompt, narrative.readingMainAnswer, narrative.readingMainDistractors, lesson.readingIds[0]), readingText: reading },
+    { ...selectExercise('reading-detail', 'reading', narrative.readingDetailPrompt, narrative.readingDetailAnswer, narrative.readingDetailDistractors, lesson.readingIds[0]), readingText: reading },
   ], lesson.readingIds);
   add('timed_reading', 'Timed reading', 'Read for meaning at a steady pace. Speed matters only when comprehension remains sound.', 2, [informationExercise('timed-reading', 'reading', 'Start the timer, read the passage, and continue when you understand the main idea.', lesson.readingIds[0], reading)], lesson.readingIds);
-  add('listening', 'Listen for the clarification phrase', 'Listen once without reading the transcript. Then identify the phrase the speakers use when something is unclear.', 3, [selectExercise('listening-global', 'listening', 'After you listen, which action does the dialogue recommend when you do not understand?', 'Ask to hear it again.', ['Guess from the next word.', 'Read an English translation first.', 'Continue without asking.'], lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
-  add('listening', 'Listen for the first action', 'Replay the dialogue and listen for what Aki and Ren decide to do first.', 3, [selectExercise('listening-detail', 'listening', 'What do Aki and Ren say they will do before continuing their conversation?', 'Confirm the important point first.', ['Repeat the greeting once more.', 'Write the new vocabulary in a notebook.', 'Choose a new topic to discuss.'], lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
-  add('dictation', 'Recognise a phrase you heard', 'Listen to the phrase, then choose its Japanese wording.', 3, [typedExercise('dictation', 'listening', 'The speaker asks you to listen again. Which Japanese phrase do you hear?', ['もう一度聞いてください', 'もういちど聞いてください'], lesson.listeningIds[0], undefined, undefined, listening)], lesson.listeningIds);
+  add('listening', 'Listen for the clarification phrase', 'Listen once without reading the transcript. Then identify how the speaker asks for help.', 3, [selectExercise('listening-global', 'listening', narrative.listeningGlobalPrompt, narrative.listeningGlobalAnswer, narrative.listeningGlobalDistractors, lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
+  add('listening', 'Listen for the first action', 'Replay the dialogue and identify the practical first step the speakers agree on.', 3, [selectExercise('listening-detail', 'listening', narrative.listeningDetailPrompt, narrative.listeningDetailAnswer, narrative.listeningDetailDistractors, lesson.listeningIds[0], undefined, listening)], lesson.listeningIds);
+  add('dictation', 'Recognise a phrase you heard', 'Listen to the phrase, then choose its Japanese wording.', 3, [typedExercise('dictation', 'listening', narrative.dictationPrompt, [narrative.heardPhrase], lesson.listeningIds[0], undefined, undefined, listening)], lesson.listeningIds);
   add('shadowing', 'Transcript review and shadowing', 'Reveal the transcript, replay a line, and repeat at a comfortable pace.', 2, [informationExercise('shadowing', 'listening', 'Optional speaking practice: shadow one line before continuing.', lesson.listeningIds[0], listening)], lesson.listeningIds, false);
   add('sentence_production', 'Your own sentence', 'Optional: write one short sentence about your own life using today’s pattern. Many answers can be valid.', 3, [typedExercise('production', 'production', `Optional challenge: write an original sentence using ${grammar[0] ?? 'today’s pattern'}.`, grammar[0] ? [grammar[0]] : ['です'], lesson.grammarIds[0], 'Use the pattern; offline you may self-confirm a different valid sentence.')], lesson.grammarIds.slice(0, 1));
   add('error_correction', 'Find and correct the mistake', 'Correct the form, then read the explanation.', 3, [typedExercise('error-one', 'grammar', 'Correct: わたしは学生だです。', ['わたしは学生です'], lesson.grammarIds[0], 'Use either だ or です, not both.'), typedExercise('error-two', 'conjugation', 'Correct: 食べるます。', ['食べます'], lesson.grammarIds[0], 'Attach ます to the verb stem.')], lesson.grammarIds.slice(0, 1));
@@ -418,8 +529,12 @@ function standardActivities(lesson: CourseLessonDefinition, lookup: ItemLookup):
     if (index < 6) { const item = vocabulary[index % Math.max(vocabulary.length, 1)]; return typedExercise(`checkpoint-vocab-${index + 1}`, 'vocabulary', `Write Japanese for: ${item?.meaning ?? 'today’s word'}`, [item?.title ?? '日本語', item?.reading ?? '日本語'], item?.id, undefined, undefined, undefined, vocabularyDistractors(item?.id)); }
     if (index < 11) { const transformation = createTransformation((['dictionary-to-masu', 'dictionary-to-te', 'affirmative-to-negative', 'present-to-past', 'combine-te-kara'] as const)[index - 6] ?? 'dictionary-to-masu', index === 10 ? '' : '食べる', verb); return typedExercise(`checkpoint-form-${index + 1}`, 'conjugation', `${transformation.instruction} ${transformation.source}`, transformation.expectedAnswers, lesson.grammarIds[0]); }
     if (index < 14) { const item = kanji[(index - 11) % Math.max(kanji.length, 1)]; const word = item ? wordForKanji(item) : undefined; return typedExercise(`checkpoint-kanji-${index + 1}`, 'kanji', `Read ${word?.title ?? item?.title ?? '日'} in this word.`, [word?.reading ?? item?.reading ?? 'にち'], item?.id, undefined, word?.title, undefined, kanjiReadingDistractors(item?.id)); }
-    if (index < 17) return selectExercise(`checkpoint-reading-${index + 1}`, 'reading', 'Choose the best summary of the passage.', 'Two students confirm a plan and review Japanese.', ['A family cooks dinner.', 'A worker changes jobs.', 'A traveler misses a train.'], lesson.readingIds[0]);
-    return selectExercise(`checkpoint-listening-${index + 1}`, 'listening', 'Choose the detail heard in the dialogue.', 'Ask again when something is unclear.', ['Read silently first.', 'Do not ask questions.', 'Change the plan immediately.'], lesson.listeningIds[0]);
+    if (index === 14) return selectExercise(`checkpoint-reading-${index + 1}`, 'reading', narrative.readingMainPrompt, narrative.readingMainAnswer, narrative.readingMainDistractors, lesson.readingIds[0]);
+    if (index === 15) return selectExercise(`checkpoint-reading-${index + 1}`, 'reading', narrative.readingDetailPrompt, narrative.readingDetailAnswer, narrative.readingDetailDistractors, lesson.readingIds[0]);
+    if (index === 16) return selectExercise(`checkpoint-reading-${index + 1}`, 'reading', 'Which detail should you check in the passage before you act?', narrative.readingMainAnswer, ['The colour of a restaurant menu.', 'A new job application.', 'A train ticket bought yesterday.'], lesson.readingIds[0]);
+    if (index === 17) return selectExercise(`checkpoint-listening-${index + 1}`, 'listening', narrative.listeningGlobalPrompt, narrative.listeningGlobalAnswer, narrative.listeningGlobalDistractors, lesson.listeningIds[0]);
+    if (index === 18) return selectExercise(`checkpoint-listening-${index + 1}`, 'listening', narrative.listeningDetailPrompt, narrative.listeningDetailAnswer, narrative.listeningDetailDistractors, lesson.listeningIds[0]);
+    return typedExercise(`checkpoint-listening-${index + 1}`, 'listening', narrative.dictationPrompt, [narrative.heardPhrase], lesson.listeningIds[0], undefined, undefined, listening);
   });
   add('checkpoint', 'Lesson checkpoint', 'Complete the mixed chapter check. Your weak items will enter the existing review systems.', 12, checkpointExercises, [...lesson.vocabularyIds, ...lesson.grammarIds, ...lesson.kanjiIds, ...lesson.readingIds, ...lesson.listeningIds]);
   add('reflection', 'Lesson reflection', 'Optional: name one skill you will revisit in Review or the Study Library.', 2, [typedExercise('reflection', 'production', `Optional challenge: you can now ${lesson.objectives.join(' · ')}. Write one skill you will revisit in Review or the Study Library.`, [])], [], false);

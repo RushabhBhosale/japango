@@ -50,6 +50,7 @@ export default function RootLayout() {
         <Stack.Screen name="assessment/result" />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="lessons-v2" />
+        <Stack.Screen name="audio-lessons" />
       </Stack>
       <BackgroundContentIndicator state={contentInstallation} />
     </ThemeProvider>

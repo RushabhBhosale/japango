@@ -2,10 +2,12 @@ import type { SupabaseClient } from '@supabase/supabase-js';
 
 import {
   contentHash,
+  lessonV2QuestionSchema,
   lessonV2VersionSchema,
   type LessonV2DraftInput,
   type LessonV2UpdateDraftInput,
   type LessonV2ValidationIssue,
+  type LessonV2Question,
   type LessonV2Version,
 } from './contracts';
 import { LessonsV2Error } from './errors';
@@ -32,12 +34,26 @@ interface VersionRow {
   published_at: string | null;
 }
 
+interface GeneratedQuestionRow {
+  id: string;
+  content: unknown;
+}
+
+export interface AuditableGeneratedQuestion {
+  id: string;
+  question: LessonV2Question;
+}
+
 function asLessonRow(value: unknown): LessonRow {
   return value as LessonRow;
 }
 
 function asVersionRow(value: unknown): VersionRow {
   return value as VersionRow;
+}
+
+function asGeneratedQuestionRow(value: unknown): GeneratedQuestionRow {
+  return value as GeneratedQuestionRow;
 }
 
 function toVersion(lesson: LessonRow, row: VersionRow): LessonV2Version {
@@ -85,6 +101,54 @@ export class LessonsV2Repository {
       const version = byLesson.get(lesson.id);
       return version ? [toVersion(lesson, version)] : [];
     });
+  }
+
+  /**
+   * Auditing needs the editable version and, when it differs, the currently
+   * published snapshot. Older superseded history is intentionally excluded:
+   * it cannot reach a learner and version copies are expected to share text.
+   */
+  async listAuditLessons(): Promise<LessonV2Version[]> {
+    const { data: lessonRows, error: lessonError } = await this.supabase
+      .from('lesson_v2_lessons')
+      .select('id, slug, level, status, current_published_version_id')
+      .order('updated_at', { ascending: false });
+    if (lessonError) throwLessonsV2DatabaseError(lessonError);
+    const lessons = (lessonRows ?? []).map(asLessonRow);
+    if (!lessons.length) return [];
+    const ids = lessons.map((lesson) => lesson.id);
+    const { data: versionRows, error: versionError } = await this.supabase
+      .from('lesson_v2_lesson_versions')
+      .select('id, lesson_id, version, status, title, objectives, estimated_minutes, content, created_at, published_at')
+      .in('lesson_id', ids)
+      .order('version', { ascending: false });
+    if (versionError) throwLessonsV2DatabaseError(versionError);
+    const versionsByLesson = new Map<string, VersionRow[]>();
+    for (const row of (versionRows ?? []).map(asVersionRow)) {
+      const versions = versionsByLesson.get(row.lesson_id) ?? [];
+      versions.push(row);
+      versionsByLesson.set(row.lesson_id, versions);
+    }
+    return lessons.flatMap((lesson) => {
+      const versions = versionsByLesson.get(lesson.id) ?? [];
+      const latest = versions[0];
+      const published = lesson.current_published_version_id
+        ? versions.find((version) => version.id === lesson.current_published_version_id)
+        : undefined;
+      return [latest, published]
+        .filter((version, index, values): version is VersionRow => Boolean(version) && values.findIndex((candidate) => candidate?.id === version?.id) === index)
+        .map((version) => toVersion(lesson, version));
+    });
+  }
+
+  async listAuditGeneratedQuestions(): Promise<AuditableGeneratedQuestion[]> {
+    const { data, error } = await this.supabase
+      .from('lesson_v2_generated_questions')
+      .select('id, content')
+      .neq('status', 'archived')
+      .order('created_at', { ascending: false });
+    if (error) throwLessonsV2DatabaseError(error);
+    return (data ?? []).map(asGeneratedQuestionRow).map((row) => ({ id: row.id, question: lessonV2QuestionSchema.parse(row.content) }));
   }
 
   async getLesson(lessonId: string, publishedOnly = false): Promise<LessonV2Version> {

@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 19;
+export const CURRENT_DATABASE_VERSION = 20;
 
 export interface DatabaseMigration {
   version: number;
@@ -1523,6 +1523,67 @@ const versionNineteenSql = `
       updated_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now');
 `;
 
+// Audio Lessons maintain their own content cache, playback state, files, and
+// favourites. They intentionally never affect course or Lessons V2 progress.
+const versionTwentySql = `
+  CREATE TABLE IF NOT EXISTS audio_lesson_cached_lessons (
+    lesson_version_id TEXT PRIMARY KEY NOT NULL,
+    lesson_id TEXT NOT NULL,
+    snapshot_json TEXT NOT NULL,
+    cached_at TEXT NOT NULL
+  );
+  CREATE INDEX IF NOT EXISTS audio_lesson_cached_lessons_lesson_idx
+    ON audio_lesson_cached_lessons(lesson_id, cached_at DESC);
+
+  CREATE TABLE IF NOT EXISTS audio_lesson_cached_playlists (
+    playlist_id TEXT PRIMARY KEY NOT NULL,
+    snapshot_json TEXT NOT NULL,
+    cached_at TEXT NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS audio_lesson_progress (
+    user_id TEXT NOT NULL,
+    lesson_version_id TEXT NOT NULL,
+    status TEXT NOT NULL CHECK (status IN ('not_started', 'in_progress', 'completed')),
+    playback_position_ms INTEGER NOT NULL DEFAULT 0 CHECK (playback_position_ms >= 0),
+    total_listened_ms INTEGER NOT NULL DEFAULT 0 CHECK (total_listened_ms >= 0),
+    completion_percentage REAL NOT NULL DEFAULT 0 CHECK (completion_percentage BETWEEN 0 AND 100),
+    last_played_at TEXT,
+    playback_speed REAL NOT NULL DEFAULT 1 CHECK (playback_speed BETWEEN 0.5 AND 2),
+    selected_mode TEXT NOT NULL DEFAULT 'japanese_english',
+    completed_question_ids_json TEXT NOT NULL DEFAULT '[]',
+    correct_question_ids_json TEXT NOT NULL DEFAULT '[]',
+    updated_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, lesson_version_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS audio_lesson_progress_resume_idx
+    ON audio_lesson_progress(user_id, status, last_played_at DESC);
+
+  CREATE TABLE IF NOT EXISTS audio_lesson_downloads (
+    user_id TEXT NOT NULL,
+    lesson_version_id TEXT NOT NULL,
+    section_id TEXT NOT NULL,
+    remote_url TEXT,
+    local_uri TEXT,
+    status TEXT NOT NULL CHECK (status IN ('pending', 'downloaded', 'failed', 'system_speech')),
+    byte_size INTEGER NOT NULL DEFAULT 0 CHECK (byte_size >= 0),
+    updated_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, lesson_version_id, section_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS audio_lesson_downloads_status_idx
+    ON audio_lesson_downloads(user_id, lesson_version_id, status);
+
+  CREATE TABLE IF NOT EXISTS audio_lesson_favorites (
+    user_id TEXT NOT NULL,
+    lesson_version_id TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, lesson_version_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1543,6 +1604,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 17, sql: versionSeventeenSql },
   { version: 18, sql: versionEighteenSql },
   { version: 19, sql: versionNineteenSql },
+  { version: 20, sql: versionTwentySql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

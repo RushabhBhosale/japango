@@ -8,6 +8,7 @@ import {
 } from './contracts';
 import { LessonsV2DependencyResolver } from './dependency-resolver';
 import { LessonsV2Repository } from './repository';
+import { auditIssuesForLesson, auditLessonsV2Content } from './content-audit';
 import { validateLessonV2Version } from './validator';
 
 export class LessonsV2Service {
@@ -46,6 +47,14 @@ export class LessonsV2Service {
   listVocabulary(limit?: number) { return this.dependencies.listVocabulary(limit); }
   listKanji(limit?: number) { return this.dependencies.listKanji(limit); }
 
+  async auditContent() {
+    const [lessons, generatedQuestions] = await Promise.all([
+      this.repository.listAuditLessons(),
+      this.repository.listAuditGeneratedQuestions(),
+    ]);
+    return auditLessonsV2Content(lessons, generatedQuestions);
+  }
+
   async createGenerationPlan(input: unknown): Promise<{ id: string; status: 'planned'; plan: unknown }> {
     const plan = lessonV2GenerationPlanInputSchema.parse(input);
     // Planning is intentionally deterministic and draft-only. A configured
@@ -64,6 +73,11 @@ export class LessonsV2Service {
   }
 
   private async collectValidationIssues(lesson: Awaited<ReturnType<LessonsV2Repository['getLesson']>>): Promise<LessonV2ValidationIssue[]> {
-    return [...validateLessonV2Version(lesson).issues, ...await this.repository.unresolvedDependencyIssues(lesson.id)];
+    const contentAudit = await this.auditContent();
+    return [
+      ...validateLessonV2Version(lesson).issues,
+      ...auditIssuesForLesson(contentAudit, lesson),
+      ...await this.repository.unresolvedDependencyIssues(lesson.id),
+    ];
   }
 }
