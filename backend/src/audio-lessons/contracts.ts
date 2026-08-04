@@ -5,11 +5,11 @@ import { z } from 'zod';
 import {
   audioLessonTypeSchema,
   audioLessonVersionSchema,
-} from '../../../shared/audio-lessons/contract';
-import { lessonV2LevelSchema } from '../../../shared/lessons-v2/contract';
+} from '../shared-contracts/audio-lessons';
+import { lessonV2LevelSchema } from '../shared-contracts/lessons-v2';
 
-export * from '../../../shared/audio-lessons/contract';
-export { audioLessonVersionSchema } from '../../../shared/audio-lessons/contract';
+export * from '../shared-contracts/audio-lessons';
+export { audioLessonVersionSchema } from '../shared-contracts/audio-lessons';
 
 const audioLessonDraftShape = {
   slug: audioLessonVersionSchema.shape.slug,
@@ -82,8 +82,8 @@ export const audioPilotSeedInputSchema = z.object({
 export const audioLessonListFilterSchema = z.object({
   level: lessonV2LevelSchema.optional(),
   lessonType: audioLessonTypeSchema.optional(),
-  minMinutes: z.coerce.number().int().min(5).max(12).optional(),
-  maxMinutes: z.coerce.number().int().min(5).max(12).optional(),
+  minMinutes: z.coerce.number().int().min(5).max(18).optional(),
+  maxMinutes: z.coerce.number().int().min(5).max(18).optional(),
 }).strict().superRefine((value, context) => {
   if (value.minMinutes && value.maxMinutes && value.minMinutes > value.maxMinutes) {
     context.addIssue({ code: 'custom', path: ['maxMinutes'], message: 'Maximum duration must be greater than or equal to minimum duration.' });

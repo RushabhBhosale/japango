@@ -62,9 +62,28 @@ export default function AudioLessonScreen() {
     <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}><AppButton label={favorite ? 'Remove favorite' : 'Add favorite'} variant="secondary" onPress={() => void toggleFavorite()} /><AppButton label="Download for offline" variant="secondary" loading={downloading} onPress={() => void download()} /></View>
     <AudioLessonPlayer lesson={lesson} initialProgress={progress} downloadUris={downloadUris} onProgress={saveProgress} onPreviousLesson={playlist?.lessonIds.indexOf(lesson.lessonId) ? () => adjacent('previous') : undefined} onNextLesson={playlist && playlist.lessonIds.indexOf(lesson.lessonId) + 1 < playlist.lessonIds.length ? () => adjacent('next') : undefined} />
     <SectionHeading title="Listening checks" detail={`${lesson.listeningQuestions.length} question${lesson.listeningQuestions.length === 1 ? '' : 's'}`} />
-    {lesson.listeningQuestions.map((question) => {
+    {lesson.listeningQuestions.map((question, questionIndex) => {
       const selected = selectedAnswers[question.id];
-      return <Card key={question.id}><ThemedText type="heading">{question.prompt.english ?? question.prompt.japanese?.raw}</ThemedText><ThemedText type="small" themeColor="textSecondary">Pause and answer from what you heard.</ThemedText>{question.choices.map((choice, index) => <AppButton key={choice.id} label={`${index + 1}. ${choice.label.english ?? choice.label.japanese?.raw ?? ''}`} variant={selected === choice.id ? 'primary' : 'secondary'} disabled={Boolean(selected)} onPress={() => void answer(question.id, choice.id, choice.isCorrect)} />)}{selected ? <View style={{ gap: 4 }}><ThemedText type="smallBold">{question.choices.find((choice) => choice.id === selected)?.isCorrect ? 'Correct' : 'Not quite'}</ThemedText><ThemedText themeColor="textSecondary">{question.explanation.correct.english ?? question.explanation.correct.japanese?.raw}</ThemedText></View> : null}</Card>;
+      const selectedChoice = question.choices.find((choice) => choice.id === selected);
+      const selectedDistractor = question.explanation.distractors.find((item) => item.choiceId === selected);
+      const prompt = question.prompt.japanese?.raw ?? question.prompt.english;
+      const promptSupport = question.prompt.japanese && question.prompt.english ? question.prompt.english : undefined;
+      const correctExplanation = question.explanation.correct.japanese?.raw ?? question.explanation.correct.english;
+      const mistakeExplanation = selectedDistractor?.explanation.japanese?.raw ?? selectedDistractor?.explanation.english;
+      const commonMistake = question.explanation.commonMistake?.japanese?.raw ?? question.explanation.commonMistake?.english;
+      return <Card key={question.id}>
+        <ThemedText type="smallBold" themeColor="primary">QUESTION {questionIndex + 1}</ThemedText>
+        <ThemedText type="heading">{prompt}</ThemedText>
+        {promptSupport ? <ThemedText type="small" themeColor="textSecondary">English support: {promptSupport}</ThemedText> : null}
+        <ThemedText type="small" themeColor="textSecondary">Pause, recall the spoken scene, then choose one answer.</ThemedText>
+        {question.choices.map((choice, index) => <AppButton key={choice.id} label={`${index + 1}. ${choice.label.japanese?.raw ?? choice.label.english ?? ''}`} variant={selected === choice.id ? 'primary' : 'secondary'} disabled={Boolean(selected)} onPress={() => void answer(question.id, choice.id, choice.isCorrect)} />)}
+        {selected ? <View style={{ gap: 4 }}>
+          <ThemedText type="smallBold">{selectedChoice?.isCorrect ? 'Correct' : 'Not quite'}</ThemedText>
+          {!selectedChoice?.isCorrect && mistakeExplanation ? <ThemedText themeColor="textSecondary">Why this option is wrong: {mistakeExplanation}</ThemedText> : null}
+          <ThemedText themeColor="textSecondary">Answer: {correctExplanation}</ThemedText>
+          {commonMistake ? <ThemedText type="small" themeColor="textSecondary">Listening note: {commonMistake}</ThemedText> : null}
+        </View> : null}
+      </Card>;
     })}
   </ScreenContainer>;
 }

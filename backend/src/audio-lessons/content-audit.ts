@@ -1,6 +1,6 @@
 import type { AudioLessonVersion } from './contracts';
 import type { LessonV2ValidationIssue } from '../lessons-v2/contracts';
-import { japaneseTextSimilarity, normalizedText } from '../lessons-v2/similarity';
+import { normalizedText, textTrigrams } from '../lessons-v2/similarity';
 
 const HIGH_SIMILARITY = 0.86;
 const REVIEW_SIMILARITY = 0.72;
@@ -12,6 +12,8 @@ interface ContentNode {
   description: string;
   language: 'japanese' | 'english';
   text: string;
+  normalized: string;
+  trigrams: ReadonlySet<string>;
 }
 
 export interface AudioContentAuditIssue extends LessonV2ValidationIssue {
@@ -27,16 +29,29 @@ export interface AudioContentAudit {
   issues: AudioContentAuditIssue[];
 }
 
-function addNode(nodes: ContentNode[], node: ContentNode): void {
+function addNode(nodes: ContentNode[], node: Omit<ContentNode, 'normalized' | 'trigrams'>): void {
   const minimum = node.language === 'japanese' ? 12 : 24;
-  if (normalizedText(node.text).length >= minimum) nodes.push(node);
+  const normalized = normalizedText(node.text);
+  if (normalized.length >= minimum) nodes.push({ ...node, normalized, trigrams: textTrigrams(node.text) });
+}
+
+function trigramSimilarity(left: ReadonlySet<string>, right: ReadonlySet<string>): number {
+  if (!left.size || !right.size) return 0;
+  const [smaller, larger] = left.size <= right.size ? [left, right] : [right, left];
+  let overlap = 0;
+  for (const trigram of smaller) if (larger.has(trigram)) overlap += 1;
+  return overlap / (left.size + right.size - overlap);
 }
 
 function collectNodes(lessons: readonly AudioLessonVersion[]): ContentNode[] {
   const nodes: ContentNode[] = [];
   for (const lesson of lessons) {
     lesson.scriptSections.forEach((section) => {
-      if (section.structuredJapanese) addNode(nodes, {
+      // Numbered question/answer sections speak the canonical question fields
+      // verbatim. Audit the canonical field once instead of reporting the
+      // synchronized audio rendition as duplicate learner content.
+      const mirrorsCanonicalQuestion = /-(?:question|answer)-\d+-spoken$/u.test(section.id);
+      if (section.structuredJapanese && !mirrorsCanonicalQuestion) addNode(nodes, {
         id: `${lesson.id}:${section.id}:japanese`, lessonVersionId: lesson.id, subjectId: section.id,
         description: `${section.sectionType} section in “${lesson.title}”`, language: 'japanese', text: section.structuredJapanese.raw,
       });
@@ -94,7 +109,7 @@ export function auditAudioLessonContent(lessons: readonly AudioLessonVersion[]):
 
   for (let index = 0; index < nodes.length; index += 1) {
     const node = nodes[index]!;
-    const key = `${node.language}:${normalizedText(node.text)}`;
+    const key = `${node.language}:${node.normalized}`;
     for (const other of exact.get(key) ?? []) {
       exactDuplicateCount += 1;
       issues.push(issue(node, other, 1, 'critical', true), issue(other, node, 1, 'critical', true));
@@ -104,14 +119,14 @@ export function auditAudioLessonContent(lessons: readonly AudioLessonVersion[]):
     for (let previous = 0; previous < index; previous += 1) {
       const other = nodes[previous]!;
       if (other.language !== node.language) continue;
-      const shorter = Math.min(normalizedText(node.text).length, normalizedText(other.text).length);
-      const longer = Math.max(normalizedText(node.text).length, normalizedText(other.text).length);
+      const shorter = Math.min(node.normalized.length, other.normalized.length);
+      const longer = Math.max(node.normalized.length, other.normalized.length);
       if (shorter / longer < 0.66) continue;
-      const similarity = japaneseTextSimilarity(node.text, other.text);
-      if (similarity >= HIGH_SIMILARITY && normalizedText(node.text) !== normalizedText(other.text)) {
+      const similarity = trigramSimilarity(node.trigrams, other.trigrams);
+      if (similarity >= HIGH_SIMILARITY && node.normalized !== other.normalized) {
         highSimilarityCount += 1;
         issues.push(issue(node, other, similarity, 'critical', false), issue(other, node, similarity, 'critical', false));
-      } else if (similarity >= REVIEW_SIMILARITY && normalizedText(node.text) !== normalizedText(other.text)) {
+      } else if (similarity >= REVIEW_SIMILARITY && node.normalized !== other.normalized) {
         reviewSimilarityCount += 1;
         issues.push(issue(node, other, similarity, 'warning', false), issue(other, node, similarity, 'warning', false));
       }

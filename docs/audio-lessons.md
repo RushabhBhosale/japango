@@ -6,7 +6,7 @@ Audio Lessons is a versioned, audio-first N5/N4 library for listening while walk
 
 The supported types are grammar explanation, vocabulary review, dialogue practice, sentence-pattern drill, listening comprehension, short story, JLPT-style listening, lesson summary, kanji-in-context review, weak-topic review, mixed review, and shadowing practice.
 
-Every version contains an audio script, transcripts, structured Japanese text, source references, linked vocabulary/kanji/grammar/related lesson IDs, listening questions, answer explanations, and timing metadata. Scripts are 5–12 minutes and are written for listening: no visual-only instructions, clear spoken choices, deliberate thinking pauses, and short explanations.
+Every version contains an audio script, transcripts, structured Japanese text, source references, linked vocabulary/kanji/grammar/related lesson IDs, listening questions, answer explanations, and timing metadata. The authored catalog contains 60 lessons (25 N5 and 35 N4). Rebuilt scripts run for roughly 11–15 measured minutes, contain eight checks per lesson, keep spoken English below 5%, and use Japanese for the introduction, vocabulary, grammar, examples, dialogue, guided replay, shadowing, question instructions, explanations, review, and closing. English is limited to very short question/answer cues and the concise answer needed for self-checking.
 
 The validation boundary checks schema correctness, length, pause timing, visual-only wording, dense speech, exactly one answer, duplicates/high-similarity wording, dependency links, transcripts, and—when publishing—verified Japanese tokens plus a ready audio file for every section. The full script/question audit runs inside a lesson and across editable/published lessons. Exact duplicates and similarity at or above 0.86 block publishing.
 
@@ -37,7 +37,7 @@ AUDIO_TTS_PROVIDER=system
 
 The private HTTP provider receives `POST /synthesize` with `text`, `language`, `voice`, and `speakingRate`; it must return `{ "audioUrl": "https://...", "durationMs": 12345 }`. The API key remains in the backend. Neither it nor `SUPABASE_SERVICE_ROLE_KEY` is exposed to the Expo client.
 
-To inspect the ten pilot drafts without writes, then create them using a reviewed OCR chunk and linked dependencies:
+To inspect the 60 pilot drafts without writes, then create them using a reviewed OCR chunk and linked dependencies:
 
 ```bash
 cd backend
@@ -51,7 +51,22 @@ npm run audio-lessons:pilot -- --dry-run
 npm run audio-lessons:pilot
 ```
 
-The pilot set contains six N5 lessons (two grammar, vocabulary, sentence pattern, dialogue, listening comprehension) and four N4 lessons (grammar, dialogue, short story, JLPT-style listening). All are drafts. The seed pipeline records system-speech draft sections by default; configure `AUDIO_TTS_PROVIDER=http` before generating audio intended for publication.
+The pilot set contains 25 N5 and 35 N4 lessons across grammar, vocabulary, sentence-pattern, dialogue, listening-comprehension, story, JLPT-style, and shadowing formats. Every lesson includes eight checks covering content detail, vocabulary, grammar, model-sentence recognition, reply recognition, spoken order, the pre-dialogue guide, and the complete dialogue. All are drafts. The seed pipeline records system-speech draft sections by default; configure `AUDIO_TTS_PROVIDER=http` before generating audio intended for production publication.
+
+To validate the rebuilt catalog against the 60 existing records without writing anything:
+
+```bash
+cd backend
+npm run audio-lessons:refresh
+```
+
+For the explicitly temporary single-user preview, create immutable successor versions and point the published catalog at them with:
+
+```bash
+npm run audio-lessons:refresh -- --confirm-preview-publish
+```
+
+That confirmation path intentionally permits device system speech and unverified draft token links so the catalog can be checked in the local-development app. It is restartable and skips lessons already published with the current revision marker. It must not be used as a production release process.
 
 ## Routes
 
@@ -71,8 +86,8 @@ The mobile library has N5/N4, lesson type, duration, status, downloaded, favorit
 ## Current limitations and next milestone
 
 - System speech is a draft-review fallback. It does not create a publishable audio file or offer exact seek/background guarantees; publication requires ready hosted section audio.
-- The current ten-pilot local Supabase seed may be explicitly published as a **local-development preview** to inspect the app. Those records use system speech and unverified Japanese links; archive or replace them with reviewed, hosted-audio versions before any public deployment.
+- The 60-lesson catalog may be explicitly published as a **local-development preview** to inspect the app. Those records use system speech and unverified Japanese links; archive or replace them with reviewed, hosted-audio versions before any public deployment.
 - Audio is currently generated and played per section. Optional combined lesson files and gapless playlist audio can be added after the first real TTS provider is connected.
-- The shadowing mode filters to Japanese sections and offers repeat controls; a richer scripted listen → slow repeat → learner pause → natural replay sequence is the recommended next milestone.
+- The shadowing sequence now follows guided example → slow repeat → learner pause → natural dialogue replay. Fine-grained pronunciation scoring remains a future milestone.
 - Bluetooth remote controls are deliberately not implemented.
 - Audio progress remains local/offline-first. Add idempotent backend progress sync after account/authentication work is introduced.

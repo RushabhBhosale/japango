@@ -9,8 +9,9 @@ import { ProgressBar } from '@/components/common/progress-bar';
 import { InteractiveJapaneseText } from '@/components/lessons-v2/interactive-japanese-text';
 import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
-import { updateAudioLessonPlaybackProgress } from '@/features/audio-lessons/audio-lesson-progress';
+import { nextAudioSectionIndex, updateAudioLessonPlaybackProgress } from '@/features/audio-lessons/audio-lesson-progress';
 import { useTheme } from '@/hooks/use-theme';
+import { JapaneseVoiceUnavailableError, speakJapanese, stopJapaneseSpeech } from '@/services/speech/japanese-speech';
 import type { AudioLessonMode, AudioLessonProgress, AudioLessonVersion, AudioScriptSection } from '@/types/audio-lessons';
 
 interface AudioLessonPlayerProps {
@@ -56,6 +57,7 @@ export function AudioLessonPlayer({ lesson, initialProgress, downloadUris, onPro
   const [autoplayNext, setAutoplayNext] = useState(true);
   const [furiganaVisible, setFuriganaVisible] = useState(false);
   const [systemSpeaking, setSystemSpeaking] = useState(false);
+  const [systemSpeechError, setSystemSpeechError] = useState<string>();
   const [seekWidth, setSeekWidth] = useState(1);
   const playableSections = useMemo(() => sectionsForMode(lesson, mode), [lesson, mode]);
   const currentSection = playableSections[sectionIndex];
@@ -65,10 +67,19 @@ export function AudioLessonPlayer({ lesson, initialProgress, downloadUris, onPro
   const lastSavedAt = useRef(0);
   const finishedKey = useRef<string | undefined>(undefined);
   const restoredKey = useRef<string | undefined>(undefined);
+  const systemSpeechRun = useRef(0);
+  const systemAutoplay = useRef(false);
+  const systemAdvanceTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const [systemReplayNonce, setSystemReplayNonce] = useState(0);
 
   useEffect(() => {
     void setAudioModeAsync({ playsInSilentMode: true, shouldPlayInBackground: true, interruptionMode: 'doNotMix' });
-    return () => { player.setActiveForLockScreen(false); void Speech.stop(); };
+    return () => {
+      systemSpeechRun.current += 1;
+      if (systemAdvanceTimer.current) clearTimeout(systemAdvanceTimer.current);
+      player.setActiveForLockScreen(false);
+      void stopJapaneseSpeech();
+    };
   }, [player]);
 
   useEffect(() => {
@@ -115,6 +126,101 @@ export function AudioLessonPlayer({ lesson, initialProgress, downloadUris, onPro
     }));
   }, [initialProgress, mode, onProgress, player.playbackRate, totalDurationMs]);
 
+  const stopSystemSpeech = useCallback(() => {
+    systemSpeechRun.current += 1;
+    systemAutoplay.current = false;
+    if (systemAdvanceTimer.current) clearTimeout(systemAdvanceTimer.current);
+    setSystemSpeaking(false);
+    void stopJapaneseSpeech();
+  }, []);
+
+  const scheduleSystemAdvance = useCallback((run: number, section: AudioScriptSection) => {
+    if (systemSpeechRun.current !== run) return;
+    const advance = () => {
+      if (systemSpeechRun.current !== run) return;
+      systemAdvanceTimer.current = undefined;
+      if (repeatSection) {
+        systemAutoplay.current = true;
+        setSystemReplayNonce((value) => value + 1);
+        return;
+      }
+      const nextIndex = nextAudioSectionIndex(playableSections, section.id);
+      if (nextIndex !== undefined) {
+        systemAutoplay.current = true;
+        setSectionIndex(nextIndex);
+        return;
+      }
+      saveCurrentProgress(totalDurationMs, 0);
+      if (repeatLesson) {
+        systemAutoplay.current = true;
+        setSectionIndex(0);
+        return;
+      }
+      systemAutoplay.current = false;
+      if (autoplayNext) onNextLesson?.();
+    };
+    systemAdvanceTimer.current = setTimeout(advance, Math.max(0, section.pauseAfterMs));
+  }, [autoplayNext, onNextLesson, playableSections, repeatLesson, repeatSection, saveCurrentProgress, totalDurationMs]);
+
+  const startSystemSpeech = useCallback(async () => {
+    if (!currentSection || currentSection.audioStatus !== 'system_speech') return;
+    const run = systemSpeechRun.current + 1;
+    systemSpeechRun.current = run;
+    if (systemAdvanceTimer.current) clearTimeout(systemAdvanceTimer.current);
+    setSystemSpeechError(undefined);
+    setSystemSpeaking(true);
+    const finished = () => {
+      if (systemSpeechRun.current !== run) return;
+      setSystemSpeaking(false);
+      const completedIndex = playableSections.findIndex((section) => section.id === currentSection.id);
+      if (completedIndex < 0) return;
+      const start = positionBeforeSection(playableSections, completedIndex);
+      saveCurrentProgress(start + currentSection.estimatedDurationMs, currentSection.estimatedDurationMs);
+      scheduleSystemAdvance(run, currentSection);
+    };
+    const failed = () => {
+      if (systemSpeechRun.current !== run) return;
+      setSystemSpeaking(false);
+      setSystemSpeechError('The preview voice could not play this section. Check media volume, then try again.');
+    };
+    try {
+      await setAudioModeAsync({ playsInSilentMode: true, shouldPlayInBackground: true, interruptionMode: 'doNotMix' });
+      if (systemSpeechRun.current !== run) return;
+      if (currentSection.language === 'japanese') {
+        await speakJapanese(currentSection.text, {
+          rate: Math.max(0.5, currentSection.speakingRate * multiplierForMode(mode)),
+          onDone: finished,
+          onError: failed,
+        });
+        return;
+      }
+      await Speech.stop();
+      if (systemSpeechRun.current !== run) return;
+      Speech.speak(currentSection.text, {
+        language: currentSection.speaker.language,
+        rate: Math.max(0.5, currentSection.speakingRate * multiplierForMode(mode)),
+        useApplicationAudioSession: true,
+        onDone: finished,
+        onStopped: () => { if (systemSpeechRun.current === run) setSystemSpeaking(false); },
+        onError: failed,
+      });
+    } catch (error) {
+      if (systemSpeechRun.current !== run) return;
+      setSystemSpeaking(false);
+      setSystemSpeechError(
+        error instanceof JapaneseVoiceUnavailableError
+          ? 'Japanese voice is not installed on this device. Install a Japanese text-to-speech voice in Android language settings, then try again.'
+          : 'The preview voice could not start. Check media volume and try again.',
+      );
+    }
+  }, [currentSection, mode, playableSections, saveCurrentProgress, scheduleSystemAdvance]);
+
+  useEffect(() => {
+    if (!systemAutoplay.current || currentSection?.audioStatus !== 'system_speech') return;
+    systemAutoplay.current = false;
+    void startSystemSpeech();
+  }, [currentSection?.audioStatus, currentSection?.id, startSystemSpeech, systemReplayNonce]);
+
   useEffect(() => {
     if (!currentSection || !totalDurationMs) return;
     const globalPosition = positionBeforeSection(playableSections, sectionIndex) + Math.round(status.currentTime * 1_000);
@@ -137,7 +243,7 @@ export function AudioLessonPlayer({ lesson, initialProgress, downloadUris, onPro
     }
     if (sectionIndex + 1 < playableSections.length) {
       playWhenReplaced.current = true;
-      queueMicrotask(() => setSectionIndex((value) => value + 1));
+      queueMicrotask(() => setSectionIndex(sectionIndex + 1));
       return;
     }
     saveCurrentProgress(totalDurationMs, 0);
@@ -149,6 +255,7 @@ export function AudioLessonPlayer({ lesson, initialProgress, downloadUris, onPro
   }, [autoplayNext, currentSection, onNextLesson, playableSections.length, player, repeatLesson, repeatSection, saveCurrentProgress, sectionIndex, status.currentTime, status.didJustFinish, totalDurationMs]);
 
   const seekToLessonPosition = (positionMs: number) => {
+    if (currentSection?.audioStatus === 'system_speech') stopSystemSpeech();
     const clamped = Math.max(0, Math.min(totalDurationMs, positionMs));
     let running = 0;
     const targetIndex = playableSections.findIndex((section) => {
@@ -170,25 +277,15 @@ export function AudioLessonPlayer({ lesson, initialProgress, downloadUris, onPro
   };
 
   const playOrPause = () => {
+    if (!currentSection) return;
     const systemSpeech = currentSection.audioStatus === 'system_speech';
-    if (!systemSpeech && !currentSection?.audioUrl && !downloadUris[currentSection?.id ?? '']) return;
+    if (!systemSpeech && !currentSection.audioUrl && !downloadUris[currentSection.id]) return;
     if (systemSpeech) {
       if (systemSpeaking) {
-        void Speech.stop();
-        setSystemSpeaking(false);
+        stopSystemSpeech();
         return;
       }
-      setSystemSpeaking(true);
-      Speech.speak(currentSection.text, {
-        language: currentSection.speaker.language,
-        rate: Math.max(0.5, currentSection.speakingRate * multiplierForMode(mode)),
-        onDone: () => {
-          setSystemSpeaking(false);
-          saveCurrentProgress(sectionStart + currentSection.estimatedDurationMs, currentSection.estimatedDurationMs);
-        },
-        onStopped: () => setSystemSpeaking(false),
-        onError: () => setSystemSpeaking(false),
-      });
+      void startSystemSpeech();
       return;
     }
     if (status.playing) {
@@ -201,6 +298,7 @@ export function AudioLessonPlayer({ lesson, initialProgress, downloadUris, onPro
 
   const setLessonMode = (nextMode: AudioLessonMode) => {
     player.pause();
+    stopSystemSpeech();
     pendingSeekSeconds.current = 0;
     setSectionIndex(0);
     setMode(nextMode);
@@ -225,15 +323,16 @@ export function AudioLessonPlayer({ lesson, initialProgress, downloadUris, onPro
     {currentSection.structuredJapanese ? <InteractiveJapaneseText text={currentSection.structuredJapanese} furiganaMode={furiganaVisible ? 'always' : 'hidden'} type="default" /> : <ThemedText>{currentSection.transcript}</ThemedText>}
     {currentSection.structuredJapanese ? <AppButton label={furiganaVisible ? 'Hide furigana' : 'Show furigana'} variant="quiet" onPress={() => setFuriganaVisible((value) => !value)} /> : null}
     {currentSection.audioStatus === 'system_speech' ? <ThemedText type="small" themeColor="textSecondary">Local preview voice · hosted audio is still required for production release.</ThemedText> : null}
+    {systemSpeechError ? <ThemedText type="small" themeColor="error" accessibilityLiveRegion="polite">{systemSpeechError}</ThemedText> : null}
     {!canPlay ? <ThemedText type="small" themeColor="error">Audio for this section is unavailable. Download it again or choose another published lesson.</ThemedText> : null}
     <View style={styles.controls}>
       <AppButton label="−15 sec" variant="secondary" onPress={() => seekToLessonPosition(globalPositionMs - 15_000)} />
-      <AppButton label={isPlaying ? 'Pause' : 'Play'} disabled={!canPlay} onPress={playOrPause} />
+      <AppButton label={isPlaying ? (currentSection.audioStatus === 'system_speech' ? 'Stop' : 'Pause') : 'Play'} disabled={!canPlay} onPress={playOrPause} />
       <AppButton label="+15 sec" variant="secondary" onPress={() => seekToLessonPosition(globalPositionMs + 15_000)} />
     </View>
     <View style={styles.controls}>
-      <AppButton label="Previous section" variant="quiet" disabled={sectionIndex === 0} onPress={() => { pendingSeekSeconds.current = 0; setSectionIndex((value) => Math.max(0, value - 1)); }} />
-      <AppButton label="Next section" variant="quiet" disabled={sectionIndex + 1 >= playableSections.length} onPress={() => { playWhenReplaced.current = status.playing; pendingSeekSeconds.current = 0; setSectionIndex((value) => Math.min(playableSections.length - 1, value + 1)); }} />
+      <AppButton label="Previous section" variant="quiet" disabled={sectionIndex === 0} onPress={() => { stopSystemSpeech(); pendingSeekSeconds.current = 0; setSectionIndex((value) => Math.max(0, value - 1)); }} />
+      <AppButton label="Next section" variant="quiet" disabled={sectionIndex + 1 >= playableSections.length} onPress={() => { stopSystemSpeech(); playWhenReplaced.current = status.playing; pendingSeekSeconds.current = 0; setSectionIndex((value) => Math.min(playableSections.length - 1, value + 1)); }} />
     </View>
     <View style={styles.modeRow} accessibilityRole="tablist">
       {lesson.modes.map((candidate) => <Pressable key={candidate} accessibilityRole="tab" accessibilityState={{ selected: mode === candidate }} onPress={() => setLessonMode(candidate)} style={[styles.mode, { borderColor: mode === candidate ? theme.primary : theme.border, backgroundColor: mode === candidate ? theme.primarySoft : theme.surface }]}><ThemedText type="smallBold">{candidate.replaceAll('_', ' ')}</ThemedText></Pressable>)}

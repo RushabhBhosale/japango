@@ -2,10 +2,12 @@ import { createHash } from 'node:crypto';
 
 import { z } from 'zod';
 
-export * from '../../../shared/lessons-v2/contract';
-export { lessonV2QuestionSchema, lessonV2VersionSchema } from '../../../shared/lessons-v2/contract';
+// The deployed backend has its own copy so Vercel's backend-only install does
+// not need to resolve dependencies from the mobile project's shared directory.
+export * from '../shared-contracts/lessons-v2';
+export { lessonV2QuestionSchema, lessonV2VersionSchema } from '../shared-contracts/lessons-v2';
 
-import { lessonV2LevelSchema, lessonV2QuestionSchema, lessonV2SectionSchema, lessonV2SourceReferenceSchema } from '../../../shared/lessons-v2/contract';
+import { lessonV2LevelSchema, lessonV2QuestionSchema, lessonV2SectionSchema, lessonV2SourceReferenceSchema } from '../shared-contracts/lessons-v2';
 
 export const lessonV2DraftInputSchema = z.object({
   slug: z.string().trim().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/u).max(120),

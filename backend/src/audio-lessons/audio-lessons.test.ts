@@ -15,29 +15,51 @@ const bindings = {
 } as const;
 
 describe('Audio Lessons', () => {
-  it('builds ten original, unpublished N5/N4 pilots with valid draft scripts', () => {
+  it('builds sixty original, Japanese-immersion N5/N4 lessons with measured draft scripts', () => {
     const pilots = buildAudioLessonPilots(bindings);
-    expect(pilots).toHaveLength(10);
-    expect(pilots.filter((pilot) => pilot.jlptLevel === 'N5')).toHaveLength(6);
-    expect(pilots.filter((pilot) => pilot.jlptLevel === 'N4')).toHaveLength(4);
-    expect(new Set(pilots.map((pilot) => pilot.lessonType))).toEqual(new Set([
-      'grammar_explanation', 'vocabulary_review', 'sentence_pattern_drill', 'dialogue_practice', 'listening_comprehension', 'short_story', 'jlpt_listening_practice',
+    expect(pilots).toHaveLength(60);
+    expect(pilots.filter((pilot) => pilot.jlptLevel === 'N5')).toHaveLength(25);
+    expect(pilots.filter((pilot) => pilot.jlptLevel === 'N4')).toHaveLength(35);
+    expect([...new Set(pilots.map((pilot) => pilot.lessonType))]).toEqual(expect.arrayContaining([
+      'grammar_explanation', 'vocabulary_review', 'sentence_pattern_drill', 'dialogue_practice', 'listening_comprehension', 'short_story', 'jlpt_listening_practice', 'shadowing_practice',
     ]));
-    expect(pilots.every((pilot) => pilot.status === 'draft' && pilot.estimatedMinutes >= 5 && pilot.estimatedMinutes <= 10)).toBe(true);
+    expect(pilots.every((pilot) => pilot.status === 'draft' && pilot.estimatedMinutes >= 11 && pilot.estimatedMinutes <= 15)).toBe(true);
     expect(pilots.flatMap((pilot) => validateAudioLessonVersion(pilot).issues).filter((issue) => issue.severity === 'critical')).toEqual([]);
     expect(pilots.every((pilot) => pilot.scriptSections.every((section) => section.sourceReferences.length > 0))).toBe(true);
+    expect(pilots.every((pilot) => pilot.listeningQuestions.length === 8 && pilot.listeningQuestions.every((question) => question.prompt.japanese))).toBe(true);
+    expect(pilots.every((pilot) => pilot.scriptSections.filter((section) => section.language === 'japanese').every((section) => !/[A-Za-z]/u.test(section.text)))).toBe(true);
+    expect(pilots.every((pilot) => {
+      const spoken = pilot.scriptSections.reduce((total, section) => ({
+        japanese: total.japanese + (section.language === 'japanese' ? section.estimatedDurationMs : 0),
+        english: total.english + (section.language === 'english' ? section.estimatedDurationMs : 0),
+      }), { japanese: 0, english: 0 });
+      return spoken.english / (spoken.japanese + spoken.english) <= 0.05;
+    })).toBe(true);
+    expect(new Set(pilots.map((pilot) => pilot.listeningQuestions[0]?.choices.findIndex((choice) => choice.isCorrect))).size).toBeGreaterThan(2);
   });
 
   it('finds no high-similarity collision across the pilot scripts and questions', () => {
     const audit = auditAudioLessonContent(buildAudioLessonPilots(bindings));
     expect(audit.exactDuplicateCount).toBe(0);
     expect(audit.highSimilarityCount).toBe(0);
-  });
+  }, 20_000);
 
   it('blocks a duplicate heard sentence and an invalid second answer', () => {
     const [first, second] = buildAudioLessonPilots(bindings);
     if (!first || !second) throw new Error('Pilot fixtures are missing.');
-    const duplicated = { ...second, id: 'audio-pilot-copy', lessonId: 'audio-pilot-copy', scriptSections: second.scriptSections.map((section, index) => index === 0 ? { ...section, text: first.scriptSections[0]?.text ?? section.text, transcript: first.scriptSections[0]?.text ?? section.transcript } : section) };
+    const duplicatedSection = first.scriptSections[0];
+    if (!duplicatedSection) throw new Error('Pilot script fixture is missing.');
+    const duplicated = {
+      ...second,
+      id: 'audio-pilot-copy',
+      lessonId: 'audio-pilot-copy',
+      scriptSections: second.scriptSections.map((section, index) => index === 0 ? {
+        ...section,
+        text: duplicatedSection.text,
+        transcript: duplicatedSection.transcript,
+        structuredJapanese: duplicatedSection.structuredJapanese,
+      } : section),
+    };
     expect(auditAudioLessonContent([first, duplicated]).issues.some((issue) => issue.issueType === 'audio_exact_duplicate_content')).toBe(true);
     const invalid = { ...first, listeningQuestions: first.listeningQuestions.map((question) => ({ ...question, choices: question.choices.map((choice, index) => index === 1 ? { ...choice, isCorrect: true } : choice) })) };
     expect(validateAudioLessonVersion(invalid).issues.some((issue) => issue.issueType === 'schema' && issue.severity === 'critical')).toBe(true);

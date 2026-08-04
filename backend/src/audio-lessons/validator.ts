@@ -23,7 +23,7 @@ export function validateAudioLessonVersion(value: unknown, options: { forPublica
   const issues: LessonV2ValidationIssue[] = [];
   const totalDurationMs = lesson.scriptSections.reduce((total, section) => total + section.estimatedDurationMs + section.pauseAfterMs, 0);
   if (totalDurationMs < lesson.estimatedMinutes * 45_000 || totalDurationMs > lesson.estimatedMinutes * 90_000) {
-    issues.push(issue(lesson.id, 'unsuitable_audio_length', 'Script timing does not match the declared 5–12 minute lesson length.'));
+    issues.push(issue(lesson.id, 'unsuitable_audio_length', 'Script timing does not match the declared 5–18 minute lesson length.'));
   }
   for (const section of lesson.scriptSections) {
     if (visualOnlyInstruction.test(section.text)) issues.push(issue(section.id, 'visual_only_instruction', 'Audio lessons must not rely on visual-only instructions.'));

@@ -6,7 +6,7 @@ import {
   lessonV2SourceReferenceSchema,
   lessonV2StatusSchema,
   structuredJapaneseTextSchema,
-} from '../lessons-v2/contract';
+} from './lessons-v2';
 
 const idSchema = z.string().trim().min(1).max(160);
 const shortTextSchema = z.string().trim().min(1).max(600);

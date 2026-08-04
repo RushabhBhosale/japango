@@ -92,7 +92,7 @@ export default function AudioLessonsLibraryScreen() {
   const continueLesson = [...data.progress.values()].filter((progress) => progress.status === 'in_progress').sort((left, right) => (right.lastPlayedAt ?? '').localeCompare(left.lastPlayedAt ?? ''))[0];
   const continueItem = continueLesson ? data.lessons.find((lesson) => lesson.id === continueLesson.lessonVersionId) : undefined;
   return <ScreenContainer keyboardAware>
-    <PageHeader eyebrow="Audio Lessons" title="Listen anywhere" subtitle={offline ? 'Showing downloaded lesson information. Connect once to refresh the library.' : 'Short N5 and N4 lessons for work, walks, and commutes.'} />
+    <PageHeader eyebrow="Audio Lessons" title="Listen anywhere" subtitle={offline ? 'Showing downloaded lesson information. Connect once to refresh the library.' : 'Immersive N5 and N4 lessons for work, walks, and commutes.'} />
     {continueItem ? <Card style={{ backgroundColor: theme.primarySoft }}><ThemedText type="smallBold" themeColor="primary">CONTINUE LISTENING</ThemedText><ThemedText type="heading">{continueItem.title}</ThemedText><ThemedText themeColor="textSecondary">{continueLesson?.completionPercentage ?? 0}% complete · resumes where you paused</ThemedText><AppButton label="Resume" onPress={() => openLesson(continueItem)} /></Card> : null}
     <TextInput accessibilityLabel="Search Audio Lessons" value={query} onChangeText={setQuery} placeholder="Search audio lessons" placeholderTextColor={theme.textSecondary} style={[styles.search, { color: theme.text, borderColor: theme.border, backgroundColor: theme.surface }]} />
     <View style={styles.filters} accessibilityRole="tablist">

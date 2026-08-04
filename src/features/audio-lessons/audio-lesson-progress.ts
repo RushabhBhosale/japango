@@ -41,3 +41,13 @@ export function nextPlaylistIndex(currentIndex: number, count: number, direction
   if (direction === 'next') return currentIndex + 1 < count ? currentIndex + 1 : loop ? 0 : undefined;
   return currentIndex > 0 ? currentIndex - 1 : loop ? count - 1 : undefined;
 }
+
+/**
+ * Resolves the next playable script section from the completed section's stable
+ * ID. Using the completed ID, rather than incrementing a potentially stale
+ * React state value, prevents playback from advancing beyond the final section.
+ */
+export function nextAudioSectionIndex(sections: readonly { id: string }[], completedSectionId: string): number | undefined {
+  const completedIndex = sections.findIndex((section) => section.id === completedSectionId);
+  return completedIndex >= 0 && completedIndex + 1 < sections.length ? completedIndex + 1 : undefined;
+}

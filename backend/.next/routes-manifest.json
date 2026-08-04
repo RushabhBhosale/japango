@@ -21,7 +21,176 @@
     "afterFiles": [],
     "fallback": []
   },
-  "dynamicRoutes": [],
+  "dynamicRoutes": [
+    {
+      "page": "/admin/lessons-v2/[lessonId]",
+      "regex": "^/admin/lessons\\-v2/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/[lessonId]",
+      "regex": "^/api/admin/audio\\-lessons/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/audio\\-lessons/(?<nxtPlessonId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/[lessonId]/archive",
+      "regex": "^/api/admin/audio\\-lessons/([^/]+?)/archive(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/audio\\-lessons/(?<nxtPlessonId>[^/]+?)/archive(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/[lessonId]/generate-audio",
+      "regex": "^/api/admin/audio\\-lessons/([^/]+?)/generate\\-audio(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/audio\\-lessons/(?<nxtPlessonId>[^/]+?)/generate\\-audio(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/[lessonId]/new-version",
+      "regex": "^/api/admin/audio\\-lessons/([^/]+?)/new\\-version(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/audio\\-lessons/(?<nxtPlessonId>[^/]+?)/new\\-version(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/[lessonId]/publish",
+      "regex": "^/api/admin/audio\\-lessons/([^/]+?)/publish(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/audio\\-lessons/(?<nxtPlessonId>[^/]+?)/publish(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/[lessonId]/resolve-dependencies",
+      "regex": "^/api/admin/audio\\-lessons/([^/]+?)/resolve\\-dependencies(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/audio\\-lessons/(?<nxtPlessonId>[^/]+?)/resolve\\-dependencies(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/[lessonId]/validate",
+      "regex": "^/api/admin/audio\\-lessons/([^/]+?)/validate(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/audio\\-lessons/(?<nxtPlessonId>[^/]+?)/validate(?:/)?$"
+    },
+    {
+      "page": "/api/admin/jlpt/patterns/[patternId]",
+      "regex": "^/api/admin/jlpt/patterns/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpatternId": "nxtPpatternId"
+      },
+      "namedRegex": "^/api/admin/jlpt/patterns/(?<nxtPpatternId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/jlpt/questions/[questionId]",
+      "regex": "^/api/admin/jlpt/questions/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPquestionId": "nxtPquestionId"
+      },
+      "namedRegex": "^/api/admin/jlpt/questions/(?<nxtPquestionId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/jlpt/source-questions/[sourceQuestionId]",
+      "regex": "^/api/admin/jlpt/source\\-questions/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPsourceQuestionId": "nxtPsourceQuestionId"
+      },
+      "namedRegex": "^/api/admin/jlpt/source\\-questions/(?<nxtPsourceQuestionId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/[lessonId]",
+      "regex": "^/api/admin/lessons\\-v2/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/[lessonId]/archive",
+      "regex": "^/api/admin/lessons\\-v2/([^/]+?)/archive(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)/archive(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/[lessonId]/duplicate",
+      "regex": "^/api/admin/lessons\\-v2/([^/]+?)/duplicate(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)/duplicate(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/[lessonId]/new-version",
+      "regex": "^/api/admin/lessons\\-v2/([^/]+?)/new\\-version(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)/new\\-version(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/[lessonId]/publish",
+      "regex": "^/api/admin/lessons\\-v2/([^/]+?)/publish(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)/publish(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/[lessonId]/regenerate-tokens",
+      "regex": "^/api/admin/lessons\\-v2/([^/]+?)/regenerate\\-tokens(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)/regenerate\\-tokens(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/[lessonId]/resolve-dependencies",
+      "regex": "^/api/admin/lessons\\-v2/([^/]+?)/resolve\\-dependencies(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)/resolve\\-dependencies(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/[lessonId]/validate",
+      "regex": "^/api/admin/lessons\\-v2/([^/]+?)/validate(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/admin/lessons\\-v2/(?<nxtPlessonId>[^/]+?)/validate(?:/)?$"
+    },
+    {
+      "page": "/api/audio-lessons/[lessonId]",
+      "regex": "^/api/audio\\-lessons/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/audio\\-lessons/(?<nxtPlessonId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/lessons-v2/[lessonId]",
+      "regex": "^/api/lessons\\-v2/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlessonId": "nxtPlessonId"
+      },
+      "namedRegex": "^/api/lessons\\-v2/(?<nxtPlessonId>[^/]+?)(?:/)?$"
+    }
+  ],
   "staticRoutes": [
     {
       "page": "/_global-error",
@@ -36,10 +205,124 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/jlpt-question-papers",
+      "regex": "^/admin/jlpt\\-question\\-papers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/jlpt\\-question\\-papers(?:/)?$"
+    },
+    {
+      "page": "/admin/lessons-v2",
+      "regex": "^/admin/lessons\\-v2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/lessons\\-v2(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons",
+      "regex": "^/api/admin/audio\\-lessons(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/audio\\-lessons(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/audit",
+      "regex": "^/api/admin/audio\\-lessons/audit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/audio\\-lessons/audit(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio-lessons/seed-pilots",
+      "regex": "^/api/admin/audio\\-lessons/seed\\-pilots(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/audio\\-lessons/seed\\-pilots(?:/)?$"
+    },
+    {
+      "page": "/api/admin/jlpt/question-papers",
+      "regex": "^/api/admin/jlpt/question\\-papers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/jlpt/question\\-papers(?:/)?$"
+    },
+    {
+      "page": "/api/admin/jlpt/questions",
+      "regex": "^/api/admin/jlpt/questions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/jlpt/questions(?:/)?$"
+    },
+    {
+      "page": "/api/admin/kanji",
+      "regex": "^/api/admin/kanji(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/kanji(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2",
+      "regex": "^/api/admin/lessons\\-v2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/lessons\\-v2(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/audit",
+      "regex": "^/api/admin/lessons\\-v2/audit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/lessons\\-v2/audit(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/generate",
+      "regex": "^/api/admin/lessons\\-v2/generate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/lessons\\-v2/generate(?:/)?$"
+    },
+    {
+      "page": "/api/admin/lessons-v2/generation-plan",
+      "regex": "^/api/admin/lessons\\-v2/generation\\-plan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/lessons\\-v2/generation\\-plan(?:/)?$"
+    },
+    {
+      "page": "/api/admin/vocabulary",
+      "regex": "^/api/admin/vocabulary(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/vocabulary(?:/)?$"
+    },
+    {
       "page": "/api/ai/teacher",
       "regex": "^/api/ai/teacher(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/ai/teacher(?:/)?$"
+    },
+    {
+      "page": "/api/audio-lessons",
+      "regex": "^/api/audio\\-lessons(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/audio\\-lessons(?:/)?$"
+    },
+    {
+      "page": "/api/audio-lessons/playlists",
+      "regex": "^/api/audio\\-lessons/playlists(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/audio\\-lessons/playlists(?:/)?$"
+    },
+    {
+      "page": "/api/japanese/search",
+      "regex": "^/api/japanese/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/japanese/search(?:/)?$"
+    },
+    {
+      "page": "/api/lessons-v2",
+      "regex": "^/api/lessons\\-v2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/lessons\\-v2(?:/)?$"
+    },
+    {
+      "page": "/api/lessons-v2/mock-tests",
+      "regex": "^/api/lessons\\-v2/mock\\-tests(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/lessons\\-v2/mock\\-tests(?:/)?$"
     }
   ],
   "dataRoutes": [],

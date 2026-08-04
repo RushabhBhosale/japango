@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { nextPlaylistIndex, recordAudioLessonQuestion, updateAudioLessonPlaybackProgress } from './audio-lesson-progress';
+import { nextAudioSectionIndex, nextPlaylistIndex, recordAudioLessonQuestion, updateAudioLessonPlaybackProgress } from './audio-lesson-progress';
 
 const initial = {
   lessonVersionId: 'audio-version-1', status: 'not_started' as const, playbackPositionMs: 0, totalListenedMs: 0,
@@ -28,5 +28,12 @@ describe('Audio Lesson playback progress', () => {
     expect(nextPlaylistIndex(1, 3, 'next')).toBe(2);
     expect(nextPlaylistIndex(2, 3, 'next', true)).toBe(0);
     expect(nextPlaylistIndex(0, 3, 'previous', true)).toBe(2);
+  });
+
+  it('never advances beyond the last completed script section', () => {
+    const sections = [{ id: 'opening' }, { id: 'dialogue' }, { id: 'review' }];
+    expect(nextAudioSectionIndex(sections, 'opening')).toBe(1);
+    expect(nextAudioSectionIndex(sections, 'review')).toBeUndefined();
+    expect(nextAudioSectionIndex(sections, 'removed-section')).toBeUndefined();
   });
 });

@@ -8,7 +8,6 @@ import {
 import { auditAudioLessonContent, audioAuditIssuesForLesson } from './content-audit';
 import { buildAudioLessonPilots } from './pilots';
 import { AudioLessonsDependencyResolver } from './dependency-resolver';
-import { AudioLessonsError } from './errors';
 import { AudioLessonsRepository } from './repository';
 import { loadAudioTtsProvider, type AudioTtsProvider } from './tts';
 import { validateAudioLessonVersion } from './validator';
@@ -107,7 +106,10 @@ export class AudioLessonsService {
     }
     if (dryRun) return { pilots, created: false };
     const existingBySlug = new Map((await this.repository.listLessons()).map((lesson) => [lesson.slug, lesson]));
-    const created = await Promise.all(pilots.map(async (pilot) => {
+    // Published lessons are immutable. This makes the catalogue expansion
+    // restartable: existing preview lessons stay live and only new slugs are seeded.
+    const pendingPilots = pilots.filter((pilot) => existingBySlug.get(pilot.slug)?.status !== 'published');
+    const created = await Promise.all(pendingPilots.map(async (pilot) => {
       const {
         id: _id,
         lessonId: _lessonId,
@@ -119,7 +121,6 @@ export class AudioLessonsService {
         ...draftInput
       } = pilot;
       const existing = existingBySlug.get(pilot.slug);
-      if (existing?.status === 'published') throw new AudioLessonsError('CONFLICT', `Pilot ${pilot.slug} is already published and cannot be reseeded.`, 409);
       const draft = existing ?? await this.repository.createDraft(audioLessonDraftInputSchema.parse(draftInput));
       return this.generateDraftAudio(draft.lessonId);
     }));

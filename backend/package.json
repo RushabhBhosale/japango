@@ -15,7 +15,8 @@
     "lessons-v2:audit": "node --import tsx ./scripts/audit-jlpt-question-papers.ts",
     "lessons-v2:content-audit": "node --env-file=.env --import tsx ./scripts/audit-lessons-v2-content.ts",
     "lessons-v2:pilot": "node --import tsx ./scripts/seed-lessons-v2-pilot.ts",
-    "audio-lessons:pilot": "node --env-file=.env --import tsx ./scripts/seed-audio-lesson-pilots.ts"
+    "audio-lessons:pilot": "node --env-file=.env --import tsx ./scripts/seed-audio-lesson-pilots.ts",
+    "audio-lessons:refresh": "node --env-file=.env --import tsx ./scripts/refresh-audio-lesson-pilots.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.111.0",
