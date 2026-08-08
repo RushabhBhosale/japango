@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Alert, Pressable, StyleSheet, View } from 'react-native';
 import { router, type Href } from 'expo-router';
 
 import { AppButton } from '@/components/common/app-button';
@@ -33,6 +33,8 @@ export default function SettingsScreen() {
   const theme = useTheme();
   const profile = useAppStore((state) => state.profile);
   const settings = useAppStore((state) => state.settings);
+  const v3Learner = useAppStore((state) => state.v3Learner);
+  const resetV3State = useAppStore((state) => state.resetV3State);
   const updateDailyGoal = useAppStore((state) => state.updateDailyGoal);
   const updateThemePreference = useAppStore((state) => state.updateThemePreference);
   const [message, setMessage] = useState<string>();
@@ -98,9 +100,34 @@ export default function SettingsScreen() {
     try { await clearAiHistoryAndCache(); setMessage('AI history, cache, and saved retry drafts were cleared.'); } catch { setMessage('AI data could not be cleared.'); }
   };
 
+  const confirmV3Reset = () => {
+    Alert.alert(
+      'Reset the V3 story?',
+      'This clears only V3 onboarding, the starting check, Episode 1 progress, and V3 learned items. Legacy lessons, OCR data, and reference content stay untouched.',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Reset V3', style: 'destructive', onPress: () => {
+            void resetV3State().then(() => router.replace('/')).catch(() => setMessage('V3 state could not be reset.'));
+          },
+        },
+      ],
+    );
+  };
+
   return (
     <ScreenContainer>
       <PageHeader eyebrow="Make it yours" title="Settings" subtitle="Keep daily practice comfortable and realistic." />
+
+      <SectionHeading title="V3 story testing" />
+      <Card>
+        <ThemedText type="smallBold">Current assistance</ThemedText>
+        <ThemedText themeColor="textSecondary">
+          {v3Learner?.assistanceMode === 'guided' ? 'Guided: automatic furigana and more English help.' : v3Learner?.assistanceMode === 'supported' ? 'Supported: Japanese first, with help on tap.' : 'Independent: Japanese first, with fewer hints.'}
+        </ThemedText>
+        <AppButton label="Reset V3 fresh-user flow" variant="secondary" onPress={confirmV3Reset} />
+        <ThemedText type="small" themeColor="textSecondary">Only V3 learner state is removed.</ThemedText>
+      </Card>
 
       <SectionHeading title="Learner profile" />
       <Card>
@@ -219,6 +246,14 @@ export default function SettingsScreen() {
         <ThemedText themeColor="textSecondary">AI help is optional. Canonical lessons and local progress continue to work if it is unavailable.</ThemedText>
         <AppButton label="Open AI teacher" variant="secondary" onPress={() => router.push('/ai' as Href)} />
         <AppButton label="Clear AI history and cache" variant="quiet" onPress={() => void clearAiData()} />
+      </Card>
+
+      <SectionHeading title="Legacy learning" />
+      <Card>
+        <ThemedText themeColor="textSecondary">The structured course, Lessons V2, and audio lessons are preserved but kept outside the V3 home flow.</ThemedText>
+        <AppButton label="Open structured course" variant="quiet" onPress={() => router.push('/(tabs)/learn' as Href)} />
+        <AppButton label="Open Lessons V2" variant="quiet" onPress={() => router.push('/lessons-v2' as Href)} />
+        <AppButton label="Open audio lessons" variant="quiet" onPress={() => router.push('/audio-lessons' as Href)} />
       </Card>
 
       <ThemedText type="small" themeColor="textSecondary" style={styles.version}>JapanGo · Phase 1 local foundation</ThemedText>

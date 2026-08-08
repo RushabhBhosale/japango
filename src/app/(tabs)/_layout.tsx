@@ -37,19 +37,19 @@ export default function TabLayout() {
       />
       <Tabs.Screen
         name="learn"
-        options={{ title: 'Learn', tabBarAccessibilityLabel: 'Learn tab', tabBarIcon: tabIcon('book-outline') }}
+        options={{ href: null }}
       />
       <Tabs.Screen
         name="library"
-        options={{ title: 'Study', tabBarAccessibilityLabel: 'Study Library tab', tabBarIcon: tabIcon('library-outline') }}
+        options={{ href: null }}
       />
       <Tabs.Screen
         name="review"
-        options={{ title: 'Review', tabBarAccessibilityLabel: 'Review tab', tabBarIcon: tabIcon('refresh-outline') }}
+        options={{ href: null }}
       />
       <Tabs.Screen
         name="progress"
-        options={{ title: 'Progress', tabBarAccessibilityLabel: 'Progress tab', tabBarIcon: tabIcon('stats-chart-outline') }}
+        options={{ href: null }}
       />
       <Tabs.Screen
         name="settings"

@@ -12,10 +12,11 @@ interface WordLookupSheetProps {
   onClose: () => void;
   onFavorite?: (token: JapaneseToken) => void;
   onMarkForReview?: (token: JapaneseToken) => void;
+  gloss?: { reading: string; meaning: string };
 }
 
 /** V2 lookup is based on authored token links, never heuristic text matching. */
-export function WordLookupSheet({ token, visible, onClose, onFavorite, onMarkForReview }: WordLookupSheetProps) {
+export function WordLookupSheet({ token, visible, onClose, onFavorite, onMarkForReview, gloss }: WordLookupSheetProps) {
   const theme = useTheme();
   const dependencyType = token?.vocabularyId ? 'Vocabulary' : token?.kanjiIds.length ? 'Kanji' : undefined;
   return (
@@ -24,9 +25,9 @@ export function WordLookupSheet({ token, visible, onClose, onFavorite, onMarkFor
         <Pressable style={[styles.sheet, { backgroundColor: theme.surface }]} onPress={() => undefined}>
           {token ? <>
             <ThemedText type="japanese">{token.surface}</ThemedText>
-            {token.reading ? <ThemedText type="heading">{token.reading}</ThemedText> : null}
+            {gloss?.reading || token.reading ? <ThemedText type="heading">{gloss?.reading ?? token.reading}</ThemedText> : null}
             <ThemedText themeColor="textSecondary">
-              {dependencyType ? `${dependencyType} details are linked to this authored token.` : 'This token needs an authored vocabulary or kanji link.'}
+              {gloss?.meaning ?? (dependencyType ? `${dependencyType} details are linked to this authored token.` : 'This token needs an authored vocabulary or kanji link.')}
             </ThemedText>
             {onFavorite && dependencyType ? <AppButton label="Add to favorites" variant="secondary" onPress={() => onFavorite(token)} /> : null}
             {onMarkForReview && dependencyType ? <AppButton label="Mark for review" variant="secondary" onPress={() => onMarkForReview(token)} /> : null}

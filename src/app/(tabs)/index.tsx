@@ -1,163 +1,134 @@
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { router, useFocusEffect, type Href } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { router, useFocusEffect, type Href } from 'expo-router';
 
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
-import { EmptyState } from '@/components/common/empty-state';
 import { LoadingState } from '@/components/common/loading-state';
-import { PageHeader } from '@/components/common/page-header';
-import { ProgressBar } from '@/components/common/progress-bar';
 import { ScreenContainer } from '@/components/common/screen-container';
-import { SectionHeading } from '@/components/common/section-heading';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
+import { episodeOne } from '@/features/lesson-v3/episode-one';
 import { useTheme } from '@/hooks/use-theme';
-import { getProgressSummary } from '@/services/database/progress-repository';
-import { getExamAnalytics } from '@/services/database/exam-repository';
-import { getContinueLearningLesson, getCourseHome } from '@/services/database/course-repository';
+import { getV3EpisodeProgress } from '@/services/database/lesson-v3-repository';
 import { useAppStore } from '@/store/app-store';
-import type { ProgressSummary } from '@/types/learning';
-import type { ExamAnalytics } from '@/types/exam';
-import type { CourseHomeData, CourseLessonSummary } from '@/types/course';
+import type { V3EpisodeProgress } from '@/types/lesson-v3';
 
 export default function HomeScreen() {
   const theme = useTheme();
-  const profile = useAppStore((state) => state.profile);
-  const [summary, setSummary] = useState<ProgressSummary>();
-  const [examAnalytics, setExamAnalytics] = useState<ExamAnalytics>();
-  const [courseHome, setCourseHome] = useState<CourseHomeData>();
-  const [continuingLesson, setContinuingLesson] = useState<CourseLessonSummary>();
+  const learner = useAppStore((state) => state.v3Learner);
+  const [progress, setProgress] = useState<V3EpisodeProgress>();
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
   const load = useCallback(async () => {
-    setError(false);
     try {
-      const [progress, exams, continuing] = await Promise.all([getProgressSummary(), getExamAnalytics(), getContinueLearningLesson()]);
-      setSummary(progress);
-      setExamAnalytics(exams);
-      setContinuingLesson(continuing);
-      setCourseHome(await getCourseHome(continuing?.courseId));
-    } catch {
-      setError(true);
+      setProgress(await getV3EpisodeProgress(episodeOne.id));
     } finally {
       setLoading(false);
     }
   }, []);
-
   useFocusEffect(useCallback(() => { void load(); }, [load]));
 
-  if (loading) {
-    return <ScreenContainer scroll={false}><LoadingState label="Building today’s plan…" /></ScreenContainer>;
-  }
+  if (loading || !progress) return <ScreenContainer scroll={false}><LoadingState label="Finding your place in the story…" /></ScreenContainer>;
 
-  if (error || !profile || !summary) {
-    return (
-      <ScreenContainer contentStyle={styles.centered}>
-        <EmptyState title="Today’s plan is unavailable" message="Your saved learning data is still on this device." symbol="!" />
-        <AppButton label="Try again" onPress={() => void load()} />
-      </ScreenContainer>
-    );
-  }
-
-  const assessed = profile.assessmentCompleted;
-  const focusText = profile.assessmentResult?.weakAreas.length
-    ? profile.assessmentResult.weakAreas.map((area) => area.charAt(0).toUpperCase() + area.slice(1)).join(' · ')
-    : 'Balanced N5 foundations';
-  const actionLabel = assessed ? 'Continue studying' : 'Start the skill check';
-  const courseLesson = continuingLesson ?? courseHome?.currentLesson;
-  const courseMinutesRemaining = courseLesson
-    ? Math.max(1, courseLesson.estimatedMinutes - Math.floor(courseLesson.progress.timeSpentSeconds / 60))
-    : undefined;
+  const started = progress.currentSceneIndex > 0;
+  const completed = Boolean(progress.completedAt);
+  const learned = episodeOne.learningObjectives.filter((item) => progress.learnedItemIds.includes(item.id)).slice(0, 4);
+  const sceneProgress = Math.round((progress.currentSceneIndex / (episodeOne.scenes.length - 1)) * 100);
+  const assistance = learner?.assistanceMode === 'guided' ? 'Guided support' : learner?.assistanceMode === 'supported' ? 'Help on tap' : 'Japanese first';
 
   return (
     <ScreenContainer>
-      <PageHeader
-        eyebrow="こんにちは"
-        title={`Welcome back, ${profile.displayName}.`}
-        subtitle="One focused session is enough to make today count."
-      />
-
-      <Card style={[styles.planCard, { backgroundColor: theme.primarySoft, borderColor: theme.primary }]}>
-        <View style={styles.planTop}>
-          <View style={styles.planCopy}>
-            <ThemedText type="smallBold" style={{ color: theme.primary }}>TODAY’S RECOMMENDATION</ThemedText>
-            <ThemedText type="subtitle">{courseLesson ? `Continue Lesson ${courseLesson.number}` : assessed ? (summary.dueCount ? 'Complete today’s reviews' : 'Build your N5 rhythm') : 'Find your starting point'}</ThemedText>
-          </View>
-          <View style={[styles.minutes, { backgroundColor: theme.surface }]}>
-            <ThemedText type="heading" style={{ color: theme.primary }}>{assessed ? profile.dailyGoalMinutes : 10}</ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">min</ThemedText>
-          </View>
+      <View style={styles.header}>
+        <View>
+          <ThemedText type="smallBold" style={{ color: theme.primary }}>こんにちは</ThemedText>
+          <ThemedText type="title">Your story is ready.</ThemedText>
         </View>
-        <ThemedText themeColor="textSecondary">
-          {courseLesson
-            ? `You are at: ${courseLesson.progress.currentSectionId ? 'a saved lesson section' : courseLesson.communicationGoal} · about ${courseMinutesRemaining} minutes remain.`
-            : assessed
-              ? `${summary.dueCount} reviews and ${summary.scheduler.newCards} new cards are ready. About ${summary.scheduler.estimatedStudyMinutes} minutes.`
-              : 'A short 20-question check will create your first local learning plan.'}
-        </ThemedText>
-        <AppButton
-          label={courseLesson ? continuingLesson ? 'Continue' : 'Start lesson' : actionLabel}
-          onPress={() => router.push(courseLesson ? `/course/lesson/${encodeURIComponent(courseLesson.id)}` as Href : assessed ? '/(tabs)/learn' : '/assessment')}
-        />
-        {assessed ? <View style={styles.quickActions}><AppButton label="10-minute review" variant="secondary" onPress={() => router.push('/(tabs)/review' as Href)} /><AppButton label="Practise weak kanji" variant="secondary" onPress={() => router.push('/library/kanji' as Href)} /></View> : null}
-      </Card>
-
-      <View style={styles.stats}>
-        <Card style={styles.statCard}>
-          <ThemedText style={[styles.statValue, { color: theme.warning }]}>{summary.dueCount}</ThemedText>
-          <ThemedText type="small" themeColor="textSecondary">Due reviews</ThemedText>
-        </Card>
-        <Card style={styles.statCard}>
-          <ThemedText style={[styles.statValue, { color: theme.error }]}>{summary.scheduler.learningCards}</ThemedText>
-          <ThemedText type="small" themeColor="textSecondary">Learning cards</ThemedText>
-        </Card>
-        <Card style={styles.statCard}>
-          <ThemedText style={[styles.statValue, { color: theme.success }]}>{summary.statusCounts.mastered}</ThemedText>
-          <ThemedText type="small" themeColor="textSecondary">Mastered</ThemedText>
-        </Card>
+        <View style={[styles.avatar, { backgroundColor: theme.primarySoft }]}><ThemedText type="heading" style={{ color: theme.primary }}>ゆ</ThemedText></View>
       </View>
 
-      <SectionHeading title="Your learning level" />
-      <Card>
-        <ThemedText type="heading">{profile.learnerLevel ?? 'Assessment not completed'}</ThemedText>
-        {assessed ? (
-          <>
-            <View style={styles.progressLabel}>
-              <ThemedText type="small">Initial assessment</ThemedText>
-              <ThemedText type="smallBold">{profile.assessmentScore}%</ThemedText>
-            </View>
-            <ProgressBar value={profile.assessmentScore ?? 0} accessibilityLabel="Initial assessment score" />
-          </>
+      <View style={styles.sectionHeader}>
+        <ThemedText type="smallBold" themeColor="textSecondary">{completed ? 'STORY SO FAR' : 'CONTINUE STORY'}</ThemedText>
+        <ThemedText type="small" themeColor="textSecondary">{assistance}</ThemedText>
+      </View>
+
+      <Card style={[styles.episodeCard, { borderColor: theme.primary }]}>
+        <View style={styles.arcRow}>
+          <View style={styles.arcCopy}>
+            <ThemedText type="smallBold" style={{ color: theme.primary }}>{episodeOne.arcTitleJapanese}</ThemedText>
+            <ThemedText type="small" themeColor="textSecondary">{episodeOne.arcTitleEnglish}</ThemedText>
+          </View>
+          <View style={[styles.time, { backgroundColor: theme.primarySoft }]}>
+            <Ionicons name="time-outline" size={17} color={theme.primary} />
+            <ThemedText type="smallBold" style={{ color: theme.primary }}>{episodeOne.estimatedMinutes} min</ThemedText>
+          </View>
+        </View>
+
+        <View style={styles.episodeTitle}>
+          <ThemedText type="smallBold" themeColor="textSecondary">EPISODE 1</ThemedText>
+          <ThemedText type="subtitle">{episodeOne.titleJapanese}</ThemedText>
+          <ThemedText type="heading" themeColor="textSecondary">{episodeOne.titleEnglish}</ThemedText>
+        </View>
+
+        {started && !completed ? (
+          <View style={styles.resumeRow}>
+            <View style={[styles.resumeTrack, { backgroundColor: theme.border }]}><View style={[styles.resumeFill, { width: `${sceneProgress}%`, backgroundColor: theme.primary }]} /></View>
+            <ThemedText type="small" themeColor="textSecondary">Saved</ThemedText>
+          </View>
         ) : null}
+
+        <ThemedText themeColor="textSecondary">
+          {completed
+            ? 'You and Yuki agreed to meet tomorrow at Shinjuku Station.'
+            : 'A message from an unknown number pulls you into your first conversation in Japan.'}
+        </ThemedText>
+        <AppButton
+          label={completed ? 'Revisit the ending' : started ? 'Continue Episode 1' : 'Start Episode 1'}
+          onPress={() => router.push(`/episode/${episodeOne.id}` as Href)}
+        />
       </Card>
 
-      <SectionHeading title="What you’re improving" />
-      <Card>
-        <ThemedText type="heading">{focusText}</ThemedText>
-        <ThemedText themeColor="textSecondary">{summary.scheduler.currentStreak}-day streak · {summary.scheduler.retention}% recent retention · {summary.scheduler.dueTomorrow} cards due tomorrow.</ThemedText>
-      </Card>
-
-      <SectionHeading title="Mock exam readiness" />
-      <Card>
-        <ThemedText type="heading">{examAnalytics?.completedMocks ? `${examAnalytics.readiness}% estimated readiness` : 'Take a first mock exam'}</ThemedText>
-        <ThemedText themeColor="textSecondary">{examAnalytics?.completedMocks ? `${examAnalytics.completedMocks} completed mocks · best ${examAnalytics.highestMockScore ?? 0}%` : 'A short offline mock will establish an exam baseline.'}</ThemedText>
-        <AppButton label="Practice & mock exams" variant="quiet" onPress={() => router.push('/exams' as Href)} />
-      </Card>
+      {learned.length ? (
+        <View style={styles.secondary}>
+          <ThemedText type="smallBold" themeColor="textSecondary">RECENTLY MET IN THE STORY</ThemedText>
+          <Card style={styles.learnedCard}>
+            {learned.map((item, index) => (
+              <View key={item.id} style={[styles.learnedRow, index > 0 && { borderTopWidth: 1, borderTopColor: theme.border }]}>
+                <View>
+                  <ThemedText type="heading">{item.japanese}</ThemedText>
+                  <ThemedText type="small" themeColor="textSecondary">{item.reading}</ThemedText>
+                </View>
+                <ThemedText type="small">{item.meaning}</ThemedText>
+              </View>
+            ))}
+          </Card>
+        </View>
+      ) : (
+        <View style={[styles.newLearnerNote, { borderColor: theme.border }]}>
+          <Ionicons name="hand-left-outline" size={22} color={theme.primary} />
+          <ThemedText themeColor="textSecondary" style={styles.noteCopy}>Tap unfamiliar Japanese inside the story for its reading and meaning.</ThemedText>
+        </View>
+      )}
     </ScreenContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  centered: { justifyContent: 'center' },
-  planCard: { padding: Spacing.four, gap: Spacing.three },
-  planTop: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.three },
-  planCopy: { flex: 1, gap: Spacing.one },
-  minutes: { width: 66, height: 66, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
-  stats: { flexDirection: 'row', gap: Spacing.two },
-  quickActions: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
-  statCard: { flex: 1, minWidth: 0, padding: 12 },
-  statValue: { fontSize: 28, lineHeight: 34, fontWeight: '800' },
-  progressLabel: { flexDirection: 'row', justifyContent: 'space-between', gap: Spacing.two },
+  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: Spacing.three },
+  avatar: { width: 52, height: 52, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center' },
+  sectionHeader: { flexDirection: 'row', justifyContent: 'space-between', gap: Spacing.two, marginTop: Spacing.two },
+  episodeCard: { gap: Spacing.four, padding: Spacing.four, borderRadius: Radius.large },
+  arcRow: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: Spacing.three },
+  arcCopy: { flex: 1 },
+  time: { flexDirection: 'row', gap: Spacing.one, borderRadius: Radius.pill, paddingHorizontal: 12, paddingVertical: 8 },
+  episodeTitle: { gap: Spacing.one },
+  resumeRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
+  resumeTrack: { flex: 1, height: 4, borderRadius: Radius.pill, overflow: 'hidden' },
+  resumeFill: { height: '100%', borderRadius: Radius.pill },
+  secondary: { gap: Spacing.two },
+  learnedCard: { paddingVertical: Spacing.one },
+  learnedRow: { minHeight: 58, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: Spacing.three, paddingVertical: Spacing.two },
+  newLearnerNote: { borderTopWidth: 1, borderBottomWidth: 1, flexDirection: 'row', alignItems: 'center', gap: Spacing.three, paddingVertical: Spacing.three },
+  noteCopy: { flex: 1 },
 });

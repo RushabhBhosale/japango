@@ -48,6 +48,7 @@ export default function RootLayout() {
         <Stack.Screen name="onboarding" />
         <Stack.Screen name="assessment/index" />
         <Stack.Screen name="assessment/result" />
+        <Stack.Screen name="episode/[episodeId]" />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="lessons-v2" />
         <Stack.Screen name="audio-lessons" />

@@ -1,71 +1,42 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
+import { useState } from 'react';
+import { StyleSheet, View } from 'react-native';
 
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
-import { LoadingState } from '@/components/common/loading-state';
 import { ProgressBar } from '@/components/common/progress-bar';
 import { ScreenContainer } from '@/components/common/screen-container';
 import { ThemedText } from '@/components/themed-text';
 import { QuestionOption } from '@/components/quiz/question-option';
 import { Radius, Spacing } from '@/constants/theme';
+import { v3AssessmentQuestions } from '@/features/lesson-v3/assessment';
 import { useTheme } from '@/hooks/use-theme';
 import { useAppStore } from '@/store/app-store';
 
 export default function AssessmentScreen() {
   const theme = useTheme();
-  const questions = useAppStore((state) => state.assessmentQuestions);
-  const attempts = useAppStore((state) => state.assessmentAttempts);
-  const index = useAppStore((state) => state.assessmentIndex);
-  const loading = useAppStore((state) => state.assessmentLoading);
-  const loadAssessment = useAppStore((state) => state.loadAssessment);
-  const answerAssessment = useAppStore((state) => state.answerAssessment);
-  const goToAssessmentIndex = useAppStore((state) => state.goToAssessmentIndex);
-  const finishAssessment = useAppStore((state) => state.finishAssessment);
-  const [pendingSelections, setPendingSelections] = useState<Record<string, string>>({});
+  const v3Learner = useAppStore((state) => state.v3Learner);
+  const answerAssessment = useAppStore((state) => state.answerV3Assessment);
+  const finishAssessment = useAppStore((state) => state.finishV3Assessment);
+  const initialIndex = Math.min(v3Learner?.assessmentIndex ?? 0, v3AssessmentQuestions.length - 1);
+  const [index, setIndex] = useState(initialIndex);
+  const [selectedOptionId, setSelectedOptionId] = useState<string>();
+  const [confirmed, setConfirmed] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string>();
-  const questionStartedAt = useRef(0);
+  const question = v3AssessmentQuestions[index];
 
-  const question = questions[index];
-  const currentAttempt = useMemo(
-    () => attempts.find((attempt) => attempt.questionId === question?.id),
-    [attempts, question?.id],
-  );
-  const selectedOptionId = currentAttempt?.selectedAnswer ?? (question ? pendingSelections[question.id] : undefined);
-
-  useEffect(() => {
-    if (questions.length === 0) void loadAssessment();
-  }, [loadAssessment, questions.length]);
-
-  useEffect(() => {
-    questionStartedAt.current = Date.now();
-  }, [question?.id]);
-
-  if (loading || questions.length === 0) {
-    return (
-      <ScreenContainer scroll={false}>
-        <LoadingState label="Loading your skill check…" />
-      </ScreenContainer>
-    );
-  }
-
-  if (!question) {
-    return (
-      <ScreenContainer contentStyle={styles.centered}>
-        <ThemedText type="subtitle">Your answers are saved.</ThemedText>
-        <AppButton label="View your result" onPress={() => router.replace('/assessment/result')} />
-      </ScreenContainer>
-    );
-  }
-
-  const handleConfirm = async () => {
-    if (!selectedOptionId || currentAttempt) return;
+  const confirm = async () => {
+    if (!selectedOptionId || confirmed) return;
     setSaving(true);
     setError(undefined);
     try {
-      await answerAssessment(question, selectedOptionId, Date.now() - questionStartedAt.current);
+      await answerAssessment({
+        questionId: question.id,
+        selectedOptionId,
+        correct: selectedOptionId === question.correctOptionId,
+      });
+      setConfirmed(true);
     } catch {
       setError('That answer could not be saved. Please try again.');
     } finally {
@@ -73,54 +44,45 @@ export default function AssessmentScreen() {
     }
   };
 
-  const handleNext = async () => {
-    if (!currentAttempt) return;
-    setSaving(true);
-    setError(undefined);
-    try {
-      const nextIndex = index + 1;
-      if (nextIndex === questions.length) {
+  const next = async () => {
+    if (!confirmed) return;
+    if (index === v3AssessmentQuestions.length - 1) {
+      setSaving(true);
+      try {
         await finishAssessment();
         router.replace('/assessment/result');
-        return;
+      } catch {
+        setError('Your answers are saved. The result could not be opened yet.');
+      } finally {
+        setSaving(false);
       }
-      await goToAssessmentIndex(nextIndex);
-    } catch {
-      setError('Your progress is saved, but the next question could not be opened.');
-    } finally {
-      setSaving(false);
+      return;
     }
+    setIndex((current) => current + 1);
+    setSelectedOptionId(undefined);
+    setConfirmed(false);
+    setError(undefined);
   };
 
-  const answerIsCorrect = currentAttempt?.correct ?? false;
-  const progress = ((index + (currentAttempt ? 1 : 0)) / questions.length) * 100;
+  const correct = selectedOptionId === question.correctOptionId;
+  const progress = ((index + (confirmed ? 1 : 0)) / v3AssessmentQuestions.length) * 100;
 
   return (
     <ScreenContainer>
-      <View style={styles.topRow}>
-        <View style={styles.progressText}>
-          <ThemedText type="smallBold">Initial skill check</ThemedText>
-          <ThemedText type="small" themeColor="textSecondary">
-            Question {index + 1} of {questions.length}
-          </ThemedText>
+      <View style={styles.header}>
+        <View style={styles.headerCopy}>
+          <ThemedText type="smallBold">A quick starting check</ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">About 3 minutes · {index + 1} of {v3AssessmentQuestions.length}</ThemedText>
         </View>
-        <AppButton label="Save & leave" variant="quiet" onPress={() => router.replace('/(tabs)')} />
+        <ThemedText type="small" themeColor="textSecondary">Not an exam</ThemedText>
       </View>
-      <ProgressBar value={progress} accessibilityLabel="Assessment progress" />
+      <ProgressBar value={progress} accessibilityLabel="Starting check progress" />
 
       <Card style={styles.questionCard}>
-        <ThemedText type="smallBold" style={{ color: theme.primary }}>
-          {question.type === 'choose-reading'
-            ? 'CHOOSE THE READING'
-            : question.type === 'fill-blank'
-              ? 'COMPLETE THE SENTENCE'
-              : question.type === 'short-reading'
-                ? 'SHORT READING'
-                : 'CHOOSE ONE'}
-        </ThemedText>
-        {question.type === 'short-reading' ? (
+        <ThemedText type="smallBold" style={{ color: theme.primary }}>{question.label}</ThemedText>
+        {question.passage ? (
           <View style={[styles.passage, { backgroundColor: theme.primarySoft }]}>
-            <ThemedText type="japanese">{question.passage}</ThemedText>
+            <ThemedText type="japanese" style={styles.passageText}>{question.passage}</ThemedText>
           </View>
         ) : null}
         <ThemedText type="heading">{question.prompt}</ThemedText>
@@ -128,11 +90,11 @@ export default function AssessmentScreen() {
 
       <View accessibilityRole="radiogroup" style={styles.options}>
         {question.options.map((option) => {
-          const isSelected = option.id === selectedOptionId;
-          const correctness = currentAttempt
+          const selected = option.id === selectedOptionId;
+          const correctness = confirmed
             ? option.id === question.correctOptionId
               ? 'correct'
-              : isSelected
+              : selected
                 ? 'incorrect'
                 : undefined
             : undefined;
@@ -140,50 +102,44 @@ export default function AssessmentScreen() {
             <QuestionOption
               key={option.id}
               label={option.label}
-              selected={isSelected}
+              selected={selected}
               correctness={correctness}
-              disabled={Boolean(currentAttempt)}
-              onPress={() => setPendingSelections((current) => ({ ...current, [question.id]: option.id }))}
+              disabled={confirmed}
+              onPress={() => setSelectedOptionId(option.id)}
             />
           );
         })}
       </View>
 
-      {currentAttempt ? (
-        <Card
-          style={{ backgroundColor: answerIsCorrect ? theme.successSoft : theme.errorSoft }}
-          accessibilityLabel={answerIsCorrect ? 'Correct answer' : 'Incorrect answer'}>
-          <ThemedText type="heading" style={{ color: answerIsCorrect ? theme.success : theme.error }}>
-            {answerIsCorrect ? 'Correct' : 'Not quite'}
+      {confirmed ? (
+        <Card style={{ backgroundColor: correct ? theme.successSoft : theme.errorSoft }}>
+          <ThemedText type="heading" style={{ color: correct ? theme.success : theme.error }}>
+            {correct ? 'Got it' : 'Good to know'}
           </ThemedText>
           <ThemedText>{question.explanation}</ThemedText>
         </Card>
       ) : null}
 
       {error ? <ThemedText style={{ color: theme.error }} accessibilityLiveRegion="polite">{error}</ThemedText> : null}
-      {currentAttempt ? (
-        <AppButton
-          label={index === questions.length - 1 ? 'See my result' : 'Next question'}
-          loading={saving}
-          onPress={() => void handleNext()}
-        />
-      ) : (
-        <AppButton
-          label="Confirm answer"
-          disabled={!selectedOptionId}
-          loading={saving}
-          onPress={() => void handleConfirm()}
-        />
-      )}
+      <AppButton
+        label={confirmed ? (index === v3AssessmentQuestions.length - 1 ? 'See my starting point' : 'Next') : 'Check answer'}
+        disabled={!selectedOptionId}
+        loading={saving}
+        onPress={() => confirmed ? void next() : void confirm()}
+      />
+      <ThemedText type="small" themeColor="textSecondary" style={styles.note}>
+        Your result adjusts furigana, hints, and how much English Episode 1 shows.
+      </ThemedText>
     </ScreenContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  centered: { justifyContent: 'center' },
-  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: Spacing.two },
-  progressText: { flex: 1, gap: 2 },
+  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: Spacing.two },
+  headerCopy: { flex: 1 },
   questionCard: { marginTop: Spacing.two },
   passage: { borderRadius: Radius.medium, padding: Spacing.three },
+  passageText: { fontSize: 21, lineHeight: 34 },
   options: { gap: Spacing.two },
+  note: { textAlign: 'center' },
 });

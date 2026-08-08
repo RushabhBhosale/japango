@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 20;
+export const CURRENT_DATABASE_VERSION = 21;
 
 export interface DatabaseMigration {
   version: number;
@@ -1584,6 +1584,35 @@ const versionTwentySql = `
   );
 `;
 
+// V3 is intentionally isolated from the structured course, Lessons V2, and
+// audio lesson tables. Its small state surface can be reset without touching
+// curriculum, OCR/RAG content, or any legacy learner history.
+const versionTwentyOneSql = `
+  CREATE TABLE IF NOT EXISTS v3_learner_state (
+    id INTEGER PRIMARY KEY NOT NULL CHECK (id = 1),
+    onboarding_completed INTEGER NOT NULL DEFAULT 0 CHECK (onboarding_completed IN (0, 1)),
+    learning_goal TEXT,
+    self_reported_level TEXT,
+    assistance_mode TEXT NOT NULL DEFAULT 'guided' CHECK (assistance_mode IN ('guided', 'supported', 'independent')),
+    assessment_completed INTEGER NOT NULL DEFAULT 0 CHECK (assessment_completed IN (0, 1)),
+    assessment_index INTEGER NOT NULL DEFAULT 0 CHECK (assessment_index >= 0),
+    assessment_answers_json TEXT NOT NULL DEFAULT '[]',
+    assessment_result_json TEXT,
+    updated_at TEXT NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS v3_episode_progress (
+    episode_id TEXT PRIMARY KEY NOT NULL,
+    current_scene_index INTEGER NOT NULL DEFAULT 0 CHECK (current_scene_index >= 0),
+    responses_json TEXT NOT NULL DEFAULT '[]',
+    learned_item_ids_json TEXT NOT NULL DEFAULT '[]',
+    completed_at TEXT,
+    updated_at TEXT NOT NULL
+  );
+  CREATE INDEX IF NOT EXISTS v3_episode_resume_idx
+    ON v3_episode_progress(completed_at, updated_at DESC);
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1605,6 +1634,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 18, sql: versionEighteenSql },
   { version: 19, sql: versionNineteenSql },
   { version: 20, sql: versionTwentySql },
+  { version: 21, sql: versionTwentyOneSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

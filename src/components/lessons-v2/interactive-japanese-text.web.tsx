@@ -12,10 +12,11 @@ interface InteractiveJapaneseTextProps {
   type?: ThemedTextProps['type'];
   onFavorite?: (token: JapaneseToken) => void;
   onMarkForReview?: (token: JapaneseToken) => void;
+  glossary?: Record<string, { reading: string; meaning: string }>;
 }
 
 /** The web renderer emits ruby/rt for semantic furigana; native uses stacked text. */
-export function InteractiveJapaneseText({ text, furiganaMode, type = 'japanese', onFavorite, onMarkForReview }: InteractiveJapaneseTextProps) {
+export function InteractiveJapaneseText({ text, furiganaMode, type = 'japanese', onFavorite, onMarkForReview, glossary }: InteractiveJapaneseTextProps) {
   const [selected, setSelected] = useState<JapaneseToken>();
   return (
     <>
@@ -28,7 +29,7 @@ export function InteractiveJapaneseText({ text, furiganaMode, type = 'japanese',
           </Pressable>
         ) : <ThemedText key={token.id} type={type}>{token.surface}</ThemedText>)}
       </View>
-      <WordLookupSheet token={selected} visible={Boolean(selected)} onClose={() => setSelected(undefined)} onFavorite={onFavorite} onMarkForReview={onMarkForReview} />
+      <WordLookupSheet token={selected} visible={Boolean(selected)} onClose={() => setSelected(undefined)} onFavorite={onFavorite} onMarkForReview={onMarkForReview} gloss={selected?.vocabularyId ? glossary?.[selected.vocabularyId] : undefined} />
     </>
   );
 }

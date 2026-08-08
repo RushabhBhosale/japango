@@ -16,6 +16,19 @@ import {
   saveDailyGoal,
 } from '@/services/database/profile-repository';
 import { getSetting, setSetting } from '@/services/database/settings-repository';
+import {
+  completeV3Assessment as persistV3Assessment,
+  completeV3Onboarding as persistV3Onboarding,
+  getV3LearnerState,
+  resetV3LearnerState as persistV3Reset,
+  saveV3AssessmentAnswer,
+} from '@/services/database/lesson-v3-repository';
+import type {
+  LearningGoal,
+  SelfReportedLevel,
+  V3AssessmentAnswer,
+  V3LearnerState,
+} from '@/types/lesson-v3';
 import type {
   AppSettings,
   AssessmentQuestion,
@@ -30,6 +43,7 @@ interface AppState {
   initializationStatus: InitializationStatus;
   errorMessage?: string;
   profile?: LearnerProfile;
+  v3Learner?: V3LearnerState;
   settings: AppSettings;
   assessmentQuestions: AssessmentQuestion[];
   assessmentAttempts: LearningAttempt[];
@@ -37,6 +51,10 @@ interface AppState {
   assessmentLoading: boolean;
   bootstrap: () => Promise<void>;
   completeOnboarding: (displayName: string, dailyGoalMinutes: number) => Promise<void>;
+  completeV3Onboarding: (learningGoal: LearningGoal, selfReportedLevel: SelfReportedLevel) => Promise<void>;
+  answerV3Assessment: (answer: V3AssessmentAnswer) => Promise<void>;
+  finishV3Assessment: () => Promise<void>;
+  resetV3State: () => Promise<void>;
   loadAssessment: () => Promise<void>;
   answerAssessment: (
     question: AssessmentQuestion,
@@ -65,13 +83,15 @@ export const useAppStore = create<AppState>((set, get) => ({
     set({ initializationStatus: 'loading', errorMessage: undefined });
     try {
       await initializeDatabase();
-      const [profile, themePreference] = await Promise.all([
+      const [profile, themePreference, v3Learner] = await Promise.all([
         getLearnerProfile(),
         getSetting('theme_preference', themePreferenceSchema),
+        getV3LearnerState(),
       ]);
       set({
         initializationStatus: 'ready',
         profile,
+        v3Learner,
         settings: { themePreference: themePreference ?? 'system' },
       });
     } catch (error: unknown) {
@@ -89,6 +109,26 @@ export const useAppStore = create<AppState>((set, get) => ({
   completeOnboarding: async (displayName, dailyGoalMinutes) => {
     const profile = await persistOnboarding(displayName, dailyGoalMinutes);
     set({ profile });
+  },
+
+  completeV3Onboarding: async (learningGoal, selfReportedLevel) => {
+    const v3Learner = await persistV3Onboarding(learningGoal, selfReportedLevel);
+    set({ v3Learner });
+  },
+
+  answerV3Assessment: async (answer) => {
+    const v3Learner = await saveV3AssessmentAnswer(answer);
+    set({ v3Learner });
+  },
+
+  finishV3Assessment: async () => {
+    const v3Learner = await persistV3Assessment();
+    set({ v3Learner });
+  },
+
+  resetV3State: async () => {
+    const v3Learner = await persistV3Reset();
+    set({ v3Learner });
   },
 
   loadAssessment: async () => {
