@@ -46,12 +46,8 @@ export default function RootLayout() {
       <Stack screenOptions={{ headerShown: false, animation: 'none' }}>
         <Stack.Screen name="index" />
         <Stack.Screen name="onboarding" />
-        <Stack.Screen name="assessment/index" />
-        <Stack.Screen name="assessment/result" />
         <Stack.Screen name="episode/[episodeId]" />
         <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="lessons-v2" />
-        <Stack.Screen name="audio-lessons" />
       </Stack>
       <BackgroundContentIndicator state={contentInstallation} />
     </ThemeProvider>

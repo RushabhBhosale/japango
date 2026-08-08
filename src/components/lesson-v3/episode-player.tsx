@@ -87,7 +87,7 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
     if (!progress) {
       return {
         feedback: { title: 'Try again', feedback: 'Your reply could not be saved yet.' },
-        yukiReply: { id: 'yuki-save-error', sender: 'yuki', line: { text: { raw: 'ごめん、もう一回送ってくれる？', status: 'verified', tokens: [{ id: 'save-error', kind: 'plain', surface: 'ごめん、もう一回送ってくれる？', kanjiIds: [], status: 'verified' }] } } },
+        yukiReply: { id: 'yuki-save-error', sender: 'yuki', line: { text: { raw: 'ごめん、もう一回送ってくれる？', tokens: [{ id: 'save-error', kind: 'plain', surface: 'ごめん、もう一回送ってくれる？', kanjiIds: [] }] } } },
         requiresFollowUp: true,
       };
     }

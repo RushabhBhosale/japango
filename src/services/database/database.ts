@@ -69,13 +69,6 @@ function scheduleLearningContentInstallation(database: SQLite.SQLiteDatabase): v
         await runStartupStage('install bundled curriculum', () => installBundledCurriculumIfNeeded(database));
         setLearningContentInstallationState({ status: 'preparing_reviews' });
         await runStartupStage('prepare FSRS cards', () => ensureFsrsCards(database));
-        setLearningContentInstallationState({ status: 'preparing_course' });
-        // The course manifest is intentionally deferred from startup, but warming
-        // it here avoids creating and installing it on the first Continue press.
-        await runStartupStage('prepare structured course', async () => {
-          const { installCourseManifestIfNeeded } = await import('./course-repository');
-          await installCourseManifestIfNeeded(database);
-        });
         setLearningContentInstallationState({ status: 'ready' });
       })().then(resolve).catch((error: unknown) => {
         setLearningContentInstallationState({

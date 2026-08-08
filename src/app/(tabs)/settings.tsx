@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Alert, Pressable, StyleSheet, View } from 'react-native';
-import { router, type Href } from 'expo-router';
+import { router } from 'expo-router';
 
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
@@ -244,16 +244,12 @@ export default function SettingsScreen() {
       <SectionHeading title="AI teacher" />
       <Card>
         <ThemedText themeColor="textSecondary">AI help is optional. Canonical lessons and local progress continue to work if it is unavailable.</ThemedText>
-        <AppButton label="Open AI teacher" variant="secondary" onPress={() => router.push('/ai' as Href)} />
         <AppButton label="Clear AI history and cache" variant="quiet" onPress={() => void clearAiData()} />
       </Card>
 
       <SectionHeading title="Legacy learning" />
       <Card>
         <ThemedText themeColor="textSecondary">The structured course, Lessons V2, and audio lessons are preserved but kept outside the V3 home flow.</ThemedText>
-        <AppButton label="Open structured course" variant="quiet" onPress={() => router.push('/(tabs)/learn' as Href)} />
-        <AppButton label="Open Lessons V2" variant="quiet" onPress={() => router.push('/lessons-v2' as Href)} />
-        <AppButton label="Open audio lessons" variant="quiet" onPress={() => router.push('/audio-lessons' as Href)} />
       </Card>
 
       <ThemedText type="small" themeColor="textSecondary" style={styles.version}>JapanGo · Phase 1 local foundation</ThemedText>

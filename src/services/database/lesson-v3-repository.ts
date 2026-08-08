@@ -160,6 +160,16 @@ export async function getV3EpisodeProgress(episodeId: string): Promise<V3Episode
   return { episodeId, currentSceneIndex: 0, responses: [], learnedItemIds: [], storyChoices: {}, updatedAt: new Date().toISOString() };
 }
 
+/** Reads the compact V3 story index in one query so the home screen can find
+ * the next unfinished chapter without opening every episode individually. */
+export async function getV3EpisodeProgresses(): Promise<V3EpisodeProgress[]> {
+  const database = await getDatabase();
+  const rows = await database.getAllAsync<V3EpisodeProgressRow>(
+    'SELECT * FROM v3_episode_progress ORDER BY updated_at DESC',
+  );
+  return rows.map(mapEpisodeProgress);
+}
+
 export async function saveV3EpisodeProgress(progress: V3EpisodeProgress): Promise<V3EpisodeProgress> {
   const parsed = v3EpisodeProgressSchema.parse(progress);
   const database = await getDatabase();

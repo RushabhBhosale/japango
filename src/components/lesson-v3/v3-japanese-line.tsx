@@ -2,7 +2,6 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { InteractiveJapaneseText } from '@/components/lessons-v2/interactive-japanese-text';
 import { ThemedText, type ThemedTextProps } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
@@ -24,6 +23,9 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
   // can reveal meaning only when it is useful.
   const [helpRevealed, setHelpRevealed] = useState(false);
   const [audioError, setAudioError] = useState(false);
+  const [openedTokenId, setOpenedTokenId] = useState<string>();
+  const openedToken = line.text.tokens.find((token) => token.id === openedTokenId);
+  const tokenHelp = openedToken?.vocabularyId ? glossary[openedToken.vocabularyId] : undefined;
 
   const play = async () => {
     setAudioError(false);
@@ -38,12 +40,25 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
     <View style={styles.container}>
       <View style={styles.japaneseRow}>
         <View style={styles.japanese}>
-          <InteractiveJapaneseText
-            text={line.text}
-            furiganaMode={assistanceMode === 'guided' ? 'always' : 'hidden'}
-            glossary={glossary}
-            type={type}
-          />
+          <View style={styles.tokens}>
+            {line.text.tokens.map((token) => {
+              const reading = token.reading ?? (token.vocabularyId ? glossary[token.vocabularyId]?.reading : undefined);
+              const hasHelp = Boolean(reading || tokenHelp?.meaning || (token.vocabularyId && glossary[token.vocabularyId]?.meaning));
+              const tokenMeaning = token.vocabularyId ? glossary[token.vocabularyId]?.meaning : undefined;
+              return (
+                <Pressable
+                  key={token.id}
+                  disabled={!hasHelp}
+                  onPress={() => setOpenedTokenId((current) => current === token.id ? undefined : token.id)}
+                  style={styles.token}
+                >
+                  {assistanceMode === 'guided' && reading ? <ThemedText type="small" style={[styles.reading, { color: theme.textSecondary }]}>{reading}</ThemedText> : null}
+                  <ThemedText type={type}>{token.surface}</ThemedText>
+                  {openedTokenId === token.id && tokenMeaning ? <ThemedText type="small" style={{ color: theme.primary }}>{tokenMeaning}</ThemedText> : null}
+                </Pressable>
+              );
+            })}
+          </View>
         </View>
         {showAudio ? (
           <Pressable
@@ -72,5 +87,8 @@ const styles = StyleSheet.create({
   container: { gap: Spacing.one },
   japaneseRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
   japanese: { flex: 1, minWidth: 0 },
+  tokens: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-end' },
+  token: { alignItems: 'center' },
+  reading: { lineHeight: 15 },
   audioButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
 });

@@ -34,8 +34,7 @@ function aiLine(raw: string): V3JapaneseLine {
   return {
     text: {
       raw,
-      status: 'verified',
-      tokens: [{ id: 'yuki-ai-reply', kind: 'plain', surface: raw, kanjiIds: [], status: 'verified' }],
+      tokens: [{ id: 'yuki-ai-reply', kind: 'plain', surface: raw, kanjiIds: [] }],
     },
   };
 }

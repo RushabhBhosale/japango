@@ -1,15 +1,13 @@
-import type { StructuredJapaneseText } from '@/types/lessons-v2';
-import type { V3Episode, V3JapaneseLine } from '@/types/lesson-v3';
+import type { V3Episode, V3JapaneseLine, V3JapaneseText } from '@/types/lesson-v3';
 
 type Segment = string | { surface: string; reading: string; itemId: string; kanjiIds?: string[] };
 
-function japanese(...segments: Segment[]): StructuredJapaneseText {
+function japanese(...segments: Segment[]): V3JapaneseText {
   const raw = segments.map((segment) => typeof segment === 'string' ? segment : segment.surface).join('');
   return {
     raw,
-    status: 'verified',
     tokens: segments.map((segment, index) => typeof segment === 'string'
-      ? { id: `plain-${index}-${raw.length}`, kind: 'plain' as const, surface: segment, kanjiIds: [], status: 'verified' as const }
+      ? { id: `plain-${index}-${raw.length}`, kind: 'plain' as const, surface: segment, kanjiIds: [] }
       : {
           id: `${segment.itemId}-${index}`,
           kind: 'word' as const,
@@ -17,12 +15,11 @@ function japanese(...segments: Segment[]): StructuredJapaneseText {
           reading: segment.reading,
           vocabularyId: segment.itemId,
           kanjiIds: segment.kanjiIds ?? [],
-          status: 'verified' as const,
         }),
   };
 }
 
-function line(text: StructuredJapaneseText, englishHelp?: string): V3JapaneseLine {
+function line(text: V3JapaneseText, englishHelp?: string): V3JapaneseLine {
   return { text, englishHelp };
 }
 
@@ -188,5 +185,3 @@ export const episodeOne: V3Episode = {
     hook: 'But getting there might not go exactly as planned.',
   },
 };
-
-export const v3Episodes: Record<string, V3Episode> = { [episodeOne.id]: episodeOne };

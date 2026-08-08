@@ -3,7 +3,7 @@ import { useLocalSearchParams } from 'expo-router';
 import { EmptyState } from '@/components/common/empty-state';
 import { ScreenContainer } from '@/components/common/screen-container';
 import { EpisodePlayer } from '@/components/lesson-v3/episode-player';
-import { v3Episodes } from '@/features/lesson-v3/episode-one';
+import { v3Episodes } from '@/features/lesson-v3/episodes';
 
 export default function EpisodeScreen() {
   const { episodeId } = useLocalSearchParams<{ episodeId: string }>();

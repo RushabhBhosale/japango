@@ -1,5 +1,3 @@
-import type { StructuredJapaneseText } from '@/types/lessons-v2';
-
 export const learningGoals = [
   'jlpt',
   'conversation',
@@ -82,8 +80,23 @@ export interface V3Character {
 }
 
 export interface V3JapaneseLine {
-  text: StructuredJapaneseText;
+  text: V3JapaneseText;
   englishHelp?: string;
+}
+
+export interface V3JapaneseToken {
+  id: string;
+  kind: 'plain' | 'word';
+  surface: string;
+  reading?: string;
+  vocabularyId?: string;
+  kanjiIds: string[];
+}
+
+/** V3 owns its text representation and does not use the legacy lesson types. */
+export interface V3JapaneseText {
+  raw: string;
+  tokens: V3JapaneseToken[];
 }
 
 export interface V3ChatMessage {

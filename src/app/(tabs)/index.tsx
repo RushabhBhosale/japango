@@ -89,6 +89,7 @@ export default function HomeScreen() {
         />
       </Card>
 
+
       {learned.length ? (
         <View style={styles.secondary}>
           <ThemedText type="smallBold" themeColor="textSecondary">RECENTLY MET IN THE STORY</ThemedText>

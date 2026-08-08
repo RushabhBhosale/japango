@@ -30,7 +30,5 @@ export default function EntryScreen() {
     );
   }
 
-  if (!v3Learner.onboardingCompleted) return <Redirect href="/onboarding" />;
-  if (!v3Learner.assessmentCompleted) return <Redirect href="/assessment" />;
   return <Redirect href="/(tabs)" />;
 }

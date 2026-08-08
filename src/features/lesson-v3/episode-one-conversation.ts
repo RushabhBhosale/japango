@@ -1,5 +1,4 @@
-import type { StructuredJapaneseText } from '@/types/lessons-v2';
-import type { V3ChatMessage, V3JapaneseLine, V3StoryChoices } from '@/types/lesson-v3';
+import type { V3ChatMessage, V3JapaneseLine, V3JapaneseText, V3StoryChoices } from '@/types/lesson-v3';
 
 export type EpisodeOneConversationPhase = 'availability' | 'finish-time';
 
@@ -43,7 +42,7 @@ const readingTokens: ReadingToken[] = [
 ];
 
 function line(raw: string, englishHelp?: string): V3JapaneseLine {
-  const tokens: StructuredJapaneseText['tokens'] = [];
+  const tokens: V3JapaneseText['tokens'] = [];
   let remaining = raw;
   let index = 0;
   while (remaining) {
@@ -56,25 +55,23 @@ function line(raw: string, englishHelp?: string): V3JapaneseLine {
         reading: readingToken.reading,
         vocabularyId: `v3-dynamic-${readingToken.surface}`,
         kanjiIds: [],
-        status: 'verified',
       });
       remaining = remaining.slice(readingToken.surface.length);
     } else {
       const character = remaining[0] ?? '';
-      tokens.push({ id: `dynamic-${index}`, kind: 'plain', surface: character, kanjiIds: [], status: 'verified' });
+      tokens.push({ id: `dynamic-${index}`, kind: 'plain', surface: character, kanjiIds: [] });
       remaining = remaining.slice(character.length);
     }
     index += 1;
   }
-  return { text: { raw, status: 'verified', tokens }, englishHelp };
+  return { text: { raw, tokens }, englishHelp };
 }
 
 export function learnerEnteredLine(raw: string): V3JapaneseLine {
   return {
     text: {
       raw,
-      status: 'verified',
-      tokens: [{ id: 'learner-entered-message', kind: 'plain', surface: raw, kanjiIds: [], status: 'verified' }],
+      tokens: [{ id: 'learner-entered-message', kind: 'plain', surface: raw, kanjiIds: [] }],
     },
   };
 }
