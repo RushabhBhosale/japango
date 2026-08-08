@@ -1,11 +1,11 @@
 [
   {
     "schemaVersion": 1,
-    "id": "assessment-snapshot-9d06172219959a71",
+    "id": "assessment-snapshot-662ff27c6e47568f",
     "assessmentType": "section-exam",
     "level": "N5",
     "seed": "sample-section-exam-n5-v1",
-    "contentVersion": "2.2.0+2ce1a5341580",
+    "contentVersion": "2.2.0+535aff74a8b0",
     "pipelineVersion": "7.0.0",
     "generationTimestamp": "2026-07-27T00:00:00.000Z",
     "lifecycleMode": "development",
@@ -25,41 +25,41 @@
     },
     "sections": [
       {
-        "id": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-section-662ff27c6e47568f-1",
         "blueprintSectionId": "assessment-section-blueprint-sample-section-exam-n5",
         "title": "Practice",
         "order": 1,
         "recommendedMinutes": 20,
         "strictTimeLimit": false,
         "questionPlacementIds": [
-          "assessment-placement-question-9d06172219959a71-1-377f521a",
-          "assessment-placement-question-9d06172219959a71-2-33928e5b",
-          "assessment-placement-question-9d06172219959a71-3-0ee8e79b",
-          "assessment-placement-question-9d06172219959a71-4-87db7877",
-          "assessment-placement-question-9d06172219959a71-5-aecbe9ca",
-          "assessment-placement-question-9d06172219959a71-6-000a1dfe",
-          "assessment-placement-question-9d06172219959a71-7-955b0da2",
-          "assessment-placement-question-9d06172219959a71-8-79744bfe",
-          "assessment-placement-question-9d06172219959a71-9-e7a6b945",
-          "assessment-placement-question-9d06172219959a71-10-c54ce981",
-          "assessment-placement-question-9d06172219959a71-11-c21259fb",
-          "assessment-placement-question-9d06172219959a71-12-0bc028d6",
-          "assessment-placement-question-9d06172219959a71-13-ce2190f7",
-          "assessment-placement-question-9d06172219959a71-14-56e8d7cc",
-          "assessment-placement-question-9d06172219959a71-15-75f27754",
-          "assessment-placement-question-9d06172219959a71-16-fe793c30",
-          "assessment-placement-question-9d06172219959a71-17-6ba1f301",
-          "assessment-placement-question-9d06172219959a71-18-09ab69f2",
-          "assessment-placement-question-9d06172219959a71-19-dfc68dc1",
-          "assessment-placement-question-9d06172219959a71-20-8741e468"
+          "assessment-placement-question-662ff27c6e47568f-1-377f521a",
+          "assessment-placement-question-662ff27c6e47568f-2-33928e5b",
+          "assessment-placement-question-662ff27c6e47568f-3-0ee8e79b",
+          "assessment-placement-question-662ff27c6e47568f-4-87db7877",
+          "assessment-placement-question-662ff27c6e47568f-5-aecbe9ca",
+          "assessment-placement-question-662ff27c6e47568f-6-000a1dfe",
+          "assessment-placement-question-662ff27c6e47568f-7-955b0da2",
+          "assessment-placement-question-662ff27c6e47568f-8-79744bfe",
+          "assessment-placement-question-662ff27c6e47568f-9-e7a6b945",
+          "assessment-placement-question-662ff27c6e47568f-10-c54ce981",
+          "assessment-placement-question-662ff27c6e47568f-11-c21259fb",
+          "assessment-placement-question-662ff27c6e47568f-12-0bc028d6",
+          "assessment-placement-question-662ff27c6e47568f-13-ce2190f7",
+          "assessment-placement-question-662ff27c6e47568f-14-56e8d7cc",
+          "assessment-placement-question-662ff27c6e47568f-15-75f27754",
+          "assessment-placement-question-662ff27c6e47568f-16-fe793c30",
+          "assessment-placement-question-662ff27c6e47568f-17-6ba1f301",
+          "assessment-placement-question-662ff27c6e47568f-18-09ab69f2",
+          "assessment-placement-question-662ff27c6e47568f-19-dfc68dc1",
+          "assessment-placement-question-662ff27c6e47568f-20-8741e468"
         ],
         "parentPlacementIds": []
       }
     ],
     "questionPlacements": [
       {
-        "id": "assessment-placement-question-9d06172219959a71-1-377f521a",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-1-377f521a",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u6d0bu670d-u3088u3046u3075u304f-meaning-production-2",
         "position": 1,
         "domain": "vocabulary",
@@ -70,8 +70,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-2-33928e5b",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-2-33928e5b",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u8336u7897-u3061u3083u308fu3093-meaning-recognition-1",
         "position": 2,
         "domain": "vocabulary",
@@ -82,8 +82,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-3-0ee8e79b",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-3-0ee8e79b",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u4e08u592b-u3058u3087u3046u3076-meaning-production-2",
         "position": 3,
         "domain": "vocabulary",
@@ -94,8 +94,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-4-87db7877",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-4-87db7877",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u516bu65e5-u3088u3046u304b-meaning-production-2",
         "position": 4,
         "domain": "vocabulary",
@@ -106,8 +106,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-5-aecbe9ca",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-5-aecbe9ca",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u671du5fa1u98ef-u3042u3055u3054u306fu3093-reading-5",
         "position": 5,
         "domain": "vocabulary",
@@ -118,8 +118,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-6-000a1dfe",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-6-000a1dfe",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u983cu3080-u305fu306eu3080-reading-5",
         "position": 6,
         "domain": "vocabulary",
@@ -130,8 +130,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-7-955b0da2",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-7-955b0da2",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u6765u5e74-u3089u3044u306du3093-reading-5",
         "position": 7,
         "domain": "vocabulary",
@@ -142,8 +142,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-8-79744bfe",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-8-79744bfe",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u8377u7269-u306bu3082u3064-reading-5",
         "position": 8,
         "domain": "vocabulary",
@@ -154,8 +154,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-9-e7a6b945",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-9-e7a6b945",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u51fau53e3-u3067u3050u3061-usage-context-3",
         "position": 9,
         "domain": "vocabulary",
@@ -166,8 +166,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-10-c54ce981",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-10-c54ce981",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-vocabulary-u30c6u30b9u30c8-u3066u3059u3068-written-form-6",
         "position": 10,
         "domain": "vocabulary",
@@ -178,8 +178,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-11-c21259fb",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-11-c21259fb",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u4e07-character-meaning-1",
         "position": 11,
         "domain": "kanji",
@@ -190,8 +190,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-12-0bc028d6",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-12-0bc028d6",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u6821-character-meaning-1",
         "position": 12,
         "domain": "kanji",
@@ -202,8 +202,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-13-ce2190f7",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-13-ce2190f7",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u5341-character-meaning-1",
         "position": 13,
         "domain": "kanji",
@@ -214,8 +214,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-14-56e8d7cc",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-14-56e8d7cc",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u5c71-character-meaning-1",
         "position": 14,
         "domain": "kanji",
@@ -226,8 +226,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-15-75f27754",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-15-75f27754",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u9577-vocabulary-context-1",
         "position": 15,
         "domain": "kanji",
@@ -238,8 +238,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-16-fe793c30",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-16-fe793c30",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u5317-vocabulary-context-1",
         "position": 16,
         "domain": "kanji",
@@ -250,8 +250,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-17-6ba1f301",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-17-6ba1f301",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u4e2d-vocabulary-context-1",
         "position": 17,
         "domain": "kanji",
@@ -262,8 +262,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-18-09ab69f2",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-18-09ab69f2",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u534a-reading-context-1",
         "position": 18,
         "domain": "kanji",
@@ -274,8 +274,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-19-dfc68dc1",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-19-dfc68dc1",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u6708-reading-context-1",
         "position": 19,
         "domain": "kanji",
@@ -286,8 +286,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-9d06172219959a71-20-8741e468",
-        "sectionId": "assessment-section-9d06172219959a71-1",
+        "id": "assessment-placement-question-662ff27c6e47568f-20-8741e468",
+        "sectionId": "assessment-section-662ff27c6e47568f-1",
         "questionId": "question-kanji-u98df-word-distinction-1",
         "position": 20,
         "domain": "kanji",
@@ -300,7 +300,7 @@
     ],
     "parentPlacements": [],
     "scoringRule": {
-      "id": "assessment-scoring-9d06172219959a71",
+      "id": "assessment-scoring-662ff27c6e47568f",
       "ordinaryQuestionPoints": 1,
       "unansweredPoints": 0,
       "negativeMarking": false,
@@ -308,7 +308,7 @@
       "label": "JapanGo raw score"
     },
     "timingRule": {
-      "id": "assessment-timing-9d06172219959a71",
+      "id": "assessment-timing-662ff27c6e47568f",
       "mode": "recommended",
       "totalMinutes": 20,
       "sectionTransitionsSeconds": 30,
@@ -316,16 +316,16 @@
       "resumable": true
     },
     "relaxedConstraints": [],
-    "checksum": "sha256:9d22462ec25217f3c9fd2f0bb0893321be67b53c4c3b38f546eea89e344092e6",
+    "checksum": "sha256:c92a0524f3577585fc1114bbd578c2c8bc2786ac94c60aa861c80cab33dc3e1c",
     "releaseReady": false
   },
   {
     "schemaVersion": 1,
-    "id": "assessment-snapshot-e570a032f5ef3a2d",
+    "id": "assessment-snapshot-a20566115aa39043",
     "assessmentType": "section-exam",
     "level": "N4",
     "seed": "sample-section-exam-n4-v1",
-    "contentVersion": "2.2.0+2ce1a5341580",
+    "contentVersion": "2.2.0+535aff74a8b0",
     "pipelineVersion": "7.0.0",
     "generationTimestamp": "2026-07-27T00:00:00.000Z",
     "lifecycleMode": "development",
@@ -345,41 +345,41 @@
     },
     "sections": [
       {
-        "id": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-section-a20566115aa39043-1",
         "blueprintSectionId": "assessment-section-blueprint-sample-section-exam-n4",
         "title": "Practice",
         "order": 1,
         "recommendedMinutes": 20,
         "strictTimeLimit": false,
         "questionPlacementIds": [
-          "assessment-placement-question-e570a032f5ef3a2d-1-dee63ba3",
-          "assessment-placement-question-e570a032f5ef3a2d-2-ddf91c7e",
-          "assessment-placement-question-e570a032f5ef3a2d-3-c8caac0c",
-          "assessment-placement-question-e570a032f5ef3a2d-4-1fdbe520",
-          "assessment-placement-question-e570a032f5ef3a2d-5-dd083432",
-          "assessment-placement-question-e570a032f5ef3a2d-6-d323c85e",
-          "assessment-placement-question-e570a032f5ef3a2d-7-9276087c",
-          "assessment-placement-question-e570a032f5ef3a2d-8-f10520d1",
-          "assessment-placement-question-e570a032f5ef3a2d-9-939a2fe6",
-          "assessment-placement-question-e570a032f5ef3a2d-10-e293ced1",
-          "assessment-placement-question-e570a032f5ef3a2d-11-1a4381e5",
-          "assessment-placement-question-e570a032f5ef3a2d-12-1af26319",
-          "assessment-placement-question-e570a032f5ef3a2d-13-ce9a5da1",
-          "assessment-placement-question-e570a032f5ef3a2d-14-f027d62f",
-          "assessment-placement-question-e570a032f5ef3a2d-15-9bb6af73",
-          "assessment-placement-question-e570a032f5ef3a2d-16-b1d4633b",
-          "assessment-placement-question-e570a032f5ef3a2d-17-bcb6e8f8",
-          "assessment-placement-question-e570a032f5ef3a2d-18-2474af1e",
-          "assessment-placement-question-e570a032f5ef3a2d-19-f12a2b64",
-          "assessment-placement-question-e570a032f5ef3a2d-20-41b80531"
+          "assessment-placement-question-a20566115aa39043-1-dee63ba3",
+          "assessment-placement-question-a20566115aa39043-2-ddf91c7e",
+          "assessment-placement-question-a20566115aa39043-3-c8caac0c",
+          "assessment-placement-question-a20566115aa39043-4-1fdbe520",
+          "assessment-placement-question-a20566115aa39043-5-dd083432",
+          "assessment-placement-question-a20566115aa39043-6-d323c85e",
+          "assessment-placement-question-a20566115aa39043-7-9276087c",
+          "assessment-placement-question-a20566115aa39043-8-f10520d1",
+          "assessment-placement-question-a20566115aa39043-9-939a2fe6",
+          "assessment-placement-question-a20566115aa39043-10-e293ced1",
+          "assessment-placement-question-a20566115aa39043-11-1a4381e5",
+          "assessment-placement-question-a20566115aa39043-12-1af26319",
+          "assessment-placement-question-a20566115aa39043-13-ce9a5da1",
+          "assessment-placement-question-a20566115aa39043-14-f027d62f",
+          "assessment-placement-question-a20566115aa39043-15-9bb6af73",
+          "assessment-placement-question-a20566115aa39043-16-b1d4633b",
+          "assessment-placement-question-a20566115aa39043-17-bcb6e8f8",
+          "assessment-placement-question-a20566115aa39043-18-2474af1e",
+          "assessment-placement-question-a20566115aa39043-19-f12a2b64",
+          "assessment-placement-question-a20566115aa39043-20-41b80531"
         ],
         "parentPlacementIds": []
       }
     ],
     "questionPlacements": [
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-1-dee63ba3",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-1-dee63ba3",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u751fu304du7269-u3044u304du3082u306e-meaning-production-2",
         "position": 1,
         "domain": "vocabulary",
@@ -390,8 +390,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-2-ddf91c7e",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-2-ddf91c7e",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u7591u3046-u3046u305fu304cu3046-meaning-recognition-1",
         "position": 2,
         "domain": "vocabulary",
@@ -402,8 +402,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-3-c8caac0c",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-3-c8caac0c",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u30d1u30a4u30edu30c3u30c8-u3071u3044u308du3063u3068-meaning-production-2",
         "position": 3,
         "domain": "vocabulary",
@@ -414,8 +414,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-4-1fdbe520",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-4-1fdbe520",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u30a4u30f3u30af-u3044u3093u304f-usage-choice-4",
         "position": 4,
         "domain": "vocabulary",
@@ -426,8 +426,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-5-dd083432",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-5-dd083432",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u4f55u3068u304b-u306au3093u3068u304b-reading-5",
         "position": 5,
         "domain": "vocabulary",
@@ -438,8 +438,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-6-d323c85e",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-6-d323c85e",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u8d08u308b-u304au304fu308b-usage-choice-4",
         "position": 6,
         "domain": "vocabulary",
@@ -450,8 +450,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-7-9276087c",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-7-9276087c",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u4e57u308au7269-u306eu308au3082u306e-written-form-6",
         "position": 7,
         "domain": "vocabulary",
@@ -462,8 +462,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-8-f10520d1",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-8-f10520d1",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u5bb6u5185-u304bu306au3044-meaning-production-2",
         "position": 8,
         "domain": "vocabulary",
@@ -474,8 +474,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-9-939a2fe6",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-9-939a2fe6",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u6d88u3048u308b-u304du3048u308b-meaning-recognition-1",
         "position": 9,
         "domain": "vocabulary",
@@ -486,8 +486,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-10-e293ced1",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-10-e293ced1",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-vocabulary-u6238-u3068-usage-choice-4",
         "position": 10,
         "domain": "vocabulary",
@@ -498,8 +498,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-11-1a4381e5",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-11-1a4381e5",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u8003-character-meaning-1",
         "position": 11,
         "domain": "kanji",
@@ -510,8 +510,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-12-1af26319",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-12-1af26319",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u4e16-vocabulary-context-1",
         "position": 12,
         "domain": "kanji",
@@ -522,8 +522,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-13-ce9a5da1",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-13-ce9a5da1",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u8005-vocabulary-context-1",
         "position": 13,
         "domain": "kanji",
@@ -534,8 +534,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-14-f027d62f",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-14-f027d62f",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u7740-vocabulary-context-1",
         "position": 14,
         "domain": "kanji",
@@ -546,8 +546,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-15-9bb6af73",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-15-9bb6af73",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u9662-vocabulary-context-1",
         "position": 15,
         "domain": "kanji",
@@ -558,8 +558,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-16-b1d4633b",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-16-b1d4633b",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u5e30-word-distinction-1",
         "position": 16,
         "domain": "kanji",
@@ -570,8 +570,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-17-bcb6e8f8",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-17-bcb6e8f8",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u5207-word-distinction-1",
         "position": 17,
         "domain": "kanji",
@@ -582,8 +582,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-18-2474af1e",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-18-2474af1e",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u89aa-word-distinction-1",
         "position": 18,
         "domain": "kanji",
@@ -594,8 +594,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-19-f12a2b64",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-19-f12a2b64",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u4eca-character-meaning-1",
         "position": 19,
         "domain": "kanji",
@@ -606,8 +606,8 @@
         "estimatedSeconds": 45
       },
       {
-        "id": "assessment-placement-question-e570a032f5ef3a2d-20-41b80531",
-        "sectionId": "assessment-section-e570a032f5ef3a2d-1",
+        "id": "assessment-placement-question-a20566115aa39043-20-41b80531",
+        "sectionId": "assessment-section-a20566115aa39043-1",
         "questionId": "question-kanji-u767e-character-meaning-1",
         "position": 20,
         "domain": "kanji",
@@ -620,7 +620,7 @@
     ],
     "parentPlacements": [],
     "scoringRule": {
-      "id": "assessment-scoring-e570a032f5ef3a2d",
+      "id": "assessment-scoring-a20566115aa39043",
       "ordinaryQuestionPoints": 1,
       "unansweredPoints": 0,
       "negativeMarking": false,
@@ -628,7 +628,7 @@
       "label": "JapanGo raw score"
     },
     "timingRule": {
-      "id": "assessment-timing-e570a032f5ef3a2d",
+      "id": "assessment-timing-a20566115aa39043",
       "mode": "recommended",
       "totalMinutes": 20,
       "sectionTransitionsSeconds": 30,
@@ -636,7 +636,7 @@
       "resumable": true
     },
     "relaxedConstraints": [],
-    "checksum": "sha256:1c4798ac281972958edebed17a828a41b349aa435ac6e4533ca7bf35a7438b5e",
+    "checksum": "sha256:4ddb89a90b87068fa313380ffc673cd7b4012500ea06d7252163a938f9d26731",
     "releaseReady": false
   }
 ]

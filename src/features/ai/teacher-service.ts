@@ -6,7 +6,7 @@ import { deterministicAiFallback } from './fallbacks';
 
 const inFlight = new Map<string, Promise<AiTeacherResult>>();
 const cacheable = new Set<AiFeature>(['explain_vocabulary', 'explain_grammar', 'explain_kanji', 'reading_coach', 'listening_coach', 'generate_examples']);
-const promptVersions: Record<AiFeature, string> = { explain_vocabulary: 'AI_PROMPT_EXPLAIN_VOCABULARY_V1', explain_grammar: 'AI_PROMPT_EXPLAIN_GRAMMAR_V1', explain_kanji: 'AI_PROMPT_EXPLAIN_KANJI_V1', explain_mistake: 'AI_PROMPT_EXPLAIN_MISTAKE_V1', reading_coach: 'AI_PROMPT_READING_COACH_V1', listening_coach: 'AI_PROMPT_LISTENING_COACH_V1', conversation: 'AI_PROMPT_CONVERSATION_V1', writing_check: 'AI_PROMPT_WRITING_V1', generate_examples: 'AI_PROMPT_EXAMPLES_V1', study_plan: 'AI_PROMPT_STUDY_PLAN_V1' };
+const promptVersions: Record<AiFeature, string> = { explain_vocabulary: 'AI_PROMPT_EXPLAIN_VOCABULARY_V2', explain_grammar: 'AI_PROMPT_EXPLAIN_GRAMMAR_V2', explain_kanji: 'AI_PROMPT_EXPLAIN_KANJI_V2', explain_mistake: 'AI_PROMPT_EXPLAIN_MISTAKE_V2', reading_coach: 'AI_PROMPT_READING_COACH_V2', listening_coach: 'AI_PROMPT_LISTENING_COACH_V2', conversation: 'AI_PROMPT_CONVERSATION_V2', writing_check: 'AI_PROMPT_WRITING_V2', generate_examples: 'AI_PROMPT_NATURAL_EXAMPLES_V2', study_plan: 'AI_PROMPT_STUDY_PLAN_V2' };
 
 function fingerprint(feature: AiFeature, context: AiLessonContext, userInput: string | undefined): string { return `${promptVersions[feature]}:${feature}:${context.item?.id ?? 'none'}:${context.learnerLevel}:${userInput?.trim().toLowerCase() ?? ''}`; }
 function endpoint(): string | undefined { const base = process.env.EXPO_PUBLIC_API_BASE_URL?.replace(/\/$/u, ''); return base ? `${base}/api/ai/teacher` : undefined; }

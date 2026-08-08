@@ -101,7 +101,7 @@
     "redistributionNotes": "Original JapanGo content; it is not official JLPT material and contains no copied examination or textbook questions.",
     "role": "canonical",
     "parserVersion": "7.0.0",
-    "checksum": "sha256:1801c3afe6019157ee59a1c523ba2362695d60044bcf148d352d16ef388ebdd7"
+    "checksum": "sha256:bcd6007916755026501410f4c63e37b0c0d93c644c485369a330786a8c2556f7"
   },
   {
     "id": "japango-kanji-question-corpus",
@@ -374,7 +374,7 @@
     "redistributionNotes": "Original JapanGo content; it is not official JLPT material and contains no copied textbook examples.",
     "role": "canonical",
     "parserVersion": "7.0.0",
-    "checksum": "sha256:4013a4ffc0d6b43dcc77f776db06934a5d07405f7eba10d38591631f23f78279"
+    "checksum": "sha256:9d0971c5dcbac3c1dc71d150a8d198cd512e2cbfb4787ade13b4b4eaeff3aca9"
   },
   {
     "id": "japango-sentence-corpus-n5",

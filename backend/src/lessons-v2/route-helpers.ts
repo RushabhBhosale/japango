@@ -1,5 +1,6 @@
 import { ZodError } from 'zod';
 
+import { AiServerError } from '../ai/errors';
 import { loadLessonsV2Authorization, LessonsV2AuthorizationError } from './authorization';
 import { LessonsV2Error } from './errors';
 
@@ -16,6 +17,9 @@ export function lessonsV2ErrorResponse(error: unknown): Response {
   }
   if (error instanceof LessonsV2Error) {
     return Response.json({ success: false, error: { code: error.code, message: error.userMessage } }, { status: error.status });
+  }
+  if (error instanceof AiServerError) {
+    return Response.json({ success: false, error: { code: error.code, message: error.userMessage } }, { status: error.code === 'INVALID_INPUT' ? 400 : 503 });
   }
   return Response.json({ success: false, error: { code: 'LESSONS_V2_FAILED', message: 'Lessons V2 could not complete that request.' } }, { status: 500 });
 }

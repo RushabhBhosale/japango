@@ -5,7 +5,7 @@
 | Value | Count |
 | --- | ---: |
 | appointments | 74 |
-| daily-life | 629 |
+| daily-life | 630 |
 | directions | 73 |
 | family | 78 |
 | food | 36 |
@@ -16,7 +16,7 @@
 | plans | 77 |
 | public-transport | 78 |
 | school | 20 |
-| shopping | 51 |
+| shopping | 50 |
 | travel | 16 |
 | weather | 40 |
 | work | 35 |
@@ -36,10 +36,10 @@
 | Value | Count |
 | --- | ---: |
 | intention | 10 |
-| permission | 10 |
+| permission | 9 |
 | prohibition | 5 |
 | question | 71 |
 | reported-speech | 72 |
 | request | 46 |
-| statement | 1143 |
+| statement | 1144 |
 | suggestion | 11 |

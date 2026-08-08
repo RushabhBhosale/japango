@@ -11,9 +11,9 @@
         "kanjiQuestions": "sha256:38a18c8a474ee2d63c3c2afc4a1bae081fd4dcf3586534785166bfd4d8476bfd",
         "phase5Options": "sha256:77fc04852ab9e47cf10e0bb3fe80c659b9fcb2bf0d9d3f388c6b2477239c3526",
         "phase5Targets": "sha256:8f4f0e7fa4bcabb2afdedc3cc4b171a91d72a7b0835b86cf6510d3caad0a438d",
-        "compactRelease": "sha256:69f5a89d021c5fba37af12180a1e8bf100d9a16654983dd76ff6e37efec91a84",
-        "compactDevelopment": "sha256:0fc699c34ff6511ba09d019bfc6964dfe8674354fac4876b82d2f67f74849fdd",
-        "sqliteVerificationPayload": "sha256:69f5a89d021c5fba37af12180a1e8bf100d9a16654983dd76ff6e37efec91a84"
+        "compactRelease": "sha256:bc78bfacb10c48945202dc953a115779a358030f5c43d8a9262adbe65c9da03a",
+        "compactDevelopment": "sha256:47a3164c14b970c81053c81bcf275a34b29018097574631d74a6be305f6960d6",
+        "sqliteVerificationPayload": "sha256:bc78bfacb10c48945202dc953a115779a358030f5c43d8a9262adbe65c9da03a"
       }
     },
     {
@@ -25,9 +25,9 @@
         "kanjiQuestions": "sha256:38a18c8a474ee2d63c3c2afc4a1bae081fd4dcf3586534785166bfd4d8476bfd",
         "phase5Options": "sha256:77fc04852ab9e47cf10e0bb3fe80c659b9fcb2bf0d9d3f388c6b2477239c3526",
         "phase5Targets": "sha256:8f4f0e7fa4bcabb2afdedc3cc4b171a91d72a7b0835b86cf6510d3caad0a438d",
-        "compactRelease": "sha256:69f5a89d021c5fba37af12180a1e8bf100d9a16654983dd76ff6e37efec91a84",
-        "compactDevelopment": "sha256:0fc699c34ff6511ba09d019bfc6964dfe8674354fac4876b82d2f67f74849fdd",
-        "sqliteVerificationPayload": "sha256:69f5a89d021c5fba37af12180a1e8bf100d9a16654983dd76ff6e37efec91a84"
+        "compactRelease": "sha256:bc78bfacb10c48945202dc953a115779a358030f5c43d8a9262adbe65c9da03a",
+        "compactDevelopment": "sha256:47a3164c14b970c81053c81bcf275a34b29018097574631d74a6be305f6960d6",
+        "sqliteVerificationPayload": "sha256:bc78bfacb10c48945202dc953a115779a358030f5c43d8a9262adbe65c9da03a"
       }
     }
   ],

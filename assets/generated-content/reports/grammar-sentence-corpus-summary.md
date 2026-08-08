@@ -13,7 +13,7 @@ JapanGo’s original JLPT N5/N4-aligned grammar example sentence corpus.
 - Secondary grammar relationships: 0
 - Average approved primary examples per grammar: 5.82
 - Minimum / maximum approved examples: 3 / 526
-- Average Japanese sentence length: 20.55 code points
+- Average Japanese sentence length: 20.58 code points
 - Vocabulary relationships: 1794
 - Kanji relationships: 2555
 - Curriculum relationships: 1368
@@ -23,7 +23,7 @@ JapanGo’s original JLPT N5/N4-aligned grammar example sentence corpus.
 | Value | Count |
 | --- | ---: |
 | appointments | 74 |
-| daily-life | 629 |
+| daily-life | 630 |
 | directions | 73 |
 | family | 78 |
 | food | 36 |
@@ -34,7 +34,7 @@ JapanGo’s original JLPT N5/N4-aligned grammar example sentence corpus.
 | plans | 77 |
 | public-transport | 78 |
 | school | 20 |
-| shopping | 51 |
+| shopping | 50 |
 | travel | 16 |
 | weather | 40 |
 | work | 35 |
@@ -54,12 +54,12 @@ JapanGo’s original JLPT N5/N4-aligned grammar example sentence corpus.
 | Value | Count |
 | --- | ---: |
 | intention | 10 |
-| permission | 10 |
+| permission | 9 |
 | prohibition | 5 |
 | question | 71 |
 | reported-speech | 72 |
 | request | 46 |
-| statement | 1143 |
+| statement | 1144 |
 | suggestion | 11 |
 
 ## Difficulty distribution

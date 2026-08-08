@@ -1,3 +1,4 @@
+import { deterministicJapaneseNaturalnessIssues } from '../ai/japanese-generation';
 import { lessonV2QuestionSchema, type LessonV2Question, type LessonV2ValidationIssue } from './contracts';
 import { highestSourceSimilarity } from './similarity';
 
@@ -18,6 +19,9 @@ export function validateJlptQuestion(
     issues.push({ severity: 'critical', subjectId: question.id, issueType: 'draft_question', message: 'Question remains a draft and cannot publish.' });
   }
   const candidate = [question.instruction.raw, question.passage?.raw ?? '', question.prompt.raw, ...question.choices.map((choice) => choice.label.japanese?.raw ?? '')].join('\n');
+  for (const message of deterministicJapaneseNaturalnessIssues(candidate)) {
+    issues.push({ severity: 'critical', subjectId: question.id, issueType: 'japanese_naturalness_preflight', message });
+  }
   const similarity = highestSourceSimilarity(candidate, options.sourceTexts);
   if (similarity >= 0.82) issues.push({ severity: 'critical', subjectId: question.id, issueType: 'source_similarity', message: 'Question is too similar to private source-paper text. Create a new original situation.', suggestedFix: 'Change the setting, sentence, names, choices, and distractors.' });
   if (question.type.includes('reading') && !question.passage) {

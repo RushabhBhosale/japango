@@ -1342,9 +1342,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-causative-u2d-form-real-life",
-      "japanese": "先生は学生を十分休ませた。",
-      "reading": "せんせいわがくせいをじゅっぷんやすませた。",
-      "english": "The teacher let the students rest for ten minutes.",
+      "japanese": "先生は練習の後、学生を十分間休ませた。",
+      "reading": "せんせいわれんしゅうのあと、がくせいをじゅっぷんかんやすませた。",
+      "english": "After practice, the teacher let the students rest for ten minutes.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 5,
       "register": "plain",
@@ -4226,9 +4226,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-hitsuyou-u2d-ga-u2d-aru-real-life",
-      "japanese": "この薬は冷たい所に置く必要がある。",
-      "reading": "このくすりわつめたいところにおくひつようがある。",
-      "english": "This medicine needs to be kept in a cool place.",
+      "japanese": "この薬は、日の当たらない涼しい所に保管する必要がある。",
+      "reading": "このくすりわ、ひのあたらないすずしいところにほかんするひつようがある。",
+      "english": "This medicine needs to be stored in a cool place away from sunlight.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 5,
       "register": "plain",
@@ -8191,9 +8191,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-mitai-u2d-da-structural-variation",
-      "japanese": "この布は水みたいに冷たい。",
-      "reading": "このぬのわみずみたいにつめたい。",
-      "english": "This cloth is cold like water.",
+      "japanese": "このタオル、氷みたいに冷たい。",
+      "reading": "このたおる、こおりみたいにつめたい。",
+      "english": "This towel is as cold as ice.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 4,
       "register": "plain",
@@ -11693,9 +11693,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-owaru-structural-variation",
-      "japanese": "仕事をし終わるまで、電話に出られません。",
-      "reading": "しごとをしおわるまで、でんわにでられません。",
-      "english": "I cannot answer the phone until I finish working.",
+      "japanese": "この本を読み終わるまで、図書館にいます。",
+      "reading": "このほんをよみおわるまで、としょかんにいます。",
+      "english": "I will stay at the library until I finish reading this book.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 5,
       "register": "polite",
@@ -14577,9 +14577,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-tame-u2d-ni-u2d-purpose-structural-variation",
-      "japanese": "会議に間に合うために、早い電車に乗りました。",
-      "reading": "かいぎにまにあうために、はやいでんしゃにのりました。",
-      "english": "I took an early train in order to make the meeting.",
+      "japanese": "会議に間に合うために、一本早い電車に乗りました。",
+      "reading": "かいぎにまにあうために、いっぽんはやいでんしゃにのりました。",
+      "english": "I took an earlier train so I would arrive in time for the meeting.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 6,
       "register": "plain",
@@ -18183,9 +18183,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-te-u2d-yokatta-core",
-      "japanese": "早い電車に乗ってよかったです。",
-      "reading": "はやいでんしゃにのってよかったです。",
-      "english": "I am glad I took the early train.",
+      "japanese": "一本早い電車に乗ってよかったです。",
+      "reading": "いっぽんはやいでんしゃにのってよかったです。",
+      "english": "I am glad I took an earlier train.",
       "sentenceType": "reported-speech",
       "estimatedReadingSeconds": 4,
       "register": "polite",
@@ -19109,10 +19109,10 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-to-u2d-ittemo-u2d-ii-structural-variation",
-      "japanese": "彼が計画を救ったと言ってもいいです。",
-      "reading": "かれがけいかくをすくったといってもいいです。",
-      "english": "It would be fair to say that he saved the plan.",
-      "sentenceType": "permission",
+      "japanese": "彼のおかげで、計画がうまくいったと言ってもいいでしょう。",
+      "reading": "かれのおかげで、けいかくがうまくいったといってもいいでしょう。",
+      "english": "It would be fair to say that the plan succeeded thanks to him.",
+      "sentenceType": "statement",
       "estimatedReadingSeconds": 5,
       "register": "polite",
       "difficulty": {
@@ -19315,9 +19315,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-to-u2d-iu-structural-variation",
-      "japanese": "これは春だけ咲くという花です。",
-      "reading": "これわはるだけさくというはなです。",
-      "english": "This is a flower said to bloom only in spring.",
+      "japanese": "これはスミレという花です。",
+      "reading": "これわすみれというはなです。",
+      "english": "This is a flower called a violet.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 4,
       "register": "polite",
@@ -19521,9 +19521,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-to-u2d-iu-u2d-koto-structural-variation",
-      "japanese": "一人で行くということに不安はありません。",
-      "reading": "ひとりでいくということにふあんわありません。",
-      "english": "I am not worried about going alone.",
+      "japanese": "来月、東京へ引っ越すということを家族に話しました。",
+      "reading": "らいげつ、とうきょうえひっこすということをかぞくにはなしました。",
+      "english": "I told my family that I am moving to Tokyo next month.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 5,
       "register": "polite",
@@ -20294,8 +20294,8 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-toka-u2d-toka-real-life",
-      "japanese": "旅行には京都とか奈良とかへ行きたいです。",
-      "reading": "りょこうにわきょうととかなりとかえいきたいです。",
+      "japanese": "旅行では、京都とか奈良とかに行きたいです。",
+      "reading": "りょこうでわ、きょうととかなりとかにいきたいです。",
       "english": "On the trip, I want to go to places like Kyoto and Nara.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 5,
@@ -20757,9 +20757,9 @@
     {
       "schemaVersion": 1,
       "id": "sentence-n4-u2d-transitive-u2d-intransitive-u2d-verbs-structural-variation",
-      "japanese": "店は九時に閉まります。店員が扉を閉めます。",
-      "reading": "みせわくじにしまります。てんいんがとびらをしめます。",
-      "english": "The shop closes at nine. A clerk closes the door.",
+      "japanese": "風でドアが閉まったので、私がもう一度ドアを開けました。",
+      "reading": "かぜでどあがしまったので、わたしがもういちどどあをあけました。",
+      "english": "The door closed in the wind, so I opened it again.",
       "sentenceType": "statement",
       "estimatedReadingSeconds": 6,
       "register": "polite",
@@ -20776,7 +20776,7 @@
         "speaker": null,
         "addressee": null,
         "settingTags": [
-          "shopping"
+          "daily-life"
         ]
       },
       "curriculumUnitIds": [
@@ -23317,8 +23317,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 8,
-          "endCodePoint": 12
+          "startCodePoint": 14,
+          "endCodePoint": 17
         }
       ],
       "note": "real-life primary example.",
@@ -24269,8 +24269,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 11,
-          "endCodePoint": 16
+          "startCodePoint": 22,
+          "endCodePoint": 27
         }
       ],
       "note": "real-life primary example.",
@@ -25578,8 +25578,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 5,
-          "endCodePoint": 9
+          "startCodePoint": 7,
+          "endCodePoint": 11
         }
       ],
       "note": "structural-variation primary example.",
@@ -26734,8 +26734,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 3,
-          "endCodePoint": 7
+          "startCodePoint": 4,
+          "endCodePoint": 9
         }
       ],
       "note": "structural-variation primary example.",
@@ -28876,8 +28876,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 5,
-          "endCodePoint": 12
+          "startCodePoint": 7,
+          "endCodePoint": 14
         }
       ],
       "note": "core primary example.",
@@ -29182,8 +29182,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 8,
-          "endCodePoint": 15
+          "startCodePoint": 16,
+          "endCodePoint": 23
         }
       ],
       "note": "structural-variation primary example.",
@@ -29250,8 +29250,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 8,
-          "endCodePoint": 11
+          "startCodePoint": 6,
+          "endCodePoint": 9
         }
       ],
       "note": "structural-variation primary example.",
@@ -29318,8 +29318,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 5,
-          "endCodePoint": 10
+          "startCodePoint": 10,
+          "endCodePoint": 15
         }
       ],
       "note": "structural-variation primary example.",
@@ -29573,8 +29573,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 6,
-          "endCodePoint": 12
+          "startCodePoint": 5,
+          "endCodePoint": 13
         }
       ],
       "note": "real-life primary example.",
@@ -29726,8 +29726,8 @@
       "role": "focus",
       "focusRanges": [
         {
-          "startCodePoint": 0,
-          "endCodePoint": 10
+          "startCodePoint": 2,
+          "endCodePoint": 9
         }
       ],
       "note": "structural-variation primary example.",

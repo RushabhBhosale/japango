@@ -5,7 +5,13 @@ export async function POST(request: Request): Promise<Response> {
   try {
     await assertLessonsV2ManagementAccess(request);
     const body = await confirmed(request);
-    const plan = await new LessonsV2Service().createGenerationPlan(body);
-    return Response.json({ success: true, data: { ...plan, generated: false, message: 'Draft generation is planned. Review OCR patterns and supply a configured generation provider before creating content.' } }, { status: 202 });
+    const { confirm: _confirm, ...input } = body;
+    const generated = await new LessonsV2Service().generateDraft(input, request.signal);
+    return Response.json({
+      success: true,
+      data: generated.compatible
+        ? { generated: true, lesson: generated.lesson, generationMetadata: generated.generationMetadata }
+        : { generated: false, compatible: false, reason: generated.reason },
+    }, { status: generated.compatible ? 201 : 422 });
   } catch (error) { return lessonsV2ErrorResponse(error); }
 }

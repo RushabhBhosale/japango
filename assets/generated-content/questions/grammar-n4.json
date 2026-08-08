@@ -2205,7 +2205,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「先生は学生を十分休ませた。」, what meaning does the highlighted grammar express?",
+      "text": "In 「先生は練習の後、学生を十分間休ませた。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -7133,7 +7133,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「この薬は冷たい所に置く必要がある。」, what meaning does the highlighted grammar express?",
+      "text": "In 「この薬は、日の当たらない涼しい所に保管する必要がある。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -13865,7 +13865,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「この布は水みたいに冷たい。」, what meaning does the highlighted grammar express?",
+      "text": "In 「このタオル、氷みたいに冷たい。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -19849,7 +19849,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「仕事をし終わるまで、電話に出られません。」, what meaning does the highlighted grammar express?",
+      "text": "In 「この本を読み終わるまで、図書館にいます。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -24777,7 +24777,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「会議に間に合うために、早い電車に乗りました。」, what meaning does the highlighted grammar express?",
+      "text": "In 「会議に間に合うために、一本早い電車に乗りました。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -32521,7 +32521,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「彼が計画を救ったと言ってもいいです。」, what meaning does the highlighted grammar express?",
+      "text": "In 「彼のおかげで、計画がうまくいったと言ってもいいでしょう。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -32961,7 +32961,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「一人で行くということに不安はありません。」, what meaning does the highlighted grammar express?",
+      "text": "In 「来月、東京へ引っ越すということを家族に話しました。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -33225,7 +33225,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「これは春だけ咲くという花です。」, what meaning does the highlighted grammar express?",
+      "text": "In 「これはスミレという花です。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -34589,7 +34589,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「旅行には京都とか奈良とかへ行きたいです。」, what meaning does the highlighted grammar express?",
+      "text": "In 「旅行では、京都とか奈良とかに行きたいです。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [
@@ -35337,7 +35337,7 @@
     "domain": "grammar",
     "presentation": "multiple-choice",
     "prompt": {
-      "text": "In 「店は九時に閉まります。店員が扉を閉めます。」, what meaning does the highlighted grammar express?",
+      "text": "In 「風でドアが閉まったので、私がもう一度ドアを開けました。」, what meaning does the highlighted grammar express?",
       "language": "en"
     },
     "stimulusReferences": [

@@ -1,5 +1,6 @@
 import path from "node:path";
 
+import { deterministicJapaneseNaturalnessIssues } from "../../backend/src/ai/japanese-generation";
 import {
   learningContentCollectionsSchema,
   type GrammarExampleView,
@@ -157,6 +158,9 @@ export function sentenceCorpusErrors(
     }
     if (!sentence.english.trim()) {
       errors.push(`${sentence.id} has no English translation`);
+    }
+    for (const issue of deterministicJapaneseNaturalnessIssues(sentence.japanese)) {
+      errors.push(`${sentence.id} failed Japanese naturalness preflight: ${issue}`);
     }
     if (sentence.curriculumUnitIds.length === 0) {
       errors.push(`${sentence.id} has no curriculum relationship`);

@@ -120,223 +120,223 @@
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-9d06172219959a71",
-    "assessmentId": "assessment-snapshot-9d06172219959a71",
+    "id": "assessment-start-view-662ff27c6e47568f",
+    "assessmentId": "assessment-snapshot-662ff27c6e47568f",
     "sectionIds": [
-      "assessment-section-9d06172219959a71-1"
+      "assessment-section-662ff27c6e47568f-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:9d22462ec25217f3c9fd2f0bb0893321be67b53c4c3b38f546eea89e344092e6",
+    "checksum": "sha256:c92a0524f3577585fc1114bbd578c2c8bc2786ac94c60aa861c80cab33dc3e1c",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-16d60598efcd70e7",
-    "assessmentId": "assessment-snapshot-16d60598efcd70e7",
+    "id": "assessment-start-view-91d4fc67f8275e68",
+    "assessmentId": "assessment-snapshot-91d4fc67f8275e68",
     "sectionIds": [
-      "assessment-section-16d60598efcd70e7-1"
+      "assessment-section-91d4fc67f8275e68-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:93174f2fee992ea9de37018c716f4ff72c4bdce36232ab0c1234094cb1207deb",
+    "checksum": "sha256:b667527473265f524b8ac27cce8f3bdbd6bb39f225e82e772cd41d0a4210d4cb",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-f3e57920d292a096",
-    "assessmentId": "assessment-snapshot-f3e57920d292a096",
+    "id": "assessment-start-view-e368ea56b4a578a3",
+    "assessmentId": "assessment-snapshot-e368ea56b4a578a3",
     "sectionIds": [
-      "assessment-section-f3e57920d292a096-1"
+      "assessment-section-e368ea56b4a578a3-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:c8609c55a40f1fabd8e33ad1a11bd1e94e5e6f0ec212b81ec2e88031a635f2fd",
+    "checksum": "sha256:f4b7925eb4cd3af217923a74c0f1523549f4bb3dd3ec9136c8c368d055fda44e",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-97e23b8d50d9bb8f",
-    "assessmentId": "assessment-snapshot-97e23b8d50d9bb8f",
+    "id": "assessment-start-view-4bd93d5087b23639",
+    "assessmentId": "assessment-snapshot-4bd93d5087b23639",
     "sectionIds": [
-      "assessment-section-97e23b8d50d9bb8f-1"
+      "assessment-section-4bd93d5087b23639-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:18643e4d402e1b88663bd5c843df8e9cad3c3b8097946c8cee0d52fe51be5b7a",
+    "checksum": "sha256:eb00b874991e969277228b06dc2124d3c181ad667234f4de5eefd2d291b49a4f",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-4480ba9a8657cf63",
-    "assessmentId": "assessment-snapshot-4480ba9a8657cf63",
+    "id": "assessment-start-view-f98b311a5051955b",
+    "assessmentId": "assessment-snapshot-f98b311a5051955b",
     "sectionIds": [
-      "assessment-section-4480ba9a8657cf63-1"
+      "assessment-section-f98b311a5051955b-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:0e000d9d851d23372e06acaf8ea71a233a2b01e4ed5851d9a121631ff84b2e40",
+    "checksum": "sha256:d2ccfc03cba604d5b144b7b2e8f353a0344a5a20286c5ab3c0ceeb2336de0c22",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-5ef8b8b6bb29b102",
-    "assessmentId": "assessment-snapshot-5ef8b8b6bb29b102",
+    "id": "assessment-start-view-85ab1e36e380a055",
+    "assessmentId": "assessment-snapshot-85ab1e36e380a055",
     "sectionIds": [
-      "assessment-section-5ef8b8b6bb29b102-1"
+      "assessment-section-85ab1e36e380a055-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:9f4dcf92f73a3cdd13b8e106e439c89ba147091ab46e112d55a722217bff06aa",
+    "checksum": "sha256:60e499a108d3f5ed9c08a3edfaf8cc163a122e9e05216782561b4dedab633622",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-bad8edd7db378150",
-    "assessmentId": "assessment-snapshot-bad8edd7db378150",
+    "id": "assessment-start-view-c16a31a5dedf455e",
+    "assessmentId": "assessment-snapshot-c16a31a5dedf455e",
     "sectionIds": [
-      "assessment-section-bad8edd7db378150-1"
+      "assessment-section-c16a31a5dedf455e-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:24524f94e683187f438dc1f157cd0d1709300bfb2d272532e03ec39650e149da",
+    "checksum": "sha256:b7b444d45e167a686b5800a57bcdc007bd1f2983432ea5edee87bad393ed346d",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-ace86130d4fdd532",
-    "assessmentId": "assessment-snapshot-ace86130d4fdd532",
+    "id": "assessment-start-view-1fe9913bef356cdb",
+    "assessmentId": "assessment-snapshot-1fe9913bef356cdb",
     "sectionIds": [
-      "assessment-section-ace86130d4fdd532-1"
+      "assessment-section-1fe9913bef356cdb-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:268fb4b62fef60a7b2404c15b4c5006506de21e2b94b25830462d396e52d7dd5",
+    "checksum": "sha256:7cae550843c475ce07b5155ba38ed399d7900cef9e6bae31087ae68eee6752ab",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-e9bb92f646613604",
-    "assessmentId": "assessment-snapshot-e9bb92f646613604",
+    "id": "assessment-start-view-f086143d70b1dac2",
+    "assessmentId": "assessment-snapshot-f086143d70b1dac2",
     "sectionIds": [
-      "assessment-section-e9bb92f646613604-1"
+      "assessment-section-f086143d70b1dac2-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:147850d33ddd81ad80b50f9e29ec6a97dcf99f0b79c81df0fcbbf67fd4dc1f0e",
+    "checksum": "sha256:3d3d7529125a9d1a93843b57e2353ad50072838ef4c780043ea04e33d7505067",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-e570a032f5ef3a2d",
-    "assessmentId": "assessment-snapshot-e570a032f5ef3a2d",
+    "id": "assessment-start-view-a20566115aa39043",
+    "assessmentId": "assessment-snapshot-a20566115aa39043",
     "sectionIds": [
-      "assessment-section-e570a032f5ef3a2d-1"
+      "assessment-section-a20566115aa39043-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:1c4798ac281972958edebed17a828a41b349aa435ac6e4533ca7bf35a7438b5e",
+    "checksum": "sha256:4ddb89a90b87068fa313380ffc673cd7b4012500ea06d7252163a938f9d26731",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-e603b3ccc7c2c0d5",
-    "assessmentId": "assessment-snapshot-e603b3ccc7c2c0d5",
+    "id": "assessment-start-view-6405aab906f29008",
+    "assessmentId": "assessment-snapshot-6405aab906f29008",
     "sectionIds": [
-      "assessment-section-e603b3ccc7c2c0d5-1"
+      "assessment-section-6405aab906f29008-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:c129a9d61c3679383ace57f08d5afaa7332cb41ed3fd60f6d891ba9d07104438",
+    "checksum": "sha256:5425af05c4dab5d61ecdbd94f0162dddbbf638ae24b65b920a9e4eae280eeb30",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-70899be660eb1828",
-    "assessmentId": "assessment-snapshot-70899be660eb1828",
+    "id": "assessment-start-view-6c3c26f4d700c9c4",
+    "assessmentId": "assessment-snapshot-6c3c26f4d700c9c4",
     "sectionIds": [
-      "assessment-section-70899be660eb1828-1"
+      "assessment-section-6c3c26f4d700c9c4-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:d5c3865e3ab97a7851b208e1f0efba3a64b82fd19fd6333723adc8acb559b1bd",
+    "checksum": "sha256:106c585a6f58b328db6bab68df3aabe0f1a5b96e35090118d0f4d0f207837b29",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-feff0ca558be09e2",
-    "assessmentId": "assessment-snapshot-feff0ca558be09e2",
+    "id": "assessment-start-view-68c2711b0f8ea87d",
+    "assessmentId": "assessment-snapshot-68c2711b0f8ea87d",
     "sectionIds": [
-      "assessment-section-feff0ca558be09e2-1"
+      "assessment-section-68c2711b0f8ea87d-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:c5673c6d0d75f33644eb92227cafc56122d31c97182758eadc4e7782cd98cd74",
+    "checksum": "sha256:43001a21150ddd42f8f0b74cfe86d4976572641fac7bda642ce74cb6ba38191f",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-3e06116952447db6",
-    "assessmentId": "assessment-snapshot-3e06116952447db6",
+    "id": "assessment-start-view-2d4be56e2809c57c",
+    "assessmentId": "assessment-snapshot-2d4be56e2809c57c",
     "sectionIds": [
-      "assessment-section-3e06116952447db6-1"
+      "assessment-section-2d4be56e2809c57c-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:41c79437a291d9dd13eaf2448f34bf753ee02be7b1dd8fa076dc5128c6dae3f9",
+    "checksum": "sha256:d52ac0a90cba796b8c87ab5d9e1b3a35371768718637a30daced721e07ae0281",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-ad578ee9c8cc50b7",
-    "assessmentId": "assessment-snapshot-ad578ee9c8cc50b7",
+    "id": "assessment-start-view-9240034c5c10e3ef",
+    "assessmentId": "assessment-snapshot-9240034c5c10e3ef",
     "sectionIds": [
-      "assessment-section-ad578ee9c8cc50b7-1"
+      "assessment-section-9240034c5c10e3ef-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:a88114b3aa16808f24a83b1d8225d0b8dc29059d13b9ac1c34661eccd6a4fd76",
+    "checksum": "sha256:d1a028c64ee701e318d0d5d4742a7bc764e4da20f60bdd321dbff3feb7b1ba65",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-c82350cf7194ff33",
-    "assessmentId": "assessment-snapshot-c82350cf7194ff33",
+    "id": "assessment-start-view-0a99b17c40a56770",
+    "assessmentId": "assessment-snapshot-0a99b17c40a56770",
     "sectionIds": [
-      "assessment-section-c82350cf7194ff33-1"
+      "assessment-section-0a99b17c40a56770-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:80c4eafde75e8a5c499198cbb485a756bb957c6903482fb13490601fccf50c2e",
+    "checksum": "sha256:013ed7daf9c40697b83c5c6ce59db40a2275642b8173b0d1eee301648b7a7779",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-244f50ceb96b293a",
-    "assessmentId": "assessment-snapshot-244f50ceb96b293a",
+    "id": "assessment-start-view-d05333b10f1b4a12",
+    "assessmentId": "assessment-snapshot-d05333b10f1b4a12",
     "sectionIds": [
-      "assessment-section-244f50ceb96b293a-1"
+      "assessment-section-d05333b10f1b4a12-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:36d83448098f276fbda595b7cf83b259953a3a30333f8f65acf546d48ed6ca0a",
+    "checksum": "sha256:e16a2c67fb4458561bfc5f8709cc99cc7a5663bdda6e363dd2ddd3e128875700",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-c6919cc6dbe2ce1a",
-    "assessmentId": "assessment-snapshot-c6919cc6dbe2ce1a",
+    "id": "assessment-start-view-991096de37422d4b",
+    "assessmentId": "assessment-snapshot-991096de37422d4b",
     "sectionIds": [
-      "assessment-section-c6919cc6dbe2ce1a-1"
+      "assessment-section-991096de37422d4b-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:23f3da4120fed6110c9b01ed849499434e29cbfb491fadc1a8b1e78b67aefbb2",
+    "checksum": "sha256:02134360711acae484916de7d2d9a6e6f1bf6a1e5e25ebe1d0d63ed4b34b3be9",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-22ad1392992ada4a",
-    "assessmentId": "assessment-snapshot-22ad1392992ada4a",
+    "id": "assessment-start-view-ce1ea479fa7df698",
+    "assessmentId": "assessment-snapshot-ce1ea479fa7df698",
     "sectionIds": [
-      "assessment-section-22ad1392992ada4a-1"
+      "assessment-section-ce1ea479fa7df698-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:7f7fb208a11d1624880915f599be5d2d8369cecbbdfbdea83446dd5228fb1cff",
+    "checksum": "sha256:b921e1d43b913e44d7b19b398b73e1cf80a144a43a44ea04679bafba66d4db70",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-613475016ec4da57",
-    "assessmentId": "assessment-snapshot-613475016ec4da57",
+    "id": "assessment-start-view-7c74b327cec119b8",
+    "assessmentId": "assessment-snapshot-7c74b327cec119b8",
     "sectionIds": [
-      "assessment-section-613475016ec4da57-1"
+      "assessment-section-7c74b327cec119b8-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:5ed7afc9c31555ab562aec6040b0d3cbc43b0dd4e891ed2791667a19d914bd58",
+    "checksum": "sha256:bd643331931405dae3fe35c550e9c9c0903431a8ca30fccfcc97bde1ca083f11",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-6f1d6c186f00c189",
-    "assessmentId": "assessment-snapshot-6f1d6c186f00c189",
+    "id": "assessment-start-view-506d3c736cd85797",
+    "assessmentId": "assessment-snapshot-506d3c736cd85797",
     "sectionIds": [
-      "assessment-section-6f1d6c186f00c189-1"
+      "assessment-section-506d3c736cd85797-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:cbe36fc79e3f5da2876b54c8ae40130f23aa742e43df1ce7b2fca2f2095e5ca7",
+    "checksum": "sha256:09b83b29b46b11e7b4eb6a7d344443f495b5bcd1b08e982aa91b7d880d3649d3",
     "releaseReady": false
   },
   {
-    "id": "assessment-start-view-e416d5cd2b728a90",
-    "assessmentId": "assessment-snapshot-e416d5cd2b728a90",
+    "id": "assessment-start-view-9e1b85701b09687e",
+    "assessmentId": "assessment-snapshot-9e1b85701b09687e",
     "sectionIds": [
-      "assessment-section-e416d5cd2b728a90-1"
+      "assessment-section-9e1b85701b09687e-1"
     ],
     "scoringLabel": "JapanGo raw score",
-    "checksum": "sha256:4b6fa0d6f455f439d91acc9d0c0c8b51657434cdc2cb9e28d14bc6e13b2a31ea",
+    "checksum": "sha256:53fbc637f8c7a0366705fcfcf5a37569206aedb4fdde727024481e0e4b16c052",
     "releaseReady": false
   }
 ]

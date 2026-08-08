@@ -26,4 +26,15 @@ describe('Lessons V2 validation', () => {
   it('blocks a draft question from publication', () => {
     expect(validateLessonV2Version(lesson('draft')).issues.some((issue) => issue.issueType === 'question_validation_status')).toBe(true);
   });
+
+  it('blocks a known unnatural Japanese collocation from publication', () => {
+    const candidate = lesson();
+    candidate.sections[0]!.questions[0]!.prompt = text('彼が計画を救ったと言ってもいいです。');
+
+    expect(validateLessonV2Version(candidate).issues).toContainEqual(expect.objectContaining({
+      subjectId: 'question-1',
+      issueType: 'japanese_naturalness_preflight',
+      severity: 'critical',
+    }));
+  });
 });

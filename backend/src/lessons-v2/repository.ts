@@ -199,6 +199,22 @@ export class LessonsV2Repository {
     return toVersion(lesson, asVersionRow(versionData));
   }
 
+  async recordCompletedGenerationRun(
+    lessonVersionId: string,
+    input: unknown,
+    output: unknown,
+  ): Promise<void> {
+    const { error } = await this.supabase.from('lesson_v2_generation_runs').insert({
+      lesson_version_id: lessonVersionId,
+      kind: 'lesson_draft',
+      input,
+      output,
+      status: 'completed',
+      completed_at: new Date().toISOString(),
+    });
+    if (error) throwLessonsV2DatabaseError(error);
+  }
+
   async updateLatestDraft(lessonId: string, input: LessonV2UpdateDraftInput): Promise<LessonV2Version> {
     const current = await this.getLesson(lessonId);
     if (current.status === 'published') throw new LessonsV2Error('CONFLICT', 'Create a new version instead of editing a published lesson.', 409);

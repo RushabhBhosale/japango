@@ -20,10 +20,17 @@ Never send `SUPABASE_SERVICE_ROLE_KEY` to the browser or Expo client. Published 
 - Publishing is blocked for critical validation issues, unresolved dependencies, corrupted OCR reliance, repeated content, or source similarity of 0.82 or higher.
 - OCR corrections and answer-key mapping are separate from the original Markdown source files.
 - Generated questions are drafts. They are never automatically published.
+- New AI-authored lessons follow a mandatory three-stage boundary: semantic planning without Japanese wording, original Japanese lesson generation, and an independent scored critic. Each rejected draft may be revised twice, for at most three generation/critic attempts.
+- The critic requires grammar 95, naturalness 85, semantic plausibility 90, collocation 85, and level appropriateness 85 for every dialogue line, example, and complete question. Deterministic regression checks can still reject content when model scores pass.
+- `NATURALNESS IS MORE IMPORTANT THAN VOCABULARY COVERAGE`: the semantic plan records incompatible vocabulary and the generator must omit it. Target grammar must remain in every accepted asset.
+- Private OCR and the reviewed sentence corpora are retrieval references for common situations, register, and collocations. They are not lesson templates, and source wording must not be copied. The LLM authors all new lesson dialogue, examples, passages, questions, and choices.
+- Generation metadata, semantic plans, critic scores, attempts, model, provider, and reference IDs are stored in `lesson_v2_generation_runs`. No new database migration is required.
 
 ## Management endpoints
 
-The V2 lesson collection is at `/api/admin/lessons-v2`; `GET /api/admin/lessons-v2/audit` returns the read-only cross-lesson content report. Individual drafts support update, validation, dependency resolution, duplicate, publish, archive, generation planning, and conservative token regeneration. Publish, archive, duplicate, generated-question status changes, and token regeneration require a `confirm: true` request and matching UI confirmation.
+The V2 lesson collection is at `/api/admin/lessons-v2`; `GET /api/admin/lessons-v2/audit` returns the read-only cross-lesson content report. `POST /api/admin/lessons-v2/generate` now runs the configured backend LLM authoring pipeline and saves an unpublished draft; it requires `confirm: true` because it incurs model usage and writes a new draft. Individual drafts support update, validation, dependency resolution, duplicate, publish, archive, generation planning, and conservative token regeneration. Publish, archive, duplicate, generated-question status changes, token regeneration, and LLM generation require matching UI confirmation.
+
+Generated Japanese is intentionally stored with conservative `needs_review` tokenization and question status `draft`. Model quality scores do not replace editorial token verification, dependency resolution, source-similarity checks, cross-lesson duplication audits, or the explicit publish action.
 
 Run `npm run lessons-v2:content-audit` from `backend` to audit the configured Supabase corpus from the terminal. It exits with code 2 if any publication-blocking content issue remains.
 

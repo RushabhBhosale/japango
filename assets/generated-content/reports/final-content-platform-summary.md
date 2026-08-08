@@ -20,5 +20,5 @@
 - Inventory limitation: audited 30-question N5 grammar bridge; no canonical inventory expansion
 - SQLite total imported/derived records: 119559
 - Tests: 144
-- Deterministic assessment digest: sha256:dbcb04c414e4821d5c6862687b32adef2676424ee9a7457dc5c0959b7a854194
+- Deterministic assessment digest: sha256:31726d52fa993cca7d15e5e1a1e7bba71358d2f5a3b2a930734841ccc8d56c17
 - Fixed-build compact and manifest digests are recorded in the handoff and Phase 8 determinism checks.

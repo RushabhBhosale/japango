@@ -9321,8 +9321,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 8,
-        "endCodePoint": 12
+        "startCodePoint": 14,
+        "endCodePoint": 17
       }
     ],
     "note": "real-life primary example.",
@@ -10273,8 +10273,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 11,
-        "endCodePoint": 16
+        "startCodePoint": 22,
+        "endCodePoint": 27
       }
     ],
     "note": "real-life primary example.",
@@ -11582,8 +11582,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 5,
-        "endCodePoint": 9
+        "startCodePoint": 7,
+        "endCodePoint": 11
       }
     ],
     "note": "structural-variation primary example.",
@@ -12738,8 +12738,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 3,
-        "endCodePoint": 7
+        "startCodePoint": 4,
+        "endCodePoint": 9
       }
     ],
     "note": "structural-variation primary example.",
@@ -14880,8 +14880,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 5,
-        "endCodePoint": 12
+        "startCodePoint": 7,
+        "endCodePoint": 14
       }
     ],
     "note": "core primary example.",
@@ -15186,8 +15186,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 8,
-        "endCodePoint": 15
+        "startCodePoint": 16,
+        "endCodePoint": 23
       }
     ],
     "note": "structural-variation primary example.",
@@ -15254,8 +15254,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 8,
-        "endCodePoint": 11
+        "startCodePoint": 6,
+        "endCodePoint": 9
       }
     ],
     "note": "structural-variation primary example.",
@@ -15322,8 +15322,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 5,
-        "endCodePoint": 10
+        "startCodePoint": 10,
+        "endCodePoint": 15
       }
     ],
     "note": "structural-variation primary example.",
@@ -15577,8 +15577,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 6,
-        "endCodePoint": 12
+        "startCodePoint": 5,
+        "endCodePoint": 13
       }
     ],
     "note": "real-life primary example.",
@@ -15730,8 +15730,8 @@
     "role": "focus",
     "focusRanges": [
       {
-        "startCodePoint": 0,
-        "endCodePoint": 10
+        "startCodePoint": 2,
+        "endCodePoint": 9
       }
     ],
     "note": "structural-variation primary example.",

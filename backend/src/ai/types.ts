@@ -1,9 +1,23 @@
 import { z } from 'zod';
 
 export const aiFeatureSchema = z.enum(['explain_vocabulary', 'explain_grammar', 'explain_kanji', 'explain_mistake', 'reading_coach', 'listening_coach', 'conversation', 'writing_check', 'generate_examples', 'study_plan']);
+const generatedExampleMetadataSchema = z.object({
+  situation: z.string().min(1).max(500),
+  speaker: z.string().min(1).max(200),
+  listener: z.string().min(1).max(200).nullable(),
+  communicativeIntent: z.string().min(1).max(500),
+  targetGrammar: z.array(z.string().min(1).max(200)).min(1).max(4),
+  targetVocabulary: z.array(z.string().min(1).max(120)).max(8),
+  rejectedVocabulary: z.array(z.object({ japanese: z.string().min(1).max(120), reason: z.string().min(1).max(500) }).strict()).max(12),
+  register: z.enum(['plain', 'polite', 'casual', 'honorific', 'humble']),
+  level: z.enum(['N5', 'N4']),
+  quality: z.object({ grammar: z.number().int().min(0).max(100), naturalness: z.number().int().min(0).max(100), semanticPlausibility: z.number().int().min(0).max(100), collocation: z.number().int().min(0).max(100), levelAppropriate: z.number().int().min(0).max(100) }).strict(),
+  attempts: z.number().int().min(1).max(3),
+  referenceIds: z.array(z.string().min(1).max(200)).max(8),
+}).strict();
 export const aiTeacherResponseSchema = z.object({
   answer: z.string().trim().min(1).max(4000),
-  japaneseExamples: z.array(z.object({ japanese: z.string().min(1).max(300), reading: z.string().max(300).optional(), translation: z.string().min(1).max(500), target: z.string().max(100).optional() }).strict()).max(5).optional(),
+  japaneseExamples: z.array(z.object({ japanese: z.string().min(1).max(300), reading: z.string().max(300).optional(), translation: z.string().min(1).max(500), target: z.string().max(100).optional(), generationMetadata: generatedExampleMetadataSchema.optional() }).strict()).max(5).optional(),
   corrections: z.array(z.object({ original: z.string().min(1).max(1000), corrected: z.string().min(1).max(1000), explanation: z.string().min(1).max(1000), category: z.enum(['incorrect', 'unnatural', 'style']).optional() }).strict()).max(8).optional(),
   followUpSuggestions: z.array(z.string().min(1).max(180)).max(4).optional(), confidence: z.enum(['low', 'medium', 'high']).optional(),
 }).strict().superRefine((value, context) => { if (value.japaneseExamples && new Set(value.japaneseExamples.map((example) => example.japanese)).size !== value.japaneseExamples.length) context.addIssue({ code: 'custom', message: 'Examples must be unique.' }); });
@@ -13,4 +27,4 @@ export const aiTeacherRequestSchema = z.object({ feature: aiFeatureSchema, conte
 export type AiTeacherRequest = z.infer<typeof aiTeacherRequestSchema>;
 export type AiTeacherResponse = z.infer<typeof aiTeacherResponseSchema>;
 export interface AiModelCapabilities { structuredOutput: boolean; streaming: boolean; maxContextTokens?: number; supportsJapanese: boolean; supportsSystemMessages: boolean; }
-export interface AiProvider { id: string; model: string; capabilities: AiModelCapabilities; complete(input: { system: string; user: string; signal: AbortSignal }): Promise<string>; }
+export interface AiProvider { id: string; model: string; capabilities: AiModelCapabilities; complete(input: { system: string; user: string; signal: AbortSignal; maxTokens?: number; temperature?: number }): Promise<string>; }

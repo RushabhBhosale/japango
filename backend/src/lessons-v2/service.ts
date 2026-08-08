@@ -1,5 +1,6 @@
 import { randomUUID } from 'node:crypto';
 
+import { createServerProviderRegistry } from '../ai/orchestrator';
 import {
   lessonV2DraftInputSchema,
   lessonV2GenerationPlanInputSchema,
@@ -10,6 +11,7 @@ import { LessonsV2DependencyResolver } from './dependency-resolver';
 import { LessonsV2Repository } from './repository';
 import { auditIssuesForLesson, auditLessonsV2Content } from './content-audit';
 import { validateLessonV2Version } from './validator';
+import { LessonsV2LlmGenerator } from './llm-generator';
 
 export class LessonsV2Service {
   constructor(
@@ -65,11 +67,23 @@ export class LessonsV2Service {
       objectives: plan.objectives,
       sourceQuery: plan.sourceQuery,
       sourceChunkIds: plan.sourceChunkIds,
+      targetGrammar: plan.targetGrammar,
+      vocabularyCandidates: plan.vocabulary,
       requiredSections: ['introduction', 'dialogue', 'vocabulary', 'grammar', 'guided_practice', 'quiz', 'review_cards'],
+      generationOrder: ['semantic_plan', 'reference_grounding', 'original_japanese', 'independent_critic', 'difficulty_gate', 'draft_save'],
       publishPolicy: 'draft_only',
     };
     const id = randomUUID();
     return { id, status: 'planned', plan: output };
+  }
+
+  async generateDraft(input: unknown, signal: AbortSignal) {
+    const generator = new LessonsV2LlmGenerator(createServerProviderRegistry());
+    const generated = await generator.generate(input, signal);
+    if (!generated.compatible) return generated;
+    const lesson = await this.repository.createDraft(generated.draft);
+    await this.repository.recordCompletedGenerationRun(lesson.id, input, generated.generationMetadata);
+    return { ...generated, lesson };
   }
 
   private async collectValidationIssues(lesson: Awaited<ReturnType<LessonsV2Repository['getLesson']>>): Promise<LessonV2ValidationIssue[]> {

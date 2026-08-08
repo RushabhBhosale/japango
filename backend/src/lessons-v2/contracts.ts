@@ -39,12 +39,32 @@ export const resolveDependenciesInputSchema = z.object({
   }).strict()).max(80).default([]),
 }).strict();
 
+const lessonGenerationTargetGrammarSchema = z.array(z.object({
+  id: z.string().trim().min(1).max(160),
+  pattern: z.string().trim().min(1).max(200),
+  meaning: z.string().trim().min(1).max(500),
+}).strict()).max(8);
+
 export const lessonV2GenerationPlanInputSchema = z.object({
   level: lessonV2LevelSchema,
   title: z.string().trim().min(1).max(240),
   objectives: z.array(z.string().trim().min(1).max(600)).min(1).max(12),
   sourceQuery: z.string().trim().min(1).max(500),
   sourceChunkIds: z.array(z.string().uuid()).max(20).default([]),
+  targetGrammar: lessonGenerationTargetGrammarSchema.default([]),
+  vocabulary: z.array(z.object({
+    id: z.string().trim().min(1).max(160).optional(),
+    japanese: z.string().trim().min(1).max(120),
+    reading: z.string().trim().min(1).max(160).optional(),
+    meaning: z.string().trim().min(1).max(300),
+  }).strict()).max(30).default([]),
+}).strict();
+
+export const lessonV2LlmGenerationInputSchema = lessonV2GenerationPlanInputSchema.extend({
+  slug: z.string().trim().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/u).max(120).optional(),
+  estimatedMinutes: z.number().int().min(5).max(60).default(20),
+  questionCount: z.number().int().min(2).max(8).default(4),
+  targetGrammar: lessonGenerationTargetGrammarSchema.min(1),
 }).strict();
 
 export const lessonV2QuestionDraftInputSchema = z.object({

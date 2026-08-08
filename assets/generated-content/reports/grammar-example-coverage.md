@@ -159,7 +159,7 @@
 | grammar-n4-to-omou | N4 | ～と思う | 5 | 0 | 4 | appointments, daily-life, family, plans, public-transport | plain, polite | covered | ready | pass |
 | grammar-n4-toka-toka | N4 | ～とか～とか | 4 | 0 | 4 | appointments, food, hobbies, travel | polite | covered | ready | pass |
 | grammar-n4-tokoro | N4 | ～ところ | 4 | 0 | 4 | daily-life, food, home, work | plain, polite | covered | ready | pass |
-| grammar-n4-transitive-intransitive-verbs | N4 | 他動詞と自動詞 | 4 | 0 | 4 | family, hobbies, shopping, weather | plain, polite | covered | ready | pass |
+| grammar-n4-transitive-intransitive-verbs | N4 | 他動詞と自動詞 | 4 | 0 | 4 | daily-life, family, hobbies, weather | plain, polite | covered | ready | pass |
 | grammar-n4-tsuzukeru | N4 | ～続ける | 5 | 0 | 4 | daily-life, family, plans, weather | plain, polite | covered | ready | pass |
 | grammar-n4-volitional-form | N4 | 意向形（～おう／～よう） | 4 | 0 | 4 | daily-life, family, home, public-transport | plain, polite | covered | ready | pass |
 | grammar-n4-yasui | N4 | ～やすい | 4 | 0 | 4 | appointments, directions, family, plans | plain, polite | covered | ready | pass |
