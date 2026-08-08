@@ -130,6 +130,11 @@ export interface V3TeachingMomentScene extends V3BaseScene {
   contrast: V3JapaneseLine[];
   explanation: string;
   learnedItemIds: string[];
+  kanjiFocus?: {
+    kanji: string;
+    reading: string;
+    meaning: string;
+  };
 }
 
 export interface V3SentenceBuildScene extends V3BaseScene {
@@ -145,7 +150,7 @@ export interface V3FreeResponseScene extends V3BaseScene {
   type: 'freeResponse';
   prompt: string;
   message: V3ChatMessage;
-  intent: 'accept-invitation' | 'episode-one-availability';
+  intent: 'accept-invitation' | 'episode-one-availability' | 'recap-contact';
   suggestedStarters: string[];
 }
 

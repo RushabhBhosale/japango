@@ -5,16 +5,18 @@ import {
   type EpisodeOneConversationPhase,
   type EpisodeOneLanguageFeedback,
 } from './episode-one-conversation';
-import { evaluateAcceptanceDeterministically, type FreeResponseEvaluation } from './free-response-fallback';
+import { evaluateAcceptanceDeterministically, evaluateContactRecapDeterministically, type FreeResponseEvaluation } from './free-response-fallback';
 
 export interface FreeResponseEvaluator {
-  evaluate(answer: string, intent: 'accept-invitation'): Promise<FreeResponseEvaluation>;
+  evaluate(answer: string, intent: 'accept-invitation' | 'recap-contact'): Promise<FreeResponseEvaluation>;
 }
 
 export const v3FreeResponseEvaluator: FreeResponseEvaluator = {
   async evaluate(answer, intent) {
-    const fallback = evaluateAcceptanceDeterministically(answer);
-    if (intent !== 'accept-invitation' || !fallback.accepted || !process.env.EXPO_PUBLIC_API_BASE_URL) return fallback;
+    const fallback = intent === 'recap-contact'
+      ? evaluateContactRecapDeterministically(answer)
+      : evaluateAcceptanceDeterministically(answer);
+    if (!fallback.accepted || !process.env.EXPO_PUBLIC_API_BASE_URL) return fallback;
 
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 2500);
@@ -22,10 +24,10 @@ export const v3FreeResponseEvaluator: FreeResponseEvaluator = {
       const result = await askAiTeacher('writing_check', {
         learnerLevel: 'N5',
         question: {
-          prompt: 'Accept a friendly invitation for tomorrow in a casual message.',
+          prompt: intent === 'recap-contact' ? 'Reply naturally to a friend asking whether you have contacted Mia already.' : 'Accept a friendly invitation for tomorrow in a casual message.',
           userAnswer: answer,
-          correctAnswer: 'うん、ひまだよ！ / いいね、行こう！',
-          canonicalExplanation: 'Evaluate intended meaning, grammar, naturalness, and casual-friendly register.',
+          correctAnswer: intent === 'recap-contact' ? 'うん、もう連絡したよ。 / まだしてない。' : 'うん、ひまだよ！ / いいね、行こう！',
+          canonicalExplanation: 'Evaluate intended meaning, grammar, naturalness, and casual-friendly register. Do not change the learner’s story path.',
         },
       }, answer, controller.signal);
       const correction = result.response.corrections?.[0];

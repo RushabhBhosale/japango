@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { evaluateAcceptanceDeterministically } from './free-response-fallback';
+import { evaluateAcceptanceDeterministically, evaluateContactRecapDeterministically } from './free-response-fallback';
 
 describe('Episode V3 free-response fallback', () => {
   it('accepts more than one natural Japanese response', () => {
@@ -16,5 +16,10 @@ describe('Episode V3 free-response fallback', () => {
 
   it('offers support for a non-Japanese response', () => {
     expect(evaluateAcceptanceDeterministically('yes').suggestedResponse).toBe('うん、ひまだよ！');
+  });
+
+  it('accepts either completed or unfinished contact in the story recap', () => {
+    expect(evaluateContactRecapDeterministically('うん、もう連絡したよ。').accepted).toBe(true);
+    expect(evaluateContactRecapDeterministically('まだしてない。').accepted).toBe(true);
   });
 });

@@ -66,7 +66,7 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
   const submitResponse = async (candidate: V3EpisodeResponse) => {
     if (!progress) return;
     let evaluated = candidate;
-    if (scene.type === 'freeResponse' && scene.intent === 'accept-invitation') {
+    if (scene.type === 'freeResponse' && (scene.intent === 'accept-invitation' || scene.intent === 'recap-contact')) {
       const result = await v3FreeResponseEvaluator.evaluate(candidate.answer, scene.intent);
       evaluated = {
         ...candidate,
@@ -219,6 +219,13 @@ function SceneContent({ scene, episode, assistanceMode, glossary, progress, resp
       <ThemedText type="smallBold" style={{ color: theme.primary }}>DISCOVER</ThemedText>
       <ThemedText type="heading">{scene.title}</ThemedText>
       {scene.contrast.map((contrast) => <V3JapaneseLineView key={contrast.text.raw} line={contrast} assistanceMode={assistanceMode} glossary={glossary} />)}
+      {scene.kanjiFocus ? (
+        <View style={[styles.kanjiFocus, { borderColor: theme.primary }]}>
+          <ThemedText type="smallBold" style={{ color: theme.primary }}>KANJI FOCUS</ThemedText>
+          <ThemedText type="subtitle">{scene.kanjiFocus.kanji} · {scene.kanjiFocus.reading}</ThemedText>
+          <ThemedText type="small">{scene.kanjiFocus.meaning}</ThemedText>
+        </View>
+      ) : null}
       <View style={[styles.rule, { backgroundColor: theme.border }]} />
       <ThemedText>{scene.explanation}</ThemedText>
     </Card>
@@ -273,6 +280,7 @@ const styles = StyleSheet.create({
   story: { flex: 1, minHeight: 460, justifyContent: 'center', gap: Spacing.three },
   phoneLine: { minHeight: 64, borderRadius: Radius.medium, flexDirection: 'row', alignItems: 'center', gap: Spacing.two, padding: Spacing.three, marginTop: Spacing.three },
   discovery: { gap: Spacing.three, padding: Spacing.four },
+  kanjiFocus: { borderLeftWidth: 3, paddingLeft: Spacing.three, gap: Spacing.half },
   rule: { height: 1 },
   completion: { gap: Spacing.four, paddingBottom: Spacing.four },
   completeMark: { width: 64, height: 64, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center', alignSelf: 'center' },

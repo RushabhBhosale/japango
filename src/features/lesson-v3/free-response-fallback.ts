@@ -30,3 +30,16 @@ export function evaluateAcceptanceDeterministically(answer: string): FreeRespons
     ? { accepted: true, title: 'Sounds natural', feedback: 'Friendly, clear, and right for a message to a new friend.', source: 'deterministic' }
     : { accepted: true, title: 'I understood you', feedback: 'Your meaning is clear. A slightly more natural message to a friend:', suggestedResponse: 'うん、ひまだよ！', source: 'deterministic' };
 }
+
+export function evaluateContactRecapDeterministically(answer: string): FreeResponseEvaluation {
+  const normalized = compact(answer);
+  if (!normalized) return { accepted: false, title: 'Write a short reply', feedback: 'Tell Yuki whether you have contacted Mia yet.', source: 'deterministic' };
+  if (!/[ぁ-んァ-ヶ一-龯]/u.test(normalized)) return { accepted: false, title: 'Try it in Japanese', feedback: 'A short reply is enough.', suggestedResponse: 'うん、もう連絡したよ。', source: 'deterministic' };
+  if (/(まだ.*(してない|しない)|まだ連絡してない)/u.test(normalized)) {
+    return { accepted: true, title: 'Clear recap', feedback: 'Nice. まだ keeps the action unfinished.', source: 'deterministic' };
+  }
+  if (/(もう.*(連絡.*した|した)|連絡.*した)/u.test(normalized)) {
+    return { accepted: true, title: 'Clear recap', feedback: 'Nice. もう shows the contact is already done.', source: 'deterministic' };
+  }
+  return { accepted: false, title: 'Make the timing clear', feedback: 'Use もう for “already” or まだ for “not yet.”', suggestedResponse: 'うん、もう連絡したよ。', source: 'deterministic' };
+}
