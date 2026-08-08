@@ -38,6 +38,14 @@ const ashita = { surface: '明日', reading: 'あした', itemId: 'v3-vocab-ashi
 const tomodachi = { surface: '友達', reading: 'ともだち', itemId: 'v3-vocab-tomodachi' };
 const hima = { surface: 'ひま', reading: 'ひま', itemId: 'v3-vocab-hima' };
 const shinjuku = { surface: '新宿駅', reading: 'しんじゅくえき', itemId: 'v3-vocab-shinjukueki' };
+const kitabakari = { surface: '来たばかり', reading: 'きたばかり', itemId: 'v3-expression-kitabakari' };
+const sukunai = { surface: '少ない', reading: 'すくない', itemId: 'v3-vocab-sukunai' };
+const itteta = { surface: '言ってた', reading: 'いってた', itemId: 'v3-vocab-iu' };
+const renrakuShitemita = { surface: '連絡してみた', reading: 'れんらくしてみた', itemId: 'v3-vocab-renraku-suru' };
+const tsuiteinai = { surface: '着いてない', reading: 'ついてない', itemId: 'v3-vocab-tsuku' };
+const juuji = { surface: '10時', reading: 'じゅうじ', itemId: 'v3-vocab-juuji' };
+const okurenai = { surface: '遅れない', reading: 'おくれない', itemId: 'v3-vocab-okureru' };
+const wara = { surface: '笑', reading: 'わら', itemId: 'v3-expression-wara' };
 
 export const episodeOne: V3Episode = {
   id: 'episode-1',
@@ -66,6 +74,14 @@ export const episodeOne: V3Episode = {
     { id: 'v3-vocab-tomodachi', kind: 'vocabulary', japanese: '友達', reading: 'ともだち', meaning: 'friend' },
     { id: 'v3-vocab-hima', kind: 'vocabulary', japanese: '暇', reading: 'ひま', meaning: 'free; not busy' },
     { id: 'v3-vocab-shinjukueki', kind: 'vocabulary', japanese: '新宿駅', reading: 'しんじゅくえき', meaning: 'Shinjuku Station' },
+    { id: 'v3-expression-kitabakari', kind: 'expression', japanese: '来たばかり', reading: 'きたばかり', meaning: 'have just arrived' },
+    { id: 'v3-vocab-sukunai', kind: 'vocabulary', japanese: '少ない', reading: 'すくない', meaning: 'few; not many' },
+    { id: 'v3-vocab-iu', kind: 'vocabulary', japanese: '言う', reading: 'いう', meaning: 'to say' },
+    { id: 'v3-vocab-renraku-suru', kind: 'vocabulary', japanese: '連絡する', reading: 'れんらくする', meaning: 'to contact' },
+    { id: 'v3-vocab-juuji', kind: 'vocabulary', japanese: '10時', reading: 'じゅうじ', meaning: "ten o'clock" },
+    { id: 'v3-vocab-okureru', kind: 'vocabulary', japanese: '遅れる', reading: 'おくれる', meaning: 'to be late' },
+    { id: 'v3-vocab-ocha', kind: 'vocabulary', japanese: 'お茶', reading: 'おちゃ', meaning: 'tea' },
+    { id: 'v3-expression-wara', kind: 'expression', japanese: '笑', reading: 'わら', meaning: 'a casual “haha” in messages' },
     { id: 'v3-expression-mou', kind: 'expression', japanese: 'もう', reading: 'もう', meaning: 'already; yet' },
     { id: 'v3-expression-mada', kind: 'expression', japanese: 'まだ', reading: 'まだ', meaning: 'still; not yet' },
     { id: 'v3-grammar-destination-ni', kind: 'grammar', japanese: '～に着く', reading: '～につく', meaning: 'arrive at/in ~' },
@@ -111,7 +127,7 @@ export const episodeOne: V3Episode = {
       id: 'discovery-mou-mada', type: 'teachingMoment', title: 'A useful contrast',
       contrast: [
         line(japanese(mou, tsuku, '？'), 'Have you arrived already / yet?'),
-        line(japanese(mada, '着いてない。'), 'I have not arrived yet.'),
+        line(japanese(mada, tsuiteinai, '。'), 'I have not arrived yet.'),
       ],
       explanation: 'もう asks whether something has happened by now. まだ says the situation has not changed yet. You will hear this pair constantly.',
       learnedItemIds: ['v3-expression-mou', 'v3-expression-mada', 'v3-vocab-tsuku'],
@@ -119,7 +135,7 @@ export const episodeOne: V3Episode = {
     {
       id: 'mia-context', type: 'chat', messages: [
         { id: 'mia-1', sender: 'yuki', line: line(japanese('ほんと？よかった！'), 'Really? Great!') },
-        { id: 'mia-2', sender: 'yuki', line: line(japanese('ミアが「', nihon, 'に来たばかりで、', mada, tomodachi, 'が少ない」って言ってたから、連絡してみた😊'), 'Mia said you just arrived in Japan and do not have many friends yet, so I thought I would message you.') },
+        { id: 'mia-2', sender: 'yuki', line: line(japanese('ミアが「', nihon, 'に', kitabakari, 'で、', mada, tomodachi, 'が', sukunai, '」って', itteta, 'から、', renrakuShitemita, '😊'), 'Mia said you just arrived in Japan and do not have many friends yet, so I thought I would message you.') },
         { id: 'mia-3', sender: 'yuki', line: line(japanese('これからよろしくね！'), "Let's get along from here on!") },
       ],
     },
@@ -134,19 +150,18 @@ export const episodeOne: V3Episode = {
     {
       id: 'invitation', type: 'chat', learnedItemIds: ['v3-vocab-ashita', 'v3-vocab-hima'], messages: [
         { id: 'invite-1', sender: 'yuki', line: line(japanese(ashita, hima, '？'), 'Are you free tomorrow?') },
-        { id: 'invite-2', sender: 'yuki', line: line(japanese('よかったら、ちょっとお茶しない？'), 'If you want, shall we grab some tea?') },
       ],
     },
     {
-      id: 'free-reply', type: 'freeResponse', intent: 'accept-invitation',
-      prompt: 'You would like to go. Reply to Yuki in Japanese.',
+      id: 'free-reply', type: 'freeResponse', intent: 'episode-one-availability',
+      prompt: 'Reply naturally. Tell Yuki when you are free, if you are working, or suggest something to do.',
       message: { id: 'free-prompt', sender: 'yuki', line: line(japanese(ashita, hima, '？')) },
-      suggestedStarters: ['うん、', 'いいね、', '明日は'],
+      suggestedStarters: ['うん、ひまだよ！', '午後ならひまだよ。', '明日は仕事がある。'],
     },
     {
       id: 'meeting-place', type: 'chat', messages: [
-        { id: 'meet-1', sender: 'yuki', line: line(japanese('やった！じゃあ、', ashita, '10時に', shinjuku, 'で！'), 'Great! Then tomorrow at 10 at Shinjuku Station!') },
-        { id: 'meet-2', sender: 'yuki', line: line(japanese('遅れないでね笑'), "Don't be late, okay? haha") },
+        { id: 'meet-1', sender: 'yuki', line: line(japanese('やった！じゃあ、', ashita, juuji, 'に', shinjuku, 'で！'), 'Great! Then tomorrow at 10 at Shinjuku Station!') },
+        { id: 'meet-2', sender: 'yuki', line: line(japanese(okurenai, 'でね', wara), "Don't be late, okay? haha") },
       ],
     },
     { id: 'complete', type: 'completion' },
@@ -154,7 +169,7 @@ export const episodeOne: V3Episode = {
   nextEpisode: {
     titleJapanese: '新宿で会おう',
     titleEnglish: "Let's Meet in Shinjuku",
-    setup: "Tomorrow you're meeting Yuki at Shinjuku Station.",
+    setup: "You and Yuki have made plans to meet at Shinjuku Station.",
     hook: 'But getting there might not go exactly as planned.',
   },
 };

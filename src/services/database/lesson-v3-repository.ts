@@ -33,6 +33,7 @@ interface V3EpisodeProgressRow {
   current_scene_index: number;
   responses_json: string;
   learned_item_ids_json: string;
+  story_choices_json: string;
   completed_at: string | null;
   updated_at: string;
 }
@@ -143,6 +144,7 @@ function mapEpisodeProgress(row: V3EpisodeProgressRow): V3EpisodeProgress {
     currentSceneIndex: row.current_scene_index,
     responses: parseJson(row.responses_json),
     learnedItemIds: parseJson(row.learned_item_ids_json),
+    storyChoices: parseJson(row.story_choices_json),
     completedAt: row.completed_at ?? undefined,
     updatedAt: row.updated_at,
   });
@@ -155,7 +157,7 @@ export async function getV3EpisodeProgress(episodeId: string): Promise<V3Episode
     episodeId,
   );
   if (row) return mapEpisodeProgress(row);
-  return { episodeId, currentSceneIndex: 0, responses: [], learnedItemIds: [], updatedAt: new Date().toISOString() };
+  return { episodeId, currentSceneIndex: 0, responses: [], learnedItemIds: [], storyChoices: {}, updatedAt: new Date().toISOString() };
 }
 
 export async function saveV3EpisodeProgress(progress: V3EpisodeProgress): Promise<V3EpisodeProgress> {
@@ -164,18 +166,20 @@ export async function saveV3EpisodeProgress(progress: V3EpisodeProgress): Promis
   const updatedAt = new Date().toISOString();
   await database.runAsync(
     `INSERT INTO v3_episode_progress
-      (episode_id, current_scene_index, responses_json, learned_item_ids_json, completed_at, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?)
+      (episode_id, current_scene_index, responses_json, learned_item_ids_json, story_choices_json, completed_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?)
      ON CONFLICT(episode_id) DO UPDATE SET
        current_scene_index = excluded.current_scene_index,
        responses_json = excluded.responses_json,
        learned_item_ids_json = excluded.learned_item_ids_json,
+       story_choices_json = excluded.story_choices_json,
        completed_at = excluded.completed_at,
        updated_at = excluded.updated_at`,
     parsed.episodeId,
     parsed.currentSceneIndex,
     JSON.stringify(parsed.responses),
     JSON.stringify([...new Set(parsed.learnedItemIds)]),
+    JSON.stringify(parsed.storyChoices),
     parsed.completedAt ?? null,
     updatedAt,
   );

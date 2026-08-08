@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { Animated, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
@@ -14,18 +13,13 @@ interface V3ChatProps {
   glossary: Record<string, { reading: string; meaning: string }>;
 }
 
-function ChatBubble({ message, index, assistanceMode, glossary }: V3ChatProps & { message: V3ChatMessage; index: number }) {
+function ChatBubble({ message, assistanceMode, glossary }: Omit<V3ChatProps, 'messages'> & { message: V3ChatMessage }) {
   const theme = useTheme();
-  const [animation] = useState(() => new Animated.Value(0));
   const isLearner = message.sender === 'learner';
   const name = message.sender === 'unknown' ? 'Unknown' : message.sender === 'yuki' ? 'ゆき' : 'You';
 
-  useEffect(() => {
-    Animated.timing(animation, { toValue: 1, duration: 220, delay: index * 90, useNativeDriver: true }).start();
-  }, [animation, index]);
-
   return (
-    <Animated.View style={[styles.messageRow, isLearner && styles.learnerRow, { opacity: animation, transform: [{ translateY: animation.interpolate({ inputRange: [0, 1], outputRange: [8, 0] }) }] }]}>
+    <View style={[styles.messageRow, isLearner && styles.learnerRow]}>
       {!isLearner ? (
         <View style={[styles.avatar, { backgroundColor: theme.primarySoft }]}>
           <ThemedText type="smallBold" style={{ color: theme.primary }}>{message.sender === 'unknown' ? '?' : 'ゆ'}</ThemedText>
@@ -38,26 +32,26 @@ function ChatBubble({ message, index, assistanceMode, glossary }: V3ChatProps & 
         </View>
         {message.time ? <ThemedText type="small" themeColor="textSecondary">{message.time}</ThemedText> : null}
       </View>
-    </Animated.View>
+    </View>
   );
 }
 
 export function V3Chat({ messages, assistanceMode, glossary }: V3ChatProps) {
   return (
     <View style={styles.chat}>
-      {messages.map((message, index) => (
-        <ChatBubble key={message.id} message={message} index={index} messages={messages} assistanceMode={assistanceMode} glossary={glossary} />
+      {messages.map((message) => (
+        <ChatBubble key={message.id} message={message} assistanceMode={assistanceMode} glossary={glossary} />
       ))}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  chat: { gap: Spacing.three },
-  messageRow: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.two, maxWidth: '92%' },
+  chat: { width: '100%', gap: Spacing.three },
+  messageRow: { width: '94%', flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.two },
   learnerRow: { alignSelf: 'flex-end', flexDirection: 'row-reverse' },
   avatar: { width: 38, height: 38, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center', marginTop: 22 },
-  bubbleColumn: { flexShrink: 1, gap: Spacing.one },
+  bubbleColumn: { flex: 1, minWidth: 0, gap: Spacing.one },
   learnerName: { textAlign: 'right' },
   bubble: { borderWidth: 1, borderRadius: Radius.large, paddingHorizontal: Spacing.three, paddingVertical: 12 },
 });

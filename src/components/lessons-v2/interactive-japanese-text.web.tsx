@@ -15,6 +15,10 @@ interface InteractiveJapaneseTextProps {
   glossary?: Record<string, { reading: string; meaning: string }>;
 }
 
+function hasKanji(value: string): boolean {
+  return /[\u3400-\u9fff]/u.test(value);
+}
+
 /** The web renderer emits ruby/rt for semantic furigana; native uses stacked text. */
 export function InteractiveJapaneseText({ text, furiganaMode, type = 'japanese', onFavorite, onMarkForReview, glossary }: InteractiveJapaneseTextProps) {
   const [selected, setSelected] = useState<JapaneseToken>();
@@ -23,7 +27,7 @@ export function InteractiveJapaneseText({ text, furiganaMode, type = 'japanese',
       <View accessibilityLabel={text.raw} style={styles.line}>
         {text.tokens.map((token) => token.kind === 'word' ? (
           <Pressable key={token.id} accessibilityRole="button" accessibilityLabel={`${token.surface}. Open word details.`} onPress={() => setSelected(token)}>
-            {furiganaMode === 'always' && token.reading
+            {furiganaMode === 'always' && token.reading && hasKanji(token.surface)
               ? <ruby><span>{token.surface}</span><rt>{token.reading}</rt></ruby>
               : <ThemedText type={type} style={styles.surface}>{token.surface}</ThemedText>}
           </Pressable>

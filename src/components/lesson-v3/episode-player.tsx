@@ -1,7 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Animated, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
@@ -10,7 +10,14 @@ import { ProgressBar } from '@/components/common/progress-bar';
 import { ScreenContainer } from '@/components/common/screen-container';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
-import { v3FreeResponseEvaluator } from '@/features/lesson-v3/free-response-evaluator';
+import {
+  decideEpisodeOneConversation,
+  episodeOneConversationPhase,
+  episodeOneMeetingCheckpoint,
+  type EpisodeOneConversationTurn,
+} from '@/features/lesson-v3/episode-one-conversation';
+import { requestEpisodeOneYukiReply } from '@/features/lesson-v3/episode-one-ai-story-service';
+import { evaluateEpisodeOneLanguage, v3FreeResponseEvaluator } from '@/features/lesson-v3/free-response-evaluator';
 import { useTheme } from '@/hooks/use-theme';
 import { getV3EpisodeProgress, saveV3EpisodeProgress } from '@/services/database/lesson-v3-repository';
 import { stopJapaneseSpeech } from '@/services/speech/japanese-speech';
@@ -27,7 +34,6 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
   const [progress, setProgress] = useState<V3EpisodeProgress>();
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string>();
-  const [sceneAnimation] = useState(() => new Animated.Value(1));
   const scrollRef = useRef<ScrollView>(null);
   const glossary = useMemo(() => Object.fromEntries(episode.learningObjectives.map((item) => [item.id, { reading: item.reading, meaning: item.meaning }])), [episode.learningObjectives]);
 
@@ -41,10 +47,8 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
   const response = progress?.responses.find((candidate) => candidate.sceneId === scene.id);
 
   useEffect(() => {
-    sceneAnimation.setValue(0);
-    Animated.timing(sceneAnimation, { toValue: 1, duration: 220, useNativeDriver: true }).start();
     setTimeout(() => scrollRef.current?.scrollTo({ y: 0, animated: false }), 0);
-  }, [currentIndex, sceneAnimation]);
+  }, [currentIndex]);
 
   const persist = useCallback(async (next: V3EpisodeProgress) => {
     setSaving(true);
@@ -62,7 +66,7 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
   const submitResponse = async (candidate: V3EpisodeResponse) => {
     if (!progress) return;
     let evaluated = candidate;
-    if (scene.type === 'freeResponse') {
+    if (scene.type === 'freeResponse' && scene.intent === 'accept-invitation') {
       const result = await v3FreeResponseEvaluator.evaluate(candidate.answer, scene.intent);
       evaluated = {
         ...candidate,
@@ -79,6 +83,50 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
     });
   };
 
+  const submitEpisodeOneConversation = async (answer: string, forceCheckpoint: boolean): Promise<EpisodeOneConversationTurn> => {
+    if (!progress) {
+      return {
+        feedback: { title: 'Try again', feedback: 'Your reply could not be saved yet.' },
+        yukiReply: { id: 'yuki-save-error', sender: 'yuki', line: { text: { raw: 'ごめん、もう一回送ってくれる？', status: 'verified', tokens: [{ id: 'save-error', kind: 'plain', surface: 'ごめん、もう一回送ってくれる？', kanjiIds: [], status: 'verified' }] } } },
+        requiresFollowUp: true,
+      };
+    }
+    const phase = episodeOneConversationPhase(progress.storyChoices);
+    const decision = decideEpisodeOneConversation(answer, phase);
+    const understood = decision.accepted || /[ぁ-んァ-ヶ一-龯]/u.test(answer);
+    const storyChoices = decision.accepted
+      ? { ...progress.storyChoices, ...decision.storyChoices }
+      : progress.storyChoices;
+    const [feedback, yukiReply] = await Promise.all([
+      evaluateEpisodeOneLanguage(answer, phase, understood),
+      requestEpisodeOneYukiReply(answer, storyChoices, decision, forceCheckpoint),
+    ]);
+
+    if (yukiReply.requiresFollowUp && !forceCheckpoint) {
+      await persist({ ...progress, storyChoices, updatedAt: new Date().toISOString() });
+      return { feedback, yukiReply: yukiReply.message, requiresFollowUp: true };
+    }
+
+    await persist({
+      ...progress,
+      storyChoices,
+      responses: [
+        ...progress.responses.filter((item) => item.sceneId !== scene.id),
+        {
+          sceneId: scene.id,
+          kind: 'freeResponse',
+          answer,
+          correct: true,
+          feedbackTitle: feedback.title,
+          feedback: feedback.feedback,
+          suggestedResponse: feedback.suggestedResponse,
+        },
+      ],
+      updatedAt: new Date().toISOString(),
+    });
+    return { feedback, yukiReply: yukiReply.message, requiresFollowUp: false };
+  };
+
   const advance = async () => {
     if (!progress || scene.type === 'completion') return;
     const nextIndex = Math.min(currentIndex + 1, episode.scenes.length - 1);
@@ -88,6 +136,15 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
       currentSceneIndex: nextIndex,
       learnedItemIds: [...new Set([...progress.learnedItemIds, ...(scene.learnedItemIds ?? [])])],
       completedAt: enteringCompletion ? new Date().toISOString() : progress.completedAt,
+      updatedAt: new Date().toISOString(),
+    });
+  };
+
+  const goBack = async () => {
+    if (!progress || currentIndex === 0) return;
+    await persist({
+      ...progress,
+      currentSceneIndex: currentIndex - 1,
       updatedAt: new Date().toISOString(),
     });
   };
@@ -114,15 +171,18 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
       </View>
 
       <ScrollView ref={scrollRef} style={styles.scroll} contentContainerStyle={styles.sceneContent} keyboardShouldPersistTaps="handled">
-        <Animated.View style={{ opacity: sceneAnimation, transform: [{ translateY: sceneAnimation.interpolate({ inputRange: [0, 1], outputRange: [10, 0] }) }] }}>
-          <SceneContent scene={scene} episode={episode} assistanceMode={assistanceMode} glossary={glossary} progress={progress} response={response} onSubmit={submitResponse} />
-        </Animated.View>
+        <View style={styles.sceneFrame}>
+          <SceneContent scene={scene} episode={episode} assistanceMode={assistanceMode} glossary={glossary} progress={progress} response={response} onSubmit={submitResponse} onDynamicReply={submitEpisodeOneConversation} />
+        </View>
       </ScrollView>
 
       {scene.type !== 'completion' ? (
         <View style={[styles.footer, { borderTopColor: theme.border, backgroundColor: theme.background }]}>
           {error ? <ThemedText type="small" style={{ color: theme.error }} accessibilityLiveRegion="polite">{error}</ThemedText> : null}
-          <AppButton label={scene.type === 'story' ? 'Open message' : currentIndex === episode.scenes.length - 2 ? 'Finish episode' : 'Continue'} disabled={!canContinue} loading={saving} onPress={() => void advance()} />
+          <View style={styles.footerActions}>
+            {currentIndex > 0 ? <AppButton label="Previous" variant="secondary" disabled={saving} style={styles.previousButton} onPress={() => void goBack()} /> : null}
+            <AppButton style={styles.continueButton} label={scene.type === 'story' ? 'Open message' : currentIndex === episode.scenes.length - 2 ? 'Finish episode' : 'Continue'} disabled={!canContinue} loading={saving} onPress={() => void advance()} />
+          </View>
         </View>
       ) : null}
     </ScreenContainer>
@@ -137,9 +197,10 @@ interface SceneContentProps {
   progress: V3EpisodeProgress;
   response?: V3EpisodeResponse;
   onSubmit: (response: V3EpisodeResponse) => Promise<void>;
+  onDynamicReply: (answer: string, forceCheckpoint: boolean) => Promise<EpisodeOneConversationTurn>;
 }
 
-function SceneContent({ scene, episode, assistanceMode, glossary, progress, response, onSubmit }: SceneContentProps) {
+function SceneContent({ scene, episode, assistanceMode, glossary, progress, response, onSubmit, onDynamicReply }: SceneContentProps) {
   const theme = useTheme();
   if (scene.type === 'story') return (
     <View style={styles.story}>
@@ -149,10 +210,10 @@ function SceneContent({ scene, episode, assistanceMode, glossary, progress, resp
       <View style={[styles.phoneLine, { backgroundColor: theme.primarySoft }]}><Ionicons name="chatbubble-ellipses-outline" size={24} color={theme.primary} /><ThemedText type="smallBold" style={{ color: theme.primary }}>New message · Unknown</ThemedText></View>
     </View>
   );
-  if (scene.type === 'chat') return <V3Chat messages={scene.messages} assistanceMode={assistanceMode} glossary={glossary} />;
+  if (scene.type === 'chat') return <V3Chat messages={scene.id === 'meeting-place' ? episodeOneMeetingCheckpoint(progress.storyChoices) : scene.messages} assistanceMode={assistanceMode} glossary={glossary} />;
   if (scene.type === 'interaction') return <V3ChoiceInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} response={response} onSubmit={onSubmit} />;
   if (scene.type === 'sentenceBuild') return <V3SentenceBuildInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} response={response} onSubmit={onSubmit} />;
-  if (scene.type === 'freeResponse') return <V3FreeResponseInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} response={response} onSubmit={onSubmit} />;
+  if (scene.type === 'freeResponse') return <V3FreeResponseInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} storyChoices={progress.storyChoices} response={response} onSubmit={onSubmit} onDynamicReply={onDynamicReply} />;
   if (scene.type === 'teachingMoment') return (
     <Card style={[styles.discovery, { backgroundColor: theme.primarySoft, borderColor: theme.primary }]}>
       <ThemedText type="smallBold" style={{ color: theme.primary }}>DISCOVER</ThemedText>
@@ -197,14 +258,18 @@ function Completion({ episode, progress }: { episode: V3Episode; progress: V3Epi
 }
 
 const styles = StyleSheet.create({
-  screen: { paddingHorizontal: 0, paddingTop: 0, paddingBottom: 0, gap: 0 },
+  screen: { flex: 1, paddingHorizontal: 0, paddingTop: 0, paddingBottom: 0, gap: 0 },
   topBar: { minHeight: 64, flexDirection: 'row', alignItems: 'center', gap: Spacing.two, paddingHorizontal: Spacing.three },
   iconButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
   progressArea: { flex: 1, gap: Spacing.one },
   helpBadge: { minWidth: 44, height: 32, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center', paddingHorizontal: Spacing.two },
   scroll: { flex: 1 },
   sceneContent: { flexGrow: 1, padding: Spacing.three, paddingBottom: Spacing.four },
+  sceneFrame: { flexGrow: 1 },
   footer: { borderTopWidth: 1, padding: Spacing.three, gap: Spacing.two },
+  footerActions: { flexDirection: 'row', gap: Spacing.two },
+  previousButton: { minWidth: 112 },
+  continueButton: { flex: 1 },
   story: { flex: 1, minHeight: 460, justifyContent: 'center', gap: Spacing.three },
   phoneLine: { minHeight: 64, borderRadius: Radius.medium, flexDirection: 'row', alignItems: 'center', gap: Spacing.two, padding: Spacing.three, marginTop: Spacing.three },
   discovery: { gap: Spacing.three, padding: Spacing.four },

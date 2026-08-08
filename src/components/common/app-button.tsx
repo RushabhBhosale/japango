@@ -1,4 +1,4 @@
-import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
@@ -12,6 +12,7 @@ interface AppButtonProps {
   disabled?: boolean;
   loading?: boolean;
   accessibilityLabel?: string;
+  style?: StyleProp<ViewStyle>;
 }
 
 export function AppButton({
@@ -21,15 +22,18 @@ export function AppButton({
   disabled = false,
   loading = false,
   accessibilityLabel,
+  style,
 }: AppButtonProps) {
   const theme = useTheme();
   const isPrimary = variant === 'primary';
-  const backgroundColor = isPrimary
-    ? theme.primary
-    : variant === 'secondary'
-      ? theme.primarySoft
-      : 'transparent';
-  const textColor = isPrimary ? theme.onPrimary : theme.primary;
+  const backgroundColor = disabled
+    ? theme.backgroundElement
+    : isPrimary
+      ? theme.primary
+      : variant === 'secondary'
+        ? theme.primarySoft
+        : 'transparent';
+  const textColor = disabled ? theme.textSecondary : isPrimary ? theme.onPrimary : theme.primary;
 
   return (
     <Pressable
@@ -40,10 +44,11 @@ export function AppButton({
       onPress={onPress}
       style={({ pressed }) => [
         styles.button,
-        { backgroundColor, borderColor: isPrimary ? theme.primary : theme.border },
+        { backgroundColor, borderColor: disabled ? theme.border : isPrimary ? theme.primary : theme.border },
         variant === 'quiet' && styles.quiet,
         pressed && !disabled && { backgroundColor: isPrimary ? theme.primaryPressed : theme.backgroundSelected },
         (disabled || loading) && styles.disabled,
+        style,
       ]}>
       <View style={styles.content}>
         {loading && <ActivityIndicator color={textColor} size="small" />}
@@ -66,5 +71,5 @@ const styles = StyleSheet.create({
   quiet: { borderColor: 'transparent' },
   content: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
   label: { fontWeight: '700', textAlign: 'center' },
-  disabled: { opacity: 0.48 },
+  disabled: { opacity: 0.72 },
 });

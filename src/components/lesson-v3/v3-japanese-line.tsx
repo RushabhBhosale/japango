@@ -19,7 +19,10 @@ interface V3JapaneseLineProps {
 
 export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'japanese', showAudio = false }: V3JapaneseLineProps) {
   const theme = useTheme();
-  const [helpRevealed, setHelpRevealed] = useState(assistanceMode === 'guided');
+  // Assistance changes furigana and response support, never whether a story
+  // line is translated by default. The learner stays in Japanese first and
+  // can reveal meaning only when it is useful.
+  const [helpRevealed, setHelpRevealed] = useState(false);
   const [audioError, setAudioError] = useState(false);
 
   const play = async () => {
@@ -68,6 +71,6 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
 const styles = StyleSheet.create({
   container: { gap: Spacing.one },
   japaneseRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
-  japanese: { flex: 1 },
+  japanese: { flex: 1, minWidth: 0 },
   audioButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
 });

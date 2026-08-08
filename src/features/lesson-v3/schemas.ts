@@ -50,6 +50,12 @@ export const v3EpisodeProgressSchema = z.object({
   currentSceneIndex: z.number().int().nonnegative(),
   responses: z.array(v3EpisodeResponseSchema),
   learnedItemIds: z.array(z.string().min(1)),
+  storyChoices: z.object({
+    availabilityTomorrow: z.enum(['free', 'afternoon-only', 'working', 'unavailable']).optional(),
+    preferredMeetingTime: z.enum(['morning', 'afternoon', 'evening']).optional(),
+    foodPreference: z.string().min(1).max(80).optional(),
+    hobbies: z.array(z.string().min(1).max(80)).max(8).optional(),
+  }).strict().default({}),
   completedAt: z.string().min(1).optional(),
   updatedAt: z.string().min(1),
 }).strict();

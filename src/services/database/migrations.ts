@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 21;
+export const CURRENT_DATABASE_VERSION = 22;
 
 export interface DatabaseMigration {
   version: number;
@@ -1613,6 +1613,12 @@ const versionTwentyOneSql = `
     ON v3_episode_progress(completed_at, updated_at DESC);
 `;
 
+// Story choices are intentionally compact preferences, not a persisted chat log.
+const versionTwentyTwoSql = `
+  ALTER TABLE v3_episode_progress
+    ADD COLUMN story_choices_json TEXT NOT NULL DEFAULT '{}';
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1635,6 +1641,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 19, sql: versionNineteenSql },
   { version: 20, sql: versionTwentySql },
   { version: 21, sql: versionTwentyOneSql },
+  { version: 22, sql: versionTwentyTwoSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

@@ -16,6 +16,10 @@ interface InteractiveJapaneseTextProps {
   glossary?: Record<string, { reading: string; meaning: string }>;
 }
 
+function hasKanji(value: string): boolean {
+  return /[\u3400-\u9fff]/u.test(value);
+}
+
 export function InteractiveJapaneseText({ text, furiganaMode, type = 'japanese', onFavorite, onMarkForReview, glossary }: InteractiveJapaneseTextProps) {
   const [selected, setSelected] = useState<JapaneseToken>();
   return (
@@ -23,7 +27,7 @@ export function InteractiveJapaneseText({ text, furiganaMode, type = 'japanese',
       <View accessibilityLabel={text.raw} style={styles.line}>
         {text.tokens.map((token) => token.kind === 'word' ? (
           <Pressable key={token.id} accessibilityRole="button" accessibilityLabel={`${token.surface}${token.reading ? `, ${token.reading}` : ''}. Open word details.`} onPress={() => setSelected(token)} style={styles.word}>
-            {furiganaMode === 'always' && token.reading ? <ThemedText type="small" style={styles.reading}>{token.reading}</ThemedText> : null}
+            {furiganaMode === 'always' && token.reading && hasKanji(token.surface) ? <ThemedText type="small" style={styles.reading}>{token.reading}</ThemedText> : null}
             <ThemedText type={type} style={styles.surface}>{token.surface}</ThemedText>
           </Pressable>
         ) : <ThemedText key={token.id} type={type}>{token.surface}</ThemedText>)}

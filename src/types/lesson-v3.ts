@@ -145,8 +145,17 @@ export interface V3FreeResponseScene extends V3BaseScene {
   type: 'freeResponse';
   prompt: string;
   message: V3ChatMessage;
-  intent: 'accept-invitation';
+  intent: 'accept-invitation' | 'episode-one-availability';
   suggestedStarters: string[];
+}
+
+// Keep only durable choices that can make a later story beat feel personal.
+// Deliberately do not use this as a chat transcript.
+export interface V3StoryChoices {
+  availabilityTomorrow?: 'free' | 'afternoon-only' | 'working' | 'unavailable';
+  preferredMeetingTime?: 'morning' | 'afternoon' | 'evening';
+  foodPreference?: string;
+  hobbies?: string[];
 }
 
 export interface V3CompletionScene extends V3BaseScene {
@@ -196,6 +205,7 @@ export interface V3EpisodeProgress {
   currentSceneIndex: number;
   responses: V3EpisodeResponse[];
   learnedItemIds: string[];
+  storyChoices: V3StoryChoices;
   completedAt?: string;
   updatedAt: string;
 }

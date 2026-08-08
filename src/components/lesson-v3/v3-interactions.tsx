@@ -5,6 +5,7 @@ import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
+import type { EpisodeOneConversationTurn } from '@/features/lesson-v3/episode-one-conversation';
 import { useTheme } from '@/hooks/use-theme';
 import type {
   AssistanceMode,
@@ -12,16 +13,20 @@ import type {
   V3EpisodeResponse,
   V3FreeResponseScene,
   V3SentenceBuildScene,
+  V3StoryChoices,
 } from '@/types/lesson-v3';
 
 import { V3Chat } from './v3-chat';
+import { V3EpisodeOneConversation } from './v3-episode-one-conversation';
 import { V3JapaneseLineView } from './v3-japanese-line';
 
 interface SharedInteractionProps {
   assistanceMode: AssistanceMode;
   glossary: Record<string, { reading: string; meaning: string }>;
+  storyChoices?: V3StoryChoices;
   response?: V3EpisodeResponse;
   onSubmit: (response: V3EpisodeResponse) => Promise<void>;
+  onDynamicReply?: (answer: string, forceCheckpoint: boolean) => Promise<EpisodeOneConversationTurn>;
 }
 
 export function V3ChoiceInteraction({ scene, assistanceMode, glossary, response, onSubmit }: SharedInteractionProps & { scene: V3ChoiceScene }) {
@@ -123,7 +128,15 @@ export function V3SentenceBuildInteraction({ scene, assistanceMode, glossary, re
   );
 }
 
-export function V3FreeResponseInteraction({ scene, assistanceMode, glossary, response, onSubmit }: SharedInteractionProps & { scene: V3FreeResponseScene }) {
+export function V3FreeResponseInteraction(props: SharedInteractionProps & { scene: V3FreeResponseScene }) {
+  const { scene, assistanceMode, glossary, storyChoices, response, onDynamicReply } = props;
+  if (scene.intent === 'episode-one-availability' && storyChoices && onDynamicReply) {
+    return <V3EpisodeOneConversation scene={scene} assistanceMode={assistanceMode} glossary={glossary} storyChoices={storyChoices} response={response} onReply={onDynamicReply} />;
+  }
+  return <StandardFreeResponseInteraction {...props} />;
+}
+
+function StandardFreeResponseInteraction({ scene, assistanceMode, glossary, response, onSubmit }: SharedInteractionProps & { scene: V3FreeResponseScene }) {
   const theme = useTheme();
   const [answer, setAnswer] = useState(response?.answer ?? '');
   const [saving, setSaving] = useState(false);
