@@ -1,7 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { useCallback, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { useCallback, useMemo, useState } from 'react';
+import { Pressable, StyleSheet, View } from 'react-native';
 
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
@@ -9,33 +9,44 @@ import { LoadingState } from '@/components/common/loading-state';
 import { ScreenContainer } from '@/components/common/screen-container';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
-import { episodeOne } from '@/features/lesson-v3/episode-one';
+import { v3EpisodeList } from '@/features/lesson-v3/episodes';
 import { useTheme } from '@/hooks/use-theme';
-import { getV3EpisodeProgress } from '@/services/database/lesson-v3-repository';
+import { getV3EpisodeProgresses } from '@/services/database/lesson-v3-repository';
 import { useAppStore } from '@/store/app-store';
 import type { V3EpisodeProgress } from '@/types/lesson-v3';
 
 export default function HomeScreen() {
   const theme = useTheme();
   const learner = useAppStore((state) => state.v3Learner);
-  const [progress, setProgress] = useState<V3EpisodeProgress>();
+  const [progresses, setProgresses] = useState<V3EpisodeProgress[]>([]);
   const [loading, setLoading] = useState(true);
 
   const load = useCallback(async () => {
     try {
-      setProgress(await getV3EpisodeProgress(episodeOne.id));
+      setProgresses(await getV3EpisodeProgresses());
     } finally {
       setLoading(false);
     }
   }, []);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
 
-  if (loading || !progress) return <ScreenContainer scroll={false}><LoadingState label="Finding your place in the story…" /></ScreenContainer>;
+  const progressByEpisode = useMemo(() => new Map(progresses.map((progress) => [progress.episodeId, progress])), [progresses]);
+  const currentEpisode = v3EpisodeList.find((episode) => !progressByEpisode.get(episode.id)?.completedAt) ?? v3EpisodeList[v3EpisodeList.length - 1];
+  const progress = progressByEpisode.get(currentEpisode.id) ?? {
+    episodeId: currentEpisode.id,
+    currentSceneIndex: 0,
+    responses: [],
+    learnedItemIds: [],
+    storyChoices: {},
+    updatedAt: new Date().toISOString(),
+  };
+
+  if (loading) return <ScreenContainer scroll={false}><LoadingState label="Finding your place in the story…" /></ScreenContainer>;
 
   const started = progress.currentSceneIndex > 0;
   const completed = Boolean(progress.completedAt);
-  const learned = episodeOne.learningObjectives.filter((item) => progress.learnedItemIds.includes(item.id)).slice(0, 4);
-  const sceneProgress = Math.round((progress.currentSceneIndex / (episodeOne.scenes.length - 1)) * 100);
+  const learned = currentEpisode.learningObjectives.filter((item) => progress.learnedItemIds.includes(item.id)).slice(0, 4);
+  const sceneProgress = Math.round((progress.currentSceneIndex / (currentEpisode.scenes.length - 1)) * 100);
   const assistance = learner?.assistanceMode === 'guided' ? 'Guided support' : learner?.assistanceMode === 'supported' ? 'Help on tap' : 'Japanese first';
 
   return (
@@ -56,19 +67,19 @@ export default function HomeScreen() {
       <Card style={[styles.episodeCard, { borderColor: theme.primary }]}>
         <View style={styles.arcRow}>
           <View style={styles.arcCopy}>
-            <ThemedText type="smallBold" style={{ color: theme.primary }}>{episodeOne.arcTitleJapanese}</ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">{episodeOne.arcTitleEnglish}</ThemedText>
+            <ThemedText type="smallBold" style={{ color: theme.primary }}>{currentEpisode.arcTitleJapanese}</ThemedText>
+            <ThemedText type="small" themeColor="textSecondary">{currentEpisode.arcTitleEnglish}</ThemedText>
           </View>
           <View style={[styles.time, { backgroundColor: theme.primarySoft }]}>
             <Ionicons name="time-outline" size={17} color={theme.primary} />
-            <ThemedText type="smallBold" style={{ color: theme.primary }}>{episodeOne.estimatedMinutes} min</ThemedText>
+            <ThemedText type="smallBold" style={{ color: theme.primary }}>{currentEpisode.estimatedMinutes} min</ThemedText>
           </View>
         </View>
 
         <View style={styles.episodeTitle}>
-          <ThemedText type="smallBold" themeColor="textSecondary">EPISODE 1</ThemedText>
-          <ThemedText type="subtitle">{episodeOne.titleJapanese}</ThemedText>
-          <ThemedText type="heading" themeColor="textSecondary">{episodeOne.titleEnglish}</ThemedText>
+          <ThemedText type="smallBold" themeColor="textSecondary">EPISODE {currentEpisode.episodeNumber} · {currentEpisode.level}</ThemedText>
+          <ThemedText type="subtitle">{currentEpisode.titleJapanese}</ThemedText>
+          <ThemedText type="heading" themeColor="textSecondary">{currentEpisode.titleEnglish}</ThemedText>
         </View>
 
         {started && !completed ? (
@@ -80,12 +91,12 @@ export default function HomeScreen() {
 
         <ThemedText themeColor="textSecondary">
           {completed
-            ? 'You and Yuki agreed to meet tomorrow at Shinjuku Station.'
-            : 'A message from an unknown number pulls you into your first conversation in Japan.'}
+            ? 'This chapter is complete. You can revisit it or continue from the course map below.'
+            : `${currentEpisode.curriculumGrammarIds.length} curriculum targets and ${currentEpisode.examSkills.length} exam skills are woven into this chapter.`}
         </ThemedText>
         <AppButton
-          label={completed ? 'Revisit the ending' : started ? 'Continue Episode 1' : 'Start Episode 1'}
-          onPress={() => router.push(`/episode/${episodeOne.id}` as Href)}
+          label={completed ? 'Revisit the ending' : started ? `Continue Episode ${currentEpisode.episodeNumber}` : `Start Episode ${currentEpisode.episodeNumber}`}
+          onPress={() => router.push(`/episode/${currentEpisode.id}` as Href)}
         />
       </Card>
 
@@ -111,6 +122,37 @@ export default function HomeScreen() {
           <ThemedText themeColor="textSecondary" style={styles.noteCopy}>Tap unfamiliar Japanese inside the story for its reading and meaning.</ThemedText>
         </View>
       )}
+
+      <View style={styles.secondary}>
+        <ThemedText type="smallBold" themeColor="textSecondary">50-EPISODE JLPT COURSE MAP</ThemedText>
+        {(['N5', 'N4'] as const).map((level) => (
+          <View key={level} style={styles.courseLevel}>
+            <ThemedText type="heading">{level} story arc</ThemedText>
+            {v3EpisodeList.filter((episode) => episode.level === level).map((episode) => {
+              const episodeProgress = progressByEpisode.get(episode.id);
+              const isCurrent = episode.id === currentEpisode.id;
+              return (
+                <Pressable
+                  key={episode.id}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Open Episode ${episode.episodeNumber}: ${episode.titleEnglish}`}
+                  onPress={() => router.push(`/episode/${episode.id}` as Href)}
+                  style={[styles.courseRow, { borderColor: isCurrent ? theme.primary : theme.border, backgroundColor: theme.surface }]}
+                >
+                  <View style={[styles.episodeNumber, { backgroundColor: isCurrent ? theme.primarySoft : theme.background }]}>
+                    <ThemedText type="smallBold" style={{ color: isCurrent ? theme.primary : theme.textSecondary }}>{episode.episodeNumber}</ThemedText>
+                  </View>
+                  <View style={styles.courseCopy}>
+                    <ThemedText type="heading">{episode.titleJapanese}</ThemedText>
+                    <ThemedText type="small" themeColor="textSecondary">{episode.titleEnglish} · {episode.estimatedMinutes} min</ThemedText>
+                  </View>
+                  <Ionicons name={episodeProgress?.completedAt ? 'checkmark-circle' : episodeProgress?.currentSceneIndex ? 'play-circle' : 'chevron-forward'} size={22} color={episodeProgress?.completedAt ? theme.success : theme.primary} />
+                </Pressable>
+              );
+            })}
+          </View>
+        ))}
+      </View>
     </ScreenContainer>
   );
 }
@@ -132,4 +174,8 @@ const styles = StyleSheet.create({
   learnedRow: { minHeight: 58, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: Spacing.three, paddingVertical: Spacing.two },
   newLearnerNote: { borderTopWidth: 1, borderBottomWidth: 1, flexDirection: 'row', alignItems: 'center', gap: Spacing.three, paddingVertical: Spacing.three },
   noteCopy: { flex: 1 },
+  courseLevel: { gap: Spacing.two },
+  courseRow: { minHeight: 70, borderWidth: 1, borderRadius: Radius.medium, padding: Spacing.two, flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
+  episodeNumber: { width: 42, height: 42, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center' },
+  courseCopy: { flex: 1, minWidth: 0 },
 });

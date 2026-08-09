@@ -36,6 +36,14 @@ export default function TabLayout() {
         options={{ title: 'Home', tabBarAccessibilityLabel: 'Home tab', tabBarIcon: tabIcon('home-outline') }}
       />
       <Tabs.Screen
+        name="flashcards"
+        options={{ title: 'Flashcards', tabBarAccessibilityLabel: 'Vocabulary flashcards tab', tabBarIcon: tabIcon('albums-outline') }}
+      />
+      <Tabs.Screen
+        name="exams"
+        options={{ title: 'Exams', tabBarAccessibilityLabel: 'JLPT mock exams tab', tabBarIcon: tabIcon('document-text-outline') }}
+      />
+      <Tabs.Screen
         name="settings"
         options={{ title: 'Settings', tabBarAccessibilityLabel: 'Settings tab', tabBarIcon: tabIcon('settings-outline') }}
       />

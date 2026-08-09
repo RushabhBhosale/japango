@@ -191,16 +191,23 @@ export type V3Scene =
 
 export interface V3Episode {
   id: string;
+  episodeNumber: number;
+  level: 'N5' | 'N4';
   arcId: string;
   arcTitleJapanese: string;
   arcTitleEnglish: string;
   titleJapanese: string;
   titleEnglish: string;
   estimatedMinutes: number;
+  /** Canonical curriculum records covered by the episode. */
+  curriculumGrammarIds: string[];
+  /** JLPT task families deliberately practised inside the episode. */
+  examSkills: string[];
   characters: V3Character[];
   learningObjectives: V3LearningObjective[];
   scenes: V3Scene[];
   nextEpisode: {
+    id?: string;
     titleJapanese: string;
     titleEnglish: string;
     setup: string;

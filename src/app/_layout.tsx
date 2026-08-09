@@ -47,6 +47,8 @@ export default function RootLayout() {
         <Stack.Screen name="index" />
         <Stack.Screen name="onboarding" />
         <Stack.Screen name="episode/[episodeId]" />
+        <Stack.Screen name="exam/[examId]" />
+        <Stack.Screen name="unit-test/[unitTestId]" />
         <Stack.Screen name="(tabs)" />
       </Stack>
       <BackgroundContentIndicator state={contentInstallation} />

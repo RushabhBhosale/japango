@@ -149,7 +149,7 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
     });
   };
 
-  if (!progress && !error) return <ScreenContainer scroll={false}><LoadingState label="Opening Episode 1…" /></ScreenContainer>;
+  if (!progress && !error) return <ScreenContainer scroll={false}><LoadingState label={`Opening Episode ${episode.episodeNumber}…`} /></ScreenContainer>;
   if (!progress) return <ScreenContainer><ThemedText>{error}</ThemedText><AppButton label="Back home" onPress={() => router.replace('/(tabs)')} /></ScreenContainer>;
 
   const interactionNeedsResponse = ['interaction', 'sentenceBuild', 'freeResponse'].includes(scene.type);
@@ -210,7 +210,7 @@ function SceneContent({ scene, episode, assistanceMode, glossary, progress, resp
       <View style={[styles.phoneLine, { backgroundColor: theme.primarySoft }]}><Ionicons name="chatbubble-ellipses-outline" size={24} color={theme.primary} /><ThemedText type="smallBold" style={{ color: theme.primary }}>New message · Unknown</ThemedText></View>
     </View>
   );
-  if (scene.type === 'chat') return <V3Chat messages={scene.id === 'meeting-place' ? episodeOneMeetingCheckpoint(progress.storyChoices) : scene.messages} assistanceMode={assistanceMode} glossary={glossary} />;
+  if (scene.type === 'chat') return <V3Chat messages={episode.id === 'episode-1' && scene.id === 'meeting-place' ? episodeOneMeetingCheckpoint(progress.storyChoices) : scene.messages} assistanceMode={assistanceMode} glossary={glossary} />;
   if (scene.type === 'interaction') return <V3ChoiceInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} response={response} onSubmit={onSubmit} />;
   if (scene.type === 'sentenceBuild') return <V3SentenceBuildInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} response={response} onSubmit={onSubmit} />;
   if (scene.type === 'freeResponse') return <V3FreeResponseInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} storyChoices={progress.storyChoices} response={response} onSubmit={onSubmit} onDynamicReply={onDynamicReply} />;
@@ -251,14 +251,20 @@ function Completion({ episode, progress }: { episode: V3Episode; progress: V3Epi
         {learned.length ? <View style={styles.learnedList}>{learned.map((item) => <View key={item.id} style={styles.learnedRow}><ThemedText type="japanese">{item.japanese}</ThemedText><ThemedText type="small" themeColor="textSecondary">{item.meaning}</ThemedText></View>)}</View> : null}
         <ThemedText type="smallBold" style={{ color: theme.success }}>You used Japanese on your own.</ThemedText>
       </Card>
-      <Card style={[styles.nextCard, { borderColor: theme.primary }]}>
+      <Card style={[styles.nextCard, { borderColor: theme.primary }]}> 
         <ThemedText type="smallBold" style={{ color: theme.primary }}>NEXT EPISODE</ThemedText>
         <ThemedText type="subtitle">{episode.nextEpisode.titleJapanese}</ThemedText>
         <ThemedText type="heading">{episode.nextEpisode.titleEnglish}</ThemedText>
         <ThemedText themeColor="textSecondary">{episode.nextEpisode.setup}</ThemedText>
         <ThemedText>{episode.nextEpisode.hook}</ThemedText>
-        <AppButton label="Episode 2 coming next" disabled onPress={() => undefined} />
+        {episode.nextEpisode.id ? (
+          <AppButton
+            label={`Start Episode ${episode.episodeNumber + 1}`}
+            onPress={() => router.replace(`/episode/${episode.nextEpisode.id}`)}
+          />
+        ) : null}
       </Card>
+      {episode.id === 'episode-3' ? <AppButton label="Start Unit 1 test" onPress={() => router.replace('/unit-test/unit-n5-01-episodes-1-3')} /> : null}
       <AppButton label="Back to home" variant="secondary" onPress={() => router.replace('/(tabs)')} />
     </View>
   );

@@ -49,12 +49,21 @@ const wara = { surface: '笑', reading: 'わら', itemId: 'v3-expression-wara' }
 
 export const episodeOne: V3Episode = {
   id: 'episode-1',
+  episodeNumber: 1,
+  level: 'N5',
   arcId: 'new-life-in-japan',
   arcTitleJapanese: '日本での新生活',
   arcTitleEnglish: 'New Life in Japan',
   titleJapanese: '知らないメッセージ',
   titleEnglish: "A Message From Someone You Don't Know",
   estimatedMinutes: 10,
+  curriculumGrammarIds: [
+    'grammar-mou',
+    'grammar-mada',
+    'grammar-mada-teimasen',
+    'grammar-ni',
+  ],
+  examSkills: ['listening-task', 'appropriate-response', 'grammar-cloze'],
   characters: [
     {
       id: 'yuki',
@@ -179,6 +188,7 @@ export const episodeOne: V3Episode = {
     { id: 'complete', type: 'completion' },
   ],
   nextEpisode: {
+    id: 'episode-2',
     titleJapanese: '新宿で会おう',
     titleEnglish: "Let's Meet in Shinjuku",
     setup: "You and Yuki have made plans to meet at Shinjuku Station.",

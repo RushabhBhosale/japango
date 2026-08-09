@@ -1,12 +1,15 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import { Modal, Pressable, StyleSheet, View } from 'react-native';
 
+import { AppButton } from '@/components/common/app-button';
 import { ThemedText, type ThemedTextProps } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
+import { getFuriganaPreference, subscribeToFuriganaPreference } from '@/services/database/japanese-text-repository';
 import { JapaneseVoiceUnavailableError, speakJapanese } from '@/services/speech/japanese-speech';
 import type { AssistanceMode, V3JapaneseLine } from '@/types/lesson-v3';
+import type { FuriganaPreference } from '@/types/learning';
 
 interface V3JapaneseLineProps {
   line: V3JapaneseLine;
@@ -18,14 +21,28 @@ interface V3JapaneseLineProps {
 
 export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'japanese', showAudio = false }: V3JapaneseLineProps) {
   const theme = useTheme();
-  // Assistance changes furigana and response support, never whether a story
-  // line is translated by default. The learner stays in Japanese first and
-  // can reveal meaning only when it is useful.
-  const [helpRevealed, setHelpRevealed] = useState(false);
+  const [furiganaPreference, setFuriganaPreference] = useState<FuriganaPreference>('off');
   const [audioError, setAudioError] = useState(false);
   const [openedTokenId, setOpenedTokenId] = useState<string>();
-  const openedToken = line.text.tokens.find((token) => token.id === openedTokenId);
-  const tokenHelp = openedToken?.vocabularyId ? glossary[openedToken.vocabularyId] : undefined;
+  const [meaningTokenId, setMeaningTokenId] = useState<string>();
+  const pendingTapTokenId = useRef<string | undefined>(undefined);
+  const pendingTapTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const meaningToken = line.text.tokens.find((token) => token.id === meaningTokenId);
+  const meaning = meaningToken?.vocabularyId ? glossary[meaningToken.vocabularyId] : undefined;
+
+  useEffect(() => {
+    let active = true;
+    void getFuriganaPreference().then((preference) => {
+      if (active) setFuriganaPreference(preference);
+    }).catch(() => undefined);
+    return () => { active = false; };
+  }, []);
+
+  useEffect(() => subscribeToFuriganaPreference(setFuriganaPreference), []);
+
+  useEffect(() => () => {
+    if (pendingTapTimer.current) clearTimeout(pendingTapTimer.current);
+  }, []);
 
   const play = async () => {
     setAudioError(false);
@@ -36,6 +53,23 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
     }
   };
 
+  const handleTokenPress = (tokenId: string) => {
+    setOpenedTokenId(tokenId);
+    if (pendingTapTokenId.current === tokenId) {
+      if (pendingTapTimer.current) clearTimeout(pendingTapTimer.current);
+      pendingTapTokenId.current = undefined;
+      pendingTapTimer.current = undefined;
+      setMeaningTokenId(tokenId);
+      return;
+    }
+    if (pendingTapTimer.current) clearTimeout(pendingTapTimer.current);
+    pendingTapTokenId.current = tokenId;
+    pendingTapTimer.current = setTimeout(() => {
+      pendingTapTokenId.current = undefined;
+      pendingTapTimer.current = undefined;
+    }, 350);
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.japaneseRow}>
@@ -43,18 +77,19 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
           <View style={styles.tokens}>
             {line.text.tokens.map((token) => {
               const reading = token.reading ?? (token.vocabularyId ? glossary[token.vocabularyId]?.reading : undefined);
-              const hasHelp = Boolean(reading || tokenHelp?.meaning || (token.vocabularyId && glossary[token.vocabularyId]?.meaning));
               const tokenMeaning = token.vocabularyId ? glossary[token.vocabularyId]?.meaning : undefined;
+              const hasHelp = Boolean(reading || tokenMeaning);
+              const showFurigana = Boolean(reading) && (furiganaPreference === 'always' || openedTokenId === token.id);
+              const underlined = token.kind === 'word' && Boolean(reading) && /[\u3400-\u9fff々ヶ]/u.test(token.surface);
               return (
                 <Pressable
                   key={token.id}
                   disabled={!hasHelp}
-                  onPress={() => setOpenedTokenId((current) => current === token.id ? undefined : token.id)}
+                  onPress={() => handleTokenPress(token.id)}
                   style={styles.token}
                 >
-                  {assistanceMode === 'guided' && reading ? <ThemedText type="small" style={[styles.reading, { color: theme.textSecondary }]}>{reading}</ThemedText> : null}
-                  <ThemedText type={type}>{token.surface}</ThemedText>
-                  {openedTokenId === token.id && tokenMeaning ? <ThemedText type="small" style={{ color: theme.primary }}>{tokenMeaning}</ThemedText> : null}
+                  {showFurigana && reading ? <ThemedText type="small" style={[styles.reading, { color: theme.textSecondary }]}>{reading}</ThemedText> : null}
+                  <ThemedText type={type} style={underlined ? styles.underlinedWord : undefined}>{token.surface}</ThemedText>
                 </Pressable>
               );
             })}
@@ -72,13 +107,17 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
           </Pressable>
         ) : null}
       </View>
-      {line.englishHelp && helpRevealed ? <ThemedText type="small" themeColor="textSecondary">{line.englishHelp}</ThemedText> : null}
-      {line.englishHelp && !helpRevealed ? (
-        <Pressable accessibilityRole="button" onPress={() => setHelpRevealed(true)} hitSlop={8}>
-          <ThemedText type="smallBold" style={{ color: theme.primary }}>Show meaning</ThemedText>
-        </Pressable>
-      ) : null}
       {audioError ? <ThemedText type="small" themeColor="textSecondary">A Japanese system voice is not available right now.</ThemedText> : null}
+      <Modal visible={Boolean(meaningToken && meaning)} transparent animationType="fade" onRequestClose={() => setMeaningTokenId(undefined)}>
+        <Pressable style={styles.backdrop} onPress={() => setMeaningTokenId(undefined)} accessibilityLabel="Close word meaning">
+          <Pressable style={[styles.meaningSheet, { backgroundColor: theme.surface }]} onPress={() => undefined}>
+            {meaningToken ? <ThemedText type={type}>{meaningToken.surface}</ThemedText> : null}
+            {meaningToken?.reading ? <ThemedText type="heading" style={{ color: theme.primary }}>{meaningToken.reading}</ThemedText> : null}
+            {meaning ? <ThemedText themeColor="textSecondary">{meaning.meaning}</ThemedText> : null}
+            <AppButton label="Close" variant="quiet" onPress={() => setMeaningTokenId(undefined)} />
+          </Pressable>
+        </Pressable>
+      </Modal>
     </View>
   );
 }
@@ -90,5 +129,8 @@ const styles = StyleSheet.create({
   tokens: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-end' },
   token: { alignItems: 'center' },
   reading: { lineHeight: 15 },
+  underlinedWord: { textDecorationLine: 'underline', textDecorationColor: '#8B5CF6' },
   audioButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  backdrop: { backgroundColor: 'rgba(0, 0, 0, 0.38)', flex: 1, justifyContent: 'flex-end' },
+  meaningSheet: { borderTopLeftRadius: Radius.large, borderTopRightRadius: Radius.large, gap: Spacing.two, padding: Spacing.four },
 });
