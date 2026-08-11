@@ -5,6 +5,7 @@ import {
   ScrollView,
   StyleSheet,
   View,
+  useWindowDimensions,
   type StyleProp,
   type ViewStyle,
 } from 'react-native';
@@ -18,6 +19,8 @@ interface ScreenContainerProps extends PropsWithChildren {
   keyboardAware?: boolean;
   contentStyle?: StyleProp<ViewStyle>;
   testID?: string;
+  maxWidth?: number;
+  includeBottomSafeArea?: boolean;
 }
 
 export function ScreenContainer({
@@ -26,11 +29,15 @@ export function ScreenContainer({
   keyboardAware = false,
   contentStyle,
   testID,
+  maxWidth = MaxContentWidth,
+  includeBottomSafeArea = false,
 }: ScreenContainerProps) {
   const theme = useTheme();
+  const { width } = useWindowDimensions();
+  const horizontalPadding = width >= 900 ? Spacing.five : width >= 600 ? Spacing.four : Spacing.three;
   const content = (
     <View style={styles.centerer}>
-      <View style={[styles.content, contentStyle]}>{children}</View>
+      <View style={[styles.content, { maxWidth, paddingHorizontal: horizontalPadding }, contentStyle]}>{children}</View>
     </View>
   );
 
@@ -49,7 +56,7 @@ export function ScreenContainer({
   );
 
   return (
-    <SafeAreaView style={[styles.safeArea, { backgroundColor: theme.background }]} edges={['top', 'left', 'right']}>
+    <SafeAreaView style={[styles.safeArea, { backgroundColor: theme.background }]} edges={includeBottomSafeArea ? ['top', 'left', 'right', 'bottom'] : ['top', 'left', 'right']}>
       {keyboardAware ? (
         <KeyboardAvoidingView
           style={styles.fixed}
@@ -70,10 +77,9 @@ const styles = StyleSheet.create({
   centerer: { flex: 1, alignItems: 'center' },
   content: {
     width: '100%',
-    maxWidth: MaxContentWidth,
-    paddingHorizontal: Spacing.three,
-    paddingTop: Spacing.three,
+    minWidth: 0,
+    paddingTop: Spacing.four,
     paddingBottom: Spacing.five,
-    gap: Spacing.three,
+    gap: Spacing.four,
   },
 });

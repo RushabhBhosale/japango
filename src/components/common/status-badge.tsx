@@ -26,5 +26,5 @@ export function StatusBadge({ status }: { status: MasteryStatus }) {
 }
 
 const styles = StyleSheet.create({
-  badge: { alignSelf: 'flex-start', paddingHorizontal: 10, paddingVertical: 4, borderRadius: Radius.pill },
+  badge: { alignSelf: 'flex-start', borderRadius: Radius.pill, flexShrink: 0, maxWidth: '100%', paddingHorizontal: 10, paddingVertical: 4 },
 });

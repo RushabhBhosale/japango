@@ -8,7 +8,7 @@ import { ThemedText } from '../themed-text';
 interface AppButtonProps {
   label: string;
   onPress: () => void;
-  variant?: 'primary' | 'secondary' | 'quiet';
+  variant?: 'primary' | 'secondary' | 'quiet' | 'danger';
   disabled?: boolean;
   loading?: boolean;
   accessibilityLabel?: string;
@@ -26,14 +26,17 @@ export function AppButton({
 }: AppButtonProps) {
   const theme = useTheme();
   const isPrimary = variant === 'primary';
+  const isDanger = variant === 'danger';
   const backgroundColor = disabled
     ? theme.backgroundElement
     : isPrimary
       ? theme.primary
+      : isDanger
+        ? theme.errorSoft
       : variant === 'secondary'
         ? theme.primarySoft
         : 'transparent';
-  const textColor = disabled ? theme.textSecondary : isPrimary ? theme.onPrimary : theme.primary;
+  const textColor = disabled ? theme.textSecondary : isPrimary ? theme.onPrimary : isDanger ? theme.error : theme.primary;
 
   return (
     <Pressable
@@ -44,15 +47,15 @@ export function AppButton({
       onPress={onPress}
       style={({ pressed }) => [
         styles.button,
-        { backgroundColor, borderColor: disabled ? theme.border : isPrimary ? theme.primary : theme.border },
+        { backgroundColor, borderColor: disabled ? theme.border : isPrimary ? theme.primary : isDanger ? theme.error : theme.border },
         variant === 'quiet' && styles.quiet,
-        pressed && !disabled && { backgroundColor: isPrimary ? theme.primaryPressed : theme.backgroundSelected },
+        pressed && !disabled && { backgroundColor: isPrimary ? theme.primaryPressed : isDanger ? theme.errorSoft : theme.backgroundSelected },
         (disabled || loading) && styles.disabled,
         style,
       ]}>
       <View style={styles.content}>
         {loading && <ActivityIndicator color={textColor} size="small" />}
-        <ThemedText style={[styles.label, { color: textColor }]}>{label}</ThemedText>
+        <ThemedText type="button" style={[styles.label, { color: textColor }]}>{label}</ThemedText>
       </View>
     </Pressable>
   );
@@ -60,16 +63,18 @@ export function AppButton({
 
 const styles = StyleSheet.create({
   button: {
-    minHeight: 50,
+    alignSelf: 'stretch',
+    minHeight: 48,
+    minWidth: 0,
     borderRadius: Radius.medium,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: Spacing.three,
-    paddingVertical: 12,
+    paddingVertical: Spacing.twoHalf,
   },
   quiet: { borderColor: 'transparent' },
-  content: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
-  label: { fontWeight: '700', textAlign: 'center' },
+  content: { alignItems: 'center', flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, justifyContent: 'center', minWidth: 0, maxWidth: '100%' },
+  label: { textAlign: 'center' },
   disabled: { opacity: 0.72 },
 });

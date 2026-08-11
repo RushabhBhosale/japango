@@ -47,11 +47,11 @@ export function V3Chat({ messages, assistanceMode, glossary }: V3ChatProps) {
 }
 
 const styles = StyleSheet.create({
-  chat: { width: '100%', gap: Spacing.three },
-  messageRow: { width: '94%', flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.two },
+  chat: { gap: Spacing.three, minWidth: 0, width: '100%' },
+  messageRow: { alignItems: 'flex-start', flexDirection: 'row', gap: Spacing.two, maxWidth: '94%', minWidth: 0, width: '100%' },
   learnerRow: { alignSelf: 'flex-end', flexDirection: 'row-reverse' },
-  avatar: { width: 38, height: 38, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center', marginTop: 22 },
+  avatar: { alignItems: 'center', borderRadius: Radius.pill, flexShrink: 0, height: 38, justifyContent: 'center', marginTop: 22, width: 38 },
   bubbleColumn: { flex: 1, minWidth: 0, gap: Spacing.one },
   learnerName: { textAlign: 'right' },
-  bubble: { borderWidth: 1, borderRadius: Radius.large, paddingHorizontal: Spacing.three, paddingVertical: 12 },
+  bubble: { borderRadius: Radius.large, borderWidth: 1, maxWidth: '100%', minWidth: 0, paddingHorizontal: Spacing.three, paddingVertical: 12 },
 });

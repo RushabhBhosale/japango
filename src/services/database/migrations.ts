@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 22;
+export const CURRENT_DATABASE_VERSION = 23;
 
 export interface DatabaseMigration {
   version: number;
@@ -1619,6 +1619,52 @@ const versionTwentyTwoSql = `
     ADD COLUMN story_choices_json TEXT NOT NULL DEFAULT '{}';
 `;
 
+// Daily Reading content is server-authored and cached verbatim for offline use.
+// Learner-owned answers and vocabulary signals remain separate from that cache.
+const versionTwentyThreeSql = `
+  CREATE TABLE IF NOT EXISTS daily_readings (
+    id TEXT PRIMARY KEY NOT NULL,
+    reading_date TEXT NOT NULL,
+    level TEXT NOT NULL CHECK (level IN ('N5', 'N4')),
+    content_json TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    cached_at TEXT NOT NULL,
+    UNIQUE (reading_date, level)
+  );
+  CREATE INDEX IF NOT EXISTS daily_readings_date_idx
+    ON daily_readings(reading_date DESC, level);
+
+  CREATE TABLE IF NOT EXISTS daily_reading_progress (
+    reading_id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    reading_date TEXT NOT NULL,
+    opened_at TEXT,
+    answers_json TEXT NOT NULL DEFAULT '[]',
+    vocabulary_tapped_json TEXT NOT NULL DEFAULT '{}',
+    saved_vocabulary_ids_json TEXT NOT NULL DEFAULT '[]',
+    score INTEGER CHECK (score BETWEEN 0 AND 100),
+    completed_at TEXT,
+    updated_at TEXT NOT NULL,
+    FOREIGN KEY (reading_id) REFERENCES daily_readings(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS daily_reading_completion_idx
+    ON daily_reading_progress(user_id, completed_at, reading_date DESC);
+
+  CREATE TABLE IF NOT EXISTS daily_reading_vocabulary_signals (
+    user_id TEXT NOT NULL,
+    vocabulary_id TEXT NOT NULL,
+    tap_count INTEGER NOT NULL DEFAULT 0 CHECK (tap_count >= 0),
+    incorrect_count INTEGER NOT NULL DEFAULT 0 CHECK (incorrect_count >= 0),
+    last_signaled_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, vocabulary_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (vocabulary_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS daily_reading_vocabulary_weak_idx
+    ON daily_reading_vocabulary_signals(user_id, incorrect_count DESC, tap_count DESC, last_signaled_at DESC);
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1642,6 +1688,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 20, sql: versionTwentySql },
   { version: 21, sql: versionTwentyOneSql },
   { version: 22, sql: versionTwentyTwoSql },
+  { version: 23, sql: versionTwentyThreeSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

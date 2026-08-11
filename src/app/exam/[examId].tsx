@@ -4,11 +4,12 @@ import { useEffect, useMemo, useState } from 'react';
 import { Alert, Pressable, StyleSheet, View } from 'react-native';
 
 import { AppButton } from '@/components/common/app-button';
-import { Card } from '@/components/common/card';
 import { LoadingState } from '@/components/common/loading-state';
+import { ProgressBar } from '@/components/common/progress-bar';
 import { ScreenContainer } from '@/components/common/screen-container';
+import { InteractiveJapaneseText } from '@/components/lesson/japanese-text';
 import { ThemedText } from '@/components/themed-text';
-import { Radius, Spacing } from '@/constants/theme';
+import { Radius, ReadingContentWidth, Spacing } from '@/constants/theme';
 import { getMockExam, getMockExamListening, getMockExamQuestion, getMockExamReading } from '@/features/mock-exam/mock-exam-catalog';
 import { createMockExamAttempt, scoreMockExam } from '@/features/mock-exam/mock-exam-session';
 import { useTheme } from '@/hooks/use-theme';
@@ -24,7 +25,9 @@ const sectionInstruction: Record<MockExamDomain, string> = {
   listening: '問題　話を 聞いて、いちばん いい ものを 一つ えらんでください。',
 };
 
-function clock(seconds: number): string { return `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${(seconds % 60).toString().padStart(2, '0')}`; }
+function clock(seconds: number): string {
+  return `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${(seconds % 60).toString().padStart(2, '0')}`;
+}
 
 export default function MockExamScreen() {
   const theme = useTheme();
@@ -60,40 +63,162 @@ export default function MockExamScreen() {
 
   useEffect(() => { if (attempt) void saveMockExamAttempt(attempt); }, [attempt]);
 
-  if (!exam) return <ScreenContainer><ThemedText>この 模擬試験を 開くことが できません。</ThemedText><AppButton label="模擬試験へ 戻る" onPress={() => router.replace('/(tabs)/exams')} /></ScreenContainer>;
+  if (!exam) return <ScreenContainer><InteractiveJapaneseText>この 模擬試験を 開くことが できません。</InteractiveJapaneseText><AppButton label="模擬試験へ 戻る" onPress={() => router.replace('/(tabs)/exams')} /></ScreenContainer>;
   if (!loaded || !attempt) return <ScreenContainer scroll={false}><LoadingState label="模擬試験を 準備しています…" /></ScreenContainer>;
   if (attempt.completedAt) return <ExamResults examId={exam.id} attempt={attempt} />;
 
   const placement = placements[attempt.questionIndex];
   const question = placement ? getMockExamQuestion(placement.questionId) : undefined;
-  if (!placement || !question) return <ScreenContainer><ThemedText>問題を 読み込むことが できません。</ThemedText></ScreenContainer>;
+  if (!placement || !question) return <ScreenContainer><InteractiveJapaneseText>問題を 読み込むことが できません。</InteractiveJapaneseText></ScreenContainer>;
   const section = exam.sections.find((value) => value.id === placement.sectionId);
   const reading = placement.parentType === 'reading-passage' ? getMockExamReading(placement.parentId ?? '') : undefined;
   const listening = placement.parentType === 'listening-activity' ? getMockExamListening(placement.parentId ?? '') : undefined;
-  const remaining = Math.max(0, (exam.timing.totalMinutes ?? 0) * 60 - attempt.elapsedSeconds);
+  const remaining = Math.max(0, timeLimitSeconds - attempt.elapsedSeconds);
   const selected = attempt.selectedAnswers[question.id];
   const update = (patch: Partial<MockExamAttempt>) => setAttempt((current) => current ? { ...current, ...patch } : current);
   const choose = (choiceId: string) => update({ selectedAnswers: { ...attempt.selectedAnswers, [question.id]: choiceId } });
-  const submit = () => Alert.alert('提出しますか', '答えと説明は、このあと結果画面で確認できます。', [{ text: '続ける', style: 'cancel' }, { text: '提出する', onPress: () => update({ completedAt: new Date().toISOString(), paused: true }) }]);
+  const submit = () => Alert.alert('提出しますか', '答えと説明は、このあと結果画面で確認できます。', [
+    { text: '続ける', style: 'cancel' },
+    { text: '提出する', onPress: () => update({ completedAt: new Date().toISOString(), paused: true }) },
+  ]);
+  const progressValue = ((attempt.questionIndex + 1) / placements.length) * 100;
 
   return (
-    <ScreenContainer contentStyle={styles.screen}>
-      <View style={styles.topRow}><Pressable accessibilityRole="button" accessibilityLabel="Pause mock exam" onPress={() => update({ paused: !attempt.paused })} style={[styles.iconButton, { borderColor: theme.border, backgroundColor: theme.surface }]}><Ionicons name={attempt.paused ? 'play-outline' : 'pause-outline'} color={theme.primary} size={22} /></Pressable><View style={styles.timer}><ThemedText type="smallBold">{exam.timing.totalMinutes ? clock(remaining) : clock(attempt.elapsedSeconds)}</ThemedText><ThemedText type="small" themeColor="textSecondary">{attempt.questionIndex + 1} / {placements.length}</ThemedText></View><Pressable accessibilityRole="button" accessibilityLabel="Submit mock exam" onPress={submit} style={[styles.submitButton, { borderColor: theme.border }]}><ThemedText type="smallBold" style={{ color: theme.primary }}>提出</ThemedText></Pressable></View>
-      <Card><ThemedText type="smallBold" themeColor="primary">{section?.title ?? 'JLPT Mock Exam'}</ThemedText><ThemedText type="small" themeColor="textSecondary">{sectionInstruction[question.domain]}</ThemedText></Card>
-      {reading ? <Card><ThemedText type="smallBold">{reading.title}</ThemedText><ThemedText type="japanese">{reading.japanese}</ThemedText></Card> : null}
-      {listening ? <Card><ThemedText type="smallBold">{listening.title}</ThemedText><AppButton label="音声を 再生" variant="secondary" onPress={() => { setAudioError(false); void speakJapanese(listening.speechText).catch(() => setAudioError(true)); }} />{audioError ? <ThemedText type="small" themeColor="textSecondary">日本語の音声を再生できませんでした。端末の日本語音声を確認してください。</ThemedText> : null}</Card> : null}
-      <View style={styles.question}><ThemedText type="smallBold" themeColor="textSecondary">問題 {placement.position}</ThemedText><ThemedText type="heading">{question.prompt}</ThemedText></View>
-      <View style={styles.choices}>{question.choices.map((choice, index) => <Pressable key={choice.id} accessibilityRole="radio" accessibilityState={{ checked: selected === choice.id }} onPress={() => choose(choice.id)} style={[styles.choice, { borderColor: selected === choice.id ? theme.primary : theme.border, backgroundColor: selected === choice.id ? theme.primarySoft : theme.surface }]}><ThemedText type="smallBold" style={{ color: theme.primary }}>{index + 1}</ThemedText><ThemedText style={styles.choiceText}>{choice.text}</ThemedText></Pressable>)}</View>
-      <View style={styles.navigation}><AppButton label="前へ" variant="secondary" disabled={attempt.questionIndex === 0} onPress={() => update({ questionIndex: attempt.questionIndex - 1 })} style={styles.navButton} /><AppButton label={attempt.questionIndex === placements.length - 1 ? '提出する' : '次へ'} disabled={!selected} onPress={attempt.questionIndex === placements.length - 1 ? submit : () => update({ questionIndex: attempt.questionIndex + 1 })} style={styles.navButton} /></View>
+    <ScreenContainer maxWidth={ReadingContentWidth} includeBottomSafeArea contentStyle={styles.screen}>
+      <View style={styles.topRow}>
+        <Pressable accessibilityRole="button" accessibilityLabel={attempt.paused ? 'Resume mock exam' : 'Pause mock exam'} onPress={() => update({ paused: !attempt.paused })} style={[styles.iconButton, { borderColor: theme.border, backgroundColor: theme.surface }]}>
+          <Ionicons name={attempt.paused ? 'play-outline' : 'pause-outline'} color={theme.primary} size={22} />
+        </Pressable>
+        <View style={styles.timer}>
+          <ThemedText type="metadata" themeColor="textSecondary">{exam.level} mock exam</ThemedText>
+          <ThemedText type="heading">{exam.timing.totalMinutes ? clock(remaining) : clock(attempt.elapsedSeconds)}</ThemedText>
+        </View>
+        <Pressable accessibilityRole="button" accessibilityLabel="Submit mock exam" onPress={submit} style={[styles.submitButton, { borderColor: theme.border }]}>
+          <InteractiveJapaneseText type="smallBold" style={{ color: theme.primary }}>提出</InteractiveJapaneseText>
+        </Pressable>
+      </View>
+      <View style={styles.examProgress}>
+        <ThemedText type="small" themeColor="textSecondary">Question {attempt.questionIndex + 1} of {placements.length}</ThemedText>
+        <ProgressBar value={progressValue} accessibilityLabel={`Question ${attempt.questionIndex + 1} of ${placements.length}`} />
+      </View>
+
+      <View style={[styles.instruction, { backgroundColor: theme.backgroundElement, borderColor: theme.border }]}>
+        <ThemedText type="metadata" style={{ color: theme.primary }}>{section?.title ?? 'JLPT mock exam'}</ThemedText>
+        <InteractiveJapaneseText type="small" themeColor="textSecondary">{sectionInstruction[question.domain]}</InteractiveJapaneseText>
+      </View>
+
+      {reading ? (
+        <View style={[styles.passage, { borderColor: theme.border }]}>
+          <InteractiveJapaneseText type="cardTitle">{reading.title}</InteractiveJapaneseText>
+          <InteractiveJapaneseText type="japaneseReading">{reading.japanese}</InteractiveJapaneseText>
+        </View>
+      ) : null}
+
+      {listening ? (
+        <View style={[styles.listening, { borderColor: theme.border }]}>
+          <InteractiveJapaneseText type="cardTitle">{listening.title}</InteractiveJapaneseText>
+          <AppButton label="音声を 再生" variant="secondary" onPress={() => {
+            setAudioError(false);
+            void speakJapanese(listening.speechText).catch(() => setAudioError(true));
+          }} />
+          {audioError ? <InteractiveJapaneseText type="small" themeColor="textSecondary">日本語の音声を再生できませんでした。端末の日本語音声を確認してください。</InteractiveJapaneseText> : null}
+        </View>
+      ) : null}
+
+      <View style={styles.question}>
+        <ThemedText type="metadata" themeColor="textSecondary">Question {placement.position}</ThemedText>
+        <InteractiveJapaneseText type="section">{question.prompt}</InteractiveJapaneseText>
+      </View>
+
+      <View accessibilityRole="radiogroup" style={styles.choices}>
+        {question.choices.map((choice, index) => (
+          <Pressable
+            key={choice.id}
+            accessibilityRole="radio"
+            accessibilityState={{ checked: selected === choice.id }}
+            onPress={() => choose(choice.id)}
+            style={[styles.choice, { borderColor: selected === choice.id ? theme.primary : theme.border, backgroundColor: selected === choice.id ? theme.primarySoft : theme.surface }]}
+          >
+            <View style={[styles.choiceNumber, { borderColor: selected === choice.id ? theme.primary : theme.border }]}>
+              <ThemedText type="smallBold" style={{ color: theme.primary }}>{index + 1}</ThemedText>
+            </View>
+            <InteractiveJapaneseText style={styles.choiceText}>{choice.text}</InteractiveJapaneseText>
+          </Pressable>
+        ))}
+      </View>
+
+      <View style={styles.navigation}>
+        <AppButton label="前へ" variant="secondary" disabled={attempt.questionIndex === 0} onPress={() => update({ questionIndex: attempt.questionIndex - 1 })} style={styles.navButton} />
+        <AppButton label={attempt.questionIndex === placements.length - 1 ? '提出する' : '次へ'} disabled={!selected} onPress={attempt.questionIndex === placements.length - 1 ? submit : () => update({ questionIndex: attempt.questionIndex + 1 })} style={styles.navButton} />
+      </View>
     </ScreenContainer>
   );
 }
 
 function ExamResults({ examId, attempt }: { examId: string; attempt: MockExamAttempt }) {
+  const theme = useTheme();
   const exam = getMockExam(examId)!;
   const result = scoreMockExam(attempt);
   const placements = [...exam.placements].sort((a, b) => a.position - b.position);
-  return <ScreenContainer contentStyle={styles.screen}><Card><ThemedText type="smallBold" themeColor="primary">RESULT</ThemedText><ThemedText type="title">{result.percentage}%</ThemedText><ThemedText>{result.correct} / {result.total} correct</ThemedText><ThemedText themeColor="textSecondary">{clock(attempt.elapsedSeconds)} · {result.unanswered} unanswered</ThemedText></Card><Card>{result.sections.map((section) => <View key={section.title} style={styles.resultRow}><ThemedText>{section.title}</ThemedText><ThemedText type="smallBold">{section.correct} / {section.total}</ThemedText></View>)}</Card><ThemedText type="heading">Answers and review</ThemedText>{placements.map((placement) => { const question = getMockExamQuestion(placement.questionId)!; const answer = attempt.selectedAnswers[question.id]; const correct = answer === question.correctOptionId; return <Card key={question.id}><ThemedText type="smallBold" style={{ color: correct ? '#26745E' : '#B44C58' }}>問題 {placement.position} · {correct ? 'Correct' : 'Review'}</ThemedText><ThemedText>{question.prompt}</ThemedText><ThemedText themeColor="textSecondary">Your answer: {question.choices.find((choice) => choice.id === answer)?.text ?? '—'}</ThemedText><ThemedText>Correct answer: {question.choices.find((choice) => choice.id === question.correctOptionId)?.text}</ThemedText>{question.explanation ? <ThemedText themeColor="textSecondary">{question.explanation}</ThemedText> : null}<ThemedText type="small" themeColor="textSecondary">Related Japango content: {question.linkedItemIds.join(', ') || 'Available in your course'}</ThemedText></Card>; })}<AppButton label="Back to mock exams" onPress={() => router.replace('/(tabs)/exams')} /></ScreenContainer>;
+  return (
+    <ScreenContainer maxWidth={ReadingContentWidth} includeBottomSafeArea contentStyle={styles.screen}>
+      <View style={[styles.resultHero, { borderColor: theme.primary }]}>
+        <ThemedText type="metadata" style={{ color: theme.primary }}>Exam result</ThemedText>
+        <ThemedText type="display">{result.percentage}%</ThemedText>
+        <ThemedText type="heading">{result.correct} of {result.total} correct</ThemedText>
+        <ThemedText themeColor="textSecondary">{clock(attempt.elapsedSeconds)} · {result.unanswered} unanswered</ThemedText>
+      </View>
+      <View style={[styles.resultList, { borderColor: theme.border }]}>
+        {result.sections.map((section, index) => (
+          <View key={section.title} style={[styles.resultRow, index > 0 && { borderTopColor: theme.border, borderTopWidth: 1 }]}>
+            <ThemedText>{section.title}</ThemedText>
+            <ThemedText type="smallBold">{section.correct} / {section.total}</ThemedText>
+          </View>
+        ))}
+      </View>
+      <ThemedText type="section">Answers and review</ThemedText>
+      <View style={[styles.reviewList, { borderColor: theme.border }]}>
+        {placements.map((placement, index) => {
+          const question = getMockExamQuestion(placement.questionId)!;
+          const answer = attempt.selectedAnswers[question.id];
+          const correct = answer === question.correctOptionId;
+          return (
+            <View key={question.id} style={[styles.reviewItem, index > 0 && { borderTopColor: theme.border, borderTopWidth: 1 }]}>
+              <ThemedText type="metadata" style={{ color: correct ? theme.success : theme.error }}>Question {placement.position} · {correct ? 'Correct' : 'Review'}</ThemedText>
+              <InteractiveJapaneseText type="cardTitle">{question.prompt}</InteractiveJapaneseText>
+              <ThemedText themeColor="textSecondary">Your answer: {question.choices.find((choice) => choice.id === answer)?.text ?? '—'}</ThemedText>
+              <ThemedText>Correct answer: {question.choices.find((choice) => choice.id === question.correctOptionId)?.text}</ThemedText>
+              {question.explanation ? <InteractiveJapaneseText themeColor="textSecondary">{question.explanation}</InteractiveJapaneseText> : null}
+              <ThemedText type="small" themeColor="textSecondary">Related JapanGo content: {question.linkedItemIds.join(', ') || 'Available in your course'}</ThemedText>
+            </View>
+          );
+        })}
+      </View>
+      <AppButton label="Back to mock exams" onPress={() => router.replace('/(tabs)/exams')} />
+    </ScreenContainer>
+  );
 }
 
-const styles = StyleSheet.create({ screen: { gap: Spacing.three }, topRow: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' }, iconButton: { alignItems: 'center', borderRadius: Radius.pill, borderWidth: 1, height: 44, justifyContent: 'center', width: 44 }, timer: { alignItems: 'center' }, submitButton: { alignItems: 'center', borderRadius: Radius.pill, borderWidth: 1, height: 44, justifyContent: 'center', paddingHorizontal: Spacing.three }, question: { gap: Spacing.two }, choices: { gap: Spacing.two }, choice: { alignItems: 'flex-start', borderRadius: Radius.medium, borderWidth: 1, flexDirection: 'row', gap: Spacing.two, minHeight: 58, padding: Spacing.three }, choiceText: { flex: 1 }, navigation: { flexDirection: 'row', gap: Spacing.two }, navButton: { flex: 1 }, resultRow: { flexDirection: 'row', justifyContent: 'space-between' } });
+const styles = StyleSheet.create({
+  screen: { gap: Spacing.four },
+  topRow: { alignItems: 'center', flexDirection: 'row', gap: Spacing.two, justifyContent: 'space-between', minWidth: 0 },
+  iconButton: { alignItems: 'center', borderRadius: Radius.pill, borderWidth: 1, height: 44, justifyContent: 'center', width: 44 },
+  timer: { alignItems: 'center', flex: 1, minWidth: 0 },
+  submitButton: { alignItems: 'center', borderRadius: Radius.pill, borderWidth: 1, justifyContent: 'center', minHeight: 44, paddingHorizontal: Spacing.three },
+  examProgress: { gap: Spacing.two },
+  instruction: { borderRadius: Radius.medium, borderWidth: 1, gap: Spacing.two, padding: Spacing.three },
+  passage: { borderBottomWidth: 1, borderTopWidth: 1, gap: Spacing.three, minWidth: 0, paddingVertical: Spacing.four },
+  listening: { borderBottomWidth: 1, borderTopWidth: 1, gap: Spacing.three, paddingVertical: Spacing.three },
+  question: { gap: Spacing.two, minWidth: 0 },
+  choices: { gap: Spacing.two },
+  choice: { alignItems: 'flex-start', borderRadius: Radius.medium, borderWidth: 1, flexDirection: 'row', gap: Spacing.twoHalf, minHeight: 60, minWidth: 0, padding: Spacing.three },
+  choiceNumber: { alignItems: 'center', borderRadius: Radius.pill, borderWidth: 1, flexShrink: 0, height: 28, justifyContent: 'center', width: 28 },
+  choiceText: { flex: 1, minWidth: 0 },
+  navigation: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
+  navButton: { flexBasis: 140, flexGrow: 1 },
+  resultHero: { borderLeftWidth: 5, gap: Spacing.two, paddingLeft: Spacing.four, paddingVertical: Spacing.two },
+  resultList: { borderBottomWidth: 1, borderTopWidth: 1 },
+  resultRow: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, justifyContent: 'space-between', paddingVertical: Spacing.three },
+  reviewList: { borderBottomWidth: 1, borderTopWidth: 1 },
+  reviewItem: { gap: Spacing.two, minWidth: 0, paddingVertical: Spacing.four },
+});

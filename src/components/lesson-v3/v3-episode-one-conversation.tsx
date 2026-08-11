@@ -98,9 +98,9 @@ function LanguageFeedback({ feedback }: { feedback: EpisodeOneLanguageFeedback }
 }
 
 const styles = StyleSheet.create({
-  section: { gap: Spacing.three },
-  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
-  starter: { minHeight: 44, borderWidth: 1, borderRadius: Radius.pill, paddingHorizontal: Spacing.three, alignItems: 'center', justifyContent: 'center' },
-  input: { minHeight: 104, borderWidth: 1, borderRadius: Radius.medium, padding: Spacing.three, fontSize: 20, lineHeight: 30, textAlignVertical: 'top' },
+  section: { gap: Spacing.three, minWidth: 0 },
+  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, minWidth: 0 },
+  starter: { alignItems: 'center', borderRadius: Radius.pill, borderWidth: 1, justifyContent: 'center', maxWidth: '100%', minHeight: 44, minWidth: 0, paddingHorizontal: Spacing.three },
+  input: { borderRadius: Radius.medium, borderWidth: 1, fontSize: 20, lineHeight: 32, maxWidth: '100%', minHeight: 112, minWidth: 0, padding: Spacing.three, textAlignVertical: 'top', width: '100%' },
   feedback: { gap: Spacing.one },
 });

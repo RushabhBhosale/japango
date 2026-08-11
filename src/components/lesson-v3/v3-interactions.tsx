@@ -4,6 +4,7 @@ import { Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
 import { ThemedText } from '@/components/themed-text';
+import { InteractiveJapaneseText } from '@/components/lesson/japanese-text';
 import { Radius, Spacing } from '@/constants/theme';
 import type { EpisodeOneConversationTurn } from '@/features/lesson-v3/episode-one-conversation';
 import { useTheme } from '@/hooks/use-theme';
@@ -52,7 +53,7 @@ export function V3ChoiceInteraction({ scene, assistanceMode, glossary, response,
   return (
     <View style={styles.section}>
       {scene.context ? (
-        <Card style={{ backgroundColor: theme.surface }}>
+        <Card variant="quiet">
           <V3JapaneseLineView line={scene.context} assistanceMode={assistanceMode} glossary={glossary} showAudio />
         </Card>
       ) : null}
@@ -74,7 +75,7 @@ export function V3ChoiceInteraction({ scene, assistanceMode, glossary, response,
             >
               {candidate.line
                 ? <V3JapaneseLineView line={candidate.line} assistanceMode={assistanceMode} glossary={glossary} type="default" />
-                : <ThemedText>{candidate.label}</ThemedText>}
+                : <InteractiveJapaneseText>{candidate.label}</InteractiveJapaneseText>}
             </Pressable>
           );
         })}
@@ -112,11 +113,11 @@ export function V3SentenceBuildInteraction({ scene, assistanceMode, glossary, re
       <View style={[styles.buildArea, { borderColor: theme.border, backgroundColor: theme.surface }]}>
         {order.length ? order.map((id) => {
           const part = scene.parts.find((candidate) => candidate.id === id);
-          return <Pressable key={id} disabled={Boolean(response)} onPress={() => setOrder((current) => current.filter((candidate) => candidate !== id))} style={[styles.wordChip, { backgroundColor: theme.primarySoft }]}><ThemedText type="heading">{part?.text}</ThemedText></Pressable>;
+          return <Pressable key={id} disabled={Boolean(response)} onPress={() => setOrder((current) => current.filter((candidate) => candidate !== id))} style={[styles.wordChip, { backgroundColor: theme.primarySoft }]}><InteractiveJapaneseText type="heading" style={styles.chipText}>{part?.text}</InteractiveJapaneseText></Pressable>;
         }) : <ThemedText themeColor="textSecondary">Tap the pieces below</ThemedText>}
       </View>
       <View style={styles.chips}>
-        {available.map((part) => <Pressable key={part.id} onPress={() => setOrder((current) => [...current, part.id])} style={[styles.wordChip, { borderColor: theme.border, backgroundColor: theme.surface }]}><ThemedText type="heading">{part.text}</ThemedText></Pressable>)}
+        {available.map((part) => <Pressable key={part.id} onPress={() => setOrder((current) => [...current, part.id])} style={[styles.wordChip, { borderColor: theme.border, backgroundColor: theme.surface }]}><InteractiveJapaneseText type="heading" style={styles.chipText}>{part.text}</InteractiveJapaneseText></Pressable>)}
       </View>
       {response ? (
         <>
@@ -190,18 +191,19 @@ function Feedback({ response }: { response: V3EpisodeResponse }) {
     <Card style={{ backgroundColor: response.correct ? theme.successSoft : theme.warningSoft }}>
       <ThemedText type="heading" style={{ color: response.correct ? theme.success : theme.warning }}>{response.feedbackTitle}</ThemedText>
       <ThemedText>{response.feedback}</ThemedText>
-      {response.suggestedResponse ? <ThemedText type="japanese">{response.suggestedResponse}</ThemedText> : null}
+      {response.suggestedResponse ? <InteractiveJapaneseText type="japanese">{response.suggestedResponse}</InteractiveJapaneseText> : null}
     </Card>
   );
 }
 
 const styles = StyleSheet.create({
-  section: { gap: Spacing.three },
+  section: { gap: Spacing.three, minWidth: 0 },
   options: { gap: Spacing.two },
-  option: { minHeight: 58, borderWidth: 1, borderRadius: Radius.medium, padding: Spacing.three, justifyContent: 'center' },
-  buildArea: { minHeight: 90, borderWidth: 1, borderRadius: Radius.medium, padding: Spacing.three, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: Spacing.two },
-  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
-  wordChip: { minHeight: 48, borderWidth: 1, borderRadius: Radius.medium, paddingHorizontal: Spacing.three, alignItems: 'center', justifyContent: 'center' },
-  starter: { minHeight: 44, borderWidth: 1, borderRadius: Radius.pill, paddingHorizontal: Spacing.three, alignItems: 'center', justifyContent: 'center' },
-  input: { minHeight: 104, borderWidth: 1, borderRadius: Radius.medium, padding: Spacing.three, fontSize: 20, lineHeight: 30, textAlignVertical: 'top' },
+  option: { borderRadius: Radius.medium, borderWidth: 1, justifyContent: 'center', minHeight: 58, minWidth: 0, padding: Spacing.three, width: '100%' },
+  buildArea: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, minHeight: 90, minWidth: 0, padding: Spacing.three },
+  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, minWidth: 0 },
+  wordChip: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, justifyContent: 'center', maxWidth: '100%', minHeight: 48, minWidth: 0, paddingHorizontal: Spacing.three },
+  chipText: { maxWidth: '100%', minWidth: 0, textAlign: 'center' },
+  starter: { alignItems: 'center', borderRadius: Radius.pill, borderWidth: 1, justifyContent: 'center', maxWidth: '100%', minHeight: 44, minWidth: 0, paddingHorizontal: Spacing.three },
+  input: { borderRadius: Radius.medium, borderWidth: 1, fontSize: 20, lineHeight: 32, maxWidth: '100%', minHeight: 112, minWidth: 0, padding: Spacing.three, textAlignVertical: 'top', width: '100%' },
 });

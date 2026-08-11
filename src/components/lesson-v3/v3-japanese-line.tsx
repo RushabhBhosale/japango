@@ -89,7 +89,7 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
                   style={styles.token}
                 >
                   {showFurigana && reading ? <ThemedText type="small" style={[styles.reading, { color: theme.textSecondary }]}>{reading}</ThemedText> : null}
-                  <ThemedText type={type} style={underlined ? styles.underlinedWord : undefined}>{token.surface}</ThemedText>
+                  <ThemedText type={type} style={underlined ? [styles.underlinedWord, { textDecorationColor: theme.primary }] : undefined}>{token.surface}</ThemedText>
                 </Pressable>
               );
             })}
@@ -124,13 +124,13 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
 
 const styles = StyleSheet.create({
   container: { gap: Spacing.one },
-  japaneseRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
+  japaneseRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two, minWidth: 0 },
   japanese: { flex: 1, minWidth: 0 },
-  tokens: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-end' },
-  token: { alignItems: 'center' },
+  tokens: { alignItems: 'flex-end', flexDirection: 'row', flexWrap: 'wrap', maxWidth: '100%', minWidth: 0, rowGap: Spacing.two },
+  token: { alignItems: 'center', flexShrink: 1, maxWidth: '100%', minWidth: 0 },
   reading: { lineHeight: 15 },
-  underlinedWord: { textDecorationLine: 'underline', textDecorationColor: '#8B5CF6' },
-  audioButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  underlinedWord: { textDecorationLine: 'underline' },
+  audioButton: { width: 44, height: 44, alignItems: 'center', flexShrink: 0, justifyContent: 'center' },
   backdrop: { backgroundColor: 'rgba(0, 0, 0, 0.38)', flex: 1, justifyContent: 'flex-end' },
   meaningSheet: { borderTopLeftRadius: Radius.large, borderTopRightRadius: Radius.large, gap: Spacing.two, padding: Spacing.four },
 });

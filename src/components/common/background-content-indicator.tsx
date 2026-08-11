@@ -46,6 +46,6 @@ export function BackgroundContentIndicator({ state }: BackgroundContentIndicator
 
 const styles = StyleSheet.create({
   positioner: { bottom: Spacing.three, left: Spacing.three, position: 'absolute', right: Spacing.three, zIndex: 20 },
-  indicator: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, flexDirection: 'row', gap: Spacing.two, justifyContent: 'center', paddingHorizontal: Spacing.three, paddingVertical: Spacing.two },
-  label: { flexShrink: 1, textAlign: 'center' },
+  indicator: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, flexDirection: 'row', gap: Spacing.two, justifyContent: 'center', minWidth: 0, paddingHorizontal: Spacing.three, paddingVertical: Spacing.two },
+  label: { flex: 1, minWidth: 0, textAlign: 'center' },
 });

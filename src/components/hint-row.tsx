@@ -25,11 +25,16 @@ export function HintRow({ title = 'Try editing', hint = 'app/index.tsx' }: HintR
 const styles = StyleSheet.create({
   stepRow: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.two,
     justifyContent: 'space-between',
+    minWidth: 0,
   },
   codeSnippet: {
     borderRadius: Spacing.two,
     paddingVertical: Spacing.half,
     paddingHorizontal: Spacing.two,
+    flexShrink: 1,
+    maxWidth: '100%',
   },
 });

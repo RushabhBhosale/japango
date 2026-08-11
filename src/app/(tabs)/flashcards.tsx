@@ -13,7 +13,9 @@ import {
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
 import { LoadingState } from '@/components/common/loading-state';
+import { ProgressBar } from '@/components/common/progress-bar';
 import { ScreenContainer } from '@/components/common/screen-container';
+import { InteractiveJapaneseText } from '@/components/lesson/japanese-text';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
 import {
@@ -95,14 +97,15 @@ function FilterPill<T extends string>({
 function FlashcardFace({ card, back, theme }: { card: VocabularyFlashcard; back: boolean; theme: ReturnType<typeof useTheme> }) {
   const showReading = back && hasKanji(card.japanese) && Boolean(card.reading) && card.reading !== card.japanese;
   return (
-    <View style={[styles.face, { backgroundColor: theme.surface, borderColor: theme.border }]}> 
-      <ThemedText type="title" style={styles.cardWord}>{card.japanese}</ThemedText>
+    <View style={[styles.face, { backgroundColor: theme.surfaceElevated, borderColor: theme.border }]}> 
+      <ThemedText type="metadata" style={{ color: theme.primary }}>{back ? 'Meaning' : 'Japanese'}</ThemedText>
+      <InteractiveJapaneseText type="display" style={styles.cardWord}>{card.japanese}</InteractiveJapaneseText>
       {back ? (
         <>
-          {showReading ? <ThemedText type="heading" style={{ color: theme.primary }}>{card.reading}</ThemedText> : null}
-          <ThemedText type="heading" themeColor="textSecondary" style={styles.cardMeaning}>{card.meaning ?? 'Meaning not available yet'}</ThemedText>
+          {showReading ? <InteractiveJapaneseText type="heading" style={{ color: theme.primary }}>{card.reading}</InteractiveJapaneseText> : null}
+          <ThemedText type="section" themeColor="textSecondary" style={styles.cardMeaning}>{card.meaning ?? 'Meaning not available yet'}</ThemedText>
         </>
-      ) : null}
+      ) : <ThemedText type="small" themeColor="textSecondary">Tap the card to reveal its reading and meaning.</ThemedText>}
     </View>
   );
 }
@@ -258,9 +261,9 @@ export default function FlashcardsScreen() {
     <ScreenContainer contentStyle={styles.screen}>
       <View style={styles.header}>
         <View style={styles.headerCopy}>
-          <ThemedText type="smallBold" style={{ color: theme.primary }}>VOCABULARY</ThemedText>
+          <ThemedText type="metadata" style={{ color: theme.primary }}>Vocabulary review</ThemedText>
           <ThemedText type="title">Flashcards</ThemedText>
-          <ThemedText themeColor="textSecondary">Tap to flip. Swipe left or right to move.</ThemedText>
+          <ThemedText themeColor="textSecondary">Build recall at your pace. Tap to flip, then move when you’re ready.</ThemedText>
         </View>
         <Pressable accessibilityRole="button" accessibilityLabel="Open flashcard settings" onPress={() => setSettingsVisible(true)} style={[styles.settingsButton, { borderColor: theme.border, backgroundColor: theme.surface }]}>
           <Ionicons name="settings-outline" size={21} color={theme.primary} />
@@ -275,8 +278,10 @@ export default function FlashcardsScreen() {
       ) : (
         <>
           <View style={styles.progressRow}>
-            <ThemedText type="smallBold" themeColor="textSecondary">{index + 1} / {cards.length}</ThemedText>
+            <ThemedText type="smallBold" themeColor="textSecondary">Card {index + 1} of {cards.length}</ThemedText>
+            <ThemedText type="small" themeColor="textSecondary">{level === 'all' ? 'N5 + N4' : level}</ThemedText>
           </View>
+          <ProgressBar style={styles.deckProgress} value={((index + 1) / cards.length) * 100} accessibilityLabel={`Card ${index + 1} of ${cards.length}`} />
           <View style={styles.cardDeck}>
           <Animated.View
             key={card.id}
@@ -302,6 +307,30 @@ export default function FlashcardsScreen() {
             </Animated.View>
           ) : null}
           </View>
+          <View style={styles.controls}>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Previous flashcard"
+              accessibilityState={{ disabled: index === 0 }}
+              disabled={index === 0 || Boolean(transition)}
+              onPress={() => navigate(-1)}
+              style={[styles.navigationButton, { borderColor: theme.border, opacity: index === 0 ? 0.45 : 1 }]}
+            >
+              <Ionicons name="arrow-back" size={22} color={theme.primary} />
+            </Pressable>
+            <AppButton label={flipped ? 'Show Japanese' : 'Show answer'} variant="secondary" onPress={toggleFlip} style={styles.flipButton} />
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Next flashcard"
+              accessibilityState={{ disabled: index === cards.length - 1 }}
+              disabled={index === cards.length - 1 || Boolean(transition)}
+              onPress={() => navigate(1)}
+              style={[styles.navigationButton, { borderColor: theme.border, opacity: index === cards.length - 1 ? 0.45 : 1 }]}
+            >
+              <Ionicons name="arrow-forward" size={22} color={theme.primary} />
+            </Pressable>
+          </View>
+          <ThemedText type="small" themeColor="textSecondary" style={styles.gestureHint}>You can also swipe left or right.</ThemedText>
         </>
       )}
 
@@ -327,25 +356,30 @@ export default function FlashcardsScreen() {
 }
 
 const styles = StyleSheet.create({
-  screen: { gap: Spacing.three },
-  header: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: Spacing.three },
-  headerCopy: { flex: 1, gap: Spacing.one },
+  screen: { gap: Spacing.four },
+  header: { alignItems: 'flex-start', flexDirection: 'row', gap: Spacing.three, justifyContent: 'space-between', minWidth: 0 },
+  headerCopy: { flex: 1, gap: Spacing.one, minWidth: 0 },
   settingsButton: { width: 46, height: 46, borderWidth: 1, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center' },
   pills: { gap: Spacing.one, paddingVertical: Spacing.one },
-  pill: { minHeight: 40, borderWidth: 1, borderRadius: Radius.pill, justifyContent: 'center', paddingHorizontal: Spacing.three },
-  progressRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  cardDeck: { height: 330, position: 'relative', width: '100%' },
+  pill: { borderRadius: Radius.pill, borderWidth: 1, justifyContent: 'center', minHeight: 44, paddingHorizontal: Spacing.three },
+  progressRow: { alignItems: 'center', flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, justifyContent: 'space-between', maxWidth: 560, width: '100%', alignSelf: 'center' },
+  deckProgress: { alignSelf: 'center', maxWidth: 560 },
+  cardDeck: { alignSelf: 'center', height: 360, maxWidth: 560, position: 'relative', width: '100%' },
   cardFrame: { ...StyleSheet.absoluteFill },
   activeCard: { zIndex: 2 },
   incomingCard: { zIndex: 1 },
   cardFace: { ...StyleSheet.absoluteFill, backfaceVisibility: 'hidden' },
   backFace: { backfaceVisibility: 'hidden' },
-  face: { flex: 1, borderWidth: 1, borderRadius: Radius.large, alignItems: 'center', justifyContent: 'center', padding: Spacing.four, gap: Spacing.two, shadowColor: '#000', shadowOpacity: 0.08, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 3 },
-  cardWord: { textAlign: 'center' },
+  face: { alignItems: 'center', borderRadius: Radius.large, borderWidth: 1, elevation: 2, flex: 1, gap: Spacing.three, justifyContent: 'center', padding: Spacing.four, shadowColor: 'rgba(20, 22, 27, 0.32)', shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.12, shadowRadius: 20 },
+  cardWord: { maxWidth: '100%', minWidth: 0, textAlign: 'center' },
   cardMeaning: { maxWidth: '90%', textAlign: 'center' },
   emptyCard: { padding: Spacing.four },
+  controls: { alignItems: 'stretch', alignSelf: 'center', flexDirection: 'row', gap: Spacing.two, maxWidth: 560, minWidth: 0, width: '100%' },
+  navigationButton: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, height: 48, justifyContent: 'center', width: 48 },
+  flipButton: { flex: 1 },
+  gestureHint: { alignSelf: 'center', textAlign: 'center' },
   settingsBackdrop: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(0, 0, 0, 0.42)' },
-  settingsSheet: { gap: Spacing.two, borderTopLeftRadius: Radius.large, borderTopRightRadius: Radius.large, padding: Spacing.four, paddingBottom: Spacing.five },
-  settingsHeader: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
+  settingsSheet: { alignSelf: 'center', borderTopLeftRadius: Radius.large, borderTopRightRadius: Radius.large, gap: Spacing.twoHalf, maxWidth: 720, padding: Spacing.four, paddingBottom: Spacing.five, width: '100%' },
+  settingsHeader: { alignItems: 'center', flexDirection: 'row', gap: Spacing.two, justifyContent: 'space-between', minWidth: 0 },
   closeButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
 });

@@ -13,14 +13,14 @@ export function PageHeader({ eyebrow, title, subtitle }: PageHeaderProps) {
   return (
     <View style={styles.container}>
       {eyebrow ? (
-        <ThemedText type="smallBold" themeColor="primary">{eyebrow.toUpperCase()}</ThemedText>
+        <ThemedText type="metadata" themeColor="primary">{eyebrow}</ThemedText>
       ) : null}
-      <ThemedText type="title">{title}</ThemedText>
+      <ThemedText type="display">{title}</ThemedText>
       {subtitle ? <ThemedText themeColor="textSecondary">{subtitle}</ThemedText> : null}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { gap: Spacing.one, paddingBottom: Spacing.one },
+  container: { gap: Spacing.two, maxWidth: 640, minWidth: 0, paddingBottom: Spacing.one },
 });

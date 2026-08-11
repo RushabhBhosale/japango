@@ -27,6 +27,7 @@ import type { V3Episode, V3EpisodeProgress, V3EpisodeResponse, V3Scene } from '@
 import { V3Chat } from './v3-chat';
 import { V3ChoiceInteraction, V3FreeResponseInteraction, V3SentenceBuildInteraction } from './v3-interactions';
 import { V3JapaneseLineView } from './v3-japanese-line';
+import { InteractiveJapaneseText } from '@/components/lesson/japanese-text';
 
 export function EpisodePlayer({ episode }: { episode: V3Episode }) {
   const theme = useTheme();
@@ -156,13 +157,13 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
   const canContinue = !interactionNeedsResponse || Boolean(response && (scene.type !== 'freeResponse' || response.correct));
 
   return (
-    <ScreenContainer scroll={false} keyboardAware contentStyle={styles.screen}>
+    <ScreenContainer scroll={false} keyboardAware includeBottomSafeArea contentStyle={styles.screen}>
       <View style={styles.topBar}>
         <Pressable accessibilityRole="button" accessibilityLabel="Leave episode" hitSlop={8} onPress={() => router.replace('/(tabs)')} style={styles.iconButton}>
           <Ionicons name="close" size={25} color={theme.text} />
         </Pressable>
         <View style={styles.progressArea}>
-          <ThemedText type="smallBold" numberOfLines={1}>{episode.titleJapanese}</ThemedText>
+          <InteractiveJapaneseText type="smallBold">{episode.titleJapanese}</InteractiveJapaneseText>
           <ProgressBar value={((currentIndex + 1) / episode.scenes.length) * 100} accessibilityLabel="Episode progress" />
         </View>
         <View style={[styles.helpBadge, { backgroundColor: theme.primarySoft }]}>
@@ -215,9 +216,9 @@ function SceneContent({ scene, episode, assistanceMode, glossary, progress, resp
   if (scene.type === 'sentenceBuild') return <V3SentenceBuildInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} response={response} onSubmit={onSubmit} />;
   if (scene.type === 'freeResponse') return <V3FreeResponseInteraction scene={scene} assistanceMode={assistanceMode} glossary={glossary} storyChoices={progress.storyChoices} response={response} onSubmit={onSubmit} onDynamicReply={onDynamicReply} />;
   if (scene.type === 'teachingMoment') return (
-    <Card style={[styles.discovery, { backgroundColor: theme.primarySoft, borderColor: theme.primary }]}>
-      <ThemedText type="smallBold" style={{ color: theme.primary }}>DISCOVER</ThemedText>
-      <ThemedText type="heading">{scene.title}</ThemedText>
+    <View style={[styles.discovery, { backgroundColor: theme.primarySoft, borderColor: theme.primary }]}> 
+      <ThemedText type="metadata" style={{ color: theme.primary }}>Discover</ThemedText>
+      <ThemedText type="section">{scene.title}</ThemedText>
       {scene.contrast.map((contrast) => <V3JapaneseLineView key={contrast.text.raw} line={contrast} assistanceMode={assistanceMode} glossary={glossary} />)}
       {scene.kanjiFocus ? (
         <View style={[styles.kanjiFocus, { borderColor: theme.primary }]}>
@@ -228,7 +229,7 @@ function SceneContent({ scene, episode, assistanceMode, glossary, progress, resp
       ) : null}
       <View style={[styles.rule, { backgroundColor: theme.border }]} />
       <ThemedText>{scene.explanation}</ThemedText>
-    </Card>
+    </View>
   );
   return <Completion episode={episode} progress={progress} />;
 }
@@ -242,18 +243,18 @@ function Completion({ episode, progress }: { episode: V3Episode; progress: V3Epi
     <View style={styles.completion}>
       <View style={[styles.completeMark, { backgroundColor: theme.primarySoft }]}><Ionicons name="checkmark" size={32} color={theme.primary} /></View>
       <View style={styles.centerCopy}>
-        <ThemedText type="smallBold" style={{ color: theme.primary }}>EPISODE COMPLETE</ThemedText>
-        <ThemedText type="title" style={styles.centerText}>{episode.titleJapanese}</ThemedText>
+        <ThemedText type="metadata" style={{ color: theme.primary }}>Episode complete</ThemedText>
+        <InteractiveJapaneseText type="title" style={styles.centerText}>{episode.titleJapanese}</InteractiveJapaneseText>
         <ThemedText type="heading" themeColor="textSecondary" style={styles.centerText}>{episode.titleEnglish}</ThemedText>
       </View>
       <Card>
         <ThemedText type="heading">You understood {understood} of {checked} checked moments</ThemedText>
-        {learned.length ? <View style={styles.learnedList}>{learned.map((item) => <View key={item.id} style={styles.learnedRow}><ThemedText type="japanese">{item.japanese}</ThemedText><ThemedText type="small" themeColor="textSecondary">{item.meaning}</ThemedText></View>)}</View> : null}
+        {learned.length ? <View style={styles.learnedList}>{learned.map((item) => <View key={item.id} style={styles.learnedRow}><InteractiveJapaneseText type="japanese">{item.japanese}</InteractiveJapaneseText><ThemedText type="small" themeColor="textSecondary" style={styles.learnedMeaning}>{item.meaning}</ThemedText></View>)}</View> : null}
         <ThemedText type="smallBold" style={{ color: theme.success }}>You used Japanese on your own.</ThemedText>
       </Card>
-      <Card style={[styles.nextCard, { borderColor: theme.primary }]}> 
-        <ThemedText type="smallBold" style={{ color: theme.primary }}>NEXT EPISODE</ThemedText>
-        <ThemedText type="subtitle">{episode.nextEpisode.titleJapanese}</ThemedText>
+      <Card variant="accent" style={styles.nextCard}> 
+        <ThemedText type="metadata" style={{ color: theme.primary }}>Next episode</ThemedText>
+        <InteractiveJapaneseText type="subtitle">{episode.nextEpisode.titleJapanese}</InteractiveJapaneseText>
         <ThemedText type="heading">{episode.nextEpisode.titleEnglish}</ThemedText>
         <ThemedText themeColor="textSecondary">{episode.nextEpisode.setup}</ThemedText>
         <ThemedText>{episode.nextEpisode.hook}</ThemedText>
@@ -272,27 +273,28 @@ function Completion({ episode, progress }: { episode: V3Episode; progress: V3Epi
 
 const styles = StyleSheet.create({
   screen: { flex: 1, paddingHorizontal: 0, paddingTop: 0, paddingBottom: 0, gap: 0 },
-  topBar: { minHeight: 64, flexDirection: 'row', alignItems: 'center', gap: Spacing.two, paddingHorizontal: Spacing.three },
+  topBar: { alignItems: 'center', flexDirection: 'row', gap: Spacing.two, minHeight: 68, minWidth: 0, paddingHorizontal: Spacing.three },
   iconButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
-  progressArea: { flex: 1, gap: Spacing.one },
-  helpBadge: { minWidth: 44, height: 32, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center', paddingHorizontal: Spacing.two },
+  progressArea: { flex: 1, gap: Spacing.one, minWidth: 0 },
+  helpBadge: { alignItems: 'center', borderRadius: Radius.pill, flexShrink: 0, justifyContent: 'center', minHeight: 36, minWidth: 44, paddingHorizontal: Spacing.two },
   scroll: { flex: 1 },
   sceneContent: { flexGrow: 1, padding: Spacing.three, paddingBottom: Spacing.four },
-  sceneFrame: { flexGrow: 1 },
+  sceneFrame: { flexGrow: 1, minWidth: 0 },
   footer: { borderTopWidth: 1, padding: Spacing.three, gap: Spacing.two },
-  footerActions: { flexDirection: 'row', gap: Spacing.two },
-  previousButton: { minWidth: 112 },
-  continueButton: { flex: 1 },
+  footerActions: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
+  previousButton: { flexBasis: 120, flexGrow: 1 },
+  continueButton: { flexBasis: 180, flexGrow: 2 },
   story: { flex: 1, minHeight: 460, justifyContent: 'center', gap: Spacing.three },
-  phoneLine: { minHeight: 64, borderRadius: Radius.medium, flexDirection: 'row', alignItems: 'center', gap: Spacing.two, padding: Spacing.three, marginTop: Spacing.three },
-  discovery: { gap: Spacing.three, padding: Spacing.four },
+  phoneLine: { alignItems: 'center', borderRadius: Radius.medium, flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, marginTop: Spacing.three, minHeight: 64, minWidth: 0, padding: Spacing.three },
+  discovery: { borderLeftWidth: 4, gap: Spacing.three, minWidth: 0, padding: Spacing.four },
   kanjiFocus: { borderLeftWidth: 3, paddingLeft: Spacing.three, gap: Spacing.half },
   rule: { height: 1 },
   completion: { gap: Spacing.four, paddingBottom: Spacing.four },
   completeMark: { width: 64, height: 64, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center', alignSelf: 'center' },
-  centerCopy: { alignItems: 'center', gap: Spacing.one },
+  centerCopy: { alignItems: 'center', gap: Spacing.one, minWidth: 0 },
   centerText: { textAlign: 'center' },
   learnedList: { gap: Spacing.two },
-  learnedRow: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', gap: Spacing.three },
+  learnedRow: { alignItems: 'baseline', flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.three, justifyContent: 'space-between', minWidth: 0 },
+  learnedMeaning: { flexGrow: 1, minWidth: 120, textAlign: 'right' },
   nextCard: { gap: Spacing.two, padding: Spacing.four },
 });

@@ -258,11 +258,11 @@ export default function SettingsScreen() {
 }
 
 const styles = StyleSheet.create({
-  options: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
-  option: { minHeight: 46, minWidth: 72, borderRadius: Radius.medium, borderWidth: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 12 },
-  themeOption: { flex: 1 },
+  options: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, minWidth: 0 },
+  option: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, justifyContent: 'center', maxWidth: '100%', minHeight: 46, minWidth: 72, paddingHorizontal: 12 },
+  themeOption: { flexBasis: 84, flexGrow: 1 },
   readingOptions: { gap: Spacing.two },
-  readingOption: { borderRadius: Radius.medium, borderWidth: 1, gap: 2, minHeight: 58, paddingHorizontal: Spacing.two, paddingVertical: Spacing.one },
+  readingOption: { borderRadius: Radius.medium, borderWidth: 1, gap: Spacing.one, minHeight: 64, minWidth: 0, paddingHorizontal: Spacing.three, paddingVertical: Spacing.two },
   divider: { height: 1, marginVertical: Spacing.one },
   version: { textAlign: 'center', marginTop: Spacing.two },
 });

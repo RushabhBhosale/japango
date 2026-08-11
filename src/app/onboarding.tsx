@@ -81,7 +81,7 @@ export default function OnboardingScreen() {
 
       {step === 1 ? (
         <View style={styles.copy}>
-          <ThemedText type="smallBold" style={{ color: theme.primary }}>YOUR GOAL</ThemedText>
+          <ThemedText type="metadata" style={{ color: theme.primary }}>Your goal</ThemedText>
           <ThemedText type="title">Why are you learning Japanese?</ThemedText>
           <ThemedText themeColor="textSecondary">Choose the reason that matters most right now.</ThemedText>
           <View style={styles.goalGrid} accessibilityRole="radiogroup">
@@ -106,7 +106,7 @@ export default function OnboardingScreen() {
 
       {step === 2 ? (
         <View style={styles.copy}>
-          <ThemedText type="smallBold" style={{ color: theme.primary }}>STARTING ESTIMATE</ThemedText>
+          <ThemedText type="metadata" style={{ color: theme.primary }}>Starting estimate</ThemedText>
           <ThemedText type="title">Where are you now?</ThemedText>
           <ThemedText themeColor="textSecondary">This only adjusts the starting support. The next short check will refine it.</ThemedText>
           <View style={styles.levelList} accessibilityRole="radiogroup">
@@ -153,13 +153,13 @@ const styles = StyleSheet.create({
   welcome: { flex: 1, justifyContent: 'center', gap: Spacing.four },
   mark: { width: 72, height: 72, borderRadius: 24, alignItems: 'center', justifyContent: 'center' },
   markText: { fontSize: 48, lineHeight: 58, fontWeight: '800' },
-  copy: { gap: Spacing.three },
+  copy: { gap: Spacing.three, minWidth: 0 },
   promise: { borderTopWidth: 1, borderBottomWidth: 1, flexDirection: 'row', alignItems: 'center', gap: Spacing.three, paddingVertical: Spacing.three },
-  promiseText: { flex: 1 },
+  promiseText: { flex: 1, minWidth: 0 },
   goalGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
-  goalOption: { width: '48%', minHeight: 82, borderWidth: 1, borderRadius: Radius.medium, padding: Spacing.three, gap: Spacing.two, justifyContent: 'center' },
+  goalOption: { borderRadius: Radius.medium, borderWidth: 1, flexBasis: 140, flexGrow: 1, gap: Spacing.two, justifyContent: 'center', maxWidth: 220, minHeight: 88, minWidth: 0, padding: Spacing.three },
   levelList: { gap: Spacing.two },
-  levelOption: { minHeight: 66, borderWidth: 1, borderRadius: Radius.medium, padding: Spacing.three, flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
-  levelCopy: { flex: 1 },
+  levelOption: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, flexDirection: 'row', gap: Spacing.two, minHeight: 66, minWidth: 0, padding: Spacing.three },
+  levelCopy: { flex: 1, minWidth: 0 },
   actions: { gap: Spacing.one, paddingTop: Spacing.three },
 });

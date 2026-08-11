@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, View } from 'react-native';
 
 import { Card } from '@/components/common/card';
 import { StatusBadge } from '@/components/common/status-badge';
+import { InteractiveJapaneseText } from '@/components/lesson/japanese-text';
 import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
 import type { CurriculumWithMastery } from '@/types/learning';
@@ -22,9 +23,9 @@ export function CurriculumItemCard({ item, onPress }: CurriculumItemCardProps) {
         <ThemedText type="smallBold" themeColor="primary">{formatType(item.type)} · {item.level}</ThemedText>
         <StatusBadge status={item.mastery.status} />
       </View>
-      <ThemedText type="japanese">{item.title}</ThemedText>
+      <InteractiveJapaneseText type="japanese">{item.title}</InteractiveJapaneseText>
       {item.reading && item.reading !== item.title ? (
-        <ThemedText themeColor="textSecondary">{item.reading}</ThemedText>
+        <InteractiveJapaneseText themeColor="textSecondary">{item.reading}</InteractiveJapaneseText>
       ) : null}
       {item.meaning ? <ThemedText type="smallBold">{item.meaning}</ThemedText> : null}
       {item.explanation ? <ThemedText themeColor="textSecondary">{item.explanation}</ThemedText> : null}
@@ -43,6 +44,6 @@ export function CurriculumItemCard({ item, onPress }: CurriculumItemCardProps) {
 }
 
 const styles = StyleSheet.create({
-  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: Spacing.two },
+  topRow: { alignItems: 'center', flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, justifyContent: 'space-between', minWidth: 0 },
   pressed: { opacity: 0.76 },
 });
