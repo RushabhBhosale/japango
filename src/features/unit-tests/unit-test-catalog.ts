@@ -6,7 +6,7 @@ import type { UnitTest, UnitTestQuestion } from '../../types/unit-test';
 const question = (id: string, domain: UnitTestQuestion['domain'], kind: UnitTestQuestion['kind'], prompt: string, choices: string[], correctIndex: number, explanation: string, linkedEpisodeItemIds: string[], extras: Pick<UnitTestQuestion, 'passage' | 'listeningSpeech'> = {}): UnitTestQuestion => ({ id, domain, kind, prompt, ...extras, choices: choices.map((text, index) => ({ id: `${id}-${index + 1}`, text })), correctChoiceId: `${id}-${correctIndex + 1}`, explanation, linkedEpisodeItemIds });
 
 export const firstUnitTest: UnitTest = {
-  id: 'unit-n5-01-episodes-1-3', title: 'Unit 1 · First meetings', level: 'N5', episodeIds: ['episode-1', 'episode-2', 'episode-3'], estimatedMinutes: 5,
+  id: 'unit-n5-01-episodes-1-3', title: 'ユニット 1・はじめての出会い', level: 'N5', episodeIds: ['episode-1', 'episode-2', 'episode-3'], estimatedMinutes: 5,
   questions: [
     question('unit-n5-01-vocab-01', 'vocabulary', 'vocabulary-meaning', '「連絡先」の意味は どれですか。', ['予定', '連絡するための情報', '駅の出口', '飲み物の注文'], 1, '連絡先（れんらくさき）は、電話番号やメールアドレスなど、連絡するための情報です。', ['v3-vocab-renrakusaki']),
     question('unit-n5-01-vocab-02', 'vocabulary', 'vocabulary-context', 'あしたは予定がありません。わたしは（　）です。', ['ひま', 'おそい', 'すくない', 'げんき'], 0, '予定がないときは「ひまです」と言います。', ['v3-vocab-hima', 'v3-vocab-yotei']),

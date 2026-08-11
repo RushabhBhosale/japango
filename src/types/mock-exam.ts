@@ -7,7 +7,7 @@ export interface MockExamQuestion {
   domain: MockExamDomain;
   level: MockExamLevel;
   prompt: string;
-  promptLanguage: 'ja' | 'en';
+  promptLanguage: 'ja';
   presentation: string;
   explanation: string | null;
   correctOptionId: string | null;

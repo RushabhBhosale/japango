@@ -20,6 +20,9 @@ describe('bundled JLPT mock exam catalogue', () => {
         expect(question).toBeDefined();
         expect(question?.choices).toHaveLength(4);
         expect(question?.choices.filter((choice) => choice.id === question.correctOptionId)).toHaveLength(1);
+        expect(question?.promptLanguage).toBe('ja');
+        expect(question?.prompt).not.toMatch(/[A-Za-z]/);
+        expect(question?.choices.every((choice) => !/[A-Za-z]/.test(choice.text))).toBe(true);
         if (exam.level === 'N5') expect(question?.level).toBe('N5');
       }
     }

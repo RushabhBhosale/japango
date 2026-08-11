@@ -60,13 +60,13 @@ export default function MockExamScreen() {
 
   useEffect(() => { if (attempt) void saveMockExamAttempt(attempt); }, [attempt]);
 
-  if (!exam) return <ScreenContainer><ThemedText>This mock exam is unavailable.</ThemedText><AppButton label="Back to exams" onPress={() => router.replace('/(tabs)/exams')} /></ScreenContainer>;
-  if (!loaded || !attempt) return <ScreenContainer scroll={false}><LoadingState label="Preparing mock exam…" /></ScreenContainer>;
+  if (!exam) return <ScreenContainer><ThemedText>この 模擬試験を 開くことが できません。</ThemedText><AppButton label="模擬試験へ 戻る" onPress={() => router.replace('/(tabs)/exams')} /></ScreenContainer>;
+  if (!loaded || !attempt) return <ScreenContainer scroll={false}><LoadingState label="模擬試験を 準備しています…" /></ScreenContainer>;
   if (attempt.completedAt) return <ExamResults examId={exam.id} attempt={attempt} />;
 
   const placement = placements[attempt.questionIndex];
   const question = placement ? getMockExamQuestion(placement.questionId) : undefined;
-  if (!placement || !question) return <ScreenContainer><ThemedText>The exam question could not be loaded.</ThemedText></ScreenContainer>;
+  if (!placement || !question) return <ScreenContainer><ThemedText>問題を 読み込むことが できません。</ThemedText></ScreenContainer>;
   const section = exam.sections.find((value) => value.id === placement.sectionId);
   const reading = placement.parentType === 'reading-passage' ? getMockExamReading(placement.parentId ?? '') : undefined;
   const listening = placement.parentType === 'listening-activity' ? getMockExamListening(placement.parentId ?? '') : undefined;

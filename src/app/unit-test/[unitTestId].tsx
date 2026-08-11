@@ -31,8 +31,8 @@ export default function UnitTestScreen() {
   }, [test]);
   useEffect(() => { if (attempt) void saveUnitTestAttempt(attempt); }, [attempt]);
 
-  if (!test) return <ScreenContainer><ThemedText>This unit test is unavailable.</ThemedText></ScreenContainer>;
-  if (!loaded || !attempt) return <ScreenContainer scroll={false}><LoadingState label="Preparing unit test…" /></ScreenContainer>;
+  if (!test) return <ScreenContainer><ThemedText>この 確認テストを 開くことが できません。</ThemedText></ScreenContainer>;
+  if (!loaded || !attempt) return <ScreenContainer scroll={false}><LoadingState label="確認テストを 準備しています…" /></ScreenContainer>;
   if (attempt.completedAt) return <UnitTestResults attempt={attempt} onRetry={() => setAttempt(createUnitTestAttempt(test.id))} />;
   const question = test.questions[attempt.questionIndex]!;
   const answer = attempt.answers[question.id];
@@ -44,7 +44,7 @@ export default function UnitTestScreen() {
     setAttempt(completed);
   };
   return <ScreenContainer contentStyle={styles.screen}>
-    <View style={styles.topRow}><ThemedText type="smallBold" themeColor="primary">UNIT TEST · EPISODES 1–3</ThemedText><ThemedText type="small" themeColor="textSecondary">{attempt.questionIndex + 1} / {test.questions.length}</ThemedText></View>
+    <View style={styles.topRow}><ThemedText type="smallBold" themeColor="primary">確認テスト・エピソード 1〜3</ThemedText><ThemedText type="small" themeColor="textSecondary">{attempt.questionIndex + 1} / {test.questions.length}</ThemedText></View>
     <Card><ThemedText type="smallBold" themeColor="textSecondary">問題 {attempt.questionIndex + 1}</ThemedText>{question.passage ? <ThemedText type="japanese">{question.passage}</ThemedText> : null}{question.listeningSpeech ? <AppButton label="音声を 再生" variant="secondary" onPress={() => void speakJapanese(question.listeningSpeech!)} /> : null}<ThemedText type="heading">{question.prompt}</ThemedText></Card>
     <View style={styles.choices}>{question.choices.map((choice, index) => <Pressable key={choice.id} accessibilityRole="radio" accessibilityState={{ checked: answer === choice.id }} onPress={() => update({ answers: { ...attempt.answers, [question.id]: choice.id } })} style={[styles.choice, { backgroundColor: answer === choice.id ? theme.primarySoft : theme.surface, borderColor: answer === choice.id ? theme.primary : theme.border }]}><ThemedText type="smallBold" style={{ color: theme.primary }}>{index + 1}</ThemedText><ThemedText style={styles.choiceText}>{choice.text}</ThemedText></Pressable>)}</View>
     <View style={styles.actions}><AppButton label="前へ" variant="secondary" disabled={attempt.questionIndex === 0} onPress={() => update({ questionIndex: attempt.questionIndex - 1 })} style={styles.button} /><AppButton label={attempt.questionIndex === test.questions.length - 1 ? '提出する' : '次へ'} disabled={!answer} onPress={attempt.questionIndex === test.questions.length - 1 ? () => void submit() : () => update({ questionIndex: attempt.questionIndex + 1 })} style={styles.button} /></View>

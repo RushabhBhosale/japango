@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, '../..');
 const read = (file) => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const content = read('assets/generated-content/learning-content/index.json');
 const snapshots = read('assets/generated-content/assessments/bundled-mock-exams-all.json');
+const japanesePresentation = read('assets/mobile-curriculum/mock-exams-ja.json').strings;
 
 const questionById = new Map(content.questions.map((value) => [value.id, value]));
 const optionsByQuestion = new Map();
@@ -40,16 +41,22 @@ const packagedQuestions = [...questionIds].sort().map((id) => {
   const options = (optionsByQuestion.get(id) ?? []).sort((a, b) => a.position - b.position);
   if (question.responseType !== 'text-input' && options.length !== 4) throw new Error(`${id} must have four choices`);
   if (question.correctOptionIds.length !== 1) throw new Error(`${id} must have exactly one answer`);
+  const prompt = japanesePresentation[`question:${id}`] ?? question.prompt.text;
+  if (/[A-Za-z]/.test(prompt)) throw new Error(`${id} is missing Japanese presentation text`);
   return {
     id,
     domain: question.domain,
     level: question.difficulty.jlptLevel,
-    prompt: question.prompt.text,
-    promptLanguage: String(question.prompt.language).startsWith('ja') ? 'ja' : 'en',
+    prompt,
+    promptLanguage: 'ja',
     presentation: question.presentation,
     explanation: question.explanation,
     correctOptionId: question.correctOptionIds[0] ?? null,
-    choices: options.map((option) => ({ id: option.id, text: optionLabel(option) })),
+    choices: options.map((option) => {
+      const text = japanesePresentation[`choice:${option.id}`] ?? optionLabel(option);
+      if (/[A-Za-z]/.test(text)) throw new Error(`${id} choice ${option.id} is missing Japanese presentation text`);
+      return { id: option.id, text };
+    }),
     linkedItemIds: [...new Set(linksByQuestion.get(id) ?? [])],
     stimulus: question.stimulusReferences[0] ?? null,
   };
@@ -66,8 +73,8 @@ const output = {
   exams: snapshots.map((exam, index) => ({
     id: exam.id,
     level: exam.level,
-    title: `Mock Exam ${index % 5 + 1}`,
-    sections: exam.sections.map((section) => ({ id: section.id, title: section.title, order: section.order, recommendedMinutes: section.recommendedMinutes, questionPlacementIds: section.questionPlacementIds })),
+    title: `模擬試験 ${index % 5 + 1}`,
+    sections: exam.sections.map((section) => ({ id: section.id, title: section.order === 1 ? '言語知識（文字・語彙）' : section.order === 2 ? '言語知識（文法）・読解' : '聴解', order: section.order, recommendedMinutes: section.recommendedMinutes, questionPlacementIds: section.questionPlacementIds })),
     placements: exam.questionPlacements.map((placement) => ({ id: placement.id, sectionId: placement.sectionId, questionId: placement.questionId, position: placement.position, domain: placement.domain, questionType: placement.questionType, parentType: placement.parentType, parentId: placement.parentId, primaryTargetId: placement.primaryTargetId })),
     parents: exam.parentPlacements,
     timing: exam.timingRule,
