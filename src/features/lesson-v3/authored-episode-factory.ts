@@ -5,12 +5,15 @@ import type {
   V3LearningObjective,
   V3Scene,
 } from '@/types/lesson-v3';
+import { normalizeJapaneseReading } from '../japanese-text/contextual-reading';
 
 import episodePracticeBankJson from './data/episode-grammar-practice.json';
+import { reviewedEpisodeStandaloneReading } from './episode-standalone-readings';
+import { episodeArcReadings, episodeTitleReadings, finalEpisodeTitleReading } from './episode-title-readings';
 
 export type FuriganaText = string;
 
-interface SourcedSentence {
+export interface SourcedSentence {
   japanese: string;
   reading: string;
   english: string;
@@ -104,6 +107,7 @@ export interface AuthoredEpisodeDefinition {
 
 const kanjiPattern = /[\u3400-\u9fff々ヶ]/u;
 const annotatedKanjiPattern = /([\u3400-\u9fff々ヶ]+)\[([^\]]+)\]/gu;
+const kanaReadingPattern = /^[\u3041-\u3096\u309d\u309e\u30a1-\u30faー]+$/u;
 
 /**
  * Parses lightweight authoring markup such as `新宿[しんじゅく]へ行[い]く`.
@@ -133,6 +137,9 @@ export function furiganaText(
 
     const surface = match[1];
     const reading = match[2];
+    if (!kanaReadingPattern.test(reading)) {
+      throw new Error(`Invalid furigana “${reading}” for “${surface}” in: ${markedText}`);
+    }
     const keyword = keywords.find((candidate) => candidate.japanese === surface);
     raw += surface;
     tokens.push({
@@ -159,6 +166,29 @@ export function furiganaText(
   return { raw, tokens };
 }
 
+export function sourceTokensMatchReviewedReading(sentence: SourcedSentence): boolean {
+  const reviewed = normalizeJapaneseReading(sentence.reading);
+  let cursor = 0;
+  for (const token of sentence.tokens) {
+    const expected = normalizeJapaneseReading(token.reading ?? token.surface);
+    const actual = reviewed.slice(cursor, cursor + expected.length);
+    if (token.reading) {
+      if (actual !== expected) return false;
+    } else {
+      const matches = Array.from(expected).every((character, index) => {
+        const reviewedCharacter = Array.from(actual)[index];
+        return character === reviewedCharacter
+          || (character === 'は' && reviewedCharacter === 'わ')
+          || (character === 'へ' && reviewedCharacter === 'え')
+          || (character === 'を' && reviewedCharacter === 'お');
+      });
+      if (!matches) return false;
+    }
+    cursor += expected.length;
+  }
+  return cursor === reviewed.length;
+}
+
 function line(sentence: EpisodeSentence | FuriganaText, keywords: readonly EpisodeKeyword[]): V3JapaneseLine {
   const value = typeof sentence === 'string' ? { text: sentence } : sentence;
   return { text: furiganaText(value.text, keywords), englishHelp: value.meaning };
@@ -171,6 +201,9 @@ function sourcedLine(sentence: SourcedSentence): V3JapaneseLine {
   const raw = sentence.tokens.map(({ surface }) => surface).join('');
   if (raw !== sentence.japanese) {
     throw new Error(`Source tokens do not reconstruct: ${sentence.japanese}`);
+  }
+  if (!sourceTokensMatchReviewedReading(sentence)) {
+    throw new Error(`Source furigana does not match the reviewed reading: ${sentence.japanese}`);
   }
 
   return {
@@ -230,11 +263,12 @@ function orderedLabels(
   number: number,
   correct: string,
   distractors: [string, string],
-): { id: string; label: string; correct: boolean; feedback: string }[] {
+): { id: string; label: string; contextualReading?: string; correct: boolean; feedback: string }[] {
   const values = [correct, ...distractors];
   return shuffledChoiceIndexes(number).map((sourceIndex, index) => ({
     id: `option-${index + 1}`,
     label: values[sourceIndex],
+    contextualReading: reviewedEpisodeStandaloneReading(values[sourceIndex]),
     correct: sourceIndex === 0,
     feedback: sourceIndex === 0
       ? 'Correct. You matched both the form and its function in context.'
@@ -375,6 +409,7 @@ function canonicalGrammarPracticeScenes(definition: AuthoredEpisodeDefinition): 
             id: option.id,
             line: optionSentence ? sourcedLine(optionSentence) : undefined,
             label: optionSentence ? undefined : option.text,
+            contextualReading: optionSentence || !option.text ? undefined : reviewedEpisodeStandaloneReading(option.text),
             correct: option.correct,
             feedback: option.correct ? `${option.feedback} ${question.explanation}` : option.feedback,
           };
@@ -385,6 +420,8 @@ function canonicalGrammarPracticeScenes(definition: AuthoredEpisodeDefinition): 
 }
 
 export function createAuthoredEpisode(definition: AuthoredEpisodeDefinition): V3Episode {
+  const titleReading = episodeTitleReadings[definition.number];
+  if (!titleReading) throw new Error(`Episode ${definition.number} is missing its reviewed title reading.`);
   const learnedItemIds = [...definition.concepts.map(({ id }) => id), ...definition.keywords.map(({ id }) => id)];
   const comprehensionLabels = [definition.comprehension.correct, ...definition.comprehension.distractors];
   const comprehensionOrder = shuffledChoiceIndexes(definition.number);
@@ -395,8 +432,10 @@ export function createAuthoredEpisode(definition: AuthoredEpisodeDefinition): V3
     level: definition.level,
     arcId: definition.level === 'N5' ? 'new-life-in-japan' : 'building-a-life-in-japan',
     arcTitleJapanese: definition.level === 'N5' ? '日本での新生活' : '日本で広がる毎日',
+    arcTitleReading: definition.level === 'N5' ? episodeArcReadings['new-life-in-japan'] : episodeArcReadings['building-a-life-in-japan'],
     arcTitleEnglish: definition.level === 'N5' ? 'New Life in Japan' : 'A Wider Life in Japan',
     titleJapanese: definition.titleJapanese,
+    titleReading,
     titleEnglish: definition.titleEnglish,
     estimatedMinutes: 24 + definition.curriculumGrammarIds.length * 4,
     curriculumGrammarIds: definition.curriculumGrammarIds,
@@ -448,7 +487,7 @@ export function createAuthoredEpisode(definition: AuthoredEpisodeDefinition): V3
         id: 'guided-production',
         type: 'sentenceBuild',
         prompt: definition.build.prompt,
-        parts: definition.build.parts.map((text, index) => ({ id: `part-${index + 1}`, text })),
+        parts: definition.build.parts.map((text, index) => ({ id: `part-${index + 1}`, text, contextualReading: reviewedEpisodeStandaloneReading(text) })),
         correctOrder: definition.build.parts.map((_, index) => `part-${index + 1}`),
         answer: line({ text: definition.build.answer, meaning: definition.build.meaning }, definition.keywords),
         explanation: definition.build.explanation,
@@ -476,6 +515,7 @@ export function createAuthoredEpisode(definition: AuthoredEpisodeDefinition): V3
     nextEpisode: {
       id: definition.number < 51 ? `episode-${definition.number + 1}` : undefined,
       titleJapanese: '次の挑戦',
+      titleReading: definition.number < 51 ? episodeTitleReadings[definition.number + 1]! : finalEpisodeTitleReading,
       titleEnglish: 'The Next Challenge',
       setup: `The story continues after “${definition.titleEnglish}.”`,
       hook: definition.nextHook,
@@ -494,6 +534,7 @@ export function createAuthoredEpisodeSeries(definitions: readonly AuthoredEpisod
         ...episode.nextEpisode,
         id: `episode-${next.number}`,
         titleJapanese: next.titleJapanese,
+        titleReading: episodeTitleReadings[next.number]!,
         titleEnglish: next.titleEnglish,
       },
     };

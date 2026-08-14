@@ -2,8 +2,11 @@ import { describe, expect, it } from 'vitest';
 
 import n4Grammar from '../../../assets/generated-content/grammar/n4.json';
 import n5Grammar from '../../../assets/generated-content/grammar/n5.json';
+import { hasCompleteContextualReading } from '../japanese-text/contextual-reading';
 import type { V3JapaneseLine, V3Scene } from '@/types/lesson-v3';
 
+import episodePracticeBank from './data/episode-grammar-practice.json';
+import { sourceTokensMatchReviewedReading, type SourcedSentence } from './authored-episode-factory';
 import { v3EpisodeList } from './episodes';
 
 function japaneseLines(scene: V3Scene): V3JapaneseLine[] {
@@ -70,10 +73,78 @@ describe('V3 episode catalogue', () => {
     const plainKanji = tokens.filter((token) => token.kind === 'plain' && /[\u3400-\u9fff々ヶ]/u.test(token.surface));
     const kanjiWithoutReading = tokens.filter((token) => token.kind === 'word' && /[\u3400-\u9fff々ヶ]/u.test(token.surface) && !token.reading);
     const sentenceWideKanjiTokens = tokens.filter((token) => token.kind === 'word' && /[\u3400-\u9fff々ヶ]/u.test(token.surface) && /[、。！？]/u.test(token.surface));
+    const invalidReadings = tokens.filter((token) => token.reading && !/^[\u3041-\u3096\u309d\u309e\u30a1-\u30faー]+$/u.test(token.reading));
 
     expect(plainKanji).toEqual([]);
     expect(kanjiWithoutReading).toEqual([]);
     expect(sentenceWideKanjiTokens).toEqual([]);
+    expect(invalidReadings).toEqual([]);
+  });
+
+  it('matches every pre-tokenized episode sentence to its reviewed full reading', () => {
+    const sentences = Object.values(episodePracticeBank.sentences) as SourcedSentence[];
+    expect(sentences).toHaveLength(816);
+    for (const sentence of sentences) {
+      expect(sourceTokensMatchReviewedReading(sentence), sentence.japanese).toBe(true);
+    }
+  });
+
+  it('keeps contextual readings intact at ambiguous token boundaries', () => {
+    const sentences = Object.values(episodePracticeBank.sentences) as SourcedSentence[];
+    const directlyHeard = sentences.find(({ japanese }) => japanese.startsWith('本人に聞いた'))!;
+    const repeatedCounter = sentences.find(({ japanese }) => japanese.startsWith('京都へ二回行った'))!;
+    const nara = sentences.find(({ japanese }) => japanese.includes('奈良とか'))!;
+
+    expect(directlyHeard.tokens).toEqual(expect.arrayContaining([
+      expect.objectContaining({ surface: '本人', reading: 'ほんにん' }),
+      expect.objectContaining({ surface: '聞', reading: 'き' }),
+    ]));
+    expect(repeatedCounter.tokens).toEqual(expect.arrayContaining([
+      expect.objectContaining({ surface: '二回行', reading: 'にかいい' }),
+    ]));
+    expect(nara.tokens).toEqual(expect.arrayContaining([
+      expect.objectContaining({ surface: '奈良', reading: 'なら' }),
+    ]));
+  });
+
+  it('provides contextual furigana for every Japanese option and starter outside a V3 line', () => {
+    const invalidReadings: string[] = [];
+    const validate = (episodeId: string, text: string, reading?: string) => {
+      if (!/[\u3400-\u9fff々ヶ]/u.test(text)) return;
+      if (!reading || !hasCompleteContextualReading(text, reading)) {
+        invalidReadings.push(`${episodeId}: ${text} → ${reading ?? 'missing'}`);
+      }
+    };
+
+    for (const episode of v3EpisodeList) {
+      for (const scene of episode.scenes) {
+        if (scene.type === 'interaction') {
+          scene.options.forEach((option) => {
+            if (option.label) validate(episode.id, option.label, option.contextualReading);
+          });
+        }
+        if (scene.type === 'sentenceBuild') {
+          scene.parts.forEach((part) => validate(episode.id, part.text, part.contextualReading));
+        }
+        if (scene.type === 'freeResponse') {
+          scene.suggestedStarters.forEach((starter) => validate(episode.id, starter.text, starter.contextualReading));
+        }
+      }
+    }
+    expect(invalidReadings).toEqual([]);
+  });
+
+  it('provides contextual furigana for every episode, arc, and learning-objective title', () => {
+    const invalidReadings: string[] = [];
+    for (const episode of v3EpisodeList) {
+      if (!hasCompleteContextualReading(episode.titleJapanese, episode.titleReading)) invalidReadings.push(`${episode.id} title: ${episode.titleJapanese} → ${episode.titleReading}`);
+      if (!hasCompleteContextualReading(episode.arcTitleJapanese, episode.arcTitleReading)) invalidReadings.push(`${episode.id} arc: ${episode.arcTitleJapanese} → ${episode.arcTitleReading}`);
+      if (!hasCompleteContextualReading(episode.nextEpisode.titleJapanese, episode.nextEpisode.titleReading)) invalidReadings.push(`${episode.id} next: ${episode.nextEpisode.titleJapanese} → ${episode.nextEpisode.titleReading}`);
+      for (const objective of episode.learningObjectives) {
+        if (!hasCompleteContextualReading(objective.japanese, objective.reading)) invalidReadings.push(`${episode.id} objective: ${objective.japanese} → ${objective.reading}`);
+      }
+    }
+    expect(invalidReadings).toEqual([]);
   });
 
   it('uses unique episode and scene IDs and links the full sequence', () => {

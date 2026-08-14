@@ -1,4 +1,5 @@
 import type { AiProvider } from '../ai/types';
+import { hasCompleteContextualReading } from './contextual-reading';
 import {
   generatedDailyReadingSchema,
   type DailyReadingGenerationRequest,
@@ -50,6 +51,8 @@ export function validateGeneratedDailyReading(
   if (length < minimum || length > maximum) errors.push(`content length is ${length}; expected ${minimum}-${maximum} characters`);
   if (/[A-Za-z]/u.test(reading.content)) errors.push('content must not contain English or romaji');
   if (!/[\u3040-\u30ff\u3400-\u9fff]/u.test(reading.title)) errors.push('title must contain Japanese');
+  if (!hasCompleteContextualReading(reading.title, reading.titleReading)) errors.push('titleReading must cover every title kanji in context');
+  if (!hasCompleteContextualReading(reading.content, reading.contentReading)) errors.push('contentReading must cover every passage kanji in context');
 
   const ids = new Set<string>();
   for (const question of reading.questions) {
@@ -58,6 +61,19 @@ export function validateGeneratedDailyReading(
     if (new Set(question.options).size !== question.options.length) errors.push(`${question.id} has duplicate options`);
     if (/[A-Za-z]/u.test(question.question) || question.options.some((option) => /[A-Za-z]/u.test(option))) {
       errors.push(`${question.id} must keep the exam question and options in Japanese`);
+    }
+    if (!hasCompleteContextualReading(question.question, question.questionReading)) {
+      errors.push(`${question.id} questionReading does not cover every kanji in context`);
+    }
+    question.options.forEach((option, index) => {
+      if (!hasCompleteContextualReading(option, question.optionReadings[index])) {
+        errors.push(`${question.id} optionReadings.${index} does not cover every kanji in context`);
+      }
+    });
+    if (/[\u3400-\u9fff々ヶ]/u.test(question.explanation)) {
+      if (!question.explanationReading || !hasCompleteContextualReading(question.explanation, question.explanationReading)) {
+        errors.push(`${question.id} explanationReading does not cover every Japanese explanation kanji in context`);
+      }
     }
   }
 
@@ -100,6 +116,13 @@ export function validateGeneratedDailyReading(
     const canonical = grammarById.get(grammar.sourceItemId);
     if (!canonical) errors.push(`target grammar ${grammar.sourceItemId} is not in the supplied curriculum context`);
     else if (canonical.japanese !== grammar.pattern) errors.push(`${grammar.sourceItemId} has an incorrect grammar pattern`);
+    if (/[\u3400-\u9fff々ヶ]/u.test(grammar.pattern)) {
+      if (!grammar.reading || !hasCompleteContextualReading(grammar.pattern, grammar.reading)) {
+        errors.push(`${grammar.sourceItemId} requires a contextual grammar reading`);
+      } else if (canonical?.reading && canonical.reading !== grammar.reading) {
+        errors.push(`${grammar.sourceItemId} has an incorrect grammar reading`);
+      }
+    }
   }
   return errors.length ? { errors } : { reading, errors: [] };
 }
@@ -115,13 +138,15 @@ Quality rules:
 - Introduce at most 3-5 words, exclusively from newVocabularyCandidates.
 - Never invent or alter curriculum IDs, readings, written forms, or grammar patterns.
 - Main content contains Japanese only: no English translations or romaji.
+- Supply titleReading and contentReading as the complete hiragana pronunciation of the exact title and passage. Preserve punctuation and every already-written kana exactly, including particles は and へ; replace only kanji with their contextual readings and katakana with hiragana.
+- Supply questionReading and four optionReadings for every question. Every kanji must use its pronunciation in that exact sentence, never an isolated dictionary reading. Supply targetGrammar.reading whenever a grammar pattern contains kanji.
 - Avoid vocabulary far above ${level} unless it is an intentionally supplied new candidate.
 - Create 3-5 distinct Japanese comprehension questions answerable only from the passage: basic retrieval, context/meaning, and one reasonable inference question.
 - Every question has exactly four unique options and exactly one valid answer. correctAnswer is its zero-based option index.
 - Do not duplicate questions. Do not use English in questions or options; English is allowed only in explanations.
 - Do not repeat recentTopics. Rotate naturally among the allowed type values.
 
-Return exactly: {"date":"YYYY-MM-DD","level":"${level}","type":"slice-of-life|conversation|diary|travel|mystery|school-work|fictional-news|culture|story-episode","title":"Japanese title","content":"Japanese passage","targetVocabulary":[{"sourceItemId":"authoritative id","word":"...","reading":"...","meaning":"...","isNew":false}],"targetGrammar":[{"sourceItemId":"authoritative id","pattern":"...","meaning":"..."}],"questions":[{"id":"unique id","question":"Japanese question","options":["...","...","...","..."],"correctAnswer":0,"explanation":"short explanation","targetVocabularyIds":["id"]}],"seriesId":null,"episodeNumber":null,"previousEpisodeId":null}.`;
+Return exactly: {"date":"YYYY-MM-DD","level":"${level}","type":"slice-of-life|conversation|diary|travel|mystery|school-work|fictional-news|culture|story-episode","title":"Japanese title","titleReading":"complete hiragana title pronunciation","content":"Japanese passage","contentReading":"complete hiragana passage pronunciation","targetVocabulary":[{"sourceItemId":"authoritative id","word":"...","reading":"...","meaning":"...","isNew":false}],"targetGrammar":[{"sourceItemId":"authoritative id","pattern":"...","reading":"required for kanji patterns","meaning":"..."}],"questions":[{"id":"unique id","question":"Japanese question","questionReading":"complete hiragana question pronunciation","options":["...","...","...","..."],"optionReadings":["...","...","...","..."],"correctAnswer":0,"explanation":"short explanation","explanationReading":"required when the explanation contains Japanese kanji","targetVocabularyIds":["id"]}],"seriesId":null,"episodeNumber":null,"previousEpisodeId":null}.`;
 }
 
 function dailyReadingUserPrompt(request: DailyReadingGenerationRequest, errors: string[]): string {

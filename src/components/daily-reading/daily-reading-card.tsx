@@ -62,12 +62,12 @@ export function DailyReadingCard({ state, loading, errorMessage, onOpen, onRetry
 
       <View style={styles.copy}>
         <View style={styles.eyebrowRow}>
-          <InteractiveJapaneseText type="smallBold">今日の読解</InteractiveJapaneseText>
+          <InteractiveJapaneseText type="smallBold" contextualReading="きょうのどっかい">今日の読解</InteractiveJapaneseText>
           <ThemedText type="metadata" themeColor="textSecondary">Daily reading</ThemedText>
         </View>
         {reading ? (
           <>
-            <InteractiveJapaneseText type="cardTitle">{reading.title}</InteractiveJapaneseText>
+            <InteractiveJapaneseText type="cardTitle" contextualReading={reading.titleReading}>{reading.title}</InteractiveJapaneseText>
             <View style={styles.metaRow}>
               <ThemedText type="small" themeColor="textSecondary">{reading.level} · {typeLabels[reading.type]} · {status}</ThemedText>
               <View style={styles.streak} accessibilityLabel={`${state?.streak ?? 0} day reading streak`}>

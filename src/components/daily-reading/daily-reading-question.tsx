@@ -40,6 +40,7 @@ export function DailyReadingQuestionView({
       <InteractiveJapaneseText
         type="heading"
         furiganaOverride={furigana}
+        contextualReading={question.questionReading}
         additionalItems={vocabularyItems}
         onItemPress={onVocabularyPress}
       >{question.question}</InteractiveJapaneseText>
@@ -56,6 +57,7 @@ export function DailyReadingQuestionView({
               disabled={Boolean(answer) || submitting}
               correctness={correctness}
               furiganaOverride={furigana}
+              contextualReading={question.optionReadings[index]}
               additionalItems={vocabularyItems}
               onItemPress={onVocabularyPress}
               onPress={() => setSelected(index)}
@@ -84,12 +86,12 @@ export function DailyReadingQuestionView({
           {!answer.correct ? (
             <View style={styles.correctAnswer}>
               <ThemedText type="small" themeColor="textSecondary">Correct answer</ThemedText>
-              <InteractiveJapaneseText furiganaOverride={furigana} additionalItems={vocabularyItems} onItemPress={onVocabularyPress}>
+              <InteractiveJapaneseText contextualReading={question.optionReadings[question.correctAnswer]} furiganaOverride={furigana} additionalItems={vocabularyItems} onItemPress={onVocabularyPress}>
                 {question.options[question.correctAnswer]}
               </InteractiveJapaneseText>
             </View>
           ) : null}
-          <InteractiveJapaneseText themeColor="textSecondary" furiganaOverride={furigana} additionalItems={vocabularyItems} onItemPress={onVocabularyPress}>
+          <InteractiveJapaneseText contextualReading={question.explanationReading} themeColor="textSecondary" furiganaOverride={furigana} additionalItems={vocabularyItems} onItemPress={onVocabularyPress}>
             {question.explanation}
           </InteractiveJapaneseText>
         </View>

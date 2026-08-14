@@ -27,9 +27,9 @@ export default function TabLayout() {
         headerShown: false,
         tabBarActiveTintColor: theme.primary,
         tabBarInactiveTintColor: theme.textSecondary,
+        tabBarShowLabel: false,
         tabBarStyle: { backgroundColor: theme.surface, borderTopColor: theme.border, borderTopWidth: 1, paddingTop: Spacing.one },
         tabBarItemStyle: { paddingVertical: Spacing.one },
-        tabBarLabelStyle: { fontSize: 12, fontWeight: '600', letterSpacing: 0.1 },
         tabBarHideOnKeyboard: true,
       }}>
       <Tabs.Screen

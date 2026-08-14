@@ -2319,7 +2319,7 @@
     "passageType": "practical",
     "title": "かいの新しい広場・十時のやさしい記録",
     "japanese": "青空センターからのお知らせ\n近所に小さな広場ができました。\n日にち：来週の土曜日\n時間：六時から二時間\n場所：二階の青い部屋\n雨の場合も行います。受付Aへ知らせてください。\n初めての人も参加できます。",
-    "reading": "あおぞらせんたーからのおしらせ\nきんじょにちいさいひろばができました。\nひにち：らいしゅうのどようび\nじかん：ろくじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
+    "reading": "あおぞらせんたーからのおしらせ\nきんじょにちいさなひろばができました。\nひにち：らいしゅうのどようび\nじかん：ろくじからにじかん\nばしょ：にかいのあおいへや\nあめのばあいもおこないます。うけつけえーへしらせてください。\nはじめてのひともさんかできます。",
     "english": "Aozora Center notice about using a new neighbourhood square thoughtfully A small square opened in the neighbourhood. Date: next Saturday Time: two hours from 六時 Place: the blue room on the second floor It will also take place if it rains. Contact Reception A. First-time participants may also join.",
     "structuredContent": {
       "kind": "message",
@@ -2333,7 +2333,7 @@
         {
           "position": 2,
           "japanese": "近所に小さな広場ができました。",
-          "reading": "きんじょにちいさいひろばができました。",
+          "reading": "きんじょにちいさなひろばができました。",
           "english": "A small square opened in the neighbourhood."
         },
         {
@@ -4650,7 +4650,7 @@
     "passageType": "short",
     "title": "ゆうの新しい広場・五時のやさしい記録",
     "japanese": "今日はゆうの予定です。近所に小さな広場ができました。朝は子どもが遊び、夕方は犬を連れた人が来ます。終わってから、もう一度見ます。",
-    "reading": "きょうはゆうのよていです。きんじょにちいさいひろばができました。あさはこどもがあそび、ゆうがたはいぬをつれたひとがきます。おわってから、もういちどみます。",
+    "reading": "きょうはゆうのよていです。きんじょにちいさなひろばができました。あさはこどもがあそび、ゆうがたはいぬをつれたひとがきます。おわってから、もういちどみます。",
     "english": "This is ゆう's plan for today. A small square opened in the neighbourhood. Children visit in the morning and dog walkers in the evening. After finishing, it is checked once more.",
     "structuredContent": null,
     "glossary": [],

@@ -40,7 +40,7 @@ export const n5EpisodeDefinitions: AuthoredEpisodeDefinition[] = [
     titleJapanese: '新宿で会おう', titleEnglish: 'Finding Each Other in Shinjuku',
     opening: 'Yuki is waiting outside the east exit, but Shinjuku Station has more exits than you expected.',
     concepts: [
-      g('episode-2-demonstratives', 'これ・それ・あれ／この・その・あの', 'これ・それ・あれ', 'point to things near me, near you, or away from both of us', 'その出口[でぐち]じゃなくて、あの大[おお]きい時計[とけい]の下[した]だよ。', 'Not that exit—the place under that big clock over there.'),
+      g('episode-2-demonstratives', 'これ・それ・あれ／この・その・あの', 'これ・それ・あれ／この・その・あの', 'point to things near me, near you, or away from both of us', 'その出口[でぐち]じゃなくて、あの大[おお]きい時計[とけい]の下[した]だよ。', 'Not that exit—the place under that big clock over there.'),
       g('episode-2-question-words', 'どこ・どれ・どの', 'どこ・どれ・どの', 'ask which place, item, or noun', 'どの出口[でぐち]にいる？', 'Which exit are you at?'),
     ],
     curriculumGrammarIds: ['grammar-kore', 'grammar-sore', 'grammar-are', 'grammar-kono', 'grammar-sono', 'grammar-ano', 'grammar-koko', 'grammar-soko', 'grammar-asoko', 'grammar-doko', 'grammar-dore', 'grammar-dono'],
@@ -280,8 +280,8 @@ export const n5EpisodeDefinitions: AuthoredEpisodeDefinition[] = [
     titleJapanese: '今、何してる？', titleEnglish: 'What Is Everyone Doing?',
     opening: 'People wait in different ways: reading, talking, and staring at the river.',
     concepts: [
-      g('episode-14-progressive', '～ている（進行）', '～ている', 'describe an action in progress', 'れんは本[ほん]を読[よ]んでいます。', 'Ren is reading a book.'),
-      g('episode-14-state', '～ている（状態・習慣）', '～ている', 'describe a resulting state or habitual action', 'ゆきは東京[とうきょう]に住[す]んでいます。', 'Yuki lives in Tokyo.'),
+      g('episode-14-progressive', '～ている（進行）', '～ている（しんこう）', 'describe an action in progress', 'れんは本[ほん]を読[よ]んでいます。', 'Ren is reading a book.'),
+      g('episode-14-state', '～ている（状態・習慣）', '～ている（じょうたい・しゅうかん）', 'describe a resulting state or habitual action', 'ゆきは東京[とうきょう]に住[す]んでいます。', 'Yuki lives in Tokyo.'),
     ],
     curriculumGrammarIds: ['grammar-teiru1', 'grammar-teiru2', 'grammar-teiru3'],
     keywords: [v('episode-14-vocab-yomu', '読', 'よ', 'read'), v('episode-14-vocab-sumu', '住', 'す', 'live; reside')],
@@ -321,7 +321,7 @@ export const n5EpisodeDefinitions: AuthoredEpisodeDefinition[] = [
     opening: 'Each person proposes a different weekend plan: shopping, hiking, or visiting a temple.',
     concepts: [
       g('episode-16-desire', '～たい', '～たい', 'express what the speaker wants to do', '京都[きょうと]のお寺[てら]を見[み]たいです。', 'I want to see a temple in Kyoto.'),
-      g('episode-16-intention', '～つもり／動詞ます形＋に行く', '～つもり／～にいく', 'state an intention or go somewhere for a purpose', '週末[しゅうまつ]は靴[くつ]を買[か]いに行[い]くつもりです。', 'I intend to go buy shoes this weekend.'),
+      g('episode-16-intention', '～つもり／動詞ます形＋に行く', '～つもり／どうしますけい＋にいく', 'state an intention or go somewhere for a purpose', '週末[しゅうまつ]は靴[くつ]を買[か]いに行[い]くつもりです。', 'I intend to go buy shoes this weekend.'),
     ],
     curriculumGrammarIds: ['grammar-tai', 'grammar-tsumorida', 'grammar-verb-niiku'],
     keywords: [v('episode-16-vocab-shuumatsu', '週末', 'しゅうまつ', 'weekend'), v('episode-16-vocab-tera', '寺', 'てら', 'Buddhist temple')],
@@ -460,7 +460,7 @@ export const n5EpisodeDefinitions: AuthoredEpisodeDefinition[] = [
     titleJapanese: '赤いのはどれ？', titleEnglish: 'Which One Is Red?',
     opening: 'At the fruit stand, the seller points to several varieties without repeating their names.',
     concepts: [
-      g('episode-23-nominalizer', '～の（名詞化）', '～の', 'replace a known noun or nominalize an action', '赤[あか]いのを一[ひと]つください。', 'Please give me one red one.'),
+      g('episode-23-nominalizer', '～の（名詞化）', '～の（めいしか）', 'replace a known noun or nominalize an action', '赤[あか]いのを一[ひと]つください。', 'Please give me one red one.'),
       g('episode-23-focus', '形容詞＋のは', 'けいようし＋のは', 'make a description the topic', '甘[あま]いのは、このりんごです。', 'The sweet one is this apple.'),
     ],
     curriculumGrammarIds: ['grammar-no-nominalizer', 'grammar-adjective-noha', 'grammar-no-possession-marker'],

@@ -22,15 +22,19 @@ export interface DailyReadingVocabulary {
 export interface DailyReadingGrammar {
   sourceItemId: string;
   pattern: string;
+  reading?: string;
   meaning: string;
 }
 
 export interface DailyReadingQuestion {
   id: string;
   question: string;
+  questionReading: string;
   options: [string, string, string, string];
+  optionReadings: [string, string, string, string];
   correctAnswer: number;
   explanation: string;
+  explanationReading?: string;
   targetVocabularyIds: string[];
 }
 
@@ -40,7 +44,9 @@ export interface DailyReading {
   level: CurriculumLevel;
   type: DailyReadingType;
   title: string;
+  titleReading: string;
   content: string;
+  contentReading: string;
   targetVocabulary: DailyReadingVocabulary[];
   targetGrammar: DailyReadingGrammar[];
   questions: DailyReadingQuestion[];

@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+import { hasCompleteContextualReading } from '../japanese-text/contextual-reading';
+
 const dateKeySchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/u);
 const contextItemSchema = z.object({
   id: z.string().min(1).max(180),
@@ -19,20 +21,29 @@ export const dailyReadingVocabularySchema = z.object({
 export const dailyReadingGrammarSchema = z.object({
   sourceItemId: z.string().min(1).max(180),
   pattern: z.string().trim().min(1).max(120),
+  reading: z.string().trim().min(1).max(180).optional(),
   meaning: z.string().trim().min(1).max(300),
 }).strict();
 
 export const dailyReadingQuestionSchema = z.object({
   id: z.string().min(1).max(120),
   question: z.string().trim().min(1).max(500),
+  questionReading: z.string().trim().min(1).max(700),
   options: z.tuple([
     z.string().trim().min(1).max(240),
     z.string().trim().min(1).max(240),
     z.string().trim().min(1).max(240),
     z.string().trim().min(1).max(240),
   ]),
+  optionReadings: z.tuple([
+    z.string().trim().min(1).max(360),
+    z.string().trim().min(1).max(360),
+    z.string().trim().min(1).max(360),
+    z.string().trim().min(1).max(360),
+  ]),
   correctAnswer: z.number().int().min(0).max(3),
   explanation: z.string().trim().min(1).max(600),
+  explanationReading: z.string().trim().min(1).max(900).optional(),
   targetVocabularyIds: z.array(z.string().min(1).max(180)).max(4).default([]),
 }).strict();
 
@@ -42,7 +53,9 @@ export const dailyReadingSchema = z.object({
   level: z.enum(['N5', 'N4']),
   type: z.enum(['slice-of-life', 'conversation', 'diary', 'travel', 'mystery', 'school-work', 'fictional-news', 'culture', 'story-episode']),
   title: z.string().trim().min(1).max(120),
+  titleReading: z.string().trim().min(1).max(180),
   content: z.string().trim().min(1).max(1800),
+  contentReading: z.string().trim().min(1).max(2400),
   targetVocabulary: z.array(dailyReadingVocabularySchema).min(1).max(9),
   targetGrammar: z.array(dailyReadingGrammarSchema).max(2),
   questions: z.array(dailyReadingQuestionSchema).min(3).max(5),
@@ -51,10 +64,37 @@ export const dailyReadingSchema = z.object({
   previousEpisodeId: z.string().min(1).max(180).optional(),
   generatedAt: z.string().datetime({ offset: true }),
 }).strict().superRefine((reading, context) => {
+  const validateReading = (text: string, pronunciation: string, path: (string | number)[]) => {
+    if (!hasCompleteContextualReading(text, pronunciation)) {
+      context.addIssue({ code: 'custom', path, message: 'Reading must cover every kanji in its exact sentence context.' });
+    }
+  };
+  validateReading(reading.title, reading.titleReading, ['titleReading']);
+  validateReading(reading.content, reading.contentReading, ['contentReading']);
+  reading.targetGrammar.forEach((grammar, index) => {
+    if (/[\u3400-\u9fff々ヶ]/u.test(grammar.pattern)) {
+      if (!grammar.reading) {
+        context.addIssue({ code: 'custom', path: ['targetGrammar', index, 'reading'], message: 'Grammar patterns with kanji require a contextual reading.' });
+      } else {
+        validateReading(grammar.pattern, grammar.reading, ['targetGrammar', index, 'reading']);
+      }
+    }
+  });
   if (new Set(reading.questions.map((question) => question.id)).size !== reading.questions.length) {
     context.addIssue({ code: 'custom', path: ['questions'], message: 'Question IDs must be unique.' });
   }
   reading.questions.forEach((question, index) => {
+    validateReading(question.question, question.questionReading, ['questions', index, 'questionReading']);
+    question.options.forEach((option, optionIndex) => {
+      validateReading(option, question.optionReadings[optionIndex], ['questions', index, 'optionReadings', optionIndex]);
+    });
+    if (/[\u3400-\u9fff々ヶ]/u.test(question.explanation)) {
+      if (!question.explanationReading) {
+        context.addIssue({ code: 'custom', path: ['questions', index, 'explanationReading'], message: 'Japanese explanations with kanji require a contextual reading.' });
+      } else {
+        validateReading(question.explanation, question.explanationReading, ['questions', index, 'explanationReading']);
+      }
+    }
     if (new Set(question.options).size !== question.options.length) {
       context.addIssue({ code: 'custom', path: ['questions', index, 'options'], message: 'Question options must be unique.' });
     }

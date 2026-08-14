@@ -278,8 +278,8 @@ export const n4EpisodeDefinitions: AuthoredEpisodeDefinition[] = [
     titleJapanese: '雪が降りそう', titleEnglish: 'It Looks Like Snow',
     opening: 'The forecast, the clouds, and casual rumors provide three different kinds of evidence.',
     concepts: [
-      g('episode-39-evidence', '～そうだ（伝聞）・～らしい', '～そうだ・～らしい', 'report what was heard or what is apparently true', '予報[よほう]では、今夜[こんや]は雪[ゆき]だそうです。', 'The forecast says it will snow tonight.'),
-      g('episode-39-appearance', '～そうだ（様態）・～ようだ・～みたいだ・～に見える', '～そうだ・～ようだ・～みたいだ・～にみえる', 'describe an appearance or inference from evidence', '空[そら]が暗[くら]くて、雪[ゆき]が降[ふ]りそうです。', 'The sky is dark; it looks like it will snow.'),
+      g('episode-39-evidence', '～そうだ（伝聞）・～らしい', '～そうだ（でんぶん）・～らしい', 'report what was heard or what is apparently true', '予報[よほう]では、今夜[こんや]は雪[ゆき]だそうです。', 'The forecast says it will snow tonight.'),
+      g('episode-39-appearance', '～そうだ（様態）・～ようだ・～みたいだ・～に見える', '～そうだ（ようたい）・～ようだ・～みたいだ・～にみえる', 'describe an appearance or inference from evidence', '空[そら]が暗[くら]くて、雪[ゆき]が降[ふ]りそうです。', 'The sky is dark; it looks like it will snow.'),
     ],
     curriculumGrammarIds: ['grammar-n4-souda-hearsay', 'grammar-n4-souda-appearance', 'grammar-n4-rashii', 'grammar-n4-youda-similarity', 'grammar-n4-mitai-da', 'grammar-n4-ni-mieru'],
     keywords: [v('episode-39-vocab-yohou', '予報', 'よほう', 'forecast'), v('episode-39-vocab-sora', '空', 'そら', 'sky')],

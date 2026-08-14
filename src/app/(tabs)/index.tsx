@@ -157,11 +157,11 @@ export default function HomeScreen() {
             </View>
           </View>
           <View style={styles.episodeTitle}>
-            <InteractiveJapaneseText type="title">{currentEpisode.titleJapanese}</InteractiveJapaneseText>
+            <InteractiveJapaneseText type="title" contextualReading={currentEpisode.titleReading}>{currentEpisode.titleJapanese}</InteractiveJapaneseText>
             <ThemedText type="heading" themeColor="textSecondary">{currentEpisode.titleEnglish}</ThemedText>
           </View>
           <View style={styles.arcCopy}>
-            <InteractiveJapaneseText type="smallBold" style={{ color: theme.primary }}>{currentEpisode.arcTitleJapanese}</InteractiveJapaneseText>
+            <InteractiveJapaneseText type="smallBold" contextualReading={currentEpisode.arcTitleReading} style={{ color: theme.primary }}>{currentEpisode.arcTitleJapanese}</InteractiveJapaneseText>
             <ThemedText type="small" themeColor="textSecondary">{currentEpisode.arcTitleEnglish}</ThemedText>
           </View>
           {started && !completed ? (
@@ -207,7 +207,7 @@ export default function HomeScreen() {
             {learned.map((item, index) => (
               <View key={item.id} style={[styles.learnedRow, index > 0 && { borderTopWidth: 1, borderTopColor: theme.border }]}>
                 <View style={styles.learnedJapanese}>
-                  <InteractiveJapaneseText type="cardTitle">{item.japanese}</InteractiveJapaneseText>
+                  <InteractiveJapaneseText type="cardTitle" contextualReading={item.reading}>{item.japanese}</InteractiveJapaneseText>
                   <InteractiveJapaneseText type="small" themeColor="textSecondary">{item.reading}</InteractiveJapaneseText>
                 </View>
                 <ThemedText type="small" themeColor="textSecondary" style={styles.learnedMeaning}>{item.meaning}</ThemedText>
@@ -266,7 +266,7 @@ export default function HomeScreen() {
                         >
                           <ThemedText type="metadata" style={{ color: isCurrent ? theme.primary : theme.textSecondary }}>{String(episode.episodeNumber).padStart(2, '0')}</ThemedText>
                           <View style={styles.courseCopy}>
-                            <ThemedText type="cardTitle">{episode.titleJapanese}</ThemedText>
+                            <InteractiveJapaneseText type="cardTitle" contextualReading={episode.titleReading}>{episode.titleJapanese}</InteractiveJapaneseText>
                             <ThemedText type="small" themeColor="textSecondary">{episode.titleEnglish} · {episode.estimatedMinutes} min</ThemedText>
                           </View>
                           <Ionicons name={episodeProgress?.completedAt ? 'checkmark-circle' : episodeProgress?.currentSceneIndex ? 'play-circle' : 'chevron-forward'} size={22} color={episodeProgress?.completedAt ? theme.success : theme.primary} />

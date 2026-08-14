@@ -53,8 +53,10 @@ export const episodeOne: V3Episode = {
   level: 'N5',
   arcId: 'new-life-in-japan',
   arcTitleJapanese: '日本での新生活',
+  arcTitleReading: 'にほんでのしんせいかつ',
   arcTitleEnglish: 'New Life in Japan',
   titleJapanese: '知らないメッセージ',
+  titleReading: 'しらないめっせーじ',
   titleEnglish: "A Message From Someone You Don't Know",
   estimatedMinutes: 10,
   curriculumGrammarIds: [
@@ -171,7 +173,11 @@ export const episodeOne: V3Episode = {
       id: 'free-reply', type: 'freeResponse', intent: 'episode-one-availability',
       prompt: 'Reply naturally. Tell Yuki when you are free, if you are working, or suggest something to do.',
       message: { id: 'free-prompt', sender: 'yuki', line: line(japanese(ashita, hima, '？')) },
-      suggestedStarters: ['うん、ひまだよ！', '午後ならひまだよ。', '明日は仕事がある。'],
+      suggestedStarters: [
+        { text: 'うん、ひまだよ！' },
+        { text: '午後ならひまだよ。', contextualReading: 'ごごならひまだよ。' },
+        { text: '明日は仕事がある。', contextualReading: 'あしたはしごとがある。' },
+      ],
     },
     {
       id: 'meeting-place', type: 'chat', learnedItemIds: ['v3-vocab-eki'], messages: [
@@ -183,13 +189,17 @@ export const episodeOne: V3Episode = {
       id: 'mia-recap', type: 'freeResponse', intent: 'recap-contact', learnedItemIds: ['v3-expression-mou', 'v3-expression-mada', 'v3-vocab-renraku-suru'],
       prompt: 'One last message to Yuki — reply naturally in Japanese.',
       message: { id: 'mia-recap-prompt', sender: 'yuki', line: line(japanese('そういえば、ミアには', mou, renrakuShita, '？')) },
-      suggestedStarters: ['うん、もう連絡したよ。', 'まだしてない。'],
+      suggestedStarters: [
+        { text: 'うん、もう連絡したよ。', contextualReading: 'うん、もうれんらくしたよ。' },
+        { text: 'まだしてない。' },
+      ],
     },
     { id: 'complete', type: 'completion' },
   ],
   nextEpisode: {
     id: 'episode-2',
     titleJapanese: '新宿で会おう',
+    titleReading: 'しんじゅくであおう',
     titleEnglish: "Let's Meet in Shinjuku",
     setup: "You and Yuki have made plans to meet at Shinjuku Station.",
     hook: 'But getting there might not go exactly as planned.',

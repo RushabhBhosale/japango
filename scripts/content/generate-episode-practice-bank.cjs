@@ -10,6 +10,7 @@ const allSentences = JSON.parse(fs.readFileSync(path.join(generated, 'sentences/
 const sentenceById = new Map(allSentences.map((sentence) => [sentence.id, sentence]));
 const optionsByQuestionId = new Map();
 const kanjiPattern = /[\u3400-\u9fff々ヶ]/u;
+const readingTargetPattern = /[\u3400-\u9fff々ヶ〇0-9０-９]/u;
 const punctuationPattern = /[、。！？]/u;
 const wordReadings = new Map();
 const kanjiReadings = new Map();
@@ -46,13 +47,20 @@ for (const level of levels) {
 
 function kanaCandidates(surface) {
   const normalized = toHiragana(surface);
-  const candidates = new Set([normalized]);
-  // Japanese orthography writes these particles with historical kana spelling.
-  if (normalized.endsWith('は')) candidates.add(`${normalized.slice(0, -1)}わ`);
-  if (normalized.startsWith('は')) candidates.add(`わ${normalized.slice(1)}`);
-  if (normalized.endsWith('へ')) candidates.add(`${normalized.slice(0, -1)}え`);
-  if (normalized.startsWith('へ')) candidates.add(`え${normalized.slice(1)}`);
-  if (normalized === 'を') candidates.add('お');
+  let candidates = new Set(['']);
+  // Reviewed corpus readings use phonetic spellings for particles. Generate
+  // both spellings at every possible position; the full-sentence alignment
+  // decides which one is correct for this occurrence.
+  for (const character of Array.from(normalized)) {
+    const pronunciations = character === 'は'
+      ? ['は', 'わ']
+      : character === 'へ'
+        ? ['へ', 'え']
+        : character === 'を'
+          ? ['を', 'お']
+          : [character];
+    candidates = new Set([...candidates].flatMap((prefix) => pronunciations.map((pronunciation) => `${prefix}${pronunciation}`)));
+  }
   return [...candidates];
 }
 
@@ -87,17 +95,30 @@ function wordCandidates(surface, reading, cursor) {
   // The corpus supplies a sentence-level reading. This bounded fallback keeps
   // every unfamiliar kanji word readable, while the alignment below makes sure
   // the remaining words still match the reviewed sentence reading exactly.
+  // Prefer a plausible two-mora-per-character split when a repeated kana makes
+  // more than one boundary structurally possible (本人に must not become
+  // 本人[ほん] + に + 聞[んにき]).
+  const targetCharacterCount = Array.from(surface).filter((character) => readingTargetPattern.test(character)).length;
+  const expectedLength = Math.max(1, targetCharacterCount * 2);
   for (let length = 1; length <= 14; length += 1) {
-    addCandidate(reading.slice(cursor, cursor + length), 0);
+    addCandidate(reading.slice(cursor, cursor + length), 10 - Math.abs(length - expectedLength));
   }
 
   return [...candidates].map(([value, score]) => ({ value, score }));
 }
 
 function tokenizeSourceSentence(japanese, reading) {
-  const segments = [...new Intl.Segmenter('ja', { granularity: 'word' }).segment(japanese)]
-    .map(({ segment }) => segment)
-    .filter(Boolean);
+  // Sentence-level readings cannot always be divided safely at dictionary
+  // word boundaries. Keep adjacent kanji/numerals together so a reading such
+  // as 二回行った → にかいいった cannot be misassigned as 二回 → に and
+  // 行 → かいい. Kana and punctuation remain exact alignment anchors.
+  const segments = [];
+  for (const character of Array.from(japanese)) {
+    const requiresReading = readingTargetPattern.test(character);
+    const previous = segments.at(-1);
+    if (previous?.requiresReading === requiresReading) previous.surface += character;
+    else segments.push({ surface: character, requiresReading });
+  }
   const normalizedReading = toHiragana(reading);
   const memo = new Map();
 
@@ -111,7 +132,7 @@ function tokenizeSourceSentence(japanese, reading) {
     }
 
     let best = null;
-    for (const candidate of wordCandidates(segments[segmentIndex], normalizedReading, readingIndex)) {
+    for (const candidate of wordCandidates(segments[segmentIndex].surface, normalizedReading, readingIndex)) {
       const next = align(segmentIndex + 1, readingIndex + candidate.value.length);
       if (!next) continue;
       const score = candidate.score + next.score;
@@ -124,12 +145,12 @@ function tokenizeSourceSentence(japanese, reading) {
   const aligned = align(0, 0);
   if (!aligned) throw new Error(`Could not align source sentence: ${japanese} (${reading})`);
 
-  const tokens = segments.map((surface, index) => {
+  const tokens = segments.map(({ surface, requiresReading }, index) => {
     const token = { surface };
-    if (kanjiPattern.test(surface)) token.reading = aligned.values[index];
+    if (requiresReading) token.reading = aligned.values[index];
     return token;
   });
-  if (tokens.some((token) => kanjiPattern.test(token.surface) && !token.reading)) {
+  if (tokens.some((token) => readingTargetPattern.test(token.surface) && !token.reading)) {
     throw new Error(`Missing token reading in source sentence: ${japanese}`);
   }
   if (tokens.some((token) => kanjiPattern.test(token.surface) && punctuationPattern.test(token.surface))) {

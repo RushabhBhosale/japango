@@ -1,14 +1,18 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Modal, Pressable, StyleSheet, View } from 'react-native';
 import { router, type Href } from 'expo-router';
 
 import { AppButton } from '@/components/common/app-button';
+import { FuriganaBubble } from '@/components/lesson/furigana-bubble';
+import { splitJapaneseText, type JapaneseTextSegment } from '@/components/lesson/japanese-text-matcher';
 import { ThemedText, type ThemedTextProps } from '@/components/themed-text';
-import { splitJapaneseText } from '@/components/lesson/japanese-text-matcher';
 import { Radius, Spacing } from '@/constants/theme';
+import { alignContextualReading, type ContextualReadingSegment } from '@/features/japanese-text/contextual-reading';
 import { useTheme } from '@/hooks/use-theme';
 import { findJapaneseTextItems, getFuriganaPreference, subscribeToFuriganaPreference, type JapaneseTextItem } from '@/services/database/japanese-text-repository';
 import type { FuriganaPreference } from '@/types/learning';
+
+const kanjiPattern = /[\u3400-\u9fff々ヶ]/u;
 
 function notebookHref(item: Exclude<JapaneseTextItem, { type: 'supplementary' }>): Href {
   if (item.id.startsWith('n5-')) return `/curriculum/${encodeURIComponent(item.id)}` as Href;
@@ -18,8 +22,30 @@ function notebookHref(item: Exclude<JapaneseTextItem, { type: 'supplementary' }>
 interface JapaneseTextProps extends ThemedTextProps {
   /** Per-screen preview used by explicit furigana toggles; it never changes the saved preference. */
   furiganaOverride?: boolean;
+  /** Reviewed pronunciation for this exact string, used before dictionary matching. */
+  contextualReading?: string;
   additionalItems?: JapaneseTextItem[];
   onItemPress?: (item: JapaneseTextItem) => void;
+}
+
+function contextualItem(
+  fullText: string,
+  segment: ContextualReadingSegment & { reading: string },
+  items: JapaneseTextItem[],
+): JapaneseTextItem {
+  const exact = items.find((item) => item.title === segment.text);
+  if (exact) return { ...exact, reading: segment.reading };
+  const containingWord = items.find((item) => (
+    item.title.startsWith(segment.text)
+    && fullText.startsWith(item.title, segment.start)
+  ));
+  return {
+    id: `contextual-reading-${segment.start}-${Array.from(segment.text).map((character) => character.codePointAt(0)?.toString(16)).join('-')}`,
+    type: 'supplementary',
+    title: segment.text,
+    reading: segment.reading,
+    meaning: containingWord?.meaning,
+  };
 }
 
 /** Shared interactive Japanese renderer for lessons, readings, and notebooks. */
@@ -30,6 +56,7 @@ export function JapaneseText({
   themeColor,
   accessibilityLabel,
   furiganaOverride,
+  contextualReading,
   additionalItems,
   onItemPress,
   ...textProps
@@ -39,6 +66,7 @@ export function JapaneseText({
   const [preference, setPreference] = useState<FuriganaPreference>('learning');
   const [items, setItems] = useState<JapaneseTextItem[]>([]);
   const [selected, setSelected] = useState<JapaneseTextItem>();
+  const [openedSegmentKey, setOpenedSegmentKey] = useState<string>();
 
   useEffect(() => {
     let active = true;
@@ -55,40 +83,59 @@ export function JapaneseText({
 
   useEffect(() => subscribeToFuriganaPreference(setPreference), []);
 
-  const segments = useMemo(() => splitJapaneseText(text, items), [items, text]);
+  const dictionarySegments = useMemo(() => splitJapaneseText(text, items), [items, text]);
+  const contextualSegments = useMemo<JapaneseTextSegment[] | undefined>(() => {
+    if (!contextualReading) return undefined;
+    const aligned = alignContextualReading(text, contextualReading);
+    return aligned?.map((segment) => segment.reading && kanjiPattern.test(segment.text)
+      ? {
+          kind: 'item' as const,
+          item: contextualItem(text, { ...segment, reading: segment.reading }, items),
+          text: segment.text,
+          reading: segment.reading,
+        }
+      : { kind: 'plain' as const, text: segment.text });
+  }, [contextualReading, items, text]);
+  const segments = contextualSegments ?? dictionarySegments;
   if (!text) return <ThemedText type={type} style={style} themeColor={themeColor} accessibilityLabel={accessibilityLabel} {...textProps}>{children}</ThemedText>;
-  if (!items.length) return <ThemedText type={type} style={style} themeColor={themeColor} accessibilityLabel={accessibilityLabel} {...textProps}>{text}</ThemedText>;
+  if (!items.length && !contextualSegments) return <ThemedText type={type} style={style} themeColor={themeColor} accessibilityLabel={accessibilityLabel} {...textProps}>{text}</ThemedText>;
 
-  const openItem = (item: JapaneseTextItem) => {
+  const alwaysShowFurigana = furiganaOverride ?? preference === 'always';
+  const openItem = (item: JapaneseTextItem, segmentKey: string, reading?: string) => {
     onItemPress?.(item);
+    const hasKanji = kanjiPattern.test(item.title);
+    if (reading && hasKanji && !alwaysShowFurigana && openedSegmentKey !== segmentKey) {
+      setOpenedSegmentKey(segmentKey);
+      return;
+    }
+    setOpenedSegmentKey(undefined);
     setSelected(item);
   };
-  const showRuby = (furiganaOverride ?? preference === 'always')
-    && segments.some((segment) => segment.kind === 'item' && Boolean(segment.reading));
-  const textContent = showRuby ? (
+  const textContent = (
     <View accessibilityLabel={accessibilityLabel} style={styles.textLine}>
       {segments.map((segment, index) => {
         if (segment.kind === 'plain') return <ThemedText key={`${index}-${segment.text}`} type={type} style={[styles.plainSegment, style]} themeColor={themeColor} {...textProps}>{segment.text}</ThemedText>;
+        const segmentKey = `${segment.item.id}-${index}`;
+        const hasKanji = kanjiPattern.test(segment.text);
+        const canRevealReading = Boolean(segment.reading && hasKanji);
+        const bubbleVisible = canRevealReading && (alwaysShowFurigana || openedSegmentKey === segmentKey);
+        const accessibilityAction = canRevealReading
+          ? bubbleVisible ? 'Open word details.' : 'Show its reading.'
+          : 'Open word details.';
         return (
           <Pressable
-            key={segment.item.id + index}
+            key={segmentKey}
             accessibilityRole="button"
-            accessibilityLabel={`${segment.text}${segment.reading ? `, ${segment.reading}` : ''}. Open word details.`}
-            onPress={() => openItem(segment.item)}
-            style={styles.item}
+            accessibilityLabel={`${segment.text}${bubbleVisible && segment.reading ? `, ${segment.reading}` : ''}. ${accessibilityAction}`}
+            onPress={() => openItem(segment.item, segmentKey, segment.reading)}
+            style={({ pressed }) => [styles.item, bubbleVisible && styles.itemWithBubble, pressed && styles.itemPressed]}
           >
-            {segment.reading ? <ThemedText type="small" style={[styles.furigana, { color: theme.textSecondary }]}>{segment.reading}</ThemedText> : null}
+            {bubbleVisible && segment.reading ? <FuriganaBubble reading={segment.reading} /> : null}
             <ThemedText type={type} style={[style, styles.written, { color: theme.primary }]} themeColor={themeColor} {...textProps}>{segment.text}</ThemedText>
           </Pressable>
         );
       })}
     </View>
-  ) : (
-    <ThemedText type={type} style={style} themeColor={themeColor} accessibilityLabel={accessibilityLabel} {...textProps}>
-      {segments.map((segment, index) => segment.kind === 'plain'
-        ? <Text key={`${index}-${segment.text}`}>{segment.text}</Text>
-        : <Text key={segment.item.id + index} accessibilityRole="button" accessibilityLabel={`${segment.text}. Tap to reveal its reading and meaning.`} onPress={() => openItem(segment.item)} suppressHighlighting style={[styles.inlineItem, { color: theme.primary }]}>{segment.text}</Text>)}
-    </ThemedText>
   );
 
   return (
@@ -118,10 +165,10 @@ export const InteractiveJapaneseText = JapaneseText;
 const styles = StyleSheet.create({
   textLine: { alignItems: 'flex-end', alignSelf: 'stretch', flexDirection: 'row', flexShrink: 1, flexWrap: 'wrap', maxWidth: '100%', minWidth: 0, rowGap: Spacing.two, width: '100%' },
   plainSegment: { flexShrink: 1, maxWidth: '100%', minWidth: 0 },
-  item: { alignItems: 'center', flexShrink: 1, justifyContent: 'flex-end', maxWidth: '100%', minHeight: 28, minWidth: 0, paddingHorizontal: 1 },
-  inlineItem: { fontWeight: '700', textDecorationLine: 'underline' },
+  item: { alignItems: 'center', flexShrink: 1, justifyContent: 'flex-end', maxWidth: '100%', minHeight: 28, minWidth: 0, paddingHorizontal: 1, position: 'relative' },
+  itemPressed: { opacity: 0.7 },
+  itemWithBubble: { zIndex: 10 },
   written: { fontWeight: '700', maxWidth: '100%', minWidth: 0, textAlign: 'center', textDecorationLine: 'underline' },
-  furigana: { fontSize: 11, fontWeight: '500', lineHeight: 13, textDecorationLine: 'none' },
   backdrop: { alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.38)', flex: 1, justifyContent: 'flex-end' },
   sheet: { borderTopLeftRadius: Radius.large, borderTopRightRadius: Radius.large, gap: Spacing.twoHalf, maxWidth: 720, padding: Spacing.four, width: '100%' },
 });

@@ -31,7 +31,9 @@ export const generatedDailyReadingSchema = z.object({
   level: dailyReadingLevelSchema,
   type: z.enum(['slice-of-life', 'conversation', 'diary', 'travel', 'mystery', 'school-work', 'fictional-news', 'culture', 'story-episode']),
   title: z.string().trim().min(1).max(120),
+  titleReading: z.string().trim().min(1).max(180),
   content: z.string().trim().min(1).max(1800),
+  contentReading: z.string().trim().min(1).max(2400),
   targetVocabulary: z.array(z.object({
     sourceItemId: z.string().min(1).max(180),
     word: z.string().trim().min(1).max(80),
@@ -42,19 +44,28 @@ export const generatedDailyReadingSchema = z.object({
   targetGrammar: z.array(z.object({
     sourceItemId: z.string().min(1).max(180),
     pattern: z.string().trim().min(1).max(120),
+    reading: z.string().trim().min(1).max(180).optional(),
     meaning: z.string().trim().min(1).max(300),
   }).strict()).max(2),
   questions: z.array(z.object({
     id: z.string().min(1).max(120),
     question: z.string().trim().min(1).max(500),
+    questionReading: z.string().trim().min(1).max(700),
     options: z.tuple([
       z.string().trim().min(1).max(240),
       z.string().trim().min(1).max(240),
       z.string().trim().min(1).max(240),
       z.string().trim().min(1).max(240),
     ]),
+    optionReadings: z.tuple([
+      z.string().trim().min(1).max(360),
+      z.string().trim().min(1).max(360),
+      z.string().trim().min(1).max(360),
+      z.string().trim().min(1).max(360),
+    ]),
     correctAnswer: z.number().int().min(0).max(3),
     explanation: z.string().trim().min(1).max(600),
+    explanationReading: z.string().trim().min(1).max(900).optional(),
     targetVocabularyIds: z.array(z.string().min(1).max(180)).max(4),
   }).strict()).min(3).max(5),
   seriesId: z.string().min(1).max(180).nullable().optional(),

@@ -29,7 +29,7 @@ export function DailyVocabularyReview({
   return (
     <View style={styles.section}>
       <View>
-        <InteractiveJapaneseText type="subtitle">今日の新しい言葉</InteractiveJapaneseText>
+        <InteractiveJapaneseText type="subtitle" contextualReading="きょうのあたらしいことば">今日の新しい言葉</InteractiveJapaneseText>
         <ThemedText themeColor="textSecondary">New and useful words from today</ThemedText>
       </View>
       <View style={[styles.list, { borderColor: theme.border }]}>
@@ -42,6 +42,7 @@ export function DailyVocabularyReview({
                   <InteractiveJapaneseText
                     type="heading"
                     furiganaOverride={furigana}
+                    contextualReading={item.reading}
                     additionalItems={vocabularyItems}
                     onItemPress={onVocabularyPress}
                   >{item.word}</InteractiveJapaneseText>

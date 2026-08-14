@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, TextInput, View } from 'react-native';
 
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
+import { InteractiveJapaneseText } from '@/components/lesson/japanese-text';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
 import {
@@ -63,7 +64,7 @@ export function V3EpisodeOneConversation({ scene, assistanceMode, glossary, stor
       <ThemedText type="heading">{prompt}</ThemedText>
       {starters.length && !response && phase === 'availability' ? (
         <View style={styles.chips}>
-          {starters.map((starter) => <Pressable key={starter} onPress={() => setAnswer(starter)} style={[styles.starter, { borderColor: theme.border }]}><ThemedText type="smallBold" style={{ color: theme.primary }}>{starter}</ThemedText></Pressable>)}
+          {starters.map((starter) => <Pressable key={starter.text} onPress={() => setAnswer(starter.text)} style={[styles.starter, { borderColor: theme.border }]}><InteractiveJapaneseText type="smallBold" contextualReading={starter.contextualReading} style={{ color: theme.primary }}>{starter.text}</InteractiveJapaneseText></Pressable>)}
         </View>
       ) : null}
       <TextInput

@@ -69,6 +69,13 @@ export default function DailyReadingScreen() {
     reading: item.reading,
     meaning: item.meaning,
   })) ?? [], [reading]);
+  const passageParagraphs = useMemo(() => {
+    if (!reading) return [];
+    const paragraphs = reading.content.split(/\n+/u);
+    const readings = reading.contentReading.split(/\n+/u);
+    if (paragraphs.length !== readings.length) return [{ text: reading.content, reading: reading.contentReading }];
+    return paragraphs.map((text, index) => ({ text, reading: readings[index]! }));
+  }, [reading]);
 
   const trackTap = useCallback((item: JapaneseTextItem) => {
     if (!reading || !reading.targetVocabulary.some((target) => target.sourceItemId === item.id)) return;
@@ -91,7 +98,7 @@ export default function DailyReadingScreen() {
           <Ionicons name="arrow-back" size={22} color={theme.text} />
         </Pressable>
         <View style={styles.navigationTitle}>
-          <InteractiveJapaneseText type="heading">今日の読解</InteractiveJapaneseText>
+          <InteractiveJapaneseText type="heading" contextualReading="きょうのどっかい">今日の読解</InteractiveJapaneseText>
           <ThemedText type="small" themeColor="textSecondary">Today’s Reading</ThemedText>
         </View>
         <Pressable
@@ -116,18 +123,19 @@ export default function DailyReadingScreen() {
       <View style={styles.reading}>
         <View style={[styles.readingHeader, { borderBottomColor: theme.border }]}>
           <ThemedText type="metadata" style={{ color: theme.primary }}>Today’s passage</ThemedText>
-          <InteractiveJapaneseText type="title" furiganaOverride={furigana} additionalItems={vocabularyItems} onItemPress={trackTap}>{reading.title}</InteractiveJapaneseText>
+          <InteractiveJapaneseText type="title" contextualReading={reading.titleReading} furiganaOverride={furigana} additionalItems={vocabularyItems} onItemPress={trackTap}>{reading.title}</InteractiveJapaneseText>
         </View>
         <View style={styles.passage} accessibilityLabel="Japanese reading passage">
-          {reading.content.split(/\n+/u).map((paragraph, index) => (
+          {passageParagraphs.map((paragraph, index) => (
             <InteractiveJapaneseText
-              key={`${index}-${paragraph.slice(0, 12)}`}
+              key={`${index}-${paragraph.text.slice(0, 12)}`}
               type="japaneseReading"
               style={styles.passageText}
               furiganaOverride={furigana}
+              contextualReading={paragraph.reading}
               additionalItems={vocabularyItems}
               onItemPress={trackTap}
-            >{paragraph}</InteractiveJapaneseText>
+            >{paragraph.text}</InteractiveJapaneseText>
           ))}
         </View>
         {reading.targetGrammar.length ? (
@@ -135,7 +143,7 @@ export default function DailyReadingScreen() {
             <ThemedText type="smallBold" themeColor="textSecondary">GRAMMAR IN THIS READING</ThemedText>
             {reading.targetGrammar.map((grammar) => (
               <View key={grammar.sourceItemId} style={styles.grammarItem}>
-                <InteractiveJapaneseText type="heading" furiganaOverride={furigana}>{grammar.pattern}</InteractiveJapaneseText>
+                <InteractiveJapaneseText type="heading" contextualReading={grammar.reading} furiganaOverride={furigana}>{grammar.pattern}</InteractiveJapaneseText>
                 <ThemedText type="small" themeColor="textSecondary">{grammar.meaning}</ThemedText>
               </View>
             ))}
@@ -173,7 +181,7 @@ export default function DailyReadingScreen() {
                 <ThemedText style={{ color: theme.success }}>{correct}/{reading.questions.length} correct</ThemedText>
                 <Ionicons name="flame-outline" size={18} color={theme.success} />
                 <ThemedText style={{ color: theme.success }}>{streak}</ThemedText>
-                <InteractiveJapaneseText style={{ color: theme.success }}>日連続</InteractiveJapaneseText>
+                <InteractiveJapaneseText contextualReading="にちれんぞく" style={{ color: theme.success }}>日連続</InteractiveJapaneseText>
               </View>
             </View>
           </Card>

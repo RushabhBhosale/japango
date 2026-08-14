@@ -163,7 +163,7 @@ export function EpisodePlayer({ episode }: { episode: V3Episode }) {
           <Ionicons name="close" size={25} color={theme.text} />
         </Pressable>
         <View style={styles.progressArea}>
-          <InteractiveJapaneseText type="smallBold">{episode.titleJapanese}</InteractiveJapaneseText>
+          <InteractiveJapaneseText type="smallBold" contextualReading={episode.titleReading}>{episode.titleJapanese}</InteractiveJapaneseText>
           <ProgressBar value={((currentIndex + 1) / episode.scenes.length) * 100} accessibilityLabel="Episode progress" />
         </View>
         <View style={[styles.helpBadge, { backgroundColor: theme.primarySoft }]}>
@@ -244,17 +244,17 @@ function Completion({ episode, progress }: { episode: V3Episode; progress: V3Epi
       <View style={[styles.completeMark, { backgroundColor: theme.primarySoft }]}><Ionicons name="checkmark" size={32} color={theme.primary} /></View>
       <View style={styles.centerCopy}>
         <ThemedText type="metadata" style={{ color: theme.primary }}>Episode complete</ThemedText>
-        <InteractiveJapaneseText type="title" style={styles.centerText}>{episode.titleJapanese}</InteractiveJapaneseText>
+        <InteractiveJapaneseText type="title" contextualReading={episode.titleReading} style={styles.centerText}>{episode.titleJapanese}</InteractiveJapaneseText>
         <ThemedText type="heading" themeColor="textSecondary" style={styles.centerText}>{episode.titleEnglish}</ThemedText>
       </View>
       <Card>
         <ThemedText type="heading">You understood {understood} of {checked} checked moments</ThemedText>
-        {learned.length ? <View style={styles.learnedList}>{learned.map((item) => <View key={item.id} style={styles.learnedRow}><InteractiveJapaneseText type="japanese">{item.japanese}</InteractiveJapaneseText><ThemedText type="small" themeColor="textSecondary" style={styles.learnedMeaning}>{item.meaning}</ThemedText></View>)}</View> : null}
+        {learned.length ? <View style={styles.learnedList}>{learned.map((item) => <View key={item.id} style={styles.learnedRow}><InteractiveJapaneseText type="japanese" contextualReading={item.reading}>{item.japanese}</InteractiveJapaneseText><ThemedText type="small" themeColor="textSecondary" style={styles.learnedMeaning}>{item.meaning}</ThemedText></View>)}</View> : null}
         <ThemedText type="smallBold" style={{ color: theme.success }}>You used Japanese on your own.</ThemedText>
       </Card>
       <Card variant="accent" style={styles.nextCard}> 
         <ThemedText type="metadata" style={{ color: theme.primary }}>Next episode</ThemedText>
-        <InteractiveJapaneseText type="subtitle">{episode.nextEpisode.titleJapanese}</InteractiveJapaneseText>
+        <InteractiveJapaneseText type="subtitle" contextualReading={episode.nextEpisode.titleReading}>{episode.nextEpisode.titleJapanese}</InteractiveJapaneseText>
         <ThemedText type="heading">{episode.nextEpisode.titleEnglish}</ThemedText>
         <ThemedText themeColor="textSecondary">{episode.nextEpisode.setup}</ThemedText>
         <ThemedText>{episode.nextEpisode.hook}</ThemedText>

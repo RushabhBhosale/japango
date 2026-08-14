@@ -132,6 +132,7 @@ export interface V3ChoiceScene extends V3BaseScene {
     id: string;
     line?: V3JapaneseLine;
     label?: string;
+    contextualReading?: string;
     correct: boolean;
     feedback: string;
   }[];
@@ -153,7 +154,7 @@ export interface V3TeachingMomentScene extends V3BaseScene {
 export interface V3SentenceBuildScene extends V3BaseScene {
   type: 'sentenceBuild';
   prompt: string;
-  parts: { id: string; text: string }[];
+  parts: { id: string; text: string; contextualReading?: string }[];
   correctOrder: string[];
   answer: V3JapaneseLine;
   explanation: string;
@@ -164,7 +165,7 @@ export interface V3FreeResponseScene extends V3BaseScene {
   prompt: string;
   message: V3ChatMessage;
   intent: 'accept-invitation' | 'episode-one-availability' | 'recap-contact';
-  suggestedStarters: string[];
+  suggestedStarters: { text: string; contextualReading?: string }[];
 }
 
 // Keep only durable choices that can make a later story beat feel personal.
@@ -195,8 +196,10 @@ export interface V3Episode {
   level: 'N5' | 'N4';
   arcId: string;
   arcTitleJapanese: string;
+  arcTitleReading: string;
   arcTitleEnglish: string;
   titleJapanese: string;
+  titleReading: string;
   titleEnglish: string;
   estimatedMinutes: number;
   /** Canonical curriculum records covered by the episode. */
@@ -209,6 +212,7 @@ export interface V3Episode {
   nextEpisode: {
     id?: string;
     titleJapanese: string;
+    titleReading: string;
     titleEnglish: string;
     setup: string;
     hook: string;

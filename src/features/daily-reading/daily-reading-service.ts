@@ -1,12 +1,15 @@
-import { dailyReadingApiErrorResponseSchema, dailyReadingApiResponseSchema } from './schemas';
 import {
   buildDailyReadingLearningContext,
   cacheDailyReading,
   getCachedDailyReading,
 } from '@/services/database/daily-reading-repository';
+import { waitForLearningContentInstallation } from '@/services/database/database';
 import type { DailyReading } from '@/types/daily-reading';
 import type { LearnerProfile, CurriculumLevel } from '@/types/learning';
 import type { V3LearnerState } from '@/types/lesson-v3';
+
+import { buildLocalDailyReading } from './local-daily-reading';
+import { dailyReadingApiErrorResponseSchema, dailyReadingApiResponseSchema } from './schemas';
 
 export class DailyReadingUnavailableError extends Error {
   constructor(message: string, readonly retryable: boolean) {
@@ -104,24 +107,36 @@ export async function loadTodayDailyReading(
   const cached = await getCachedDailyReading(date, level);
   if (cached) return cached;
   const url = endpoint(`/api/daily-readings/today?date=${encodeURIComponent(date)}&level=${level}`);
-  if (!url) {
-    throw new DailyReadingUnavailableError('Connect the lesson service to prepare today’s reading.', false);
-  }
+  try {
+    if (!url) throw new DailyReadingUnavailableError('Connect the lesson service to prepare today’s reading.', false);
 
-  const existingResponse = await requestReading(url, { signal });
-  const existing = await parseReadingResponse(existingResponse, true);
-  if (existing) return cacheDailyReading(existing);
+    const existingResponse = await requestReading(url, { signal });
+    const existing = await parseReadingResponse(existingResponse, true);
+    if (existing) return cacheDailyReading(existing);
 
-  const context = await buildDailyReadingLearningContext(level);
-  const generatedResponse = await requestReading(url, {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ date, level, context }),
-    signal,
-  });
-  const generated = await parseReadingResponse(generatedResponse);
-  if (!generated) {
-    throw new DailyReadingUnavailableError('Today’s reading is not ready yet. Please try again shortly.', true);
+    const context = await buildDailyReadingLearningContext(level);
+    const generatedResponse = await requestReading(url, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ date, level, context }),
+      signal,
+    });
+    const generated = await parseReadingResponse(generatedResponse);
+    if (generated) return cacheDailyReading(generated);
+  } catch (networkError) {
+    if (signal?.aborted) throw networkError;
+    try {
+      await waitForLearningContentInstallation();
+      const context = await buildDailyReadingLearningContext(level);
+      return cacheDailyReading(buildLocalDailyReading(date, level, context));
+    } catch {
+      throw networkError instanceof DailyReadingUnavailableError
+        ? networkError
+        : new DailyReadingUnavailableError(
+          'Today’s reading could not be prepared. Your saved readings are still available.',
+          true,
+        );
+    }
   }
-  return cacheDailyReading(generated);
+  throw new DailyReadingUnavailableError('Today’s reading is not ready yet. Please try again shortly.', true);
 }

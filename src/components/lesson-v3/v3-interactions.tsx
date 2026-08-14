@@ -75,7 +75,7 @@ export function V3ChoiceInteraction({ scene, assistanceMode, glossary, response,
             >
               {candidate.line
                 ? <V3JapaneseLineView line={candidate.line} assistanceMode={assistanceMode} glossary={glossary} type="default" />
-                : <InteractiveJapaneseText>{candidate.label}</InteractiveJapaneseText>}
+                : <InteractiveJapaneseText contextualReading={candidate.contextualReading}>{candidate.label}</InteractiveJapaneseText>}
             </Pressable>
           );
         })}
@@ -113,11 +113,11 @@ export function V3SentenceBuildInteraction({ scene, assistanceMode, glossary, re
       <View style={[styles.buildArea, { borderColor: theme.border, backgroundColor: theme.surface }]}>
         {order.length ? order.map((id) => {
           const part = scene.parts.find((candidate) => candidate.id === id);
-          return <Pressable key={id} disabled={Boolean(response)} onPress={() => setOrder((current) => current.filter((candidate) => candidate !== id))} style={[styles.wordChip, { backgroundColor: theme.primarySoft }]}><InteractiveJapaneseText type="heading" style={styles.chipText}>{part?.text}</InteractiveJapaneseText></Pressable>;
+          return <Pressable key={id} disabled={Boolean(response)} onPress={() => setOrder((current) => current.filter((candidate) => candidate !== id))} style={[styles.wordChip, { backgroundColor: theme.primarySoft }]}><InteractiveJapaneseText type="heading" contextualReading={part?.contextualReading} style={styles.chipText}>{part?.text}</InteractiveJapaneseText></Pressable>;
         }) : <ThemedText themeColor="textSecondary">Tap the pieces below</ThemedText>}
       </View>
       <View style={styles.chips}>
-        {available.map((part) => <Pressable key={part.id} onPress={() => setOrder((current) => [...current, part.id])} style={[styles.wordChip, { borderColor: theme.border, backgroundColor: theme.surface }]}><InteractiveJapaneseText type="heading" style={styles.chipText}>{part.text}</InteractiveJapaneseText></Pressable>)}
+        {available.map((part) => <Pressable key={part.id} onPress={() => setOrder((current) => [...current, part.id])} style={[styles.wordChip, { borderColor: theme.border, backgroundColor: theme.surface }]}><InteractiveJapaneseText type="heading" contextualReading={part.contextualReading} style={styles.chipText}>{part.text}</InteractiveJapaneseText></Pressable>)}
       </View>
       {response ? (
         <>
@@ -163,7 +163,7 @@ function StandardFreeResponseInteraction({ scene, assistanceMode, glossary, resp
       <ThemedText type="heading">{scene.prompt}</ThemedText>
       {starters.length && !response ? (
         <View style={styles.chips}>
-          {starters.map((starter) => <Pressable key={starter} onPress={() => setAnswer(starter)} style={[styles.starter, { borderColor: theme.border }]}><ThemedText type="smallBold" style={{ color: theme.primary }}>{starter}</ThemedText></Pressable>)}
+          {starters.map((starter) => <Pressable key={starter.text} onPress={() => setAnswer(starter.text)} style={[styles.starter, { borderColor: theme.border }]}><InteractiveJapaneseText type="smallBold" contextualReading={starter.contextualReading} style={{ color: theme.primary }}>{starter.text}</InteractiveJapaneseText></Pressable>)}
         </View>
       ) : null}
       <TextInput

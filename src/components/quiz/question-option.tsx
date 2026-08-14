@@ -11,6 +11,7 @@ interface QuestionOptionProps {
   disabled?: boolean;
   correctness?: 'correct' | 'incorrect';
   furiganaOverride?: boolean;
+  contextualReading?: string;
   additionalItems?: JapaneseTextItem[];
   onItemPress?: (item: JapaneseTextItem) => void;
   onPress: () => void;
@@ -22,6 +23,7 @@ export function QuestionOption({
   disabled = false,
   correctness,
   furiganaOverride,
+  contextualReading,
   additionalItems,
   onItemPress,
   onPress,
@@ -48,6 +50,7 @@ export function QuestionOption({
         <JapaneseText
           style={styles.optionLabel}
           furiganaOverride={furiganaOverride}
+          contextualReading={contextualReading}
           additionalItems={additionalItems}
           onItemPress={onItemPress}
         >{label}</JapaneseText>

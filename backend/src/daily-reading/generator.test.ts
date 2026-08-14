@@ -28,7 +28,9 @@ const validReading: GeneratedDailyReading = {
   level: request.level,
   type: 'school-work',
   title: '図書館での一日',
+  titleReading: 'としょかんでのいちにち',
   content,
+  contentReading: 'きょうはがっこうへいきました。ともだちとはなしてから、としょかんでほんをよみました。かえりにちいさいいぬをみました。いえでははにがっこうのはなしをしました。あしたもともだちととしょかんへいくつもりです。そのとしょかんにはおもしろいほんがたくさんあります。わたしはにほんのむかしばなしをいっさつかりました。',
   targetVocabulary: [
     { sourceItemId: 'vocab-school', word: '学校', reading: 'がっこう', meaning: 'school', isNew: false },
     { sourceItemId: 'vocab-friend', word: '友達', reading: 'ともだち', meaning: 'friend', isNew: false },
@@ -36,9 +38,9 @@ const validReading: GeneratedDailyReading = {
   ],
   targetGrammar: [{ sourceItemId: 'grammar-after', pattern: '〜てから', meaning: 'after doing' }],
   questions: [
-    { id: 'q1', question: '今日はどこへ行きましたか。', options: ['学校', '病院', '会社', '空港'], correctAnswer: 0, explanation: '最初の文に書いてあります。', targetVocabularyIds: ['vocab-school'] },
-    { id: 'q2', question: 'だれと話しましたか。', options: ['母', '先生', '友達', '父'], correctAnswer: 2, explanation: '友達と話しました。', targetVocabularyIds: ['vocab-friend'] },
-    { id: 'q3', question: '明日は何をするつもりですか。', options: ['家で寝る', '本を買う', '犬と歩く', '図書館へ行く'], correctAnswer: 3, explanation: '最後の文から分かります。', targetVocabularyIds: ['vocab-library'] },
+    { id: 'q1', question: '今日はどこへ行きましたか。', questionReading: 'きょうはどこへいきましたか。', options: ['学校', '病院', '会社', '空港'], optionReadings: ['がっこう', 'びょういん', 'かいしゃ', 'くうこう'], correctAnswer: 0, explanation: '最初の文に書いてあります。', explanationReading: 'さいしょのぶんにかいてあります。', targetVocabularyIds: ['vocab-school'] },
+    { id: 'q2', question: 'だれと話しましたか。', questionReading: 'だれとはなしましたか。', options: ['母', '先生', '友達', '父'], optionReadings: ['はは', 'せんせい', 'ともだち', 'ちち'], correctAnswer: 2, explanation: '友達と話しました。', explanationReading: 'ともだちとはなしました。', targetVocabularyIds: ['vocab-friend'] },
+    { id: 'q3', question: '明日は何をするつもりですか。', questionReading: 'あしたはなにをするつもりですか。', options: ['家で寝る', '本を買う', '犬と歩く', '図書館へ行く'], optionReadings: ['いえでねる', 'ほんをかう', 'いぬとあるく', 'としょかんへいく'], correctAnswer: 3, explanation: '最後の文から分かります。', explanationReading: 'さいごのぶんからわかります。', targetVocabularyIds: ['vocab-library'] },
   ],
   seriesId: null,
   episodeNumber: null,
