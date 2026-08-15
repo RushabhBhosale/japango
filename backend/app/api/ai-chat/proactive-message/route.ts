@@ -25,7 +25,7 @@ export async function POST(request: Request): Promise<Response> {
   try {
     const input = requestSchema.parse(await request.json() as unknown);
     const result = await new AiChatService(createOpenRouterChatProviders()).respond({
-      message: '自然なら、今の会話を続ける短いメッセージを一つ送って。レッスンや宿題の案内にはしないで。',
+      message: 'Write one short, friendly English message that continues the current chat. This will appear in a notification for a beginner, so use no Japanese text and do not make it a lesson or homework reminder.',
       learnerLevel: input.learnerLevel,
       conversation: {
         ...input.conversation,

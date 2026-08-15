@@ -7,6 +7,7 @@ import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
 import { LoadingState } from '@/components/common/loading-state';
 import { ScreenContainer } from '@/components/common/screen-container';
+import { InteractiveJapaneseText } from '@/components/lesson/japanese-text';
 import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
@@ -69,7 +70,14 @@ export default function HomeworkScreen() {
                   <Ionicons name={completed ? 'checkmark' : item.type === 'kanji' ? 'brush-outline' : item.type === 'grammar' ? 'git-branch-outline' : 'chatbox-outline'} size={17} color={completed ? theme.success : theme.primary} />
                 </View>
                 <View style={styles.itemCopy}>
-                  <ThemedText type="japanese">{item.title}</ThemedText>
+                  <InteractiveJapaneseText
+                    type="japanese"
+                    contextualReading={item.reading}
+                    furiganaOverride
+                    interactive={false}
+                  >
+                    {item.title}
+                  </InteractiveJapaneseText>
                   <ThemedText type="small" themeColor="textSecondary">{typeLabel(item.type)} · {item.source.replace('-', ' ')}</ThemedText>
                 </View>
               </View>

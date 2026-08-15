@@ -119,8 +119,8 @@ function typeEnabled(type: NotificationType, preferences: NotificationPreference
 async function buildYuiMessage(type: Extract<NotificationType, 'ai_chat' | 'scenario_continuation'>): Promise<{ id: string; content: string; createdAt: string }> {
   const [context, scenario, profile] = await Promise.all([getYuiChatContext(), getActiveYuiScenario(), getLearnerProfile()]);
   const fallback = type === 'scenario_continuation'
-    ? 'そういえば、昨日の話の続き、どうなった？'
-    : '今何してる？少し話せたらうれしいな。';
+    ? 'How did the story you mentioned yesterday turn out?'
+    : 'Hey! How is your day going? Open JapanGo whenever you feel like chatting.';
   const url = apiUrl('/api/ai-chat/proactive-message');
   let content = fallback;
   if (url) {
@@ -137,7 +137,10 @@ async function buildYuiMessage(type: Extract<NotificationType, 'ai_chat' | 'scen
       });
       const body = await response.json() as { success?: boolean; data?: { message?: unknown } };
       if (response.ok && body.success && typeof body.data?.message === 'string' && body.data.message.trim()) {
-        content = body.data.message.trim().slice(0, 280);
+        const candidate = body.data.message.trim().slice(0, 280);
+        // A notification should be understandable before a learner opens the
+        // app. Japanese conversation can continue inside Yui's chat instead.
+        if (!/[\u3040-\u30ff\u3400-\u9fff]/u.test(candidate)) content = candidate;
       }
     } catch {
       // A private backend is optional. The persisted local fallback keeps the
@@ -155,35 +158,54 @@ async function contentFor(type: NotificationType, source: JapanGoNotificationDat
   const base = { source, date } as const;
   if (type === 'ai_chat' || type === 'scenario_continuation') {
     const message = source === testSource && type === 'ai_chat'
-      ? { id: createLocalId('chat-proactive-test'), content: '今何してる？', createdAt: new Date().toISOString() }
+      ? { id: createLocalId('chat-proactive-test'), content: 'Hey! This is a sample message from Yui. Open JapanGo to chat.', createdAt: new Date().toISOString() }
       : await buildYuiMessage(type);
     if (source === testSource && type === 'ai_chat') await saveIncomingYuiMessage(message);
-    return { title: 'ゆい', body: message.content, data: { ...base, type, chatId: AI_CHAT_CONVERSATION_ID, messageId: message.id } };
+    return { title: 'Yui', body: message.content, data: { ...base, type, chatId: AI_CHAT_CONVERSATION_ID, messageId: message.id } };
   }
   if (type === 'daily_homework') {
     const vocabulary = homework.items.filter((item) => item.type === 'vocabulary').length;
     const kanji = homework.items.filter((item) => item.type === 'kanji').length;
-    return { title: '今日の宿題ができました。', body: `${vocabulary}単語 + ${kanji}漢字を勉強しよう。`, data: { ...base, type } };
+    const starter = homework.items.find((item) => item.type === 'vocabulary' && item.meaning)
+      ?? homework.items.find((item) => item.meaning);
+    if (starter?.meaning) {
+      const itemLabel = `${starter.title}${starter.reading ? ` (${starter.reading})` : ''}`;
+      const kind = starter.type === 'kanji' ? 'kanji' : starter.type === 'grammar' ? 'grammar point' : 'word';
+      return { title: `A useful ${kind} for today`, body: `This ${kind} means “${starter.meaning}”: ${itemLabel}`, data: { ...base, type, itemId: starter.itemId, itemType: starter.type } };
+    }
+    return { title: 'Today’s practice is ready', body: `${vocabulary} words and ${kanji} kanji · about ${homework.estimatedMinutes} minutes.`, data: { ...base, type } };
   }
   if (type === 'due_review') {
     const item = homework.items.find((entry) => entry.source === 'due-review') ?? homework.items[0];
     if (!item) return undefined;
-    return { title: '復習の時間', body: `${item.title}${item.reading ? `（${item.reading}）` : ''}をもう一度見よう。`, data: { ...base, type, itemId: item.itemId, itemType: item.type } };
+    const itemLabel = `${item.title}${item.reading ? ` (${item.reading})` : ''}`;
+    const kind = item.type === 'kanji' ? 'kanji' : item.type === 'grammar' ? 'grammar point' : 'word';
+    const body = item.meaning
+      ? `This ${kind} means “${item.meaning}”: ${itemLabel}`
+      : `Review this ${kind}: ${itemLabel}`;
+    return { title: 'Quick review', body, data: { ...base, type, itemId: item.itemId, itemType: item.type } };
   }
   if (type === 'micro_vocabulary' || type === 'micro_kanji' || type === 'grammar_tip') {
     const targetType = type === 'micro_vocabulary' ? 'vocabulary' : type === 'micro_kanji' ? 'kanji' : 'grammar';
     const item = homework.items.find((entry) => entry.type === targetType);
     if (!item) return undefined;
-    if (type === 'micro_vocabulary') return { title: '覚えてる？', body: `${item.title}${item.reading ? `（${item.reading}）` : ''}\nWhat does it mean?`, data: { ...base, type, itemId: item.itemId, itemType: item.type } };
-    if (type === 'micro_kanji') return { title: '今日の漢字', body: `${item.title}${item.reading ? `（${item.reading}）` : ''}で使います。`, data: { ...base, type, itemId: item.itemId, itemType: item.type } };
-    return { title: '会話で見かけた文法', body: `${item.title}\n今日は一文の中で探してみよう。`, data: { ...base, type, itemId: item.itemId, itemType: item.type } };
+    const itemLabel = `${item.title}${item.reading ? ` (${item.reading})` : ''}`;
+    if (type === 'micro_vocabulary') {
+      const body = item.meaning ? `This word means “${item.meaning}”: ${itemLabel}` : `Learn this useful word: ${itemLabel}`;
+      return { title: 'A useful Japanese word', body, data: { ...base, type, itemId: item.itemId, itemType: item.type } };
+    }
+    if (type === 'micro_kanji') {
+      const body = item.meaning ? `This kanji means “${item.meaning}”: ${itemLabel}` : `Learn this useful kanji: ${itemLabel}`;
+      return { title: 'A useful kanji', body, data: { ...base, type, itemId: item.itemId, itemType: item.type } };
+    }
+    return { title: 'One grammar idea', body: item.meaning ? `${item.meaning}. Tap to see an easy example.` : 'A short grammar example is ready. Tap to open it.', data: { ...base, type, itemId: item.itemId, itemType: item.type } };
   }
   if (type === 'mistake_review') {
     const [mistake] = await getRecentChatMistakes(1);
     if (!mistake) return undefined;
-    return { title: '昨日の会話から', body: `${mistake.original} → ${mistake.corrected}`, data: { ...base, type, chatId: AI_CHAT_CONVERSATION_ID } };
+    return { title: 'A quick chat tip', body: 'A small correction from your last chat is ready. Tap to view it.', data: { ...base, type, chatId: AI_CHAT_CONVERSATION_ID } };
   }
-  return { title: '今日の日本語', body: '少しずつ、昨日より自然な日本語に近づいてるよ。', data: { ...base, type: 'progress' } };
+  return { title: 'Small steps count', body: 'You are building your Japanese a little at a time. Keep going.', data: { ...base, type: 'progress' } };
 }
 
 async function cancelAutomaticPlatformNotifications(): Promise<void> {

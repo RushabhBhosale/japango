@@ -313,6 +313,13 @@ export default function SettingsScreen() {
             return <Pressable key={option.label} accessibilityRole="radio" accessibilityState={{ checked: selected }} onPress={() => { void changeNotificationPreferences({ ...notificationPreferences, activeHours: { start: option.start, end: option.end } }); }} style={[styles.option, { borderColor: selected ? theme.primary : theme.border, backgroundColor: selected ? theme.primarySoft : theme.surface }]}><ThemedText type="smallBold" style={selected ? { color: theme.primary } : undefined}>{option.label}</ThemedText></Pressable>;
           })}
         </View>
+        <AppButton
+          accessibilityLabel="Send a test notification in 5 seconds"
+          label="Send test notification"
+          variant="secondary"
+          onPress={() => { void runNotificationTest('micro_vocabulary', 5); }}
+        />
+        <ThemedText type="small" themeColor="textSecondary">Sends a sample word with its meaning in 5 seconds.</ThemedText>
       </Card>
 
       {__DEV__ ? <>

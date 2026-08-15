@@ -25,7 +25,7 @@ export async function runProactiveChatScheduler(signal: AbortSignal): Promise<{ 
     try {
       const message = await generateProactiveMessage(createOpenRouterChatProviders(), candidate, target, signal);
       await sendExpoPush(candidate.expoPushToken, {
-        title: 'ゆい', body: message,
+        title: 'Yui', body: message,
         data: { chatId: 'yui-main', messageId: job.id, message, createdAt: new Date().toISOString() },
       }, signal);
       await markProactiveJobSent(job.id, message, target?.key);
