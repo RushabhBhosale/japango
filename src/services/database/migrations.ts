@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 23;
+export const CURRENT_DATABASE_VERSION = 25;
 
 export interface DatabaseMigration {
   version: number;
@@ -1665,6 +1665,125 @@ const versionTwentyThreeSql = `
     ON daily_reading_vocabulary_signals(user_id, incorrect_count DESC, tap_count DESC, last_signaled_at DESC);
 `;
 
+// Open-ended chat remains local-first. The server is only asked to create a
+// reply; the learner's history, silent corrections, and mastery evidence stay
+// on the device until account sync is introduced.
+const versionTwentyFourSql = `
+  CREATE TABLE IF NOT EXISTS ai_chat_characters (
+    id TEXT PRIMARY KEY NOT NULL,
+    name TEXT NOT NULL,
+    role TEXT NOT NULL,
+    created_at TEXT NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS ai_chat_conversations (
+    id TEXT PRIMARY KEY NOT NULL,
+    character_id TEXT NOT NULL,
+    summary TEXT,
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    FOREIGN KEY (character_id) REFERENCES ai_chat_characters(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS ai_chat_conversations_character_idx
+    ON ai_chat_conversations(character_id, updated_at DESC);
+
+  CREATE TABLE IF NOT EXISTS ai_chat_messages (
+    id TEXT PRIMARY KEY NOT NULL,
+    chat_id TEXT NOT NULL,
+    role TEXT NOT NULL CHECK (role IN ('learner', 'character')),
+    content TEXT NOT NULL,
+    delivery_status TEXT NOT NULL CHECK (delivery_status IN ('pending', 'sent', 'failed')),
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (chat_id) REFERENCES ai_chat_conversations(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS ai_chat_messages_chat_created_idx
+    ON ai_chat_messages(chat_id, created_at ASC);
+
+  CREATE TABLE IF NOT EXISTS ai_chat_mistakes (
+    id TEXT PRIMARY KEY NOT NULL,
+    chat_id TEXT NOT NULL,
+    message_id TEXT NOT NULL,
+    original TEXT NOT NULL,
+    corrected TEXT NOT NULL,
+    category TEXT NOT NULL,
+    target TEXT,
+    explanation TEXT,
+    severity TEXT NOT NULL CHECK (severity IN ('low', 'medium', 'high')),
+    confidence REAL NOT NULL CHECK (confidence BETWEEN 0 AND 1),
+    created_at TEXT NOT NULL,
+    reviewed INTEGER NOT NULL DEFAULT 0 CHECK (reviewed IN (0, 1)),
+    FOREIGN KEY (chat_id) REFERENCES ai_chat_conversations(id) ON DELETE CASCADE,
+    FOREIGN KEY (message_id) REFERENCES ai_chat_messages(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS ai_chat_mistakes_review_idx
+    ON ai_chat_mistakes(chat_id, reviewed, created_at DESC);
+
+  CREATE TABLE IF NOT EXISTS learner_skills (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    type TEXT NOT NULL CHECK (type IN ('grammar', 'vocabulary', 'kanji')),
+    skill_key TEXT NOT NULL,
+    mastery REAL NOT NULL CHECK (mastery BETWEEN 0 AND 1),
+    encounters INTEGER NOT NULL DEFAULT 0 CHECK (encounters >= 0),
+    correct_uses INTEGER NOT NULL DEFAULT 0 CHECK (correct_uses >= 0),
+    mistakes INTEGER NOT NULL DEFAULT 0 CHECK (mistakes >= 0),
+    last_encountered_at TEXT,
+    last_mistake_at TEXT,
+    recent_mistakes_json TEXT NOT NULL DEFAULT '[]',
+    UNIQUE (user_id, type, skill_key),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS learner_skills_priority_idx
+    ON learner_skills(user_id, mastery ASC, mistakes DESC, last_mistake_at DESC);
+`;
+
+// Phase 2 keeps durable facts, cached vectors, and hidden scenarios local to
+// the learner's device. Chat text never contains provider keys.
+const versionTwentyFiveSql = `
+  ALTER TABLE ai_chat_messages ADD COLUMN read_at TEXT;
+  ALTER TABLE ai_chat_messages ADD COLUMN is_proactive INTEGER NOT NULL DEFAULT 0 CHECK (is_proactive IN (0, 1));
+  UPDATE ai_chat_messages
+    SET read_at = created_at
+    WHERE id = 'yui-opening-message' AND read_at IS NULL;
+
+  CREATE TABLE IF NOT EXISTS ai_chat_memories (
+    id TEXT PRIMARY KEY NOT NULL,
+    character_id TEXT NOT NULL,
+    text TEXT NOT NULL,
+    importance REAL NOT NULL CHECK (importance BETWEEN 0 AND 1),
+    embedding_json TEXT,
+    created_at TEXT NOT NULL,
+    last_used_at TEXT,
+    UNIQUE (character_id, text),
+    FOREIGN KEY (character_id) REFERENCES ai_chat_characters(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS ai_chat_memories_lookup_idx
+    ON ai_chat_memories(character_id, importance DESC, last_used_at DESC);
+
+  CREATE TABLE IF NOT EXISTS ai_chat_embedding_cache (
+    content_hash TEXT PRIMARY KEY NOT NULL,
+    embedding_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS ai_chat_scenarios (
+    id TEXT PRIMARY KEY NOT NULL,
+    chat_id TEXT NOT NULL,
+    title TEXT NOT NULL,
+    setting TEXT NOT NULL,
+    goal TEXT NOT NULL,
+    target_grammar_json TEXT NOT NULL,
+    target_vocabulary_json TEXT NOT NULL,
+    complication TEXT,
+    status TEXT NOT NULL CHECK (status IN ('active', 'completed', 'abandoned')),
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    FOREIGN KEY (chat_id) REFERENCES ai_chat_conversations(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS ai_chat_scenarios_active_idx
+    ON ai_chat_scenarios(chat_id, status, updated_at DESC);
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1689,6 +1808,8 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 21, sql: versionTwentyOneSql },
   { version: 22, sql: versionTwentyTwoSql },
   { version: 23, sql: versionTwentyThreeSql },
+  { version: 24, sql: versionTwentyFourSql },
+  { version: 25, sql: versionTwentyFiveSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

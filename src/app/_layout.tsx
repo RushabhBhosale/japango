@@ -1,15 +1,18 @@
-import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import { DarkTheme, DefaultTheme, Stack, ThemeProvider, useRouter, type Href } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect, useState } from 'react';
 
 import { BackgroundContentIndicator } from '@/components/common/background-content-indicator';
 import { useResolvedColorScheme, useTheme } from '@/hooks/use-theme';
 import { getLearningContentInstallationState, subscribeToLearningContentInstallation, type LearningContentInstallationState } from '@/services/database/database';
+import { saveIncomingYuiMessage } from '@/services/database/ai-chat-repository';
+import { subscribeToYuiPushNotifications } from '@/services/notifications/ai-chat-notifications';
 import { useAppStore } from '@/store/app-store';
 
 void SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  const router = useRouter();
   const colorScheme = useResolvedColorScheme();
   const colors = useTheme();
   const bootstrap = useAppStore((state) => state.bootstrap);
@@ -20,6 +23,11 @@ export default function RootLayout() {
   }, [bootstrap]);
 
   useEffect(() => subscribeToLearningContentInstallation(setContentInstallation), []);
+
+  useEffect(() => subscribeToYuiPushNotifications({
+    onMessage: saveIncomingYuiMessage,
+    onOpen: () => router.push('/(tabs)/chats' as Href),
+  }), [router]);
 
   useEffect(() => {
     // Native splash screens are intentionally short-lived. Long-running local
@@ -50,6 +58,7 @@ export default function RootLayout() {
         <Stack.Screen name="exam/[examId]" />
         <Stack.Screen name="unit-test/[unitTestId]" />
         <Stack.Screen name="daily-reading/[readingId]" />
+        <Stack.Screen name="ai/chat-review" />
         <Stack.Screen name="(tabs)" />
       </Stack>
       <BackgroundContentIndicator state={contentInstallation} />

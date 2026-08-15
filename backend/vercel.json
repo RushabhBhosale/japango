@@ -3,6 +3,10 @@
     {
       "path": "/api/cron/daily-readings",
       "schedule": "5 15 * * *"
+    },
+    {
+      "path": "/api/cron/ai-chat-proactive",
+      "schedule": "0 6 * * *"
     }
   ]
 }
