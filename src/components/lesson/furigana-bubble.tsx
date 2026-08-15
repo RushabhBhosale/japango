@@ -29,7 +29,13 @@ export function FuriganaBubble({ reading }: FuriganaBubbleProps) {
           },
         ]}
       >
-        <ThemedText style={[styles.reading, { color: theme.primary }]}>{reading}</ThemedText>
+        <ThemedText
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={[styles.reading, { color: theme.primary }]}
+        >
+          {reading}
+        </ThemedText>
         <View
           style={[
             styles.tail,
@@ -56,11 +62,10 @@ const styles = StyleSheet.create({
     zIndex: 20,
   },
   bubble: {
+    alignSelf: 'center',
     borderRadius: Radius.small,
     borderWidth: 1,
     elevation: 3,
-    maxWidth: 160,
-    minWidth: 44,
     paddingHorizontal: 6,
     paddingVertical: 2,
     position: 'relative',
@@ -73,7 +78,10 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '700',
     lineHeight: 14,
-    maxWidth: 148,
+    // The shared text style caps width at 100% of its kanji anchor. A large
+    // cap lets the bubble follow the complete reading instead of wrapping
+    // within the written word; numberOfLines keeps extreme content on one row.
+    maxWidth: 1000,
     textAlign: 'center',
   },
   tail: {

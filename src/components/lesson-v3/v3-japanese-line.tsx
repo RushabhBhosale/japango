@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { Modal, Pressable, StyleSheet, View } from 'react-native';
 
 import { AppButton } from '@/components/common/app-button';
-import { FuriganaBubble } from '@/components/lesson/furigana-bubble';
 import { ThemedText, type ThemedTextProps } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
@@ -72,20 +71,20 @@ export function V3JapaneseLineView({ line, assistanceMode, glossary, type = 'jap
               const showFurigana = Boolean(reading) && (furiganaPreference === 'always' || openedTokenId === token.id);
               const underlined = token.kind === 'word' && Boolean(reading) && kanjiPattern.test(token.surface);
               const canRevealReading = Boolean(reading && underlined);
-              const showBubble = canRevealReading && showFurigana;
+              const showInlineFurigana = canRevealReading && showFurigana;
               const accessibilityAction = canRevealReading
-                ? showBubble ? 'Open word details.' : 'Show its reading.'
+                ? showInlineFurigana ? 'Open word details.' : 'Show its reading.'
                 : 'Open word details.';
               return (
                 <Pressable
                   key={token.id}
                   accessibilityRole={hasHelp ? 'button' : undefined}
-                  accessibilityLabel={hasHelp ? `${token.surface}${showBubble && reading ? `, ${reading}` : ''}. ${accessibilityAction}` : undefined}
+                  accessibilityLabel={hasHelp ? `${token.surface}${showInlineFurigana && reading ? `, ${reading}` : ''}. ${accessibilityAction}` : undefined}
                   disabled={!hasHelp}
                   onPress={() => handleTokenPress(token.id, canRevealReading)}
-                  style={({ pressed }) => [styles.token, showBubble && styles.tokenWithBubble, pressed && hasHelp && styles.tokenPressed]}
+                  style={({ pressed }) => [styles.token, showInlineFurigana && styles.tokenWithFurigana, pressed && hasHelp && styles.tokenPressed]}
                 >
-                  {showBubble && reading ? <FuriganaBubble reading={reading} /> : null}
+                  {showInlineFurigana && reading ? <ThemedText accessibilityElementsHidden importantForAccessibility="no-hide-descendants" numberOfLines={1} style={[styles.furigana, { color: theme.textSecondary }]}>{reading}</ThemedText> : null}
                   <ThemedText type={type} style={underlined ? [styles.underlinedWord, { textDecorationColor: theme.primary }] : undefined}>{token.surface}</ThemedText>
                 </Pressable>
               );
@@ -126,7 +125,8 @@ const styles = StyleSheet.create({
   tokens: { alignItems: 'flex-end', flexDirection: 'row', flexWrap: 'wrap', maxWidth: '100%', minWidth: 0, rowGap: Spacing.two },
   token: { alignItems: 'center', flexShrink: 1, maxWidth: '100%', minWidth: 0, position: 'relative' },
   tokenPressed: { opacity: 0.7 },
-  tokenWithBubble: { zIndex: 10 },
+  tokenWithFurigana: { flexShrink: 0, minHeight: 40, paddingTop: 2 },
+  furigana: { flexShrink: 0, fontSize: 10, fontWeight: '700', lineHeight: 12, marginBottom: -1, textAlign: 'center' },
   underlinedWord: { textDecorationLine: 'underline' },
   audioButton: { width: 44, height: 44, alignItems: 'center', flexShrink: 0, justifyContent: 'center' },
   backdrop: { backgroundColor: 'rgba(0, 0, 0, 0.38)', flex: 1, justifyContent: 'flex-end' },

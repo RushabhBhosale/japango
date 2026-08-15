@@ -13,7 +13,9 @@ import type { AiChatMessage, AiChatResponse } from '@/types/ai-chat';
 import { enrichPendingChatMemories, preparePhaseTwoChatContext, syncYuiProactiveContext } from './phase-two-service';
 import { aiChatNetworkRequestSchema, aiChatResponseSchema, type AiChatNetworkRequest } from './schemas';
 
-const requestTimeoutMs = 20_000;
+// A free provider can need a second structured-output repair call. Give that
+// server-side recovery path enough time before treating the message as failed.
+const requestTimeoutMs = 55_000;
 
 export class AiChatClientError extends Error {
   constructor(public readonly retryable: boolean, message: string) {
@@ -106,10 +108,14 @@ async function sendPendingMessage(message: AiChatMessage): Promise<void> {
   }
 }
 
-export async function sendYuiMessage(content: string): Promise<Awaited<ReturnType<typeof getYuiChat>>> {
+export async function sendYuiMessage(
+  content: string,
+  onPending?: (message: AiChatMessage) => void,
+): Promise<Awaited<ReturnType<typeof getYuiChat>>> {
   const normalized = content.trim();
   if (!normalized) throw new AiChatClientError(false, 'Write a message before sending it.');
   const message = await createPendingYuiMessage(normalized);
+  onPending?.(message);
   await sendPendingMessage(message);
   return getYuiChat();
 }

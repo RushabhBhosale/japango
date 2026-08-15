@@ -60,6 +60,18 @@ describe('AI chat service', () => {
     expect(result.response.replyReading).toBe('おつかれさま！きょうはかなりいそがしかったんだね。');
   });
 
+  it('repairs a kanji reply when its contextual reading is missing', async () => {
+    const missingReading = JSON.stringify({
+      ...JSON.parse(valid),
+      replyReading: undefined,
+    });
+    const model = provider('primary', [missingReading, valid]);
+
+    const result = await new AiChatService([model]).respond(request, new AbortController().signal);
+
+    expect(result.response.replyReading).toBe('おつかれさま！きょうはかなりいそがしかったんだね。');
+  });
+
   it('keeps the conversation alive with an extracted plain reply when repair also fails', async () => {
     const model = provider('primary', ['not json', JSON.stringify({ answer: '今日は大変だったね。' })]);
 

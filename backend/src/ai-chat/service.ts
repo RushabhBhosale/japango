@@ -1,9 +1,19 @@
 import { AiChatServerError } from './errors';
+import { hasCompleteContextualReading } from '../daily-reading/contextual-reading';
 import { buildRepairPrompt, buildYuiChatPrompt } from './prompt-builder';
 import type { AiChatProvider } from './provider';
 import { aiChatResponseSchema, type AiChatRequest, type AiChatResponse } from './schemas';
 
 const timeoutMs = Math.max(5_000, Number(process.env.AI_CHAT_REQUEST_TIMEOUT_MS ?? 20_000));
+const kanjiPattern = /[\u3400-\u9fff々ヶ]/u;
+
+function validateReplyReading(response: AiChatResponse): AiChatResponse {
+  if (!kanjiPattern.test(response.reply)) return response;
+  if (!response.replyReading || !hasCompleteContextualReading(response.reply, response.replyReading)) {
+    throw new AiChatServerError('INVALID_RESPONSE', true, 'Yui sent a reply without a usable Japanese reading.');
+  }
+  return response;
+}
 
 function parseJson(raw: string): AiChatResponse {
   const value = raw.trim();
@@ -11,12 +21,12 @@ function parseJson(raw: string): AiChatResponse {
     ? value.replace(/^```(?:json)?\s*/iu, '').replace(/\s*```$/u, '')
     : value;
   try {
-    return aiChatResponseSchema.parse(JSON.parse(candidate) as unknown);
+    return validateReplyReading(aiChatResponseSchema.parse(JSON.parse(candidate) as unknown));
   } catch {
     const match = candidate.match(/\{[\s\S]*\}/u);
     if (!match) throw new AiChatServerError('INVALID_RESPONSE', true, 'Yui sent an unreadable reply.');
     try {
-      return aiChatResponseSchema.parse(JSON.parse(match[0]) as unknown);
+      return validateReplyReading(aiChatResponseSchema.parse(JSON.parse(match[0]) as unknown));
     } catch {
       throw new AiChatServerError('INVALID_RESPONSE', true, 'Yui sent an unreadable reply.');
     }

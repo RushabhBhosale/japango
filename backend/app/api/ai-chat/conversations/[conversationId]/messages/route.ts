@@ -5,6 +5,8 @@ import { createOpenRouterChatProviders } from '../../../../../../src/ai-chat/pro
 import { AiChatService } from '../../../../../../src/ai-chat/service';
 import { aiChatRequestSchema } from '../../../../../../src/ai-chat/schemas';
 
+export const maxDuration = 60;
+
 const requestsByClient = new Map<string, { count: number; resetAt: number }>();
 const limitWindowMs = 60 * 60 * 1000;
 const limitPerWindow = 30;

@@ -2,6 +2,7 @@ import { router, useFocusEffect, type Href } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   FlatList,
+  Keyboard,
   KeyboardAvoidingView,
   Platform,
   StyleSheet,
@@ -39,10 +40,18 @@ export default function ChatsScreen() {
     requestAnimationFrame(() => listRef.current?.scrollToEnd({ animated }));
   }, []);
 
+  const showPendingMessage = useCallback((message: AiChatMessage) => {
+    setMessages((current) => current.some((item) => item.id === message.id) ? current : [...current, message]);
+    scrollToLatest();
+  }, [scrollToLatest]);
+
   const loadChat = useCallback(async () => {
     setErrorMessage(undefined);
     try {
-      const [chat, furiganaPreference] = await Promise.all([getYuiChat(), getFuriganaPreference()]);
+      const [chat, furiganaPreference] = await Promise.all([
+        getYuiChat(),
+        getFuriganaPreference().catch(() => undefined),
+      ]);
       setMessages(chat.messages);
       setShowFurigana(furiganaPreference === 'always');
       void Promise.all([getLearnerProfile(), getYuiChatContext()])
@@ -60,6 +69,11 @@ export default function ChatsScreen() {
 
   useFocusEffect(useCallback(() => { void loadChat(); }, [loadChat]));
   useEffect(() => { if (messages.length) scrollToLatest(false); }, [messages.length, scrollToLatest]);
+  useEffect(() => {
+    const event = Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow';
+    const subscription = Keyboard.addListener(event, () => scrollToLatest(false));
+    return () => subscription.remove();
+  }, [scrollToLatest]);
 
   const send = useCallback(async () => {
     const value = draft.trim();
@@ -67,29 +81,39 @@ export default function ChatsScreen() {
     setDraft('');
     setSending(true);
     setErrorMessage(undefined);
+    let pendingMessageId: string | undefined;
     try {
-      const chat = await sendYuiMessage(value);
+      const chat = await sendYuiMessage(value, (message) => {
+        pendingMessageId = message.id;
+        showPendingMessage(message);
+      });
       setMessages(chat.messages);
     } catch (error) {
-      setErrorMessage(error instanceof AiChatClientError ? error.message : 'Yui could not reply right now. Your message is saved.');
-      const chat = await getYuiChat();
-      setMessages(chat.messages);
+      setErrorMessage(error instanceof AiChatClientError ? error.message : 'Yui could not reply right now. Your message is saved. Tap it to retry.');
+      void getYuiChat()
+        .then((chat) => setMessages(chat.messages))
+        .catch(() => {
+          if (!pendingMessageId) return;
+          setMessages((current) => current.map((message) => message.id === pendingMessageId ? { ...message, deliveryStatus: 'failed' } : message));
+        });
     } finally {
       setSending(false);
     }
-  }, [draft, sending]);
+  }, [draft, sending, showPendingMessage]);
 
   const retry = useCallback(async (messageId: string) => {
     if (sending) return;
     setSending(true);
     setErrorMessage(undefined);
+    setMessages((current) => current.map((message) => message.id === messageId ? { ...message, deliveryStatus: 'pending' } : message));
     try {
       const chat = await retryYuiMessage(messageId);
       setMessages(chat.messages);
     } catch (error) {
-      setErrorMessage(error instanceof AiChatClientError ? error.message : 'Yui could not reply right now. Your message is still saved.');
-      const chat = await getYuiChat();
-      setMessages(chat.messages);
+      setErrorMessage(error instanceof AiChatClientError ? error.message : 'Yui could not reply right now. Your message is still saved. Tap it to retry.');
+      void getYuiChat()
+        .then((chat) => setMessages(chat.messages))
+        .catch(() => setMessages((current) => current.map((message) => message.id === messageId ? { ...message, deliveryStatus: 'failed' } : message)));
     } finally {
       setSending(false);
     }
@@ -101,7 +125,10 @@ export default function ChatsScreen() {
 
   return (
     <SafeAreaView edges={['top', 'left', 'right']} style={[styles.safe, { backgroundColor: theme.background }]}>
-      <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={styles.safe}>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        style={styles.safe}
+      >
         <View style={styles.thread}>
           <ChatThreadHeader
             typing={sending}
@@ -109,11 +136,6 @@ export default function ChatsScreen() {
             onToggleFurigana={() => setShowFurigana((shown) => !shown)}
             onReview={() => router.push('/ai/chat-review' as Href)}
           />
-          {errorMessage ? (
-            <View accessibilityLiveRegion="polite" style={[styles.notice, { backgroundColor: theme.errorSoft, borderColor: theme.error }]}>
-              <ThemedText type="small" style={{ color: theme.error }}>{errorMessage}</ThemedText>
-            </View>
-          ) : null}
           <FlatList
             ref={listRef}
             accessibilityLabel="Conversation with Yui"
@@ -127,6 +149,11 @@ export default function ChatsScreen() {
             renderItem={({ item }) => <ChatMessageBubble message={item} showFurigana={showFurigana} onRetry={(messageId) => { void retry(messageId); }} />}
             style={styles.list}
           />
+          {errorMessage ? (
+            <View accessibilityLiveRegion="polite" style={[styles.notice, { backgroundColor: theme.errorSoft, borderColor: theme.error }]}>
+              <ThemedText type="small" style={{ color: theme.error }}>{errorMessage}</ThemedText>
+            </View>
+          ) : null}
           <ChatComposer disabled={sending} onChangeText={setDraft} onSend={() => { void send(); }} value={draft} />
         </View>
       </KeyboardAvoidingView>

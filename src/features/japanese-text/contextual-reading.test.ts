@@ -37,6 +37,19 @@ describe('contextual Japanese readings', () => {
     expect(hasCompleteContextualReading('今日は雨です。', 'きょうはあめです。')).toBe(true);
   });
 
+  it('aligns the full reading used by Yui’s opening chat message', () => {
+    const message = 'こんにちは！今、ちょっと休憩中。今日はどんな一日だった？';
+    const reading = 'こんにちは！いま、ちょっときゅうけいちゅう。きょうはどんないちにちだった？';
+
+    expect(hasCompleteContextualReading(message, reading)).toBe(true);
+    expect(alignContextualReading(message, reading)?.filter(({ reading: itemReading }) => itemReading)).toEqual([
+      expect.objectContaining({ text: '今', reading: 'いま' }),
+      expect.objectContaining({ text: '休憩中', reading: 'きゅうけいちゅう' }),
+      expect.objectContaining({ text: '今日', reading: 'きょう' }),
+      expect.objectContaining({ text: '一日', reading: 'いちにち' }),
+    ]);
+  });
+
   it('covers every kanji occurrence in every bundled Daily Reading passage', () => {
     for (const passage of mobileCurriculum.readingPassages) {
       const segments = alignContextualReading(passage.japanese, passage.reading);

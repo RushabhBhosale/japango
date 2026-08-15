@@ -7,9 +7,11 @@ export interface AiChatProvider {
 }
 
 const defaultModels = [
-  'google/gemma-4-26b-a4b-it:free',
-  'nvidia/nemotron-3-super-120b-a12b:free',
+  // OpenRouter keeps this router aligned with the currently available free
+  // models, avoiding outages when a pinned free model is temporarily absent.
+  'openrouter/free',
   'openai/gpt-oss-20b:free',
+  'google/gemma-4-26b-a4b-it:free',
 ] as const;
 
 class OpenRouterChatProvider implements AiChatProvider {
@@ -64,10 +66,18 @@ export function createOpenRouterChatProviders(): AiChatProvider[] {
   if (!apiKey) {
     throw new AiChatServerError('AUTH_CONFIGURATION_ERROR', false, 'Yui’s chat service is not configured yet.');
   }
+  const configuredModels = [
+    process.env.AI_CHAT_MODEL_PRIMARY,
+    process.env.AI_CHAT_MODEL_BACKUP_1,
+    process.env.AI_CHAT_MODEL_BACKUP_2,
+  ].filter((model): model is string => Boolean(model));
   const models = [
-    process.env.AI_CHAT_MODEL_PRIMARY ?? defaultModels[0],
-    process.env.AI_CHAT_MODEL_BACKUP_1 ?? defaultModels[1],
-    process.env.AI_CHAT_MODEL_BACKUP_2 ?? defaultModels[2],
+    configuredModels[0] ?? defaultModels[0],
+    // Keep an availability fallback even for deployments that still pin older
+    // free model IDs in their environment configuration.
+    'openrouter/free',
+    ...configuredModels.slice(1),
+    ...defaultModels.slice(1),
   ].filter((model, index, all) => Boolean(model) && all.indexOf(model) === index);
   const baseUrl = process.env.OPENROUTER_BASE_URL ?? 'https://openrouter.ai/api/v1';
   return models.map((model, index) => new OpenRouterChatProvider(index === 0 ? 'openrouter-primary' : `openrouter-backup-${index}`, model, apiKey, baseUrl));

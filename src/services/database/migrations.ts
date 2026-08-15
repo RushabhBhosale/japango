@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 26;
+export const CURRENT_DATABASE_VERSION = 27;
 
 export interface DatabaseMigration {
   version: number;
@@ -1790,6 +1790,15 @@ const versionTwentySixSql = `
   ALTER TABLE ai_chat_messages ADD COLUMN content_reading TEXT;
 `;
 
+// Backfill Yui's initial local message so existing conversations can show a
+// complete contextual reading as soon as chat furigana is enabled.
+const versionTwentySevenSql = `
+  UPDATE ai_chat_messages
+  SET content_reading = 'こんにちは！いま、ちょっときゅうけいちゅう。きょうはどんないちにちだった？'
+  WHERE id = 'yui-opening-message'
+    AND (content_reading IS NULL OR content_reading = '');
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1817,6 +1826,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 24, sql: versionTwentyFourSql },
   { version: 25, sql: versionTwentyFiveSql },
   { version: 26, sql: versionTwentySixSql },
+  { version: 27, sql: versionTwentySevenSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

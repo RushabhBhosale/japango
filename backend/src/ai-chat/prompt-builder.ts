@@ -19,7 +19,7 @@ const responseContract = `Return exactly one JSON object and no markdown. The vi
   "conversationSummary":"optional compact summary that preserves durable older context"
 }
 
-Only include high-confidence corrections. When "reply" contains kanji, include "replyReading" as its complete hiragana pronunciation: preserve punctuation and already-written kana exactly, but replace every kanji with its contextual hiragana reading. Omit "replyReading" only when "reply" has no kanji. Do not mark a stylistic preference as a grammar error, and never emit a weak learning signal solely for naturalness or register. Return empty arrays when there is no reliable learning evidence. Do not create a memory candidate for every message. Keep any summary factual, compact, and safe for future context.`;
+Only include high-confidence corrections. When "reply" contains kanji, include "replyReading" as its complete hiragana pronunciation: preserve punctuation and already-written kana exactly, but replace every kanji and number with its contextual hiragana reading. Omit "replyReading" only when "reply" has no kanji. Do not mark a stylistic preference as a grammar error, and never emit a weak learning signal solely for naturalness or register. Return empty arrays when there is no reliable learning evidence. Do not create a memory candidate for every message. Keep any summary factual, compact, and safe for future context.`;
 
 function learnerPrompt(request: AiChatRequest): string {
   return JSON.stringify({

@@ -17,6 +17,7 @@ import { createLocalId } from '@/utils/id';
 import { getDatabase } from './database';
 
 const yuiOpeningMessage = 'こんにちは！今、ちょっと休憩中。今日はどんな一日だった？';
+const yuiOpeningMessageReading = 'こんにちは！いま、ちょっときゅうけいちゅう。きょうはどんないちにちだった？';
 
 interface ConversationRow {
   id: string;
@@ -221,11 +222,14 @@ async function ensureYuiConversation(): Promise<void> {
       now,
     );
     await database.runAsync(
-      `INSERT OR IGNORE INTO ai_chat_messages
-       (id, chat_id, role, content, delivery_status, created_at, read_at) VALUES (?, ?, 'character', ?, 'sent', ?, ?)`,
+      `INSERT INTO ai_chat_messages
+       (id, chat_id, role, content, content_reading, delivery_status, created_at, read_at)
+       VALUES (?, ?, 'character', ?, ?, 'sent', ?, ?)
+       ON CONFLICT(id) DO UPDATE SET content_reading = COALESCE(ai_chat_messages.content_reading, excluded.content_reading)`,
       'yui-opening-message',
       AI_CHAT_CONVERSATION_ID,
       yuiOpeningMessage,
+      yuiOpeningMessageReading,
       now,
       now,
     );

@@ -22,6 +22,8 @@ function notebookHref(item: Exclude<JapaneseTextItem, { type: 'supplementary' }>
 interface JapaneseTextProps extends ThemedTextProps {
   /** Per-screen preview used by explicit furigana toggles; it never changes the saved preference. */
   furiganaOverride?: boolean;
+  /** Keeps readings in text flow instead of floating above the surrounding UI. */
+  furiganaDisplay?: 'bubble' | 'inline';
   /** Reviewed pronunciation for this exact string, used before dictionary matching. */
   contextualReading?: string;
   additionalItems?: JapaneseTextItem[];
@@ -58,6 +60,7 @@ export function JapaneseText({
   themeColor,
   accessibilityLabel,
   furiganaOverride,
+  furiganaDisplay = 'inline',
   contextualReading,
   additionalItems,
   interactive = true,
@@ -122,14 +125,16 @@ export function JapaneseText({
         const hasKanji = kanjiPattern.test(segment.text);
         const canRevealReading = Boolean(segment.reading && hasKanji);
         const bubbleVisible = canRevealReading && (alwaysShowFurigana || openedSegmentKey === segmentKey);
+        const showInlineFurigana = bubbleVisible && furiganaDisplay === 'inline';
         const accessibilityAction = canRevealReading
           ? bubbleVisible ? 'Open word details.' : 'Show its reading.'
           : 'Open word details.';
         const written = <ThemedText type={type} style={[style, interactive && styles.written, interactive && { color: theme.primary }]} themeColor={themeColor} {...textProps}>{segment.text}</ThemedText>;
         if (!interactive) {
           return (
-            <View key={segmentKey} style={[styles.item, bubbleVisible && styles.itemWithBubble]}>
-              {bubbleVisible && segment.reading ? <FuriganaBubble reading={segment.reading} /> : null}
+            <View key={segmentKey} style={[styles.item, showInlineFurigana && styles.itemWithInlineFurigana, bubbleVisible && !showInlineFurigana && styles.itemWithBubble]}>
+              {showInlineFurigana && segment.reading ? <ThemedText accessibilityElementsHidden importantForAccessibility="no-hide-descendants" numberOfLines={1} style={[styles.inlineReading, { color: theme.textSecondary }]}>{segment.reading}</ThemedText> : null}
+              {bubbleVisible && !showInlineFurigana && segment.reading ? <FuriganaBubble reading={segment.reading} /> : null}
               {written}
             </View>
           );
@@ -140,9 +145,10 @@ export function JapaneseText({
             accessibilityRole="button"
             accessibilityLabel={`${segment.text}${bubbleVisible && segment.reading ? `, ${segment.reading}` : ''}. ${accessibilityAction}`}
             onPress={() => openItem(segment.item, segmentKey, segment.reading)}
-            style={({ pressed }) => [styles.item, bubbleVisible && styles.itemWithBubble, pressed && styles.itemPressed]}
+            style={({ pressed }) => [styles.item, showInlineFurigana && styles.itemWithInlineFurigana, bubbleVisible && !showInlineFurigana && styles.itemWithBubble, pressed && styles.itemPressed]}
           >
-            {bubbleVisible && segment.reading ? <FuriganaBubble reading={segment.reading} /> : null}
+            {showInlineFurigana && segment.reading ? <ThemedText accessibilityElementsHidden importantForAccessibility="no-hide-descendants" numberOfLines={1} style={[styles.inlineReading, { color: theme.textSecondary }]}>{segment.reading}</ThemedText> : null}
+            {bubbleVisible && !showInlineFurigana && segment.reading ? <FuriganaBubble reading={segment.reading} /> : null}
             {written}
           </Pressable>
         );
@@ -178,8 +184,10 @@ const styles = StyleSheet.create({
   textLine: { alignItems: 'flex-end', alignSelf: 'stretch', flexDirection: 'row', flexShrink: 1, flexWrap: 'wrap', maxWidth: '100%', minWidth: 0, rowGap: Spacing.two, width: '100%' },
   plainSegment: { flexShrink: 1, maxWidth: '100%', minWidth: 0 },
   item: { alignItems: 'center', flexShrink: 1, justifyContent: 'flex-end', maxWidth: '100%', minHeight: 28, minWidth: 0, paddingHorizontal: 1, position: 'relative' },
+  itemWithInlineFurigana: { flexShrink: 0, minHeight: 40, paddingTop: 2 },
   itemPressed: { opacity: 0.7 },
   itemWithBubble: { zIndex: 10 },
+  inlineReading: { flexShrink: 0, fontSize: 10, fontWeight: '700', lineHeight: 12, marginBottom: -1, textAlign: 'center' },
   written: { fontWeight: '700', maxWidth: '100%', minWidth: 0, textAlign: 'center', textDecorationLine: 'underline' },
   backdrop: { alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.38)', flex: 1, justifyContent: 'flex-end' },
   sheet: { borderTopLeftRadius: Radius.large, borderTopRightRadius: Radius.large, gap: Spacing.twoHalf, maxWidth: 720, padding: Spacing.four, width: '100%' },

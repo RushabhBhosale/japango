@@ -32,6 +32,7 @@ export function ChatMessageBubble({ message, showFurigana = false, onRetry }: Ch
         <InteractiveJapaneseText
           selectable
           contextualReading={message.contentReading}
+          furiganaDisplay="inline"
           furiganaOverride
           interactive={false}
           style={[styles.message, { color: learner && !failed ? theme.onPrimary : theme.text }]}

@@ -1,6 +1,6 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
-import { useFocusEffect } from 'expo-router';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { useFocusEffect } from "expo-router";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Animated,
   Modal,
@@ -8,48 +8,56 @@ import {
   ScrollView,
   StyleSheet,
   View,
-} from 'react-native';
+} from "react-native";
 
-import { AppButton } from '@/components/common/app-button';
-import { Card } from '@/components/common/card';
-import { LoadingState } from '@/components/common/loading-state';
-import { ProgressBar } from '@/components/common/progress-bar';
-import { ScreenContainer } from '@/components/common/screen-container';
-import { InteractiveJapaneseText } from '@/components/lesson/japanese-text';
-import { ThemedText } from '@/components/themed-text';
-import { Radius, Spacing } from '@/constants/theme';
+import { AppButton } from "@/components/common/app-button";
+import { Card } from "@/components/common/card";
+import { LoadingState } from "@/components/common/loading-state";
+import { ProgressBar } from "@/components/common/progress-bar";
+import { ScreenContainer } from "@/components/common/screen-container";
+import { ThemedText } from "@/components/themed-text";
+import { Radius, Spacing } from "@/constants/theme";
 import {
   getVocabularyFlashcardProgress,
   getVocabularyFlashcards,
   saveVocabularyFlashcardProgress,
-} from '@/services/database/vocabulary-flashcard-repository';
-import { useTheme } from '@/hooks/use-theme';
+} from "@/services/database/vocabulary-flashcard-repository";
+import { useTheme } from "@/hooks/use-theme";
 import type {
   VocabularyFlashcard,
   VocabularyFlashcardLevel,
   VocabularyFlashcardProgressFilter,
-} from '@/types/vocabulary-flashcards';
+} from "@/types/vocabulary-flashcards";
 
 const SWIPE_DISTANCE = 72;
 const CARD_TRAVEL_DISTANCE = 460;
 
 const levelOptions: { value: VocabularyFlashcardLevel; label: string }[] = [
-  { value: 'all', label: 'All levels' },
-  { value: 'N5', label: 'N5' },
-  { value: 'N4', label: 'N4' },
+  { value: "all", label: "All levels" },
+  { value: "N5", label: "N5" },
+  { value: "N4", label: "N4" },
 ];
 
-const progressOptions: { value: VocabularyFlashcardProgressFilter; label: string }[] = [
-  { value: 'all', label: 'All words' },
-  { value: 'unlearned', label: 'Unlearned' },
-  { value: 'learned', label: 'Learned' },
+const progressOptions: {
+  value: VocabularyFlashcardProgressFilter;
+  label: string;
+}[] = [
+  { value: "all", label: "All words" },
+  { value: "unlearned", label: "Unlearned" },
+  { value: "learned", label: "Learned" },
 ];
 
-function filterKey(level: VocabularyFlashcardLevel, progress: VocabularyFlashcardProgressFilter): string {
+function filterKey(
+  level: VocabularyFlashcardLevel,
+  progress: VocabularyFlashcardProgressFilter,
+): string {
   return `${level}:${progress}`;
 }
 
-function restoreOrder(cards: VocabularyFlashcard[], orderedIds: string[]): VocabularyFlashcard[] {
+function restoreOrder(
+  cards: VocabularyFlashcard[],
+  orderedIds: string[],
+): VocabularyFlashcard[] {
   if (!orderedIds.length) return cards;
   const byId = new Map(cards.map((card) => [card.id, card]));
   const restored = orderedIds.flatMap((id) => {
@@ -75,7 +83,11 @@ function FilterPill<T extends string>({
 }) {
   const theme = useTheme();
   return (
-    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.pills}>
+    <ScrollView
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      contentContainerStyle={styles.pills}
+    >
       {options.map((option) => {
         const active = selected === option.value;
         return (
@@ -84,9 +96,20 @@ function FilterPill<T extends string>({
             accessibilityRole="radio"
             accessibilityState={{ checked: active }}
             onPress={() => onSelect(option.value)}
-            style={[styles.pill, { backgroundColor: active ? theme.primarySoft : theme.surface, borderColor: active ? theme.primary : theme.border }]}
+            style={[
+              styles.pill,
+              {
+                backgroundColor: active ? theme.primarySoft : theme.surface,
+                borderColor: active ? theme.primary : theme.border,
+              },
+            ]}
           >
-            <ThemedText type="smallBold" style={active ? { color: theme.primary } : undefined}>{option.label}</ThemedText>
+            <ThemedText
+              type="smallBold"
+              style={active ? { color: theme.primary } : undefined}
+            >
+              {option.label}
+            </ThemedText>
           </Pressable>
         );
       })}
@@ -94,31 +117,71 @@ function FilterPill<T extends string>({
   );
 }
 
-function FlashcardFace({ card, back, theme }: { card: VocabularyFlashcard; back: boolean; theme: ReturnType<typeof useTheme> }) {
-  const showReading = back && hasKanji(card.japanese) && Boolean(card.reading) && card.reading !== card.japanese;
+function FlashcardFace({
+  card,
+  back,
+  theme,
+}: {
+  card: VocabularyFlashcard;
+  back: boolean;
+  theme: ReturnType<typeof useTheme>;
+}) {
+  const showReading =
+    back &&
+    hasKanji(card.japanese) &&
+    Boolean(card.reading) &&
+    card.reading !== card.japanese;
   return (
-    <View style={[styles.face, { backgroundColor: theme.surfaceElevated, borderColor: theme.border }]}> 
-      <ThemedText type="metadata" style={{ color: theme.primary }}>{back ? 'Meaning' : 'Japanese'}</ThemedText>
-      <InteractiveJapaneseText type="display" style={styles.cardWord}>{card.japanese}</InteractiveJapaneseText>
+    <View
+      style={[
+        styles.face,
+        { backgroundColor: theme.surfaceElevated, borderColor: theme.border },
+      ]}
+    >
+      {/* <ThemedText type="metadata" style={{ color: theme.primary }}>{back ? 'Meaning' : 'Japanese'}</ThemedText> */}
+      <ThemedText type="display" style={styles.cardWord}>
+        {card.japanese}
+      </ThemedText>
       {back ? (
         <>
-          {showReading ? <InteractiveJapaneseText type="heading" style={{ color: theme.primary }}>{card.reading}</InteractiveJapaneseText> : null}
-          <ThemedText type="section" themeColor="textSecondary" style={styles.cardMeaning}>{card.meaning ?? 'Meaning not available yet'}</ThemedText>
+          {showReading ? (
+            <ThemedText
+              type="heading"
+              style={[styles.cardReading, { color: theme.primary }]}
+            >
+              {card.reading}
+            </ThemedText>
+          ) : null}
+          <ThemedText
+            type="section"
+            themeColor="textSecondary"
+            style={styles.cardMeaning}
+          >
+            {card.meaning ?? "Meaning not available yet"}
+          </ThemedText>
         </>
-      ) : <ThemedText type="small" themeColor="textSecondary">Tap the card to reveal its reading and meaning.</ThemedText>}
+      ) : (
+        <ThemedText type="small" themeColor="textSecondary">
+          Tap the card to reveal its reading and meaning.
+        </ThemedText>
+      )}
     </View>
   );
 }
 
 export default function FlashcardsScreen() {
   const theme = useTheme();
-  const [level, setLevel] = useState<VocabularyFlashcardLevel>('all');
-  const [progressFilter, setProgressFilter] = useState<VocabularyFlashcardProgressFilter>('all');
+  const [level, setLevel] = useState<VocabularyFlashcardLevel>("all");
+  const [progressFilter, setProgressFilter] =
+    useState<VocabularyFlashcardProgressFilter>("all");
   const [cards, setCards] = useState<VocabularyFlashcard[]>([]);
   const [index, setIndex] = useState(0);
-  const [loadedQueryKey, setLoadedQueryKey] = useState('');
+  const [loadedQueryKey, setLoadedQueryKey] = useState("");
   const [flipped, setFlipped] = useState(false);
-  const [transition, setTransition] = useState<{ direction: -1 | 1; nextIndex: number }>();
+  const [transition, setTransition] = useState<{
+    direction: -1 | 1;
+    nextIndex: number;
+  }>();
   const [settingsVisible, setSettingsVisible] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>();
@@ -128,7 +191,10 @@ export default function FlashcardsScreen() {
   const flip = useMemo(() => new Animated.Value(0), []);
   const touchStart = useRef<{ x: number; y: number } | undefined>(undefined);
   const horizontalSwipe = useRef(false);
-  const queryKey = useMemo(() => filterKey(level, progressFilter), [level, progressFilter]);
+  const queryKey = useMemo(
+    () => filterKey(level, progressFilter),
+    [level, progressFilter],
+  );
 
   const resetCardAnimation = useCallback(() => {
     cardX.stopAnimation();
@@ -144,68 +210,131 @@ export default function FlashcardsScreen() {
     void Promise.all([
       getVocabularyFlashcards({ level, progress: progressFilter }),
       getVocabularyFlashcardProgress(),
-    ]).then(([loadedCards, savedProgress]) => {
-      if (!active) return;
-      const savedForQuery = savedProgress?.filterKey === queryKey ? savedProgress : undefined;
-      const ordered = restoreOrder(loadedCards, savedForQuery?.orderedIds ?? []);
-      const nextIndex = Math.min(savedForQuery?.index ?? 0, Math.max(ordered.length - 1, 0));
-      resetCardAnimation();
-      setFlipped(false);
-      setError(undefined);
-      setCards(ordered);
-      setIndex(nextIndex);
-      setLoadedQueryKey(queryKey);
-    }).catch(() => {
-      if (active) setError('Your vocabulary cards could not be loaded. Your saved lessons are still available.');
-    }).finally(() => {
-      if (active) setLoading(false);
-    });
-    return () => { active = false; };
+    ])
+      .then(([loadedCards, savedProgress]) => {
+        if (!active) return;
+        const savedForQuery =
+          savedProgress?.filterKey === queryKey ? savedProgress : undefined;
+        const ordered = restoreOrder(
+          loadedCards,
+          savedForQuery?.orderedIds ?? [],
+        );
+        const nextIndex = Math.min(
+          savedForQuery?.index ?? 0,
+          Math.max(ordered.length - 1, 0),
+        );
+        resetCardAnimation();
+        setFlipped(false);
+        setError(undefined);
+        setCards(ordered);
+        setIndex(nextIndex);
+        setLoadedQueryKey(queryKey);
+      })
+      .catch(() => {
+        if (active)
+          setError(
+            "Your vocabulary cards could not be loaded. Your saved lessons are still available.",
+          );
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
+    return () => {
+      active = false;
+    };
   }, [level, progressFilter, queryKey, reloadNonce, resetCardAnimation]);
 
-  useFocusEffect(useCallback(() => () => {
-    void saveVocabularyFlashcardProgress({ filterKey: queryKey, index, orderedIds: cards.map((card) => card.id) });
-  }, [cards, index, queryKey]));
+  useFocusEffect(
+    useCallback(
+      () => () => {
+        void saveVocabularyFlashcardProgress({
+          filterKey: queryKey,
+          index,
+          orderedIds: cards.map((card) => card.id),
+        });
+      },
+      [cards, index, queryKey],
+    ),
+  );
 
-  const commitIndex = useCallback((nextIndex: number, orderedCards = cards) => {
-    setIndex(nextIndex);
-    setTransition(undefined);
-    resetCardAnimation();
-    setFlipped(false);
-    void saveVocabularyFlashcardProgress({ filterKey: queryKey, index: nextIndex, orderedIds: orderedCards.map((card) => card.id) });
-  }, [cards, queryKey, resetCardAnimation]);
-
-  const navigate = useCallback((direction: -1 | 1) => {
-    if (transition) return;
-    const nextIndex = index + direction;
-    // Preserve the current face while it leaves. Resetting the flip here made
-    // a flipped card snap back to its front before the swipe could finish.
-    flip.stopAnimation();
-    if (nextIndex < 0 || nextIndex >= cards.length) {
-      Animated.spring(cardX, { toValue: 0, useNativeDriver: true, speed: 18, bounciness: 8 }).start();
-      return;
-    }
-    setTransition({ direction, nextIndex });
-    incomingCardX.setValue(direction === 1 ? CARD_TRAVEL_DISTANCE : -CARD_TRAVEL_DISTANCE);
-    requestAnimationFrame(() => {
-      Animated.parallel([
-        Animated.timing(cardX, { toValue: direction === 1 ? -CARD_TRAVEL_DISTANCE : CARD_TRAVEL_DISTANCE, duration: 220, useNativeDriver: true }),
-        Animated.timing(incomingCardX, { toValue: 0, duration: 220, useNativeDriver: true }),
-      ]).start(({ finished }) => {
-        if (finished) commitIndex(nextIndex);
-        else {
-          setTransition(undefined);
-          resetCardAnimation();
-        }
+  const commitIndex = useCallback(
+    (nextIndex: number, orderedCards = cards) => {
+      setIndex(nextIndex);
+      setTransition(undefined);
+      resetCardAnimation();
+      setFlipped(false);
+      void saveVocabularyFlashcardProgress({
+        filterKey: queryKey,
+        index: nextIndex,
+        orderedIds: orderedCards.map((card) => card.id),
       });
-    });
-  }, [cardX, cards.length, commitIndex, flip, incomingCardX, index, resetCardAnimation, transition]);
+    },
+    [cards, queryKey, resetCardAnimation],
+  );
+
+  const navigate = useCallback(
+    (direction: -1 | 1) => {
+      if (transition) return;
+      const nextIndex = index + direction;
+      // Preserve the current face while it leaves. Resetting the flip here made
+      // a flipped card snap back to its front before the swipe could finish.
+      flip.stopAnimation();
+      if (nextIndex < 0 || nextIndex >= cards.length) {
+        Animated.spring(cardX, {
+          toValue: 0,
+          useNativeDriver: true,
+          speed: 18,
+          bounciness: 8,
+        }).start();
+        return;
+      }
+      setTransition({ direction, nextIndex });
+      incomingCardX.setValue(
+        direction === 1 ? CARD_TRAVEL_DISTANCE : -CARD_TRAVEL_DISTANCE,
+      );
+      requestAnimationFrame(() => {
+        Animated.parallel([
+          Animated.timing(cardX, {
+            toValue:
+              direction === 1 ? -CARD_TRAVEL_DISTANCE : CARD_TRAVEL_DISTANCE,
+            duration: 220,
+            useNativeDriver: true,
+          }),
+          Animated.timing(incomingCardX, {
+            toValue: 0,
+            duration: 220,
+            useNativeDriver: true,
+          }),
+        ]).start(({ finished }) => {
+          if (finished) commitIndex(nextIndex);
+          else {
+            setTransition(undefined);
+            resetCardAnimation();
+          }
+        });
+      });
+    },
+    [
+      cardX,
+      cards.length,
+      commitIndex,
+      flip,
+      incomingCardX,
+      index,
+      resetCardAnimation,
+      transition,
+    ],
+  );
 
   const toggleFlip = () => {
     const nextFlipped = !flipped;
     flip.stopAnimation();
     setFlipped(nextFlipped);
-    Animated.timing(flip, { toValue: nextFlipped ? 180 : 0, duration: 360, useNativeDriver: true }).start();
+    Animated.timing(flip, {
+      toValue: nextFlipped ? 180 : 0,
+      duration: 360,
+      useNativeDriver: true,
+    }).start();
   };
 
   const beginTouch = (x: number, y: number) => {
@@ -232,18 +361,33 @@ export default function FlashcardsScreen() {
     if (horizontalSwipe.current) {
       if (deltaX <= -SWIPE_DISTANCE) navigate(1);
       else if (deltaX >= SWIPE_DISTANCE) navigate(-1);
-      else Animated.spring(cardX, { toValue: 0, useNativeDriver: true, speed: 18, bounciness: 8 }).start();
+      else
+        Animated.spring(cardX, {
+          toValue: 0,
+          useNativeDriver: true,
+          speed: 18,
+          bounciness: 8,
+        }).start();
       return;
     }
     if (Math.abs(deltaX) < 8 && Math.abs(deltaY) < 8) toggleFlip();
-    else Animated.spring(cardX, { toValue: 0, useNativeDriver: true, speed: 18, bounciness: 8 }).start();
+    else
+      Animated.spring(cardX, {
+        toValue: 0,
+        useNativeDriver: true,
+        speed: 18,
+        bounciness: 8,
+      }).start();
   };
 
   const shuffle = () => {
     const shuffled = [...cards];
     for (let current = shuffled.length - 1; current > 0; current -= 1) {
       const target = Math.floor(Math.random() * (current + 1));
-      [shuffled[current], shuffled[target]] = [shuffled[target], shuffled[current]];
+      [shuffled[current], shuffled[target]] = [
+        shuffled[target],
+        shuffled[current],
+      ];
     }
     setCards(shuffled);
     commitIndex(0, shuffled);
@@ -251,21 +395,51 @@ export default function FlashcardsScreen() {
 
   const card = cards[index];
   const incomingCard = transition ? cards[transition.nextIndex] : undefined;
-  const frontRotation = flip.interpolate({ inputRange: [0, 180], outputRange: ['0deg', '180deg'] });
-  const backRotation = flip.interpolate({ inputRange: [0, 180], outputRange: ['180deg', '360deg'] });
+  const frontRotation = flip.interpolate({
+    inputRange: [0, 180],
+    outputRange: ["0deg", "180deg"],
+  });
+  const backRotation = flip.interpolate({
+    inputRange: [0, 180],
+    outputRange: ["180deg", "360deg"],
+  });
 
-  if (error) return <ScreenContainer><ThemedText>{error}</ThemedText><AppButton label="Try again" onPress={() => setReloadNonce((current) => current + 1)} /></ScreenContainer>;
-  if (loading || loadedQueryKey !== queryKey) return <ScreenContainer scroll={false}><LoadingState label="Preparing your vocabulary cards…" /></ScreenContainer>;
+  if (error)
+    return (
+      <ScreenContainer>
+        <ThemedText>{error}</ThemedText>
+        <AppButton
+          label="Try again"
+          onPress={() => setReloadNonce((current) => current + 1)}
+        />
+      </ScreenContainer>
+    );
+  if (loading || loadedQueryKey !== queryKey)
+    return (
+      <ScreenContainer scroll={false}>
+        <LoadingState label="Preparing your vocabulary cards…" />
+      </ScreenContainer>
+    );
 
   return (
     <ScreenContainer contentStyle={styles.screen}>
       <View style={styles.header}>
         <View style={styles.headerCopy}>
-          <ThemedText type="metadata" style={{ color: theme.primary }}>Vocabulary review</ThemedText>
+          <ThemedText type="metadata" style={{ color: theme.primary }}>
+            Vocabulary review
+          </ThemedText>
           <ThemedText type="title">Flashcards</ThemedText>
-          <ThemedText themeColor="textSecondary">Build recall at your pace. Tap to flip, then move when you’re ready.</ThemedText>
+          {/* <ThemedText themeColor="textSecondary">Build recall at your pace. Tap to flip, then move when you’re ready.</ThemedText> */}
         </View>
-        <Pressable accessibilityRole="button" accessibilityLabel="Open flashcard settings" onPress={() => setSettingsVisible(true)} style={[styles.settingsButton, { borderColor: theme.border, backgroundColor: theme.surface }]}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Open flashcard settings"
+          onPress={() => setSettingsVisible(true)}
+          style={[
+            styles.settingsButton,
+            { borderColor: theme.border, backgroundColor: theme.surface },
+          ]}
+        >
           <Ionicons name="settings-outline" size={21} color={theme.primary} />
         </Pressable>
       </View>
@@ -273,39 +447,88 @@ export default function FlashcardsScreen() {
       {!cards.length ? (
         <Card style={styles.emptyCard}>
           <ThemedText type="heading">No cards match these filters.</ThemedText>
-          <ThemedText themeColor="textSecondary">Try All levels or All words to see more vocabulary.</ThemedText>
+          <ThemedText themeColor="textSecondary">
+            Try All levels or All words to see more vocabulary.
+          </ThemedText>
         </Card>
       ) : (
         <>
           <View style={styles.progressRow}>
-            <ThemedText type="smallBold" themeColor="textSecondary">Card {index + 1} of {cards.length}</ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">{level === 'all' ? 'N5 + N4' : level}</ThemedText>
+            <ThemedText type="smallBold" themeColor="textSecondary">
+              Card {index + 1} of {cards.length}
+            </ThemedText>
+            <ThemedText type="small" themeColor="textSecondary">
+              {level === "all" ? "N5 + N4" : level}
+            </ThemedText>
           </View>
-          <ProgressBar style={styles.deckProgress} value={((index + 1) / cards.length) * 100} accessibilityLabel={`Card ${index + 1} of ${cards.length}`} />
+          <ProgressBar
+            style={styles.deckProgress}
+            value={((index + 1) / cards.length) * 100}
+            accessibilityLabel={`Card ${index + 1} of ${cards.length}`}
+          />
           <View style={styles.cardDeck}>
-          <Animated.View
-            key={card.id}
-            accessibilityRole="button"
-            accessibilityLabel={flipped ? `Meaning for ${card.japanese}` : `Flip ${card.japanese} card`}
-            onStartShouldSetResponder={() => !transition}
-            onResponderGrant={(event) => beginTouch(event.nativeEvent.pageX, event.nativeEvent.pageY)}
-            onResponderMove={(event) => moveCard(event.nativeEvent.pageX, event.nativeEvent.pageY)}
-            onResponderRelease={(event) => releaseCard(event.nativeEvent.pageX, event.nativeEvent.pageY)}
-            onResponderTerminate={() => Animated.spring(cardX, { toValue: 0, useNativeDriver: true, speed: 18, bounciness: 8 }).start()}
-            style={[styles.cardFrame, styles.activeCard, { transform: [{ translateX: cardX }] }]}
-          >
-            <Animated.View style={[styles.cardFace, { transform: [{ rotateY: frontRotation }] }]}> 
-              <FlashcardFace card={card} back={false} theme={theme} />
+            <Animated.View
+              key={card.id}
+              accessibilityRole="button"
+              accessibilityLabel={
+                flipped
+                  ? `Meaning for ${card.japanese}`
+                  : `Flip ${card.japanese} card`
+              }
+              onStartShouldSetResponder={() => !transition}
+              onResponderGrant={(event) =>
+                beginTouch(event.nativeEvent.pageX, event.nativeEvent.pageY)
+              }
+              onResponderMove={(event) =>
+                moveCard(event.nativeEvent.pageX, event.nativeEvent.pageY)
+              }
+              onResponderRelease={(event) =>
+                releaseCard(event.nativeEvent.pageX, event.nativeEvent.pageY)
+              }
+              onResponderTerminate={() =>
+                Animated.spring(cardX, {
+                  toValue: 0,
+                  useNativeDriver: true,
+                  speed: 18,
+                  bounciness: 8,
+                }).start()
+              }
+              style={[
+                styles.cardFrame,
+                styles.activeCard,
+                { transform: [{ translateX: cardX }] },
+              ]}
+            >
+              <Animated.View
+                style={[
+                  styles.cardFace,
+                  { transform: [{ rotateY: frontRotation }] },
+                ]}
+              >
+                <FlashcardFace card={card} back={false} theme={theme} />
+              </Animated.View>
+              <Animated.View
+                style={[
+                  styles.cardFace,
+                  styles.backFace,
+                  { transform: [{ rotateY: backRotation }] },
+                ]}
+              >
+                <FlashcardFace card={card} back theme={theme} />
+              </Animated.View>
             </Animated.View>
-            <Animated.View style={[styles.cardFace, styles.backFace, { transform: [{ rotateY: backRotation }] }]}> 
-              <FlashcardFace card={card} back theme={theme} />
-            </Animated.View>
-          </Animated.View>
-          {incomingCard ? (
-            <Animated.View pointerEvents="none" style={[styles.cardFrame, styles.incomingCard, { transform: [{ translateX: incomingCardX }] }]}> 
-              <FlashcardFace card={incomingCard} back={false} theme={theme} />
-            </Animated.View>
-          ) : null}
+            {incomingCard ? (
+              <Animated.View
+                pointerEvents="none"
+                style={[
+                  styles.cardFrame,
+                  styles.incomingCard,
+                  { transform: [{ translateX: incomingCardX }] },
+                ]}
+              >
+                <FlashcardFace card={incomingCard} back={false} theme={theme} />
+              </Animated.View>
+            ) : null}
           </View>
           <View style={styles.controls}>
             <Pressable
@@ -314,40 +537,98 @@ export default function FlashcardsScreen() {
               accessibilityState={{ disabled: index === 0 }}
               disabled={index === 0 || Boolean(transition)}
               onPress={() => navigate(-1)}
-              style={[styles.navigationButton, { borderColor: theme.border, opacity: index === 0 ? 0.45 : 1 }]}
+              style={[
+                styles.navigationButton,
+                { borderColor: theme.border, opacity: index === 0 ? 0.45 : 1 },
+              ]}
             >
               <Ionicons name="arrow-back" size={22} color={theme.primary} />
             </Pressable>
-            <AppButton label={flipped ? 'Show Japanese' : 'Show answer'} variant="secondary" onPress={toggleFlip} style={styles.flipButton} />
+            <AppButton
+              label={flipped ? "Show Japanese" : "Show answer"}
+              variant="secondary"
+              onPress={toggleFlip}
+              style={styles.flipButton}
+            />
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Next flashcard"
               accessibilityState={{ disabled: index === cards.length - 1 }}
               disabled={index === cards.length - 1 || Boolean(transition)}
               onPress={() => navigate(1)}
-              style={[styles.navigationButton, { borderColor: theme.border, opacity: index === cards.length - 1 ? 0.45 : 1 }]}
+              style={[
+                styles.navigationButton,
+                {
+                  borderColor: theme.border,
+                  opacity: index === cards.length - 1 ? 0.45 : 1,
+                },
+              ]}
             >
               <Ionicons name="arrow-forward" size={22} color={theme.primary} />
             </Pressable>
           </View>
-          <ThemedText type="small" themeColor="textSecondary" style={styles.gestureHint}>You can also swipe left or right.</ThemedText>
+          <ThemedText
+            type="small"
+            themeColor="textSecondary"
+            style={styles.gestureHint}
+          >
+            You can also swipe left or right.
+          </ThemedText>
         </>
       )}
 
-      <Modal visible={settingsVisible} transparent animationType="fade" onRequestClose={() => setSettingsVisible(false)}>
-        <Pressable accessibilityRole="button" accessibilityLabel="Close flashcard settings" onPress={() => setSettingsVisible(false)} style={styles.settingsBackdrop}>
-          <Pressable onPress={() => undefined} style={[styles.settingsSheet, { backgroundColor: theme.background }]}> 
+      <Modal
+        visible={settingsVisible}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setSettingsVisible(false)}
+      >
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Close flashcard settings"
+          onPress={() => setSettingsVisible(false)}
+          style={styles.settingsBackdrop}
+        >
+          <Pressable
+            onPress={() => undefined}
+            style={[
+              styles.settingsSheet,
+              { backgroundColor: theme.background },
+            ]}
+          >
             <View style={styles.settingsHeader}>
               <ThemedText type="heading">Flashcard settings</ThemedText>
-              <Pressable accessibilityRole="button" accessibilityLabel="Close flashcard settings" onPress={() => setSettingsVisible(false)} style={styles.closeButton}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Close flashcard settings"
+                onPress={() => setSettingsVisible(false)}
+                style={styles.closeButton}
+              >
                 <Ionicons name="close" size={24} color={theme.text} />
               </Pressable>
             </View>
-            <ThemedText type="smallBold" themeColor="textSecondary">LEVEL</ThemedText>
-            <FilterPill options={levelOptions} selected={level} onSelect={setLevel} />
-            <ThemedText type="smallBold" themeColor="textSecondary">PROGRESS</ThemedText>
-            <FilterPill options={progressOptions} selected={progressFilter} onSelect={setProgressFilter} />
-            <AppButton label="Shuffle cards" variant="secondary" onPress={shuffle} disabled={!cards.length} />
+            <ThemedText type="smallBold" themeColor="textSecondary">
+              LEVEL
+            </ThemedText>
+            <FilterPill
+              options={levelOptions}
+              selected={level}
+              onSelect={setLevel}
+            />
+            <ThemedText type="smallBold" themeColor="textSecondary">
+              PROGRESS
+            </ThemedText>
+            <FilterPill
+              options={progressOptions}
+              selected={progressFilter}
+              onSelect={setProgressFilter}
+            />
+            <AppButton
+              label="Shuffle cards"
+              variant="secondary"
+              onPress={shuffle}
+              disabled={!cards.length}
+            />
           </Pressable>
         </Pressable>
       </Modal>
@@ -357,29 +638,128 @@ export default function FlashcardsScreen() {
 
 const styles = StyleSheet.create({
   screen: { gap: Spacing.four },
-  header: { alignItems: 'flex-start', flexDirection: 'row', gap: Spacing.three, justifyContent: 'space-between', minWidth: 0 },
+  header: {
+    alignItems: "flex-start",
+    flexDirection: "row",
+    gap: Spacing.three,
+    justifyContent: "space-between",
+    minWidth: 0,
+  },
   headerCopy: { flex: 1, gap: Spacing.one, minWidth: 0 },
-  settingsButton: { width: 46, height: 46, borderWidth: 1, borderRadius: Radius.pill, alignItems: 'center', justifyContent: 'center' },
+  settingsButton: {
+    width: 46,
+    height: 46,
+    borderWidth: 1,
+    borderRadius: Radius.pill,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   pills: { gap: Spacing.one, paddingVertical: Spacing.one },
-  pill: { borderRadius: Radius.pill, borderWidth: 1, justifyContent: 'center', minHeight: 44, paddingHorizontal: Spacing.three },
-  progressRow: { alignItems: 'center', flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two, justifyContent: 'space-between', maxWidth: 560, width: '100%', alignSelf: 'center' },
-  deckProgress: { alignSelf: 'center', maxWidth: 560 },
-  cardDeck: { alignSelf: 'center', height: 360, maxWidth: 560, position: 'relative', width: '100%' },
+  pill: {
+    borderRadius: Radius.pill,
+    borderWidth: 1,
+    justifyContent: "center",
+    minHeight: 44,
+    paddingHorizontal: Spacing.three,
+  },
+  progressRow: {
+    alignItems: "center",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: Spacing.two,
+    justifyContent: "space-between",
+    maxWidth: 560,
+    width: "100%",
+    alignSelf: "center",
+  },
+  deckProgress: { alignSelf: "center", maxWidth: 560 },
+  cardDeck: {
+    alignSelf: "center",
+    height: 360,
+    maxWidth: 560,
+    position: "relative",
+    width: "100%",
+  },
   cardFrame: { ...StyleSheet.absoluteFill },
   activeCard: { zIndex: 2 },
   incomingCard: { zIndex: 1 },
-  cardFace: { ...StyleSheet.absoluteFill, backfaceVisibility: 'hidden' },
-  backFace: { backfaceVisibility: 'hidden' },
-  face: { alignItems: 'center', borderRadius: Radius.large, borderWidth: 1, elevation: 2, flex: 1, gap: Spacing.three, justifyContent: 'center', padding: Spacing.four, shadowColor: 'rgba(20, 22, 27, 0.32)', shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.12, shadowRadius: 20 },
-  cardWord: { maxWidth: '100%', minWidth: 0, textAlign: 'center' },
-  cardMeaning: { maxWidth: '90%', textAlign: 'center' },
+  cardFace: { ...StyleSheet.absoluteFill, backfaceVisibility: "hidden" },
+  backFace: { backfaceVisibility: "hidden" },
+  face: {
+    alignItems: "center",
+    borderRadius: Radius.large,
+    borderWidth: 1,
+    elevation: 2,
+    flex: 1,
+    gap: Spacing.three,
+    justifyContent: "center",
+    padding: Spacing.four,
+    shadowColor: "rgba(20, 22, 27, 0.32)",
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.12,
+    shadowRadius: 20,
+  },
+  cardWord: {
+    alignSelf: "stretch",
+    maxWidth: "100%",
+    minWidth: 0,
+    textAlign: "center",
+    width: "100%",
+  },
+  cardReading: {
+    alignSelf: "stretch",
+    maxWidth: "100%",
+    minWidth: 0,
+    textAlign: "center",
+    width: "100%",
+  },
+  cardMeaning: { maxWidth: "90%", textAlign: "center" },
   emptyCard: { padding: Spacing.four },
-  controls: { alignItems: 'stretch', alignSelf: 'center', flexDirection: 'row', gap: Spacing.two, maxWidth: 560, minWidth: 0, width: '100%' },
-  navigationButton: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, height: 48, justifyContent: 'center', width: 48 },
+  controls: {
+    alignItems: "stretch",
+    alignSelf: "center",
+    flexDirection: "row",
+    gap: Spacing.two,
+    maxWidth: 560,
+    minWidth: 0,
+    width: "100%",
+  },
+  navigationButton: {
+    alignItems: "center",
+    borderRadius: Radius.medium,
+    borderWidth: 1,
+    height: 48,
+    justifyContent: "center",
+    width: 48,
+  },
   flipButton: { flex: 1 },
-  gestureHint: { alignSelf: 'center', textAlign: 'center' },
-  settingsBackdrop: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(0, 0, 0, 0.42)' },
-  settingsSheet: { alignSelf: 'center', borderTopLeftRadius: Radius.large, borderTopRightRadius: Radius.large, gap: Spacing.twoHalf, maxWidth: 720, padding: Spacing.four, paddingBottom: Spacing.five, width: '100%' },
-  settingsHeader: { alignItems: 'center', flexDirection: 'row', gap: Spacing.two, justifyContent: 'space-between', minWidth: 0 },
-  closeButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  gestureHint: { alignSelf: "center", textAlign: "center" },
+  settingsBackdrop: {
+    flex: 1,
+    justifyContent: "flex-end",
+    backgroundColor: "rgba(0, 0, 0, 0.42)",
+  },
+  settingsSheet: {
+    alignSelf: "center",
+    borderTopLeftRadius: Radius.large,
+    borderTopRightRadius: Radius.large,
+    gap: Spacing.twoHalf,
+    maxWidth: 720,
+    padding: Spacing.four,
+    paddingBottom: Spacing.five,
+    width: "100%",
+  },
+  settingsHeader: {
+    alignItems: "center",
+    flexDirection: "row",
+    gap: Spacing.two,
+    justifyContent: "space-between",
+    minWidth: 0,
+  },
+  closeButton: {
+    width: 44,
+    height: 44,
+    alignItems: "center",
+    justifyContent: "center",
+  },
 });
