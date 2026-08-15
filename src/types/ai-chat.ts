@@ -29,6 +29,8 @@ export interface AiChatMessage {
   chatId: string;
   role: AiChatRole;
   content: string;
+  /** Full contextual kana reading, supplied with Yui's reply when available. */
+  contentReading?: string;
   deliveryStatus: AiChatDeliveryStatus;
   createdAt: string;
 }
@@ -81,6 +83,8 @@ export interface AiChatLearningSignal {
 
 export interface AiChatResponse {
   reply: string;
+  /** Full hiragana pronunciation of reply, used only when the learner shows furigana. */
+  replyReading?: string;
   detectedMistakes: AiChatDetectedMistake[];
   learningSignals: AiChatLearningSignal[];
   memoryCandidates: { text: string; importance: number }[];

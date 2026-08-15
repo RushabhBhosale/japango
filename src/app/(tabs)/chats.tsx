@@ -22,6 +22,7 @@ import { useTheme } from '@/hooks/use-theme';
 import { syncYuiProactiveContext } from '@/features/ai-chat/phase-two-service';
 import { getLearnerProfile } from '@/services/database/profile-repository';
 import { registerYuiPushNotifications } from '@/services/notifications/ai-chat-notifications';
+import { getFuriganaPreference } from '@/services/database/japanese-text-repository';
 import type { AiChatMessage } from '@/types/ai-chat';
 
 export default function ChatsScreen() {
@@ -31,6 +32,7 @@ export default function ChatsScreen() {
   const [draft, setDraft] = useState('');
   const [loading, setLoading] = useState(true);
   const [sending, setSending] = useState(false);
+  const [showFurigana, setShowFurigana] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string>();
 
   const scrollToLatest = useCallback((animated = true) => {
@@ -40,8 +42,9 @@ export default function ChatsScreen() {
   const loadChat = useCallback(async () => {
     setErrorMessage(undefined);
     try {
-      const chat = await getYuiChat();
+      const [chat, furiganaPreference] = await Promise.all([getYuiChat(), getFuriganaPreference()]);
       setMessages(chat.messages);
+      setShowFurigana(furiganaPreference === 'always');
       void Promise.all([getLearnerProfile(), getYuiChatContext()])
         .then(([profile, context]) => Promise.all([
           registerYuiPushNotifications(profile.id),
@@ -100,7 +103,12 @@ export default function ChatsScreen() {
     <SafeAreaView edges={['top', 'left', 'right']} style={[styles.safe, { backgroundColor: theme.background }]}>
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={styles.safe}>
         <View style={styles.thread}>
-          <ChatThreadHeader typing={sending} onReview={() => router.push('/ai/chat-review' as Href)} />
+          <ChatThreadHeader
+            typing={sending}
+            showFurigana={showFurigana}
+            onToggleFurigana={() => setShowFurigana((shown) => !shown)}
+            onReview={() => router.push('/ai/chat-review' as Href)}
+          />
           {errorMessage ? (
             <View accessibilityLiveRegion="polite" style={[styles.notice, { backgroundColor: theme.errorSoft, borderColor: theme.error }]}>
               <ThemedText type="small" style={{ color: theme.error }}>{errorMessage}</ThemedText>
@@ -116,7 +124,7 @@ export default function ChatsScreen() {
             keyboardShouldPersistTaps="handled"
             ListFooterComponent={sending ? <TypingIndicator /> : <View style={styles.listFooter} />}
             onContentSizeChange={() => scrollToLatest()}
-            renderItem={({ item }) => <ChatMessageBubble message={item} onRetry={(messageId) => { void retry(messageId); }} />}
+            renderItem={({ item }) => <ChatMessageBubble message={item} showFurigana={showFurigana} onRetry={(messageId) => { void retry(messageId); }} />}
             style={styles.list}
           />
           <ChatComposer disabled={sending} onChangeText={setDraft} onSend={() => { void send(); }} value={draft} />

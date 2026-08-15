@@ -25,6 +25,8 @@ interface JapaneseTextProps extends ThemedTextProps {
   /** Reviewed pronunciation for this exact string, used before dictionary matching. */
   contextualReading?: string;
   additionalItems?: JapaneseTextItem[];
+  /** Turns off word-detail controls while retaining contextual furigana. */
+  interactive?: boolean;
   onItemPress?: (item: JapaneseTextItem) => void;
 }
 
@@ -58,6 +60,7 @@ export function JapaneseText({
   furiganaOverride,
   contextualReading,
   additionalItems,
+  interactive = true,
   onItemPress,
   ...textProps
 }: JapaneseTextProps) {
@@ -122,6 +125,15 @@ export function JapaneseText({
         const accessibilityAction = canRevealReading
           ? bubbleVisible ? 'Open word details.' : 'Show its reading.'
           : 'Open word details.';
+        const written = <ThemedText type={type} style={[style, interactive && styles.written, interactive && { color: theme.primary }]} themeColor={themeColor} {...textProps}>{segment.text}</ThemedText>;
+        if (!interactive) {
+          return (
+            <View key={segmentKey} style={[styles.item, bubbleVisible && styles.itemWithBubble]}>
+              {bubbleVisible && segment.reading ? <FuriganaBubble reading={segment.reading} /> : null}
+              {written}
+            </View>
+          );
+        }
         return (
           <Pressable
             key={segmentKey}
@@ -131,7 +143,7 @@ export function JapaneseText({
             style={({ pressed }) => [styles.item, bubbleVisible && styles.itemWithBubble, pressed && styles.itemPressed]}
           >
             {bubbleVisible && segment.reading ? <FuriganaBubble reading={segment.reading} /> : null}
-            <ThemedText type={type} style={[style, styles.written, { color: theme.primary }]} themeColor={themeColor} {...textProps}>{segment.text}</ThemedText>
+            {written}
           </Pressable>
         );
       })}

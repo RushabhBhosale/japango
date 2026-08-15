@@ -14,6 +14,7 @@ const request: AiChatRequest = {
 
 const valid = JSON.stringify({
   reply: 'お疲れさま！今日はかなり忙しかったんだね。',
+  replyReading: 'おつかれさま！きょうはかなりいそがしかったんだね。',
   detectedMistakes: [],
   learningSignals: [],
   memoryCandidates: [],
@@ -49,6 +50,14 @@ describe('AI chat service', () => {
     const result = await new AiChatService([model]).respond(request, new AbortController().signal);
 
     expect(result.response.reply).toContain('お疲れさま');
+  });
+
+  it('keeps a contextual reading with the visible reply for the mobile chat', async () => {
+    const model = provider('primary', [valid]);
+
+    const result = await new AiChatService([model]).respond(request, new AbortController().signal);
+
+    expect(result.response.replyReading).toBe('おつかれさま！きょうはかなりいそがしかったんだね。');
   });
 
   it('keeps the conversation alive with an extracted plain reply when repair also fails', async () => {

@@ -32,6 +32,7 @@ interface MessageRow {
   chat_id: string;
   role: AiChatMessage['role'];
   content: string;
+  content_reading: string | null;
   delivery_status: AiChatMessage['deliveryStatus'];
   created_at: string;
 }
@@ -129,6 +130,7 @@ function mapMessage(row: MessageRow): AiChatMessage {
     chatId: row.chat_id,
     role: row.role,
     content: row.content,
+    contentReading: row.content_reading ?? undefined,
     deliveryStatus: row.delivery_status,
     createdAt: row.created_at,
   };
@@ -542,11 +544,12 @@ export async function persistYuiResponse(messageId: string, response: AiChatResp
       messageId,
     );
     await database.runAsync(
-      `INSERT INTO ai_chat_messages (id, chat_id, role, content, delivery_status, created_at)
-       VALUES (?, ?, 'character', ?, 'sent', ?)`,
+      `INSERT INTO ai_chat_messages (id, chat_id, role, content, content_reading, delivery_status, created_at)
+       VALUES (?, ?, 'character', ?, ?, 'sent', ?)`,
       createLocalId('chat-message'),
       AI_CHAT_CONVERSATION_ID,
       response.reply,
+      response.replyReading ?? null,
       now,
     );
     await database.runAsync(

@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 25;
+export const CURRENT_DATABASE_VERSION = 26;
 
 export interface DatabaseMigration {
   version: number;
@@ -1784,6 +1784,12 @@ const versionTwentyFiveSql = `
     ON ai_chat_scenarios(chat_id, status, updated_at DESC);
 `;
 
+// Contextual readings belong with a generated reply so chat furigana can use
+// the exact pronunciation rather than guessing an isolated kanji reading.
+const versionTwentySixSql = `
+  ALTER TABLE ai_chat_messages ADD COLUMN content_reading TEXT;
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1810,6 +1816,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 23, sql: versionTwentyThreeSql },
   { version: 24, sql: versionTwentyFourSql },
   { version: 25, sql: versionTwentyFiveSql },
+  { version: 26, sql: versionTwentySixSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

@@ -50,7 +50,7 @@ describe('SQLite migrations', () => {
     await runMigrations(database);
 
     expect(database.userVersion).toBe(CURRENT_DATABASE_VERSION);
-    expect(database.transactionCount).toBe(25);
+    expect(database.transactionCount).toBe(26);
     expect(
       database.executedSql.filter((sql) => sql.startsWith('PRAGMA user_version =')),
     ).toEqual([
@@ -79,16 +79,17 @@ describe('SQLite migrations', () => {
       'PRAGMA user_version = 23',
       'PRAGMA user_version = 24',
       'PRAGMA user_version = 25',
+      'PRAGMA user_version = 26',
     ]);
   });
 
-  it('applies v2 through v25 to an existing v1 database and creates no content rows', async () => {
+  it('applies v2 through v26 to an existing v1 database and creates no content rows', async () => {
     const database = new FakeMigrationDatabase(1);
 
     await runMigrations(database);
 
-    expect(database.transactionCount).toBe(24);
-    expect(database.userVersion).toBe(25);
+    expect(database.transactionCount).toBe(25);
+    expect(database.userVersion).toBe(26);
     const schemaSql = database.executedSql[0] ?? '';
     expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS content_import_batches');
     expect(schemaSql).toContain('CREATE TABLE IF NOT EXISTS sentences');
@@ -147,23 +148,24 @@ describe('SQLite migrations', () => {
     expect(database.executedSql[24]).toContain('CREATE TABLE IF NOT EXISTS course_lesson_progress');
     expect(database.executedSql[24]).toContain('CREATE TABLE IF NOT EXISTS course_checkpoint_attempts');
     expect(database.executedSql[24]).toContain('CREATE TABLE IF NOT EXISTS course_placement_decisions');
-    expect(database.executedSql.at(-18)).toContain('CREATE TABLE IF NOT EXISTS course_activity_hint_usage');
-    expect(database.executedSql.at(-16)).toContain('CREATE TABLE IF NOT EXISTS lesson_v2_cached_lessons');
-    expect(database.executedSql.at(-16)).toContain('CREATE TABLE IF NOT EXISTS lesson_v2_progress');
-    expect(database.executedSql.at(-14)).toContain('DELETE FROM course_lesson_progress');
-    expect(database.executedSql.at(-14)).toContain('UPDATE learner_profile');
-    expect(database.executedSql.at(-12)).toContain('CREATE TABLE IF NOT EXISTS audio_lesson_cached_lessons');
-    expect(database.executedSql.at(-12)).toContain('CREATE TABLE IF NOT EXISTS audio_lesson_progress');
-    expect(database.executedSql.at(-1)).toBe('PRAGMA user_version = 25');
-    expect(database.executedSql.at(-10)).toContain('CREATE TABLE IF NOT EXISTS v3_learner_state');
-    expect(database.executedSql.at(-10)).toContain('CREATE TABLE IF NOT EXISTS v3_episode_progress');
-    expect(database.executedSql.at(-8)).toContain('ADD COLUMN story_choices_json');
-    expect(database.executedSql.at(-6)).toContain('CREATE TABLE IF NOT EXISTS daily_readings');
-    expect(database.executedSql.at(-6)).toContain('CREATE TABLE IF NOT EXISTS daily_reading_progress');
-    expect(database.executedSql.at(-4)).toContain('CREATE TABLE IF NOT EXISTS ai_chat_messages');
-    expect(database.executedSql.at(-4)).toContain('CREATE TABLE IF NOT EXISTS learner_skills');
-    expect(database.executedSql.at(-2)).toContain('CREATE TABLE IF NOT EXISTS ai_chat_memories');
-    expect(database.executedSql.at(-2)).toContain('CREATE TABLE IF NOT EXISTS ai_chat_scenarios');
+    expect(database.executedSql.at(-20)).toContain('CREATE TABLE IF NOT EXISTS course_activity_hint_usage');
+    expect(database.executedSql.at(-18)).toContain('CREATE TABLE IF NOT EXISTS lesson_v2_cached_lessons');
+    expect(database.executedSql.at(-18)).toContain('CREATE TABLE IF NOT EXISTS lesson_v2_progress');
+    expect(database.executedSql.at(-16)).toContain('DELETE FROM course_lesson_progress');
+    expect(database.executedSql.at(-16)).toContain('UPDATE learner_profile');
+    expect(database.executedSql.at(-14)).toContain('CREATE TABLE IF NOT EXISTS audio_lesson_cached_lessons');
+    expect(database.executedSql.at(-14)).toContain('CREATE TABLE IF NOT EXISTS audio_lesson_progress');
+    expect(database.executedSql.at(-1)).toBe('PRAGMA user_version = 26');
+    expect(database.executedSql.at(-12)).toContain('CREATE TABLE IF NOT EXISTS v3_learner_state');
+    expect(database.executedSql.at(-12)).toContain('CREATE TABLE IF NOT EXISTS v3_episode_progress');
+    expect(database.executedSql.at(-10)).toContain('ADD COLUMN story_choices_json');
+    expect(database.executedSql.at(-8)).toContain('CREATE TABLE IF NOT EXISTS daily_readings');
+    expect(database.executedSql.at(-8)).toContain('CREATE TABLE IF NOT EXISTS daily_reading_progress');
+    expect(database.executedSql.at(-6)).toContain('CREATE TABLE IF NOT EXISTS ai_chat_messages');
+    expect(database.executedSql.at(-6)).toContain('CREATE TABLE IF NOT EXISTS learner_skills');
+    expect(database.executedSql.at(-4)).toContain('CREATE TABLE IF NOT EXISTS ai_chat_memories');
+    expect(database.executedSql.at(-4)).toContain('CREATE TABLE IF NOT EXISTS ai_chat_scenarios');
+    expect(database.executedSql.at(-2)).toContain('ADD COLUMN content_reading TEXT');
   });
 
   it('does nothing when the database is current', async () => {
@@ -198,15 +200,16 @@ describe('SQLite migrations', () => {
   });
 
   it('keeps migration definitions contiguous and includes the one-time learner reset at v19', () => {
-    expect(databaseMigrations.map(({ version }) => version)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]);
+    expect(databaseMigrations.map(({ version }) => version)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]);
     expect(databaseMigrations.at(-1)?.version).toBe(CURRENT_DATABASE_VERSION);
     expect(databaseMigrations.every(({ sql }) => !/\bINSERT\s+INTO\b/iu.test(sql))).toBe(true);
-    expect(databaseMigrations.at(-7)?.sql).toContain('DELETE FROM lesson_v2_progress');
-    expect(databaseMigrations.at(-6)?.sql).toContain('CREATE TABLE IF NOT EXISTS audio_lesson_progress');
-    expect(databaseMigrations.at(-5)?.sql).toContain('CREATE TABLE IF NOT EXISTS v3_episode_progress');
-    expect(databaseMigrations.at(-4)?.sql).toContain('ADD COLUMN story_choices_json');
-    expect(databaseMigrations.at(-3)?.sql).toContain('CREATE TABLE IF NOT EXISTS daily_reading_progress');
-    expect(databaseMigrations.at(-2)?.sql).toContain('CREATE TABLE IF NOT EXISTS ai_chat_messages');
-    expect(databaseMigrations.at(-1)?.sql).toContain('CREATE TABLE IF NOT EXISTS ai_chat_memories');
+    expect(databaseMigrations.at(-8)?.sql).toContain('DELETE FROM lesson_v2_progress');
+    expect(databaseMigrations.at(-7)?.sql).toContain('CREATE TABLE IF NOT EXISTS audio_lesson_progress');
+    expect(databaseMigrations.at(-6)?.sql).toContain('CREATE TABLE IF NOT EXISTS v3_episode_progress');
+    expect(databaseMigrations.at(-5)?.sql).toContain('ADD COLUMN story_choices_json');
+    expect(databaseMigrations.at(-4)?.sql).toContain('CREATE TABLE IF NOT EXISTS daily_reading_progress');
+    expect(databaseMigrations.at(-3)?.sql).toContain('CREATE TABLE IF NOT EXISTS ai_chat_messages');
+    expect(databaseMigrations.at(-2)?.sql).toContain('CREATE TABLE IF NOT EXISTS ai_chat_memories');
+    expect(databaseMigrations.at(-1)?.sql).toContain('ADD COLUMN content_reading TEXT');
   });
 });
