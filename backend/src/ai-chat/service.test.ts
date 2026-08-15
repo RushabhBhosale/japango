@@ -9,16 +9,18 @@ const request: AiChatRequest = {
   message: '今日は仕事が忙しかった。',
   learnerLevel: 'N4',
   conversation: { recentMessages: [{ role: 'learner', content: '今日は仕事が忙しかった。' }] },
+  chatPatterns: [],
+  learningTargets: [],
   weaknesses: [],
 };
 
 const valid = JSON.stringify({
   reply: 'お疲れさま！今日はかなり忙しかったんだね。',
   replyReading: 'おつかれさま！きょうはかなりいそがしかったんだね。',
-  detectedMistakes: [],
+  mistakes: [],
   learningSignals: [],
   memoryCandidates: [],
-  conversationState: { mood: 'tired' },
+  scenario: null,
 });
 
 function provider(id: string, results: Array<string | Error>): AiChatProvider {
@@ -44,12 +46,14 @@ describe('AI chat service', () => {
     expect(result.response.reply).toContain('お疲れさま');
   });
 
-  it('repairs a malformed structured reply once without another normal chat turn', async () => {
-    const model = provider('primary', ['not json', valid]);
+  it('uses the next provider when the first response is not a valid chat reply', async () => {
+    const model = provider('primary', ['not json']);
+    const backup = provider('backup', [valid]);
 
-    const result = await new AiChatService([model]).respond(request, new AbortController().signal);
+    const result = await new AiChatService([model, backup]).respond(request, new AbortController().signal);
 
     expect(result.response.reply).toContain('お疲れさま');
+    expect(result.fallbackUsed).toBe(true);
   });
 
   it('keeps a contextual reading with the visible reply for the mobile chat', async () => {
@@ -60,24 +64,27 @@ describe('AI chat service', () => {
     expect(result.response.replyReading).toBe('おつかれさま！きょうはかなりいそがしかったんだね。');
   });
 
-  it('repairs a kanji reply when its contextual reading is missing', async () => {
+  it('keeps a valid reply when its optional reading is invalid', async () => {
     const missingReading = JSON.stringify({
       ...JSON.parse(valid),
       replyReading: undefined,
     });
-    const model = provider('primary', [missingReading, valid]);
+    const model = provider('primary', [missingReading]);
 
     const result = await new AiChatService([model]).respond(request, new AbortController().signal);
 
-    expect(result.response.replyReading).toBe('おつかれさま！きょうはかなりいそがしかったんだね。');
+    expect(result.response.reply).toContain('お疲れさま');
+    expect(result.response.replyReading).toBeUndefined();
   });
 
-  it('keeps the conversation alive with an extracted plain reply when repair also fails', async () => {
-    const model = provider('primary', ['not json', JSON.stringify({ answer: '今日は大変だったね。' })]);
+  it('never surfaces provider metadata as a learner-visible message', async () => {
+    const model = provider('primary', [JSON.stringify({ 'User Safety': 'safe' })]);
 
     const result = await new AiChatService([model]).respond(request, new AbortController().signal);
 
-    expect(result.response.reply).toBe('今日は大変だったね。');
-    expect(result.response.detectedMistakes).toEqual([]);
+    expect(result.response.reply).not.toContain('User Safety');
+    expect(result.response.reply).toContain('メッセージを受け取ったよ');
+    expect(result.response.mistakes).toEqual([]);
+    expect(result.fallbackUsed).toBe(true);
   });
 });

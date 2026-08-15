@@ -196,6 +196,7 @@ export default function HomeScreen() {
             if (dailyReading?.reading) router.push(`/daily-reading/${dailyReading.reading.id}` as Href);
           }}
         />
+        <ActivityRow icon="checkmark-done-outline" label="Daily homework" detail="A 5–10 minute plan shaped by your progress and chat" onPress={() => router.push('/homework' as Href)} />
         <ActivityRow icon="layers-outline" label="Vocabulary review" detail="Revisit words at the right moment" onPress={() => router.push('/(tabs)/flashcards')} />
         <ActivityRow icon="document-text-outline" label="Exam practice" detail="JLPT-style unit tests and mock exams" onPress={() => router.push('/(tabs)/exams')} />
       </View>

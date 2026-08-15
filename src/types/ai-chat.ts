@@ -1,3 +1,5 @@
+import type { CurrentLearningTarget } from './daily-homework';
+
 export const AI_CHAT_CHARACTER_ID = 'yui';
 export const AI_CHAT_CONVERSATION_ID = 'yui-main';
 
@@ -11,7 +13,7 @@ export type ChatMistakeCategory =
   | 'kanji'
   | 'conjugation'
   | 'naturalness'
-  | 'register';
+  | 'other';
 export type ChatMistakeSeverity = 'low' | 'medium' | 'high';
 export type AiChatScenarioStatus = 'active' | 'completed' | 'abandoned';
 
@@ -64,32 +66,40 @@ export interface LearnerSkill {
   recentMistakes: string[];
 }
 
+export type ChatLearningPatternType = ChatMistakeCategory | 'english-fallback';
+
+export interface ChatLearningPattern {
+  userId: string;
+  type: ChatLearningPatternType;
+  observations: number;
+  lastSeenAt: string;
+}
+
 export interface AiChatDetectedMistake {
   original: string;
-  corrected: string;
+  correction: string;
   category: ChatMistakeCategory;
-  target?: string;
   severity: ChatMistakeSeverity;
   confidence: number;
-  explanation?: string;
 }
 
 export interface AiChatLearningSignal {
-  target: string;
+  key: string;
   type: LearnerSkillType;
-  result: 'strong' | 'weak' | 'uncertain';
-  confidence: number;
+  result: 'strong' | 'weak' | 'mistake';
 }
 
-export interface AiChatResponse {
+export interface ChatAIResult {
   reply: string;
-  /** Full hiragana pronunciation of reply, used only when the learner shows furigana. */
-  replyReading?: string;
-  detectedMistakes: AiChatDetectedMistake[];
+  mistakes: AiChatDetectedMistake[];
   learningSignals: AiChatLearningSignal[];
   memoryCandidates: { text: string; importance: number }[];
-  conversationState: { mood?: string; topic?: string; scenarioProgress?: string };
-  conversationSummary?: string;
+  scenario?: { topic?: string; state?: string; continuationSuggested?: boolean };
+}
+
+/** The additional reading remains local presentation metadata for existing furigana support. */
+export interface AiChatResponse extends ChatAIResult {
+  replyReading?: string;
 }
 
 export interface ChatMemory {
@@ -121,6 +131,8 @@ export interface AiChatContext {
   summary?: string;
   recentMessages: AiChatMessage[];
   weaknesses: Pick<LearnerSkill, 'type' | 'key' | 'mastery' | 'mistakes'>[];
+  chatPatterns: ChatLearningPattern[];
+  learningTargets: CurrentLearningTarget[];
   relevantMemories?: ChatMemory[];
   scenario?: AiChatScenario;
 }

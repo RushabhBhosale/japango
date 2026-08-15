@@ -5,8 +5,7 @@ import { useEffect, useState } from 'react';
 import { BackgroundContentIndicator } from '@/components/common/background-content-indicator';
 import { useResolvedColorScheme, useTheme } from '@/hooks/use-theme';
 import { getLearningContentInstallationState, subscribeToLearningContentInstallation, type LearningContentInstallationState } from '@/services/database/database';
-import { saveIncomingYuiMessage } from '@/services/database/ai-chat-repository';
-import { subscribeToYuiPushNotifications } from '@/services/notifications/ai-chat-notifications';
+import { recordJapanGoAppOpen, scheduleDailyJapanGoNotifications, subscribeToJapanGoNotifications } from '@/services/notifications/notification-engine';
 import { useAppStore } from '@/store/app-store';
 
 void SplashScreen.preventAutoHideAsync();
@@ -24,10 +23,18 @@ export default function RootLayout() {
 
   useEffect(() => subscribeToLearningContentInstallation(setContentInstallation), []);
 
-  useEffect(() => subscribeToYuiPushNotifications({
-    onMessage: saveIncomingYuiMessage,
-    onOpen: () => router.push('/(tabs)/chats' as Href),
-  }), [router]);
+  useEffect(() => {
+    void recordJapanGoAppOpen().then(() => scheduleDailyJapanGoNotifications()).catch(() => undefined);
+    return subscribeToJapanGoNotifications({
+      onOpen: (data) => {
+        if (data.type === 'ai_chat' || data.type === 'scenario_continuation' || data.type === 'mistake_review') {
+          router.push('/(tabs)/chats' as Href);
+          return;
+        }
+        router.push(`/homework${data.itemId ? `?itemId=${encodeURIComponent(data.itemId)}` : ''}` as Href);
+      },
+    });
+  }, [router]);
 
   useEffect(() => {
     // Native splash screens are intentionally short-lived. Long-running local
@@ -59,6 +66,7 @@ export default function RootLayout() {
         <Stack.Screen name="unit-test/[unitTestId]" />
         <Stack.Screen name="daily-reading/[readingId]" />
         <Stack.Screen name="ai/chat-review" />
+        <Stack.Screen name="homework" />
         <Stack.Screen name="(tabs)" />
       </Stack>
       <BackgroundContentIndicator state={contentInstallation} />

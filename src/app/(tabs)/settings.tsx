@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Alert, Pressable, StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 import { AppButton } from '@/components/common/app-button';
 import { Card } from '@/components/common/card';
@@ -13,8 +14,18 @@ import { useTheme } from '@/hooks/use-theme';
 import { defaultFsrsQueueLimits, getFsrsQueueLimits, restoreAllSuspendedFsrsCards, setFsrsQueueLimits } from '@/services/database/fsrs-repository';
 import { clearAiHistoryAndCache } from '@/services/database/ai-repository';
 import { getFuriganaPreference, setFuriganaPreference } from '@/services/database/japanese-text-repository';
+import { defaultNotificationPreferences, getNotificationPreferences } from '@/services/database/notification-repository';
+import {
+  clearScheduledJapanGoNotifications,
+  getJapanGoNotificationDiagnostics,
+  requestJapanGoNotificationPermission,
+  scheduleDailyJapanGoNotifications,
+  sendJapanGoNotificationTest,
+  updateJapanGoNotificationPreferences,
+} from '@/services/notifications/notification-engine';
 import { useAppStore } from '@/store/app-store';
 import type { FuriganaPreference, ThemePreference } from '@/types/learning';
+import type { NotificationDiagnostics, NotificationFrequency, NotificationPreferences, NotificationType } from '@/types/notifications';
 
 const studyGoals = [5, 10, 15, 20, 30];
 const newCardLimits = [0, 5, 10, 15, 20];
@@ -28,6 +39,11 @@ const furiganaOptions: { value: FuriganaPreference; label: string; detail: strin
   { value: 'learning', label: 'Tap to reveal', detail: 'Hide readings until you tap a word.' },
   { value: 'off', label: 'Hide readings', detail: 'Keep text clean; you can still tap a word for help.' },
 ];
+const notificationFrequencyOptions: { value: NotificationFrequency; label: string; detail: string }[] = [
+  { value: 'light', label: 'Light', detail: '2–3 useful reminders' },
+  { value: 'normal', label: 'Normal', detail: '3–4 useful reminders' },
+  { value: 'frequent', label: 'Frequent', detail: '5–6 useful reminders' },
+];
 
 export default function SettingsScreen() {
   const theme = useTheme();
@@ -40,10 +56,14 @@ export default function SettingsScreen() {
   const [message, setMessage] = useState<string>();
   const [newCardsPerDay, setNewCardsPerDay] = useState(defaultFsrsQueueLimits.newCardsPerDay);
   const [furiganaPreference, setFuriganaPreferenceState] = useState<FuriganaPreference>('off');
+  const [notificationPreferences, setNotificationPreferencesState] = useState<NotificationPreferences>(defaultNotificationPreferences);
+  const [notificationDiagnostics, setNotificationDiagnostics] = useState<NotificationDiagnostics>();
 
   useEffect(() => {
     void getFsrsQueueLimits().then((limits) => setNewCardsPerDay(limits.newCardsPerDay)).catch(() => undefined);
     void getFuriganaPreference().then(setFuriganaPreferenceState).catch(() => undefined);
+    void getNotificationPreferences().then(setNotificationPreferencesState).catch(() => undefined);
+    void getJapanGoNotificationDiagnostics().then(setNotificationDiagnostics).catch(() => undefined);
   }, []);
 
   const changeGoal = async (minutes: number) => {
@@ -84,6 +104,34 @@ export default function SettingsScreen() {
       setFuriganaPreferenceState(preference);
     } catch {
       setMessage('The furigana setting could not be updated.');
+    }
+  };
+
+  const refreshNotificationDiagnostics = async () => {
+    try { setNotificationDiagnostics(await getJapanGoNotificationDiagnostics()); } catch { setMessage('Notification diagnostics could not be loaded.'); }
+  };
+
+  const changeNotificationPreferences = async (next: NotificationPreferences) => {
+    setMessage(undefined);
+    try {
+      const result = await updateJapanGoNotificationPreferences(next);
+      setNotificationPreferencesState(result.preferences);
+      setMessage(result.permission === 'granted' || !next.enabled
+        ? 'Notification preferences updated.'
+        : 'Notifications are disabled in device settings. You can enable them there when ready.');
+      await refreshNotificationDiagnostics();
+    } catch {
+      setMessage('Notification preferences could not be updated.');
+    }
+  };
+
+  const runNotificationTest = async (type: NotificationType, delaySeconds = 10) => {
+    try {
+      const result = await sendJapanGoNotificationTest({ type, delaySeconds });
+      setMessage(result ? `Test ${type.replaceAll('_', ' ')} is scheduled.` : 'JapanGo needs notification permission before it can send a test.');
+      await refreshNotificationDiagnostics();
+    } catch {
+      setMessage('That notification test could not be scheduled.');
     }
   };
 
@@ -226,6 +274,76 @@ export default function SettingsScreen() {
         </View>
       </Card>
 
+      <SectionHeading title="Notifications" detail={notificationPreferences.enabled ? 'On' : 'Off'} />
+      <Card>
+        <ThemedText themeColor="textSecondary">Allow JapanGo to send daily Japanese practice, review reminders and messages from your Japanese chat.</ThemedText>
+        <Pressable
+          accessibilityRole="switch"
+          accessibilityState={{ checked: notificationPreferences.enabled }}
+          onPress={() => { void changeNotificationPreferences({ ...notificationPreferences, enabled: !notificationPreferences.enabled }); }}
+          style={[styles.notificationToggle, { borderColor: notificationPreferences.enabled ? theme.primary : theme.border, backgroundColor: notificationPreferences.enabled ? theme.primarySoft : theme.surface }]}
+        >
+          <View><ThemedText type="smallBold">Enabled</ThemedText><ThemedText type="small" themeColor="textSecondary">Ask only when you turn reminders on.</ThemedText></View>
+          <Ionicons name={notificationPreferences.enabled ? 'checkmark-circle' : 'ellipse-outline'} size={23} color={notificationPreferences.enabled ? theme.primary : theme.textSecondary} />
+        </Pressable>
+        <View style={styles.notificationRows}>
+          {([
+            ['aiChat', 'AI chat messages'],
+            ['dailyHomework', 'Daily homework'],
+            ['reviews', 'Reviews'],
+            ['learningTips', 'Learning tips'],
+          ] as const).map(([key, label]) => (
+            <Pressable key={key} accessibilityRole="checkbox" accessibilityState={{ checked: notificationPreferences[key] }} onPress={() => { void changeNotificationPreferences({ ...notificationPreferences, [key]: !notificationPreferences[key] }); }} style={({ pressed }) => [styles.notificationRow, { borderColor: theme.border, backgroundColor: pressed ? theme.backgroundSelected : theme.surface }]}>
+              <ThemedText type="smallBold">{label}</ThemedText>
+              <Ionicons name={notificationPreferences[key] ? 'checkmark-circle' : 'ellipse-outline'} size={21} color={notificationPreferences[key] ? theme.primary : theme.textSecondary} />
+            </Pressable>
+          ))}
+        </View>
+        <ThemedText type="smallBold">Frequency</ThemedText>
+        <View style={styles.options} accessibilityRole="radiogroup">
+          {notificationFrequencyOptions.map((option) => {
+            const selected = notificationPreferences.frequency === option.value;
+            return <Pressable key={option.value} accessibilityRole="radio" accessibilityState={{ checked: selected }} onPress={() => { void changeNotificationPreferences({ ...notificationPreferences, frequency: option.value }); }} style={[styles.option, styles.frequencyOption, { borderColor: selected ? theme.primary : theme.border, backgroundColor: selected ? theme.primarySoft : theme.surface }]}><ThemedText type="smallBold" style={selected ? { color: theme.primary } : undefined}>{option.label}</ThemedText><ThemedText type="small" themeColor="textSecondary">{option.detail}</ThemedText></Pressable>;
+          })}
+        </View>
+        <ThemedText type="smallBold">Active hours</ThemedText>
+        <View style={styles.options} accessibilityRole="radiogroup">
+          {[{ start: 9, end: 21, label: '09:00–21:00' }, { start: 10, end: 20, label: '10:00–20:00' }].map((option) => {
+            const selected = notificationPreferences.activeHours.start === option.start && notificationPreferences.activeHours.end === option.end;
+            return <Pressable key={option.label} accessibilityRole="radio" accessibilityState={{ checked: selected }} onPress={() => { void changeNotificationPreferences({ ...notificationPreferences, activeHours: { start: option.start, end: option.end } }); }} style={[styles.option, { borderColor: selected ? theme.primary : theme.border, backgroundColor: selected ? theme.primarySoft : theme.surface }]}><ThemedText type="smallBold" style={selected ? { color: theme.primary } : undefined}>{option.label}</ThemedText></Pressable>;
+          })}
+        </View>
+      </Card>
+
+      {__DEV__ ? <>
+        <SectionHeading title="Developer" detail="Notification testing" />
+        <Card>
+          <ThemedText type="smallBold">Permission: {notificationDiagnostics?.permission ?? 'checking'}</ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">Notifications today: {notificationDiagnostics?.sentToday ?? 0} / 6 · Daily target: {notificationDiagnostics?.dailyTarget ?? 4}</ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">Homework: {notificationDiagnostics?.homework.completed ?? 0} / {notificationDiagnostics?.homework.total ?? 0} · Reviews due: {notificationDiagnostics?.reviewsDue ?? 0}</ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">Last app activity: {notificationDiagnostics?.lastAppActivity ? new Date(notificationDiagnostics.lastAppActivity).toLocaleTimeString() : '—'}</ThemedText>
+          <AppButton label="Request permission" variant="secondary" onPress={() => { void requestJapanGoNotificationPermission().then(refreshNotificationDiagnostics); }} />
+          <View style={styles.testButtons}>
+            <AppButton label="Send now" variant="quiet" onPress={() => { void runNotificationTest('daily_homework', 1); }} />
+            <AppButton label="Send in 10 seconds" variant="quiet" onPress={() => { void runNotificationTest('daily_homework', 10); }} />
+            <AppButton label="Send in 1 minute" variant="quiet" onPress={() => { void runNotificationTest('daily_homework', 60); }} />
+            <AppButton label="Test homework" variant="quiet" onPress={() => { void runNotificationTest('daily_homework'); }} />
+            <AppButton label="Test vocabulary" variant="quiet" onPress={() => { void runNotificationTest('micro_vocabulary'); }} />
+            <AppButton label="Test kanji" variant="quiet" onPress={() => { void runNotificationTest('micro_kanji'); }} />
+            <AppButton label="Test mistake review" variant="quiet" onPress={() => { void runNotificationTest('mistake_review'); }} />
+            <AppButton label="Test AI chat" variant="quiet" onPress={() => { void runNotificationTest('ai_chat'); }} />
+            <AppButton label="Test chat deep link" variant="quiet" onPress={() => { void runNotificationTest('ai_chat', 10); }} />
+          </View>
+          <AppButton label="Generate today’s schedule" variant="secondary" onPress={() => { void scheduleDailyJapanGoNotifications().then(refreshNotificationDiagnostics).catch(() => setMessage('Today’s schedule could not be generated.')); }} />
+          <AppButton label="View scheduled notifications" variant="quiet" onPress={() => { void refreshNotificationDiagnostics(); }} />
+          <AppButton label="View today’s notification log" variant="quiet" onPress={() => { void refreshNotificationDiagnostics(); }} />
+          <AppButton label="Clear scheduled notifications" variant="quiet" onPress={() => { void clearScheduledJapanGoNotifications().then(refreshNotificationDiagnostics); }} />
+          {notificationDiagnostics?.nextScheduled.length ? <View style={styles.diagnosticsList}>{notificationDiagnostics.nextScheduled.map((entry) => <ThemedText key={entry.id} type="small" themeColor="textSecondary">{new Date(entry.scheduledAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} · {entry.type}</ThemedText>)}</View> : <ThemedText type="small" themeColor="textSecondary">No scheduled notifications.</ThemedText>}
+          {notificationDiagnostics?.lastNotification ? <ThemedText type="small" themeColor="textSecondary">Last notification: {new Date(notificationDiagnostics.lastNotification.scheduledAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} · {notificationDiagnostics.lastNotification.type}</ThemedText> : null}
+          {notificationDiagnostics?.todayLog.length ? <View style={styles.diagnosticsList}>{notificationDiagnostics.todayLog.map((entry) => <ThemedText key={entry.id} type="small" themeColor="textSecondary">{new Date(entry.scheduledAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} · {entry.type} · {entry.status}</ThemedText>)}</View> : <ThemedText type="small" themeColor="textSecondary">Today’s notification log is empty.</ThemedText>}
+        </Card>
+      </> : null}
+
       {message ? <ThemedText type="small" themeColor="textSecondary" accessibilityLiveRegion="polite">{message}</ThemedText> : null}
 
       <SectionHeading title="Data & privacy" />
@@ -263,6 +381,12 @@ const styles = StyleSheet.create({
   themeOption: { flexBasis: 84, flexGrow: 1 },
   readingOptions: { gap: Spacing.two },
   readingOption: { borderRadius: Radius.medium, borderWidth: 1, gap: Spacing.one, minHeight: 64, minWidth: 0, paddingHorizontal: Spacing.three, paddingVertical: Spacing.two },
+  notificationToggle: { alignItems: 'center', borderRadius: Radius.medium, borderWidth: 1, flexDirection: 'row', justifyContent: 'space-between', minHeight: 58, paddingHorizontal: Spacing.twoHalf, paddingVertical: Spacing.two },
+  notificationRows: { gap: Spacing.one },
+  notificationRow: { alignItems: 'center', borderRadius: Radius.small, borderWidth: 1, flexDirection: 'row', justifyContent: 'space-between', minHeight: 46, paddingHorizontal: Spacing.two },
+  frequencyOption: { alignItems: 'flex-start', flexGrow: 1, minWidth: 100 },
+  testButtons: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.one },
+  diagnosticsList: { gap: Spacing.half },
   divider: { height: 1, marginVertical: Spacing.one },
   version: { textAlign: 'center', marginTop: Spacing.two },
 });

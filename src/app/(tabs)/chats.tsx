@@ -18,11 +18,8 @@ import { LoadingState } from '@/components/common/loading-state';
 import { ThemedText } from '@/components/themed-text';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { AiChatClientError, retryYuiMessage, sendYuiMessage } from '@/features/ai-chat/chat-service';
-import { getYuiChat, getYuiChatContext } from '@/services/database/ai-chat-repository';
+import { getYuiChat } from '@/services/database/ai-chat-repository';
 import { useTheme } from '@/hooks/use-theme';
-import { syncYuiProactiveContext } from '@/features/ai-chat/phase-two-service';
-import { getLearnerProfile } from '@/services/database/profile-repository';
-import { registerYuiPushNotifications } from '@/services/notifications/ai-chat-notifications';
 import { getFuriganaPreference } from '@/services/database/japanese-text-repository';
 import type { AiChatMessage } from '@/types/ai-chat';
 
@@ -54,12 +51,6 @@ export default function ChatsScreen() {
       ]);
       setMessages(chat.messages);
       setShowFurigana(furiganaPreference === 'always');
-      void Promise.all([getLearnerProfile(), getYuiChatContext()])
-        .then(([profile, context]) => Promise.all([
-          registerYuiPushNotifications(profile.id),
-          syncYuiProactiveContext({ localUserId: profile.id, context }),
-        ]))
-        .catch(() => undefined);
     } catch {
       setErrorMessage('Yui’s saved conversation could not be opened. Please try again.');
     } finally {

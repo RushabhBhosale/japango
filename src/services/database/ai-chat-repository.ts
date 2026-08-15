@@ -1,5 +1,6 @@
 import { applyChatLearningSignals, isMeaningfulChatMistake } from '@/features/ai-chat/learner-skill';
 import { getLearnerProfile } from '@/services/database/profile-repository';
+import { getCurrentLearningTargets } from '@/services/database/daily-homework-repository';
 import type {
   AiChatContext,
   AiChatConversation,
@@ -8,6 +9,7 @@ import type {
   AiChatResponse,
   AiChatScenario,
   ChatMemory,
+  ChatLearningPattern,
   ChatMistake,
   LearnerSkill,
 } from '@/types/ai-chat';
@@ -44,7 +46,7 @@ interface MistakeRow {
   message_id: string;
   original: string;
   corrected: string;
-  category: ChatMistake['category'];
+  category: ChatMistake['category'] | 'register';
   target: string | null;
   explanation: string | null;
   severity: ChatMistake['severity'];
@@ -91,6 +93,13 @@ interface ChatScenarioRow {
   updated_at: string;
 }
 
+interface ChatLearningPatternRow {
+  user_id: string;
+  pattern_type: ChatLearningPattern['type'];
+  observations: number;
+  last_seen_at: string;
+}
+
 const unreadListeners = new Set<(count: number) => void>();
 
 function parseStringArray(value: string): string[] {
@@ -112,6 +121,12 @@ function parseEmbedding(value: string | null): number[] | undefined {
   } catch {
     return undefined;
   }
+}
+
+function isEnglishFallback(content: string): boolean {
+  const hasLatin = /[A-Za-z]/u.test(content);
+  const hasJapanese = /[\u3040-\u30ff\u3400-\u9fff]/u.test(content);
+  return hasLatin && !hasJapanese;
 }
 
 function mapConversation(row: ConversationRow): AiChatConversation {
@@ -144,7 +159,7 @@ function mapMistake(row: MistakeRow): ChatMistake {
     messageId: row.message_id,
     original: row.original,
     corrected: row.corrected,
-    category: row.category,
+    category: row.category === 'register' ? 'other' : row.category,
     target: row.target ?? undefined,
     explanation: row.explanation ?? undefined,
     severity: row.severity,
@@ -328,17 +343,18 @@ export async function createPendingYuiMessage(content: string): Promise<AiChatMe
 export async function markChatMessageFailed(messageId: string): Promise<void> {
   const database = await getDatabase();
   await database.runAsync(
-    "UPDATE ai_chat_messages SET delivery_status = 'failed' WHERE id = ? AND role = 'learner'",
+    "UPDATE ai_chat_messages SET delivery_status = 'failed' WHERE id = ? AND role = 'learner' AND delivery_status = 'pending'",
     messageId,
   );
 }
 
-export async function markChatMessagePending(messageId: string): Promise<void> {
+export async function markChatMessagePending(messageId: string): Promise<boolean> {
   const database = await getDatabase();
-  await database.runAsync(
-    "UPDATE ai_chat_messages SET delivery_status = 'pending' WHERE id = ? AND role = 'learner'",
+  const result = await database.runAsync(
+    "UPDATE ai_chat_messages SET delivery_status = 'pending' WHERE id = ? AND role = 'learner' AND delivery_status = 'failed'",
     messageId,
   );
+  return result.changes > 0;
 }
 
 export async function getChatMessage(messageId: string): Promise<AiChatMessage | undefined> {
@@ -351,7 +367,7 @@ export async function getYuiChatContext(): Promise<AiChatContext> {
   await ensureYuiConversation();
   const database = await getDatabase();
   const profile = await getLearnerProfile();
-  const [conversation, recentRows, weaknessRows] = await Promise.all([
+  const [conversation, recentRows, weaknessRows, patternRows, learningTargets] = await Promise.all([
     database.getFirstAsync<Pick<ConversationRow, 'summary'>>('SELECT summary FROM ai_chat_conversations WHERE id = ?', AI_CHAT_CONVERSATION_ID),
     database.getAllAsync<MessageRow>(
       `SELECT * FROM (
@@ -362,16 +378,24 @@ export async function getYuiChatContext(): Promise<AiChatContext> {
       AI_CHAT_CONVERSATION_ID,
     ),
     database.getAllAsync<LearnerSkillRow>(
-      `SELECT * FROM learner_skills WHERE user_id = ?
+      `SELECT * FROM learner_skills WHERE user_id = ? AND (mistakes >= 2 OR encounters >= 3)
        ORDER BY mastery ASC, mistakes DESC, COALESCE(last_mistake_at, '') DESC LIMIT 5`,
       profile.id,
     ),
+    database.getAllAsync<ChatLearningPatternRow>(
+      `SELECT user_id, pattern_type, observations, last_seen_at FROM chat_learning_patterns
+       WHERE user_id = ? ORDER BY observations DESC, last_seen_at DESC LIMIT 4`,
+      profile.id,
+    ),
+    getCurrentLearningTargets(),
   ]);
   return {
     chatId: AI_CHAT_CONVERSATION_ID,
     summary: conversation?.summary ?? undefined,
     recentMessages: recentRows.map(mapMessage),
     weaknesses: weaknessRows.map(mapSkill).map(({ type, key, mastery, mistakes }) => ({ type, key, mastery, mistakes })),
+    chatPatterns: patternRows.map((row) => ({ userId: row.user_id, type: row.pattern_type, observations: row.observations, lastSeenAt: row.last_seen_at })),
+    learningTargets,
   };
 }
 
@@ -534,19 +558,27 @@ async function persistLearnerSkills(
   }
 }
 
-export async function persistYuiResponse(messageId: string, response: AiChatResponse): Promise<void> {
+export async function persistYuiResponse(messageId: string, response: AiChatResponse): Promise<boolean> {
   const database = await getDatabase();
   const profile = await getLearnerProfile();
   const now = new Date().toISOString();
-  const meaningfulMistakes = response.detectedMistakes.filter(isMeaningfulChatMistake);
+  const meaningfulMistakes = response.mistakes.filter(isMeaningfulChatMistake);
   const currentRows = await database.getAllAsync<LearnerSkillRow>('SELECT * FROM learner_skills WHERE user_id = ?', profile.id);
-  const updatedSkills = applyChatLearningSignals(profile.id, currentRows.map(mapSkill), response.learningSignals, meaningfulMistakes, now);
+  const updatedSkills = applyChatLearningSignals(profile.id, currentRows.map(mapSkill), response.learningSignals, now);
+  const learnerMessage = await database.getFirstAsync<Pick<MessageRow, 'content'>>('SELECT content FROM ai_chat_messages WHERE id = ? AND role = \'learner\'', messageId);
+  const patternTypes = new Set<string>(meaningfulMistakes.map((mistake) => mistake.category));
+  if (learnerMessage && isEnglishFallback(learnerMessage.content)) patternTypes.add('english-fallback');
 
+  let persisted = false;
   await database.withTransactionAsync(async () => {
-    await database.runAsync(
-      "UPDATE ai_chat_messages SET delivery_status = 'sent' WHERE id = ? AND role = 'learner'",
+    const claimedMessage = await database.runAsync(
+      "UPDATE ai_chat_messages SET delivery_status = 'sent' WHERE id = ? AND role = 'learner' AND delivery_status = 'pending'",
       messageId,
     );
+    // A timed-out request can complete after a retry has begun. Only the first
+    // response that claims this pending learner message may create a Yui reply.
+    if (claimedMessage.changes === 0) return;
+    persisted = true;
     await database.runAsync(
       `INSERT INTO ai_chat_messages (id, chat_id, role, content, content_reading, delivery_status, created_at)
        VALUES (?, ?, 'character', ?, ?, 'sent', ?)`,
@@ -556,14 +588,9 @@ export async function persistYuiResponse(messageId: string, response: AiChatResp
       response.replyReading ?? null,
       now,
     );
-    await database.runAsync(
-      'UPDATE ai_chat_conversations SET summary = COALESCE(?, summary), updated_at = ? WHERE id = ?',
-      response.conversationSummary ?? null,
-      now,
-      AI_CHAT_CONVERSATION_ID,
-    );
+    await database.runAsync('UPDATE ai_chat_conversations SET updated_at = ? WHERE id = ?', now, AI_CHAT_CONVERSATION_ID);
     await saveMemoryCandidates(database, response.memoryCandidates, now);
-    if (response.conversationState.scenarioProgress === 'completed') {
+    if (response.scenario?.state === 'completed') {
       await database.runAsync(
         "UPDATE ai_chat_scenarios SET status = 'completed', updated_at = ? WHERE chat_id = ? AND status = 'active'",
         now,
@@ -579,17 +606,30 @@ export async function persistYuiResponse(messageId: string, response: AiChatResp
         AI_CHAT_CONVERSATION_ID,
         messageId,
         mistake.original,
-        mistake.corrected,
+        mistake.correction,
         mistake.category,
-        mistake.target ?? null,
-        mistake.explanation ?? null,
+        null,
+        null,
         mistake.severity,
         mistake.confidence,
         now,
       );
     }
+    for (const patternType of patternTypes) {
+      await database.runAsync(
+        `INSERT INTO chat_learning_patterns (user_id, pattern_type, observations, last_seen_at)
+         VALUES (?, ?, 1, ?)
+         ON CONFLICT(user_id, pattern_type) DO UPDATE SET
+           observations = chat_learning_patterns.observations + 1,
+           last_seen_at = excluded.last_seen_at`,
+        profile.id,
+        patternType,
+        now,
+      );
+    }
     await persistLearnerSkills(database, updatedSkills);
   });
+  return persisted;
 }
 
 export async function getRecentChatMistakes(limit = 3): Promise<ChatMistake[]> {

@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 27;
+export const CURRENT_DATABASE_VERSION = 30;
 
 export interface DatabaseMigration {
   version: number;
@@ -1799,6 +1799,82 @@ const versionTwentySevenSql = `
     AND (content_reading IS NULL OR content_reading = '');
 `;
 
+// A daily plan is selected once from the local, curated curriculum. The plan
+// is intentionally separate from FSRS state so reopening JapanGo never swaps
+// out a learner's promised work for the day.
+const versionTwentyEightSql = `
+  CREATE TABLE IF NOT EXISTS daily_homework (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    homework_date TEXT NOT NULL,
+    estimated_minutes INTEGER NOT NULL CHECK (estimated_minutes BETWEEN 1 AND 30),
+    created_at TEXT NOT NULL,
+    completed_at TEXT,
+    UNIQUE (user_id, homework_date),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS daily_homework_user_date_idx
+    ON daily_homework(user_id, homework_date DESC);
+
+  CREATE TABLE IF NOT EXISTS daily_homework_items (
+    id TEXT PRIMARY KEY NOT NULL,
+    homework_id TEXT NOT NULL,
+    item_id TEXT NOT NULL,
+    item_type TEXT NOT NULL CHECK (item_type IN ('vocabulary', 'kanji', 'grammar')),
+    source TEXT NOT NULL CHECK (source IN ('weakness', 'new', 'chat-mistake', 'due-review')),
+    position INTEGER NOT NULL CHECK (position >= 0),
+    UNIQUE (homework_id, item_id),
+    FOREIGN KEY (homework_id) REFERENCES daily_homework(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS daily_homework_items_homework_idx
+    ON daily_homework_items(homework_id, position);
+`;
+
+// The notification engine keeps a compact local audit trail. This supports
+// scheduling diagnostics without relying on platform-specific notification
+// history, which may be cleared by the operating system.
+const versionTwentyNineSql = `
+  CREATE TABLE IF NOT EXISTS notification_log (
+    id TEXT PRIMARY KEY NOT NULL,
+    notification_id TEXT,
+    notification_type TEXT NOT NULL,
+    title TEXT NOT NULL,
+    body TEXT NOT NULL,
+    data_json TEXT NOT NULL,
+    status TEXT NOT NULL CHECK (status IN ('scheduled', 'delivered', 'opened', 'cancelled', 'failed')),
+    scheduled_at TEXT NOT NULL,
+    delivered_at TEXT,
+    opened_at TEXT,
+    error_message TEXT,
+    created_at TEXT NOT NULL
+  );
+  CREATE INDEX IF NOT EXISTS notification_log_scheduled_idx
+    ON notification_log(scheduled_at DESC, notification_type);
+
+  CREATE TABLE IF NOT EXISTS notification_activity (
+    id INTEGER PRIMARY KEY CHECK (id = 1),
+    last_app_open_at TEXT,
+    updated_at TEXT NOT NULL
+  );
+`;
+
+// Some useful chat evidence does not map one-to-one to a curriculum item
+// (for example repeated English fallback). Keep those observations separate
+// from mastery so they inform support without pretending to be FSRS data.
+const versionThirtySql = `
+  CREATE TABLE IF NOT EXISTS chat_learning_patterns (
+    user_id TEXT NOT NULL,
+    pattern_type TEXT NOT NULL CHECK (pattern_type IN ('grammar', 'particle', 'vocabulary', 'kanji', 'conjugation', 'naturalness', 'other', 'english-fallback')),
+    observations INTEGER NOT NULL DEFAULT 0 CHECK (observations >= 0),
+    last_seen_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, pattern_type),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS chat_learning_patterns_recent_idx
+    ON chat_learning_patterns(user_id, observations DESC, last_seen_at DESC);
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1827,6 +1903,9 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 25, sql: versionTwentyFiveSql },
   { version: 26, sql: versionTwentySixSql },
   { version: 27, sql: versionTwentySevenSql },
+  { version: 28, sql: versionTwentyEightSql },
+  { version: 29, sql: versionTwentyNineSql },
+  { version: 30, sql: versionThirtySql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

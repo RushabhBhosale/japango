@@ -29,57 +29,30 @@ function createSkill(
   };
 }
 
-function targetType(mistake: AiChatDetectedMistake): LearnerSkillType | undefined {
-  if (!mistake.target) return undefined;
-  if (mistake.category === 'kanji') return 'kanji';
-  if (mistake.category === 'vocabulary') return 'vocabulary';
-  return 'grammar';
-}
-
 /** Applies bounded, deterministic updates; the model only supplies evidence. */
 export function applyChatLearningSignals(
   userId: string,
   existingSkills: readonly LearnerSkill[],
   signals: readonly AiChatLearningSignal[],
-  mistakes: readonly AiChatDetectedMistake[],
   now: string,
 ): LearnerSkill[] {
   const skills = new Map(existingSkills.map((skill) => [skill.id, { ...skill, recentMistakes: [...skill.recentMistakes] }]));
 
   for (const signal of signals) {
-    if (signal.confidence < meaningfulConfidence) continue;
-    const id = skillId(signal.type, signal.target);
-    const previous = skills.get(id) ?? createSkill(userId, signal.type, signal.target);
+    const id = skillId(signal.type, signal.key);
+    const previous = skills.get(id) ?? createSkill(userId, signal.type, signal.key);
     const base = { ...previous, encounters: previous.encounters + 1, lastEncounteredAt: now };
     const delta = signal.result === 'strong'
-      ? 0.055 * signal.confidence
+      ? 0.045
       : signal.result === 'weak'
-        ? -0.075 * signal.confidence
-        : -0.012 * signal.confidence;
+        ? -0.05
+        : -0.075;
     skills.set(id, {
       ...base,
       mastery: clampMastery(base.mastery + delta),
       correctUses: base.correctUses + (signal.result === 'strong' ? 1 : 0),
-      mistakes: base.mistakes + (signal.result === 'weak' ? 1 : 0),
-      lastMistakeAt: signal.result === 'weak' ? now : base.lastMistakeAt,
-    });
-  }
-
-  for (const mistake of mistakes) {
-    if (mistake.confidence < meaningfulConfidence) continue;
-    const type = targetType(mistake);
-    if (!type || !mistake.target) continue;
-    const id = skillId(type, mistake.target);
-    const previous = skills.get(id) ?? createSkill(userId, type, mistake.target);
-    const recentMistakes = [mistake.original, ...previous.recentMistakes.filter((value) => value !== mistake.original)].slice(0, 8);
-    skills.set(id, {
-      ...previous,
-      encounters: previous.encounters + 1,
-      mistakes: previous.mistakes + 1,
-      mastery: clampMastery(previous.mastery - (0.05 * mistake.confidence)),
-      lastEncounteredAt: now,
-      lastMistakeAt: now,
-      recentMistakes,
+      mistakes: base.mistakes + (signal.result === 'strong' ? 0 : 1),
+      lastMistakeAt: signal.result === 'strong' ? base.lastMistakeAt : now,
     });
   }
 
@@ -87,5 +60,5 @@ export function applyChatLearningSignals(
 }
 
 export function isMeaningfulChatMistake(mistake: AiChatDetectedMistake): boolean {
-  return mistake.confidence >= meaningfulConfidence && mistake.category !== 'naturalness';
+  return mistake.confidence >= meaningfulConfidence && mistake.category !== 'other';
 }
