@@ -4,7 +4,11 @@ import { useEffect, useState } from 'react';
 
 import { BackgroundContentIndicator } from '@/components/common/background-content-indicator';
 import { useResolvedColorScheme, useTheme } from '@/hooks/use-theme';
+import { saveIncomingYuiMessage } from '@/services/database/ai-chat-repository';
 import { getLearningContentInstallationState, subscribeToLearningContentInstallation, type LearningContentInstallationState } from '@/services/database/database';
+import { getNotificationPreferences } from '@/services/database/notification-repository';
+import { subscribeToDailyRollover } from '@/services/daily-rollover';
+import { registerYuiPushNotifications, subscribeToYuiPushNotifications } from '@/services/notifications/ai-chat-notifications';
 import { recordJapanGoAppOpen, scheduleDailyJapanGoNotifications, subscribeToJapanGoNotifications } from '@/services/notifications/notification-engine';
 import { useAppStore } from '@/store/app-store';
 
@@ -15,6 +19,8 @@ export default function RootLayout() {
   const colorScheme = useResolvedColorScheme();
   const colors = useTheme();
   const bootstrap = useAppStore((state) => state.bootstrap);
+  const initializationStatus = useAppStore((state) => state.initializationStatus);
+  const profileId = useAppStore((state) => state.profile?.id);
   const [contentInstallation, setContentInstallation] = useState<LearningContentInstallationState>(getLearningContentInstallationState);
 
   useEffect(() => {
@@ -24,7 +30,16 @@ export default function RootLayout() {
   useEffect(() => subscribeToLearningContentInstallation(setContentInstallation), []);
 
   useEffect(() => {
-    void recordJapanGoAppOpen().then(() => scheduleDailyJapanGoNotifications()).catch(() => undefined);
+    if (initializationStatus !== 'ready') return;
+    const refreshDailySchedule = () => {
+      void recordJapanGoAppOpen().then(() => scheduleDailyJapanGoNotifications()).catch(() => undefined);
+    };
+    refreshDailySchedule();
+    return subscribeToDailyRollover(refreshDailySchedule);
+  }, [initializationStatus]);
+
+  useEffect(() => {
+    if (initializationStatus !== 'ready') return;
     return subscribeToJapanGoNotifications({
       onOpen: (data) => {
         if (data.type === 'ai_chat' || data.type === 'scenario_continuation' || data.type === 'mistake_review') {
@@ -34,7 +49,20 @@ export default function RootLayout() {
         router.push(`/homework${data.itemId ? `?itemId=${encodeURIComponent(data.itemId)}` : ''}` as Href);
       },
     });
-  }, [router]);
+  }, [initializationStatus, router]);
+
+  useEffect(() => {
+    if (initializationStatus !== 'ready' || !profileId) return;
+    void getNotificationPreferences()
+      .then((preferences) => {
+        if (preferences.enabled && preferences.aiChat) void registerYuiPushNotifications(profileId).catch(() => undefined);
+      })
+      .catch(() => undefined);
+    return subscribeToYuiPushNotifications({
+      onMessage: saveIncomingYuiMessage,
+      onOpen: () => router.push('/(tabs)/chats' as Href),
+    });
+  }, [initializationStatus, profileId, router]);
 
   useEffect(() => {
     // Native splash screens are intentionally short-lived. Long-running local

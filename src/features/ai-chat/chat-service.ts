@@ -10,7 +10,7 @@ import {
 } from '@/services/database/ai-chat-repository';
 import type { AiChatMessage, AiChatResponse } from '@/types/ai-chat';
 
-import { enrichPendingChatMemories, preparePhaseTwoChatContext } from './phase-two-service';
+import { enrichPendingChatMemories, preparePhaseTwoChatContext, syncYuiProactiveContext } from './phase-two-service';
 import { aiChatNetworkRequestSchema, aiChatResponseSchema, type AiChatNetworkRequest } from './schemas';
 
 // Allow the server enough time to use OpenRouter’s model fallback before the
@@ -129,6 +129,9 @@ async function sendPendingMessageOnce(message: AiChatMessage): Promise<void> {
     const response = keepSupportedLearningSignals(await requestYuiReply(payload), context);
     await persistYuiResponse(message.id, response);
     void enrichPendingChatMemories().catch(() => undefined);
+    void getYuiChatContext()
+      .then((updatedContext) => syncYuiProactiveContext({ localUserId: profile.id, context: updatedContext, scenario: phaseTwo.scenario }))
+      .catch(() => undefined);
   } catch (error) {
     await markChatMessageFailed(message.id);
     throw error;

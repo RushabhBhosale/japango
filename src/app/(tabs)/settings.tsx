@@ -15,6 +15,7 @@ import { defaultFsrsQueueLimits, getFsrsQueueLimits, restoreAllSuspendedFsrsCard
 import { clearAiHistoryAndCache } from '@/services/database/ai-repository';
 import { getFuriganaPreference, setFuriganaPreference } from '@/services/database/japanese-text-repository';
 import { defaultNotificationPreferences, getNotificationPreferences } from '@/services/database/notification-repository';
+import { registerYuiPushNotifications } from '@/services/notifications/ai-chat-notifications';
 import {
   clearScheduledJapanGoNotifications,
   getJapanGoNotificationDiagnostics,
@@ -116,6 +117,9 @@ export default function SettingsScreen() {
     try {
       const result = await updateJapanGoNotificationPreferences(next);
       setNotificationPreferencesState(result.preferences);
+      if (result.preferences.enabled && result.preferences.aiChat && profile?.id) {
+        void registerYuiPushNotifications(profile.id).catch(() => undefined);
+      }
       setMessage(result.permission === 'granted' || !next.enabled
         ? 'Notification preferences updated.'
         : 'Notifications are disabled in device settings. You can enable them there when ready.');

@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { AppButton } from '@/components/common/app-button';
@@ -12,6 +12,7 @@ import { ThemedText } from '@/components/themed-text';
 import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { getOrCreateDailyHomework } from '@/services/database/daily-homework-repository';
+import { subscribeToDailyRollover } from '@/services/daily-rollover';
 import type { DailyHomework } from '@/types/daily-homework';
 
 function typeLabel(type: DailyHomework['items'][number]['type']): string {
@@ -35,6 +36,7 @@ export default function HomeworkScreen() {
     }
   }, []);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
+  useEffect(() => subscribeToDailyRollover(() => { void load(); }), [load]);
 
   if (!homework && !error) return <ScreenContainer scroll={false}><LoadingState label="Preparing today’s homework…" /></ScreenContainer>;
   if (error) return <ScreenContainer><ThemedText style={{ color: theme.error }}>{error}</ThemedText><AppButton label="Try again" onPress={() => { void load(); }} /></ScreenContainer>;

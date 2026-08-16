@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { AppButton } from '@/components/common/app-button';
@@ -17,6 +17,7 @@ import { loadTodayDailyReading, resolveDailyReadingLevel } from '@/features/dail
 import { localDateKey } from '@/features/daily-reading/streak';
 import { v3EpisodeList } from '@/features/lesson-v3/episodes';
 import { useTheme } from '@/hooks/use-theme';
+import { subscribeToDailyRollover } from '@/services/daily-rollover';
 import { getDailyReadingHomeState } from '@/services/database/daily-reading-repository';
 import { getV3EpisodeProgresses } from '@/services/database/lesson-v3-repository';
 import { useAppStore } from '@/store/app-store';
@@ -90,6 +91,7 @@ export default function HomeScreen() {
     }
   }, [learner, profile]);
   useFocusEffect(useCallback(() => { void loadDailyReading(); }, [loadDailyReading]));
+  useEffect(() => subscribeToDailyRollover(() => { void loadDailyReading(); }), [loadDailyReading]);
 
   const progressByEpisode = useMemo(() => new Map(progresses.map((progress) => [progress.episodeId, progress])), [progresses]);
   const currentEpisode = v3EpisodeList.find((episode) => !progressByEpisode.get(episode.id)?.completedAt) ?? v3EpisodeList[v3EpisodeList.length - 1];

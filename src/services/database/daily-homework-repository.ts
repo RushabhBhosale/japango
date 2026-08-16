@@ -193,7 +193,7 @@ export async function getOrCreateDailyHomework(date = localDateKey()): Promise<D
   if (existing) return existing;
 
   const [database, profile, candidates] = await Promise.all([getDatabase(), getLearnerProfile(), selectCandidates()]);
-  const selected = selectDailyHomework(candidates);
+  const selected = selectDailyHomework(candidates, date);
   const id = createLocalId('daily-homework');
   const now = new Date().toISOString();
   try {

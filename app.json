@@ -45,7 +45,7 @@
         {
           "icon": "./assets/images/icon.png",
           "color": "#505777",
-          "defaultChannel": "messages"
+          "defaultChannel": "daily-learning"
         }
       ]
     ],

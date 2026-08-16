@@ -34,4 +34,19 @@ describe('daily homework selection', () => {
 
     expect(plan.some((item) => item.type === 'grammar')).toBe(false);
   });
+
+  it('uses the local calendar date to rotate equally suitable material', () => {
+    const input = [
+      ...candidates('vocabulary', 20, 'new', 0),
+      ...candidates('kanji', 12, 'new', 30),
+      ...candidates('grammar', 8, 'new', 50),
+    ].map((candidate) => ({ ...candidate, priority: 400 }));
+
+    const first = selectDailyHomework(input, '2026-08-15');
+    const again = selectDailyHomework(input, '2026-08-15');
+    const nextDay = selectDailyHomework(input, '2026-08-16');
+
+    expect(again).toEqual(first);
+    expect(nextDay.map((item) => item.id)).not.toEqual(first.map((item) => item.id));
+  });
 });

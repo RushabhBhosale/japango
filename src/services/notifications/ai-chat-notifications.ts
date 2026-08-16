@@ -66,17 +66,16 @@ export async function registerYuiPushNotifications(localUserId: string): Promise
   if (Platform.OS === 'web' || !Device.isDevice || !apiUrl('/api/ai-chat/devices/register')) return;
 
   if (Platform.OS === 'android') {
-    await Notifications.setNotificationChannelAsync('messages', {
-      name: 'Messages',
-      importance: Notifications.AndroidImportance.DEFAULT,
+    await Notifications.setNotificationChannelAsync('daily-learning', {
+      name: 'Japanese learning',
+      importance: Notifications.AndroidImportance.HIGH,
       vibrationPattern: [0, 180],
       lightColor: '#505777',
     });
   }
 
   const current = await Notifications.getPermissionsAsync();
-  const permission = current.granted ? current : await Notifications.requestPermissionsAsync();
-  if (!permission.granted) return;
+  if (!current.granted) return;
 
   const id = projectId();
   if (!id) return;

@@ -7,7 +7,7 @@ async function sendExpoPush(token: string, payload: { title: string; body: strin
   const response = await fetch('https://exp.host/--/api/v2/push/send', {
     method: 'POST', signal,
     headers: { 'content-type': 'application/json', accept: 'application/json' },
-    body: JSON.stringify({ to: token, sound: 'default', title: payload.title, body: payload.body, data: payload.data }),
+    body: JSON.stringify({ to: token, sound: 'default', channelId: 'daily-learning', title: payload.title, body: payload.body, data: payload.data }),
   });
   const body = await response.json() as { data?: Array<{ status?: string }> };
   if (!response.ok || body.data?.[0]?.status !== 'ok') throw new Error('EXPO_PUSH_FAILED');

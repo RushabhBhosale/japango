@@ -18,6 +18,7 @@ import { LoadingState } from '@/components/common/loading-state';
 import { ThemedText } from '@/components/themed-text';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { AiChatClientError, retryYuiMessage, sendYuiMessage } from '@/features/ai-chat/chat-service';
+import { hasPersistedYuiReply } from '@/features/ai-chat/message-delivery';
 import { getYuiChat } from '@/services/database/ai-chat-repository';
 import { useTheme } from '@/hooks/use-theme';
 import { getFuriganaPreference } from '@/services/database/japanese-text-repository';
@@ -80,13 +81,14 @@ export default function ChatsScreen() {
       });
       setMessages(chat.messages);
     } catch (error) {
+      const recovered = await getYuiChat().catch(() => undefined);
+      if (recovered && pendingMessageId && hasPersistedYuiReply(recovered.messages, pendingMessageId)) {
+        setMessages(recovered.messages);
+        return;
+      }
       setErrorMessage(error instanceof AiChatClientError ? error.message : 'Yui could not reply right now. Your message is saved. Tap it to retry.');
-      void getYuiChat()
-        .then((chat) => setMessages(chat.messages))
-        .catch(() => {
-          if (!pendingMessageId) return;
-          setMessages((current) => current.map((message) => message.id === pendingMessageId ? { ...message, deliveryStatus: 'failed' } : message));
-        });
+      if (recovered) setMessages(recovered.messages);
+      else if (pendingMessageId) setMessages((current) => current.map((message) => message.id === pendingMessageId ? { ...message, deliveryStatus: 'failed' } : message));
     } finally {
       setSending(false);
     }
@@ -101,10 +103,14 @@ export default function ChatsScreen() {
       const chat = await retryYuiMessage(messageId);
       setMessages(chat.messages);
     } catch (error) {
+      const recovered = await getYuiChat().catch(() => undefined);
+      if (recovered && hasPersistedYuiReply(recovered.messages, messageId)) {
+        setMessages(recovered.messages);
+        return;
+      }
       setErrorMessage(error instanceof AiChatClientError ? error.message : 'Yui could not reply right now. Your message is still saved. Tap it to retry.');
-      void getYuiChat()
-        .then((chat) => setMessages(chat.messages))
-        .catch(() => setMessages((current) => current.map((message) => message.id === messageId ? { ...message, deliveryStatus: 'failed' } : message)));
+      if (recovered) setMessages(recovered.messages);
+      else setMessages((current) => current.map((message) => message.id === messageId ? { ...message, deliveryStatus: 'failed' } : message));
     } finally {
       setSending(false);
     }

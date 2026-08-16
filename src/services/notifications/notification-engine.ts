@@ -30,12 +30,15 @@ import { createLocalId } from '@/utils/id';
 
 const automaticSource = 'japango-auto';
 const testSource = 'japango-test';
+const learningChannelId = 'daily-learning';
 
 interface NotificationContent {
   title: string;
   body: string;
   data: JapanGoNotificationData;
 }
+
+type NotificationTrigger = Parameters<typeof Notifications.scheduleNotificationAsync>[0]['trigger'];
 
 function apiUrl(path: string): string | undefined {
   const base = process.env.EXPO_PUBLIC_API_BASE_URL?.replace(/\/$/u, '');
@@ -73,9 +76,9 @@ function permissionStatus(permission: Notifications.NotificationPermissionsStatu
 
 async function configureNativeNotifications(): Promise<void> {
   if (Platform.OS !== 'android') return;
-  await Notifications.setNotificationChannelAsync('learning', {
+  await Notifications.setNotificationChannelAsync(learningChannelId, {
     name: 'Japanese learning',
-    importance: Notifications.AndroidImportance.DEFAULT,
+    importance: Notifications.AndroidImportance.HIGH,
     vibrationPattern: [0, 180],
     lightColor: '#505777',
   });
@@ -105,6 +108,7 @@ export async function updateJapanGoNotificationPreferences(
     : next;
   await setNotificationPreferences(preferences);
   if (preferences.enabled && permission === 'granted') void scheduleDailyJapanGoNotifications();
+  else await clearScheduledJapanGoNotifications();
   return { preferences, permission };
 }
 
@@ -219,14 +223,50 @@ async function cancelAutomaticPlatformNotifications(): Promise<void> {
   }));
 }
 
-async function scheduleContent(content: NotificationContent, at: Date): Promise<NotificationLogEntry> {
+function dateTrigger(at: Date): NotificationTrigger {
+  return {
+    type: Notifications.SchedulableTriggerInputTypes.DATE,
+    date: at,
+    channelId: learningChannelId,
+  };
+}
+
+function dailyTrigger(hour: number, minute: number): NotificationTrigger {
+  if (Platform.OS === 'ios') {
+    return {
+      type: Notifications.SchedulableTriggerInputTypes.CALENDAR,
+      hour,
+      minute,
+      repeats: true,
+    };
+  }
+  return {
+    type: Notifications.SchedulableTriggerInputTypes.DAILY,
+    hour,
+    minute,
+    channelId: learningChannelId,
+  };
+}
+
+function nextDailyOccurrence(hour: number, minute: number, now = new Date()): Date {
+  const next = new Date(now);
+  next.setHours(hour, minute, 0, 0);
+  if (next.getTime() <= now.getTime()) next.setDate(next.getDate() + 1);
+  return next;
+}
+
+async function scheduleContent(
+  content: NotificationContent,
+  trigger: NotificationTrigger,
+  scheduledAt: Date,
+): Promise<NotificationLogEntry> {
   let notificationId: string | undefined;
   try {
     notificationId = await Notifications.scheduleNotificationAsync({
       content: { title: content.title, body: content.body, sound: 'default', data: content.data as unknown as Record<string, unknown> },
-      trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: at },
+      trigger,
     });
-    return createNotificationLog({ notificationId, type: content.data.type, title: content.title, body: content.body, data: content.data, status: 'scheduled', scheduledAt: at.toISOString() });
+    return createNotificationLog({ notificationId, type: content.data.type, title: content.title, body: content.body, data: content.data, status: 'scheduled', scheduledAt: scheduledAt.toISOString() });
   } catch (error) {
     return createNotificationLog({
       notificationId,
@@ -235,10 +275,22 @@ async function scheduleContent(content: NotificationContent, at: Date): Promise<
       body: content.body,
       data: content.data,
       status: 'failed',
-      scheduledAt: at.toISOString(),
+      scheduledAt: scheduledAt.toISOString(),
       errorMessage: error instanceof Error ? error.message : 'Notification could not be scheduled.',
     });
   }
+}
+
+async function scheduleDailyHomeworkReminder(preferences: NotificationPreferences): Promise<NotificationLogEntry | undefined> {
+  if (!preferences.dailyHomework) return undefined;
+  const { start } = preferences.activeHours;
+  const content: NotificationContent = {
+    title: 'Today’s Japanese plan is ready',
+    body: 'Your fresh daily reading and focused homework are waiting in JapanGo.',
+    data: { type: 'daily_homework', source: automaticSource },
+  };
+  const scheduledAt = nextDailyOccurrence(start, 0);
+  return scheduleContent(content, dailyTrigger(start, 0), scheduledAt);
 }
 
 /** Rebuilds today’s local schedule from live homework, review, and chat state. */
@@ -249,7 +301,13 @@ export async function scheduleDailyJapanGoNotifications(): Promise<NotificationL
   await configureNativeNotifications();
   await cancelAutomaticPlatformNotifications();
   const state = await getNotificationSchedulerState();
-  const types = selectNotificationTypes(state, preferences.frequency).filter((type) => typeEnabled(type, preferences));
+  const entries: NotificationLogEntry[] = [];
+  const dailyReminder = await scheduleDailyHomeworkReminder(preferences);
+  if (dailyReminder) entries.push(dailyReminder);
+  const dailyReminderIsToday = dailyReminder?.status === 'scheduled'
+    && localDateKey(new Date(dailyReminder.scheduledAt)) === localDateKey();
+  const types = selectNotificationTypes(state, preferences.frequency)
+    .filter((type) => typeEnabled(type, preferences) && (type !== 'daily_homework' || !dailyReminderIsToday));
   const times = buildNotificationTimes({
     now: new Date(),
     count: types.length,
@@ -257,12 +315,11 @@ export async function scheduleDailyJapanGoNotifications(): Promise<NotificationL
     lastNotificationAt: state.lastNotificationAt,
     lastAppOpenAt: state.lastAppOpenAt,
   });
-  const entries: NotificationLogEntry[] = [];
   for (const [index, at] of times.entries()) {
     const type = types[index];
     if (!type) continue;
     const content = await contentFor(type, automaticSource);
-    if (content) entries.push(await scheduleContent(content, at));
+    if (content) entries.push(await scheduleContent(content, dateTrigger(at), at));
   }
   return entries;
 }
@@ -274,7 +331,8 @@ export async function sendJapanGoNotificationTest(input: { type: NotificationTyp
   const content = await contentFor(input.type, testSource);
   if (!content) return undefined;
   const delay = Math.max(1, input.delaySeconds ?? 1);
-  return scheduleContent(content, new Date(Date.now() + delay * 1_000));
+  const scheduledAt = new Date(Date.now() + delay * 1_000);
+  return scheduleContent(content, dateTrigger(scheduledAt), scheduledAt);
 }
 
 export async function clearScheduledJapanGoNotifications(): Promise<void> {
@@ -282,7 +340,8 @@ export async function clearScheduledJapanGoNotifications(): Promise<void> {
 }
 
 export async function getScheduledJapanGoNotifications(): Promise<NotificationLogEntry[]> {
-  return getNotificationLogs({ date: localDateKey(), status: 'scheduled', limit: 20 });
+  const logs = await getNotificationLogs({ status: 'scheduled', limit: 30 });
+  return logs.filter((entry) => entry.data.source === automaticSource).slice(0, 20);
 }
 
 export async function getJapanGoNotificationDiagnostics(): Promise<NotificationDiagnostics> {
@@ -322,8 +381,10 @@ export function subscribeToJapanGoNotifications(input: { onOpen: (data: JapanGoN
   if (initial) {
     const data = parseNotificationData(initial.notification.request.content.data);
     void updateNotificationLog(initial.notification.request.identifier, 'opened');
-    if (data) input.onOpen(data);
-    Notifications.clearLastNotificationResponse();
+    if (data) {
+      input.onOpen(data);
+      Notifications.clearLastNotificationResponse();
+    }
   }
   return () => { received.remove(); opened.remove(); };
 }
