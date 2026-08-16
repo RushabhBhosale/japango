@@ -346,9 +346,15 @@ export async function getKanjiNotebookItems(
      INNER JOIN curriculum_content_details AS d ON d.item_id = c.id AND d.content_type = 'kanji'
      LEFT JOIN curriculum_bookmarks AS bookmarks ON bookmarks.user_id = p.id AND bookmarks.item_id = c.id
      LEFT JOIN fsrs_cards AS cards ON cards.user_id = p.id AND cards.item_id = c.id
+     LEFT JOIN practice_sync_state AS practice_state ON practice_state.id = 1
+     LEFT JOIN practice_skill_profile AS practice
+       ON practice.user_id = p.id AND practice.curriculum_item_id = c.id
+       AND practice_state.personalization_enabled = 1
      WHERE c.curriculum_source = 'bundled' AND c.release_ready = 1 AND c.type = 'kanji'
      ${clause.sql}
-     ORDER BY CASE c.level WHEN 'N5' THEN 0 ELSE 1 END, c.id
+     ORDER BY CASE WHEN COALESCE(practice.mistakes, 0) >= 2 THEN 0 ELSE 1 END,
+       COALESCE(practice.mistakes, 0) DESC,
+       CASE c.level WHEN 'N5' THEN 0 ELSE 1 END, c.id
      LIMIT ?`,
     new Date().toISOString(),
     ...clause.values,

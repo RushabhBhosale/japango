@@ -6,7 +6,6 @@ const base = {
   homeworkComplete: false,
   reviewsDue: 2,
   notificationsSentToday: 0,
-  currentScenario: true,
   recentMistakes: 1,
   currentLearningTargets: [
     { itemId: 'word', type: 'vocabulary' as const, key: '約束' },
@@ -15,9 +14,9 @@ const base = {
 };
 
 describe('notification scheduler policy', () => {
-  it('prioritises an unfinished conversation before review and homework', () => {
+  it('prioritises due work, today’s plan, and recurring conversation evidence', () => {
     expect(selectNotificationTypes(base, 'normal', new Date('2026-08-15T06:00:00.000Z')).slice(0, 3))
-      .toEqual(['scenario_continuation', 'due_review', 'daily_homework']);
+      .toEqual(['due_review', 'daily_homework', 'practice_review']);
   });
 
   it('never exceeds the hard cap and schedules after a recent study session', () => {

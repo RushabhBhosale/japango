@@ -29,11 +29,9 @@ export function selectNotificationTypes(
   if (!remaining) return [];
 
   const candidates: NotificationType[] = [];
-  if (state.currentScenario) candidates.push('scenario_continuation');
-  else if (state.lastChatAt && now.getTime() - Date.parse(state.lastChatAt) > 8 * 60 * 60 * 1_000) candidates.push('ai_chat');
   if (state.reviewsDue > 0) candidates.push('due_review');
   if (!state.homeworkComplete) candidates.push('daily_homework');
-  if (state.recentMistakes > 0) candidates.push('mistake_review');
+  if (state.recentMistakes > 0) candidates.push('practice_review');
   if (state.currentLearningTargets.some((target) => target.type === 'vocabulary')) candidates.push('micro_vocabulary');
   if (state.currentLearningTargets.some((target) => target.type === 'kanji')) candidates.push('micro_kanji');
   if (state.currentLearningTargets.some((target) => target.type === 'grammar')) candidates.push('grammar_tip');

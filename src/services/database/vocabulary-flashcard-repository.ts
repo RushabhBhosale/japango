@@ -76,8 +76,14 @@ export async function getVocabularyFlashcards(query: VocabularyFlashcardQuery): 
      FROM curriculum_items AS c
      INNER JOIN learner_profile AS p ON 1 = 1
      LEFT JOIN user_mastery AS m ON m.user_id = p.id AND m.item_id = c.id
+     LEFT JOIN practice_sync_state AS practice_state ON practice_state.id = 1
+     LEFT JOIN practice_skill_profile AS practice
+       ON practice.user_id = p.id AND practice.curriculum_item_id = c.id
+       AND practice_state.personalization_enabled = 1
      WHERE ${clauses.join(' AND ')}
-     ORDER BY CASE c.level WHEN 'N5' THEN 0 ELSE 1 END, c.id`,
+     ORDER BY CASE WHEN COALESCE(practice.mistakes, 0) >= 2 THEN 0 ELSE 1 END,
+       COALESCE(practice.mistakes, 0) DESC,
+       CASE c.level WHEN 'N5' THEN 0 ELSE 1 END, c.id`,
     ...values,
   );
   return rows.map(mapFlashcard);

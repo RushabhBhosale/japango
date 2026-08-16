@@ -1,5 +1,5 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { router } from 'expo-router';
+import { router, type Href } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
@@ -45,7 +45,7 @@ export default function OnboardingScreen() {
     setError(undefined);
     try {
       await completeOnboarding(goal, level);
-      router.replace('/assessment');
+      router.replace('/assessment' as Href);
     } catch {
       setError('Your starting preferences could not be saved. Please try again.');
     } finally {

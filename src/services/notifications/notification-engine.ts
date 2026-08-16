@@ -2,8 +2,8 @@ import * as Notifications from 'expo-notifications';
 import { Platform } from 'react-native';
 
 import { DEFAULT_DAILY_TARGET, buildNotificationTimes, selectNotificationTypes } from '@/features/notifications/scheduler';
-import { getActiveYuiScenario, getRecentChatMistakes, getYuiChatContext, saveIncomingYuiMessage } from '@/services/database/ai-chat-repository';
 import { getOrCreateDailyHomework, localDateKey } from '@/services/database/daily-homework-repository';
+import { getPracticeNotificationInsight } from '@/services/database/google-practice-repository';
 import {
   cancelNotificationLog,
   createNotificationLog,
@@ -16,7 +16,6 @@ import {
   setNotificationPreferences,
   updateNotificationLog,
 } from '@/services/database/notification-repository';
-import { getLearnerProfile } from '@/services/database/profile-repository';
 import type {
   JapanGoNotificationData,
   NotificationDiagnostics,
@@ -25,8 +24,6 @@ import type {
   NotificationPreferences,
   NotificationType,
 } from '@/types/notifications';
-import { AI_CHAT_CONVERSATION_ID } from '@/types/ai-chat';
-import { createLocalId } from '@/utils/id';
 
 const automaticSource = 'japango-auto';
 const testSource = 'japango-test';
@@ -40,17 +37,12 @@ interface NotificationContent {
 
 type NotificationTrigger = Parameters<typeof Notifications.scheduleNotificationAsync>[0]['trigger'];
 
-function apiUrl(path: string): string | undefined {
-  const base = process.env.EXPO_PUBLIC_API_BASE_URL?.replace(/\/$/u, '');
-  return base ? `${base}${path}` : undefined;
-}
-
 function parseNotificationData(value: unknown): JapanGoNotificationData | undefined {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return undefined;
   const data = value as Record<string, unknown>;
   const supportedTypes = new Set<NotificationType>([
     'daily_homework', 'due_review', 'micro_vocabulary', 'micro_kanji', 'grammar_tip',
-    'mistake_review', 'ai_chat', 'scenario_continuation', 'progress',
+    'practice_review', 'progress',
   ]);
   const source = data.source;
   if (typeof data.type !== 'string' || !supportedTypes.has(data.type as NotificationType)
@@ -61,8 +53,7 @@ function parseNotificationData(value: unknown): JapanGoNotificationData | undefi
   return {
     type: data.type as NotificationType,
     date: optionalString('date'),
-    chatId: optionalString('chatId'),
-    messageId: optionalString('messageId'),
+    practiceKey: optionalString('practiceKey'),
     itemId: optionalString('itemId'),
     itemType: itemType as JapanGoNotificationData['itemType'],
     source,
@@ -101,7 +92,7 @@ export async function requestJapanGoNotificationPermission(): Promise<Notificati
 export async function updateJapanGoNotificationPreferences(
   next: NotificationPreferences,
 ): Promise<{ preferences: NotificationPreferences; permission: NotificationPermissionStatus }> {
-  const needsPermission = next.enabled && (next.aiChat || next.dailyHomework || next.reviews || next.learningTips);
+  const needsPermission = next.enabled && (next.practiceInsights || next.dailyHomework || next.reviews || next.learningTips);
   const permission = needsPermission ? await requestJapanGoNotificationPermission() : await getJapanGoNotificationPermission();
   const preferences = needsPermission && permission !== 'granted'
     ? { ...next, enabled: false }
@@ -114,59 +105,16 @@ export async function updateJapanGoNotificationPreferences(
 
 function typeEnabled(type: NotificationType, preferences: NotificationPreferences): boolean {
   if (!preferences.enabled) return false;
-  if (type === 'ai_chat' || type === 'scenario_continuation') return preferences.aiChat;
+  if (type === 'practice_review') return preferences.practiceInsights;
   if (type === 'daily_homework') return preferences.dailyHomework;
   if (type === 'due_review') return preferences.reviews;
   return preferences.learningTips;
-}
-
-async function buildYuiMessage(type: Extract<NotificationType, 'ai_chat' | 'scenario_continuation'>): Promise<{ id: string; content: string; createdAt: string }> {
-  const [context, scenario, profile] = await Promise.all([getYuiChatContext(), getActiveYuiScenario(), getLearnerProfile()]);
-  const fallback = type === 'scenario_continuation'
-    ? 'How did the story you mentioned yesterday turn out?'
-    : 'Hey! How is your day going? Open JapanGo whenever you feel like chatting.';
-  const url = apiUrl('/api/ai-chat/proactive-message');
-  let content = fallback;
-  if (url) {
-    try {
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({
-          learnerLevel: profile.learnerLevel === 'Ready to begin N4 gradually' ? 'N4' : 'N5',
-          conversation: { summary: context.summary, recentMessages: context.recentMessages.map(({ role, content: message }) => ({ role, content: message })) },
-          learningTargets: context.learningTargets,
-          scenario: scenario ? { title: scenario.title, setting: scenario.setting, goal: scenario.goal } : undefined,
-        }),
-      });
-      const body = await response.json() as { success?: boolean; data?: { message?: unknown } };
-      if (response.ok && body.success && typeof body.data?.message === 'string' && body.data.message.trim()) {
-        const candidate = body.data.message.trim().slice(0, 280);
-        // A notification should be understandable before a learner opens the
-        // app. Japanese conversation can continue inside Yui's chat instead.
-        if (!/[\u3040-\u30ff\u3400-\u9fff]/u.test(candidate)) content = candidate;
-      }
-    } catch {
-      // A private backend is optional. The persisted local fallback keeps the
-      // exact notification text and conversation in sync when it is offline.
-    }
-  }
-  const message = { id: createLocalId('chat-proactive'), content, createdAt: new Date().toISOString() };
-  await saveIncomingYuiMessage(message);
-  return message;
 }
 
 async function contentFor(type: NotificationType, source: JapanGoNotificationData['source']): Promise<NotificationContent | undefined> {
   const date = localDateKey();
   const homework = await getOrCreateDailyHomework(date);
   const base = { source, date } as const;
-  if (type === 'ai_chat' || type === 'scenario_continuation') {
-    const message = source === testSource && type === 'ai_chat'
-      ? { id: createLocalId('chat-proactive-test'), content: 'Hey! This is a sample message from Yui. Open JapanGo to chat.', createdAt: new Date().toISOString() }
-      : await buildYuiMessage(type);
-    if (source === testSource && type === 'ai_chat') await saveIncomingYuiMessage(message);
-    return { title: 'Yui', body: message.content, data: { ...base, type, chatId: AI_CHAT_CONVERSATION_ID, messageId: message.id } };
-  }
   if (type === 'daily_homework') {
     const vocabulary = homework.items.filter((item) => item.type === 'vocabulary').length;
     const kanji = homework.items.filter((item) => item.type === 'kanji').length;
@@ -204,10 +152,22 @@ async function contentFor(type: NotificationType, source: JapanGoNotificationDat
     }
     return { title: 'One grammar idea', body: item.meaning ? `${item.meaning}. Tap to see an easy example.` : 'A short grammar example is ready. Tap to open it.', data: { ...base, type, itemId: item.itemId, itemType: item.type } };
   }
-  if (type === 'mistake_review') {
-    const [mistake] = await getRecentChatMistakes(1);
-    if (!mistake) return undefined;
-    return { title: 'A quick chat tip', body: 'A small correction from your last chat is ready. Tap to view it.', data: { ...base, type, chatId: AI_CHAT_CONVERSATION_ID } };
+  if (type === 'practice_review') {
+    const insight = await getPracticeNotificationInsight()
+      ?? (source === testSource ? { key: 'past tense', mistakes: 3, lastPracticedAt: new Date().toISOString() } : undefined);
+    if (!insight) return undefined;
+    if (source === automaticSource) {
+      const recent = await getNotificationLogs({ limit: 50 });
+      const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1_000;
+      if (recent.some((entry) => entry.type === 'practice_review'
+        && entry.data.practiceKey === insight.key
+        && Date.parse(entry.scheduledAt) >= cutoff)) return undefined;
+    }
+    return {
+      title: 'From your conversations',
+      body: `You’ve mixed up ${insight.key} a few times. Quick review?`,
+      data: { ...base, type, practiceKey: insight.key },
+    };
   }
   return { title: 'Small steps count', body: 'You are building your Japanese a little at a time. Keep going.', data: { ...base, type: 'progress' } };
 }
@@ -293,7 +253,7 @@ async function scheduleDailyHomeworkReminder(preferences: NotificationPreference
   return scheduleContent(content, dailyTrigger(start, 0), scheduledAt);
 }
 
-/** Rebuilds today’s local schedule from live homework, review, and chat state. */
+/** Rebuilds today’s local schedule from live homework, review, and practice evidence. */
 export async function scheduleDailyJapanGoNotifications(): Promise<NotificationLogEntry[]> {
   if (Platform.OS === 'web') return [];
   const [preferences, permission] = await Promise.all([getNotificationPreferences(), getJapanGoNotificationPermission()]);
@@ -337,6 +297,17 @@ export async function sendJapanGoNotificationTest(input: { type: NotificationTyp
 
 export async function clearScheduledJapanGoNotifications(): Promise<void> {
   await cancelAutomaticPlatformNotifications();
+}
+
+export async function clearScheduledPracticeNotifications(): Promise<void> {
+  if (Platform.OS === 'web') return;
+  const scheduled = await Notifications.getAllScheduledNotificationsAsync();
+  await Promise.all(scheduled.map(async (notification) => {
+    const data = parseNotificationData(notification.content.data);
+    if (data?.type !== 'practice_review') return;
+    await Notifications.cancelScheduledNotificationAsync(notification.identifier);
+    await cancelNotificationLog(notification.identifier);
+  }));
 }
 
 export async function getScheduledJapanGoNotifications(): Promise<NotificationLogEntry[]> {

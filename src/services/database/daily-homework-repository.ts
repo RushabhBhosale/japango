@@ -40,8 +40,8 @@ interface CandidateRow {
 }
 
 interface LearnerSkillRow {
-  type: DailyHomeworkItemType;
-  skill_key: string;
+  skill_type: DailyHomeworkItemType;
+  curriculum_item_id: string;
   mastery: number;
   mistakes: number;
 }
@@ -51,10 +51,6 @@ export function localDateKey(now = new Date()): string {
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
   return `${year}-${month}-${day}`;
-}
-
-function normalize(value: string): string {
-  return value.trim().toLocaleLowerCase('en-US').replace(/[\s\-‐‑–—_]/gu, '');
 }
 
 function mapHomeworkItem(row: HomeworkItemRow): DailyHomeworkItem {
@@ -125,19 +121,16 @@ async function readHomework(row: HomeworkRow): Promise<DailyHomework> {
   };
 }
 
-function sourceFor(row: CandidateRow, chatSkills: ReadonlyMap<string, LearnerSkillRow>, now: Date): { source: DailyHomeworkSource; priority: number } {
+function sourceFor(row: CandidateRow, practiceSkills: ReadonlyMap<string, LearnerSkillRow>, now: Date): { source: DailyHomeworkSource; priority: number } {
   const dueAt = row.due_at;
   const due = dueAt && dueAt <= now.toISOString() && row.card_state !== 'new' && row.card_state !== 'suspended' && row.card_state !== 'buried';
   if (due && dueAt) {
     const overdueHours = Math.max(0, now.getTime() - Date.parse(dueAt)) / (60 * 60 * 1_000);
     return { source: 'due-review', priority: 1_000 + Math.min(overdueHours, 720) };
   }
-  const skill = [row.title, row.reading ?? '', row.meaning ?? '']
-    .map(normalize)
-    .map((key) => chatSkills.get(`${row.type}:${key}`))
-    .find((value): value is LearnerSkillRow => Boolean(value));
+  const skill = practiceSkills.get(row.id);
   if (skill?.mistakes && skill.mistakes >= 2) {
-    return { source: 'chat-mistake', priority: 800 + skill.mistakes * 10 + (1 - skill.mastery) * 100 };
+    return { source: 'conversation-practice', priority: 800 + skill.mistakes * 10 + (1 - skill.mastery) * 100 };
   }
   if (row.status === 'weak' || (row.incorrect_count ?? 0) >= 2) {
     return { source: 'weakness', priority: 600 + (row.incorrect_count ?? 0) * 10 + (100 - (row.mastery_score ?? 0)) };
@@ -165,14 +158,17 @@ async function selectCandidates(): Promise<DailyHomeworkCandidate[]> {
        LIMIT 600`,
     ),
     database.getAllAsync<LearnerSkillRow>(
-      `SELECT type, skill_key, mastery, mistakes FROM learner_skills
-       WHERE type IN ('vocabulary', 'kanji', 'grammar') AND mistakes >= 2
+      `SELECT profile.skill_type, profile.curriculum_item_id, profile.mastery, profile.mistakes
+       FROM practice_skill_profile AS profile
+       INNER JOIN practice_sync_state AS state ON state.id = 1 AND state.personalization_enabled = 1
+       WHERE profile.skill_type IN ('vocabulary', 'kanji', 'grammar')
+         AND profile.curriculum_item_id IS NOT NULL AND profile.mistakes >= 2
        ORDER BY mastery ASC, mistakes DESC LIMIT 40`,
     ),
   ]);
-  const chatSkills = new Map(skills.map((skill) => [`${skill.type}:${normalize(skill.skill_key)}`, skill]));
+  const practiceSkills = new Map(skills.map((skill) => [skill.curriculum_item_id, skill]));
   return rows.map((row) => {
-    const candidate = sourceFor(row, chatSkills, now);
+    const candidate = sourceFor(row, practiceSkills, now);
     return { id: row.id, type: row.type, ...candidate };
   });
 }

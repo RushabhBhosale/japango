@@ -1,7 +1,7 @@
 import type { CurriculumItemType } from './learning';
 
 export type DailyHomeworkItemType = Extract<CurriculumItemType, 'vocabulary' | 'kanji' | 'grammar'>;
-export type DailyHomeworkSource = 'weakness' | 'new' | 'chat-mistake' | 'due-review';
+export type DailyHomeworkSource = 'weakness' | 'new' | 'conversation-practice' | 'due-review';
 
 export interface DailyHomeworkItem {
   id: string;

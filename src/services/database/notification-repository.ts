@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { getActiveYuiScenario, getRecentChatMistakes } from '@/services/database/ai-chat-repository';
+import { getPracticeNotificationInsight } from '@/services/database/google-practice-repository';
 import { getDailyHomework, getOrCreateDailyHomework, getCurrentLearningTargets, localDateKey } from '@/services/database/daily-homework-repository';
 import { getFsrsDailyQueue } from '@/services/database/fsrs-repository';
 import type { NotificationLogEntry, NotificationLogStatus, NotificationPreferences, NotificationSchedulerState, NotificationType } from '@/types/notifications';
@@ -11,20 +11,19 @@ import { getSetting, setSetting } from './settings-repository';
 
 const notificationTypeSchema = z.enum([
   'daily_homework', 'due_review', 'micro_vocabulary', 'micro_kanji', 'grammar_tip',
-  'mistake_review', 'ai_chat', 'scenario_continuation', 'progress',
+  'practice_review', 'progress',
 ]);
 const notificationDataSchema = z.object({
   type: notificationTypeSchema,
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/u).optional(),
-  chatId: z.string().min(1).optional(),
-  messageId: z.string().min(1).optional(),
+  practiceKey: z.string().min(1).optional(),
   itemId: z.string().min(1).optional(),
   itemType: z.enum(['vocabulary', 'kanji', 'grammar']).optional(),
   source: z.enum(['japango-auto', 'japango-test']),
 }).strict();
 const preferencesSchema = z.object({
   enabled: z.boolean(),
-  aiChat: z.boolean(),
+  practiceInsights: z.boolean(),
   dailyHomework: z.boolean(),
   reviews: z.boolean(),
   learningTips: z.boolean(),
@@ -34,7 +33,7 @@ const preferencesSchema = z.object({
 
 export const defaultNotificationPreferences: NotificationPreferences = {
   enabled: false,
-  aiChat: true,
+  practiceInsights: true,
   dailyHomework: true,
   reviews: true,
   learningTips: true,
@@ -174,28 +173,21 @@ export async function cancelNotificationLog(notificationId: string): Promise<voi
 }
 
 export async function getNotificationSchedulerState(date = localDateKey()): Promise<NotificationSchedulerState> {
-  const [homework, queue, appActivity, scenario, mistakes, targets, logs, database] = await Promise.all([
+  const [homework, queue, appActivity, practiceInsight, targets, logs] = await Promise.all([
     getOrCreateDailyHomework(date),
     getFsrsDailyQueue(),
     getLastNotificationAppActivity(),
-    getActiveYuiScenario(),
-    getRecentChatMistakes(3),
+    getPracticeNotificationInsight(),
     getCurrentLearningTargets(date),
     getNotificationLogs({ date, limit: 20 }),
-    getDatabase(),
   ]);
-  const chatActivity = await database.getFirstAsync<{ created_at: string | null }>(
-    `SELECT MAX(created_at) AS created_at FROM ai_chat_messages WHERE chat_id = 'yui-main'`,
-  );
   return {
     homeworkComplete: homework.completedItemIds.length >= homework.items.length && homework.items.length > 0,
     reviewsDue: queue.learning.length + queue.overdue.length + queue.due.length,
     lastAppOpenAt: appActivity,
-    lastChatAt: chatActivity?.created_at ?? undefined,
     notificationsSentToday: logs.filter((entry) => entry.data.source === 'japango-auto' && entry.status !== 'cancelled' && entry.status !== 'failed').length,
     lastNotificationAt: logs.find((entry) => entry.data.source === 'japango-auto' && entry.status !== 'cancelled' && entry.status !== 'failed')?.scheduledAt,
-    currentScenario: Boolean(scenario),
-    recentMistakes: mistakes.length,
+    recentMistakes: practiceInsight ? practiceInsight.mistakes : 0,
     currentLearningTargets: targets,
   };
 }

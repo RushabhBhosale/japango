@@ -127,6 +127,9 @@ describe('SQLite migrations', () => {
     expect(databaseMigrations.find(({ version }) => version === 29)?.sql).toContain('CREATE TABLE IF NOT EXISTS notification_log');
     expect(databaseMigrations.find(({ version }) => version === 29)?.sql).toContain('CREATE TABLE IF NOT EXISTS notification_activity');
     expect(databaseMigrations.find(({ version }) => version === 30)?.sql).toContain('CREATE TABLE IF NOT EXISTS chat_learning_patterns');
+    expect(databaseMigrations.find(({ version }) => version === 31)?.sql).toContain('CREATE TABLE IF NOT EXISTS practice_sync_state');
+    expect(databaseMigrations.find(({ version }) => version === 31)?.sql).toContain('CREATE TABLE IF NOT EXISTS practice_imported_sessions');
+    expect(databaseMigrations.find(({ version }) => version === 31)?.sql).toContain('DROP TABLE IF EXISTS ai_chat_messages');
   });
 
   it('does nothing when the database is current', async () => {
@@ -163,7 +166,7 @@ describe('SQLite migrations', () => {
   it('keeps migration definitions contiguous and includes the one-time learner reset at v19', () => {
     expect(databaseMigrations.map(({ version }) => version)).toEqual(Array.from({ length: CURRENT_DATABASE_VERSION }, (_, index) => index + 1));
     expect(databaseMigrations.at(-1)?.version).toBe(CURRENT_DATABASE_VERSION);
-    expect(databaseMigrations.every(({ sql }) => !/\bINSERT\s+INTO\b/iu.test(sql))).toBe(true);
+    expect(databaseMigrations.filter(({ version }) => version < 31).every(({ sql }) => !/\bINSERT\s+INTO\b/iu.test(sql))).toBe(true);
     expect(databaseMigrations.find(({ version }) => version === 19)?.sql).toContain('DELETE FROM lesson_v2_progress');
     expect(databaseMigrations.find(({ version }) => version === 20)?.sql).toContain('CREATE TABLE IF NOT EXISTS audio_lesson_progress');
     expect(databaseMigrations.find(({ version }) => version === 21)?.sql).toContain('CREATE TABLE IF NOT EXISTS v3_episode_progress');
@@ -176,5 +179,6 @@ describe('SQLite migrations', () => {
     expect(databaseMigrations.find(({ version }) => version === 28)?.sql).toContain('CREATE TABLE IF NOT EXISTS daily_homework');
     expect(databaseMigrations.find(({ version }) => version === 29)?.sql).toContain('CREATE TABLE IF NOT EXISTS notification_log');
     expect(databaseMigrations.find(({ version }) => version === 30)?.sql).toContain('CREATE TABLE IF NOT EXISTS chat_learning_patterns');
+    expect(databaseMigrations.find(({ version }) => version === 31)?.sql).toContain("'conversation-practice'");
   });
 });

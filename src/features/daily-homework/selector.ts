@@ -16,7 +16,7 @@ export interface DailyHomeworkSelection {
 const sourceCycle: readonly DailyHomeworkSource[] = [
   'weakness', 'weakness', 'weakness', 'weakness',
   'new', 'new', 'new',
-  'chat-mistake', 'chat-mistake',
+  'conversation-practice', 'conversation-practice',
   'due-review',
 ];
 

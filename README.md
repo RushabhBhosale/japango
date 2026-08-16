@@ -21,6 +21,24 @@ npm run lint
 npm test
 ```
 
+## ChatGPT Practice Sync
+
+JapanGo does not contain an open-ended AI chat. Learners can practise in a dedicated ChatGPT conversation, append completed sessions to one Google Doc, and import only that selected document through the **ChatGPT Practice** tab.
+
+Google setup uses native Google Sign-In plus the non-sensitive, per-file `drive.file` scope and Google's native Android Picker authorization flow. Enable the Google Picker, Drive, and Docs APIs in Google Cloud, create an OAuth client for each shipped platform, and add the public client IDs to the mobile environment:
+
+```dotenv
+EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID=
+EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID=
+EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID=
+```
+
+For Android, configure the Android OAuth client with package `com.rushi2303.japango` and the SHA-1 of every certificate used to sign an installed build (local debug/release and Google Play App Signing as applicable). The Web application client ID is also required by native Google Sign-In; it does not need a JapanGo custom redirect URI. This feature requires an Expo development/native build and does not work in Expo Go.
+
+The app requests only `drive.file`, lets the user designate one Google Doc through Google Picker, and refreshes short-lived access tokens through the native Google Sign-In SDK. The mobile app sends newly parsed sessions to `POST /api/practice/analyze`, which uses the existing backend-only AI provider registry. Configure `AI_MODEL_*`, `AI_BASE_URL_*`, and `AI_API_KEY_*` only in the backend environment.
+
+Practice logs are parsed append-only from a saved Google Docs position and deduplicated by session ID. Imported conversations, corrections, skill evidence, topics, and discovered vocabulary remain in local SQLite and can be deleted from the Practice tab. Disabling personalization keeps the journal visible but stops conversation evidence from influencing homework, flashcards, daily readings, or notifications.
+
 ## Local architecture
 
 - `src/features` contains validated curriculum seeds and deterministic assessment/mastery logic.

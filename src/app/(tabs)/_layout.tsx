@@ -1,12 +1,10 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
-import { useEffect, useState } from 'react';
 import type { ColorValue } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
-import { getYuiUnreadCount, subscribeToYuiUnreadCount } from '@/services/database/ai-chat-repository';
 
 type IconName = React.ComponentProps<typeof Ionicons>['name'];
 type TabIconProps = { focused: boolean; color: ColorValue; size: number };
@@ -22,12 +20,6 @@ function tabIcon(inactiveName: IconName, activeName: IconName) {
 export default function TabLayout() {
   const theme = useTheme();
   const insets = useSafeAreaInsets();
-  const [unreadYuiMessages, setUnreadYuiMessages] = useState(0);
-
-  useEffect(() => {
-    void getYuiUnreadCount().then(setUnreadYuiMessages).catch(() => setUnreadYuiMessages(0));
-    return subscribeToYuiUnreadCount(setUnreadYuiMessages);
-  }, []);
   return (
     <Tabs
       safeAreaInsets={{ bottom: Math.max(insets.bottom, Spacing.two) + Spacing.one }}
@@ -53,13 +45,11 @@ export default function TabLayout() {
         options={{ title: 'Exams', tabBarAccessibilityLabel: 'JLPT mock exams tab', tabBarIcon: tabIcon('document-text-outline', 'document-text') }}
       />
       <Tabs.Screen
-        name="chats"
+        name="practice"
         options={{
-          title: 'Chats',
-          tabBarAccessibilityLabel: unreadYuiMessages ? `Chats with Yui tab, ${unreadYuiMessages} unread messages` : 'Chats with Yui tab',
-          tabBarBadge: unreadYuiMessages || undefined,
-          tabBarBadgeStyle: { backgroundColor: theme.primary, color: theme.onPrimary },
-          tabBarIcon: tabIcon('chatbubble-outline', 'chatbubble'),
+          title: 'Practice',
+          tabBarAccessibilityLabel: 'ChatGPT Practice tab',
+          tabBarIcon: tabIcon('journal-outline', 'journal'),
         }}
       />
       <Tabs.Screen

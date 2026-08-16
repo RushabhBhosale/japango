@@ -6,9 +6,7 @@ export type NotificationType =
   | 'micro_vocabulary'
   | 'micro_kanji'
   | 'grammar_tip'
-  | 'mistake_review'
-  | 'ai_chat'
-  | 'scenario_continuation'
+  | 'practice_review'
   | 'progress';
 
 export type NotificationFrequency = 'light' | 'normal' | 'frequent';
@@ -17,7 +15,7 @@ export type NotificationLogStatus = 'scheduled' | 'delivered' | 'opened' | 'canc
 
 export interface NotificationPreferences {
   enabled: boolean;
-  aiChat: boolean;
+  practiceInsights: boolean;
   dailyHomework: boolean;
   reviews: boolean;
   learningTips: boolean;
@@ -28,8 +26,7 @@ export interface NotificationPreferences {
 export interface JapanGoNotificationData {
   type: NotificationType;
   date?: string;
-  chatId?: string;
-  messageId?: string;
+  practiceKey?: string;
   itemId?: string;
   itemType?: 'vocabulary' | 'kanji' | 'grammar';
   source: 'japango-auto' | 'japango-test';
@@ -54,10 +51,8 @@ export interface NotificationSchedulerState {
   homeworkComplete: boolean;
   reviewsDue: number;
   lastAppOpenAt?: string;
-  lastChatAt?: string;
   notificationsSentToday: number;
   lastNotificationAt?: string;
-  currentScenario: boolean;
   recentMistakes: number;
   currentLearningTargets: CurrentLearningTarget[];
 }

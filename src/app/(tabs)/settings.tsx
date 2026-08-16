@@ -15,7 +15,6 @@ import { defaultFsrsQueueLimits, getFsrsQueueLimits, restoreAllSuspendedFsrsCard
 import { clearAiHistoryAndCache } from '@/services/database/ai-repository';
 import { getFuriganaPreference, setFuriganaPreference } from '@/services/database/japanese-text-repository';
 import { defaultNotificationPreferences, getNotificationPreferences } from '@/services/database/notification-repository';
-import { registerYuiPushNotifications } from '@/services/notifications/ai-chat-notifications';
 import {
   clearScheduledJapanGoNotifications,
   getJapanGoNotificationDiagnostics,
@@ -117,9 +116,6 @@ export default function SettingsScreen() {
     try {
       const result = await updateJapanGoNotificationPreferences(next);
       setNotificationPreferencesState(result.preferences);
-      if (result.preferences.enabled && result.preferences.aiChat && profile?.id) {
-        void registerYuiPushNotifications(profile.id).catch(() => undefined);
-      }
       setMessage(result.permission === 'granted' || !next.enabled
         ? 'Notification preferences updated.'
         : 'Notifications are disabled in device settings. You can enable them there when ready.');
@@ -280,7 +276,7 @@ export default function SettingsScreen() {
 
       <SectionHeading title="Notifications" detail={notificationPreferences.enabled ? 'On' : 'Off'} />
       <Card>
-        <ThemedText themeColor="textSecondary">Allow JapanGo to send daily Japanese practice, review reminders and messages from your Japanese chat.</ThemedText>
+        <ThemedText themeColor="textSecondary">Allow JapanGo to send daily Japanese practice, review reminders, and occasional conversation-based tips.</ThemedText>
         <Pressable
           accessibilityRole="switch"
           accessibilityState={{ checked: notificationPreferences.enabled }}
@@ -292,7 +288,7 @@ export default function SettingsScreen() {
         </Pressable>
         <View style={styles.notificationRows}>
           {([
-            ['aiChat', 'AI chat messages'],
+            ['practiceInsights', 'Conversation insights'],
             ['dailyHomework', 'Daily homework'],
             ['reviews', 'Reviews'],
             ['learningTips', 'Learning tips'],
@@ -341,9 +337,7 @@ export default function SettingsScreen() {
             <AppButton label="Test homework" variant="quiet" onPress={() => { void runNotificationTest('daily_homework'); }} />
             <AppButton label="Test vocabulary" variant="quiet" onPress={() => { void runNotificationTest('micro_vocabulary'); }} />
             <AppButton label="Test kanji" variant="quiet" onPress={() => { void runNotificationTest('micro_kanji'); }} />
-            <AppButton label="Test mistake review" variant="quiet" onPress={() => { void runNotificationTest('mistake_review'); }} />
-            <AppButton label="Test AI chat" variant="quiet" onPress={() => { void runNotificationTest('ai_chat'); }} />
-            <AppButton label="Test chat deep link" variant="quiet" onPress={() => { void runNotificationTest('ai_chat', 10); }} />
+            <AppButton label="Test conversation review" variant="quiet" onPress={() => { void runNotificationTest('practice_review'); }} />
           </View>
           <AppButton label="Generate today’s schedule" variant="secondary" onPress={() => { void scheduleDailyJapanGoNotifications().then(refreshNotificationDiagnostics).catch(() => setMessage('Today’s schedule could not be generated.')); }} />
           <AppButton label="View scheduled notifications" variant="quiet" onPress={() => { void refreshNotificationDiagnostics(); }} />

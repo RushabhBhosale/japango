@@ -58,7 +58,7 @@ export default function HomeworkScreen() {
         <Ionicons name={complete === homework.items.length ? 'checkmark-circle' : 'sparkles-outline'} size={25} color={theme.primary} />
         <View style={styles.summaryCopy}>
           <ThemedText type="smallBold">{complete === homework.items.length ? 'All set for today.' : 'A short, focused session.'}</ThemedText>
-          <ThemedText type="small" themeColor="textSecondary">Weak items, new material, chat patterns, and due reviews are balanced quietly in the background.</ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">Weak items, new material, conversation practice, and due reviews are balanced quietly in the background.</ThemedText>
         </View>
       </Card>
       <View style={styles.list}>

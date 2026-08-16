@@ -1,4 +1,4 @@
-export const CURRENT_DATABASE_VERSION = 30;
+export const CURRENT_DATABASE_VERSION = 31;
 
 export interface DatabaseMigration {
   version: number;
@@ -1875,6 +1875,138 @@ const versionThirtySql = `
     ON chat_learning_patterns(user_id, observations DESC, last_seen_at DESC);
 `;
 
+// ChatGPT Practice Sync replaces the retired in-app chat. Imported sessions
+// and analysis stay local, while OAuth credentials remain in SecureStore.
+const versionThirtyOneSql = `
+  DROP TABLE IF EXISTS ai_chat_scenarios;
+  DROP TABLE IF EXISTS ai_chat_embedding_cache;
+  DROP TABLE IF EXISTS ai_chat_memories;
+  DROP TABLE IF EXISTS ai_chat_mistakes;
+  DROP TABLE IF EXISTS ai_chat_messages;
+  DROP TABLE IF EXISTS ai_chat_conversations;
+  DROP TABLE IF EXISTS ai_chat_characters;
+  DROP TABLE IF EXISTS chat_learning_patterns;
+  DROP TABLE IF EXISTS learner_skills;
+
+  DELETE FROM notification_log
+  WHERE notification_type IN ('ai_chat', 'scenario_continuation', 'mistake_review');
+
+  UPDATE app_settings
+  SET value_json = replace(value_json, '"aiChat":', '"practiceInsights":')
+  WHERE key = 'notification_preferences';
+
+  ALTER TABLE daily_homework_items RENAME TO legacy_daily_homework_items;
+  CREATE TABLE daily_homework_items (
+    id TEXT PRIMARY KEY NOT NULL,
+    homework_id TEXT NOT NULL,
+    item_id TEXT NOT NULL,
+    item_type TEXT NOT NULL CHECK (item_type IN ('vocabulary', 'kanji', 'grammar')),
+    source TEXT NOT NULL CHECK (source IN ('weakness', 'new', 'conversation-practice', 'due-review')),
+    position INTEGER NOT NULL CHECK (position >= 0),
+    UNIQUE (homework_id, item_id),
+    FOREIGN KEY (homework_id) REFERENCES daily_homework(id) ON DELETE CASCADE,
+    FOREIGN KEY (item_id) REFERENCES curriculum_items(id) ON DELETE CASCADE
+  );
+  INSERT INTO daily_homework_items (id, homework_id, item_id, item_type, source, position)
+  SELECT id, homework_id, item_id, item_type,
+    CASE WHEN source = 'chat-mistake' THEN 'conversation-practice' ELSE source END,
+    position
+  FROM legacy_daily_homework_items;
+  DROP TABLE legacy_daily_homework_items;
+  CREATE INDEX daily_homework_items_homework_idx
+    ON daily_homework_items(homework_id, position);
+
+  CREATE TABLE IF NOT EXISTS practice_sync_state (
+    id INTEGER PRIMARY KEY NOT NULL CHECK (id = 1),
+    google_connected INTEGER NOT NULL DEFAULT 0 CHECK (google_connected IN (0, 1)),
+    document_id TEXT,
+    document_title TEXT,
+    last_processed_index INTEGER NOT NULL DEFAULT 0 CHECK (last_processed_index >= 0),
+    last_processed_session_id TEXT,
+    last_synced_at TEXT,
+    last_new_conversation_count INTEGER NOT NULL DEFAULT 0 CHECK (last_new_conversation_count >= 0),
+    personalization_enabled INTEGER NOT NULL DEFAULT 1 CHECK (personalization_enabled IN (0, 1)),
+    connected_at TEXT
+  );
+
+  CREATE TABLE IF NOT EXISTS practice_imported_sessions (
+    id TEXT PRIMARY KEY NOT NULL,
+    source_session_id TEXT NOT NULL,
+    user_id TEXT NOT NULL,
+    document_id TEXT NOT NULL,
+    practiced_at TEXT NOT NULL,
+    document_start_index INTEGER NOT NULL CHECK (document_start_index >= 0),
+    document_end_index INTEGER NOT NULL CHECK (document_end_index >= document_start_index),
+    transcript TEXT NOT NULL,
+    metadata_json TEXT,
+    analysis_json TEXT NOT NULL,
+    imported_at TEXT NOT NULL,
+    UNIQUE (document_id, source_session_id),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS practice_imported_sessions_recent_idx
+    ON practice_imported_sessions(user_id, practiced_at DESC, imported_at DESC);
+
+  CREATE TABLE IF NOT EXISTS practice_analysis_mistakes (
+    id TEXT PRIMARY KEY NOT NULL,
+    session_id TEXT NOT NULL,
+    original TEXT NOT NULL,
+    corrected TEXT NOT NULL,
+    category TEXT NOT NULL CHECK (category IN ('grammar', 'vocabulary', 'kanji', 'particle', 'conjugation', 'naturalness')),
+    explanation TEXT NOT NULL,
+    confidence REAL NOT NULL CHECK (confidence BETWEEN 0 AND 1),
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (session_id) REFERENCES practice_imported_sessions(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS practice_analysis_mistakes_recent_idx
+    ON practice_analysis_mistakes(created_at DESC, category);
+
+  CREATE TABLE IF NOT EXISTS practice_skill_profile (
+    user_id TEXT NOT NULL,
+    skill_type TEXT NOT NULL CHECK (skill_type IN ('grammar', 'vocabulary', 'kanji')),
+    skill_key TEXT NOT NULL,
+    curriculum_item_id TEXT,
+    mastery REAL NOT NULL DEFAULT 0.5 CHECK (mastery BETWEEN 0 AND 1),
+    mistakes INTEGER NOT NULL DEFAULT 0 CHECK (mistakes >= 0),
+    successful_uses INTEGER NOT NULL DEFAULT 0 CHECK (successful_uses >= 0),
+    encounters INTEGER NOT NULL DEFAULT 0 CHECK (encounters >= 0),
+    last_practiced_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, skill_type, skill_key),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE,
+    FOREIGN KEY (curriculum_item_id) REFERENCES curriculum_items(id) ON DELETE SET NULL
+  );
+  CREATE INDEX IF NOT EXISTS practice_skill_profile_priority_idx
+    ON practice_skill_profile(user_id, mistakes DESC, mastery ASC, last_practiced_at DESC);
+  CREATE INDEX IF NOT EXISTS practice_skill_profile_curriculum_idx
+    ON practice_skill_profile(user_id, curriculum_item_id);
+
+  CREATE TABLE IF NOT EXISTS practice_learned_vocabulary (
+    user_id TEXT NOT NULL,
+    word TEXT NOT NULL,
+    reading TEXT NOT NULL,
+    meaning TEXT NOT NULL,
+    first_seen_at TEXT NOT NULL,
+    last_seen_at TEXT NOT NULL,
+    frequency INTEGER NOT NULL DEFAULT 1 CHECK (frequency > 0),
+    PRIMARY KEY (user_id, word, reading),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS practice_learned_vocabulary_recent_idx
+    ON practice_learned_vocabulary(user_id, last_seen_at DESC);
+
+  CREATE TABLE IF NOT EXISTS practice_topics (
+    user_id TEXT NOT NULL,
+    topic TEXT NOT NULL,
+    first_seen_at TEXT NOT NULL,
+    last_seen_at TEXT NOT NULL,
+    frequency INTEGER NOT NULL DEFAULT 1 CHECK (frequency > 0),
+    PRIMARY KEY (user_id, topic),
+    FOREIGN KEY (user_id) REFERENCES learner_profile(id) ON DELETE CASCADE
+  );
+  CREATE INDEX IF NOT EXISTS practice_topics_recent_idx
+    ON practice_topics(user_id, last_seen_at DESC);
+`;
+
 export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 1, sql: versionOneSql },
   { version: 2, sql: versionTwoSql },
@@ -1906,6 +2038,7 @@ export const databaseMigrations: readonly DatabaseMigration[] = [
   { version: 28, sql: versionTwentyEightSql },
   { version: 29, sql: versionTwentyNineSql },
   { version: 30, sql: versionThirtySql },
+  { version: 31, sql: versionThirtyOneSql },
 ];
 
 export async function runMigrations(database: MigrationDatabase): Promise<void> {

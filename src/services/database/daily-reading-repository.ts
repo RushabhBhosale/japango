@@ -298,25 +298,36 @@ export async function buildDailyReadingLearningContext(level: CurriculumLevel): 
   const base = `FROM curriculum_items AS c
     INNER JOIN learner_profile AS p ON 1 = 1
     LEFT JOIN user_mastery AS m ON m.user_id = p.id AND m.item_id = c.id
+    LEFT JOIN practice_sync_state AS practice_state ON practice_state.id = 1
+    LEFT JOIN practice_skill_profile AS practice
+      ON practice.user_id = p.id AND practice.curriculum_item_id = c.id
+      AND practice_state.personalization_enabled = 1
     LEFT JOIN daily_reading_vocabulary_signals AS signals
       ON signals.user_id = p.id AND signals.vocabulary_id = c.id
     LEFT JOIN vocabulary_bookmarks AS bookmarks
       ON bookmarks.user_id = p.id AND bookmarks.vocabulary_id = c.id
     WHERE c.level = ? AND c.release_ready = 1`;
   const [knownVocabulary, weakVocabulary, recentVocabulary, newVocabularyCandidates, recentGrammar, learnedKanji] = await Promise.all([
-    contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'vocabulary' AND c.meaning IS NOT NULL AND (COALESCE(m.status, 'new') <> 'new' OR COALESCE(m.correct_count, 0) + COALESCE(m.incorrect_count, 0) > 0) ORDER BY COALESCE(m.last_reviewed_at, '') DESC, m.mastery_score DESC LIMIT ?`, level, 50),
-    contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'vocabulary' AND c.meaning IS NOT NULL AND (m.status = 'weak' OR bookmarks.vocabulary_id IS NOT NULL OR COALESCE(signals.incorrect_count, 0) > 0 OR COALESCE(signals.tap_count, 0) >= 3) ORDER BY COALESCE(signals.incorrect_count, 0) DESC, COALESCE(signals.tap_count, 0) DESC, m.incorrect_count DESC LIMIT ?`, level, 12),
-    contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'vocabulary' AND c.meaning IS NOT NULL AND m.last_reviewed_at IS NOT NULL ORDER BY m.last_reviewed_at DESC LIMIT ?`, level, 12),
+    contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'vocabulary' AND c.meaning IS NOT NULL AND (COALESCE(m.status, 'new') <> 'new' OR COALESCE(m.correct_count, 0) + COALESCE(m.incorrect_count, 0) > 0 OR COALESCE(practice.successful_uses, 0) > 0) ORDER BY COALESCE(practice.successful_uses, 0) DESC, COALESCE(m.last_reviewed_at, '') DESC, m.mastery_score DESC LIMIT ?`, level, 50),
+    contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'vocabulary' AND c.meaning IS NOT NULL AND (m.status = 'weak' OR bookmarks.vocabulary_id IS NOT NULL OR COALESCE(signals.incorrect_count, 0) > 0 OR COALESCE(signals.tap_count, 0) >= 3 OR COALESCE(practice.mistakes, 0) >= 2) ORDER BY COALESCE(practice.mistakes, 0) DESC, COALESCE(signals.incorrect_count, 0) DESC, COALESCE(signals.tap_count, 0) DESC, m.incorrect_count DESC LIMIT ?`, level, 12),
+    contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'vocabulary' AND c.meaning IS NOT NULL AND (m.last_reviewed_at IS NOT NULL OR practice.last_practiced_at IS NOT NULL) ORDER BY COALESCE(practice.last_practiced_at, m.last_reviewed_at, '') DESC LIMIT ?`, level, 12),
     contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'vocabulary' AND c.meaning IS NOT NULL AND COALESCE(m.status, 'new') = 'new' AND bookmarks.vocabulary_id IS NULL ORDER BY c.id LIMIT ?`, level, 12),
-    contextRows(`SELECT c.id, c.title, c.reading, COALESCE(c.meaning, c.explanation) AS meaning ${base} AND c.type = 'grammar' AND COALESCE(c.meaning, c.explanation) IS NOT NULL AND (COALESCE(m.status, 'new') <> 'new' OR m.last_reviewed_at IS NOT NULL) ORDER BY COALESCE(m.last_reviewed_at, '') DESC LIMIT ?`, level, 8),
-    contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'kanji' AND c.meaning IS NOT NULL AND COALESCE(m.status, 'new') <> 'new' ORDER BY COALESCE(m.last_reviewed_at, '') DESC, m.mastery_score DESC LIMIT ?`, level, 60),
+    contextRows(`SELECT c.id, c.title, c.reading, COALESCE(c.meaning, c.explanation) AS meaning ${base} AND c.type = 'grammar' AND COALESCE(c.meaning, c.explanation) IS NOT NULL AND (COALESCE(m.status, 'new') <> 'new' OR m.last_reviewed_at IS NOT NULL OR COALESCE(practice.encounters, 0) > 0) ORDER BY COALESCE(practice.mistakes, 0) DESC, COALESCE(practice.last_practiced_at, m.last_reviewed_at, '') DESC LIMIT ?`, level, 8),
+    contextRows(`SELECT c.id, c.title, c.reading, c.meaning ${base} AND c.type = 'kanji' AND c.meaning IS NOT NULL AND (COALESCE(m.status, 'new') <> 'new' OR COALESCE(practice.encounters, 0) > 0) ORDER BY COALESCE(practice.mistakes, 0) DESC, COALESCE(practice.last_practiced_at, m.last_reviewed_at, '') DESC, m.mastery_score DESC LIMIT ?`, level, 60),
   ]);
   const database = await getDatabase();
-  const recentRows = await database.getAllAsync<DailyReadingRow>('SELECT id, content_json FROM daily_readings ORDER BY reading_date DESC LIMIT 10');
-  const recentTopics = recentRows.flatMap((row) => {
+  const [recentRows, practiceTopics] = await Promise.all([
+    database.getAllAsync<DailyReadingRow>('SELECT id, content_json FROM daily_readings ORDER BY reading_date DESC LIMIT 10'),
+    database.getAllAsync<{ topic: string }>(
+      `SELECT topics.topic FROM practice_topics AS topics
+       INNER JOIN practice_sync_state AS state ON state.id = 1 AND state.personalization_enabled = 1
+       ORDER BY topics.last_seen_at DESC, topics.frequency DESC LIMIT 6`,
+    ),
+  ]);
+  const recentTopics = [...practiceTopics.map(({ topic }) => `conversation: ${topic}`), ...recentRows.flatMap((row) => {
     const reading = parseReading(row);
     return reading ? [`${reading.type}: ${reading.title}`] : [];
-  });
+  })].slice(0, 10);
   return dailyReadingLearningContextSchema.parse({
     knownVocabulary,
     weakVocabulary,

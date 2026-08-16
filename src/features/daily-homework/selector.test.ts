@@ -11,7 +11,7 @@ describe('daily homework selection', () => {
     const input = [
       ...candidates('vocabulary', 8, 'weakness', 0),
       ...candidates('vocabulary', 8, 'new', 20),
-      ...candidates('kanji', 6, 'chat-mistake', 40),
+      ...candidates('kanji', 6, 'conversation-practice', 40),
       ...candidates('kanji', 4, 'new', 60),
       ...candidates('grammar', 3, 'weakness', 80),
       ...candidates('vocabulary', 3, 'due-review', 90),
