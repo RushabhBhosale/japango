@@ -15,3 +15,18 @@ export function hasPersistedYuiReply(messages: readonly AiChatMessage[], learner
     && (!Number.isFinite(sentAt) || Date.parse(message.createdAt) >= sentAt));
 }
 
+/**
+ * A reply has already been committed locally at this point. Reconcile it into
+ * the active screen even if the optional full conversation refresh is busy.
+ */
+export function reconcileDeliveredYuiReply(
+  messages: readonly AiChatMessage[],
+  learnerMessageId: string,
+  reply: AiChatMessage,
+): AiChatMessage[] {
+  const delivered = messages.map((message) => message.id === learnerMessageId
+    ? { ...message, deliveryStatus: 'sent' as const }
+    : message);
+  if (delivered.some((message) => message.id === reply.id)) return delivered;
+  return [...delivered, reply];
+}

@@ -15,7 +15,7 @@ const yuiResponseFormat = {
       type: 'object',
       additionalProperties: false,
       properties: {
-        reply: { type: 'string', minLength: 1, maxLength: 900, description: 'Yui’s short, natural reply to the learner.' },
+        reply: { type: 'string', minLength: 1, maxLength: 120, description: 'Yui’s natural text-message reply: normally one short sentence, never more than two.' },
         replyReading: { type: ['string', 'null'], maxLength: 1_800, description: 'Complete hiragana reading of reply, or null if no kanji appears.' },
         mistakes: {
           type: 'array', maxItems: 6,

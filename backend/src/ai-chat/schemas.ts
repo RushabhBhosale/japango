@@ -57,7 +57,7 @@ const learningSignalSchema = z.object({
 }).strict();
 
 export const aiChatResponseSchema = z.object({
-  reply: z.string().trim().min(1).max(900),
+  reply: z.string().trim().min(1).max(120),
   replyReading: z.string().trim().min(1).max(1_800).optional(),
   mistakes: z.array(detectedMistakeSchema).max(6).optional().default([]),
   learningSignals: z.array(learningSignalSchema).max(8).optional().default([]),

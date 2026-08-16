@@ -558,10 +558,19 @@ async function persistLearnerSkills(
   }
 }
 
-export async function persistYuiResponse(messageId: string, response: AiChatResponse): Promise<boolean> {
+export async function persistYuiResponse(messageId: string, response: AiChatResponse): Promise<AiChatMessage | undefined> {
   const database = await getDatabase();
   const profile = await getLearnerProfile();
   const now = new Date().toISOString();
+  const replyMessage: AiChatMessage = {
+    id: createLocalId('chat-message'),
+    chatId: AI_CHAT_CONVERSATION_ID,
+    role: 'character',
+    content: response.reply,
+    contentReading: response.replyReading,
+    deliveryStatus: 'sent',
+    createdAt: now,
+  };
   const meaningfulMistakes = response.mistakes.filter(isMeaningfulChatMistake);
   const currentRows = await database.getAllAsync<LearnerSkillRow>('SELECT * FROM learner_skills WHERE user_id = ?', profile.id);
   const updatedSkills = applyChatLearningSignals(profile.id, currentRows.map(mapSkill), response.learningSignals, now);
@@ -582,11 +591,11 @@ export async function persistYuiResponse(messageId: string, response: AiChatResp
     await database.runAsync(
       `INSERT INTO ai_chat_messages (id, chat_id, role, content, content_reading, delivery_status, created_at)
        VALUES (?, ?, 'character', ?, ?, 'sent', ?)`,
-      createLocalId('chat-message'),
+      replyMessage.id,
       AI_CHAT_CONVERSATION_ID,
-      response.reply,
-      response.replyReading ?? null,
-      now,
+      replyMessage.content,
+      replyMessage.contentReading ?? null,
+      replyMessage.createdAt,
     );
     await database.runAsync('UPDATE ai_chat_conversations SET updated_at = ? WHERE id = ?', now, AI_CHAT_CONVERSATION_ID);
     await saveMemoryCandidates(database, response.memoryCandidates, now);
@@ -629,7 +638,7 @@ export async function persistYuiResponse(messageId: string, response: AiChatResp
     }
     await persistLearnerSkills(database, updatedSkills);
   });
-  return persisted;
+  return persisted ? replyMessage : undefined;
 }
 
 export async function getRecentChatMistakes(limit = 3): Promise<ChatMistake[]> {

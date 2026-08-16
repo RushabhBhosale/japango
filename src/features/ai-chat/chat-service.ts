@@ -15,8 +15,14 @@ import { aiChatNetworkRequestSchema, aiChatResponseSchema, type AiChatNetworkReq
 
 // Allow the server enough time to use OpenRouter’s model fallback before the
 // device treats the message as failed.
-const requestTimeoutMs = 55_000;
-const inFlightMessages = new Map<string, Promise<void>>();
+const requestTimeoutMs = 70_000;
+const inFlightMessages = new Map<string, Promise<AiChatMessage | undefined>>();
+
+export interface AiChatDeliveryResult {
+  learnerMessageId: string;
+  messages?: AiChatMessage[];
+  reply?: AiChatMessage;
+}
 
 export class AiChatClientError extends Error {
   constructor(public readonly retryable: boolean, message: string) {
@@ -89,7 +95,7 @@ async function requestYuiReply(input: AiChatNetworkRequest): Promise<AiChatRespo
   }
 }
 
-async function sendPendingMessage(message: AiChatMessage): Promise<void> {
+async function sendPendingMessage(message: AiChatMessage): Promise<AiChatMessage | undefined> {
   const existing = inFlightMessages.get(message.id);
   if (existing) return existing;
   const request = sendPendingMessageOnce(message).finally(() => inFlightMessages.delete(message.id));
@@ -97,7 +103,7 @@ async function sendPendingMessage(message: AiChatMessage): Promise<void> {
   return request;
 }
 
-async function sendPendingMessageOnce(message: AiChatMessage): Promise<void> {
+async function sendPendingMessageOnce(message: AiChatMessage): Promise<AiChatMessage | undefined> {
   const [context, profile] = await Promise.all([getYuiChatContext(), getLearnerProfile()]);
   let phaseTwo: Awaited<ReturnType<typeof preparePhaseTwoChatContext>> = { relevantMemories: [] };
   try {
@@ -127,11 +133,12 @@ async function sendPendingMessageOnce(message: AiChatMessage): Promise<void> {
   });
   try {
     const response = keepSupportedLearningSignals(await requestYuiReply(payload), context);
-    await persistYuiResponse(message.id, response);
+    const reply = await persistYuiResponse(message.id, response);
     void enrichPendingChatMemories().catch(() => undefined);
     void getYuiChatContext()
       .then((updatedContext) => syncYuiProactiveContext({ localUserId: profile.id, context: updatedContext, scenario: phaseTwo.scenario }))
       .catch(() => undefined);
+    return reply;
   } catch (error) {
     await markChatMessageFailed(message.id);
     throw error;
@@ -141,23 +148,33 @@ async function sendPendingMessageOnce(message: AiChatMessage): Promise<void> {
 export async function sendYuiMessage(
   content: string,
   onPending?: (message: AiChatMessage) => void,
-): Promise<Awaited<ReturnType<typeof getYuiChat>>> {
+): Promise<AiChatDeliveryResult> {
   const normalized = content.trim();
   if (!normalized) throw new AiChatClientError(false, 'Write a message before sending it.');
   const message = await createPendingYuiMessage(normalized);
   onPending?.(message);
-  await sendPendingMessage(message);
-  return getYuiChat();
+  const reply = await sendPendingMessage(message);
+  if (reply) return { learnerMessageId: message.id, reply };
+  const chat = await getYuiChat();
+  return { learnerMessageId: message.id, messages: chat.messages };
 }
 
-export async function retryYuiMessage(messageId: string): Promise<Awaited<ReturnType<typeof getYuiChat>>> {
+export async function retryYuiMessage(messageId: string): Promise<AiChatDeliveryResult> {
   const message = await getChatMessage(messageId);
   if (!message || message.role !== 'learner') {
     throw new AiChatClientError(false, 'That message is no longer available to retry.');
   }
-  if (message.deliveryStatus !== 'failed') return getYuiChat();
+  if (message.deliveryStatus !== 'failed') {
+    const chat = await getYuiChat();
+    return { learnerMessageId: message.id, messages: chat.messages };
+  }
   const claimed = await markChatMessagePending(message.id);
-  if (!claimed) return getYuiChat();
-  await sendPendingMessage({ ...message, deliveryStatus: 'pending' });
-  return getYuiChat();
+  if (!claimed) {
+    const chat = await getYuiChat();
+    return { learnerMessageId: message.id, messages: chat.messages };
+  }
+  const reply = await sendPendingMessage({ ...message, deliveryStatus: 'pending' });
+  if (reply) return { learnerMessageId: message.id, reply };
+  const chat = await getYuiChat();
+  return { learnerMessageId: message.id, messages: chat.messages };
 }

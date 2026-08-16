@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import type { AiChatMessage } from '@/types/ai-chat';
 
-import { hasPersistedYuiReply } from './message-delivery';
+import { hasPersistedYuiReply, reconcileDeliveredYuiReply } from './message-delivery';
 
 const message = (overrides: Partial<AiChatMessage>): AiChatMessage => ({
   id: 'message',
@@ -26,5 +26,23 @@ describe('Yui message delivery recovery', () => {
     expect(hasPersistedYuiReply([message({ id: 'learner-1', deliveryStatus: 'failed' })], 'learner-1')).toBe(false);
     expect(hasPersistedYuiReply([message({ id: 'learner-1' })], 'learner-1')).toBe(false);
   });
-});
 
+  it('shows a committed reply without waiting for a full conversation refresh', () => {
+    const reply = message({
+      id: 'yui-1',
+      role: 'character',
+      content: 'うん、また話そう！',
+      createdAt: '2026-08-16T08:00:01.000Z',
+    });
+
+    const delivered = reconcileDeliveredYuiReply([
+      message({ id: 'learner-1', deliveryStatus: 'pending' }),
+    ], 'learner-1', reply);
+
+    expect(delivered).toEqual([
+      expect.objectContaining({ id: 'learner-1', deliveryStatus: 'sent' }),
+      reply,
+    ]);
+    expect(reconcileDeliveredYuiReply(delivered, 'learner-1', reply)).toEqual(delivered);
+  });
+});

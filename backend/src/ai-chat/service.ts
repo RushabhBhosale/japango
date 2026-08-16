@@ -43,8 +43,8 @@ function parseJson(raw: string): AiChatResponse {
 
 function availabilityFallback(): AiChatResponse {
   return {
-    reply: 'メッセージを受け取ったよ。今は少し混み合っているみたいだから、少ししてからまた話そう。',
-    replyReading: 'メッセージをうけとったよ。いまはすこしこんでいるみたいだから、すこししてからまたはなそう。',
+    reply: 'ごめん、今はうまく返せないみたい。またあとでね！',
+    replyReading: 'ごめん、いまはうまくかえせないみたい。またあとでね！',
     mistakes: [],
     learningSignals: [],
     memoryCandidates: [],

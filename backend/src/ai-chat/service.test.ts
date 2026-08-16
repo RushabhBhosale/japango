@@ -83,7 +83,7 @@ describe('AI chat service', () => {
     const result = await new AiChatService([model]).respond(request, new AbortController().signal);
 
     expect(result.response.reply).not.toContain('User Safety');
-    expect(result.response.reply).toContain('メッセージを受け取ったよ');
+    expect(result.response.reply).toBe('ごめん、今はうまく返せないみたい。またあとでね！');
     expect(result.response.mistakes).toEqual([]);
     expect(result.fallbackUsed).toBe(true);
   });

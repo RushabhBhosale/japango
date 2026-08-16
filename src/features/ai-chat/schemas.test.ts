@@ -21,4 +21,13 @@ describe('structured Yui chat output', () => {
     expect(() => aiChatResponseSchema.parse({ reply: 'こんにちは', mistakes: [], learningSignals: [], memoryCandidates: [], extra: true }))
       .toThrow();
   });
+
+  it('rejects essay-length visible replies', () => {
+    expect(() => aiChatResponseSchema.parse({
+      reply: '長'.repeat(121),
+      mistakes: [],
+      learningSignals: [],
+      memoryCandidates: [],
+    })).toThrow();
+  });
 });

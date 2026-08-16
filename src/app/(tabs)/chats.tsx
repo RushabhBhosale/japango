@@ -18,7 +18,7 @@ import { LoadingState } from '@/components/common/loading-state';
 import { ThemedText } from '@/components/themed-text';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { AiChatClientError, retryYuiMessage, sendYuiMessage } from '@/features/ai-chat/chat-service';
-import { hasPersistedYuiReply } from '@/features/ai-chat/message-delivery';
+import { hasPersistedYuiReply, reconcileDeliveredYuiReply } from '@/features/ai-chat/message-delivery';
 import { getYuiChat } from '@/services/database/ai-chat-repository';
 import { useTheme } from '@/hooks/use-theme';
 import { getFuriganaPreference } from '@/services/database/japanese-text-repository';
@@ -75,11 +75,15 @@ export default function ChatsScreen() {
     setErrorMessage(undefined);
     let pendingMessageId: string | undefined;
     try {
-      const chat = await sendYuiMessage(value, (message) => {
+      const delivery = await sendYuiMessage(value, (message) => {
         pendingMessageId = message.id;
         showPendingMessage(message);
       });
-      setMessages(chat.messages);
+      if (delivery.messages) setMessages(delivery.messages);
+      else {
+        const reply = delivery.reply;
+        if (reply) setMessages((current) => reconcileDeliveredYuiReply(current, delivery.learnerMessageId, reply));
+      }
     } catch (error) {
       const recovered = await getYuiChat().catch(() => undefined);
       if (recovered && pendingMessageId && hasPersistedYuiReply(recovered.messages, pendingMessageId)) {
@@ -100,8 +104,12 @@ export default function ChatsScreen() {
     setErrorMessage(undefined);
     setMessages((current) => current.map((message) => message.id === messageId ? { ...message, deliveryStatus: 'pending' } : message));
     try {
-      const chat = await retryYuiMessage(messageId);
-      setMessages(chat.messages);
+      const delivery = await retryYuiMessage(messageId);
+      if (delivery.messages) setMessages(delivery.messages);
+      else {
+        const reply = delivery.reply;
+        if (reply) setMessages((current) => reconcileDeliveredYuiReply(current, delivery.learnerMessageId, reply));
+      }
     } catch (error) {
       const recovered = await getYuiChat().catch(() => undefined);
       if (recovered && hasPersistedYuiReply(recovered.messages, messageId)) {
