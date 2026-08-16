@@ -25,12 +25,15 @@ describe('OpenRouter chat provider', () => {
       model: string;
       models: string[];
       max_tokens: number;
+      reasoning: { effort: string };
       response_format: { type: string; json_schema: { name: string; strict: boolean } };
       provider: { allow_fallbacks: boolean; require_parameters: boolean };
     };
     expect(body.model).toBe('primary-model');
-    expect(body.models).toEqual(['openrouter/free', 'backup-model', 'openai/gpt-oss-20b:free', 'google/gemma-4-26b-a4b-it:free']);
+    expect(body.models).toEqual(['openrouter/free', 'backup-model', 'openai/gpt-oss-20b:free']);
+    expect(body.models).toHaveLength(3);
     expect(body.max_tokens).toBe(600);
+    expect(body.reasoning).toEqual({ effort: 'none' });
     expect(body.response_format).toMatchObject({ type: 'json_schema', json_schema: { name: 'yui_chat_reply', strict: true } });
     expect(body.provider).toEqual({ allow_fallbacks: true, require_parameters: true });
   });

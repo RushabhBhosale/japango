@@ -150,7 +150,6 @@ export default function ChatsScreen() {
             keyExtractor={(message) => message.id}
             keyboardShouldPersistTaps="handled"
             ListFooterComponent={sending ? <TypingIndicator /> : <View style={styles.listFooter} />}
-            onContentSizeChange={() => scrollToLatest()}
             renderItem={({ item }) => <ChatMessageBubble message={item} showFurigana={showFurigana} onRetry={(messageId) => { void retry(messageId); }} />}
             style={styles.list}
           />

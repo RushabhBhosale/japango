@@ -23,7 +23,7 @@ const valid = JSON.stringify({
   scenario: null,
 });
 
-function provider(id: string, results: Array<string | Error>): AiChatProvider {
+function provider(id: string, results: (string | Error)[]): AiChatProvider {
   return {
     id,
     model: id,
@@ -47,7 +47,7 @@ describe('AI chat service', () => {
   });
 
   it('uses the next provider when the first response is not a valid chat reply', async () => {
-    const model = provider('primary', ['not json']);
+    const model = provider('primary', ['not json', 'still not json']);
     const backup = provider('backup', [valid]);
 
     const result = await new AiChatService([model, backup]).respond(request, new AbortController().signal);
@@ -64,21 +64,36 @@ describe('AI chat service', () => {
     expect(result.response.replyReading).toBe('おつかれさま！きょうはかなりいそがしかったんだね。');
   });
 
-  it('keeps a valid reply when its optional reading is invalid', async () => {
+  it('retries a reply whose contextual reading is invalid', async () => {
     const missingReading = JSON.stringify({
       ...JSON.parse(valid),
       replyReading: undefined,
     });
-    const model = provider('primary', [missingReading]);
+    const model = provider('primary', [missingReading, valid]);
 
     const result = await new AiChatService([model]).respond(request, new AbortController().signal);
 
     expect(result.response.reply).toContain('お疲れさま');
-    expect(result.response.replyReading).toBeUndefined();
+    expect(result.response.replyReading).toBe('おつかれさま！きょうはかなりいそがしかったんだね。');
+  });
+
+  it('retries an English-only provider reply before surfacing it in the Japanese chat', async () => {
+    const englishOnly = JSON.stringify({
+      ...JSON.parse(valid),
+      reply: 'What movie did you watch?',
+      replyReading: null,
+    });
+    const model = provider('primary', [englishOnly, valid]);
+
+    const result = await new AiChatService([model]).respond(request, new AbortController().signal);
+
+    expect(result.response.reply).toContain('お疲れさま');
+    expect(result.fallbackUsed).toBe(false);
   });
 
   it('never surfaces provider metadata as a learner-visible message', async () => {
-    const model = provider('primary', [JSON.stringify({ 'User Safety': 'safe' })]);
+    const metadata = JSON.stringify({ 'User Safety': 'safe' });
+    const model = provider('primary', [metadata, metadata]);
 
     const result = await new AiChatService([model]).respond(request, new AbortController().signal);
 

@@ -100,6 +100,10 @@ class OpenRouterChatProvider implements AiChatProvider {
           messages: [{ role: 'system', content: input.system }, { role: 'user', content: input.user }],
           max_tokens: 600,
           temperature: 0.35,
+          // Chat replies are short social messages. Disable reasoning so a
+          // free reasoning model cannot spend the entire output budget before
+          // producing the structured reply.
+          reasoning: { effort: 'none' },
           response_format: yuiResponseFormat,
           provider: { allow_fallbacks: true, require_parameters: true },
         }),
@@ -118,7 +122,7 @@ class OpenRouterChatProvider implements AiChatProvider {
         'Yui is unavailable right now. Please try again shortly.',
       );
     }
-    const body = await response.json() as { choices?: Array<{ message?: { content?: string } }> };
+    const body = await response.json() as { choices?: { message?: { content?: string } }[] };
     const content = body.choices?.[0]?.message?.content;
     if (!content) throw new AiChatServerError('PROVIDER_UNAVAILABLE', true, 'Yui is unavailable right now. Please try again shortly.');
     return content;
@@ -144,5 +148,8 @@ export function createOpenRouterChatProviders(): AiChatProvider[] {
     ...defaultModels.slice(1),
   ].filter((model, index, all) => Boolean(model) && all.indexOf(model) === index);
   const baseUrl = process.env.OPENROUTER_BASE_URL ?? 'https://openrouter.ai/api/v1';
-  return [new OpenRouterChatProvider('openrouter', models[0], apiKey, baseUrl, models.slice(1))];
+  // OpenRouter accepts at most three explicit fallback models. Keeping this
+  // bounded prevents the gateway from rejecting the request before it reaches
+  // a model and turning every chat reply into the local availability fallback.
+  return [new OpenRouterChatProvider('openrouter', models[0], apiKey, baseUrl, models.slice(1, 4))];
 }
